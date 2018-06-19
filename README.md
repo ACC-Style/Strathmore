@@ -1,10 +1,23 @@
 
-# Strathmore[](#strathmore "Permanent link")
+# Strathmore
+#### Ver 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
 
-## Application framework. Mobile First, BEM, Utility Class Styling[](#application-framework-mobile-first-bem-utility-class-styling "Permanent link")
+## Application framework. Mobile First, BEM, Utility Class Styling
+### Re-factor of the Bristol framework.
+This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone Applications and Desktop Applications. It is responsive and the UI can be extended or reduced to match the needs of the project. Things to note this library is built with Sass and to enjoy the fullest power of this code base it should be compiled.
+## Table of Contents
+* [Intent of the Upgrade](#intent-of-the-upgrade)
+* [Utility Classes](#utility-classes)
+* [Reserved Names](#reserved-names)
+* [Folder Structure](#folder-structure)
+* [Expansion](#expansion)
+* [Product Color and Branding](#product-color-and-branding)
+* [Shame File](#shame-file)
 
-### Re-factor of the Bristol framework.[](#re-factor-of-the-bristol-framework "Permanent link")
 
+
+
+## Intent of the Upgrade
 *   **Foundation 6.4.3**
 *   removal of redundant UI that is native in foundation.
     *   Nav
@@ -35,13 +48,12 @@
 *   base class name is used through all sub components.
 *   aiming to reduce code size to under a MB.
 
-## Utility Classes[](#utility-classes "Permanent link")
-
-### Naming Convention[](#naming-convention "Permanent link")
+## Utility Classes
+### Naming Convention
 
 _[style short hand]-[direction]_[value+unit]-[break point]_
 
-### Definition of Style Short Hand[](#definition-of-style-short-hand "Permanent link")
+### Definition of Style Short Hand
 
 *   **Padding:** P-
 *   **Border:** B-
@@ -60,7 +72,7 @@ _[style short hand]-[direction]_[value+unit]-[break point]_
 *   **Float:** use foundation pull-right, pull-left
 *   **Drop-Shadow:** LayerUp-, LayerDown-
 
-## Directions[](#directions "Permanent link")
+### Directions
 
 *   **all:** no direction modifier
 *   **top:** t-
@@ -68,7 +80,7 @@ _[style short hand]-[direction]_[value+unit]-[break point]_
 *   **right:** r-
 *   **left:** l-
 
-## Values[](#values "Permanent link")
+### Values
 
 *   **n4:** font: -4 on modular scale, margin: -2x, padding: Not Used, line-height: Not Used
 *   **n4:** font: -4 on modular scale, margin: -1x, padding: Not Used, line-height: Not Used
@@ -81,11 +93,12 @@ _[style short hand]-[direction]_[value+unit]-[break point]_
 *   **3:** font: 3 on modular scale, margin:1x, padding: 1x, line-height: 1.4
 *   **4:** font: 4 on modular scale, margin:2x, padding: 2x, line-height: 1.7
 
-## Reserved Words and Modifier Descriptors[](#reserved-words-and-modifier-descriptors "Permanent link")
+## Reserved Names
+### Reserved Words and Modifier Descriptors
 
 These words should be used to describe states and generic elements of the UI and should be used instead of some variation or alternate name.
 
-### States[](#states "Permanent link")
+### States
 
 *   show
 *   hide
@@ -99,15 +112,14 @@ These words should be used to describe states and generic elements of the UI and
 *   secondary
 *   reverse
 
-### Modifier[](#modifier "Permanent link")
+### Modifier
 
 *   UI Name with no modifier or -container (Use instead of holder when items are UI based)
 *   UI Name with no modifier or -group (Use instead of list, holder, collection when items or repeatable Content)
 *   UI Name with no modifier or -item (generic child of container or -group)
 *   -separator (a visual or break between items)
 
-## Colors[](#colors "Permanent link")
-
+## Colors
 *   Scrub Colors
     *   -accBlue
     *   -productColor, -teal
@@ -135,9 +147,9 @@ These words should be used to describe states and generic elements of the UI and
 *   Black
 *   White
 
-## Texture Names[](#texture-names "Permanent link")
+## Texture Names
 
-all textures should be slightly transparent so solid color backgrounds added to the element will also color the texture.
+All textures should be slightly transparent so solid color backgrounds added to the element will also color the texture.
 
 *   -carbonFiber
 *   -noise
@@ -147,7 +159,7 @@ all textures should be slightly transparent so solid color backgrounds added to 
 *   -inkLines
 *   -inkCrossHatched
 
-### Special Textures[](#special-textures "Permanent link")
+### Special Textures
 
 PNG shadows for the containers
 
@@ -157,3 +169,40 @@ PNG shadows for the containers
 *   -insetShadow-b
 *   -insetShadow-l
 *   -insetShadow-r
+
+
+## Folder Structure
+### Structure and File Naming
+To reduce improper cascades in CSS the Sass includes and folder structure has been broken into these sections.  Labels like ".required" and ".override" are included in the file naming to help with readability and transparency of the code. 
+
+1. __base__ - any file that deals with variables, fonts and basic typography (raw tags).
+2. __helpers__ or 'required.scss ' - Mostly mixins but some files that have "required" in the name are needed for other files to functions. any file that have been named with "trump" will
+3. __components__ - any combination of DOM elements that make up a widget, nav, or collection of tags.
+4. __vendor__ - Any included style from a JavaScript or Framework that needs an override to visually match with ACC standards. All files in the vendor area should be postfixed with .override. IE to override foundation's button.scss you would place a 'vendor/foundation/button.override.scss' and make your changes in the new file. 
+5. __structure__ - Non-Styling pure page layout code.  Balanced Columns, Sidebars, Page Spacing etc...
+6. __trumps__ or '.trump.scss' - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.  
+7. __shame__ or 'shame.scss' - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.
+8. __non-core__ Overrides see [Expansion](#expansion)
+9. __views__ - Overrides of components when in specific cases of the page, or theme for a needed project. IE. a sidebar box on the home page for project "heart" would have a file path of `non-core/heart/_sidebarbox.override.home.scss`
+
+### Cascade 
+As you travel down the structure of the main document the included SCSS files and their classes should increase their specificity. 
+
+## Expansion
+## Overriding Styles for your Project Needs
+All alteration to the code are to be done through "non-core" inclusion of styles. Please use the below folder structure to allow for review and check-ins of project code. 
+
+### Path and File Naming:
+#### New UI
+'\_non-core/__Project Code__/__New UI__.scss'
+
+#### Override from framework
+'\_non-core/__Project Code__/__element name__.override.scss' 
+#### Override from framework while in  a specific view
+'\_non-core/__Project Code__/__element name__.override.__views name__.scss'
+
+## Product Color and Branding
+In the main style sheet there are some exposed variables to alter the skin of the style.  One of th most cosmetic is product color and branding. The variable "$product-brand-color" takes a hex color and will change elements of the ui to this color away from the ACC blues. "$brand-level" throttles the amount of color.   0 min-value  will not include and product color and 3 the max will bring in the most. 
+
+## Shame File
+There is always work that has be done with some corners cut or you work that because it's cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file.  There is a shame file for the main branch of the framework and a second shame file that can be found in the corresponding non-core folder for the project. 
