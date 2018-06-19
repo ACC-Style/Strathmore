@@ -112,12 +112,12 @@ These words should be used to describe states and generic elements of the UI and
 *   secondary
 *   reverse
 
-### Modifier
+### Name Modifier
 
-*   UI Name with no modifier or -container (Use instead of holder when items are UI based)
-*   UI Name with no modifier or -group (Use instead of list, holder, collection when items or repeatable Content)
-*   UI Name with no modifier or -item (generic child of container or -group)
-*   -separator (a visual or break between items)
+*   __ -container __ or UI Name with no modifier  (Use instead of holder when items are UI based)
+*   __ -group __ or UI Name with no modifier (Use instead of list, holder, collection when items or repeatable Content)
+*   __ -item __ or UI Name with no modifier  (generic child of container or group)
+*   __ -separator __ (a visual treatment or break between items within a container or group )
 
 ## Colors
 *   Scrub Colors
@@ -147,12 +147,21 @@ These words should be used to describe states and generic elements of the UI and
 *   Black
 *   White
 
+### Modifiers 
+* __-soft:__ Color made pale and almost white. 
+* __-light:__ Color mixed with white
+* __-dark:__ Color mixed with black 
+* __-alpha30:__ Color with alpha set to 30
+* __-alpha50:__ Color with alpha set to 50
+* __-alpha70:__ Color with alpha set to 70
+
+
 ## Texture Names
 
 All textures should be slightly transparent so solid color backgrounds added to the element will also color the texture.
 
 *   -carbonFiber
-*   -noise
+*   -offWhite 
 *   -softPaper
 *   -paper
 *   -dirtyPaper
