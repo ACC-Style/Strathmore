@@ -1,11 +1,8 @@
 
 # Strathmore
 #### Ver 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
-
-## Application framework. Mobile First, BEM, Utility Class Styling
-### Re-factor of the Bristol framework.
-This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone Applications and Desktop Applications. It is responsive and the UI can be extended or reduced to match the needs of the project. Things to note this library is built with Sass and to enjoy the fullest power of this code base it should be compiled.
 ## Table of Contents
+* [ACC Application Framework](#acc-application-framework)
 * [Intent of the Upgrade](#intent-of-the-upgrade)
 * [Utility Classes](#utility-classes)
 * [Reserved Names](#reserved-names)
@@ -14,10 +11,13 @@ This is a library of modular styles extending the popular framework of Zurb Foun
 * [Product Color and Branding](#product-color-and-branding)
 * [Shame File](#shame-file)
 
-
-
+## ACC Application Framework
+### Mobile First, BEM, Utility Class Styling
+This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project. 
+**Things to note this library is built with Sass and to enjoy it's fullest power and flexibility it must be compiled.**
 
 ## Intent of the Upgrade
+### Re-factor of the Bristol framework.
 *   **Foundation 6.4.3**
 *   removal of redundant UI that is native in foundation.
     *   Nav

@@ -1057,19 +1057,23 @@ body .markdown-body
 .codehilite .gc{color:#999;background-color:#EAF2F5}
 </style><title>README</title></head><body><article class="markdown-body"><h1 id="strathmore">Strathmore<a class="headerlink" href="#strathmore" title="Permanent link"></a></h1>
 <h4 id="ver-01-built-on-foundation-643-font-awesome-pro">Ver 0.1 | Built on Foundation 6.4.3 &amp; Font Awesome Pro<a class="headerlink" href="#ver-01-built-on-foundation-643-font-awesome-pro" title="Permanent link"></a></h4>
-<h2 id="application-framework-mobile-first-bem-utility-class-styling">Application framework. Mobile First, BEM, Utility Class Styling<a class="headerlink" href="#application-framework-mobile-first-bem-utility-class-styling" title="Permanent link"></a></h2>
-<h3 id="re-factor-of-the-bristol-framework">Re-factor of the Bristol framework.<a class="headerlink" href="#re-factor-of-the-bristol-framework" title="Permanent link"></a></h3>
-<p>This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone Applications and Desktop Applications. It is responsive and the UI can be extended or reduced to match the needs of the project. Things to note this library is built with Sass and to enjoy the fullest power of this code base it should be compiled.</p>
 <h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link"></a></h2>
 <ul>
+<li><a href="#acc-application-framework">ACC Application Framework</a></li>
 <li><a href="#intent-of-the-upgrade">Intent of the Upgrade</a></li>
 <li><a href="#utility-classes">Utility Classes</a></li>
 <li><a href="#reserved-names">Reserved Names</a></li>
 <li><a href="#folder-structure">Folder Structure</a></li>
 <li><a href="#expansion">Expansion</a></li>
 <li><a href="#product-color-and-branding">Product Color and Branding</a></li>
+<li><a href="#shame-file">Shame File</a></li>
 </ul>
+<h2 id="acc-application-framework">ACC Application Framework<a class="headerlink" href="#acc-application-framework" title="Permanent link"></a></h2>
+<h3 id="mobile-first-bem-utility-class-styling">Mobile First, BEM, Utility Class Styling<a class="headerlink" href="#mobile-first-bem-utility-class-styling" title="Permanent link"></a></h3>
+<p>This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project. 
+<strong>Things to note this library is built with Sass and to enjoy it&rsquo;s fullest power and flexibility it must be compiled.</strong></p>
 <h2 id="intent-of-the-upgrade">Intent of the Upgrade<a class="headerlink" href="#intent-of-the-upgrade" title="Permanent link"></a></h2>
+<h3 id="re-factor-of-the-bristol-framework">Re-factor of the Bristol framework.<a class="headerlink" href="#re-factor-of-the-bristol-framework" title="Permanent link"></a></h3>
 <ul>
 <li><strong>Foundation 6.4.3</strong></li>
 <li>removal of redundant UI that is native in foundation.<ul>
@@ -1252,7 +1256,7 @@ body .markdown-body
 <p>As you travel down the structure of the main document the included SCSS files and their classes should increase their specificity. </p>
 <h2 id="expansion">Expansion<a class="headerlink" href="#expansion" title="Permanent link"></a></h2>
 <h2 id="overriding-styles-for-your-project-needs">Overriding Styles for your Project Needs<a class="headerlink" href="#overriding-styles-for-your-project-needs" title="Permanent link"></a></h2>
-<p>Most alteration to the code can be done through &ldquo;non-core&rdquo; inclusion of styles. Please use the mirrored folder structure to allow of review and understanding of what level of specificity should be used in the document. </p>
+<p>All alteration to the code are to be done through &ldquo;non-core&rdquo; inclusion of styles. Please use the below folder structure to allow for review and check-ins of project code. </p>
 <h3 id="path-and-file-naming">Path and File Naming:<a class="headerlink" href="#path-and-file-naming" title="Permanent link"></a></h3>
 <h4 id="new-ui">New UI<a class="headerlink" href="#new-ui" title="Permanent link"></a></h4>
 <p>&lsquo;_non-core/<strong>Project Code</strong>/<strong>New UI</strong>.scss&rsquo;</p>
@@ -1263,4 +1267,4 @@ body .markdown-body
 <h2 id="product-color-and-branding">Product Color and Branding<a class="headerlink" href="#product-color-and-branding" title="Permanent link"></a></h2>
 <p>In the main style sheet there are some exposed variables to alter the skin of the style.  One of th most cosmetic is product color and branding. The variable &ldquo;$product-brand-color&rdquo; takes a hex color and will change elements of the ui to this color away from the ACC blues. &ldquo;$brand-level&rdquo; throttles the amount of color.   0 min-value  will not include and product color and 3 the max will bring in the most. </p>
 <h2 id="shame-file">Shame File<a class="headerlink" href="#shame-file" title="Permanent link"></a></h2>
-<p>There is always work that has be done with some corners cut or you work that because it&rsquo;t cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file. </p></article></body></html>
+<p>There is always work that has be done with some corners cut or you work that because it&rsquo;s cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file.  There is a shame file for the main branch of the framework and a second shame file that can be found in the corresponding non-core folder for the project. </p></article></body></html>
