@@ -10,6 +10,8 @@
 * [Expansion](#expansion)
 * [Product Color and Branding](#product-color-and-branding)
 * [Shame File](#shame-file)
+* [JavaScript Templating](#javascript-templating)
+    * [__ Project Origami --> __ ](ORIGAMI.html)
 
 ## ACC Application Framework
 ### Mobile First, BEM, Utility Class Styling
@@ -28,11 +30,21 @@ This is a library of modular styles extending the popular framework of Zurb Foun
 *   **Component Simplification, Design Changes, Depreciation**
     *   Clean up of fonts to multi and maverick
     *   remove layout SCCS and components
-    *   modernize question form look
     *   Removal of states coloring replaced by utility styling.
     *   **Refactoring SCSS to be More BEM and Dry** [**BEM**](https://css-tricks.com/bem-101/) / [**DRY**](https://alistapart.com/article/dry-ing-out-your-sass-mixins)
         *   simplification of required holder in questions.
         *   reduction of nesting specification on styling.
+*   ** UX Definition **
+    * Best Practices and Javascript Templating for
+        * Mobile Header
+        * Pagination
+        * Switches
+        * Section Toggles
+        * Search and Results
+*   ** Design Changes **
+    * question look and feel
+    * moblie header
+    * desktop to mobile Navs
 *   **Style-guide Documentation**
 *   In-Style Documentation using [KSS Documentation](https://github.com/kneath/kss)
 *   Style guide built on [**sc5-styleguide**](https://github.com/SC5/sc5-styleguide#with-grunt)
@@ -215,3 +227,21 @@ In the main style sheet there are some exposed variables to alter the skin of th
 
 ## Shame File
 There is always work that has be done with some corners cut or you work that because it's cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file.  There is a shame file for the main branch of the framework and a second shame file that can be found in the corresponding non-core folder for the project. 
+
+
+## JavaScript Templating [__ Project Origami __ ](ORIGAMI.html)
+### Changing of Mobile Stack.  [Vue.js](https://vuejs.org/)
+### Component Library
+The intent is to have two ways you can use the style-guide. You build your own DOM and alter as you need, or you can Build your product on Vue and use component rendering instead.  
+* Coponents will be tag based.
+* Names will be `<acc-uiName></acc-uiName>`
+* Default functionality will be built in
+* Event handling will be built in
+* Better standards for UX
+
+### Boiler Plate Mobile Project
+* encompass best practices and javascript libraries
+* notification lock
+* dynamic nav construction
+* email reciept
+

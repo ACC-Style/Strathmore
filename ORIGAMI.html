@@ -1055,261 +1055,114 @@ body .markdown-body
 .codehilite .vi{color:teal}
 .codehilite .il{color:#009999}
 .codehilite .gc{color:#999;background-color:#EAF2F5}
-</style><title>README</title></head><body><article class="markdown-body"><h1 id="strathmore">Strathmore<a class="headerlink" href="#strathmore" title="Permanent link"></a></h1>
-<h4 id="ver-01-built-on-foundation-643-font-awesome-pro">Ver 0.1 | Built on Foundation 6.4.3 &amp; Font Awesome Pro<a class="headerlink" href="#ver-01-built-on-foundation-643-font-awesome-pro" title="Permanent link"></a></h4>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link"></a></h2>
+</style><title>ORIGAMI</title></head><body><article class="markdown-body"><h1 id="project-origami">Project Origami<a class="headerlink" href="#project-origami" title="Permanent link"></a></h1>
+<p><a href="///C://Users/mwatier/REPOS/Strathmore/README.HTML">Sub Project of Strathmore</a></p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link"></a></h2>
+<p>The construction of a boiler plate mobile project that can be used as a standard for building future products. </p>
+<hr />
+<h3 id="intent">Intent<a class="headerlink" href="#intent" title="Permanent link"></a></h3>
 <ul>
-<li><a href="#acc-application-framework">ACC Application Framework</a></li>
-<li><a href="#intent-of-the-upgrade">Intent of the Upgrade</a></li>
-<li><a href="#utility-classes">Utility Classes</a></li>
-<li><a href="#reserved-names">Reserved Names</a></li>
-<li><a href="#folder-structure">Folder Structure</a></li>
-<li><a href="#expansion">Expansion</a></li>
-<li><a href="#product-color-and-branding">Product Color and Branding</a></li>
-<li><a href="#shame-file">Shame File</a></li>
-<li><a href="#javascript-templating">JavaScript Templating</a><ul>
-<li><a href="///C://Users/mwatier/REPOS/Strathmore/ORIGAMI.html"><strong> Project Origami </strong> </a></li>
+<li>Standardizing interaction models of micro transactions<ul>
+<li>removing rework of common DOM</li>
+<li>establishing a model of event interactions</li>
+<li>Improve UX with a global platform to standardize interaction</li>
 </ul>
 </li>
+<li>explore dynamic construction</li>
+<li>potential of remote updating</li>
+<li>focus or rapid to market</li>
+<li>reducing developer need to understand HTML and focus on Javascript and Data</li>
+<li>establishing a more plug and play model to deal with UI and DOM</li>
 </ul>
-<h2 id="acc-application-framework">ACC Application Framework<a class="headerlink" href="#acc-application-framework" title="Permanent link"></a></h2>
-<h3 id="mobile-first-bem-utility-class-styling">Mobile First, BEM, Utility Class Styling<a class="headerlink" href="#mobile-first-bem-utility-class-styling" title="Permanent link"></a></h3>
-<p>This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project. 
-<strong>Things to note this library is built with Sass and to enjoy it&rsquo;s fullest power and flexibility it must be compiled.</strong></p>
-<h2 id="intent-of-the-upgrade">Intent of the Upgrade<a class="headerlink" href="#intent-of-the-upgrade" title="Permanent link"></a></h2>
-<h3 id="re-factor-of-the-bristol-framework">Re-factor of the Bristol framework.<a class="headerlink" href="#re-factor-of-the-bristol-framework" title="Permanent link"></a></h3>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link"></a></h3>
 <ul>
-<li><strong>Foundation 6.4.3</strong></li>
-<li>removal of redundant UI that is native in foundation.<ul>
-<li>Nav</li>
-<li>list item</li>
-<li>Card</li>
-<li>Typography Overrides</li>
-<li>Most of Table Override</li>
-</ul>
-</li>
-<li><strong>Component Simplification, Design Changes, Depreciation</strong><ul>
-<li>Clean up of fonts to multi and maverick</li>
-<li>remove layout SCCS and components</li>
-<li>Removal of states coloring replaced by utility styling.</li>
-<li><strong>Refactoring SCSS to be More BEM and Dry</strong> <a href="https://css-tricks.com/bem-101/"><strong>BEM</strong></a> / <a href="https://alistapart.com/article/dry-ing-out-your-sass-mixins"><strong>DRY</strong></a><ul>
-<li>simplification of required holder in questions.</li>
-<li>reduction of nesting specification on styling.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong> UX Definition </strong><ul>
-<li>Best Practices and Javascript Templating for<ul>
-<li>Mobile Header</li>
+<li>Use of <a href="https://vuejs.org/">Vue.js</a><ul>
+<li>Standardize component templates common UI<ul>
+<li>Inputs</li>
 <li>Pagination</li>
-<li>Switches</li>
-<li>Section Toggles</li>
-<li>Search and Results</li>
+<li>Header</li>
+<li>Footer</li>
+<li>Search</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong> Design Changes </strong><ul>
-<li>question look and feel</li>
-<li>moblie header</li>
-<li>desktop to mobile Navs</li>
+<li>Encompass Standard functions of Applications<ul>
+<li>Email Reporting</li>
+<li>GA Event Tracking</li>
+<li>Navigation</li>
+<li>Boilerplate Pages<ul>
+<li>Login in</li>
+<li>About</li>
+<li>Disclaimer</li>
 </ul>
 </li>
-<li><strong>Style-guide Documentation</strong></li>
-<li>In-Style Documentation using <a href="https://github.com/kneath/kss">KSS Documentation</a></li>
-<li>Style guide built on <a href="https://github.com/SC5/sc5-styleguide#with-grunt"><strong>sc5-styleguide</strong></a></li>
-<li>Upgrade Styles to Use <a href="https://fontawesome.com/"><strong>Font Awesome Pro</strong></a><ul>
-<li>Re factor how the fa-holder works</li>
-<li>Reduction of fa-holder to reduce style duplication</li>
 </ul>
 </li>
-<li><strong>Utility Classes</strong></li>
-<li>including utilities single class constructors <a href="#utility-classes"><strong>See Utility Classes</strong></a><ul>
-<li>Based on Tachyon CSS for short human styling [<a href="https://tachyons.io/">https://tachyons.io/</a>]</li>
-<li>addition of texture-x utilities</li>
-<li>font sizing and font family utility.</li>
+<li>All code should be version controlled<ul>
+<li>All common UI should be reusable</li>
+<li>All common Pages should be reusable</li>
 </ul>
 </li>
-<li>Use of BEM for UI components</li>
-<li>base class name is used through all sub components.</li>
-<li>aiming to reduce code size to under a MB.</li>
 </ul>
-<h2 id="utility-classes">Utility Classes<a class="headerlink" href="#utility-classes" title="Permanent link"></a></h2>
-<h3 id="naming-convention">Naming Convention<a class="headerlink" href="#naming-convention" title="Permanent link"></a></h3>
-<p><em>[style short hand]-[direction]</em>[value+unit]-[break point]_</p>
-<h3 id="definition-of-style-short-hand">Definition of Style Short Hand<a class="headerlink" href="#definition-of-style-short-hand" title="Permanent link"></a></h3>
-<ul>
-<li><strong>Padding:</strong> P-</li>
-<li><strong>Border:</strong> B-</li>
-<li><strong>Margin:</strong> M-</li>
-<li><strong>Border-radius:</strong> Br-</li>
-<li><strong>Border-width:</strong> Bw-</li>
-<li><strong>Border-color:</strong> Bc-</li>
-<li><strong>Background-image:</strong> Texture-, BACKi-</li>
-<li><strong>Background-color:</strong> BACKc-</li>
-<li><strong>Font-weight:</strong> Fw-</li>
-<li><strong>Color:</strong> Fc-</li>
-<li><strong>Font-family:</strong> F-</li>
-<li><strong>Line-height:</strong> Lh-</li>
-<li><strong>Flex:</strong> Flex-</li>
-<li><strong>Display:</strong> Display-</li>
-<li><strong>Float:</strong> use foundation pull-right, pull-left</li>
-<li><strong>Drop-Shadow:</strong> LayerUp-, LayerDown-</li>
-</ul>
-<h3 id="directions">Directions<a class="headerlink" href="#directions" title="Permanent link"></a></h3>
-<ul>
-<li><strong>all:</strong> no direction modifier</li>
-<li><strong>top:</strong> t-</li>
-<li><strong>bottom:</strong> b-</li>
-<li><strong>right:</strong> r-</li>
-<li><strong>left:</strong> l-</li>
-</ul>
-<h3 id="values">Values<a class="headerlink" href="#values" title="Permanent link"></a></h3>
-<ul>
-<li><strong>n4:</strong> font: -4 on modular scale, margin: -2x, padding: Not Used, line-height: Not Used</li>
-<li><strong>n4:</strong> font: -4 on modular scale, margin: -1x, padding: Not Used, line-height: Not Used</li>
-<li><strong>n3:</strong> font: -3 on modular scale, margin: -.5x, padding: Not Used, line-height: Not Used</li>
-<li><strong>n2:</strong> font: -2 on modular scale, margin: -.25x, padding: Not Used, line-height: Not Used</li>
-<li><strong>n1:</strong> font: -1 on modular scale, margin: -1px, padding: Not Used, line-height: Not Used</li>
-<li><strong>0:</strong> font: 0 on modular scale, margin:1px, padding: 1px, line-height: 0</li>
-<li><strong>1:</strong> font: 1 on modular scale, margin:.25x, padding: .25x, line-height: 1</li>
-<li><strong>2:</strong> font: 2 on modular scale, margin:.5x, padding: .5x, line-height: 1.2</li>
-<li><strong>3:</strong> font: 3 on modular scale, margin:1x, padding: 1x, line-height: 1.4</li>
-<li><strong>4:</strong> font: 4 on modular scale, margin:2x, padding: 2x, line-height: 1.7</li>
-</ul>
-<h2 id="reserved-names">Reserved Names<a class="headerlink" href="#reserved-names" title="Permanent link"></a></h2>
-<h3 id="reserved-words-and-modifier-descriptors">Reserved Words and Modifier Descriptors<a class="headerlink" href="#reserved-words-and-modifier-descriptors" title="Permanent link"></a></h3>
-<p>These words should be used to describe states and generic elements of the UI and should be used instead of some variation or alternate name.</p>
-<h3 id="states">States<a class="headerlink" href="#states" title="Permanent link"></a></h3>
-<ul>
-<li>show</li>
-<li>hide</li>
-<li>active</li>
-<li>selected</li>
-<li>focus</li>
-<li>success</li>
-<li>warning</li>
-<li>alert (Depreciate the use of ‘error’ for the native descriptor from foundation)</li>
-<li>primary</li>
-<li>secondary</li>
-<li>reverse</li>
-</ul>
-<h3 id="name-modifier">Name Modifier<a class="headerlink" href="#name-modifier" title="Permanent link"></a></h3>
-<ul>
-<li><strong> -container </strong> or UI Name with no modifier  (Use instead of holder when items are UI based)</li>
-<li><strong> -group </strong> or UI Name with no modifier (Use instead of list, holder, collection when items or repeatable Content)</li>
-<li><strong> -item </strong> or UI Name with no modifier  (generic child of container or group)</li>
-<li><strong> -separator </strong> (a visual treatment or break between items within a container or group )</li>
-</ul>
-<h2 id="colors">Colors<a class="headerlink" href="#colors" title="Permanent link"></a></h2>
-<ul>
-<li>Scrub Colors<ul>
-<li>-accBlue</li>
-<li>-productColor, -teal</li>
-<li>-teal</li>
-<li>-blue</li>
-<li>-softGreen</li>
-<li>-leafGreen</li>
-<li>-purple</li>
-<li>-magenta</li>
-</ul>
-</li>
-<li>State Colors<ul>
-<li>-success, -green</li>
-<li>-warning, -orange</li>
-<li>-alert, -red</li>
-<li>-primary, -productColor</li>
-</ul>
-</li>
-<li>Grey<ul>
-<li>-10,</li>
-<li>-20,</li>
-<li>-30,</li>
-<li>-40,</li>
-<li>-50,</li>
-<li>-60,</li>
-<li>-70,</li>
-<li>-80,</li>
-<li>-90</li>
-</ul>
-</li>
-<li>Black</li>
-<li>White</li>
-</ul>
-<h3 id="modifiers">Modifiers<a class="headerlink" href="#modifiers" title="Permanent link"></a></h3>
-<ul>
-<li><strong>-soft:</strong> Color made pale and almost white. </li>
-<li><strong>-light:</strong> Color mixed with white</li>
-<li><strong>-dark:</strong> Color mixed with black </li>
-<li><strong>-alpha30:</strong> Color with alpha set to 30</li>
-<li><strong>-alpha50:</strong> Color with alpha set to 50</li>
-<li><strong>-alpha70:</strong> Color with alpha set to 70</li>
-</ul>
-<h2 id="texture-names">Texture Names<a class="headerlink" href="#texture-names" title="Permanent link"></a></h2>
-<p>All textures should be slightly transparent so solid color backgrounds added to the element will also color the texture.</p>
-<ul>
-<li>-carbonFiber</li>
-<li>-offWhite </li>
-<li>-softPaper</li>
-<li>-paper</li>
-<li>-dirtyPaper</li>
-<li>-inkLines</li>
-<li>-inkCrossHatched</li>
-</ul>
-<h3 id="special-textures">Special Textures<a class="headerlink" href="#special-textures" title="Permanent link"></a></h3>
-<p>PNG shadows for the containers</p>
-<ul>
-<li>-insetShadow-v</li>
-<li>-insetShadow-h</li>
-<li>-insetShadow-t</li>
-<li>-insetShadow-b</li>
-<li>-insetShadow-l</li>
-<li>-insetShadow-r</li>
-</ul>
-<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
-<h3 id="structure-and-file-naming">Structure and File Naming<a class="headerlink" href="#structure-and-file-naming" title="Permanent link"></a></h3>
-<p>To reduce improper cascades in CSS the Sass includes and folder structure has been broken into these sections.  Labels like &ldquo;.required&rdquo; and &ldquo;.override&rdquo; are included in the file naming to help with readability and transparency of the code. </p>
+<h2 id="project-phases">Project Phases<a class="headerlink" href="#project-phases" title="Permanent link"></a></h2>
+<h3 id="1st-phase-login">1st Phase Login<a class="headerlink" href="#1st-phase-login" title="Permanent link"></a></h3>
 <ol>
-<li><strong>base</strong> - any file that deals with variables, fonts and basic typography (raw tags).</li>
-<li><strong>helpers</strong> or &lsquo;required.scss &lsquo; - Mostly mixins but some files that have &ldquo;required&rdquo; in the name are needed for other files to functions. any file that have been named with &ldquo;trump&rdquo; will</li>
-<li><strong>components</strong> - any combination of DOM elements that make up a widget, nav, or collection of tags.</li>
-<li><strong>vendor</strong> - Any included style from a JavaScript or Framework that needs an override to visually match with ACC standards. All files in the vendor area should be postfixed with .override. IE to override foundation&rsquo;s button.scss you would place a &lsquo;vendor/foundation/button.override.scss&rsquo; and make your changes in the new file. </li>
-<li><strong>structure</strong> - Non-Styling pure page layout code.  Balanced Columns, Sidebars, Page Spacing etc&hellip;</li>
-<li><strong>trumps</strong> or &lsquo;.trump.scss&rsquo; - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.  </li>
-<li><strong>shame</strong> or &lsquo;shame.scss&rsquo; - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.</li>
-<li><strong>non-core</strong> Overrides see <a href="#expansion">Expansion</a></li>
-<li><strong>views</strong> - Overrides of components when in specific cases of the page, or theme for a needed project. IE. a sidebar box on the home page for project &ldquo;heart&rdquo; would have a file path of <code>non-core/heart/_sidebarbox.override.home.scss</code></li>
+<li>Create a standard Client Login Page Based off of ACC Connect that brings a user to a Hello World Page.</li>
+<li>Establish Login UX/UI-BP( Best Practices )</li>
+<li>Logged in User Sees Hello World</li>
+<li>De-construct UI into reusable components with VUE component structure. <ul>
+<li>Question UI with Text Input</li>
+<li>Switch UI</li>
+<li>Password Input UX/UI-BP </li>
+</ul>
+</li>
+<li>Establish and Check in Library of UI and Login Pages</li>
+<li>QA Login Functions internally. </li>
+<li>Discard and Custom Code</li>
 </ol>
-<h3 id="cascade">Cascade<a class="headerlink" href="#cascade" title="Permanent link"></a></h3>
-<p>As you travel down the structure of the main document the included SCSS files and their classes should increase their specificity. </p>
-<h2 id="expansion">Expansion<a class="headerlink" href="#expansion" title="Permanent link"></a></h2>
-<h2 id="overriding-styles-for-your-project-needs">Overriding Styles for your Project Needs<a class="headerlink" href="#overriding-styles-for-your-project-needs" title="Permanent link"></a></h2>
-<p>All alteration to the code are to be done through &ldquo;non-core&rdquo; inclusion of styles. Please use the below folder structure to allow for review and check-ins of project code. </p>
-<h3 id="path-and-file-naming">Path and File Naming:<a class="headerlink" href="#path-and-file-naming" title="Permanent link"></a></h3>
-<h4 id="new-ui">New UI<a class="headerlink" href="#new-ui" title="Permanent link"></a></h4>
-<p>&lsquo;_non-core/<strong>Project Code</strong>/<strong>New UI</strong>.scss&rsquo;</p>
-<h4 id="override-from-framework">Override from framework<a class="headerlink" href="#override-from-framework" title="Permanent link"></a></h4>
-<p>&lsquo;_non-core/<strong>Project Code</strong>/<strong>element name</strong>.override.scss&rsquo; </p>
-<h4 id="override-from-framework-while-in-a-specific-view">Override from framework while in  a specific view<a class="headerlink" href="#override-from-framework-while-in-a-specific-view" title="Permanent link"></a></h4>
-<p>&lsquo;_non-core/<strong>Project Code</strong>/<strong>element name</strong>.override.<strong>views name</strong>.scss&rsquo;</p>
-<h2 id="product-color-and-branding">Product Color and Branding<a class="headerlink" href="#product-color-and-branding" title="Permanent link"></a></h2>
-<p>In the main style sheet there are some exposed variables to alter the skin of the style.  One of th most cosmetic is product color and branding. The variable &ldquo;$product-brand-color&rdquo; takes a hex color and will change elements of the ui to this color away from the ACC blues. &ldquo;$brand-level&rdquo; throttles the amount of color.   0 min-value  will not include and product color and 3 the max will bring in the most. </p>
-<h2 id="shame-file">Shame File<a class="headerlink" href="#shame-file" title="Permanent link"></a></h2>
-<p>There is always work that has be done with some corners cut or you work that because it&rsquo;s cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file.  There is a shame file for the main branch of the framework and a second shame file that can be found in the corresponding non-core folder for the project. </p>
-<h2 id="javascript-templating-project-origami">JavaScript Templating <a href="///C://Users/mwatier/REPOS/Strathmore/ORIGAMI.html"><strong> Project Origami </strong> </a><a class="headerlink" href="#javascript-templating-project-origami" title="Permanent link"></a></h2>
-<h3 id="changing-of-mobile-stack-vuejs">Changing of Mobile Stack.  <a href="https://vuejs.org/">Vue.js</a><a class="headerlink" href="#changing-of-mobile-stack-vuejs" title="Permanent link"></a></h3>
-<h3 id="component-library">Component Library<a class="headerlink" href="#component-library" title="Permanent link"></a></h3>
-<p>The intent is to have two ways you can use the style-guide. You build your own DOM and alter as you need, or you can Build your product on Vue and use component rendering instead.<br />
-<em> Coponents will be tag based.
-</em> Names will be <code>&lt;acc-uiName&gt;&lt;/acc-uiName&gt;</code>
-<em> Default functionality will be built in
-</em> Event handling will be built in
-* Better standards for UX</p>
-<h3 id="boiler-plate-mobile-project">Boiler Plate Mobile Project<a class="headerlink" href="#boiler-plate-mobile-project" title="Permanent link"></a></h3>
+<h3 id="2nd-phase-cstool">2nd Phase CSTool<a class="headerlink" href="#2nd-phase-cstool" title="Permanent link"></a></h3>
+<ol>
+<li>Introduce API Ajax Calls Make a standard repeatable function</li>
+<li>Establish Search UX/UI-BP( Best Practices )</li>
+<li>Establish Filter of Lists UX/UI-BP</li>
+<li>Establish Sorting of List UX/UI-BP</li>
+<li>Establish Pagination UX/UI-BP</li>
+</ol>
+<h3 id="3rd-phase-science-and-qualities-greatest-hits">3rd Phase Science and Qualities Greatest Hits<a class="headerlink" href="#3rd-phase-science-and-qualities-greatest-hits" title="Permanent link"></a></h3>
+<ol>
+<li>Notification Locking</li>
+<li>Boiler Plate Pages<ul>
+<li>Content Holder Pages like About, Credits, Disclaimer, Sponsors, News Updates</li>
+</ul>
+</li>
+<li>Event Tracking</li>
+<li>Page Navigation, Application Switching ( <strong>New Mobile Header Design</strong> )</li>
+<li>Email Reporting </li>
+</ol>
+<h3 id="4th-phase-dynamics-nice-to-have">4th Phase Dynamics (<em>nice to have</em>)<a class="headerlink" href="#4th-phase-dynamics-nice-to-have" title="Permanent link"></a></h3>
+<ol>
+<li>Dynamic Construction of Inputs, Algorithm, Results</li>
+<li>Remote Updating</li>
+</ol>
+<hr />
+<h2 id="potential-products">Potential Products<a class="headerlink" href="#potential-products" title="Permanent link"></a></h2>
+<h3 id="1st-phase-revisited-universal-login">1st Phase Revisited (<em>Universal Login</em>)<a class="headerlink" href="#1st-phase-revisited-universal-login" title="Permanent link"></a></h3>
+<ol>
+<li>Brute Force Lock</li>
+<li>Dues Needed Page</li>
+<li>Registration Flow</li>
+<li>Redirect and Return</li>
+<li>Change Password</li>
+<li>Security Question</li>
+<li>Product Landing Page</li>
+<li>Forgot Password</li>
+<li>Forgot User Name</li>
+</ol>
+<h3 id="assessments-management-qii">Assessments Management QII<a class="headerlink" href="#assessments-management-qii" title="Permanent link"></a></h3>
 <ul>
-<li>encompass best practices and javascript libraries</li>
-<li>notification lock</li>
-<li>dynamic nav construction</li>
-<li>email reciept</li>
-</ul></article></body></html>
+<li>Restructuring UI</li>
+<li>Establish better UX</li>
+</ul>
+<h3 id="cstool">CSTool<a class="headerlink" href="#cstool" title="Permanent link"></a></h3>
+<h3 id="future-mobile-application">Future Mobile Application<a class="headerlink" href="#future-mobile-application" title="Permanent link"></a></h3></article></body></html>
