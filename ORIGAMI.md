@@ -1,5 +1,5 @@
 #Project Origami
-[Sub Project of Strathmore](README.HTML)
+[Sub Project of Strathmore](README.md)
 
 ##Summary
 
@@ -15,7 +15,7 @@ The construction of a boiler plate mobile project that can be used as a standard
 * explore dynamic construction
 * potential of remote updating
 * focus or rapid to market
-* reducing developer need to understand HTML and focus on Javascript and Data
+* reducing developer need to understand HTML and focus on JavaScript and Data
 * establishing a more plug and play model to deal with UI and DOM
 
 ### Requirements

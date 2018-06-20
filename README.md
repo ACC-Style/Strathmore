@@ -11,7 +11,7 @@
 * [Product Color and Branding](#product-color-and-branding)
 * [Shame File](#shame-file)
 * [JavaScript Templating](#javascript-templating)
-    * [__ Project Origami --> __ ](ORIGAMI.html)
+    * [ __ Project Origami __ ](ORIGAMI.md)
 
 ## ACC Application Framework
 ### Mobile First, BEM, Utility Class Styling
