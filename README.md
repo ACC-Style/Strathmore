@@ -223,25 +223,27 @@ All alteration to the code are to be done through "non-core" inclusion of styles
 '\_non-core/__Project Code__/__element name__.override.__views name__.scss'
 
 ## Product Color and Branding
-In the main style sheet there are some exposed variables to alter the skin of the style.  One of th most cosmetic is product color and branding. The variable "$product-brand-color" takes a hex color and will change elements of the ui to this color away from the ACC blues. "$brand-level" throttles the amount of color.   0 min-value  will not include and product color and 3 the max will bring in the most. 
+In the main style sheet there are some exposed variables to alter the skin of the style.  One of th most cosmetic is product color and branding. The variable "$product-brand-color" takes a hex color and will change elements of the UI to this color away from the ACC blues. "$brand-level" throttles the amount of color.   0 min-value  will not include and product color and 3 the max will bring in the most. 
 
 ## Shame File
 There is always work that has be done with some corners cut or you work that because it's cross nature between two UI elements there is no good home for it in the current structure or files.  All of this code is collected in the shame.scss file.  There is a shame file for the main branch of the framework and a second shame file that can be found in the corresponding non-core folder for the project. 
 
 
-## JavaScript Templating [__ Project Origami __ ](ORIGAMI.html)
+## JavaScript Templates [ __ Project Origami __ ](ORIGAMI.md)
 ### Changing of Mobile Stack.  [Vue.js](https://vuejs.org/)
 ### Component Library
 The intent is to have two ways you can use the style-guide. You build your own DOM and alter as you need, or you can Build your product on Vue and use component rendering instead.  
-* Coponents will be tag based.
+* Components will be tag based.
 * Names will be `<acc-uiName></acc-uiName>`
 * Default functionality will be built in
 * Event handling will be built in
 * Better standards for UX
 
 ### Boiler Plate Mobile Project
-* encompass best practices and javascript libraries
+* encompass best practices and JavaScripts libraries
 * notification lock
 * dynamic nav construction
-* email reciept
+* email receipt
+
+## Potential Projects
 

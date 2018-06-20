@@ -29,6 +29,7 @@
   "homepage": "https://github.com/ACC-Style/Strathmore#readme",
   "dependencies": {},
   "devDependencies": {
+    "@micahgodbolt/grunt-phantomcss": "^1.0.0",
     "autoprefixer": "^8.5.0",
     "babel": "^6.23.0",
     "babel-preset-env": "^1.6.1",
@@ -41,6 +42,7 @@
     "load-grunt-tasks": "^3.5.2",
     "npm": "^6.1.0",
     "pixrem": "^4.0.1",
-    "sass": "^1.6.1"
+    "sass": "^1.6.1",
+    "slimerjs": "^1.0.0"
   }
 }
