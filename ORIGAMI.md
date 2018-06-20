@@ -1,7 +1,7 @@
-#Project Origami
+# Project Origami
 [Sub Project of Strathmore](README.md)
 
-##Summary
+## Summary
 
 The construction of a boiler plate mobile project that can be used as a standard for building future products. 
 

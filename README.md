@@ -1,6 +1,6 @@
-
 # Strathmore
 #### Ver 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
+
 ## Table of Contents
 * [ACC Application Framework](#acc-application-framework)
 * [Intent of the Upgrade](#intent-of-the-upgrade)
