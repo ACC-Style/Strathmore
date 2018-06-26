@@ -1,7 +1,16 @@
 module.exports = function(grunt){
+var gulp = require('gulp'), styleguide = require('sc5-styleguide');  
 require("load-grunt-tasks")(grunt); // npm install --save-dev load-grunt-tasks
-  
 grunt.initConfig({
+  pkg: grunt.file.readJSON('package.json'),
+   connect: {
+    server: {
+      options: {
+        port: 8000,
+        base: 'dist/'
+      }
+    }
+  },
   'dart-sass': {
     target: {
       files: [{
@@ -11,6 +20,26 @@ grunt.initConfig({
         dest: 'assets/css/',
         ext: '.css'
       }] 
+    }
+  },
+  gulp: {
+    'styleguide-generate': function() {
+      var outputPath = 'dist/';
+      return gulp.src(['assets/scss/**/*.scss'])
+        .pipe(styleguide.generate({
+            title: 'Strathmore - Enteprise UI of the ACC',
+            server: false,
+            rootPath: outputPath,
+            sideNav:true,
+            showReferenceNumbers:true,
+            overviewPath: 'README.md'
+          }))
+        .pipe(gulp.dest(outputPath));
+    },
+    'styleguide-applystyles': function() {
+      return gulp.src('assets/scss/**/*.scss')
+        .pipe(styleguide.applyStyles())
+        .pipe(gulp.dest('dist/css/*.css'));
     }
   },
   phantomcss: {
@@ -49,6 +78,6 @@ grunt.initConfig({
       },
 });
 grunt.registerTask('default', [
-    'dart-sass'
+    'connect','dart-sass','gulp:styleguide-generate', 'gulp:styleguide-applystyles'
     ]);
 }

@@ -1,5 +1,5 @@
 # Strathmore
-#### Ver 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
+#### Version 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
 
 ## Table of Contents
 * [ACC Application Framework](#acc-application-framework)
@@ -10,11 +10,11 @@
 * [Expansion](#expansion)
 * [Product Color and Branding](#product-color-and-branding)
 * [Shame File](#shame-file)
-* [JavaScript Templating](#javascript-templating)
+* [JavaScript Template](#javascript-templating)
     * [ __ Project Origami __ ](ORIGAMI.md)
 
 ## ACC Application Framework
-### Mobile First, BEM, Utility Class Styling
+### Enterprise UI for Mobile and Desktop Applications
 This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project. 
 **Things to note this library is built with Sass and to enjoy it's fullest power and flexibility it must be compiled.**
 
@@ -35,7 +35,7 @@ This is a library of modular styles extending the popular framework of Zurb Foun
         *   simplification of required holder in questions.
         *   reduction of nesting specification on styling.
 *   ** UX Definition **
-    * Best Practices and Javascript Templating for
+    * Best Practices and JavaScript Template for
         * Mobile Header
         * Pagination
         * Switches
@@ -43,8 +43,8 @@ This is a library of modular styles extending the popular framework of Zurb Foun
         * Search and Results
 *   ** Design Changes **
     * question look and feel
-    * moblie header
-    * desktop to mobile Navs
+    * mobile header
+    * desktop to mobile navigation
 *   **Style-guide Documentation**
 *   In-Style Documentation using [KSS Documentation](https://github.com/kneath/kss)
 *   Style guide built on [**sc5-styleguide**](https://github.com/SC5/sc5-styleguide#with-grunt)
