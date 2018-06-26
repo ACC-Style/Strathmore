@@ -1,10 +1,14 @@
-@charset "UTF-8";
-/* No styleguide reference. */
-.templateDocumentation .parent, .templateDocumentation .child {
-  padding: 10px;
-  display: block;
-}
+/*
+ Templates
 
+
+This is how you define a container 
+
+ Styleguide 99.0
+*/
+/* No styleguide reference. */
+
+.templateDocumentation{ .parent, .child{ padding:10px; display: block; } }
 /*
  Container  Template
 
@@ -19,11 +23,10 @@ This is how you define a container
    <sg-wrapper-content/>
  </div>
 
- Styleguide 99.0
+ Styleguide 99.1
 */
-.parent {
-  background-color: red;
-}
+
+.parent{background-color:red;}
 
 /*
  Child Template
@@ -38,11 +41,9 @@ This is how you define a container
    <sg-wrapper-content/>
  </div>
 
- Styleguide 99.1
+ Styleguide 99.2
 */
-.child {
-  background-color: blue;
-}
+.child{background-color:blue;}
 
 /*
  Item With Modifiers Template
@@ -63,14 +64,14 @@ default		- Default Design
    <sg-wrapper-content/>
  </ul>
 
- Styleguide 99.2
+ Styleguide 99.3
 */
-li {
-  background-color: yellow;
+
+li{
+background-color: yellow;
+	&:hover{background-color: lightblue;}
+	&.error{background-color: red;}
 }
-li:hover {
-  background-color: lightblue;
-}
-li.error {
-  background-color: red;
-}
+
+
+
