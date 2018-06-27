@@ -2,16 +2,16 @@
 <html lang="en" ng-app="sgApp" route-css-class>
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/strathmore/assets/img/favicon.ico">
+  <link rel="icon" href="/Strathmore/assets/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     var _styleguideConfig = {"title":"Strathmore - Enteprise UI of the ACC","disableEncapsulation":false,"disableHtml5Mode":true,"sideNav":true,"showReferenceNumbers":true,"showMarkupSection":false,"hideSubsectionsOnMainSection":false,"additionalNgDependencies":false};
     (function() {
       'use strict';
       var userStyleFiles = [
-          '/strathmore/styleguide.css',
-          '/strathmore/styleguide_pseudo_styles.css',
-          '/strathmore/styleguide_helper_elements.css'
+          '/Strathmore/styleguide.css',
+          '/Strathmore/styleguide_pseudo_styles.css',
+          '/Strathmore/styleguide_helper_elements.css'
         ],
         head = document.querySelector('head');
 
@@ -26,8 +26,8 @@
         head.appendChild(link);
       }
 
-      addCssLink('/strathmore/styleguide_at_rules.css');
-      addCssLink('/strathmore/styleguide-app.css', {noReload: true});
+      addCssLink('/Strathmore/styleguide_at_rules.css');
+      addCssLink('/Strathmore/styleguide-app.css', {noReload: true});
 
       // Use Shadow DOM but fallback to global styles if shadow DOM is not supported
       if (typeof head.createShadowRoot !== 'function' || _styleguideConfig.disableEncapsulation) {
@@ -38,9 +38,9 @@
   </script>
   <script type="text/ng-template" id="userStyles.html">
     <style>
-      @import url('/strathmore/styleguide.css');
-      @import url('/strathmore/styleguide_pseudo_styles.css');
-      @import url('/strathmore/styleguide_helper_elements.css');
+      @import url('/Strathmore/styleguide.css');
+      @import url('/Strathmore/styleguide_pseudo_styles.css');
+      @import url('/Strathmore/styleguide_helper_elements.css');
     </style>
   </script>
   <title ng-bind-html="$root.pageTitle | unsafe">Strathmore - Enteprise UI of the ACC</title>
@@ -48,13 +48,13 @@
   <script type="text/javascript">
     var filesConfig = [];
   </script>
-  <base href="/strathmore/" />
+  <base href="/Strathmore/" />
 </head>
 <body class="sg">
   
   <div class="sg view-index" ui-view></div>
-  <script src="/strathmore/js/vendor.js"></script>
-  <script src="/strathmore/js/app.js"></script>
+  <script src="/Strathmore/js/vendor.js"></script>
+  <script src="/Strathmore/js/app.js"></script>
   
 </body>
 </html>

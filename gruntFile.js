@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     title: 'Strathmore - Enteprise UI of the ACC',
                     server: false,
                     rootPath: outputPath,
-                    appRoot:'/strathmore',
+                    appRoot:'/Strathmore',
                     sideNav: true,
                     showReferenceNumbers: true,
                     overviewPath: 'README.md'
