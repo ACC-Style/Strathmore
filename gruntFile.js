@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: 8000,
-                    base: 'docs/'
+                    base: ''
                 }
             }
         },
@@ -25,18 +25,19 @@ module.exports = function(grunt) {
         },
         gulp: {
             'styleguide-generate': function() {
-                var outputPath = 'docs/';
+                var outputPath = 'strathmore/';
                 return gulp.src(['assets/css/index.css']).pipe(styleguide.generate({
                     title: 'Strathmore - Enteprise UI of the ACC',
                     server: false,
                     rootPath: outputPath,
+                    appRoot:'/strathmore',
                     sideNav: true,
                     showReferenceNumbers: true,
                     overviewPath: 'README.md'
                 })).pipe(gulp.dest(outputPath));
             },
             'styleguide-applystyles': function() {
-                return gulp.src('assets/css/index.css').pipe(styleguide.applyStyles()).pipe(gulp.dest('docs'));
+                return gulp.src('assets/css/index.css').pipe(styleguide.applyStyles()).pipe(gulp.dest('strathmore'));
             }
         },
         phantomcss: {
@@ -50,11 +51,17 @@ module.exports = function(grunt) {
             }
         },
         copy: {
-            main: {
+            styleguide: {
                 expand: true,
                 src: ['assets/fonts/*', 'assets/css/**/*.css', 'assets/images/*'],
-                dest: 'docs/',
+                dest: 'strathmore/',
             },
+            docs:{
+                expand: true,
+                   cwd: 'strathmore',
+                    src: '**',
+                dest: 'docs/',
+            }
         },
         postcss: {
             options: {
