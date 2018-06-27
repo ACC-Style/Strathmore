@@ -1,4 +1,48 @@
 @charset "UTF-8";
+/*
+ Design Base
+
+ Strathmroe is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
+
+ Styleguide 0.0
+*/
+/*
+Basic HTML Elements
+
+ Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html. 
+
+ Styleguide 10.0
+*/
+/*
+Navigation Components
+
+Components are basic HTML patterns enhanced by either a class decorator or a container wrapper.
+
+ Styleguide 20.0
+*/
+/*
+ Question Block
+
+ ## Can I Use Markdown
+ Highly sturctured Combination of components to make a functional streamlined and consistent experiance when asking for information. 
+
+ Styleguide 30.0
+*/
+/*
+Containers
+
+ Structured containers to bring content and ui together.
+
+ Styleguide 40.0
+*/
+/*
+ Documentation Templates
+
+## This is not part of the style of Strathmore
+This is a collection of documentation types that can be used as templates when doecuemting the Styles of Strathmore.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
+
+ Styleguide 99.0
+*/
 /* No styleguide reference. */
 .templateDocumentation .parent, .templateDocumentation .child {
   padding: 10px;
@@ -19,7 +63,7 @@ This is how you define a container
    <sg-wrapper-content/>
  </div>
 
- Styleguide 99.0
+ Styleguide 99.1
 */
 .parent {
   background-color: red;
@@ -34,14 +78,29 @@ This is how you define a container
  <span class="child">child</span>
 
  sg-wrapper:
- <div class="parent">
+  <div  class="templateDocumentation"><div class="parent">
    <sg-wrapper-content/>
- </div>
+ </div> </div>
 
- Styleguide 99.1
+ Styleguide 99.2
 */
 .child {
   background-color: blue;
+}
+
+/*
+ Child Template Sub
+
+ This is how templates can stack inside of other templates
+ 
+ markup:
+ <span class="child sub">child</span>
+
+
+ Styleguide 99.2.1
+*/
+.child.sub {
+  background-color: green;
 }
 
 /*
@@ -52,25 +111,64 @@ Many Objects have modifiers like psudo classes and classes applied to make them 
 
 default		- Default Design
 :hover       - Subtle hover highlight.
-.error       - A highlight indicating you’ve already given a star.
+.alert       - A highlight indicating you’ve already given a star.
 
 
  markup:
  <li class="{$modifiers}">List Item</li>
 
  sg-wrapper:
- <ul>
+ <div  class="templateDocumentation"><ul>
    <sg-wrapper-content/>
- </ul>
+ </ul></div>
 
- Styleguide 99.2
+ Styleguide 99.3
 */
-li {
+.templateDocumentation li {
   background-color: yellow;
 }
-li:hover {
-  background-color: lightblue;
+.templateDocumentation li.warning {
+  background-color: orange;
 }
-li.error {
+.templateDocumentation li.alert {
   background-color: red;
+}
+
+/*
+ Item With Validation Tabel
+
+Many Objects have modifiers like psudo classes and classes applied to make them look different.
+
+| Validation 			| State		 		| Message												|  
+| ---- 					| ----- 			| --- 													|  
+| required 				| warning 			| Item Name is missing.               					 |  
+| all alph characters	| alert	 			| Only alpha characters are allowed.  					|  
+| length > 3 			| alert  			| Item Name must be more then 3 Characters 					|  
+| All Validations Met 	| success 			| valid Item Name 					|
+
+
+default		- Default Design
+.success       - Success State.
+.alert       - Alert State.
+.warning	- Warning State
+
+ markup:
+ <div class="message {$modifiers}"> Validation Message </div>
+
+ sg-wrapper:
+ <div  class="templateDocumentation"><sg-wrapper-content/></div>
+
+ Styleguide 99.4
+*/
+.templateDocumentation .message {
+  background-color: yellow;
+}
+.templateDocumentation .message.warning {
+  background-color: orange;
+}
+.templateDocumentation .message.alert {
+  background-color: red;
+}
+.templateDocumentation .message.success {
+  background-color: green;
 }.

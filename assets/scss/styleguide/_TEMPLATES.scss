@@ -1,8 +1,8 @@
 /*
- Templates
+ Documentation Templates
 
-
-This is how you define a container 
+## This is not part of the style of Strathmore
+This is a collection of documentation types that can be used as templates when doecuemting the Styles of Strathmore.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
 
  Styleguide 99.0
 */
@@ -37,9 +37,9 @@ This is how you define a container
  <span class="child">child</span>
 
  sg-wrapper:
- <div class="parent">
+  <div  class="templateDocumentation"><div class="parent">
    <sg-wrapper-content/>
- </div>
+ </div> </div>
 
  Styleguide 99.2
 */
@@ -52,10 +52,6 @@ This is how you define a container
  markup:
  <span class="child sub">child</span>
 
- sg-wrapper:
- <div class="parent">
-   <sg-wrapper-content/>
- </div>
 
  Styleguide 99.2.1
 */
@@ -68,25 +64,62 @@ Many Objects have modifiers like psudo classes and classes applied to make them 
 
 default		- Default Design
 :hover       - Subtle hover highlight.
-.error       - A highlight indicating you’ve already given a star.
+.alert       - A highlight indicating you’ve already given a star.
 
 
  markup:
  <li class="{$modifiers}">List Item</li>
 
  sg-wrapper:
- <ul>
+ <div  class="templateDocumentation"><ul>
    <sg-wrapper-content/>
- </ul>
+ </ul></div>
 
  Styleguide 99.3
 */
 
 li{
+.templateDocumentation &{	
 background-color: yellow;
-	&:hover{background-color: lightblue;}
-	&.error{background-color: red;}
+	&.warning{background-color: orange;}
+	&.alert{background-color: red;}
+}
 }
 
+
+/*
+ Item With Validation Tabel
+
+Many Objects have modifiers like psudo classes and classes applied to make them look different.
+
+| Validation 			| State		 		| Message												|  
+| ---- 					| ----- 			| --- 													|  
+| required 				| warning 			| Item Name is missing.               					 |  
+| all alph characters	| alert	 			| Only alpha characters are allowed.  					|  
+| length > 3 			| alert  			| Item Name must be more then 3 Characters 					|  
+| All Validations Met 	| success 			| valid Item Name 					|
+
+
+default		- Default Design
+.success       - Success State.
+.alert       - Alert State.
+.warning	- Warning State
+
+ markup:
+ <div class="message {$modifiers}"> Validation Message </div>
+
+ sg-wrapper:
+ <div  class="templateDocumentation"><sg-wrapper-content/></div>
+
+ Styleguide 99.4
+*/
+
+
+.templateDocumentation .message{	
+background-color: yellow;
+	&.warning{background-color: orange;}
+	&.alert{background-color: red;}
+	&.success{background-color: green;}
+}
 
 
