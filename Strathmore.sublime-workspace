@@ -391,7 +391,7 @@
 			"file": "gruntFile.js",
 			"settings":
 			{
-				"buffer_size": 3628,
+				"buffer_size": 3540,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -400,7 +400,26 @@
 			"file": "assets/scss/index.scss",
 			"settings":
 			{
-				"buffer_size": 756,
+				"buffer_size": 23,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/index.css",
+			"settings":
+			{
+				"buffer_size": 1158,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/styleguide/_TEMPLATES.scss",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -694,8 +713,6 @@
 		"/C/Users/mwatier/REPOS/Strathmore/assets/css",
 		"/C/Users/mwatier/REPOS/Strathmore/assets/css/diff",
 		"/C/Users/mwatier/REPOS/Strathmore/assets/scss",
-		"/C/Users/mwatier/REPOS/Strathmore/docs",
-		"/C/Users/mwatier/REPOS/Strathmore/docs/css",
 		"/C/Users/mwatier/REPOS/Strathmore/output"
 	],
 	"file_history":
@@ -831,7 +848,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -867,7 +884,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -876,15 +893,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3628,
+						"buffer_size": 3540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1524,
-								1524
+								910,
+								910
 							]
 						],
 						"settings":
@@ -895,10 +912,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 471.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -907,15 +924,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 756,
+						"buffer_size": 23,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								18,
+								18
 							]
 						],
 						"settings":
@@ -924,7 +941,66 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/css/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1530040711.95,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/styleguide/_TEMPLATES.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1006,
+								1006
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"markdonw_live_preview_last_run": 1530040614.28,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

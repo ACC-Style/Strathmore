@@ -44,7 +44,22 @@ This is how you define a container
  Styleguide 99.2
 */
 .child{background-color:blue;}
+/*
+ Child Template Sub
 
+ This is how templates can stack inside of other templates
+ 
+ markup:
+ <span class="child sub">child</span>
+
+ sg-wrapper:
+ <div class="parent">
+   <sg-wrapper-content/>
+ </div>
+
+ Styleguide 99.2.1
+*/
+.child.sub{background-color:green;}
 /*
  Item With Modifiers Template
 
