@@ -2,10 +2,92 @@
 /*
  Design Base
 
+ ### Colors
+ ### Fonts
+ ### Papers
+ ### Ink Marks
+ ### Standard Icons
  Strathmroe is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
 
  Styleguide 0.0
 */
+/*
+
+ Fonts
+
+ Sharp clean fonts are the to reenforce a modern and trust worthy product. 
+
+ markup:
+<h2 class="group-divide-bottom font--name small-12">Muli<span class="sub-line">font-family: 'Muli', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;</span></h2>
+<div class="font row font-display">
+<div class="ms12 column medium-4 small-6 large-3 font--dropcase_2x">Mu</div>
+<div class="column large-9 medium-8 small-6 font--example">
+<h3>Display Fonts & Headers</h3>
+<div class="font--lowercase ms6">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--uppercase ms6">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--numbers ms6">0 1 2 3 4 5 6 7 8 9</div>
+<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+</div>
+</div>
+<h2 class="group-divide-bottom font--name small-12">Roboto Slab<span class="sub-line">font-family: 'Roboto Slab', 'Times New Roman', 'Lucida Bright', Georgia, serif; </span></h2>
+<div class="font row font-slab">
+<div class="ms12 column medium-4 small-6 large-3 font--dropcase_2x">Rb</div>
+<div class="column large-9 medium-8 small-6 font--example">
+<h3 class="font-bold-slab">Primary Navigation, Headers & Labels</h3>
+<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+</div>
+</div>
+
+ Styleguide 0.2
+*/
+.font {
+  color: #000;
+}
+.font .font--example {
+  background-image: url(http://basehold.it/i/24);
+}
+.font .font--name {
+  color: #000;
+}
+.font .font--dropcase_2x {
+  color: blue;
+}
+.font .font--lowercase, .font .font--uppercase, .font .font--numbers {
+  white-space: pre-wrap;
+  letter-spacing: -0.1em;
+}
+.font .font--lowercase {
+  text-transform: lowercase;
+}
+.font .font--uppercase {
+  text-transform: uppercase;
+}
+.font .ms12 {
+  font-size: 12em;
+}
+.font .ms6 {
+  font-size: 6em;
+}
+.font .ms4 {
+  font-size: 4em;
+}
+.font .ms2 {
+  font-size: 2em;
+}
+.font .ms1 {
+  font-size: 1em;
+}
+.font .ms {
+  font-size: 0.75em;
+}
+
 /*
 Basic HTML Elements
 

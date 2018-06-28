@@ -1,9 +1,0 @@
-Index: assets/css/index.css
-===================================================================
---- assets/css/index.css
-+++ assets/css/index.css
-@@ -1,2 +1,1 @@
--/*! strong comment */#HelloWorld{-ms-flex:1 0 auto;-webkit-box-flex:1;color:red;display:-webkit-box;display:-ms-flexbox;display:flex;flex:1 0 auto;padding:1rem}
--/*# sourceMappingURL=maps/index.css.map */
-\ No newline at end of file
-+/*! strong comment */#HelloWorld{-ms-flex:1 0 auto;-webkit-box-flex:1;color:red;display:-webkit-box;display:-ms-flexbox;display:flex;flex:1 0 auto;padding:1rem}

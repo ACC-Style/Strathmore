@@ -1,1 +1,0 @@
-{"version":3,"sources":["../index.css"],"names":[],"mappings":"AAAA,qBAAqB,AAErB,YAGE,kBAAe,AAAf,mBAAe,AAFf,UAAY,AACZ,oBAAc,AAAd,oBAAc,AAAd,aAAc,AACd,cAAe,AACf,YAAc,CACf","file":"../index.css","sourcesContent":["/*! strong comment */\n/* comment */\n#HelloWorld {\n  color: #f00;\n  display: flex;\n  flex: 1 0 auto;\n  padding: 1rem;\n}"]}
