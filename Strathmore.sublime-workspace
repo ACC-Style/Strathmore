@@ -391,134 +391,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "gruntFile.js",
-			"settings":
-			{
-				"buffer_size": 3765,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "'use strict';\nvar gulp = require('gulp');\nvar sass = require('gulp-dart-sass');\nvar postcss = require('gulp-postcss');\nvar autoprefixer = require('autoprefixer');\nvar pixrem = require('pixrem');\nvar cssnano = require('cssnano');\nvar sourcemaps = require('gulp-sourcemaps');\nvar styleguide = require('sc5-styleguide');\nvar browserSync = require('browser-sync').create();\n\n// Paths\n\nvar SCSS_PATH = \"assets/scss/\";\nvar CSS_PATH = \"assets/css/\";\nvar STYLEGUIDE_PATH = 'Strathmore';\n\n// Server\ngulp.task('browserSync', function() {\n\tconsole.log('Gulp: Magic there is a browser!');\n  browserSync.init({\n    server: {\n      baseDir: '/'\n    },\n  })\n})\n\n// Style Tesks\ngulp.task('style', function(){\n  console.log('Gulp Style Tasks');\n  console.log('Gulp: I am making this pretty.');\n  var plugins = [\n  \t\tpixrem(),\n        autoprefixer({browsers: ['last 2 version']})\n\n    ];\n   return gulp.src( SCSS_PATH  + '**/*.scss')\n   .pipe(sourcemaps.init())\n    .pipe(sass().on('error', sass.logError))\n    .pipe(postcss(plugins))\n    .pipe(sourcemaps.write('/maps'))\n    .pipe(gulp.dest( CSS_PATH ));\n});\n\n\n// Cleaning Tasks\ngulp.task('clean', function(){\n  console.log(' Gulp Cleaning Tasks');\n  console.log('Gulp: Hold on I am busy cleaning up this mess.  Why do you leave things just lying around.');\n});\n\n\n// Script Tasks\ngulp.task('script', function(){\n  console.log(' Gulp Script Tasks');\n  console.log('Gulp: This bit goes here and this attaches here. Now where is tab Omega?');\n});\n\n// Image Tasks\ngulp.task('images', function(){\n  console.log('Gulp Images Tasks');\n  console.log('Gulp: This is pretty what happens when I smash it!');\n});\n\n// Style Guide Tasks. Build and Copy files for the style guide in local  \ngulp.task('styleguide:generate', function() {\n\tconsole.log('Gulp Style Guide Tasks');\n\tconsole.log('Gulp: Build the Documentation!');\n  return gulp.src( CSS_PATH + 'index.css' )\n    .pipe(styleguide.generate({\n        title: 'Strathmore - Enteprise UI of the ACC',\n        server: false,\n        rootPath: STYLEGUIDE_PATH,\n        appRoot: STYLEGUIDE_PATH,\n        overviewPath: 'README.md',\n        sideNav: true,\n        showReferenceNumbers: false\n      }))\n    .pipe(gulp.dest(STYLEGUIDE_PATH));\n});\n\ngulp.task('styleguide:applystyles', function() {\n\tconsole.log('Gulp Style Guide Tasks');\n\tconsole.log('Gulp: Write it down and record it!');\n  return gulp.src( CSS_PATH + 'index.css' )\n    .pipe(styleguide.applyStyles())\n    .pipe(gulp.dest(STYLEGUIDE_PATH));\n});\n\n\n\n// Package Tasks.   Copy files to the Dist Folder and Copy Style guide to Docs to be set up. \ngulp.task('package', function(){\n  console.log('Gulp Package Tasks');\n  console.log('Gulp: I got a box and some bubble-wrap; now, where is the tape?');\n});\n\n// Watch Tasks\ngulp.task('watch', function(){\n  console.log('Gulp Watch Tasks');\n  console.log('Gulp: I will be watching you.... even when you sleep');\n});\n\n// Default\ngulp.task('default', function(){\n  console.log('Gulp Deafault Tasks');\n  console.log('Gulp: Bringin it all together');\n\n  gulp.watch('./sass/**/*.scss', ['sass']);\n});\n",
-			"file": "gulpfile.js",
-			"file_size": 3178,
-			"file_write_time": 131746684392992983,
-			"settings":
-			{
-				"buffer_size": 3068,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 1525,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/index.scss",
-			"settings":
-			{
-				"buffer_size": 217,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/styleguide/_containers.scss",
-			"settings":
-			{
-				"buffer_size": 92,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/styleguide/_navigation-components.scss",
-			"settings":
-			{
-				"buffer_size": 142,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/styleguide/_question-block.scss",
-			"settings":
-			{
-				"buffer_size": 197,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/styleguide/_design-base.scss",
-			"settings":
-			{
-				"buffer_size": 2854,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Sample Markdown Cheat Sheet\n=========================== \n\nThis is a sample markdown file to help you write Markdown quickly :)\n\nIf you use the fabulous [Sublime Text 2/3 editor][ST] along with the [Markdown Preview plugin][MarkdownPreview], open your ST2 Palette with `CMD+⇧+P` then choose `Markdown Preview in browser` to see the result in your browser.\n\n## Text basics\nthis is *italic* and this is **bold** .  another _italic_ and another __bold__\n\nthis is `important` text. and percentage signs : % and `%`\n\nThis is a paragraph with a footnote (builtin parser only). [^note-id]\n\nInsert `[ TOC ]` without spaces to generate a table of contents (builtin parsers only).\n\n## Indentation\n> Here is some indented text\n>> even more indented\n\n## Titles\n# Big title (h1)\n## Middle title (h2)\n### Smaller title (h3)\n#### and so on (hX)\n##### and so on (hX)\n###### and so on (hX)\n\n## Example lists (1)\n\n - bullets can be `-`, `+`, or `*`\n - bullet list 1\n - bullet list 2\n    - sub item 1\n    - sub item 2\n\n        with indented text inside\n\n - bullet list 3\n + bullet list 4\n * bullet list 5\n\n## Links\n\nThis is an [example inline link](http://lmgtfy.com/) and [another one with a title](http://lmgtfy.com/ \"Hello, world\").\n\nLinks can also be reference based : [reference 1][ref1] or [reference 2 with title][ref2].\n\nReferences are usually placed at the bottom of the document\n\n## Images\n\nA sample image :\n\n![revolunet logo](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\")\n\nAs links, images can also use references instead of inline links :\n\n![revolunet logo][revolunet-logo]\n\n\n## Code\n\nIt's quite easy to show code in markdown files.\n\nBackticks can be used to `highlight` some words.\n\nAlso, any indented block is considered a code block.  If `enable_highlight` is `true`, syntax highlighting will be included (for the builtin parser - the github parser does this automatically).\n\n    <script>\n        document.location = 'http://lmgtfy.com/?q=markdown+cheat+sheet';\n    </script>\n\n## Math\n\nWhen `enable_mathjax` is `true`, inline math can be included \\\\(\\frac{\\pi}{2}\\\\) $\\pi$\n\nAlternatively, math can be written on its own line:\n\n$$F(\\omega) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{\\infty} f(t) \\, e^{ - i \\omega t}dt$$\n\n\\\\[\\int_0^1 f(t) \\mathrm{d}t\\\\]\n\n\\\\[\\sum_j \\gamma_j^2/d_j\\\\]\n\n\n\n## GitHub Flavored Markdown\n\nIf you use the Github parser, you can use some of [Github Flavored Markdown][gfm] syntax :\n\n * User/Project@SHA: revolunet/sublimetext-markdown-preview@7da61badeda468b5019869d11000307e07e07401\n * User/Project#Issue: revolunet/sublimetext-markdown-preview#1\n * User : @revolunet\n\nSome Python code :\n\n```python\nimport random\n\nclass CardGame(object):\n    \"\"\" a sample python class \"\"\"\n    NB_CARDS = 32\n    def __init__(self, cards=5):\n        self.cards = random.sample(range(self.NB_CARDS), 5)\n        print 'ready to play'\n```\n\nSome Javascript code :\n\n```js\nvar config = {\n    duration: 5,\n    comment: 'WTF'\n}\n// callbacks beauty un action\nasync_call('/path/to/api', function(json) {\n    another_call(json, function(result2) {\n        another_another_call(result2, function(result3) {\n            another_another_another_call(result3, function(result4) {\n                alert('And if all went well, i got my result :)');\n            });\n        });\n    });\n})\n```\n\nThe Github Markdown also brings some [nice Emoji support][emoji] : :+1: :heart: :beer:\n\n[^note-id]: This is the text of the note. \n\n## Parsers and Extensions\n\nMarkdown Preview comes with **Python-Markdown** preloaded.\n\n### *Python-Markdown*\n\nThe [Python-Markdown Parser][] provides support for several extensions.\n\n[Python-Markdown Parser]: https://github.com/Python-Markdown/markdown\n\n#### Extra Extensions\n\n* `abbr` -- [Abbreviations][]\n* `attr_list` -- [Attribute Lists][]\n* `def_list` -- [Definition Lists][]\n* `fenced_code` -- [Fenced Code Blocks][]\n* `footnotes` -- [Footnotes][]\n* `tables` -- [Tables][]\n* `smart_strong` -- [Smart Strong][]\n\n[Abbreviations]: https://python-markdown.github.io/extensions/abbreviations\n[Attribute Lists]: https://python-markdown.github.io/extensions/attr_list\n[Definition Lists]: https://python-markdown.github.io/extensions/definition_lists\n[Fenced Code Blocks]: https://python-markdown.github.io/extensions/fenced_code_blocks\n[Footnotes]: https://python-markdown.github.io/extensions/footnotes\n[Tables]: https://python-markdown.github.io/extensions/tables\n[Smart Strong]: https://python-markdown.github.io/extensions/smart_strong\n\n\nYou can enable them all at once using the `extra` keyword.\n\n    extensions: [ 'extra' ]\n\nIf you want all the extras plus the `toc` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['extra', 'toc'],\n        ...\n    }\n\n\n#### Other Extensions\n\nThere are also some extensions that are not included in Markdown Extra\nbut come in the standard Python-Markdown library.\n\n* `code-hilite` -- [CodeHilite][]\n* `header-id` -- [HeaderId][]\n* `meta_data` -- [Meta-Data][]\n* `nl2br` -- [New Line to Break][]\n* `sane_lists` -- [Sane Lists][]\n* `smarty` -- [Smarty][]\n* `toc` -- [Table of Contents][]\n* `wikilinks` -- [WikiLinks][]\n\n[CodeHilite]:  https://python-markdown.github.io/extensions/code_hilite\n[HeaderId]:  https://python-markdown.github.io/extensions/header_id\n[Meta-Data]:  https://python-markdown.github.io/extensions/meta_data\n[New Line to Break]:  https://python-markdown.github.io/extensions/nl2br\n[Sane Lists]:  https://python-markdown.github.io/extensions/sane_lists\n[Table of Contents]:  https://python-markdown.github.io/extensions/toc\n[WikiLinks]:  https://python-markdown.github.io/extensions/wikilinks\n[Smarty]: hhttps://python-markdown.github.io/extensions/smarty\n\n#### 3rd Party Extensions\n\n*Python-Markdown* is designed to be extended.\n\nSome included ones are:\n\n* `delete` -- github style delte support via `~~word~~`\n* `githubemoji` --  github emoji support\n* `tasklist` -- github style tasklists\n* `magiclink` -- github style auto link conversion of http|ftp links\n* `headeranchor` -- github style header anchor links\n* `github` -- Adds the above extensions in one shot\n* `b64` -- convert and embed local images to base64.  Setup by adding this `b64(base_path=${BASE_PATH})`\n\nThere are also a number of others available:\n\nJust fork this repo and add your extensions inside the `.../Packages/Markdown Preview/markdown/extensions/` folder.\n\nCheck out the list of [3rd Party extensions](\nhttps://github.com/waylan/Python-Markdown/wiki/Third-Party-Extensions).\n\n\n#### Default Extensions\n\nThe default extensions are:\n\n* `footnotes` -- [Footnotes]\n* `toc` -- [Table of Contents]\n* `fenced_code` -- [Fenced Code Blocks] \n* `tables` -- [Tables]\n\nUse the `default` keyword, to select them all.\nIf you want all the defaults plus the `definition_lists` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['default', 'definition_lists'],\n        ...\n    }\n\n## Examples\n\n### Tables\n\nThe `tables` extension of the *Python-Markdown* parser is activated by default,\nbut is currently **not** available in *Markdown2*.\n\nThe syntax was adopted from the [php markdown project](http://michelf.ca/projects/php-markdown/extra/#table),\nand is also used in github flavoured markdown.\n\n| Year | Temperature (low) | Temperature (high) |  \n| ---- | ----------------- | -------------------|  \n| 1900 |               -10 |                 25 |  \n| 1910 |               -15 |                 30 |  \n| 1920 |               -10 |                 32 |  \n\n\n### Wiki Tables\n\nIf you are using *Markdown2* with the `wiki-tables` extra activated you should see a table below:\n\n|| *Year* || *Temperature (low)* || *Temperature (high)* ||  \n||   1900 ||                 -10 ||                   25 ||  \n||   1910 ||                 -15 ||                   30 ||  \n||   1920 ||                 -10 ||                   32 ||  \n\n\n### Definition Lists\n\nThis example requires *Python Markdown*'s `def_list` extension.\n\nApple\n:   Pomaceous fruit of plants of the genus Malus in \n    the family Rosaceae.\n\nOrange\n:   The fruit of an evergreen tree of the genus Citrus.\n\n\n## About\n\nThis plugin and this sample file is proudly brought to you by the [revolunet team][revolunet]\n\n [ref1]: http://revolunet.com\n [ref2]: http://revolunet.com \"rich web apps\"\n [MarkdownREF]: http://daringfireball.net/projects/markdown/basics\n [MarkdownPreview]: https://github.com/revolunet/sublimetext-markdown-preview\n [ST]: http://sublimetext.com\n [revolunet]: http://revolunet.com\n [revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\"\n [gfm]: https://help.github.com/articles/github-flavored-markdown/\n [emoji]: http://www.emoji-cheat-sheet.com/",
-			"settings":
-			{
-				"buffer_size": 8760,
-				"line_ending": "Windows",
-				"name": "Markdown Cheatsheet",
-				"scratch": true
-			}
-		},
-		{
-			"file": "docs/index.html",
-			"settings":
-			{
-				"buffer_size": 2211,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/styleguide/_templates.scss",
-			"settings":
-			{
-				"buffer_size": 2674,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "// <li class=\"committee-list-item selected\" data-bind=\"click:$parent.itemClicked.bind(id,$data),  css: {'selected':$parent.CommitteeselectedID() == $data.id() }\">\n//     <div class=\"committee-data\">\n//         <div class=\"committee\">\n//             <h6 class=\"no-margin name\">\n//                 <span hidden=\"hidden\" class=\"hidden\" id=\"committeeId\" data-bind=\"text:id\">000002990000</span>\n//                 <span class=\"show-details\" data-bind=\"text: committeename\">Academic Cardiology Section Leadership Council</span>\n//                 <span class=\"sub-line\">\n//                     <strong class=\"blue\" data-bind=\"text: committeetype\">ACC</strong> |\n//                     <strong class=\"blue\">Open Positions: <span data-bind=\"text:openpositioncount\">6</span></strong>\n//                 </span>\n//             </h6>\n//         </div>\n//         <!--ko if:$root.detailsPane()==true-->\n//         <div class=\"action\" data-toggle=\"dropdown-pane-1\" aria-controls=\"dropdown-pane-1\" data-is-focus=\"false\" data-yeti-box=\"dropdown-pane-1\" aria-haspopup=\"true\" aria-expanded=\"false\">\n//             <span class=\"fa-stack fa-lg\">\n//                 <i class=\"fa fa-circle fa-stack-2x\"></i>\n//                 <i class=\"fa fa-chevron-right fa-stack-1x\"></i>\n//             </span>\n//         </div>\n//         <!--/ko-->\n//         <!--ko if:$root.detailsPane()==false--><!--/ko-->\n//     </div>\n// </li>\n.committee-list {\n    list-style: none;\n    font-size: ms(0);\n    @extend %content-expanding-margin-horizontal;\n    margin-bottom: 0;\n    list-style: none;\n    background-color: $primary-color;\n    padding-top: 2px;\n    padding-bottom:0px;\n}\n\n.committee-list + .pagination-holder {\n    margin-top: 0;\n}\n\n\n.committee-list-item {\n\tbackground-color: white;\n\tmargin-bottom: 0;\n\toverflow: hidden;\n}\n\n.committee-list-item + .committee-list-item {\n    border-top: 1px solid $primary-color;\n}\n\n.committee-data {\n    display: flex;\n}\n\n.committee, .action {\n}\n\n.committee {\n    flex: 1 1 auto;\n    @extend %content-padding-horizontal;\n    @extend %content-padding-vertical;\n\n    .name {\n        font-size: ms(1);\n        margin-top: 0;\n        .sub-line{ \n\t        font-weight: 700;\n        \tfont-size: ms(0);\n    \t    line-height: 1.5;\n\t\t\tdisplay: block;\n\t\t\tline-height: 1.1;\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t\tletter-spacing: -.25px;\n\t\t\tborder: 0 none transparent;\n\t\t\topacity: .8;\n        }\n    }\n}\n\n.action, .flag {\n\tfont-size: ms(0);\n    flex: 0 0 4em;\n    background-image: url(../img/whisper.png);\n    background-position: top right;\n    background-repeat: repeat;\n    background-color: grey(10);\n    text-align: center;\n    vertical-align: middle;\n    min-height: 1.5em;\n    display: flex;\n    .fa-stack{\n\t\talign-self: center;\n\t\tflex: 1 1 auto;\n\t\tmargin-bottom: 0;\n    }\n    .fa-stack-2x {\n        color: grey(40);\n    }\n\n    .fa-stack-1x {\n        color: grey(5);\n    }\n}\n\n\n.action {\n\n\n\n    .fa-stack-1x.fa-ellipsis-v:before {\n        content: \"\\f142 \\f142\";\n        letter-spacing: 0px;\n    }\n\n    \n\n    .selected & {\n        background-color: color($primary-color, 80);\n\n        .fa-stack-2x {\n            color: mix($primary-color, $black, 80);\n        }\n\n        .fa-stack-1x {\n            color: #fff;\n        }\n\n        .committee-data {\n        }\n\n        .selected.checked & {\n            background-color: white;\n\n            .committee-data {\n                .action {\n                    background-color: mix($success-color,grey(60),35);\n                }\n\n                .fa-stack-2x {\n                    color: color($success-color, 80);\n                }\n\n                .fa-stack-1x {\n                    color: #fff;\n                }\n            }\n        }\n    }\n\n    .error.action {\n        .selected & {\n            background-color: mix($error-red,grey(60),35);\n\n            .fa-stack-1x {\n                color: #fff;\n            }\n\n            .fa-stack-2x {\n                color: $error-red;\n            }\n        }\n    }\n\n    .committee-list-itme {\n        .action .fa-stack-1x.fa-ellipsis-v:before {\n            content: \"\\f142 \\f142\";\n            letter-spacing: 0px;\n        }\n\n        .fa-stack-2x {\n            color: grey(40);\n        }\n\n        .fa-stack-1x {\n            color: grey(5);\n        }\n\n        &.selected {\n            background-color: color($primary-color, 20);\n\n            .committee-data {\n                .action {\n                    background-color: color($primary-color, 80);\n                }\n\n                .fa-stack-2x {\n                    color: mix($primary-color, $black, 80);\n                }\n\n                .fa-stack-1x {\n                    color: #fff;\n                }\n            }\n        }\n\n        &.selected.checked {\n            background-color: white;\n\n            .committee-data {\n                .action {\n                    background-color: mix($success-color,grey(60),35);\n                }\n\n                .fa-stack-2x {\n                    color: color($success-color, 80);\n                }\n\n                .fa-stack-1x {\n                    color: #fff;\n                }\n            }\n        }\n\n        &.selected .error.action {\n            background-color: mix($error-red,grey(60),35);\n\n            .fa-stack-1x {\n                color: #fff;\n            }\n\n            .fa-stack-2x {\n                color: $error-red;\n            }\n        }\n    }\n}",
-			"settings":
-			{
-				"buffer_size": 5351,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "@using MsgResource = CommitteeNominations.Resources.CommonErrorMessages\n\n    <form data-bind=\"submit: function() { search(true) }\">\n        <div class=\"search-bar\">\n            <div class=\"question\">\n                <div class=\"input-holder\">\n                    <div class=\"input-space column small-6 medium-7 large-8 \">\n                        <input type=\"text\" data-bind=\"value: committeename, valueUpdate: 'keyup'\" />\n                    </div>\n                    <div class=\"input-space column small-6 medium-5 large-4\">\n                        <button class=\"button expanded small condensable\" data-bind=\"click:function() { search(true) }\">\n                            <span class=\"condense \">\n                                Search\n                            </span>\n                            <i class=\"fa fa-search\">\n                            </i>\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"search-bar-filter\">\n            <div class=\"row\">\n                <div class=\"column\">\n                    <div class=\"stacked-for-small tiny selectable button-group\">\n                        <a class=\"button\" title=\"No Filter\" data-bind=\"click:function(){ applyfilter('nofilter')} ,css:{'selected': searchfilter() =='nofilter'}\">\n                            <span class=\"text\"><i class=\"fa fa-ban\"></i> No Filter</span>\n                        </a>\n                        <a class=\"button\" title=\"bookmarked\" data-bind=\"click:function(){applyfilter('bookmarked')} ,css:{'selected': searchfilter() =='bookmarked'}\">\n                            <span class=\"text\">\n                                <i class=\"fa fa-bookmark\">\n                                </i> Bookmarked\n                            </span>\n                        </a>\n                        <a class=\"button\" title=\"nominated\" data-bind=\"click:function(){applyfilter('nominated')} ,css:{'selected': searchfilter() =='nominated'}\">\n                            <span class=\"text\">\n                                <i class=\"fa fa-thumbs-up\">\n                                </i> Nominated\n                            </span>\n                        </a>\n                        <a class=\"button\" title=\"in application\" data-bind=\"click:function(){applyfilter('applied')} ,css:{'selected': searchfilter() =='applied'}\">\n                            <span class=\"text\">\n                                <i class=\"fa fa-star\">\n                                </i> Applied\n                            </span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!--ko if:$root.detailsPane()==false-->\n        <!--/ko-->\n    </form>\n    <!-- ko if: (memberList().length == 0) -->\n    @MsgResource.NoResultFoundMsg\n    <!-- /ko -->\n    <ul class=\"committee-list\">\n        <!-- ko foreach: memberList -->\n        <li class=\"committee-list-item\" data-bind=\"click:$parent.itemClicked.bind(id,$data),  css: {'selected':$parent.CommitteeselectedID() == $data.id() }\">\n            <div class=\"committee-data\">\n                 @***********Render flag if the item is one of the obove ***********@\n\n                  <!--ko if: $parent.isapplied() == true -->\n                <div class=\"flag\">\n                    <span class=\"fa-stack fa-lg\">\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\n                        <i class=\"fa fa-bookmark fa-stack-1x\"></i>\n                    </span>\n                </div>\n                   <!--/ko-->\n\n                <div class=\"committee\">\n                    <div class=\"no-margin name single-line-height\">\n                        <span hidden=\"hidden\" class=\"hidden\" id=\"committeeId\" data-bind=\"text:id\"> </span>\n                        <span class=\"show-details\" data-bind=\"text: committeename\"></span>\n                        <span class=\"sub-line\">\n                            <strong class=\"blue\" data-bind=\"text: committeetype\"></strong> |\n                            <strong class=\"blue\">Open Positions: <span data-bind=\"text:openpositioncount\"></span></strong>\n                        </span>\n                    </div>\n                </div>\n                <!--ko if:$root.detailsPane()==true-->\n                <div class=\"action\">\n                    <span class=\"fa-stack fa-lg\">\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\n                        <i class=\"fa fa-chevron-right fa-stack-1x\"></i>\n                    </span>\n                </div>\n                <!--/ko-->\n                <!--ko if:$root.detailsPane()==false-->\n                @***********Selected Max Count of Committee***********@\n                <!--ko if: $root.committeeSelectedModel().ValidateMaxSelectedCommitteeCount()-->\n                <div class=\"action\" data-open=\"maxSelected\" data-bind=\"click:function(){$root.committeeSelectedModel().getNewReplacementInfo($data.id());$root.committeeSelectedModel().ClearReplacementInfo()}\">\n                    <span class=\"fa-stack fa-lg\" style=\"cursor: pointer;\">\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\n                        <i class=\"fa fa-plus fa-stack-1x\"></i>\n                    </span>\n                </div>\n                <!--/ko-->\n                @***********Do not Select Max Count of Committee***********@\n\n                @***********Do not Select Max Count of Committee but the selected one has been selected before***********@\n                <!--ko ifnot:$root.committeeSelectedModel().ValidateMaxSelectedCommitteeCount()-->\n                <!--ko if:$root.committeeSelectedModel().ValidateSelectedCommitteeExist(id())-->\n                <div class=\"action\" data-open=\"ErrorMsg\">\n                    <span class=\"fa-stack fa-lg\" style=\"cursor: pointer;\">\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\n                        <i class=\"fa fa-plus fa-stack-1x\"></i>\n                    </span>\n                </div>\n\n                <!--/ko-->\n                <!--ko ifnot:$root.committeeSelectedModel().ValidateSelectedCommitteeExist(id())-->\n                @***********Do not Select Max Count of Committee and the selected one is not in the list yet***********@\n                <div class=\"action\" data-bind=\"click:function(){$root.committeeSelectedModel().UpdateSelectedCommitteeList($data.id())}\">\n                    <span class=\"fa-stack fa-lg\" style=\"cursor: pointer;\">\n                        <i class=\"fa fa-circle fa-stack-2x\"></i>\n                        <i class=\"fa fa-plus fa-stack-1x\"></i>\n                    </span>\n                </div>\n                <!--/ko-->\n                <!--/ko-->\n                <!--/ko-->\n            </div>\n        </li>\n        <!-- /ko -->\n    </ul>\n\n    <!-- ko if: (memberList().length > 0) -->\n    <div class=\"pagination-holder group-section-pagination-holder\">\n        <ul class=\"pagination float-right pagination--compact\">\n            <!-- ko if: (page() > 10) -->\n            <li class=\"arrow\"><a href=\"javascript:void(0);\" data-bind=\"click: function(){ nextPage(page() - 10) }\">&laquo;</a></li>\n            <!-- /ko -->\n            <li class=\"arrow\" data-bind=\"css:{disable:page() == 1}\"><a href=\"javascript:void(0);\" data-bind=\"click: function(){ nextPage(page() - 1) }\"><i class=\"fa fa-caret-left \"></i><span class=\"text\">prev</span></a></li>\n            <!-- ko foreach: pagesFirstGroup() -->\n            <li data-bind=\"css: { current: $data == $parent.page() }\">\n                <a href=\"javascript:void(0);\" data-bind=\"text: $data, click: function(data) { $parent.nextPage(data) }\"></a>\n            </li>\n            <!-- /ko -->\n            <!-- ko if: hasMorePages() -->\n            <li><a href=\"javascript:void(0);\" data-bind=\"click: function() { nextPage(page() + 5) }\">&hellip;</a></li>\n            <!-- /ko -->\n            <!-- ko foreach: pagesSecondGroup() -->\n            <li data-bind=\"css: { current: $data == $parent.page() }\">\n                <a href=\"javascript:void(0);\" data-bind=\"text: $data, click: function(data) { $parent.nextPage(data) }\"></a>\n            </li>\n            <!-- /ko -->\n            <li class=\"arrow\" data-bind=\"css:{disable:totalPages() == page()}\"><a href=\"javascript:void(0);\" data-bind=\"click: function(){ nextPage(page() + 1) }\"><span class=\"text\">next</span><i class=\"fa fa-caret-right \"></i></a></li>\n        </ul>\n    </div>\n    <!-- /ko -->\n   \n<script>\n    var popup = new Foundation.Reveal($('#popUpModal'));\n\n    function SearchViewModel(data,detailPane) {\n        var self = this;\n        //ko.mapping.fromJS(data, {}, self);\n        self.searchResult = ko.observable([]);\n        self.memberList = ko.observable([]);\n        self.committeename = ko.observable(\"\");\n        self.committeeselectedName = ko.observable();\n\t\tself.CommitteeselectedID = ko.observable();\n\t\tself.committeeselectednominationperiodid = ko.observable();\n\t\tself.contentlist = ko.observableArray([]);\n        self.roles = ko.observable();\n        self.Competency = ko.observable();\n        self.Composition = ko.observable();\n        self.MeetingSchedule = ko.observable();\n        self.Sources = ko.observable();\n        self.Communications = ko.observable();\n        self.committeePositions = ko.observableArray();\n\t\tself.CurrentMembers = ko.observableArray();\n        self.totalcount = ko.observable();\n        self.pagesize = ko.observable();\n        self.page = ko.observable();\n\t\tself.pagesize(5);\n\n\t\tself.isnominated = ko.observable();\n\t\tself.isapplied = ko.observable();\n\t\tself.isbookmarked = ko.observable();\n\t\tself.isaplicationexist = ko.observable();\n\n\t\tself.searchfilter = ko.observable('nofilter');\n\t\t//savedModel is defined in the _Layout\n\t\tself.showSaved = function () {\n\t\t\t$(\"#popUpModal\").foundation(\"open\");\n\t\t};\n\n\t\tself.hideSaved = function () {\n\t\t\tsetTimeout('$(\"#popUpModal\").foundation(\"close\")', 1000);\n\t\t};\n\n\t\tself.applyfilter = function (data)\n\t\t{\n\t\t\tself.searchfilter(data);\n\t\t\tself.search(true);\n\t\t}\n        self.Load = function () {\n            self.page(1);\n            self.search(false);\n        }\n        self.enableSearch = function (searchterm) {\n            return $.trim(searchterm).length > 2\n        }\n\n        self.itemClicked = function (event, data) {\n\t\t\tself.CommitteeselectedID(JSON.parse(ko.mapping.toJSON(data.id)));\n\t\t\tself.committeeselectednominationperiodid(JSON.parse(ko.mapping.toJSON(data.nominationperiodid)));\n\t\t\tself.committeeselectedName(JSON.parse(ko.mapping.toJSON(data.committeename)));\n            if (detailPane) {\n\t\t\t\tself.GetCommitteeDetails(self.CommitteeselectedID(), self.committeeselectednominationperiodid());\n            }\n        }\n\n        self.search = function (buttonPress) {\n            // if the button is press, means a new search, set page pack to 1...\n            var nominationPeriodIds = \"\";\n\t\t\tif (detailPane == false) { popup.open(); nominationPeriodIds = nominationViewModel.nominationPeriodId(); } else { nominationPeriodIds = '@ViewBag.NominationPeriodId'; }\n            if (buttonPress) {\n\t\t\t\tself.page(1);\n\t\t\t\tself.CommitteeselectedID(0);\n\t\t\t\tself.committeeselectednominationperiodid(0);\n                if (detailPane == false) {\n                    nominationViewModel.popValue(\"Searching... Please Wait...\");\n\t\t\t\t} else {\n\t\t\t\t\t\n\t\t\t\t\tvm.popValue(\"Searching... Please Wait...\");\n                }\n            }\n            var searchcommitteename = '';\n            if (self.committeename != null) {\n                searchcommitteename = self.committeename();\n            }\n\t\t\tvar postData = { committeename: searchcommitteename, page: ko.mapping.toJSON(self.page), pagesize: ko.mapping.toJSON(self.pagesize), nominationPeriodId: nominationPeriodIds, filtertype: self.searchfilter }\n            $.ajax({\n                url: '@Url.Action(\"Index\", \"Committee\")',\n                type: 'POST',\n                dataType: 'json',\n                data: postData\n            }).done(function (data) {\n                if (data != null) {\n                    //ko.mapping.fromJS(data.result, {}, self.searchresult);\n                    ko.mapping.fromJS(data.result, {}, self.memberList);\n                    self.totalcount(data.totalcount);\n\t\t\t\t\tif (detailPane == false) { popup.close(); }  \n\t\t\t\t\tif (data.result.length > 0) self.itemClicked(false, JSON.parse(ko.mapping.toJSON(data.result[0])));\n                }\n            }).fail(function (jqXHR, status, error) {\n                console.log(jqXHR, status, error);\n                //TODO\n              //  window.location.href = '@Url.Action(\"Home\", \"Error\")';\n            }).always(function () {\n\n            });\n        };\n\t\tself.Savebookmarkcommitee = function () {\n\t\t\t//popup.open();\n\t\t\tif (detailPane == true) {\n\t\t\t\tvm.popValue(\"Saving Bookmark....\");\n\t\t\t}\n\n\t\t\tvar postData = { nominationPeriodId: self.committeeselectednominationperiodid(), committeeid: self.CommitteeselectedID() }\n\t\t\t$.ajax({\n                url: '@Url.Action(\"SaveBookmarkCommittee\", \"Committee\")',\n                type: 'POST',\n                dataType: 'json',\n                data: postData\n            }).done(function (data) {\n                if (data != null) {\n\t\t\t\t\tif (data) self.isbookmarked(false);\n\t\t\t\t\telse self.isbookmarked(true);\n\t\t\t\t\tpopup.close();\n                }\n            }).fail(function (jqXHR, status, error) {\n                console.log(jqXHR, status, error);\n                //TODO\n              //  window.location.href = '@Url.Action(\"Home\", \"Error\")';\n            }).always(function () {\n\t\t\t\tpopup.close();\n            });\n\t\t};\n\t\tself.GetCommitteeDetails = function (comId, nomperiodid) {\n\t\t\tself.showSaved();\n\t\t\tvar postData = { committeeid: comId, nominationperiodid: nomperiodid };\n            $.ajax({\n                url: '@Url.Action(\"GetCommitteeDetails\", \"Committee\")',\n                type: 'POST',\n                dataType: 'json',\n                data: postData\n            }).done(function (data) {\n                if (data != null) {\n\t\t\t\t\tself.contentlist(data.contentlookuplist);\n\t\t\t\t\tself.committeePositions(data.OpenPositions);\n\t\t\t\t\tself.CurrentMembers(data.CurrentMembers);\n\t\t\t\t\tself.isnominated(data.IsNominated);\n\t\t\t\t\tself.isapplied(data.IsApplied);\n\t\t\t\t\tself.isbookmarked(data.IsBookmarked);\n\t\t\t\t\tself.isaplicationexist(data.IsApplicationexist);\n                }\n            }).fail(function (jqXHR, status, error) {\n                console.log(jqXHR, status, error);\n                //TODO\n                //window.location.href = '@Url.Action(\"Unknown\", \"Error\")';\n            }).always(function () {\n                //TODO $(\"#searchingModal\").foundation(\"reveal\", \"close\");\n\t\t\t\t});\n\t\t\tself.hideSaved();\n        }\n\n        // Paging\n        this.totalPages = ko.computed(function () {\n            var div = Math.floor(self.totalcount() / self.pagesize());\n            div += self.totalcount() % self.pagesize() > 0 ? 1 : 0;\n            return div;\n        });\n\n        self.nextPage = function (data) {\n            if (data <= self.totalPages() && data > 0) {\n\t\t\t\tself.page(data);\n\t\t\t\tself.CommitteeselectedID(0);\n\t\t\t\tself.committeeselectednominationperiodid(0);\n                self.search(false);\n            }\n        };\n        self.pagesFirstGroup = ko.observableArray([]);\n        self.pagesSecondGroup = ko.observableArray([]);\n        self.pagesFirstGroupComputed = ko.computed(function () {\n            if (self.totalPages() > 10) {\n                if (self.page() <= 3) {\n                    self.pagesFirstGroup([1, 2, 3, 4, 5]);\n                }\n                else if (self.page() >= self.totalPages() - 9) {\n                    self.pagesFirstGroup.removeAll();\n                    for (var i = self.totalPages() - 9; i < self.totalPages() - 4; i++) {\n                        self.pagesFirstGroup.push(i);\n                    }\n                }\n                else {\n                    self.pagesFirstGroup.removeAll();\n                    for (var i = self.page() - 1; i < self.page() + 4; i++) {\n                        self.pagesFirstGroup.push(i);\n                    }\n                }\n            }\n            else {\n                self.pagesFirstGroup.removeAll();\n                for (var i = 1; i <= self.totalPages(); i++) {\n                    self.pagesFirstGroup.push(i);\n                }\n            }\n        });\n        self.pagesSecondGroupComputed = ko.computed(function () {\n            if (self.totalPages() > 10) {\n                self.pagesSecondGroup.removeAll();\n                for (var i = self.totalPages() - 4; i <= self.totalPages(); i++) {\n                    self.pagesSecondGroup.push(i);\n                }\n            }\n            else {\n                self.pagesSecondGroup([]);\n            }\n        });\n\n        self.hasMorePages = ko.computed(function () {\n            if (self.totalPages() > 10 && self.page() < (self.totalPages() - 9)) {\n                return true;\n            }\n            return false;\n        });\n\n        self.setPageSize = function (size) {\n            self.pagesize(size);\n            self.search(true);\n        };\n\n        //self.Load();\n    };\n\n</script>",
-			"settings":
-			{
-				"buffer_size": 17097,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "",
-			"file": "uiList.md",
-			"file_size": 957,
-			"file_write_time": 131745823480584833,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -832,31 +704,28 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/mwatier/REPOS/Strathmore",
-		"/C/Users/mwatier/REPOS/Strathmore/assets",
-		"/C/Users/mwatier/REPOS/Strathmore/assets/css",
-		"/C/Users/mwatier/REPOS/Strathmore/assets/css/maps",
-		"/C/Users/mwatier/REPOS/Strathmore/assets/scss",
-		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide",
-		"/C/Users/mwatier/REPOS/Strathmore/tests",
-		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss",
-		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/baselines",
-		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/baselines/desktop",
-		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/results",
-		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/results/desktop"
+		"/C/Users/mwatier/REPOS/Strathmore"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/index.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/node_modules/foundation-sites/gulpfile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/node_modules/foundation-sites/README.md",
+		"/C/Users/mwatier/REPOS/Strathmore/uiList.md",
+		"/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/gulpfile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/package.json",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_containers.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_question-block.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_design-base.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/docs/index.html",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_templates.scss",
 		"/C/Users/mwatier/AppData/Roaming/Visual Studio Setup/user.json",
 		"/C/Users/mwatier/REPOS/Strathmore/assets/css/index.css",
 		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_basic-html.scss",
-		"/C/Users/mwatier/REPOS/Strathmore/docs/index.html",
 		"/C/Users/mwatier/REPOS/Strathmore/docs/css/_styleguide_variables.css",
 		"/C/Users/mwatier/REPOS/Strathmore/docs/assets/css/index.css",
-		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/index.scss",
-		"/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
 		"/C/Users/mwatier/REPOS/Strathmore/README.md",
-		"/C/Users/mwatier/REPOS/Strathmore/package.json",
 		"/C/Users/mwatier/REPOS/Strathmore/dist/index.html",
 		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/sReadme-test.js",
 		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/start.js",
@@ -966,25 +835,18 @@
 		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/_setup.scss",
 		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/_non-core/comnoms/_quicklinks.scss",
 		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/_non-core/comnoms/_admin.table.application.scss",
-		"/C/Users/mwatier/REPOS/Bristol/GruntFile.js",
-		"/C/Users/mwatier/REPOS/Bristol/converted-html/admin-applications.html",
-		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/components/table/_table-seperator.scss",
-		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/components/table/_table-seperator.states.scss",
-		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/components/table/_table-cell.states.scss",
-		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/application-rows_post-selected.liquid",
-		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/app-thead_post-selected.liquid",
-		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/app-thead.liquid",
-		"/C/Users/mwatier/REPOS/Bristol/styleguide/assets/scss/structures/mobileApps/_layout_header.scss"
+		"/C/Users/mwatier/REPOS/Bristol/GruntFile.js"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\REPOS\\Strathmore"
 		]
 	},
 	"find_state":
@@ -992,6 +854,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"foundation",
 			"font",
 			"outputPath",
 			"@include baseline-font",
@@ -1025,434 +888,8 @@
 	"groups":
 	[
 		{
-			"selected": 11,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "gruntFile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								758,
-								423
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530186100.71,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2208,
-								2208
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1082,
-								1082
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530186100.73,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 181.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/scss/index.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								180,
-								180
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530186100.71,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/scss/styleguide/_containers.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 92,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								92,
-								92
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1530186100.71,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/scss/styleguide/_navigation-components.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 142,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530196492.64,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "assets/scss/styleguide/_question-block.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1530186100.72,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "assets/scss/styleguide/_design-base.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2854,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								336,
-								2114
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1530186100.72,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8760,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7547,
-								7288
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530186100.72,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4435.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "docs/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1571,
-								1571
-							],
-							[
-								1608,
-								1608
-							],
-							[
-								1659,
-								1659
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1530186100.73,
-							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 539.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "assets/scss/styleguide/_templates.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2674,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1931,
-								1931
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1530186100.72,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 969.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5351,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								5351
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1185.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17097,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								17097
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ASP/HTML-ASP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1038.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "uiList.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1530195122.7,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				}
 			]
 		}
 	],

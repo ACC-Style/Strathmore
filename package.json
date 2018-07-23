@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/ACC-Style/Strathmore#readme",
   "dependencies": {
+    "foundation-sites": "^6.5.0-rc.2",
     "gulp-sourcemaps": "^2.6.4"
   },
   "devDependencies": {
@@ -51,7 +52,7 @@
     "gulp-dart-sass": "^0.9.0",
     "gulp-postcss": "^7.0.1",
     "load-grunt-tasks": "^3.5.2",
-    "npm": "^6.1.0",
+    "npm": "^6.2.0",
     "pixrem": "^4.0.1",
     "sass": "^1.7.1",
     "sc5-styleguide": "^2.2.0",
