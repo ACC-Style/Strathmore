@@ -63,7 +63,7 @@ This is a library of modular styles extending the popular framework of Zurb Foun
 ## Utility Classes
 ### Naming Convention
 
-_[style short hand]-[direction]_[value+unit]-[break point]_
+_[style short hand]--[modifier,direction]_[value+unit]-[break point]_
 
 ### Definition of Style Short Hand
 
@@ -82,15 +82,15 @@ _[style short hand]-[direction]_[value+unit]-[break point]_
 *   **Flex:** Flex-
 *   **Display:** Display-
 *   **Float:** use foundation pull-right, pull-left
-*   **Drop-Shadow:** LayerUp-, LayerDown-
+*   **Drop-Shadow:** Layer-
 
 ### Directions
 
 *   **all:** no direction modifier
-*   **top:** t-
-*   **bottom:** b-
-*   **right:** r-
-*   **left:** l-
+*   **top:** T-
+*   **bottom:** B-
+*   **right:** R-
+*   **left:** L-
 
 ### Values
 

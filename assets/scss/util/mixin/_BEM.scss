@@ -1,0 +1,52 @@
+@mixin e($element){
+	&__#{$element}{
+		@content; 
+	}
+}
+
+@mixin mod($modifier){
+	&--#{$modifier}{
+		@content; 
+	}
+}
+
+$style-short-name:(
+		padding : P,
+		margin : M,
+		font-color: Fc,
+		border: B,
+		border-color:Bc,
+	)
+
+$direction:(	
+	cardnial:(
+		all: A
+		top: T,
+		left: L,
+		right: R,
+		bottom: B,
+		horizontal: H,
+		vertical: V
+		)
+	corner:(
+		all: A,
+		top-right: TR,
+		bottom-right: BR,
+		bottom-left: BL,
+		top-left: TL,
+		top: T,
+		bottom: B,
+		right: R,
+		left:L,
+		)
+	)
+// Fc--error_light
+@mixin style-loop($style:null,$direction:null, $modifier:null, $values:null, $breakpoints:null ){
+	$label: #{ map-get($style-short-name,$style) };
+	@debug $label;	
+	@if not $direction = null {
+		$label : #{ $label }-$direction
+	}
+	@debug $label;
+}
+@include style-loop(padding,cardnial);
