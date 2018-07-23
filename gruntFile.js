@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                 })).pipe(gulp.dest(outputPath));
             },
             'styleguide-applystyles': function() {
-                return gulp.src('assets/css/index.css').pipe(styleguide.applyStyles()).pipe(gulp.dest('strathmore'));
+                return gulp.src('assets/css/index.css').pipe(styleguide.applyStyles()).pipe(gulp.dest('Strathmore'));
             }
         },
         phantomcss: {

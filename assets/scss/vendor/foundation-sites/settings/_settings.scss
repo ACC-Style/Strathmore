@@ -1,3 +1,6 @@
+/**
+* Foundation for Sites Settings
+ */
 //  Foundation for Sites Settings
 //  -----------------------------
 //
@@ -60,7 +63,7 @@
 //  55. Top Bar
 //  56. Xy Grid
 
-@import 'util/util';
+@import '../util/util';
 
 // 1. Global
 // ---------
@@ -866,3 +869,6 @@ $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
 
+/**
+* Foundation for Sites Settings END
+ */

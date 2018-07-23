@@ -1,9 +1,22 @@
+/** Strathmore
+	Version 0.1
+*
+*/
+// Foundation
+@import "vendor/foundation-sites/settings/settings";
+@import "vendor/foundation-sites/foundation";
+@include foundation-everything();
+@include foundation-prototype-classes();
+
+
+
+@import "compontents/buttons";
+
+//StyleGuide
 @import "styleguide/design-base";
 @import "styleguide/basic-html";
 @import "styleguide/navigation-components";
 @import "styleguide/question-block";
 @import "styleguide/containers";
-
-
 @import "styleguide/templates";
 

@@ -95,7 +95,7 @@ Many Objects have modifiers like psudo classes and classes applied to make them 
 
 | Validation 			| State		 		| Message												|  
 | ---- 					| ----- 			| --- 													|  
-| required 				| warning 			| Item Name is missing.               					 |  
+| required 				| warning 			| { Input Label Text } is missing.               					 |  
 | all alph characters	| alert	 			| Only alpha characters are allowed.  					|  
 | length > 3 			| alert  			| Item Name must be more then 3 Characters 					|  
 | All Validations Met 	| success 			| valid Item Name 					|
