@@ -4,49 +4,131 @@
 	}
 }
 
-@mixin mod($modifier){
+@mixin m($modifier){
 	&--#{$modifier}{
 		@content; 
 	}
 }
 
-$style-short-name:(
-		padding : P,
-		margin : M,
-		font-color: Fc,
-		border: B,
-		border-color:Bc,
-	)
 
-$direction:(	
+$style-short-name:(
+	padding: ".p",
+	margin: ".m",
+	font-color: ".fc",
+	border: ".b",
+	border-color:".bc",
+	border-radius: ".br"
+	);
+
+$position:(	
 	cardnial:(
-		all: A
-		top: T,
-		left: L,
-		right: R,
-		bottom: B,
-		horizontal: H,
-		vertical: V
-		)
+		default: "",
+		top: t,
+		left: l,
+		right: r,
+		bottom: b
+		),
 	corner:(
-		all: A,
-		top-right: TR,
-		bottom-right: BR,
-		bottom-left: BL,
-		top-left: TL,
-		top: T,
-		bottom: B,
-		right: R,
-		left:L,
+		default: "",
+		top-right: tr,
+		bottom-right: br,
+		bottom-left: bl,
+		top-left: tl
 		)
-	)
-// Fc--error_light
-@mixin style-loop($style:null,$direction:null, $modifier:null, $values:null, $breakpoints:null ){
+	);
+$values:(
+	positive:(
+		0:0,
+		1:1px,
+		2:.25,
+		3:.5,
+		4:1,
+		5:2
+		),
+		negative:(
+		n1: -1px,
+		n2: -.25,
+		n3: -.5,
+		n4: -1,
+		n5: -2
+		),
+		radius:(
+			0:0,
+			1:1,
+			2:3,
+			3:5,
+			4:10,
+			5:100
+		)
+	);
+
+
+@mixin diretional-size-styles($style:null,$direction:null,  $value:null, $unit,$breakpoint:null ){
 	$label: #{ map-get($style-short-name,$style) };
-	@debug $label;	
-	@if not $direction = null {
-		$label : #{ $label }-$direction
+	@if $direction != null {	
+		@each $pos, $pos-name in map-get($position,$direction) {
+			$label_direction: #{$label}#{$pos-name};
+			@debug $label_direction;
+			@if   $value != null {
+				@each $val-name, $val in map-get($values,$value) {
+					$label_direction_value: #{$label_direction}_#{$val-name};
+					@if $breakpoint != null{
+						$label_direction_value:#{$label_direction}_#{$val-name}-#{$breakpoint}
+					}
+					@if $pos-name == "" {
+						@if  $val == 1px{
+							#{$label_direction_value}{
+								#{$style}: 1px;
+							}					
+						}
+						@else if  $val == -1px{
+							 #{$label_direction_value}{
+							 	#{$style}:-1px;
+							 }
+						}
+						@else{
+							 #{$label_direction_value}{
+							 	#{$style}: $unit * $val;
+							 }
+						}
+					}
+					@else{
+						@if  $val-name == 1{
+							#{$label_direction_value}{
+								#{$style}-#{$pos}: 1px;
+							}					
+						}
+						@else if  $val-name == n1{
+							 #{$label_direction_value}{
+							 	#{$style}-#{$pos}:-1px;
+							 }
+						}
+						@else{
+							 #{$label_direction_value}{
+							 	#{$style}-#{$pos}: $unit * $val;
+							 }
+						}
+					}
+				}
+			}
+			@else{
+				@warn "diretional-size-styles() must have $value passed to it";
+			}
+		}
 	}
-	@debug $label;
+	@else{
+		@warn "diretional-size-styles() must have a $direction passed to it";
+	}
+
 }
-@include style-loop(padding,cardnial);
+/*
+ Child Template Sub
+
+ This is how templates can stack inside of other templates
+ 
+ markup:
+ <span class="child sub">child</span>
+
+
+ Styleguide 99.2.8
+*/

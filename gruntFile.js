@@ -89,19 +89,19 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: [ 'dart-sass', 'gulp:styleguide-generate', 'gulp:styleguide-applystyles','copy'],
+                tasks: [ 'dart-sass', 'gulp:styleguide-applystyles', 'gulp:styleguide-generate','postcss','copy'],
                 options: {
                     livereload: true,
                 }
             },
             markdown: {
                 files: '*.md',
-                task: ['gulp:styleguide-generate', 'gulp:styleguide-applystyles','copy'],
+                task: ['gulp:styleguide-applystyles','gulp:styleguide-generate','postcss', 'copy'],
                 options: {
                     livereload: true,
                 },
             }
         }
     });
-    grunt.registerTask('default', ['connect', 'dart-sass', 'gulp:styleguide-generate', 'gulp:styleguide-applystyles','copy','watch']);
+    grunt.registerTask('default', ['connect', 'dart-sass', 'gulp:styleguide-generate', 'gulp:styleguide-applystyles','postcss','copy','watch']);
 }

@@ -5,12 +5,12 @@
 // Foundation
 @import "vendor/foundation-sites/settings/settings";
 @import "vendor/foundation-sites/foundation";
+@import "util/mixin/BEM";
 @include foundation-everything();
-@include foundation-prototype-classes();
+
+@import "components/buttons";
 
 
-
-@import "compontents/buttons";
 
 //StyleGuide
 @import "styleguide/design-base";
@@ -20,3 +20,8 @@
 @import "styleguide/containers";
 @import "styleguide/templates";
 
+//style, direction, unit, value, breakpoint(optional)
+@include diretional-size-styles(margin,cardnial,positive,1rem);
+@include diretional-size-styles(margin,cardnial,negative,1rem);
+@include diretional-size-styles(padding,cardnial,positive,1rem);
+@include diretional-size-styles(border-radius,corner,radius,1px);
