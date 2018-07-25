@@ -2,6 +2,7 @@
 	Version 0.1
 *
 */
+@import "setup";
 // Foundation
 @import "vendor/foundation-sites/settings/settings";
 @import "vendor/foundation-sites/foundation";
@@ -11,6 +12,9 @@
 @import "components/buttons";
 
 
+// Utlitity Classes
+@import "util/spacing";
+@import "util/typoography";
 
 //StyleGuide
 @import "styleguide/design-base";
@@ -20,8 +24,4 @@
 @import "styleguide/containers";
 @import "styleguide/templates";
 
-//style, direction, unit, value, breakpoint(optional)
-@include diretional-size-styles(margin,cardnial,positive,1rem);
-@include diretional-size-styles(margin,cardnial,negative,1rem);
-@include diretional-size-styles(padding,cardnial,positive,1rem);
-@include diretional-size-styles(border-radius,corner,radius,1px);
+
