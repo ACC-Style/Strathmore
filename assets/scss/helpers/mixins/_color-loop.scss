@@ -1,0 +1,26 @@
+@mixin color-loop($style-name, $color-name, $color){
+    $white-mix: map-get($values, percent-positive);
+    $black-mix: map-get($values, percent-negative);
+    $labels:		map-get($style-definition, $style-name);
+	  $short-name:	map-get($labels, short-name); 	@debug $short-name; 
+  	$long-name:		map-get($labels, long-name); 	@debug $long-name; 
+  	$style:			map-get($labels, css-style); 	@debug $style; 
+  		@each  $val-name, $val in $white-mix {
+        @if $val-name == 0 {
+          #{$short-name}-#{$color-name}{
+            #{$style}:mix(white, $color,  $val) !important;
+          }        
+        }
+        @else{
+    		  #{$short-name}-#{$color-name}_#{$val-name}{
+    		    #{$style}:mix(white, $color,  $val) !important;
+    		  }
+
+        }
+      }
+      @each  $val-name, $val in $black-mix {
+        #{$short-name}-#{$color-name}_#{$val-name}{
+  		    #{$style}:mix(black, $color,  $val) !important;
+  		  }
+      }
+}

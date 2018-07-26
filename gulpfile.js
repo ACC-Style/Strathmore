@@ -31,7 +31,8 @@ gulp.task('style', function(){
   console.log('Gulp: I am making this pretty.');
   var plugins = [
   		pixrem(),
-        autoprefixer({browsers: ['last 2 version']})
+      autoprefixer({browsers: ['last 2 version']}),
+      cssnano(),
 
     ];
    return gulp.src( SCSS_PATH  + '**/*.scss')

@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     var gulp = require('gulp'),
         styleguide = require('sc5-styleguide');
-    require("load-grunt-tasks")(grunt); // npm install --save-dev load-grunt-tasks
+        require("load-grunt-tasks")(grunt); // npm install --save-dev load-grunt-tasks
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         connect: {
@@ -65,8 +65,6 @@ module.exports = function(grunt) {
         },
         postcss: {
             options: {
-                map: true, // inline sourcemaps
-                // or
                 map: {
                     inline: false, // save all sourcemaps as separate files...
                     annotation: 'assets/css/maps/' // ...to the specified directory
@@ -76,18 +74,21 @@ module.exports = function(grunt) {
                     require('autoprefixer')({
                         browsers: 'last 2 versions'
                     }), // add vendor prefixes
-                    require('cssnano')() // minify the result
+                    require('cssnano')({ 
+                        preset: 'default',
+                    }) // minify the result
                 ]
             },
             options: {
                 diff: 'assets/css/diff/index.css.diff',
             },
             dist: {
-                src: 'assets/css/*.css',
+                src: 'assets/css/index.css',
+                dest: 'assets/css/index.min.css'
             }
         },
         watch: {
-            css: {
+            scss: {
                 files: 'assets/scss/**/*.scss',
                 tasks: [ 'dart-sass', 'gulp:styleguide-applystyles', 'gulp:styleguide-generate','postcss','copy'],
                 options: {

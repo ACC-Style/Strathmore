@@ -1,0 +1,146 @@
+$values:(
+	positive:(
+		0:0,
+		1:1px,
+		2:.25,
+		3:.5,
+		4:1,
+		5:2
+		),
+	negative:(
+		n1: -1px,
+		n2: -.25,
+		n3: -.5,
+		n4: -1,
+		n5: -2
+		),
+	radius:(
+		0:0,
+		1:1,
+		2:3,
+		3:5,
+		4:10,
+		5:100
+		),
+	unitless-positive:(
+		0:0,
+		1:1,
+		2:2,
+		3:3,
+		4:4,
+		5:5
+		),
+	unitless-negative:(
+		n1:-1,
+		n2:-2,
+		n3:-3,
+		n4:-4,
+		n5:-5
+		),
+	line-height:(
+		0:0,
+		1:1,
+		2:1.45,
+		3:1.655,
+		4:1.75,
+		5:2,
+		),
+	percent-positive:(
+		0:0%,
+		1:10%,
+		2:30%,
+		3:50%,
+		4:70%,
+		5:90%
+		),
+	percent-negative:(
+		n1:10%,
+		n2:30%,
+		n3:50%,
+		n4:70%,
+		n5:90%
+		)
+);
+
+$style-definition:(
+	margin:(
+		short-name:'.m',
+		css-style:'margin',
+		long-name:'.margin',
+		),
+	margin-top:(
+		short-name:'.mt',
+		css-style:'margin-top',
+		long-name:'.margin-top',
+		),
+	margin-bottom:(
+		short-name:'.mb',
+		css-style:'margin-bottom',
+		long-name:'.margin-bottom',
+		),
+	margin-left:(
+		short-name:'.ml',
+		css-style:'margin-left',
+		long-name:'.margin-left',
+		),
+	margin-right:(
+		short-name:'.mr',
+		css-style:'margin-right',
+		long-name:'.margin-right',
+		),
+	padding:(
+		short-name:'.p',
+		css-style:'padding',
+		long-name:'.padding',
+		),
+	padding-top:(
+		short-name:'.pt',
+		css-style:'padding-top',
+		long-name:'.padding-top',
+		),
+	padding-bottom:(
+		short-name:'.pb',
+		css-style:'padding-bottom',
+		long-name:'.padding-bottom',
+		),
+	padding-left:(
+		short-name:'.pl',
+		css-style:'padding-left',
+		long-name:'.padding-left',
+		),
+	padding-right:(
+		short-name:'.pr',
+		css-style:'padding-right',
+		long-name:'.padding-right',
+		),
+	border-left-width:(
+		short-name:'.blw',
+		css-style:'border-left-width',
+		long-name:'.border-left-width',
+		),	
+	line-height:(
+		short-name:'.lh',
+		css-style:'line-height',
+		long-name:'.line-height',
+		),	
+	font-size:(
+		short-name:'.fs',
+		css-style:'font-size',
+		long-name:'.font-size',
+		),	 
+	color:(
+		short-name:'.fc',
+		css-style:'color',
+		long-name:'.font-color',
+	 	),	 
+	background-color:(
+		short-name:'.backc',
+		css-style:'background-color',
+		long-name:'.background-color',
+		)
+);
+
+
+
+
+

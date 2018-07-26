@@ -1,27 +1,25 @@
-/** Strathmore
+/** 
+	Strathmore
 	Version 0.1
-*
-*/
-@import "setup";
-// Foundation
+**/
+@import "base/variables/vars";
+@import "base/variables/definitions";
+@import "base/setup";
+@import "helpers/mixins/mixins";
+@import "vendor/modular-scale";
 @import "vendor/foundation-sites/settings/settings";
+@import "helpers/functions/functions";
+
+// Foundation
 @import "vendor/foundation-sites/foundation";
-@import "util/mixin/BEM";
 @include foundation-everything();
 
-@import "components/buttons";
+@import "components/components";
+@import "structures/structures";
 
-
-// Utlitity Classes
-@import "util/spacing";
-@import "util/typoography";
-
+@import "utilities/utilities";
 //StyleGuide
-@import "styleguide/design-base";
-@import "styleguide/basic-html";
-@import "styleguide/navigation-components";
-@import "styleguide/question-block";
-@import "styleguide/containers";
-@import "styleguide/templates";
+@import "styleguide/styleguide";
+
 
 

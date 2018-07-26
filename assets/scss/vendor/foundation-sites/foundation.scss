@@ -78,7 +78,7 @@
 @import 'prototype/prototype';
 
 
-@mixin foundation-everything(  $flex: true,  $prototype: true ) {
+@mixin foundation-everything(  $flex: true,  $prototype: false ) {
   @if $flex {
     $global-flexbox: true !global;
   }
