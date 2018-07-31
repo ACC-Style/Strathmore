@@ -137,8 +137,20 @@ $style-definition:(
 		short-name:'.backc',
 		css-style:'background-color',
 		long-name:'.background-color',
+		),
+	border-color:(
+		short-name:'.bc',
+		css-style:'border-color',
+		long-name:'.border-color',
+		),
+	width:(
+		short-name:'.w',
+		css-style:'width',
+		long-name:'.width',
 		)
+
 );
+
 
 
 

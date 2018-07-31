@@ -1,23 +1,26 @@
 /** 
 	Strathmore
-	Version 0.1
+	Version 1.0
 **/
-@import "base/variables/vars";
-@import "base/variables/definitions";
-@import "base/setup";
-@import "helpers/mixins/mixins";
+$ms-base: 1em; // needs to be in ems
+
+// Setup Functions, Mixins, and Variables
+@import "vendor/foundation-sites/util/util";
 @import "vendor/modular-scale";
-@import "vendor/foundation-sites/settings/settings";
+@import "config/config";
 @import "helpers/functions/functions";
+@import "helpers/mixins/mixins";
 
 // Foundation
 @import "vendor/foundation-sites/foundation";
 @include foundation-everything();
 
+// ACC Design Alterations
+@import "base/base";
 @import "components/components";
 @import "structures/structures";
+@import "utility-css/utility-css";
 
-@import "utilities/utilities";
 //StyleGuide
 @import "styleguide/styleguide";
 

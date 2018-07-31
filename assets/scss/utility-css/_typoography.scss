@@ -1,46 +1,50 @@
 @include size-loop(line-height, line-height, 1);
-@include color-loop(color,'teal',#198dae);
 
-.font-size_0 {
+@each $color-name, $hex-value in $acc-palette{
+  @include color-loop(color, $color-name,$hex-value);
+}
+
+
+.font-size_0 ,.font_0 {
   font-size: ms(0)/1em * 1rem;
 }
 
-.font-size_1 {
+.font-size_1 ,.font_1 {
   font-size: ms(1)/1em * 1rem;
 }
 
-.font-size_2 {
+.font-size_2 ,.font_2 {
   font-size: ms(2)/1em * 1rem;
 }
 
-.font-size_3 {
+.font-size_3 ,.font_3 {
   font-size: ms(3)/1em * 1rem;
 }
 
-.font-size_4 {
+.font-size_4 ,.font_4 {
   font-size: ms(4)/1em * 1rem;
 }
 
-.font-size_5 {
+.font-size_5 ,.font_5 {
   font-size: ms(5)/1em * 1rem;
 }
 
-.font-size_n1 {
+.font-size_n1,.font_n1 {
   font-size: ms(-1)/1em * 1rem;
 }
 
-.font-size_n2 {
+.font-size_n2,.font_n2 {
   font-size: ms(-2)/1em * 1rem;
 }
 
-.font-size_n3 {
+.font-size_n3,.font_n3 {
   font-size: ms(-3)/1em * 1rem;
 }
 
-.font-size_n4 {
+.font-size_n4,.font_n4 {
   font-size: ms(-4)/1em * 1rem;
 }
 
-.font-size_n5 {
+.font-size_n5,.font_n5 {
   font-size: ms(-5)/1em * 1rem;
 }
