@@ -3,7 +3,23 @@
 	Strathmore
 	Version 1.0
 **/
-/* latin */
+/* Robto Slab Regular */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Robto Slab Bold */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u92w7CGwR0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Maven PRo */
 @font-face {
   font-family: "Maven Pro";
   font-style: normal;
@@ -11,7 +27,7 @@
   src: local("Maven Pro Medium"), local("MavenPro-Medium"), url(https://fonts.gstatic.com/s/mavenpro/v11/7Au4p_AqnyWWAxW2Wk3OPkcdP3kD.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin */
+/* Muli */
 @font-face {
   font-family: "Muli";
   font-style: normal;
@@ -19,7 +35,7 @@
   src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGLQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin */
+/*Muli */
 @font-face {
   font-family: "Muli";
   font-style: normal;
@@ -32,12 +48,6 @@ html {
   -webkit-line-break: after-white-space;
   -webkit-locale: "en";
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body, .button {
-  font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.25px;
 }
 
 /**
@@ -6885,6 +6895,15 @@ h1, h2, h3, h4, h5, h6, p, td, th {
   transition: margin 1s;
 }
 
+.sub-line {
+  display: block;
+  font-size: 50%;
+  clear: both;
+  line-height: 1.25em;
+  margin-top: -0.25em;
+  opacity: 0.75;
+}
+
 /*
 Buttons
 
@@ -7485,6 +7504,23 @@ Utility CSS
   border-color: transparent;
 }
 
+/*
+  Fonts Utility Classes
+
+  You can change the features of the text with some simple use classes.
+
+  .font-family_slab            -  Font Slab:  Used in X objects
+  .font-family_normal          -  Font Normal:  Used in content            
+  .font-family_display         -  Font Display: Used in headlines, buttons,       
+
+  markup:
+  <div class="{$modifiers} font_3">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 81.0
+ */
 .line-height_0 {
   line-height: 0;
 }
@@ -7993,6 +8029,57 @@ Utility CSS
   color: #13090f !important;
 }
 
+.font-family_slab {
+  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif !important;
+}
+
+.font-family_normal {
+  font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+.font-family_display {
+  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+/*
+  Fonts Utility Classes
+
+  You can change the features of the text with some simple use classes.
+
+  .font-weight_light            -  Light, 100
+  .font-weight_regular          -  Regular, 400           
+  .font-weight_bold             -  Bold, 900 
+  .font-style_normal            - Sets font style to normal
+  .font-style_italic            - Sets font style to italic      
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 81.1
+ */
+.font-weight_light {
+  font-weight: 100 !important;
+}
+
+.font-weight_regular {
+  font-weight: 400 !important;
+}
+
+.font-weight_bold {
+  font-weight: 900 !important;
+}
+
+.font-style_normal {
+  font-style: normal !important;
+}
+
+.font-style_italic {
+  font-style: italic !important;
+}
+
 .font-size_0, .font_0 {
   font-size: 1rem;
 }
@@ -8017,6 +8104,10 @@ Utility CSS
   font-size: 2.48832rem;
 }
 
+.font-size_10, .font_10 {
+  font-size: 6.1917364224rem;
+}
+
 .font-size_n1, .font_n1 {
   font-size: 0.8333333333rem;
 }
@@ -8035,6 +8126,19 @@ Utility CSS
 
 .font-size_n5, .font_n5 {
   font-size: 0.401877572rem;
+}
+
+.text-lowercase, .text-uppercase, .text-numbers {
+  white-space: pre-wrap;
+  letter-spacing: -0.1em;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /*
@@ -9292,7 +9396,6 @@ Utility CSS
  Design Base
 
  ### Colors
- ### Fonts
  ### Papers
  ### Ink Marks
  ### Standard Icons
@@ -9302,43 +9405,88 @@ Utility CSS
 */
 /*
 
- Fonts
-
- Sharp clean fonts are the to reenforce a modern and trust worthy product. 
+Font: Roboto Slab
+ 
+ A beuatiful slab font that shows a complexity and texture to the fonts used in the design. 
 
  markup:
-<h2 class="group-divide-bottom font--name small-12">Muli<span class="sub-line">font-family: 'Muli', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;</span></h2>
-<div class="font row font-display">
-<div class="ms12 column medium-4 small-6 large-3 font--dropcase_2x">Mu</div>
-<div class="column large-9 medium-8 small-6 font--example">
-<h3>Display Fonts & Headers</h3>
-<div class="font--lowercase ms6">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--uppercase ms6">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--numbers ms6">0 1 2 3 4 5 6 7 8 9</div>
-<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-</div>
-</div>
-<h2 class="group-divide-bottom font--name small-12">Roboto Slab<span class="sub-line">font-family: 'Roboto Slab', 'Times New Roman', 'Lucida Bright', Georgia, serif; </span></h2>
-<div class="font row font-slab">
-<div class="ms12 column medium-4 small-6 large-3 font--dropcase_2x">Rb</div>
-<div class="column large-9 medium-8 small-6 font--example">
-<h3 class="font-bold-slab">Primary Navigation, Headers & Labels</h3>
-<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
-</div>
-</div>
+	<div class="font-family_slab">
+		<h2 class="font-family_slab group-divide-bottom font--name small-12">
+			Roboto Slab
+			<span class="sub-line">font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
+		</h2>
+		<div class="font grid-x grid-padding-x grid-padding-y">
+			<div class="cell shrink font_10 font--dropcase_2x">Rs</div>
+			<div class="cell auto font--example">
+				<h3 class="font-family_slab">Slab Font</h3>
+				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="text-lowercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_2">0 1 2 3 4 5 6 7 8 9</div>
+			</div>
+		</div>
+	</div>
 
- Styleguide 0.2
+ Styleguide 0.21
 */
-.font {
-  color: #000;
-}
+/*
+
+Font: Maven Pro
+ 
+ A Slick font that has a slight interest used for UI elements. 
+
+ markup:
+	<div class="font-family_display">
+		<h2 class="font-family_display group-divide-bottom font--name small-12">
+			Maven Pro
+			<span class="sub-line">font-family: 'Maven Pro', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
+		</h2>
+		<div class="font grid-x grid-padding-x grid-padding-y">
+			<div class="cell shrink font_10 font--dropcase_2x">Mp</div>
+			<div class="cell auto font--example">
+				<h3 class="font-family_display">Display Font</h3>
+				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="text-lowercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_2">0 1 2 3 4 5 6 7 8 9</div>
+			</div>
+		</div>
+	</div>
+
+ Styleguide 0.22
+*/
+/*
+
+Font: Muli
+ 
+ A clean font for content and text of none UI elements. 
+
+ markup:
+	<div class="font-family_normal">
+		<h2 class="font-family_normal group-divide-bottom font--name small-12">
+			Muli
+			<span class="sub-line">font-family: 'Muli', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
+		</h2>
+		<div class="font grid-x grid-padding-x grid-padding-y">
+			<div class="cell shrink font_10 font--dropcase_2x">Mu</div>
+			<div class="cell auto font--example">
+				<h3 class="font-family_normal">Content Font</h3>
+				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="text-lowercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-uppercase font_2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+				<div class="text-numbers font_2">0 1 2 3 4 5 6 7 8 9</div>
+			</div>
+		</div>
+	</div>
+
+ Styleguide 0.23
+*/
 .font .font--example {
   background-image: url(http://basehold.it/i/24);
 }
@@ -9346,35 +9494,7 @@ Utility CSS
   color: #000;
 }
 .font .font--dropcase_2x {
-  color: blue;
-}
-.font .font--lowercase, .font .font--uppercase, .font .font--numbers {
-  white-space: pre-wrap;
-  letter-spacing: -0.1em;
-}
-.font .font--lowercase {
-  text-transform: lowercase;
-}
-.font .font--uppercase {
-  text-transform: uppercase;
-}
-.font .ms12 {
-  font-size: 12em;
-}
-.font .ms6 {
-  font-size: 6em;
-}
-.font .ms4 {
-  font-size: 4em;
-}
-.font .ms2 {
-  font-size: 2em;
-}
-.font .ms1 {
-  font-size: 1em;
-}
-.font .ms {
-  font-size: 0.75em;
+  color: #137680;
 }
 
 /*

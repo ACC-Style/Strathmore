@@ -1,9 +1,66 @@
+/*
+  Fonts Utility Classes
+
+  You can change the features of the text with some simple use classes.
+
+  .font-family_slab            -  Font Slab:  Used in X objects
+  .font-family_normal          -  Font Normal:  Used in content            
+  .font-family_display         -  Font Display: Used in headlines, buttons,       
+
+  markup:
+  <div class="{$modifiers} font_3">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 81.0
+ */
+
+
+
 @include size-loop(line-height, line-height, 1);
 
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(color, $color-name,$hex-value);
 }
 
+.font-family_slab{
+   font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
+}
+
+.font-family_normal{
+    font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+.font-family_display{
+    font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+/*
+  Fonts Utility Classes
+
+  You can change the features of the text with some simple use classes.
+
+  .font-weight_light            -  Light, 100
+  .font-weight_regular          -  Regular, 400           
+  .font-weight_bold             -  Bold, 900 
+  .font-style_normal            - Sets font style to normal
+  .font-style_italic            - Sets font style to italic      
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 81.1
+ */
+
+
+.font-weight_light{ font-weight: 100 !important;}
+.font-weight_regular{ font-weight: 400 !important;}
+.font-weight_bold{ font-weight: 900 !important;}
+.font-style_normal{ font-style: normal !important;}
+.font-style_italic{ font-style: italic !important;}
 
 .font-size_0 ,.font_0 {
   font-size: ms(0)/1em * 1rem;
@@ -28,6 +85,9 @@
 .font-size_5 ,.font_5 {
   font-size: ms(5)/1em * 1rem;
 }
+.font-size_10 ,.font_10 {
+  font-size: ms(10)/1em * 1rem;
+}
 
 .font-size_n1,.font_n1 {
   font-size: ms(-1)/1em * 1rem;
@@ -48,3 +108,8 @@
 .font-size_n5,.font_n5 {
   font-size: ms(-5)/1em * 1rem;
 }
+
+
+  .text-lowercase,.text-uppercase,.text-numbers{white-space: pre-wrap;  letter-spacing: -.1em;}
+  .text-lowercase{ text-transform: lowercase;}
+  .text-uppercase{ text-transform: uppercase;}
