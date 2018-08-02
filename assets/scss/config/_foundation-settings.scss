@@ -135,20 +135,20 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': strip-unit( ms(5) ) * 16 ),
+    'h2': ('font-size': strip-unit( ms(4) ) * 16 ),
+    'h3': ('font-size':  strip-unit( ms(3) ) * 16 ),
+    'h4': ('font-size':  strip-unit( ms(2) ) * 16 ),
+    'h5': ('font-size':  strip-unit( ms(1) ) * 16 ),
+    'h6': ('font-size':  strip-unit( ms(0) ) * 16 ),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': strip-unit( ms(5) ) * 18 ),
+    'h2': ('font-size': strip-unit( ms(4) ) * 18 ),
+    'h3': ('font-size':  strip-unit( ms(3) ) * 18 ),
+    'h4': ('font-size':  strip-unit( ms(2) ) * 18 ),
+    'h5': ('font-size':  strip-unit( ms(1) ) * 18 ),
+    'h6': ('font-size':  strip-unit( ms(0) ) * 18 ),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -285,11 +285,11 @@ $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
-  tiny: 0.6rem,
-  small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem,
-  xlarge: 1.25rem,
+  tiny: strip-unit(ms(-2)) * 14 * 1rem,
+  small: strip-unit(ms(0)) * 14 * 1rem,
+  default: strip-unit(ms(1)) * 14 * 1rem,
+  large:strip-unit(ms(2)) * 14 * 1rem,
+  xlarge: strip-unit(ms(3)) * 14 * 1rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.45;
