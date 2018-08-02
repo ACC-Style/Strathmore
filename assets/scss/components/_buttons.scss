@@ -42,22 +42,3 @@ markup:
 	  }
 }
 
-.close-button{
-	    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    text-align: right;
-    border-top: map-get($button-palette, primary) 9px solid;
-	span{background: map-get($button-palette, primary);
-	color: white;
-	padding: 0 .2em;
-	border: 0;
-	top: 0px;
-	line-height: 13px;
-	font-size: 26px;
-	vertical-align: top;}
-	&:focus{
-		outline: none;
-	}
-}

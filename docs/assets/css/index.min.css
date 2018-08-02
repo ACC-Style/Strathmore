@@ -3979,25 +3979,25 @@ a.button:hover, a.button:focus {
 
 .close-button {
   position: absolute;
-  color: #8a8a8a;
+  color: #91c8ce;
   cursor: pointer;
 }
 [data-whatinput=mouse] .close-button {
   outline: 0;
 }
 .close-button:hover, .close-button:focus {
-  color: #0a0a0a;
+  color: #fefefe;
 }
 .close-button.small {
-  right: 0.66rem;
-  top: 0.33em;
-  font-size: 1.5em;
+  right: 0rem;
+  top: 0em;
+  font-size: 1.2em;
   line-height: 1;
 }
 .close-button, .close-button.medium {
-  right: 1rem;
-  top: 0.5rem;
-  font-size: 2em;
+  right: 0rem;
+  top: 0rem;
+  font-size: 1.44em;
   line-height: 1;
 }
 
@@ -7032,21 +7032,15 @@ markup:
 }
 
 .close-button {
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
   text-align: right;
   border-top: #24929d 9px solid;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 .close-button span {
   background: #24929d;
-  color: white;
   padding: 0 0.2em;
-  border: 0;
-  top: 0px;
-  line-height: 13px;
-  font-size: 26px;
   vertical-align: top;
 }
 .close-button:focus {
@@ -9767,7 +9761,7 @@ markup:
 </div>
 <div class="callout" data-closable>
   <button class="close-button" aria-label="Close alert" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
+    <span aria-hidden="true"><i class="fas fa-times"></i></span>
   </button>
   <p>This is a close button example.</p>
 </div>

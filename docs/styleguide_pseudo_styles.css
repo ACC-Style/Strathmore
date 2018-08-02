@@ -781,7 +781,7 @@ a.button.pseudo-class-focus {
 
 .close-button.pseudo-class-hover,
 .close-button.pseudo-class-focus {
-  color: #0a0a0a;
+  color: #fefefe;
 }
 
 .slider-handle.pseudo-class-hover {
