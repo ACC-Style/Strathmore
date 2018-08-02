@@ -3192,7 +3192,7 @@ h3 {
   border-radius: 0;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 16.8rem;
+  font-size: 1rem;
   -webkit-appearance: none;
   line-height: 1;
   text-align: center;
@@ -3208,16 +3208,16 @@ h3 {
   color: #fefefe;
 }
 .button.tiny {
-  font-size: 9.7222222222rem;
+  font-size: 0.5787037037rem;
 }
 .button.small {
-  font-size: 14rem;
+  font-size: 0.8333333333rem;
 }
 .button.large {
-  font-size: 20.16rem;
+  font-size: 1.44rem;
 }
 .button.xlarge {
-  font-size: 24.192rem;
+  font-size: 1.728rem;
 }
 .button.expanded {
   display: block;
@@ -3825,23 +3825,23 @@ a.button:hover, a.button:focus {
   margin: 0;
   margin-right: 1px;
   margin-bottom: 1px;
-  font-size: 16.8rem;
+  font-size: 1rem;
   flex: 0 0 auto;
 }
 .button-group .button:last-child {
   margin-right: 0;
 }
 .button-group.tiny .button {
-  font-size: 9.7222222222rem;
+  font-size: 0.5787037037rem;
 }
 .button-group.small .button {
-  font-size: 14rem;
+  font-size: 0.8333333333rem;
 }
 .button-group.large .button {
-  font-size: 20.16rem;
+  font-size: 1.44rem;
 }
 .button-group.xlarge .button {
-  font-size: 24.192rem;
+  font-size: 1.728rem;
 }
 .button-group.expanded .button {
   flex: 1 1 0px;
@@ -6922,8 +6922,9 @@ Basic Buttons
 .shadow.clear		- Give a button a shadow
 .tiny		- tiny buttons
 .small		- Small buttons
-.medium		- Medium buttons (default)
+default		- Medium buttons (default)
 .large		- Large buttons
+.xlarge		- Large buttons
 .disabled	- Disabled buttons
 
 markup:
@@ -7028,6 +7029,28 @@ markup:
 }
 .button.shadow:hover {
   box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  border-top: #24929d 9px solid;
+}
+.close-button span {
+  background: #24929d;
+  color: white;
+  padding: 0 0.2em;
+  border: 0;
+  top: 0px;
+  line-height: 13px;
+  font-size: 26px;
+  vertical-align: top;
+}
+.close-button:focus {
+  outline: none;
 }
 
 /*

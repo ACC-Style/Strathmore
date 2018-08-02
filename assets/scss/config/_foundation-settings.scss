@@ -285,11 +285,11 @@ $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
-  tiny: strip-unit(ms(-2)) * 14 * 1rem,
-  small: strip-unit(ms(0)) * 14 * 1rem,
-  default: strip-unit(ms(1)) * 14 * 1rem,
-  large:strip-unit(ms(2)) * 14 * 1rem,
-  xlarge: strip-unit(ms(3)) * 14 * 1rem,
+  tiny: strip-unit(ms(-3)) * 1rem,
+  small: strip-unit(ms(-1)) * 1rem,
+  default: strip-unit(ms(0)) * 1rem,
+  large:strip-unit(ms(2)) * 1rem,
+  xlarge: strip-unit(ms(3)) * 1rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.45;

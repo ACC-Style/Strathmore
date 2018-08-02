@@ -1038,3 +1038,7 @@ a.thumbnail.pseudo-class-focus {
 .button.shadow.pseudo-class-hover {
   box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
+
+.close-button.pseudo-class-focus {
+  outline: none;
+}

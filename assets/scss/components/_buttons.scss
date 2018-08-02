@@ -16,8 +16,9 @@ Basic Buttons
 .shadow.clear		- Give a button a shadow
 .tiny		- tiny buttons
 .small		- Small buttons
-.medium		- Medium buttons (default)
+default		- Medium buttons (default)
 .large		- Large buttons
+.xlarge		- Large buttons
 .disabled	- Disabled buttons
 
 markup:
@@ -39,4 +40,24 @@ markup:
 	  		box-shadow: make-shadow(1,"drop",#000,.1);
 	  	}
 	  }
+}
+
+.close-button{
+	    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    border-top: map-get($button-palette, primary) 9px solid;
+	span{background: map-get($button-palette, primary);
+	color: white;
+	padding: 0 .2em;
+	border: 0;
+	top: 0px;
+	line-height: 13px;
+	font-size: 26px;
+	vertical-align: top;}
+	&:focus{
+		outline: none;
+	}
 }
