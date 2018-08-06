@@ -7386,6 +7386,86 @@ Utility CSS
     border-style: none;
   }
 }
+.Br_0 {
+  border-radius: 0;
+}
+
+.Br-tr_0 {
+  border-top-right-radius: 0;
+}
+
+.Br-tl_0 {
+  border-top-left-radius: 0;
+}
+
+.Br-br_0 {
+  border-bottom-right-radius: 0;
+}
+
+.Br-bl_0 {
+  border-top-right-radius: 0;
+}
+
+.Br_radius {
+  border-radius: 5px;
+}
+
+.Br-tr_radius {
+  border-top-right-radius: 5px;
+}
+
+.Br-tl_radius {
+  border-top-left-radius: 5px;
+}
+
+.Br-br_radius {
+  border-bottom-right-radius: 5px;
+}
+
+.Br-bl_radius {
+  border-top-right-radius: 5px;
+}
+
+.Br_round {
+  border-radius: 9999px;
+}
+
+.Br-tr_round {
+  border-top-right-radius: 9999px;
+}
+
+.Br-tl_round {
+  border-top-left-radius: 9999px;
+}
+
+.Br-br_round {
+  border-bottom-right-radius: 9999px;
+}
+
+.Br-bl_round {
+  border-top-right-radius: 9999px;
+}
+
+.Br_circle {
+  border-radius: 100%;
+}
+
+.Br-tr_circle {
+  border-top-right-radius: 100%;
+}
+
+.Br-tl_circle {
+  border-top-left-radius: 100%;
+}
+
+.Br-br_circle {
+  border-bottom-right-radius: 100%;
+}
+
+.Br-bl_circle {
+  border-top-right-radius: 100%;
+}
+
 .bc_primary {
   border-color: #11838e !important;
 }

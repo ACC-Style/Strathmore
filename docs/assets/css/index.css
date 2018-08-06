@@ -7386,86 +7386,6 @@ Utility CSS
     border-style: none;
   }
 }
-.Br_0 {
-  border-radius: 0;
-}
-
-.Br-tr_0 {
-  border-top-right-radius: 0;
-}
-
-.Br-tl_0 {
-  border-top-left-radius: 0;
-}
-
-.Br-br_0 {
-  border-bottom-right-radius: 0;
-}
-
-.Br-bl_0 {
-  border-top-right-radius: 0;
-}
-
-.Br_radius {
-  border-radius: 5px;
-}
-
-.Br-tr_radius {
-  border-top-right-radius: 5px;
-}
-
-.Br-tl_radius {
-  border-top-left-radius: 5px;
-}
-
-.Br-br_radius {
-  border-bottom-right-radius: 5px;
-}
-
-.Br-bl_radius {
-  border-top-right-radius: 5px;
-}
-
-.Br_round {
-  border-radius: 9999px;
-}
-
-.Br-tr_round {
-  border-top-right-radius: 9999px;
-}
-
-.Br-tl_round {
-  border-top-left-radius: 9999px;
-}
-
-.Br-br_round {
-  border-bottom-right-radius: 9999px;
-}
-
-.Br-bl_round {
-  border-top-right-radius: 9999px;
-}
-
-.Br_circle {
-  border-radius: 100%;
-}
-
-.Br-tr_circle {
-  border-top-right-radius: 100%;
-}
-
-.Br-tl_circle {
-  border-top-left-radius: 100%;
-}
-
-.Br-br_circle {
-  border-bottom-right-radius: 100%;
-}
-
-.Br-bl_circle {
-  border-top-right-radius: 100%;
-}
-
 .bc_primary {
   border-color: #11838e !important;
 }
@@ -7867,13 +7787,20 @@ Utility CSS
 
 	Border black has attached alpha 
 
-	border-color_black-0           - none
-	border-color_black-2         - dotted
-	border-color_black-6         - dashed
-	border-color_black-9          - solid
+	border-color_black           	- border black with alpha of 100%
+	border-color_black-1           	- border black with alpha of 90%
+	border-color_black-2           	- border black with alpha of 80%
+	border-color_black-3           	- border black with alpha of 70%
+	border-color_black-4           	- border black with alpha of 60%
+	border-color_black-5           	- border black with alpha of 50%
+	border-color_black-6           	- border black with alpha of 40%
+	border-color_black-7           	- border black with alpha of 30%
+	border-color_black-8           	- border black with alpha of 20%
+	border-color_black-9           	- border black with alpha of 10%
+	border-color_black-0           	- border black with alpha of 2%
 
 	markup:
-	<div class="{$modifiers} padding_3 border_solid">{$modifiers} border</div>
+	<div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
 
 	Styleguide 80.11
 
@@ -7919,7 +7846,7 @@ Utility CSS
 }
 
 .border-color_black-0 {
-  border-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.02);
 }
 
 .border_transparent {
@@ -8361,6 +8288,14 @@ Utility CSS
 
 .fc_highlighted-n5 {
   color: #14090f !important;
+}
+
+.color_white {
+  color: #fff;
+}
+
+.color_black {
+  color: #000;
 }
 
 .font-family_slab {
@@ -9242,399 +9177,399 @@ Utility CSS
     flex-shrink: 1;
   }
 }
-.backc_primary {
+.back_primary {
   background-color: #11838e !important;
 }
 
-.backc_primary-1 {
+.back_primary-1 {
   background-color: #298f99 !important;
 }
 
-.backc_primary-2 {
+.back_primary-2 {
   background-color: #58a8b0 !important;
 }
 
-.backc_primary-3 {
+.back_primary-3 {
   background-color: #88c1c7 !important;
 }
 
-.backc_primary-4 {
+.back_primary-4 {
   background-color: #b8dadd !important;
 }
 
-.backc_primary-5 {
+.back_primary-5 {
   background-color: #e7f3f4 !important;
 }
 
-.backc_primary-n1 {
+.back_primary-n1 {
   background-color: #0f7680 !important;
 }
 
-.backc_primary-n2 {
+.back_primary-n2 {
   background-color: #0c5c63 !important;
 }
 
-.backc_primary-n3 {
+.back_primary-n3 {
   background-color: #094247 !important;
 }
 
-.backc_primary-n4 {
+.back_primary-n4 {
   background-color: #05272b !important;
 }
 
-.backc_primary-n5 {
+.back_primary-n5 {
   background-color: #020d0e !important;
 }
 
-.backc_secondary {
+.back_secondary {
   background-color: #63646b !important;
 }
 
-.backc_secondary-1 {
+.back_secondary-1 {
   background-color: #73747a !important;
 }
 
-.backc_secondary-2 {
+.back_secondary-2 {
   background-color: #929397 !important;
 }
 
-.backc_secondary-3 {
+.back_secondary-3 {
   background-color: #b1b2b5 !important;
 }
 
-.backc_secondary-4 {
+.back_secondary-4 {
   background-color: #d0d1d3 !important;
 }
 
-.backc_secondary-5 {
+.back_secondary-5 {
   background-color: #eff0f0 !important;
 }
 
-.backc_secondary-n1 {
+.back_secondary-n1 {
   background-color: #595a60 !important;
 }
 
-.backc_secondary-n2 {
+.back_secondary-n2 {
   background-color: #45464b !important;
 }
 
-.backc_secondary-n3 {
+.back_secondary-n3 {
   background-color: #323236 !important;
 }
 
-.backc_secondary-n4 {
+.back_secondary-n4 {
   background-color: #1e1e20 !important;
 }
 
-.backc_secondary-n5 {
+.back_secondary-n5 {
   background-color: #0a0a0b !important;
 }
 
-.backc_success {
+.back_success {
   background-color: #09911f !important;
 }
 
-.backc_success-1 {
+.back_success-1 {
   background-color: #229c35 !important;
 }
 
-.backc_success-2 {
+.back_success-2 {
   background-color: #53b262 !important;
 }
 
-.backc_success-3 {
+.back_success-3 {
   background-color: #84c88f !important;
 }
 
-.backc_success-4 {
+.back_success-4 {
   background-color: #b5debc !important;
 }
 
-.backc_success-5 {
+.back_success-5 {
   background-color: #e6f4e9 !important;
 }
 
-.backc_success-n1 {
+.back_success-n1 {
   background-color: #08831c !important;
 }
 
-.backc_success-n2 {
+.back_success-n2 {
   background-color: #066616 !important;
 }
 
-.backc_success-n3 {
+.back_success-n3 {
   background-color: #054910 !important;
 }
 
-.backc_success-n4 {
+.back_success-n4 {
   background-color: #032c09 !important;
 }
 
-.backc_success-n5 {
+.back_success-n5 {
   background-color: #010f03 !important;
 }
 
-.backc_warning {
+.back_warning {
   background-color: #e18725 !important;
 }
 
-.backc_warning-1 {
+.back_warning-1 {
   background-color: #e4933b !important;
 }
 
-.backc_warning-2 {
+.back_warning-2 {
   background-color: #eaab66 !important;
 }
 
-.backc_warning-3 {
+.back_warning-3 {
   background-color: #f0c392 !important;
 }
 
-.backc_warning-4 {
+.back_warning-4 {
   background-color: #f6dbbe !important;
 }
 
-.backc_warning-5 {
+.back_warning-5 {
   background-color: #fcf3e9 !important;
 }
 
-.backc_warning-n1 {
+.back_warning-n1 {
   background-color: #cb7a21 !important;
 }
 
-.backc_warning-n2 {
+.back_warning-n2 {
   background-color: #9e5f1a !important;
 }
 
-.backc_warning-n3 {
+.back_warning-n3 {
   background-color: #714413 !important;
 }
 
-.backc_warning-n4 {
+.back_warning-n4 {
   background-color: #44290b !important;
 }
 
-.backc_warning-n5 {
+.back_warning-n5 {
   background-color: #170e04 !important;
 }
 
-.backc_alert {
+.back_alert {
   background-color: #cb241c !important;
 }
 
-.backc_alert-1 {
+.back_alert-1 {
   background-color: #d03a33 !important;
 }
 
-.backc_alert-2 {
+.back_alert-2 {
   background-color: #db6660 !important;
 }
 
-.backc_alert-3 {
+.back_alert-3 {
   background-color: #e5928e !important;
 }
 
-.backc_alert-4 {
+.back_alert-4 {
   background-color: #efbdbb !important;
 }
 
-.backc_alert-5 {
+.back_alert-5 {
   background-color: #fae9e8 !important;
 }
 
-.backc_alert-n1 {
+.back_alert-n1 {
   background-color: #b72019 !important;
 }
 
-.backc_alert-n2 {
+.back_alert-n2 {
   background-color: #8e1914 !important;
 }
 
-.backc_alert-n3 {
+.back_alert-n3 {
   background-color: #66120e !important;
 }
 
-.backc_alert-n4 {
+.back_alert-n4 {
   background-color: #3d0b08 !important;
 }
 
-.backc_alert-n5 {
+.back_alert-n5 {
   background-color: #140403 !important;
 }
 
-.backc_navigation {
+.back_navigation {
   background-color: #4f74bf !important;
 }
 
-.backc_navigation-1 {
+.back_navigation-1 {
   background-color: #6182c5 !important;
 }
 
-.backc_navigation-2 {
+.back_navigation-2 {
   background-color: #849ed2 !important;
 }
 
-.backc_navigation-3 {
+.back_navigation-3 {
   background-color: #a7badf !important;
 }
 
-.backc_navigation-4 {
+.back_navigation-4 {
   background-color: #cad5ec !important;
 }
 
-.backc_navigation-5 {
+.back_navigation-5 {
   background-color: #edf1f9 !important;
 }
 
-.backc_navigation-n1 {
+.back_navigation-n1 {
   background-color: #4768ac !important;
 }
 
-.backc_navigation-n2 {
+.back_navigation-n2 {
   background-color: #375186 !important;
 }
 
-.backc_navigation-n3 {
+.back_navigation-n3 {
   background-color: #283a60 !important;
 }
 
-.backc_navigation-n4 {
+.back_navigation-n4 {
   background-color: #182339 !important;
 }
 
-.backc_navigation-n5 {
+.back_navigation-n5 {
   background-color: #080c13 !important;
 }
 
-.backc_selected {
+.back_selected {
   background-color: #509f6c !important;
 }
 
-.backc_selected-1 {
+.back_selected-1 {
   background-color: #62a97b !important;
 }
 
-.backc_selected-2 {
+.back_selected-2 {
   background-color: #85bc98 !important;
 }
 
-.backc_selected-3 {
+.back_selected-3 {
   background-color: #a8cfb6 !important;
 }
 
-.backc_selected-4 {
+.back_selected-4 {
   background-color: #cbe2d3 !important;
 }
 
-.backc_selected-5 {
+.back_selected-5 {
   background-color: #eef5f0 !important;
 }
 
-.backc_selected-n1 {
+.back_selected-n1 {
   background-color: #488f61 !important;
 }
 
-.backc_selected-n2 {
+.back_selected-n2 {
   background-color: #386f4c !important;
 }
 
-.backc_selected-n3 {
+.back_selected-n3 {
   background-color: #285036 !important;
 }
 
-.backc_selected-n4 {
+.back_selected-n4 {
   background-color: #183020 !important;
 }
 
-.backc_selected-n5 {
+.back_selected-n5 {
   background-color: #08100b !important;
 }
 
-.backc_info {
+.back_info {
   background-color: #735dba !important;
 }
 
-.backc_info-1 {
+.back_info-1 {
   background-color: #816dc1 !important;
 }
 
-.backc_info-2 {
+.back_info-2 {
   background-color: #9d8ecf !important;
 }
 
-.backc_info-3 {
+.back_info-3 {
   background-color: #b9aedd !important;
 }
 
-.backc_info-4 {
+.back_info-4 {
   background-color: #d5ceea !important;
 }
 
-.backc_info-5 {
+.back_info-5 {
   background-color: #f1eff8 !important;
 }
 
-.backc_info-n1 {
+.back_info-n1 {
   background-color: #6854a7 !important;
 }
 
-.backc_info-n2 {
+.back_info-n2 {
   background-color: #514182 !important;
 }
 
-.backc_info-n3 {
+.back_info-n3 {
   background-color: #3a2f5d !important;
 }
 
-.backc_info-n4 {
+.back_info-n4 {
   background-color: #231c38 !important;
 }
 
-.backc_info-n5 {
+.back_info-n5 {
   background-color: #0c0913 !important;
 }
 
-.backc_highlighted {
+.back_highlighted {
   background-color: #c45e99 !important;
 }
 
-.backc_highlighted-1 {
+.back_highlighted-1 {
   background-color: #ca6ea3 !important;
 }
 
-.backc_highlighted-2 {
+.back_highlighted-2 {
   background-color: #d68eb8 !important;
 }
 
-.backc_highlighted-3 {
+.back_highlighted-3 {
   background-color: #e2afcc !important;
 }
 
-.backc_highlighted-4 {
+.back_highlighted-4 {
   background-color: #edcfe0 !important;
 }
 
-.backc_highlighted-5 {
+.back_highlighted-5 {
   background-color: #f9eff5 !important;
 }
 
-.backc_highlighted-n1 {
+.back_highlighted-n1 {
   background-color: #b0558a !important;
 }
 
-.backc_highlighted-n2 {
+.back_highlighted-n2 {
   background-color: #89426b !important;
 }
 
-.backc_highlighted-n3 {
+.back_highlighted-n3 {
   background-color: #622f4d !important;
 }
 
-.backc_highlighted-n4 {
+.back_highlighted-n4 {
   background-color: #3b1c2e !important;
 }
 
-.backc_highlighted-n5 {
+.back_highlighted-n5 {
   background-color: #14090f !important;
 }
 

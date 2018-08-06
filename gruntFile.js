@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    // const sass = require('node-sass');
     var gulp = require('gulp'),
         styleguide = require('sc5-styleguide');
         require("load-grunt-tasks")(grunt); // npm install --save-dev load-grunt-tasks
@@ -23,6 +24,21 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        // sass: {
+        //     options: {
+        //         implementation: sass,
+        //         sourceMap: true
+        //     },
+        //     dist: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'assets/scss',
+        //             src: ['*.scss'],
+        //             dest: 'assets/css/',
+        //             ext: '.css'
+        //         }]
+        //     }
+        // },
         gulp: {
             'styleguide-generate': function() {
                 var outputPath = 'strathmore/';
@@ -70,6 +86,7 @@ module.exports = function(grunt) {
         },
         postcss: {
             options: {
+                diff: 'assets/css/diff/index.css.diff',
                 map: {
                     inline: false, // save all sourcemaps as separate files...
                     annotation: 'assets/css/maps/' // ...to the specified directory
@@ -80,12 +97,13 @@ module.exports = function(grunt) {
                         browsers: 'last 2 versions'
                     }), // add vendor prefixes
                     require('cssnano')({ 
-                        preset: 'default',
+                        preset: ['default', {
+                            discardComments: {
+                                removeAll: true,
+                            },
+                        }]
                     }) // minify the result
                 ]
-            },
-            options: {
-                diff: 'assets/css/diff/index.css.diff',
             },
             dist: {
                 src: 'assets/css/index.css',
