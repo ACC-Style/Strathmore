@@ -1,14 +1,22 @@
+$teal:#11838e;
+$dark-grey:#63646b;
+$green:#09911f;
+$orange:#e18725;
+$red: #cb241c;
+$blue:#4f74bf;
+$green-alt:#509f6c;
+$purple:#735dba;
+$magenta:#c45e99;
+
 $acc-palette: (
-  primary: #24929d,
-  secondary: #63646b,
-  success: #3b9b19,
-  warning: #e18725,
-  alert: #cb241c,
-  'teal': #137680,
-  'grey': mix(#010B13, white, 50%),
-  'blue': #4f74bf,
-  'green':#509f6c,
-  'purple':#735dba,
-  'magenta':#ba5e93,
+  primary: $teal,
+  secondary: $dark-grey,
+  success: $green,
+  warning: $orange,
+  alert:$red,
+  navigation: $blue,
+  selected:$green-alt,
+  info:$purple,
+  highlighted:$magenta
 );
 

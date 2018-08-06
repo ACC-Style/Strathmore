@@ -1,0 +1,68 @@
+/*
+	Textures
+
+	Objects can quickly have textures painted on them with simple classes.  
+
+	.texture-light              - light textures with no color background included
+	.texture-medium_5              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_4              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_3              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_2              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_1              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_n1              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_n2              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_n3              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_n4              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-medium_n5              - medium texture have grey backgrounds that can be modified lighter and darker
+	.texture-dark              - dark texture with very little transparency 
+
+	markup:
+	<div class="{$modifiers} padding_2 border-color_black-1 border_solid text-center">container with textrues</div>
+
+	Styleguide 80.8
+
+ */
+
+
+
+.texture-light{
+	@include texture-light;
+}
+.texture-medium{
+	@include texture-medium(0);
+}
+.texture-medium_1{
+	@include texture-medium(1);
+}
+.texture-medium_2{
+	@include texture-medium(2);
+}
+.texture-medium_3{
+	@include texture-medium(3);
+}
+.texture-medium_4{
+	@include texture-medium(4);
+}
+.texture-medium_5{
+	@include texture-medium(5);
+}
+.texture-medium_n1{
+	@include texture-medium(-1);
+}
+.texture-medium_n2{
+	@include texture-medium(-2);
+}
+.texture-medium_n3{
+	@include texture-medium(-3);
+}
+.texture-medium_n4{
+	@include texture-medium(-4);
+}
+.texture-medium_n5{
+	@include texture-medium(-5);
+}
+
+.texture-dark{
+	@include texture-dark;
+}

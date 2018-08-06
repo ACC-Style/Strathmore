@@ -1,0 +1,26 @@
+$texture-light:"/assets/img/whisper.png";
+$texture-medium:"/assets/img/billie-holiday-speck.png";
+$texture-dark:"/assets/img/crossed_stripes.png";
+
+%texture-base{
+	background-attachment:local;
+	background-repeat: repeat;
+	background-position: top right;
+	background-origin:border-box;
+}
+
+@mixin texture-light(){
+	@extend %texture-base;
+	background-image: url( $texture-light );
+}
+
+@mixin texture-medium($level:0){
+	@extend %texture-base;
+	background-color: scale-color(map-get($acc-palette, secondary),$lightness: 20% * $level );
+	background-image: url( $texture-medium );
+}
+
+@mixin texture-dark(){
+	@extend %texture-base;
+	background-image: url( $texture-dark );
+}

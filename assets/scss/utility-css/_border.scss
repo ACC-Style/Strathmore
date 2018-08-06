@@ -17,7 +17,7 @@
 	markup:
 	<div class="{$modifiers} padding_3">{$modifiers} border</div>
 
-	Styleguide 80.1
+	Styleguide 80.10
 
  */
 
@@ -77,7 +77,43 @@
 @include radius_steps("Br","_radius","border","5px");
 @include radius_steps("Br","_round","border","9999px");
 @include radius_steps("Br","_circle","border","100%");
+
+@each $color-name, $hex-value in $acc-palette{
+  @include color-loop(border-color, $color-name,$hex-value);
+}
+
+
+/*
+	Border Color Black
+
+	Border black has attached alpha 
+
+	border-color_black-0           - none
+	border-color_black-2         - dotted
+	border-color_black-6         - dashed
+	border-color_black-9          - solid
+
+	markup:
+	<div class="{$modifiers} padding_3 border_solid">{$modifiers} border</div>
+
+	Styleguide 80.11
+
+ */
+
+
+
+.border-color_black{ border-color:rgba(#000,1)}
+.border-color_black-1{ border-color:rgba(#000,.9)}
+.border-color_black-2{ border-color:rgba(#000,.8)}
+.border-color_black-3{ border-color:rgba(#000,.7)}
+.border-color_black-4{ border-color:rgba(#000,.6)}
+.border-color_black-5{ border-color:rgba(#000,.5)}
+.border-color_black-6{ border-color:rgba(#000,.4)}
+.border-color_black-7{ border-color:rgba(#000,.3)}
+.border-color_black-8{ border-color:rgba(#000,.2)}
+.border-color_black-9{ border-color:rgba(#000,.1)}
+.border-color_black-0{ border-color:rgba(#000,.05)}
+
 .border_transparent{border-color:transparent;}
-// @include build_color("bc","background-color");
 
 
