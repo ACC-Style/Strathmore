@@ -48,6 +48,11 @@
 }
 
 
+
+
+
+
+
 @mixin radius_steps($label,$value-label,$style,$value) {
 	.#{$label}#{$value-label}{
 		#{$style}-radius:unquote($value);
@@ -67,13 +72,11 @@
  }
 
 
-@debug map-get( map-get($style-definition,border-radius), long-name );
 
-@include radius_steps(map-get( map-get($style-definition,border-radius), long-name ),"_square","border","0");
-@include radius_steps(map-get( map-get($style-definition,border-radius), long-name ),"_radius","border","5px");
-@include radius_steps(map-get( map-get($style-definition,border-radius), long-name ),"_round","border","9999px");
-@include radius_steps(map-get( map-get($style-definition,border-radius), long-name ),"_circle","border","100%");
-
+@include radius_steps("Br","_0","border","0");
+@include radius_steps("Br","_radius","border","5px");
+@include radius_steps("Br","_round","border","9999px");
+@include radius_steps("Br","_circle","border","100%");
 
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(border-color, $color-name,$hex-value);
@@ -85,20 +88,13 @@
 
 	Border black has attached alpha 
 
-	border-color_black           	- border black with alpha of 100%
-	border-color_black-1           	- border black with alpha of 90%
-	border-color_black-2           	- border black with alpha of 80%
-	border-color_black-3           	- border black with alpha of 70%
-	border-color_black-4           	- border black with alpha of 60%
-	border-color_black-5           	- border black with alpha of 50%
-	border-color_black-6           	- border black with alpha of 40%
-	border-color_black-7           	- border black with alpha of 30%
-	border-color_black-8           	- border black with alpha of 20%
-	border-color_black-9           	- border black with alpha of 10%
-	border-color_black-0           	- border black with alpha of 2%
+	border-color_black-0           - none
+	border-color_black-2         - dotted
+	border-color_black-6         - dashed
+	border-color_black-9          - solid
 
 	markup:
-	<div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
+	<div class="{$modifiers} padding_3 border_solid">{$modifiers} border</div>
 
 	Styleguide 80.11
 
@@ -116,7 +112,7 @@
 .border-color_black-7{ border-color:rgba(#000,.3)}
 .border-color_black-8{ border-color:rgba(#000,.2)}
 .border-color_black-9{ border-color:rgba(#000,.1)}
-.border-color_black-0{ border-color:rgba(#000,.02)}
+.border-color_black-0{ border-color:rgba(#000,.05)}
 
 .border_transparent{border-color:transparent;}
 

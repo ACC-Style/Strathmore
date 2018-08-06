@@ -134,7 +134,7 @@ $style-definition:(
 		long-name:'.font-color',
 	 	),	 
 	background-color:(
-		short-name:'.back',
+		short-name:'.backc',
 		css-style:'background-color',
 		long-name:'.background-color',
 		),
@@ -142,11 +142,6 @@ $style-definition:(
 		short-name:'.bc',
 		css-style:'border-color',
 		long-name:'.border-color',
-		),
-	border-radius:(
-		short-name:'.bc',
-		css-style:'border-radius',
-		long-name:'.border-radius',
 		),
 	width:(
 		short-name:'.w',

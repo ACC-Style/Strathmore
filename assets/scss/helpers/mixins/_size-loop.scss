@@ -1,6 +1,6 @@
 $debug-trace: true !default;
 
-@mixin size-loop( $style-name:null , $size-variation:null, $multiplier:0, $breakpoint:"" ){
+@mixin size-loop( $style-name:null , $size-variation:null, $multiplier, $breakpoint:"" ){
 	$labels:		map-get($style-definition, $style-name);
 	$short-name:	map-get($labels, short-name); 	 
 	$long-name:		map-get($labels, long-name); 	

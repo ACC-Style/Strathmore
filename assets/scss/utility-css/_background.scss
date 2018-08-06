@@ -1,7 +1,3 @@
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(background-color, $color-name,$hex-value);
 }
-
-
-//textures
-
