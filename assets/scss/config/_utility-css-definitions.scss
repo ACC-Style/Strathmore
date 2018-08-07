@@ -113,10 +113,10 @@ $style-definition:(
 		css-style:'padding-right',
 		long-name:'.padding-right',
 		),
-	border-left-width:(
-		short-name:'.blw',
-		css-style:'border-left-width',
-		long-name:'.border-left-width',
+	border-width:(
+		short-name:'.bw',
+		css-style:'border-width',
+		long-name:'.border-width',
 		),	
 	line-height:(
 		short-name:'.lh',
@@ -134,7 +134,7 @@ $style-definition:(
 		long-name:'.font-color',
 	 	),	 
 	background-color:(
-		short-name:'.backc',
+		short-name:'.back',
 		css-style:'background-color',
 		long-name:'.background-color',
 		),
@@ -142,6 +142,11 @@ $style-definition:(
 		short-name:'.bc',
 		css-style:'border-color',
 		long-name:'.border-color',
+		),
+	border-radius:(
+		short-name:'.br',
+		css-style:'border-radius',
+		long-name:'.border-radius',
 		),
 	width:(
 		short-name:'.w',

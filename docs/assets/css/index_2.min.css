@@ -7386,83 +7386,83 @@ Utility CSS
     border-style: none;
   }
 }
-.border-radius_square {
+.Br_0 {
   border-radius: 0;
 }
 
-.border-radius-tr_square {
+.Br-tr_0 {
   border-top-right-radius: 0;
 }
 
-.border-radius-tl_square {
+.Br-tl_0 {
   border-top-left-radius: 0;
 }
 
-.border-radius-br_square {
+.Br-br_0 {
   border-bottom-right-radius: 0;
 }
 
-.border-radius-bl_square {
+.Br-bl_0 {
   border-top-right-radius: 0;
 }
 
-.border-radius_radius {
+.Br_radius {
   border-radius: 5px;
 }
 
-.border-radius-tr_radius {
+.Br-tr_radius {
   border-top-right-radius: 5px;
 }
 
-.border-radius-tl_radius {
+.Br-tl_radius {
   border-top-left-radius: 5px;
 }
 
-.border-radius-br_radius {
+.Br-br_radius {
   border-bottom-right-radius: 5px;
 }
 
-.border-radius-bl_radius {
+.Br-bl_radius {
   border-top-right-radius: 5px;
 }
 
-.border-radius_round {
+.Br_round {
   border-radius: 9999px;
 }
 
-.border-radius-tr_round {
+.Br-tr_round {
   border-top-right-radius: 9999px;
 }
 
-.border-radius-tl_round {
+.Br-tl_round {
   border-top-left-radius: 9999px;
 }
 
-.border-radius-br_round {
+.Br-br_round {
   border-bottom-right-radius: 9999px;
 }
 
-.border-radius-bl_round {
+.Br-bl_round {
   border-top-right-radius: 9999px;
 }
 
-.border-radius_circle {
+.Br_circle {
   border-radius: 100%;
 }
 
-.border-radius-tr_circle {
+.Br-tr_circle {
   border-top-right-radius: 100%;
 }
 
-.border-radius-tl_circle {
+.Br-tl_circle {
   border-top-left-radius: 100%;
 }
 
-.border-radius-br_circle {
+.Br-br_circle {
   border-bottom-right-radius: 100%;
 }
 
-.border-radius-bl_circle {
+.Br-bl_circle {
   border-top-right-radius: 100%;
 }
 
@@ -7863,27 +7863,27 @@ Utility CSS
 }
 
 /*
-  Border Color Black
- 
-  Border black has attached alpha 
- 
-  border-color_black             - border black with alpha of 100%
-  border-color_black-1             - border black with alpha of 90%
-  border-color_black-2             - border black with alpha of 80%
-  border-color_black-3             - border black with alpha of 70%
-  border-color_black-4             - border black with alpha of 60%
-  border-color_black-5             - border black with alpha of 50%
-  border-color_black-6             - border black with alpha of 40%
-  border-color_black-7             - border black with alpha of 30%
-  border-color_black-8             - border black with alpha of 20%
-  border-color_black-9             - border black with alpha of 10%
-  border-color_black-0             - border black with alpha of 2%
- 
-  markup:
-  <div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
- 
-  Styleguide 80.11
- 
+	Border Color Black
+
+	Border black has attached alpha 
+
+	border-color_black           	- border black with alpha of 100%
+	border-color_black-1           	- border black with alpha of 90%
+	border-color_black-2           	- border black with alpha of 80%
+	border-color_black-3           	- border black with alpha of 70%
+	border-color_black-4           	- border black with alpha of 60%
+	border-color_black-5           	- border black with alpha of 50%
+	border-color_black-6           	- border black with alpha of 40%
+	border-color_black-7           	- border black with alpha of 30%
+	border-color_black-8           	- border black with alpha of 20%
+	border-color_black-9           	- border black with alpha of 10%
+	border-color_black-0           	- border black with alpha of 2%
+
+	markup:
+	<div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
+
+	Styleguide 80.11
+
  */
 .border-color_black {
   border-color: black;
@@ -7927,10 +7927,6 @@ Utility CSS
 
 .border-color_black-0 {
   border-color: rgba(0, 0, 0, 0.02);
-}
-
-.border_transparent {
-  border-color: transparent;
 }
 
 .border_transparent {
@@ -8372,6 +8368,14 @@ Utility CSS
 
 .fc_highlighted-n5 {
   color: #14090f !important;
+}
+
+.color_white {
+  color: #fff;
+}
+
+.color_black {
+  color: #000;
 }
 
 .font-family_slab {
