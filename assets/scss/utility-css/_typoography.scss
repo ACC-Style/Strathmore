@@ -3,9 +3,9 @@
 
   You can change the features of the text with some simple use classes.
 
-  .font-family_slab            -  Font Slab:  Used in X objects
-  .font-family_normal          -  Font Normal:  Used in content            
-  .font-family_display         -  Font Display: Used in headlines, buttons,       
+  .font_slab            -  Font Slab:  Used in X objects
+  .font_normal          -  Font Normal:  Used in content            
+  .font_display         -  Font Display: Used in headlines, buttons,       
 
   markup:
   <div class="{$modifiers} font_3">
@@ -25,14 +25,14 @@
 }
 .color_white{color:$white;}
 .color_black{color:$black;}
-.font-family_slab{
+.font_slab{
    font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
 }
 
-.font-family_normal{
+.font_normal{
     font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
-.font-family_display{
+.font_display{
     font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
 
