@@ -1,3 +1,10 @@
+.disabled.pseudo-class-hover {
+  background-attachment: local;
+  background-repeat: repeat;
+  background-position: top right;
+  background-origin: border-box;
+}
+
 [type=text].pseudo-class-focus,
 [type=password].pseudo-class-focus,
 [type=date].pseudo-class-focus,
@@ -920,4 +927,8 @@ a.thumbnail.pseudo-class-focus {
 .quicklinks a.pseudo-class-hover {
   background-color: #e0f9fb;
   color: #0a0a0a;
+}
+
+.disabled.pseudo-class-hover {
+  background-image: url("/assets/img/cross_disabled.png");
 }

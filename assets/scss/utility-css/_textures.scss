@@ -7,6 +7,8 @@
 	.texture_medium            					- medium texture have grey backgrounds that can be modified lighter and darker
 	.texture_dust            					- A mostly transparent texture
 	.texture_dark              					- dark texture with very little transparency 
+	.texture_cross            					- A mostly transparent texture
+	.texture_disabled              					- dark texture with very little transparency 
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
@@ -29,6 +31,12 @@
 .texture_dust{
 	@include texture-dust;
 }
+.texture_disabled,.disabled, .disabled:hover{
+	@include texture-disabled;
+}
+.texture_cross{
+	@include texture-cross;
+}
 
 
 /*
@@ -44,6 +52,8 @@
 	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>

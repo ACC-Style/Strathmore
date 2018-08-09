@@ -50,7 +50,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.texture_dust, .texture_dark, .texture_medium, .texture_light {
+.texture_cross, .texture_disabled, .disabled, .disabled:hover, .texture_dust, .texture_dark, .texture_medium, .texture_light {
   background-attachment: local;
   background-repeat: repeat;
   background-position: top right;
@@ -8244,7 +8244,7 @@ Utility CSS
 }
 
 /*
-  Fonts Utility Classes
+  Utlitity CSS: Fonts
 
   You can change the features of the text with some simple use classes.
 
@@ -10120,6 +10120,8 @@ Utility CSS
 	.texture_medium            					- medium texture have grey backgrounds that can be modified lighter and darker
 	.texture_dust            					- A mostly transparent texture
 	.texture_dark              					- dark texture with very little transparency 
+	.texture_cross            					- A mostly transparent texture
+	.texture_disabled              					- dark texture with very little transparency 
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
@@ -10136,11 +10138,19 @@ Utility CSS
 }
 
 .texture_dark {
-  background-image: url("/assets/img/crossed_stripes.png");
+  background-image: url("/assets/img/cross_stripes.png");
 }
 
 .texture_dust {
   background-image: url("/assets/img/dust.png");
+}
+
+.texture_disabled, .disabled, .disabled:hover {
+  background-image: url("/assets/img/cross_disabled.png");
+}
+
+.texture_cross {
+  background-image: url("/assets/img/cross_color.png");
 }
 
 /*
@@ -10156,6 +10166,8 @@ Utility CSS
 	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>

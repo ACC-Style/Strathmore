@@ -1,7 +1,11 @@
 $texture-light:"/assets/img/whisper.png";
 $texture-medium:"/assets/img/billie-holiday-speck.png";
 $texture-dust:"/assets/img/dust.png";
-$texture-dark:"/assets/img/crossed_stripes.png";
+$texture-dark:"/assets/img/cross_stripes.png";
+$texture-disabled:"/assets/img/cross_disabled.png";
+$texture-cross:"/assets/img/cross_color.png";
+
+
 
 %texture-base{
 	background-attachment:local;
@@ -31,4 +35,14 @@ $texture-dark:"/assets/img/crossed_stripes.png";
 @mixin texture-dark(){
 	@extend %texture-base;
 	background-image: url( $texture-dark );
+}
+
+@mixin texture-disabled(){
+	@extend %texture-base;
+	background-image: url( $texture-disabled );
+}
+
+@mixin texture-cross(){
+	@extend %texture-base;
+	background-image: url( $texture-cross );
 }
