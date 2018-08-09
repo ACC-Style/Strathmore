@@ -1,30 +1,21 @@
 $debug-trace: true !default;
 
-@mixin color-loop($style-name, $color-name, $color){
-    @if $debug-trace{ 
-        @debug "Color Loop Is Tracing";
-        @debug "Short Name" + $short-name;
-        @debug "Long Name" + $long-name; 
-        @debug "CSS Style" + $style; 
-
-    }
+@mixin color-loop($key, $color-name, $color){
     $white-mix:     map-get($values, percent-positive);
     $black-mix:     map-get($values, percent-negative);
-    $labels:        map-get($style-definition, $style-name);
-	  $short-name:    #{ map-get($labels, short-name)}_#{ $color-name }; 	 
-  	$long-name:     #{ map-get($labels, long-name)}_#{  $color-name };	
-  	$style:			map-get($labels, css-style); 
-  		@each  $val-name, $val in $white-mix {
-        @if $val-name == 0 {
-          #{$short-name}{
-            #{$style}:mix(white, $color,  $val) !important;
-          }        
-        }
-        @else{
-    		  #{$short-name}-#{$val-name}{
-    		    #{$style}:mix(white, $color,  $val) !important;
-    		  }
+	  $short-name:    #{ get-css-shortname($key) }_#{ $color-name }; 	 
+  	$long-name:     #{ get-css-longname($key)  }_#{  $color-name };	
+  	$style:			    get-css-style($key); 
+    @if $debug-trace{ 
+        @debug "Color Loop for #{$key} painting it with #{$color-name}";
 
+    }
+      #{$short-name}{
+            #{$style}: $color!important;
+      }   
+  		@each  $val-name, $val in $white-mix {
+        #{$short-name}-#{$val-name}{
+            #{$style}:mix(white, $color,  $val) !important;
         }
       }
       @each  $val-name, $val in $black-mix {

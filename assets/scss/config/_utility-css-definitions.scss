@@ -59,7 +59,13 @@ $values:(
 		n3:50%,
 		n4:70%,
 		n5:90%
-		)
+		),
+	border-radius:(
+		square: 0px,
+		radius: 5px,
+		round: 999px,
+		circle:100%,
+		),
 );
 
 $style-definition:(
@@ -113,11 +119,6 @@ $style-definition:(
 		css-style:'padding-right',
 		long-name:'.padding-right',
 		),
-	border-width:(
-		short-name:'.bw',
-		css-style:'border-width',
-		long-name:'.border-width',
-		),	
 	line-height:(
 		short-name:'.lh',
 		css-style:'line-height',
@@ -139,7 +140,7 @@ $style-definition:(
 		long-name:'.background-color',
 		),
 	border-color:(
-		short-name:'.bc',
+		short-name:'.border',
 		css-style:'border-color',
 		long-name:'.border-color',
 		),
@@ -148,11 +149,56 @@ $style-definition:(
 		css-style:'border-radius',
 		long-name:'.border-radius',
 		),
+	border-top-right-radius:(
+		short-name:'.br-tr',
+		css-style:'border-top-right-radius',
+		long-name:'.border-top-right-radius',
+		),
+	border-top-left-radius:(
+		short-name:'.br-tl',
+		css-style:'border-top-left-radius',
+		long-name:'.border-top-left-radius',
+		),
+	border-bottom-right-radius:(
+		short-name:'.br-br',
+		css-style:'border-bottom-right-radius',
+		long-name:'.border-bottom-right-radius',
+		),
+	border-bottom-left-radius:(
+		short-name:'.br-bl',
+		css-style:'border-bottom-left-radius',
+		long-name:'.border-bottom-left-radius',
+		),
 	width:(
 		short-name:'.w',
 		css-style:'width',
 		long-name:'.width',
-		)
+		),
+	border-width:(
+		short-name:'.border',
+		css-style:'border-width',
+		long-name:'.border-width',
+		),	
+	border-top-width:(
+		short-name:'.border-top',
+		css-style:'border-top-width',
+		long-name:'.border-top-width',
+		),	
+	border-right-width:(
+		short-name:'.border-right',
+		css-style:'border-right-width',
+		long-name:'.border-right-width',
+		),	
+	border-left-width:(
+		short-name:'.border-left',
+		css-style:'border-left-width',
+		long-name:'.border-left-width',
+		),	
+	border-bottom-width:(
+		short-name:'.border-bottom',
+		css-style:'border-bottom-width',
+		long-name:'.border-bottom-width',
+		),	
 
 );
 

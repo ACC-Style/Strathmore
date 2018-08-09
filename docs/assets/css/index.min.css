@@ -50,7 +50,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.texture-dark, .texture-medium_n5, .texture-medium_n4, .texture-medium_n3, .texture-medium_n2, .texture-medium_n1, .texture-medium_5, .texture-medium_4, .texture-medium_3, .texture-medium_2, .texture-medium_1, .texture-medium, .texture-light {
+.texture_dust, .texture_dark, .texture_medium, .texture_light {
   background-attachment: local;
   background-repeat: repeat;
   background-position: top right;
@@ -292,13 +292,13 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 .map_canvas img,
@@ -314,7 +314,7 @@ button {
   padding: 0;
   appearance: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 0px;
   background: transparent;
   line-height: 1;
   cursor: auto;
@@ -352,7 +352,7 @@ textarea {
   margin: 0 0 1rem;
   padding: 0.5rem;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #fefefe;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   font-family: inherit;
@@ -389,7 +389,7 @@ textarea[readonly] {
 [type=submit],
 [type=button] {
   appearance: none;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 input[type=search] {
@@ -455,10 +455,10 @@ label.middle {
   align-items: stretch;
 }
 .input-group > :first-child, .input-group > :first-child.input-group-button > * {
-  border-radius: 0 0 0 0;
+  border-radius: 0px 0 0 0px;
 }
 .input-group > :last-child, .input-group > :last-child.input-group-button > * {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0px 0px 0;
 }
 
 .input-group-button a,
@@ -539,7 +539,7 @@ select {
   padding: 0.5rem;
   appearance: none;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 1rem;
@@ -3196,7 +3196,7 @@ h3 {
   margin: 0 0 1rem 0;
   padding: 0.85em 1em;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 0px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1rem;
@@ -3903,7 +3903,7 @@ a.button:hover, a.button:focus {
 .label {
   display: inline-block;
   padding: 0.33333rem 0.5rem;
-  border-radius: 0;
+  border-radius: 0px;
   font-size: 0.8rem;
   line-height: 1;
   white-space: nowrap;
@@ -3951,7 +3951,7 @@ a.button:hover, a.button:focus {
 .progress {
   height: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #cacaca;
 }
 .progress.primary .progress-meter {
@@ -4037,7 +4037,7 @@ a.button:hover, a.button:focus {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #11838e;
   transition: all 0.2s ease-in-out;
   touch-action: manipulation;
@@ -4101,7 +4101,7 @@ a.button:hover, a.button:focus {
   display: block;
   width: 4rem;
   height: 2rem;
-  border-radius: 0;
+  border-radius: 0px;
   background: #cacaca;
   transition: all 0.25s ease-out;
   font-weight: inherit;
@@ -4119,7 +4119,7 @@ input + .switch-paddle {
   width: 1.5rem;
   height: 1.5rem;
   transform: translate3d(0, 0, 0);
-  border-radius: 0;
+  border-radius: 0px;
   background: #fefefe;
   transition: all 0.25s ease-out;
   content: "";
@@ -4213,7 +4213,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 1rem;
-  border-radius: 0;
+  border-radius: 0px;
 }
 thead,
 tbody,
@@ -4399,7 +4399,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
-  border-radius: 0;
+  border-radius: 0px;
   background-color: white;
   color: #0a0a0a;
 }
@@ -4464,7 +4464,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   flex-grow: 1;
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
-  border-radius: 0;
+  border-radius: 0px;
   background: #fefefe;
   box-shadow: none;
   overflow: hidden;
@@ -4504,7 +4504,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 1rem;
   visibility: hidden;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #fefefe;
   font-size: 1rem;
 }
@@ -4543,7 +4543,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 .pagination li {
   margin-right: 0.0625rem;
-  border-radius: 0;
+  border-radius: 0px;
   font-size: 0.875rem;
   display: none;
 }
@@ -4559,7 +4559,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .pagination button {
   display: block;
   padding: 0.1875rem 0.625rem;
-  border-radius: 0;
+  border-radius: 0px;
   color: #0a0a0a;
 }
 .pagination a:hover,
@@ -4614,7 +4614,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   z-index: 1200;
   max-width: 10rem;
   padding: 0.75rem;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #0a0a0a;
   font-size: 80%;
   color: #fefefe;
@@ -4713,10 +4713,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .accordion-item:first-child > :first-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0px 0px 0 0;
 }
 .accordion-item:last-child > :last-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0px 0px;
 }
 
 .accordion-title {
@@ -4731,7 +4731,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 .accordion-title :last-child:not(.is-active) > .accordion-title :last-child {
   border-bottom: 1px solid #e6e6e6;
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0px 0px;
 }
 .accordion-title:hover, .accordion-title:focus {
   background-color: #e6e6e6;
@@ -5002,7 +5002,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   max-width: 100%;
   margin-bottom: 1rem;
   border: 4px solid #fefefe;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   line-height: 0;
 }
@@ -6156,7 +6156,7 @@ html.is-reveal-open body {
   display: none;
   padding: 1rem;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: #fefefe;
   position: relative;
   top: 100px;
@@ -6901,6 +6901,32 @@ markup:
 }
 
 /*
+	Cards
+
+	Build on the foundation card some utiltiy classes have been added to give it the full look and feel.   
+
+	.texture_light.back_primary				- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="card" style="width: 300px;">
+	  <div class="card-divider back_secondary border-top-left-square color_white font-size_3 padding_4 texture_dust">
+	    This is a header
+	  </div>
+	  <img src="https://picsum.photos/400/300">
+	  <div class="card-section">
+	    <h4>This is a card.</h4>
+	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+	  </div>
+	</div
+
+	Styleguide 40.1
+
+ */
+.cards {
+  foo: foo;
+}
+
+/*
 Utility CSS
 
  Single Class that controls single styles allowing for quick manipulations and when combined can style new types of UI without the need of new CSS. 
@@ -6931,10 +6957,10 @@ Utility CSS
 
 
 	markup:
-	<div class="{$modifiers} padding_2 border_transparent border_solid backc_primary-5 text-center">Container With Margins</div>
+	<div class="{$modifiers} padding_2 border_transparent border_solid back_primary-5 text-center">Container With Margins</div>
 
  	sg-wrapper:
-	<div class="backc_warning-3 border_transparent border_solid">
+	<div class="back_warning-3 border_transparent border_solid">
 	   <sg-wrapper-content/>
 	</div>
 
@@ -7178,7 +7204,7 @@ Utility CSS
 	.padding-bottom_4       - Bottom padding set to global padding
 
 	markup:
-	<div class="{$modifiers} border_solid border_transparent backc_alert-3  text-center"><div class="backc_primary-5 text-center">Content With Padding</div></div>
+	<div class="{$modifiers} border_solid border_transparent back_alert-3  text-center"><div class="back_primary-5 text-center">Content With Padding</div></div>
 
 	Styleguide 80.30
 
@@ -7386,484 +7412,8 @@ Utility CSS
     border-style: none;
   }
 }
-.border-radius_square {
-  border-radius: 0;
-}
-
-.border-radius-tr_square {
-  border-top-right-radius: 0;
-}
-
-.border-radius-tl_square {
-  border-top-left-radius: 0;
-}
-
-.border-radius-br_square {
-  border-bottom-right-radius: 0;
-}
-
-.border-radius-bl_square {
-  border-top-right-radius: 0;
-}
-
-.border-radius_radius {
-  border-radius: 5px;
-}
-
-.border-radius-tr_radius {
-  border-top-right-radius: 5px;
-}
-
-.border-radius-tl_radius {
-  border-top-left-radius: 5px;
-}
-
-.border-radius-br_radius {
-  border-bottom-right-radius: 5px;
-}
-
-.border-radius-bl_radius {
-  border-top-right-radius: 5px;
-}
-
-.border-radius_round {
-  border-radius: 9999px;
-}
-
-.border-radius-tr_round {
-  border-top-right-radius: 9999px;
-}
-
-.border-radius-tl_round {
-  border-top-left-radius: 9999px;
-}
-
-.border-radius-br_round {
-  border-bottom-right-radius: 9999px;
-}
-
-.border-radius-bl_round {
-  border-top-right-radius: 9999px;
-}
-
-.border-radius_circle {
-  border-radius: 100%;
-}
-
-.border-radius-tr_circle {
-  border-top-right-radius: 100%;
-}
-
-.border-radius-tl_circle {
-  border-top-left-radius: 100%;
-}
-
-.border-radius-br_circle {
-  border-bottom-right-radius: 100%;
-}
-
-.border-radius-bl_circle {
-  border-top-right-radius: 100%;
-}
-
-.bc_primary {
-  border-color: #11838e !important;
-}
-
-.bc_primary-1 {
-  border-color: #298f99 !important;
-}
-
-.bc_primary-2 {
-  border-color: #58a8b0 !important;
-}
-
-.bc_primary-3 {
-  border-color: #88c1c7 !important;
-}
-
-.bc_primary-4 {
-  border-color: #b8dadd !important;
-}
-
-.bc_primary-5 {
-  border-color: #e7f3f4 !important;
-}
-
-.bc_primary-n1 {
-  border-color: #0f7680 !important;
-}
-
-.bc_primary-n2 {
-  border-color: #0c5c63 !important;
-}
-
-.bc_primary-n3 {
-  border-color: #094247 !important;
-}
-
-.bc_primary-n4 {
-  border-color: #05272b !important;
-}
-
-.bc_primary-n5 {
-  border-color: #020d0e !important;
-}
-
-.bc_secondary {
-  border-color: #63646b !important;
-}
-
-.bc_secondary-1 {
-  border-color: #73747a !important;
-}
-
-.bc_secondary-2 {
-  border-color: #929397 !important;
-}
-
-.bc_secondary-3 {
-  border-color: #b1b2b5 !important;
-}
-
-.bc_secondary-4 {
-  border-color: #d0d1d3 !important;
-}
-
-.bc_secondary-5 {
-  border-color: #eff0f0 !important;
-}
-
-.bc_secondary-n1 {
-  border-color: #595a60 !important;
-}
-
-.bc_secondary-n2 {
-  border-color: #45464b !important;
-}
-
-.bc_secondary-n3 {
-  border-color: #323236 !important;
-}
-
-.bc_secondary-n4 {
-  border-color: #1e1e20 !important;
-}
-
-.bc_secondary-n5 {
-  border-color: #0a0a0b !important;
-}
-
-.bc_success {
-  border-color: #09911f !important;
-}
-
-.bc_success-1 {
-  border-color: #229c35 !important;
-}
-
-.bc_success-2 {
-  border-color: #53b262 !important;
-}
-
-.bc_success-3 {
-  border-color: #84c88f !important;
-}
-
-.bc_success-4 {
-  border-color: #b5debc !important;
-}
-
-.bc_success-5 {
-  border-color: #e6f4e9 !important;
-}
-
-.bc_success-n1 {
-  border-color: #08831c !important;
-}
-
-.bc_success-n2 {
-  border-color: #066616 !important;
-}
-
-.bc_success-n3 {
-  border-color: #054910 !important;
-}
-
-.bc_success-n4 {
-  border-color: #032c09 !important;
-}
-
-.bc_success-n5 {
-  border-color: #010f03 !important;
-}
-
-.bc_warning {
-  border-color: #e18725 !important;
-}
-
-.bc_warning-1 {
-  border-color: #e4933b !important;
-}
-
-.bc_warning-2 {
-  border-color: #eaab66 !important;
-}
-
-.bc_warning-3 {
-  border-color: #f0c392 !important;
-}
-
-.bc_warning-4 {
-  border-color: #f6dbbe !important;
-}
-
-.bc_warning-5 {
-  border-color: #fcf3e9 !important;
-}
-
-.bc_warning-n1 {
-  border-color: #cb7a21 !important;
-}
-
-.bc_warning-n2 {
-  border-color: #9e5f1a !important;
-}
-
-.bc_warning-n3 {
-  border-color: #714413 !important;
-}
-
-.bc_warning-n4 {
-  border-color: #44290b !important;
-}
-
-.bc_warning-n5 {
-  border-color: #170e04 !important;
-}
-
-.bc_alert {
-  border-color: #cb241c !important;
-}
-
-.bc_alert-1 {
-  border-color: #d03a33 !important;
-}
-
-.bc_alert-2 {
-  border-color: #db6660 !important;
-}
-
-.bc_alert-3 {
-  border-color: #e5928e !important;
-}
-
-.bc_alert-4 {
-  border-color: #efbdbb !important;
-}
-
-.bc_alert-5 {
-  border-color: #fae9e8 !important;
-}
-
-.bc_alert-n1 {
-  border-color: #b72019 !important;
-}
-
-.bc_alert-n2 {
-  border-color: #8e1914 !important;
-}
-
-.bc_alert-n3 {
-  border-color: #66120e !important;
-}
-
-.bc_alert-n4 {
-  border-color: #3d0b08 !important;
-}
-
-.bc_alert-n5 {
-  border-color: #140403 !important;
-}
-
-.bc_navigation {
-  border-color: #4f74bf !important;
-}
-
-.bc_navigation-1 {
-  border-color: #6182c5 !important;
-}
-
-.bc_navigation-2 {
-  border-color: #849ed2 !important;
-}
-
-.bc_navigation-3 {
-  border-color: #a7badf !important;
-}
-
-.bc_navigation-4 {
-  border-color: #cad5ec !important;
-}
-
-.bc_navigation-5 {
-  border-color: #edf1f9 !important;
-}
-
-.bc_navigation-n1 {
-  border-color: #4768ac !important;
-}
-
-.bc_navigation-n2 {
-  border-color: #375186 !important;
-}
-
-.bc_navigation-n3 {
-  border-color: #283a60 !important;
-}
-
-.bc_navigation-n4 {
-  border-color: #182339 !important;
-}
-
-.bc_navigation-n5 {
-  border-color: #080c13 !important;
-}
-
-.bc_selected {
-  border-color: #509f6c !important;
-}
-
-.bc_selected-1 {
-  border-color: #62a97b !important;
-}
-
-.bc_selected-2 {
-  border-color: #85bc98 !important;
-}
-
-.bc_selected-3 {
-  border-color: #a8cfb6 !important;
-}
-
-.bc_selected-4 {
-  border-color: #cbe2d3 !important;
-}
-
-.bc_selected-5 {
-  border-color: #eef5f0 !important;
-}
-
-.bc_selected-n1 {
-  border-color: #488f61 !important;
-}
-
-.bc_selected-n2 {
-  border-color: #386f4c !important;
-}
-
-.bc_selected-n3 {
-  border-color: #285036 !important;
-}
-
-.bc_selected-n4 {
-  border-color: #183020 !important;
-}
-
-.bc_selected-n5 {
-  border-color: #08100b !important;
-}
-
-.bc_info {
-  border-color: #735dba !important;
-}
-
-.bc_info-1 {
-  border-color: #816dc1 !important;
-}
-
-.bc_info-2 {
-  border-color: #9d8ecf !important;
-}
-
-.bc_info-3 {
-  border-color: #b9aedd !important;
-}
-
-.bc_info-4 {
-  border-color: #d5ceea !important;
-}
-
-.bc_info-5 {
-  border-color: #f1eff8 !important;
-}
-
-.bc_info-n1 {
-  border-color: #6854a7 !important;
-}
-
-.bc_info-n2 {
-  border-color: #514182 !important;
-}
-
-.bc_info-n3 {
-  border-color: #3a2f5d !important;
-}
-
-.bc_info-n4 {
-  border-color: #231c38 !important;
-}
-
-.bc_info-n5 {
-  border-color: #0c0913 !important;
-}
-
-.bc_highlighted {
-  border-color: #c45e99 !important;
-}
-
-.bc_highlighted-1 {
-  border-color: #ca6ea3 !important;
-}
-
-.bc_highlighted-2 {
-  border-color: #d68eb8 !important;
-}
-
-.bc_highlighted-3 {
-  border-color: #e2afcc !important;
-}
-
-.bc_highlighted-4 {
-  border-color: #edcfe0 !important;
-}
-
-.bc_highlighted-5 {
-  border-color: #f9eff5 !important;
-}
-
-.bc_highlighted-n1 {
-  border-color: #b0558a !important;
-}
-
-.bc_highlighted-n2 {
-  border-color: #89426b !important;
-}
-
-.bc_highlighted-n3 {
-  border-color: #622f4d !important;
-}
-
-.bc_highlighted-n4 {
-  border-color: #3b1c2e !important;
-}
-
-.bc_highlighted-n5 {
-  border-color: #14090f !important;
-}
-
 /*
-  Border Color Black
+  Border Color Black with Alpha
  
   Border black has attached alpha 
  
@@ -7880,7 +7430,7 @@ Utility CSS
   border-color_black-0             - border black with alpha of 2%
  
   markup:
-  <div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid back_primary-1 color_white">{$modifiers} border</div>
  
   Styleguide 80.11
  
@@ -7938,6 +7488,714 @@ Utility CSS
 }
 
 /*
+	Border Radius
+
+	Apply border radius to objects by adding full or partial classes for border-radius
+
+	border-radius_square           - All square
+	border-radius_radius        - All with $global-radus
+	border-radius_round         - All corners with 99(px)
+	border-radius_circle          - All corders at 100%
+	border-top-left-radius_square           - top-left square
+	border-top-left-radius_radius        - top-left with $global-radus
+	border-top-left-radius_round         - top-left corners with 99(px)
+	border-top-left-radius_circle          - top-left corders at 100%
+	border-bottom-left-radius_square           - bottom-left square
+	border-bottom-left-radius_radius        - bottom-left with $global-radus
+	border-bottom-left-radius_round         - bottom-left corners with 99(px)
+	border-bottom-left-radius_circle          - bottom-left corders at 100%
+
+
+	markup:
+	<div class="{$modifiers} padding_3 border-color_black border_solid">{$modifiers} border</div>
+
+	Styleguide 80.12
+
+ */
+.border-radius_square {
+  border-radius: 0px;
+}
+
+.border-radius_radius {
+  border-radius: 5px;
+}
+
+.border-radius_round {
+  border-radius: 999px;
+}
+
+.border-radius_circle {
+  border-radius: 100%;
+}
+
+.border-top-right-radius_square {
+  border-top-right-radius: 0px;
+}
+
+.border-top-right-radius_radius {
+  border-top-right-radius: 5px;
+}
+
+.border-top-right-radius_round {
+  border-top-right-radius: 999px;
+}
+
+.border-top-right-radius_circle {
+  border-top-right-radius: 100%;
+}
+
+.border-top-left-radius_square {
+  border-top-left-radius: 0px;
+}
+
+.border-top-left-radius_radius {
+  border-top-left-radius: 5px;
+}
+
+.border-top-left-radius_round {
+  border-top-left-radius: 999px;
+}
+
+.border-top-left-radius_circle {
+  border-top-left-radius: 100%;
+}
+
+.border-bottom-right-radius_square {
+  border-bottom-right-radius: 0px;
+}
+
+.border-bottom-right-radius_radius {
+  border-bottom-right-radius: 5px;
+}
+
+.border-bottom-right-radius_round {
+  border-bottom-right-radius: 999px;
+}
+
+.border-bottom-right-radius_circle {
+  border-bottom-right-radius: 100%;
+}
+
+.border-bottom-left-radius_square {
+  border-bottom-left-radius: 0px;
+}
+
+.border-bottom-left-radius_radius {
+  border-bottom-left-radius: 5px;
+}
+
+.border-bottom-left-radius_round {
+  border-bottom-left-radius: 999px;
+}
+
+.border-bottom-left-radius_circle {
+  border-bottom-left-radius: 100%;
+}
+
+/*
+  Border Colors
+ 
+  Border black has attached alpha   
+
+  border_primary            	- border color primary
+  border_error            	- border color error
+  border_warning            	- border color warning
+  border_success            	- border color success
+  border_primary-1             - border color mixed with white
+  border_primary-2             - border color mixed with white
+  border_primary-3             - border color mixed with white
+  border_primary-4             - border color mixed with white
+  border_primary-5             - border color mixed with white
+  border_primary-n1             - border color mixed with black
+  border_primary-n2             - border color mixed with black
+  border_primary-n3             - border color mixed with black
+  border_primary-n4             - border color mixed with black
+  border_primary-n5             - border color mixed with black 
+
+  markup:
+  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+ 
+  Styleguide 80.13
+ 
+ */
+.border_primary {
+  border-color: #11838e !important;
+}
+
+.border_primary-0 {
+  border-color: #11838e !important;
+}
+
+.border_primary-1 {
+  border-color: #298f99 !important;
+}
+
+.border_primary-2 {
+  border-color: #58a8b0 !important;
+}
+
+.border_primary-3 {
+  border-color: #88c1c7 !important;
+}
+
+.border_primary-4 {
+  border-color: #b8dadd !important;
+}
+
+.border_primary-5 {
+  border-color: #e7f3f4 !important;
+}
+
+.border_primary-n1 {
+  border-color: #0f7680 !important;
+}
+
+.border_primary-n2 {
+  border-color: #0c5c63 !important;
+}
+
+.border_primary-n3 {
+  border-color: #094247 !important;
+}
+
+.border_primary-n4 {
+  border-color: #05272b !important;
+}
+
+.border_primary-n5 {
+  border-color: #020d0e !important;
+}
+
+.border_secondary {
+  border-color: #63646b !important;
+}
+
+.border_secondary-0 {
+  border-color: #63646b !important;
+}
+
+.border_secondary-1 {
+  border-color: #73747a !important;
+}
+
+.border_secondary-2 {
+  border-color: #929397 !important;
+}
+
+.border_secondary-3 {
+  border-color: #b1b2b5 !important;
+}
+
+.border_secondary-4 {
+  border-color: #d0d1d3 !important;
+}
+
+.border_secondary-5 {
+  border-color: #eff0f0 !important;
+}
+
+.border_secondary-n1 {
+  border-color: #595a60 !important;
+}
+
+.border_secondary-n2 {
+  border-color: #45464b !important;
+}
+
+.border_secondary-n3 {
+  border-color: #323236 !important;
+}
+
+.border_secondary-n4 {
+  border-color: #1e1e20 !important;
+}
+
+.border_secondary-n5 {
+  border-color: #0a0a0b !important;
+}
+
+.border_success {
+  border-color: #09911f !important;
+}
+
+.border_success-0 {
+  border-color: #09911f !important;
+}
+
+.border_success-1 {
+  border-color: #229c35 !important;
+}
+
+.border_success-2 {
+  border-color: #53b262 !important;
+}
+
+.border_success-3 {
+  border-color: #84c88f !important;
+}
+
+.border_success-4 {
+  border-color: #b5debc !important;
+}
+
+.border_success-5 {
+  border-color: #e6f4e9 !important;
+}
+
+.border_success-n1 {
+  border-color: #08831c !important;
+}
+
+.border_success-n2 {
+  border-color: #066616 !important;
+}
+
+.border_success-n3 {
+  border-color: #054910 !important;
+}
+
+.border_success-n4 {
+  border-color: #032c09 !important;
+}
+
+.border_success-n5 {
+  border-color: #010f03 !important;
+}
+
+.border_warning {
+  border-color: #e18725 !important;
+}
+
+.border_warning-0 {
+  border-color: #e18725 !important;
+}
+
+.border_warning-1 {
+  border-color: #e4933b !important;
+}
+
+.border_warning-2 {
+  border-color: #eaab66 !important;
+}
+
+.border_warning-3 {
+  border-color: #f0c392 !important;
+}
+
+.border_warning-4 {
+  border-color: #f6dbbe !important;
+}
+
+.border_warning-5 {
+  border-color: #fcf3e9 !important;
+}
+
+.border_warning-n1 {
+  border-color: #cb7a21 !important;
+}
+
+.border_warning-n2 {
+  border-color: #9e5f1a !important;
+}
+
+.border_warning-n3 {
+  border-color: #714413 !important;
+}
+
+.border_warning-n4 {
+  border-color: #44290b !important;
+}
+
+.border_warning-n5 {
+  border-color: #170e04 !important;
+}
+
+.border_alert {
+  border-color: #cb241c !important;
+}
+
+.border_alert-0 {
+  border-color: #cb241c !important;
+}
+
+.border_alert-1 {
+  border-color: #d03a33 !important;
+}
+
+.border_alert-2 {
+  border-color: #db6660 !important;
+}
+
+.border_alert-3 {
+  border-color: #e5928e !important;
+}
+
+.border_alert-4 {
+  border-color: #efbdbb !important;
+}
+
+.border_alert-5 {
+  border-color: #fae9e8 !important;
+}
+
+.border_alert-n1 {
+  border-color: #b72019 !important;
+}
+
+.border_alert-n2 {
+  border-color: #8e1914 !important;
+}
+
+.border_alert-n3 {
+  border-color: #66120e !important;
+}
+
+.border_alert-n4 {
+  border-color: #3d0b08 !important;
+}
+
+.border_alert-n5 {
+  border-color: #140403 !important;
+}
+
+.border_navigation {
+  border-color: #4f74bf !important;
+}
+
+.border_navigation-0 {
+  border-color: #4f74bf !important;
+}
+
+.border_navigation-1 {
+  border-color: #6182c5 !important;
+}
+
+.border_navigation-2 {
+  border-color: #849ed2 !important;
+}
+
+.border_navigation-3 {
+  border-color: #a7badf !important;
+}
+
+.border_navigation-4 {
+  border-color: #cad5ec !important;
+}
+
+.border_navigation-5 {
+  border-color: #edf1f9 !important;
+}
+
+.border_navigation-n1 {
+  border-color: #4768ac !important;
+}
+
+.border_navigation-n2 {
+  border-color: #375186 !important;
+}
+
+.border_navigation-n3 {
+  border-color: #283a60 !important;
+}
+
+.border_navigation-n4 {
+  border-color: #182339 !important;
+}
+
+.border_navigation-n5 {
+  border-color: #080c13 !important;
+}
+
+.border_selected {
+  border-color: #509f6c !important;
+}
+
+.border_selected-0 {
+  border-color: #509f6c !important;
+}
+
+.border_selected-1 {
+  border-color: #62a97b !important;
+}
+
+.border_selected-2 {
+  border-color: #85bc98 !important;
+}
+
+.border_selected-3 {
+  border-color: #a8cfb6 !important;
+}
+
+.border_selected-4 {
+  border-color: #cbe2d3 !important;
+}
+
+.border_selected-5 {
+  border-color: #eef5f0 !important;
+}
+
+.border_selected-n1 {
+  border-color: #488f61 !important;
+}
+
+.border_selected-n2 {
+  border-color: #386f4c !important;
+}
+
+.border_selected-n3 {
+  border-color: #285036 !important;
+}
+
+.border_selected-n4 {
+  border-color: #183020 !important;
+}
+
+.border_selected-n5 {
+  border-color: #08100b !important;
+}
+
+.border_info {
+  border-color: #735dba !important;
+}
+
+.border_info-0 {
+  border-color: #735dba !important;
+}
+
+.border_info-1 {
+  border-color: #816dc1 !important;
+}
+
+.border_info-2 {
+  border-color: #9d8ecf !important;
+}
+
+.border_info-3 {
+  border-color: #b9aedd !important;
+}
+
+.border_info-4 {
+  border-color: #d5ceea !important;
+}
+
+.border_info-5 {
+  border-color: #f1eff8 !important;
+}
+
+.border_info-n1 {
+  border-color: #6854a7 !important;
+}
+
+.border_info-n2 {
+  border-color: #514182 !important;
+}
+
+.border_info-n3 {
+  border-color: #3a2f5d !important;
+}
+
+.border_info-n4 {
+  border-color: #231c38 !important;
+}
+
+.border_info-n5 {
+  border-color: #0c0913 !important;
+}
+
+.border_highlighted {
+  border-color: #c45e99 !important;
+}
+
+.border_highlighted-0 {
+  border-color: #c45e99 !important;
+}
+
+.border_highlighted-1 {
+  border-color: #ca6ea3 !important;
+}
+
+.border_highlighted-2 {
+  border-color: #d68eb8 !important;
+}
+
+.border_highlighted-3 {
+  border-color: #e2afcc !important;
+}
+
+.border_highlighted-4 {
+  border-color: #edcfe0 !important;
+}
+
+.border_highlighted-5 {
+  border-color: #f9eff5 !important;
+}
+
+.border_highlighted-n1 {
+  border-color: #b0558a !important;
+}
+
+.border_highlighted-n2 {
+  border-color: #89426b !important;
+}
+
+.border_highlighted-n3 {
+  border-color: #622f4d !important;
+}
+
+.border_highlighted-n4 {
+  border-color: #3b1c2e !important;
+}
+
+.border_highlighted-n5 {
+  border-color: #14090f !important;
+}
+
+/*
+  Border Width
+ 
+  Manipulation of borders with thisese classes either all border or with single borders   
+
+  border-width_0            	- all border with no border
+  border-width_1            	- all borders with 1px
+  border-width_2            	- all borders with .125rem
+  border-width_3            	- all borders with .25rem
+  border-width_4            	- all borders with .5rem
+  border-width_5            	- all borders with rem
+  border-left-width_1.border-width_0            	- all border with no border
+  border-left-width_1.border-width_1            	- all borders with 1px
+  border-left-width_1.border-width_2            	- all borders with .125rem
+  border-left-width_1.border-width_3            	- all borders with .25rem
+  border-left-width_1.border-width_4            	- all borders with .5rem
+  border-left-width_1.border-width_5            	- all borders with rem
+
+
+  markup:
+  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+ 
+  Styleguide 80.14
+ 
+ */
+.border-width_0 {
+  border-width: 0rem;
+}
+
+.border-width_1 {
+  border-width: 1px;
+}
+
+.border-width_2 {
+  border-width: 0.125rem;
+}
+
+.border-width_3 {
+  border-width: 0.25rem;
+}
+
+.border-width_4 {
+  border-width: 0.5rem;
+}
+
+.border-width_5 {
+  border-width: 1rem;
+}
+
+.border-top-width_0 {
+  border-top-width: 0rem;
+}
+
+.border-top-width_1 {
+  border-top-width: 1px;
+}
+
+.border-top-width_2 {
+  border-top-width: 0.125rem;
+}
+
+.border-top-width_3 {
+  border-top-width: 0.25rem;
+}
+
+.border-top-width_4 {
+  border-top-width: 0.5rem;
+}
+
+.border-top-width_5 {
+  border-top-width: 1rem;
+}
+
+.border-right-width_0 {
+  border-right-width: 0rem;
+}
+
+.border-right-width_1 {
+  border-right-width: 1px;
+}
+
+.border-right-width_2 {
+  border-right-width: 0.125rem;
+}
+
+.border-right-width_3 {
+  border-right-width: 0.25rem;
+}
+
+.border-right-width_4 {
+  border-right-width: 0.5rem;
+}
+
+.border-right-width_5 {
+  border-right-width: 1rem;
+}
+
+.border-left-width_0 {
+  border-left-width: 0rem;
+}
+
+.border-left-width_1 {
+  border-left-width: 1px;
+}
+
+.border-left-width_2 {
+  border-left-width: 0.125rem;
+}
+
+.border-left-width_3 {
+  border-left-width: 0.25rem;
+}
+
+.border-left-width_4 {
+  border-left-width: 0.5rem;
+}
+
+.border-left-width_5 {
+  border-left-width: 1rem;
+}
+
+.border-bottom-width_0 {
+  border-bottom-width: 0rem;
+}
+
+.border-bottom-width_1 {
+  border-bottom-width: 1px;
+}
+
+.border-bottom-width_2 {
+  border-bottom-width: 0.125rem;
+}
+
+.border-bottom-width_3 {
+  border-bottom-width: 0.25rem;
+}
+
+.border-bottom-width_4 {
+  border-bottom-width: 0.5rem;
+}
+
+.border-bottom-width_5 {
+  border-bottom-width: 1rem;
+}
+
+/*
   Fonts Utility Classes
 
   You can change the features of the text with some simple use classes.
@@ -7979,6 +8237,10 @@ Utility CSS
 }
 
 .fc_primary {
+  color: #11838e !important;
+}
+
+.fc_primary-0 {
   color: #11838e !important;
 }
 
@@ -8026,6 +8288,10 @@ Utility CSS
   color: #63646b !important;
 }
 
+.fc_secondary-0 {
+  color: #63646b !important;
+}
+
 .fc_secondary-1 {
   color: #73747a !important;
 }
@@ -8067,6 +8333,10 @@ Utility CSS
 }
 
 .fc_success {
+  color: #09911f !important;
+}
+
+.fc_success-0 {
   color: #09911f !important;
 }
 
@@ -8114,6 +8384,10 @@ Utility CSS
   color: #e18725 !important;
 }
 
+.fc_warning-0 {
+  color: #e18725 !important;
+}
+
 .fc_warning-1 {
   color: #e4933b !important;
 }
@@ -8155,6 +8429,10 @@ Utility CSS
 }
 
 .fc_alert {
+  color: #cb241c !important;
+}
+
+.fc_alert-0 {
   color: #cb241c !important;
 }
 
@@ -8202,6 +8480,10 @@ Utility CSS
   color: #4f74bf !important;
 }
 
+.fc_navigation-0 {
+  color: #4f74bf !important;
+}
+
 .fc_navigation-1 {
   color: #6182c5 !important;
 }
@@ -8243,6 +8525,10 @@ Utility CSS
 }
 
 .fc_selected {
+  color: #509f6c !important;
+}
+
+.fc_selected-0 {
   color: #509f6c !important;
 }
 
@@ -8290,6 +8576,10 @@ Utility CSS
   color: #735dba !important;
 }
 
+.fc_info-0 {
+  color: #735dba !important;
+}
+
 .fc_info-1 {
   color: #816dc1 !important;
 }
@@ -8334,6 +8624,10 @@ Utility CSS
   color: #c45e99 !important;
 }
 
+.fc_highlighted-0 {
+  color: #c45e99 !important;
+}
+
 .fc_highlighted-1 {
   color: #ca6ea3 !important;
 }
@@ -8372,6 +8666,14 @@ Utility CSS
 
 .fc_highlighted-n5 {
   color: #14090f !important;
+}
+
+.color_white {
+  color: #fefefe;
+}
+
+.color_black {
+  color: #0a0a0a;
 }
 
 .font-family_slab {
@@ -9253,7 +9555,39 @@ Utility CSS
     flex-shrink: 1;
   }
 }
+/*
+  Background Colors
+ 
+  Background colors can be easily change with back_{{color-name}}-{{mix value}}  
+ 
+   back_primary            	- border color warning color
+  back_secondary            	- border color warning color
+  back_alert            	- border color alert color
+  back_warning            	- border color warning color
+  back_success            	- border color success color
+  back_primary-5             - border color mixed with white
+  back_primary-4             - border color mixed with white
+  back_primary-3             - border color mixed with white
+  back_primary-2             - border color mixed with white
+  back_primary-1             - border color mixed with white
+  back_primary            	- border color primary color
+  back_primary-n1             - border color mixed with black
+  back_primary-n2             - border color mixed with black
+  back_primary-n3             - border color mixed with black
+  back_primary-n4             - border color mixed with black
+  back_primary-n5             - border color mixed with black 
+
+  markup:
+  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
+ 
+  Styleguide 80.1
+ 
+ */
 .back_primary {
+  background-color: #11838e !important;
+}
+
+.back_primary-0 {
   background-color: #11838e !important;
 }
 
@@ -9301,6 +9635,10 @@ Utility CSS
   background-color: #63646b !important;
 }
 
+.back_secondary-0 {
+  background-color: #63646b !important;
+}
+
 .back_secondary-1 {
   background-color: #73747a !important;
 }
@@ -9342,6 +9680,10 @@ Utility CSS
 }
 
 .back_success {
+  background-color: #09911f !important;
+}
+
+.back_success-0 {
   background-color: #09911f !important;
 }
 
@@ -9389,6 +9731,10 @@ Utility CSS
   background-color: #e18725 !important;
 }
 
+.back_warning-0 {
+  background-color: #e18725 !important;
+}
+
 .back_warning-1 {
   background-color: #e4933b !important;
 }
@@ -9430,6 +9776,10 @@ Utility CSS
 }
 
 .back_alert {
+  background-color: #cb241c !important;
+}
+
+.back_alert-0 {
   background-color: #cb241c !important;
 }
 
@@ -9477,6 +9827,10 @@ Utility CSS
   background-color: #4f74bf !important;
 }
 
+.back_navigation-0 {
+  background-color: #4f74bf !important;
+}
+
 .back_navigation-1 {
   background-color: #6182c5 !important;
 }
@@ -9518,6 +9872,10 @@ Utility CSS
 }
 
 .back_selected {
+  background-color: #509f6c !important;
+}
+
+.back_selected-0 {
   background-color: #509f6c !important;
 }
 
@@ -9565,6 +9923,10 @@ Utility CSS
   background-color: #735dba !important;
 }
 
+.back_info-0 {
+  background-color: #735dba !important;
+}
+
 .back_info-1 {
   background-color: #816dc1 !important;
 }
@@ -9606,6 +9968,10 @@ Utility CSS
 }
 
 .back_highlighted {
+  background-color: #c45e99 !important;
+}
+
+.back_highlighted-0 {
   background-color: #c45e99 !important;
 }
 
@@ -9702,89 +10068,53 @@ Utility CSS
 
 	Objects can quickly have textures painted on them with simple classes.  
 
-	.texture-light              - light textures with no color background included
-	.texture-medium_5              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_4              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_3              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_2              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_1              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n1              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n2              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n3              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n4              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n5              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-dark              - dark texture with very little transparency 
+	.texture_light                       		- light textures with no color background included
+	.texture_medium            					- medium texture have grey backgrounds that can be modified lighter and darker
+	.texture_dust            					- A mostly transparent texture
+	.texture_dark              					- dark texture with very little transparency 
 
 	markup:
-	<div class="{$modifiers} padding_2 border-color_black-1 border_solid text-center">container with textrues</div>
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
 
-	Styleguide 80.8
+	Styleguide 80.5
 
  */
-.texture-light {
+.texture_light {
   background-image: url("/assets/img/whisper.png");
 }
 
-.texture-medium {
-  background-color: #63646b;
+.texture_medium {
   background-image: url("/assets/img/billie-holiday-speck.png");
 }
 
-.texture-medium_1 {
-  background-color: #81828a;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_2 {
-  background-color: #a0a1a7;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_3 {
-  background-color: #c0c0c5;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_4 {
-  background-color: #dfe0e2;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_5 {
-  background-color: white;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_n1 {
-  background-color: #4f5056;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_n2 {
-  background-color: #3b3c40;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_n3 {
-  background-color: #28282b;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_n4 {
-  background-color: #141415;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-medium_n5 {
-  background-color: black;
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture-dark {
+.texture_dark {
   background-image: url("/assets/img/crossed_stripes.png");
 }
 
+.texture_dust {
+  background-image: url("/assets/img/dust.png");
+}
+
+/*
+	Textures Plus Background Colors
+
+	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
+
+	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_alert              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+
+	Styleguide 80.6
+
+ */
 /*
  Design Base
 

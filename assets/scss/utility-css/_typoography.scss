@@ -23,7 +23,8 @@
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(color, $color-name,$hex-value);
 }
-
+.color_white{color:$white;}
+.color_black{color:$black;}
 .font-family_slab{
    font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
 }

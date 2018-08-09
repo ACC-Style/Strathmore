@@ -1,0 +1,25 @@
+/*
+	Cards
+
+	Build on the foundation card some utiltiy classes have been added to give it the full look and feel.   
+
+	.texture_light.back_primary				- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="card" style="width: 300px;">
+	  <div class="card-divider back_secondary border-top-left-square color_white font-size_3 padding_4 texture_medium">
+	    This is a header
+	  </div>
+	  <img src="https://picsum.photos/400/300">
+	  <div class="card-section">
+	    <h4>This is a card.</h4>
+	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+	  </div>
+	</div
+
+	Styleguide 40.1
+
+ */
+ .cards{
+ 	foo:foo;
+ }

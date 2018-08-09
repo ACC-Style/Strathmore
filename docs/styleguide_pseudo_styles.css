@@ -28,12 +28,12 @@ textarea.pseudo-class-disabled {
 
 .input-group > .pseudo-class-first-child,
 .input-group > .pseudo-class-first-child.input-group-button > * {
-  border-radius: 0 0 0 0;
+  border-radius: 0px 0 0 0px;
 }
 
 .input-group > .pseudo-class-last-child,
 .input-group > .pseudo-class-last-child.input-group-button > * {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0px 0px 0;
 }
 
 .input-group-label.pseudo-class-first-child {
@@ -761,16 +761,16 @@ table.hover:not(.unstriped) tr:nth-of-type(even).pseudo-class-hover {
 }
 
 .accordion-item.pseudo-class-first-child > .pseudo-class-first-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0px 0px 0 0;
 }
 
 .accordion-item.pseudo-class-last-child > .pseudo-class-last-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0px 0px;
 }
 
 .accordion-title .pseudo-class-last-child:not(.is-active) > .accordion-title .pseudo-class-last-child {
   border-bottom: 1px solid #e6e6e6;
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0px 0px;
 }
 
 .accordion-title.pseudo-class-hover,

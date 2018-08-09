@@ -1,5 +1,6 @@
 $texture-light:"/assets/img/whisper.png";
 $texture-medium:"/assets/img/billie-holiday-speck.png";
+$texture-dust:"/assets/img/dust.png";
 $texture-dark:"/assets/img/crossed_stripes.png";
 
 %texture-base{
@@ -13,8 +14,15 @@ $texture-dark:"/assets/img/crossed_stripes.png";
 	@extend %texture-base;
 	background-image: url( $texture-light );
 }
-
-@mixin texture-medium($level:0){
+@mixin texture-medium{
+	@extend %texture-base;
+	background-image: url( $texture-medium );
+}
+@mixin texture-dust{
+	@extend %texture-base;
+	background-image: url( $texture-dust );
+}
+@mixin texture-medium-shaded($level:0){
 	@extend %texture-base;
 	background-color: scale-color(map-get($acc-palette, secondary),$lightness: 20% * $level );
 	background-image: url( $texture-medium );

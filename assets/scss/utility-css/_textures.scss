@@ -3,66 +3,51 @@
 
 	Objects can quickly have textures painted on them with simple classes.  
 
-	.texture-light              - light textures with no color background included
-	.texture-medium_5              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_4              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_3              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_2              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_1              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n1              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n2              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n3              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n4              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-medium_n5              - medium texture have grey backgrounds that can be modified lighter and darker
-	.texture-dark              - dark texture with very little transparency 
+	.texture_light                       		- light textures with no color background included
+	.texture_medium            					- medium texture have grey backgrounds that can be modified lighter and darker
+	.texture_dust            					- A mostly transparent texture
+	.texture_dark              					- dark texture with very little transparency 
 
 	markup:
-	<div class="{$modifiers} padding_2 border-color_black-1 border_solid text-center">container with textrues</div>
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
 
-	Styleguide 80.8
+	Styleguide 80.5
 
  */
 
 
 
-.texture-light{
+.texture_light{
 	@include texture-light;
 }
-.texture-medium{
-	@include texture-medium(0);
+.texture_medium{
+	@include texture-medium;
 }
-.texture-medium_1{
-	@include texture-medium(1);
-}
-.texture-medium_2{
-	@include texture-medium(2);
-}
-.texture-medium_3{
-	@include texture-medium(3);
-}
-.texture-medium_4{
-	@include texture-medium(4);
-}
-.texture-medium_5{
-	@include texture-medium(5);
-}
-.texture-medium_n1{
-	@include texture-medium(-1);
-}
-.texture-medium_n2{
-	@include texture-medium(-2);
-}
-.texture-medium_n3{
-	@include texture-medium(-3);
-}
-.texture-medium_n4{
-	@include texture-medium(-4);
-}
-.texture-medium_n5{
-	@include texture-medium(-5);
-}
-
-.texture-dark{
+.texture_dark{
 	@include texture-dark;
 }
+.texture_dust{
+	@include texture-dust;
+}
+
+
+/*
+	Textures Plus Background Colors
+
+	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
+
+	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_alert              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+
+	Styleguide 80.6
+
+ */

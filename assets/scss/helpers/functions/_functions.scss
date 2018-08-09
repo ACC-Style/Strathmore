@@ -49,9 +49,8 @@
 /// @param {Map} $map - Map
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
-@function map-style-get($map, $keys, $term) {
+@function map-style-get($map, $key, $term) {
     $return: map-get(map-get($map, $key),$term);
-    @debug $return;
     @return return;
 }
 
@@ -62,8 +61,9 @@
 /// @access public
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
-@function get-css-shortname($key,$style-list:$style-definition) { 
-    @return  map-style-get($style-list, $key, short-name);
+@function get-css-shortname($key:"", $style-list:$style-definition) { 
+	// @return  #{map-style-get($style-list, $key, short-name)};
+	@return map-get(map-get($style-list, $key),short-name);
 }
 
 /// css-longname
@@ -72,7 +72,8 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function get-css-longname($key, $style-list:$style-definition) { 
-    @return  map-style-get($style-list, $key, long-name);
+    // @return  map-style-get($style-list, $key, long-name);
+	@return map-get(map-get($style-list, $key),long-name);
 }
 
 /// css-style
@@ -80,6 +81,7 @@
 /// @access public
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
-@function get-css-style($key) {
-    @return  map-style-get($style-definition, $key, css-style);
+@function get-css-style($key,$style-list:$style-definition) {
+    // @return  map-style-get($style-definition, $key, css-style);
+    	@return map-get(map-get($style-list, $key),css-style);
 }

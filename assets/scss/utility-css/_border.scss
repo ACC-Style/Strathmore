@@ -52,40 +52,8 @@
 
 
 
-
-@mixin radius_steps($label,$value-label,$style,$value) {
-	@debug $label;
-	#{$label}#{$value-label}{
-		#{$style}-radius:unquote($value);
-	}
-	#{$label}-tr#{$value-label}{
-		#{$style}-top-right-radius:unquote($value);
-	}
-	#{$label}-tl#{$value-label}{
-		#{$style}-top-left-radius:unquote($value);
-	}
-	#{$label}-br#{$value-label}{
-		#{$style}-bottom-right-radius:unquote($value);
-	}
-	#{$label}-bl#{$value-label}{
-		#{$style}-top-right-radius:unquote($value);
-	}
- }
-
-
-
-@include radius_steps( map-get(map-get($style-definition, border-radius) , long-name ),"_square","border","0");
-@include radius_steps( map-get(map-get($style-definition, border-radius) , long-name ),"_radius","border","5px");
-@include radius_steps( map-get(map-get($style-definition, border-radius) , long-name ),"_round","border","9999px");
-@include radius_steps( map-get(map-get($style-definition, border-radius) , long-name ),"_circle","border","100%");
-
-@each $color-name, $hex-value in $acc-palette{
-  @include color-loop(border-color, $color-name,$hex-value);
-}
-
-
 /*
-  Border Color Black
+  Border Color Black with Alpha
  
   Border black has attached alpha 
  
@@ -102,7 +70,7 @@
   border-color_black-0             - border black with alpha of 2%
  
   markup:
-  <div class="{$modifiers} padding_3 border_solid back_primary color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid back_primary-1 color_white">{$modifiers} border</div>
  
   Styleguide 80.11
  
@@ -125,5 +93,106 @@
 .border_transparent{border-color:transparent;}
 
 .border_transparent{border-color:transparent;}
+
+
+/*
+	Border Radius
+
+	Apply border radius to objects by adding full or partial classes for border-radius
+
+	border-radius_square           - All square
+	border-radius_radius        - All with $global-radus
+	border-radius_round         - All corners with 99(px)
+	border-radius_circle          - All corders at 100%
+	border-top-left-radius_square           - top-left square
+	border-top-left-radius_radius        - top-left with $global-radus
+	border-top-left-radius_round         - top-left corners with 99(px)
+	border-top-left-radius_circle          - top-left corders at 100%
+	border-bottom-left-radius_square           - bottom-left square
+	border-bottom-left-radius_radius        - bottom-left with $global-radus
+	border-bottom-left-radius_round         - bottom-left corners with 99(px)
+	border-bottom-left-radius_circle          - bottom-left corders at 100%
+
+
+	markup:
+	<div class="{$modifiers} padding_3 border-color_black border_solid">{$modifiers} border</div>
+
+	Styleguide 80.12
+
+ */
+
+
+@include size-loop(border-radius, border-radius,1);
+@include size-loop(border-top-right-radius, border-radius,1);
+@include size-loop(border-top-left-radius, border-radius,1);
+@include size-loop(border-bottom-right-radius, border-radius,1);
+@include size-loop(border-bottom-left-radius, border-radius,1);
+
+
+/*
+  Border Colors
+ 
+  Border black has attached alpha   
+
+  border_primary            	- border color primary
+  border_error            	- border color error
+  border_warning            	- border color warning
+  border_success            	- border color success
+  border_primary-1             - border color mixed with white
+  border_primary-2             - border color mixed with white
+  border_primary-3             - border color mixed with white
+  border_primary-4             - border color mixed with white
+  border_primary-5             - border color mixed with white
+  border_primary-n1             - border color mixed with black
+  border_primary-n2             - border color mixed with black
+  border_primary-n3             - border color mixed with black
+  border_primary-n4             - border color mixed with black
+  border_primary-n5             - border color mixed with black 
+
+  markup:
+  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+ 
+  Styleguide 80.13
+ 
+ */
+ 
+@each $color-name, $hex-value in $acc-palette{
+  @include color-loop(border-color, $color-name,$hex-value);
+}
+
+
+/*
+  Border Width
+ 
+  Manipulation of borders with thisese classes either all border or with single borders   
+
+  border-width_0            	- all border with no border
+  border-width_1            	- all borders with 1px
+  border-width_2            	- all borders with .125rem
+  border-width_3            	- all borders with .25rem
+  border-width_4            	- all borders with .5rem
+  border-width_5            	- all borders with rem
+  border-left-width_1.border-width_0            	- all border with no border
+  border-left-width_1.border-width_1            	- all borders with 1px
+  border-left-width_1.border-width_2            	- all borders with .125rem
+  border-left-width_1.border-width_3            	- all borders with .25rem
+  border-left-width_1.border-width_4            	- all borders with .5rem
+  border-left-width_1.border-width_5            	- all borders with rem
+
+
+  markup:
+  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+ 
+  Styleguide 80.14
+ 
+ */
+
+
+@include size-loop(border-width, positive,.5rem);
+@include size-loop(border-top-width, positive,.5rem);
+@include size-loop(border-right-width, positive,.5rem);
+@include size-loop(border-left-width, positive,.5rem);
+@include size-loop(border-bottom-width, positive,.5rem);
+
 
 

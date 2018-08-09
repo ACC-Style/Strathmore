@@ -1,10 +1,9 @@
 $debug-trace: true !default;
 
-@mixin size-loop( $style-name:null , $size-variation:null, $multiplier, $breakpoint:"" ){
-	$labels:		map-get($style-definition, $style-name);
-	$short-name:	map-get($labels, short-name); 	 
-	$long-name:		map-get($labels, long-name); 	
-	$style:			map-get($labels, css-style); 	 
+@mixin size-loop( $key:null, $size-variation:null, $multiplier:1, $breakpoint:"" ){
+	$short-name:    	get-css-shortname($key);	 
+  	$long-name:    		get-css-longname($key);	
+  	$style:			    get-css-style($key);  
 	@if $size-variation == null {
 		@debug "size-loop mixin has errored. $size-variation can not be nulll";
 	}
@@ -13,15 +12,9 @@ $debug-trace: true !default;
 		@if $debug-trace{ @debug $sizes;}
 		@each  $val-name, $val in $sizes {
 			$unit:0;
-			@if $val == 1px{
-				$unit:1px
-			}
-			@else if $val == -1px{
-				$unit: -1px
-			}
-			@else{
-				$unit: $multiplier * $val; 
-			}
+			@if $val == 1px{ $unit:1px }
+			@else if $val == -1px{ $unit: -1px }
+			@else{ $unit: $multiplier * $val;}
 
 			#{ $long-name }_#{ $val-name }#{$breakpoint}{
 				#{$style}:$unit;	
@@ -29,9 +22,9 @@ $debug-trace: true !default;
 		}		
 	}
 	@if $debug-trace{
-		@debug "Short Name" + $short-name;
-		@debug "Long Name" + $long-name; 
-		@debug "CSS Style" + $style;
-		@debug "Multiplier" + $multiplier;
+		@debug "Size Loop Running #{$key}";
+		@debug "Short Name #{$short-name}";
+		@debug "Long Name #{$long-name}";
+
 	}
 }

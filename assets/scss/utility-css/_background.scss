@@ -1,3 +1,32 @@
-@each $color-name, $hex-value in $acc-palette{
-  @include color-loop(background-color, $color-name,$hex-value);
+/*
+  Background Colors
+ 
+  Background colors can be easily change with back_{{color-name}}-{{mix value}}  
+ 
+   back_primary            	- border color warning color
+  back_secondary            	- border color warning color
+  back_alert            	- border color alert color
+  back_warning            	- border color warning color
+  back_success            	- border color success color
+  back_primary-5             - border color mixed with white
+  back_primary-4             - border color mixed with white
+  back_primary-3             - border color mixed with white
+  back_primary-2             - border color mixed with white
+  back_primary-1             - border color mixed with white
+  back_primary            	- border color primary color
+  back_primary-n1             - border color mixed with black
+  back_primary-n2             - border color mixed with black
+  back_primary-n3             - border color mixed with black
+  back_primary-n4             - border color mixed with black
+  back_primary-n5             - border color mixed with black 
+
+  markup:
+  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
+ 
+  Styleguide 80.1
+ 
+ */
+
+@each $color-name, $color in $acc-palette{
+  	@include color-loop(background-color, $color-name, $color);
 }
