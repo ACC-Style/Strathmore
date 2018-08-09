@@ -30,3 +30,7 @@
 @each $color-name, $color in $acc-palette{
   	@include color-loop(background-color, $color-name, $color);
 }
+
+.back_white{
+  background-color: $white;
+}

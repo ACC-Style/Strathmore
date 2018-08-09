@@ -82,9 +82,7 @@ module.exports = function(grunt) {
                     require('cssnano')({ 
                         preset: 'default',
                     }) // minify the result
-                ]
-            },
-            options: {
+                ],
                 diff: 'assets/css/diff/index.css.diff',
             },
             dist: {

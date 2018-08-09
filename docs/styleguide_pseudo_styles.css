@@ -1,4 +1,5 @@
-.disabled.pseudo-class-hover {
+.disabled.pseudo-class-hover,
+.pagination .disabled.pseudo-class-hover {
   background-attachment: local;
   background-repeat: repeat;
   background-position: top right;
@@ -922,6 +923,10 @@ a.thumbnail.pseudo-class-focus {
 
 .close-button.pseudo-class-focus {
   outline: none;
+}
+
+.pagination .disabled.pseudo-class-hover {
+  background-image: url("/assets/img/cross_disabled.png");
 }
 
 .quicklinks a.pseudo-class-hover {

@@ -5,9 +5,7 @@
 
 
 	markup: 
-	  <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 border_solid border-right-width_1 border_primary border-radius_radius">One</a></li>
-
-
+	  <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 border_solid border-right-width_1 border_primary font-size_n1">One</a></li>
 
 	sg-wrapper:
 	  <ul class="menu quicklinks">
@@ -15,7 +13,7 @@
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
-	     <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2">End</a></li>
+	     <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 font-size_n1">End</a></li>
 	  </ul>
 
 	Styleguide 20.11
