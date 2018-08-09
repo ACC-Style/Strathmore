@@ -4586,20 +4586,6 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   color: #0a0a0a;
 }
 
-.pagination-previous a::before,
-.pagination-previous.disabled::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "«";
-}
-
-.pagination-next a::after,
-.pagination-next.disabled::after {
-  display: inline-block;
-  margin-left: 0.5rem;
-  content: "»";
-}
-
 .has-tip {
   position: relative;
   display: inline-block;
@@ -6778,23 +6764,23 @@ Buttons
 
 Basic Buttons
 
-.primary	- Primary Class Button (default)
-.secondary 	- Second Class Button
-.blue 		- Button reserved for navigation elements
-.success    - Success State.
-.alert      - Alert State.
-.warning	- Warning State
-.hollow		- All button states can become hollow
-.clear		- All button states can become hollow
-.dropdown		- All button states can become hollow
-.radius		- Give the button softer corners
-.shadow.clear		- Give a button a shadow
-.tiny		- tiny buttons
-.small		- Small buttons
-default		- Medium buttons (default)
-.large		- Large buttons
-.xlarge		- Large buttons
-.disabled	- Disabled buttons
+.primary	            - Primary Class Button (default)
+.secondary 	            - Second Class Button
+.navigation             - Button reserved for navigation elements
+.success                - Success State.
+.alert                  - Alert State.
+.warning	            - Warning State
+.hollow		            - All button states can become hollow
+.clear		            - All button states can become hollow
+.dropdown		        - All button states can become hollow
+.radius		            - Give the button softer corners
+.shadow.clear		    - Give a button a shadow
+.tiny		            - tiny buttons
+.small		            - Small buttons
+default		            - Medium buttons (default)
+.large		            - Large buttons
+.xlarge		            - Large buttons
+.disabled	            - Disabled buttons
 
 markup:
 <a class="button {$modifiers}">{$modifiers} button</a>
@@ -6905,11 +6891,15 @@ markup:
 
 	Build on the foundation card some utiltiy classes have been added to give it the full look and feel.   
 
-	.texture_light.back_primary				- textures are slightly transparent so they can be colored with background-color classess
+	.back_primary				- textures are slightly transparent so they can be colored with background-color classess
+	.back_secondary				- textures are slightly transparent so they can be colored with background-color classess
+	.back_highlighted				- textures are slightly transparent so they can be colored with background-color classess
+	.back_warning				- textures are slightly transparent so they can be colored with background-color classess
+	.back_alert				- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
-	<div class="card" style="width: 300px;">
-	  <div class="card-divider back_secondary border-top-left-square color_white font-size_3 padding_4 texture_dust">
+	<div class="card shadow_1 cell small-6 large-4" style="width: 300px;">
+	  <div class="card-divider  border-top-left-square color_white font-size_3 padding_4 texture_dust {$modifiers}">
 	    This is a header
 	  </div>
 	  <img src="https://picsum.photos/400/300">
@@ -6917,13 +6907,67 @@ markup:
 	    <h4>This is a card.</h4>
 	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
 	  </div>
-	</div
+	</div>
+
+	 sg-wrapper:
+	 <div class="grid-x">
+	   <sg-wrapper-content/>
+	 </div>
 
 	Styleguide 40.1
 
  */
 .cards {
   foo: foo;
+}
+
+/*
+ Pagination
+
+ This is what pagination should look like and its modifications.
+
+ markup:
+ <nav aria-label="Pagination" class="border_solid border_primary border-top-width_3">
+  <ul class="pagination">
+    <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis" aria-hidden="true"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+  </ul>
+</nav>
+
+ Styleguide 20.20
+*/
+/*
+	Quicklinks
+
+	small list navs used in header structures of websites.
+
+
+	markup: 
+	  <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 border_solid border-right-width_1 border_primary border-radius_radius">One</a></li>
+
+
+
+	sg-wrapper:
+	  <ul class="menu quicklinks">
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	     <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2">End</a></li>
+	  </ul>
+
+	Styleguide 20.11
+ */
+.quicklinks a:hover {
+  background-color: #e0f9fb;
+  color: #0a0a0a;
 }
 
 /*
@@ -7210,123 +7254,123 @@ Utility CSS
 
  */
 .padding_0 {
-  padding: 0rem;
+  padding: 0rem  !important;
 }
 
 .padding_1 {
-  padding: 1px;
+  padding: 1px  !important;
 }
 
 .padding_2 {
-  padding: 0.25rem;
+  padding: 0.25rem  !important;
 }
 
 .padding_3 {
-  padding: 0.5rem;
+  padding: 0.5rem  !important;
 }
 
 .padding_4 {
-  padding: 1rem;
+  padding: 1rem  !important;
 }
 
 .padding_5 {
-  padding: 2rem;
+  padding: 2rem  !important;
 }
 
 .padding-top_0 {
-  padding-top: 0rem;
+  padding-top: 0rem  !important;
 }
 
 .padding-top_1 {
-  padding-top: 1px;
+  padding-top: 1px  !important;
 }
 
 .padding-top_2 {
-  padding-top: 0.25rem;
+  padding-top: 0.25rem  !important;
 }
 
 .padding-top_3 {
-  padding-top: 0.5rem;
+  padding-top: 0.5rem  !important;
 }
 
 .padding-top_4 {
-  padding-top: 1rem;
+  padding-top: 1rem  !important;
 }
 
 .padding-top_5 {
-  padding-top: 2rem;
+  padding-top: 2rem  !important;
 }
 
 .padding-bottom_0 {
-  padding-bottom: 0rem;
+  padding-bottom: 0rem  !important;
 }
 
 .padding-bottom_1 {
-  padding-bottom: 1px;
+  padding-bottom: 1px  !important;
 }
 
 .padding-bottom_2 {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.25rem  !important;
 }
 
 .padding-bottom_3 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem  !important;
 }
 
 .padding-bottom_4 {
-  padding-bottom: 1rem;
+  padding-bottom: 1rem  !important;
 }
 
 .padding-bottom_5 {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem  !important;
 }
 
 .padding-right_0 {
-  padding-right: 0rem;
+  padding-right: 0rem  !important;
 }
 
 .padding-right_1 {
-  padding-right: 1px;
+  padding-right: 1px  !important;
 }
 
 .padding-right_2 {
-  padding-right: 0.25rem;
+  padding-right: 0.25rem  !important;
 }
 
 .padding-right_3 {
-  padding-right: 0.5rem;
+  padding-right: 0.5rem  !important;
 }
 
 .padding-right_4 {
-  padding-right: 1rem;
+  padding-right: 1rem  !important;
 }
 
 .padding-right_5 {
-  padding-right: 2rem;
+  padding-right: 2rem  !important;
 }
 
 .padding-left_0 {
-  padding-left: 0rem;
+  padding-left: 0rem  !important;
 }
 
 .padding-left_1 {
-  padding-left: 1px;
+  padding-left: 1px  !important;
 }
 
 .padding-left_2 {
-  padding-left: 0.25rem;
+  padding-left: 0.25rem  !important;
 }
 
 .padding-left_3 {
-  padding-left: 0.5rem;
+  padding-left: 0.5rem  !important;
 }
 
 .padding-left_4 {
-  padding-left: 1rem;
+  padding-left: 1rem  !important;
 }
 
 .padding-left_5 {
-  padding-left: 2rem;
+  padding-left: 2rem  !important;
 }
 
 /*
@@ -7345,6 +7389,10 @@ Utility CSS
 	Styleguide 80.10
 
  */
+.border_dotted, .border_dashed, .border_solid, .border_none {
+  border-width: 0;
+}
+
 .border_dotted {
   border-style: dotted;
 }

@@ -916,3 +916,8 @@ a.thumbnail.pseudo-class-focus {
 .close-button.pseudo-class-focus {
   outline: none;
 }
+
+.quicklinks a.pseudo-class-hover {
+  background-color: #e0f9fb;
+  color: #0a0a0a;
+}

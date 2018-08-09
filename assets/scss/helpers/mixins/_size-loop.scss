@@ -1,6 +1,6 @@
 $debug-trace: true !default;
 
-@mixin size-loop( $key:null, $size-variation:null, $multiplier:1, $breakpoint:"" ){
+@mixin size-loop( $key:null, $size-variation:null, $multiplier:1, $breakpoint:"" ,$imporant:""){
 	$short-name:    	get-css-shortname($key);	 
   	$long-name:    		get-css-longname($key);	
   	$style:			    get-css-style($key);  
@@ -17,7 +17,7 @@ $debug-trace: true !default;
 			@else{ $unit: $multiplier * $val;}
 
 			#{ $long-name }_#{ $val-name }#{$breakpoint}{
-				#{$style}:$unit;	
+				#{$style}:$unit #{$imporant};	
 			}
 		}		
 	}

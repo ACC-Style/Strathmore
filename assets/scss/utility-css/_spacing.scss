@@ -69,8 +69,8 @@
 
  */
 
-@include size-loop(padding, positive, 1rem);
-@include size-loop(padding-top, positive, 1rem);
-@include size-loop(padding-bottom , positive, 1rem);
-@include size-loop(padding-right, positive, 1rem);
-@include size-loop(padding-left, positive, 1rem);
+@include size-loop(padding, positive, 1rem, "", " !important");
+@include size-loop(padding-top, positive, 1rem, "", " !important");
+@include size-loop(padding-bottom , positive, 1rem, "", " !important");
+@include size-loop(padding-right, positive, 1rem, "", " !important");
+@include size-loop(padding-left, positive, 1rem, "", " !important");
