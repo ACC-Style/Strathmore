@@ -3,22 +3,55 @@
  
   Background colors can be easily change with back_{{color-name}}-{{mix value}}  
  
-   back_primary            	- border color warning color
-  back_secondary            	- border color warning color
-  back_alert            	- border color alert color
-  back_warning            	- border color warning color
-  back_success            	- border color success color
-  back_primary-5             - border color mixed with white
-  back_primary-4             - border color mixed with white
-  back_primary-3             - border color mixed with white
-  back_primary-2             - border color mixed with white
-  back_primary-1             - border color mixed with white
-  back_primary            	- border color primary color
-  back_primary-n1             - border color mixed with black
-  back_primary-n2             - border color mixed with black
-  back_primary-n3             - border color mixed with black
-  back_primary-n4             - border color mixed with black
-  back_primary-n5             - border color mixed with black 
+  back_primary            	- background color warning color
+  back_secondary            	- background color warning color
+  back_alert            	- background color alert color
+  back_warning            	- background color warning color
+  back_success            	- background color success color
+  back_primary-5             - background color mixed with white
+  back_primary-4             - background color mixed with white
+  back_primary-3             - background color mixed with white
+  back_primary-2             - background color mixed with white
+  back_primary-1             - background color mixed with white
+  back_primary            	- background color primary color
+  back_primary-n1             - background color mixed with black
+  back_primary-n2             - background color mixed with black
+  back_primary-n3             - background color mixed with black
+  back_primary-n4             - background color mixed with black
+  back_primary-n5             - background color mixed with black 
+  back_secondary-5             - background color mixed with white
+  back_secondary-4             - background color mixed with white
+  back_secondary-3             - background color mixed with white
+  back_secondary-2             - background color mixed with white
+  back_secondary-1             - background color mixed with white
+  back_secondary              - background color primary color
+  back_secondary-n1             - background color mixed with black
+  back_secondary-n2             - background color mixed with black
+  back_secondary-n3             - background color mixed with black
+  back_secondary-n4             - background color mixed with black
+  back_secondary-n5             - background color mixed with black 
+  back_highlighted-5             - background color mixed with white
+  back_highlighted-4             - background color mixed with white
+  back_highlighted-3             - background color mixed with white
+  back_highlighted-2             - background color mixed with white
+  back_highlighted-1             - background color mixed with white
+  back_highlighted              - background color primary color
+  back_highlighted-n1             - background color mixed with black
+  back_highlighted-n2             - background color mixed with black
+  back_highlighted-n3             - background color mixed with black
+  back_highlighted-n4             - background color mixed with black
+  back_highlighted-n5             - background color mixed with black 
+  back_info-5             - background color mixed with white
+  back_info-4             - background color mixed with white
+  back_info-3             - background color mixed with white
+  back_info-2             - background color mixed with white
+  back_info-1             - background color mixed with white
+  back_info              - background color primary color
+  back_info-n1             - background color mixed with black
+  back_info-n2             - background color mixed with black
+  back_info-n3             - background color mixed with black
+  back_info-n4             - background color mixed with black
+  back_info-n5             - background color mixed with black 
 
   markup:
   <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>

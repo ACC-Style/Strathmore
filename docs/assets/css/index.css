@@ -6954,13 +6954,8 @@ markup:
 
  markup:
  <nav aria-label="Pagination" class="padding_3 padding-top_0 padding-bottom_0 back_primary border-top-width_3">
-<<<<<<< HEAD
-  <ul class="pagination margin-bottom_3">
-    <li class="pagination-previous disabled back_primary-n4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
-=======
   <ul class="pagination maring-bottom_3">
     <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
->>>>>>> master
     <li class="current back_white color_primary"><span class="show-for-sr">You're on page</span> 1</li>
     <li class="back_primary color_white"><a href="#" aria-label="Page 2">2</a></li>
     <li class="back_primary color_white"><a href="#" aria-label="Page 3">3</a></li>
@@ -6968,11 +6963,7 @@ markup:
     <li class="back_primary color_white fal fa-ellipsis-h back_primary color_white" aria-hidden="true"></li>
     <li class="back_primary color_white"><a href="#" aria-label="Page 12">12</a></li>
     <li class="back_primary color_white"><a href="#" aria-label="Page 13">13</a></li>
-<<<<<<< HEAD
-    <li class="pagination-next back_primary-n3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
-=======
     <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
->>>>>>> master
   </ul>
 </nav>
 
@@ -9649,22 +9640,55 @@ Utility CSS
  
   Background colors can be easily change with back_{{color-name}}-{{mix value}}  
  
-   back_primary            	- border color warning color
-  back_secondary            	- border color warning color
-  back_alert            	- border color alert color
-  back_warning            	- border color warning color
-  back_success            	- border color success color
-  back_primary-5             - border color mixed with white
-  back_primary-4             - border color mixed with white
-  back_primary-3             - border color mixed with white
-  back_primary-2             - border color mixed with white
-  back_primary-1             - border color mixed with white
-  back_primary            	- border color primary color
-  back_primary-n1             - border color mixed with black
-  back_primary-n2             - border color mixed with black
-  back_primary-n3             - border color mixed with black
-  back_primary-n4             - border color mixed with black
-  back_primary-n5             - border color mixed with black 
+  back_primary            	- background color warning color
+  back_secondary            	- background color warning color
+  back_alert            	- background color alert color
+  back_warning            	- background color warning color
+  back_success            	- background color success color
+  back_primary-5             - background color mixed with white
+  back_primary-4             - background color mixed with white
+  back_primary-3             - background color mixed with white
+  back_primary-2             - background color mixed with white
+  back_primary-1             - background color mixed with white
+  back_primary            	- background color primary color
+  back_primary-n1             - background color mixed with black
+  back_primary-n2             - background color mixed with black
+  back_primary-n3             - background color mixed with black
+  back_primary-n4             - background color mixed with black
+  back_primary-n5             - background color mixed with black 
+  back_secondary-5             - background color mixed with white
+  back_secondary-4             - background color mixed with white
+  back_secondary-3             - background color mixed with white
+  back_secondary-2             - background color mixed with white
+  back_secondary-1             - background color mixed with white
+  back_secondary              - background color primary color
+  back_secondary-n1             - background color mixed with black
+  back_secondary-n2             - background color mixed with black
+  back_secondary-n3             - background color mixed with black
+  back_secondary-n4             - background color mixed with black
+  back_secondary-n5             - background color mixed with black 
+  back_highlighted-5             - background color mixed with white
+  back_highlighted-4             - background color mixed with white
+  back_highlighted-3             - background color mixed with white
+  back_highlighted-2             - background color mixed with white
+  back_highlighted-1             - background color mixed with white
+  back_highlighted              - background color primary color
+  back_highlighted-n1             - background color mixed with black
+  back_highlighted-n2             - background color mixed with black
+  back_highlighted-n3             - background color mixed with black
+  back_highlighted-n4             - background color mixed with black
+  back_highlighted-n5             - background color mixed with black 
+  back_info-5             - background color mixed with white
+  back_info-4             - background color mixed with white
+  back_info-3             - background color mixed with white
+  back_info-2             - background color mixed with white
+  back_info-1             - background color mixed with white
+  back_info              - background color primary color
+  back_info-n1             - background color mixed with black
+  back_info-n2             - background color mixed with black
+  back_info-n3             - background color mixed with black
+  back_info-n4             - background color mixed with black
+  back_info-n5             - background color mixed with black 
 
   markup:
   <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
