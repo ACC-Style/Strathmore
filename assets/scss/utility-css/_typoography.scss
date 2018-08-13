@@ -25,14 +25,14 @@
 }
 .color_white{color:$white;}
 .color_black{color:$black;}
-.font_slab{
+.font_slab,.font-family_slab{
    font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
 }
 
-.font_normal{
+.font_normal,.font-family_normal{
     font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
-.font_display{
+.font_display,.font-family_display{
     font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
 
@@ -57,9 +57,9 @@
  */
 
 
-.font-weight_light{ font-weight: 100 !important;}
-.font-weight_regular{ font-weight: 400 !important;}
-.font-weight_bold{ font-weight: 900 !important;}
+.font-weight_light,.font_light{ font-weight: 100 !important;}
+.font-weight_regular,.font_regular{ font-weight: 400 !important;}
+.font-weight_bold,.font_bold{ font-weight: 900 !important;}
 .font-style_normal{ font-style: normal !important;}
 .font-style_italic{ font-style: italic !important;}
 
@@ -114,3 +114,4 @@
   .text-lowercase,.text-uppercase,.text-numbers{white-space: pre-wrap;  letter-spacing: -.1em;}
   .text-lowercase{ text-transform: lowercase;}
   .text-uppercase{ text-transform: uppercase;}
+   .text-underline{ text-decoration: underline;}

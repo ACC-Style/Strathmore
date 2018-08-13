@@ -57,6 +57,24 @@ html {
   background-origin: border-box;
 }
 
+/*
+	Textures
+
+	All textures in the Strathmore design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes. 
+
+	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
+	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
+	.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
+	.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
+	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
+	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
+
+	markup:
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center back_primary-4">{$modifiers} with a light primary color background</div>
+
+	Styleguide 0.3
+
+ */
 /**
 * Foundation for Sites Settings
  */
@@ -6953,17 +6971,17 @@ markup:
  This is what pagination should look like and its modifications.
 
  markup:
- <nav aria-label="Pagination" class="padding_3 padding-top_0 padding-bottom_0 back_primary border-top-width_3">
-  <ul class="pagination maring-bottom_3">
-    <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
-    <li class="current back_white color_primary"><span class="show-for-sr">You're on page</span> 1</li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 2">2</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 3">3</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 4">4</a></li>
-    <li class="back_primary color_white fal fa-ellipsis-h back_primary color_white" aria-hidden="true"></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 12">12</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 13">13</a></li>
-    <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+ <nav aria-label="Pagination" class=" pagination-container">
+  <ul class="pagination float-right">
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li class=""><a href="#" aria-label="Page 2">2</a></li>
+    <li class=""><a href="#" aria-label="Page 3">3</a></li>
+    <li class=""><a href="#" aria-label="Page 4">4</a></li>
+    <li class=" fal fa-ellipsis-h " aria-hidden="true"></li>
+    <li class=""><a href="#" aria-label="Page 12">12</a></li>
+    <li class=""><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
   </ul>
 </nav>
 
@@ -7103,7 +7121,7 @@ Utility CSS
   margin-bottom: 0.25rem !important;
 }
 
-.margin-bottom_3 {
+.margin-bottom_3, .pagination-container .pagination {
   margin-bottom: 0.5rem !important;
 }
 
@@ -7309,7 +7327,7 @@ Utility CSS
   padding: 2rem  !important;
 }
 
-.padding-top_0 {
+.padding-top_0, .pagination-container {
   padding-top: 0rem  !important;
 }
 
@@ -7333,7 +7351,7 @@ Utility CSS
   padding-top: 2rem  !important;
 }
 
-.padding-bottom_0 {
+.padding-bottom_0, .pagination-container {
   padding-bottom: 0rem  !important;
 }
 
@@ -7369,7 +7387,7 @@ Utility CSS
   padding-right: 0.25rem  !important;
 }
 
-.padding-right_3 {
+.padding-right_3, .pagination-container {
   padding-right: 0.5rem  !important;
 }
 
@@ -7393,7 +7411,7 @@ Utility CSS
   padding-left: 0.25rem  !important;
 }
 
-.padding-left_3 {
+.padding-left_3, .pagination-container {
   padding-left: 0.5rem  !important;
 }
 
@@ -7670,6 +7688,22 @@ Utility CSS
 
 .border-bottom-left-radius_circle {
   border-bottom-left-radius: 100%;
+}
+
+.square, .square .switch-paddle, .square .switch-paddle::after {
+  border-radius: 0px;
+}
+
+.radius, .radius .switch-paddle, .radius .switch-paddle::after {
+  border-radius: 5px;
+}
+
+.round, .round .switch-paddle, .round .switch-paddle::after {
+  border-radius: 999px;
+}
+
+.circle, .circle .switch-paddle, .circle .switch-paddle::after {
+  border-radius: 100%;
 }
 
 /*
@@ -8316,455 +8350,455 @@ Utility CSS
   line-height: 2;
 }
 
-.fc_primary {
+.color_primary, .pagination-container .current {
   color: #198dae !important;
 }
 
-.fc_primary-0 {
+.color_primary-0 {
   color: #198dae !important;
 }
 
-.fc_primary-1 {
+.color_primary-1 {
   color: #3098b6 !important;
 }
 
-.fc_primary-2 {
+.color_primary-2 {
   color: #5eafc6 !important;
 }
 
-.fc_primary-3 {
+.color_primary-3 {
   color: #8cc6d7 !important;
 }
 
-.fc_primary-4 {
+.color_primary-4 {
   color: #badde7 !important;
 }
 
-.fc_primary-5 {
+.color_primary-5 {
   color: #e8f4f7 !important;
 }
 
-.fc_primary-n1 {
+.color_primary-n1 {
   color: #177f9d !important;
 }
 
-.fc_primary-n2 {
+.color_primary-n2 {
   color: #12637a !important;
 }
 
-.fc_primary-n3 {
+.color_primary-n3 {
   color: #0d4757 !important;
 }
 
-.fc_primary-n4 {
+.color_primary-n4 {
   color: #082a34 !important;
 }
 
-.fc_primary-n5 {
+.color_primary-n5 {
   color: #030e11 !important;
 }
 
-.fc_secondary {
+.color_secondary {
   color: #63646b !important;
 }
 
-.fc_secondary-0 {
+.color_secondary-0 {
   color: #63646b !important;
 }
 
-.fc_secondary-1 {
+.color_secondary-1 {
   color: #73747a !important;
 }
 
-.fc_secondary-2 {
+.color_secondary-2 {
   color: #929397 !important;
 }
 
-.fc_secondary-3 {
+.color_secondary-3 {
   color: #b1b2b5 !important;
 }
 
-.fc_secondary-4 {
+.color_secondary-4 {
   color: #d0d1d3 !important;
 }
 
-.fc_secondary-5 {
+.color_secondary-5 {
   color: #eff0f0 !important;
 }
 
-.fc_secondary-n1 {
+.color_secondary-n1 {
   color: #595a60 !important;
 }
 
-.fc_secondary-n2 {
+.color_secondary-n2 {
   color: #45464b !important;
 }
 
-.fc_secondary-n3 {
+.color_secondary-n3 {
   color: #323236 !important;
 }
 
-.fc_secondary-n4 {
+.color_secondary-n4 {
   color: #1e1e20 !important;
 }
 
-.fc_secondary-n5 {
+.color_secondary-n5 {
   color: #0a0a0b !important;
 }
 
-.fc_success {
+.color_success {
   color: #09911f !important;
 }
 
-.fc_success-0 {
+.color_success-0 {
   color: #09911f !important;
 }
 
-.fc_success-1 {
+.color_success-1 {
   color: #229c35 !important;
 }
 
-.fc_success-2 {
+.color_success-2 {
   color: #53b262 !important;
 }
 
-.fc_success-3 {
+.color_success-3 {
   color: #84c88f !important;
 }
 
-.fc_success-4 {
+.color_success-4 {
   color: #b5debc !important;
 }
 
-.fc_success-5 {
+.color_success-5 {
   color: #e6f4e9 !important;
 }
 
-.fc_success-n1 {
+.color_success-n1 {
   color: #08831c !important;
 }
 
-.fc_success-n2 {
+.color_success-n2 {
   color: #066616 !important;
 }
 
-.fc_success-n3 {
+.color_success-n3 {
   color: #054910 !important;
 }
 
-.fc_success-n4 {
+.color_success-n4 {
   color: #032c09 !important;
 }
 
-.fc_success-n5 {
+.color_success-n5 {
   color: #010f03 !important;
 }
 
-.fc_warning {
+.color_warning {
   color: #e18725 !important;
 }
 
-.fc_warning-0 {
+.color_warning-0 {
   color: #e18725 !important;
 }
 
-.fc_warning-1 {
+.color_warning-1 {
   color: #e4933b !important;
 }
 
-.fc_warning-2 {
+.color_warning-2 {
   color: #eaab66 !important;
 }
 
-.fc_warning-3 {
+.color_warning-3 {
   color: #f0c392 !important;
 }
 
-.fc_warning-4 {
+.color_warning-4 {
   color: #f6dbbe !important;
 }
 
-.fc_warning-5 {
+.color_warning-5 {
   color: #fcf3e9 !important;
 }
 
-.fc_warning-n1 {
+.color_warning-n1 {
   color: #cb7a21 !important;
 }
 
-.fc_warning-n2 {
+.color_warning-n2 {
   color: #9e5f1a !important;
 }
 
-.fc_warning-n3 {
+.color_warning-n3 {
   color: #714413 !important;
 }
 
-.fc_warning-n4 {
+.color_warning-n4 {
   color: #44290b !important;
 }
 
-.fc_warning-n5 {
+.color_warning-n5 {
   color: #170e04 !important;
 }
 
-.fc_alert {
+.color_alert {
   color: #cb241c !important;
 }
 
-.fc_alert-0 {
+.color_alert-0 {
   color: #cb241c !important;
 }
 
-.fc_alert-1 {
+.color_alert-1 {
   color: #d03a33 !important;
 }
 
-.fc_alert-2 {
+.color_alert-2 {
   color: #db6660 !important;
 }
 
-.fc_alert-3 {
+.color_alert-3 {
   color: #e5928e !important;
 }
 
-.fc_alert-4 {
+.color_alert-4 {
   color: #efbdbb !important;
 }
 
-.fc_alert-5 {
+.color_alert-5 {
   color: #fae9e8 !important;
 }
 
-.fc_alert-n1 {
+.color_alert-n1 {
   color: #b72019 !important;
 }
 
-.fc_alert-n2 {
+.color_alert-n2 {
   color: #8e1914 !important;
 }
 
-.fc_alert-n3 {
+.color_alert-n3 {
   color: #66120e !important;
 }
 
-.fc_alert-n4 {
+.color_alert-n4 {
   color: #3d0b08 !important;
 }
 
-.fc_alert-n5 {
+.color_alert-n5 {
   color: #140403 !important;
 }
 
-.fc_navigation {
+.color_navigation {
   color: #4f74bf !important;
 }
 
-.fc_navigation-0 {
+.color_navigation-0 {
   color: #4f74bf !important;
 }
 
-.fc_navigation-1 {
+.color_navigation-1 {
   color: #6182c5 !important;
 }
 
-.fc_navigation-2 {
+.color_navigation-2 {
   color: #849ed2 !important;
 }
 
-.fc_navigation-3 {
+.color_navigation-3 {
   color: #a7badf !important;
 }
 
-.fc_navigation-4 {
+.color_navigation-4 {
   color: #cad5ec !important;
 }
 
-.fc_navigation-5 {
+.color_navigation-5 {
   color: #edf1f9 !important;
 }
 
-.fc_navigation-n1 {
+.color_navigation-n1 {
   color: #4768ac !important;
 }
 
-.fc_navigation-n2 {
+.color_navigation-n2 {
   color: #375186 !important;
 }
 
-.fc_navigation-n3 {
+.color_navigation-n3 {
   color: #283a60 !important;
 }
 
-.fc_navigation-n4 {
+.color_navigation-n4 {
   color: #182339 !important;
 }
 
-.fc_navigation-n5 {
+.color_navigation-n5 {
   color: #080c13 !important;
 }
 
-.fc_selected {
+.color_selected {
   color: #509f6c !important;
 }
 
-.fc_selected-0 {
+.color_selected-0 {
   color: #509f6c !important;
 }
 
-.fc_selected-1 {
+.color_selected-1 {
   color: #62a97b !important;
 }
 
-.fc_selected-2 {
+.color_selected-2 {
   color: #85bc98 !important;
 }
 
-.fc_selected-3 {
+.color_selected-3 {
   color: #a8cfb6 !important;
 }
 
-.fc_selected-4 {
+.color_selected-4 {
   color: #cbe2d3 !important;
 }
 
-.fc_selected-5 {
+.color_selected-5 {
   color: #eef5f0 !important;
 }
 
-.fc_selected-n1 {
+.color_selected-n1 {
   color: #488f61 !important;
 }
 
-.fc_selected-n2 {
+.color_selected-n2 {
   color: #386f4c !important;
 }
 
-.fc_selected-n3 {
+.color_selected-n3 {
   color: #285036 !important;
 }
 
-.fc_selected-n4 {
+.color_selected-n4 {
   color: #183020 !important;
 }
 
-.fc_selected-n5 {
+.color_selected-n5 {
   color: #08100b !important;
 }
 
-.fc_info {
+.color_info {
   color: #735dba !important;
 }
 
-.fc_info-0 {
+.color_info-0 {
   color: #735dba !important;
 }
 
-.fc_info-1 {
+.color_info-1 {
   color: #816dc1 !important;
 }
 
-.fc_info-2 {
+.color_info-2 {
   color: #9d8ecf !important;
 }
 
-.fc_info-3 {
+.color_info-3 {
   color: #b9aedd !important;
 }
 
-.fc_info-4 {
+.color_info-4 {
   color: #d5ceea !important;
 }
 
-.fc_info-5 {
+.color_info-5 {
   color: #f1eff8 !important;
 }
 
-.fc_info-n1 {
+.color_info-n1 {
   color: #6854a7 !important;
 }
 
-.fc_info-n2 {
+.color_info-n2 {
   color: #514182 !important;
 }
 
-.fc_info-n3 {
+.color_info-n3 {
   color: #3a2f5d !important;
 }
 
-.fc_info-n4 {
+.color_info-n4 {
   color: #231c38 !important;
 }
 
-.fc_info-n5 {
+.color_info-n5 {
   color: #0c0913 !important;
 }
 
-.fc_highlighted {
+.color_highlighted {
   color: #c45e99 !important;
 }
 
-.fc_highlighted-0 {
+.color_highlighted-0 {
   color: #c45e99 !important;
 }
 
-.fc_highlighted-1 {
+.color_highlighted-1 {
   color: #ca6ea3 !important;
 }
 
-.fc_highlighted-2 {
+.color_highlighted-2 {
   color: #d68eb8 !important;
 }
 
-.fc_highlighted-3 {
+.color_highlighted-3 {
   color: #e2afcc !important;
 }
 
-.fc_highlighted-4 {
+.color_highlighted-4 {
   color: #edcfe0 !important;
 }
 
-.fc_highlighted-5 {
+.color_highlighted-5 {
   color: #f9eff5 !important;
 }
 
-.fc_highlighted-n1 {
+.color_highlighted-n1 {
   color: #b0558a !important;
 }
 
-.fc_highlighted-n2 {
+.color_highlighted-n2 {
   color: #89426b !important;
 }
 
-.fc_highlighted-n3 {
+.color_highlighted-n3 {
   color: #622f4d !important;
 }
 
-.fc_highlighted-n4 {
+.color_highlighted-n4 {
   color: #3b1c2e !important;
 }
 
-.fc_highlighted-n5 {
+.color_highlighted-n5 {
   color: #14090f !important;
 }
 
-.color_white {
+.color_white, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]) {
   color: #fefefe;
 }
 
-.color_black {
+.color_black, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]):hover {
   color: #0a0a0a;
 }
 
-.font_slab {
+.font_slab, .font-family_slab {
   font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif !important;
 }
 
-.font_normal {
+.font_normal, .font-family_normal {
   font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
 
-.font_display {
+.font_display, .font-family_display {
   font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
 }
 
@@ -8787,15 +8821,15 @@ Utility CSS
 
   Styleguide 81.1
  */
-.font-weight_light {
+.font-weight_light, .font_light {
   font-weight: 100 !important;
 }
 
-.font-weight_regular {
+.font-weight_regular, .font_regular {
   font-weight: 400 !important;
 }
 
-.font-weight_bold {
+.font-weight_bold, .font_bold {
   font-weight: 900 !important;
 }
 
@@ -8866,6 +8900,10 @@ Utility CSS
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 /*
@@ -9696,7 +9734,7 @@ Utility CSS
   Styleguide 80.1
  
  */
-.back_primary {
+.back_primary, .pagination-container {
   background-color: #198dae !important;
 }
 
@@ -9760,7 +9798,7 @@ Utility CSS
   background-color: #929397 !important;
 }
 
-.back_secondary-3 {
+.back_secondary-3, .pagination-previous, .pagination-next {
   background-color: #b1b2b5 !important;
 }
 
@@ -10128,7 +10166,7 @@ Utility CSS
   background-color: #14090f !important;
 }
 
-.back_white {
+.back_white, .pagination-container .current {
   background-color: #fefefe;
 }
 
@@ -10183,14 +10221,14 @@ Utility CSS
 /*
 	Textures
 
-	Objects can quickly have textures painted on them with simple classes.  
+	All textures in the Strathmore design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities. 
 
-	.texture_light                       		- light textures with no color background included
-	.texture_medium            					- medium texture have grey backgrounds that can be modified lighter and darker
-	.texture_dust            					- A mostly transparent texture
-	.texture_dark              					- dark texture with very little transparency 
-	.texture_cross            					- A mostly transparent texture
-	.texture_disabled              					- dark texture with very little transparency 
+	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
+	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
+	.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
+	.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
+	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
+	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
@@ -10247,13 +10285,17 @@ Utility CSS
 /*
  Design Base
 
- ### Colors
- ### Papers
- ### Ink Marks
- ### Standard Icons
  Strathmroe is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
 
  Styleguide 0.0
+*/
+/*
+
+Fonts: 
+
+The ACC is focused on stable, conservative, clean fonts.   Roboto Slab is the standard serif fonts across all products at the ACC.  Muli is the current successor to Open Sans, and Maven is a slightly modern font to give a small level of interests which replaces Raleway, or Lato in other products.
+
+ Styleguide 0.1
 */
 /*
 
@@ -10262,15 +10304,15 @@ Font: Roboto Slab
  A beuatiful slab font that shows a complexity and texture to the fonts used in the design. 
 
  markup:
-	<div class="font-family_slab">
-		<h2 class="font-family_slab group-divide-bottom font--name small-12">
+	<div class="font_slab">
+		<h2 class="font_slab group-divide-bottom font--name small-12">
 			Roboto Slab
 			<span class="sub-line">font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Rs</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_slab">Slab Font</h3>
+				<h3 class="font_slab">Slab Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -10281,24 +10323,24 @@ Font: Roboto Slab
 		</div>
 	</div>
 
- Styleguide 0.2.1
+ Styleguide 0.1.1
 */
 /*
 
 Font: Maven Pro
  
- A Slick font that has a slight interest used for UI elements. 
+ A Slick font that has a slight interest used for headers and UI. 
 
  markup:
-	<div class="font-family_display">
-		<h2 class="font-family_display group-divide-bottom font--name small-12">
+	<div class="font_display">
+		<h2 class="font_display group-divide-bottom font--name small-12">
 			Maven Pro
 			<span class="sub-line">font-family: 'Maven Pro', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Mp</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_display">Display Font</h3>
+				<h3 class="font_display">Display Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -10309,7 +10351,7 @@ Font: Maven Pro
 		</div>
 	</div>
 
- Styleguide 0.2.2
+ Styleguide 0.1.2
 */
 /*
 
@@ -10318,15 +10360,15 @@ Font: Muli
  A clean font for content and text of none UI elements. 
 
  markup:
-	<div class="font-family_normal">
-		<h2 class="font-family_normal group-divide-bottom font--name small-12">
+	<div class="font_normal">
+		<h2 class="font_normal group-divide-bottom font--name small-12">
 			Muli
 			<span class="sub-line">font-family: 'Muli', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Mu</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_normal">Content Font</h3>
+				<h3 class="font_normal">Content Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -10337,7 +10379,7 @@ Font: Muli
 		</div>
 	</div>
 
- Styleguide 0.2.3
+ Styleguide 0.1.3
 */
 .font .font--example {
   background-image: url(http://basehold.it/i/24);
@@ -10350,234 +10392,115 @@ Font: Muli
 }
 
 /*
-Basic HTML Elements
 
- Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html. 
+ Basic HTML
 
-
-
-markup:
-<table>
-  <thead>
-    <tr>
-      <th width="200">Table Header</th>
-      <th>Table Header</th>
-      <th width="150">Table Header</th>
-      <th width="150">Table Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-      <td>Content Goes Here</td>
-      <td>Content Goes Here</td>
-    </tr>
-    <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td>Content Goes Here</td>
-      <td>Content Goes Here</td>
-    </tr>
-    <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-      <td>Content Goes Here</td>
-      <td>Content Goes Here</td>
-    </tr>
-  </tbody>
-</table>
-<div class="switch tiny">
-  <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
-  <label class="switch-paddle" for="tinySwitch">
-    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
-  </label>
-</div>
-
-<div class="switch small">
-  <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
-  <label class="switch-paddle" for="smallSwitch">
-    <span class="show-for-sr">Small Portions Only</span>
-  </label>
-</div>
-
-<div class="switch large">
-  <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-  <label class="switch-paddle" for="largeSwitch">
-    <span class="show-for-sr">Show Large Elephants</span>
-  </label>
-</div>
-<div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
-  <div class="progress-meter" style="width: 25%">
-    <p class="progress-meter-text">25%</p>
-  </div>
-</div>
-
-<div class="warning progress">
-  <div class="progress-meter" style="width: 50%">
-    <p class="progress-meter-text">50%</p>
-  </div>
-</div>
-
-<div class="alert progress">
-  <div class="progress-meter" style="width: 75%">
-    <p class="progress-meter-text">75%</p>
-  </div>
-</div>
-
-<div class="success progress" role="progressbar" tabindex="0" aria-valuenow="100" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
-  <div class="progress-meter" style="width: 100%">
-    <p class="progress-meter-text">100%</p>
-  </div>
-</div>
-<ul class="pagination" role="navigation" aria-label="Pagination">
-  <li class="disabled">Previous <span class="show-for-sr">page</span></li>
-  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-  <li><a href="#0" aria-label="Page 2">2</a></li>
-  <li><a href="#0" aria-label="Page 3">3</a></li>
-  <li><a href="#0" aria-label="Page 4">4</a></li>
-  <li class="ellipsis" aria-hidden="true"></li>
-  <li><a href="#0" aria-label="Page 12">12</a></li>
-  <li><a href="#0" aria-label="Page 13">13</a></li>
-  <li><a href="#0" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-</ul>
-<span class="primary label">Primary Label</span>
-<span class="secondary label">Secondary Label</span>
-<span class="success label">Success Label</span>
-<span class="alert label">Alert Label</span>
-<span class="warning label">Warning Label</span>
-<button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
-<div class="dropdown-pane" id="example-dropdown" data-dropdown>
-  Just some junk that needs to be said. Or not. Your choice.
-</div>
-<div class="callout" data-closable>
-  <button class="close-button" aria-label="Close alert" type="button" data-close>
-    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-  </button>
-  <p>This is a close button example.</p>
-</div>
-<ul class="accordion" data-accordion>
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">Accordion 1</a>
-    <div class="accordion-content" data-tab-content >
-      <p>Panel 1. Lorem ipsum dolor</p>
-      <a href="#">Nowhere to Go</a>
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Accordion 2</a>
-    <div class="accordion-content" data-tab-content>
-      <textarea></textarea>
-      <button class="button">I do nothing!</button>
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Accordion 3</a>
-    <div class="accordion-content" data-tab-content>
-      Type your name!
-      <input type="text"></input>
-    </div>
-  </li>
-</ul>
-<nav aria-label="You are here:" role="navigation">
-  <ul class="breadcrumbs">
-    <li><a href="#0">Home</a></li>
-    <li><a href="#0">Features</a></li>
-    <li class="disabled">Gene Splicing</li>
-    <li>
-      <span class="show-for-sr">Current: </span> Cloning
-    </li>
-  </ul>
-</nav>
- <form>
-  <label>Input Label
-    <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
-  </label>
-  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-  <label>
-    How many puppies?
-    <input type="number" value="100">
-  </label>
-  <label>
-    What books did you read over summer break?
-    <textarea placeholder="None"></textarea>
-  </label>
-  <label>Select Menu
-    <select>
-      <option value="husker">Husker</option>
-      <option value="starbuck">Starbuck</option>
-      <option value="hotdog">Hot Dog</option>
-      <option value="apollo">Apollo</option>
-    </select>
-  </label>
-  <div class="callout">
-  <h5>This is a callout.</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-
-<div class="callout primary">
-  <h5>This is a primary callout.</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-
-<div class="callout secondary">
-  <h5>This is a secondary callout</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-
-<div class="callout success">
-  <h5>This is a success callout</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-
-<div class="callout warning">
-  <h5>This is a warning callout</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-
-<div class="callout alert">
-  <h5>This is an alert callout</h5>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#0">It's dangerous to go alone, take this.</a>
-</div>
-  <div class="grid-x grid-margin-x">
-    <fieldset class="cell large-6">
-      <legend>Choose Your Favorite</legend>
-      <input type="radio" name="pokemon" value="Red" id="formRed" required><label for="formRed">Red</label>
-      <input type="radio" name="pokemon" value="Blue" id="formBlue"><label for="formBlue">Blue</label>
-      <input type="radio" name="pokemon" value="Yellow" id="formYellow"><label for="formYellow">Yellow</label>
-    </fieldset>
-    <fieldset class="cell large-6">
-      <legend>Check these out</legend>
-      <input id="formCheckbox1" type="checkbox"><label for="formCheckbox1">Checkbox 1</label>
-      <input id="formCheckbox2" type="checkbox"><label for="formCheckbox2">Checkbox 2</label>
-      <input id="formCheckbox3" type="checkbox"><label for="formCheckbox3">Checkbox 3</label>
-    </fieldset>
-  </div>
-  <div class="grid-x grid-margin-x">
-    <div class="cell small-3">
-      <label for="middle-label" class="text-right middle">Label</label>
-    </div>
-    <div class="cell small-9">
-      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-    </div>
-  </div>
-  <div class="input-group">
-    <span class="input-group-label">$</span>
-    <input class="input-group-field" type="url">
-    <div class="input-group-button">
-      <input type="submit" class="button" value="Submit">
-    </div>
-  </div>
-</form>
-
+ Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many basic items should be constructed or manipulated.  
+ 
  Styleguide 10.0
+
 */
+/*
+  Basic Table
+
+  Most common layout of the table
+
+  markup:
+  <table>
+    <thead>
+      <tr>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+    </tbody>
+  </table>
+
+ Styleguide 10.0.1
+*/
+/*
+
+  Switches
+
+  markup:
+  <div class="switch tiny switch_radius">
+    <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="tinySwitch">
+      <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+    </label>
+  </div>
+  <div class="switch small round">
+    <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="smallSwitch">
+      <span class="show-for-sr">Small Portions Only</span>
+    </label>
+  </div>
+  <div class="switch large">
+    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="largeSwitch">
+      <span class="show-for-sr">Show Large Elephants</span>
+    </label>
+  </div>
+
+  Styleguide 10.0.2
+  */
+/*
+
+  Progress Bars
+
+  markup:
+<div class="row">
+  <div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 25%">
+      <p class="progress-meter-text">25%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="warning progress">
+    <div class="progress-meter" style="width: 50%">
+      <p class="progress-meter-text">50%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="alert progress">
+    <div class="progress-meter" style="width: 75%">
+      <p class="progress-meter-text">75%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="success progress" role="progressbar" tabindex="0" aria-valuenow="100" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 100%">
+      <p class="progress-meter-text">100%</p>
+    </div>
+  </div>
+</div>
+
+  Styleguide 10.0.3
+  */
 /*
 Navigation Components
 

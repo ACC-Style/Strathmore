@@ -934,6 +934,10 @@ a.thumbnail.pseudo-class-focus {
   color: #0a0a0a;
 }
 
+.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
+  color: #0a0a0a;
+}
+
 .disabled.pseudo-class-hover {
   background-image: url("/assets/img/cross_disabled.png");
 }

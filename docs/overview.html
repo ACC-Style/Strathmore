@@ -38,25 +38,19 @@
 <li class="sg">Clean up of fonts to multi and maverick</li>
 <li class="sg">remove layout SCCS and components</li>
 <li class="sg">Removal of states coloring replaced by utility styling.</li>
-<li class="sg"><strong>Refactoring SCSS to be More BEM and Dry</strong> <a href="https://css-tricks.com/bem-101/" class="sg"><strong>BEM</strong></a> / <a href="https://alistapart.com/article/dry-ing-out-your-sass-mixins" class="sg"><strong>DRY</strong></a>
-<ul>
+<li class="sg"><strong>Refactoring SCSS to be More BEM and Dry</strong> <a href="https://css-tricks.com/bem-101/" class="sg"><strong>BEM</strong></a> / <a href="https://alistapart.com/article/dry-ing-out-your-sass-mixins" class="sg"><strong>DRY</strong></a></li>
 <li class="sg">simplification of required holder in questions.</li>
 <li class="sg">reduction of nesting specification on styling.</li>
 </ul>
 </li>
-</ul>
-</li>
 <li class="sg">** UX Definition **
 <ul>
-<li class="sg">Best Practices and JavaScript Template for
-<ul>
+<li class="sg">Best Practices and JavaScript Template for</li>
 <li class="sg">Mobile Header</li>
 <li class="sg">Pagination</li>
 <li class="sg">Switches</li>
 <li class="sg">Section Toggles</li>
 <li class="sg">Search and Results</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="sg">** Design Changes **
@@ -89,47 +83,325 @@
 </ul>
 <h2 class="sg" name="utility-classes">Utility Classes</h2>
 <h3 class="sg" name="naming-convention">Naming Convention</h3>
-<p class="sg"><em>[style short hand]--[modifier,direction]</em>[value+unit]-[break point]_</p>
+<p class="sg"><em>[style name]</em>[value+unit]-[modifier]<em>[break point]</em></p>
 <h3 class="sg" name="definition-of-style-short-hand">Definition of Style Short Hand</h3>
-<ul>
-<li class="sg"><strong>Padding:</strong> P-</li>
-<li class="sg"><strong>Border:</strong> B-</li>
-<li class="sg"><strong>Margin:</strong> M-</li>
-<li class="sg"><strong>Border-radius:</strong> Br-</li>
-<li class="sg"><strong>Border-width:</strong> Bw-</li>
-<li class="sg"><strong>Border-color:</strong> Bc-</li>
-<li class="sg"><strong>Background-image:</strong> Texture-, BACKi-</li>
-<li class="sg"><strong>Background-color:</strong> BACKc-</li>
-<li class="sg"><strong>Font-weight:</strong> Fw-</li>
-<li class="sg"><strong>Color:</strong> Fc-</li>
-<li class="sg"><strong>Font-family:</strong> F-</li>
-<li class="sg"><strong>Line-height:</strong> Lh-</li>
-<li class="sg"><strong>Flex:</strong> Flex-</li>
-<li class="sg"><strong>Display:</strong> Display-</li>
-<li class="sg"><strong>Float:</strong> use foundation pull-right, pull-left</li>
-<li class="sg"><strong>Drop-Shadow:</strong> Layer-</li>
-</ul>
-<h3 class="sg" name="directions">Directions</h3>
-<ul>
-<li class="sg"><strong>all:</strong> no direction modifier</li>
-<li class="sg"><strong>top:</strong> T-</li>
-<li class="sg"><strong>bottom:</strong> B-</li>
-<li class="sg"><strong>right:</strong> R-</li>
-<li class="sg"><strong>left:</strong> L-</li>
-</ul>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">Style</th>
+<th class="sg">Short Name</th>
+<th class="sg">CSS</th>
+<th class="sg">Long Nmae</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">margin</td>
+<td class="sg">&apos;.m&apos;</td>
+<td class="sg">&apos;margin&apos;</td>
+<td class="sg">&apos;.margin&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">margin-top</td>
+<td class="sg">&apos;.mt&apos;</td>
+<td class="sg">&apos;margin-top&apos;</td>
+<td class="sg">&apos;.margin-top&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">margin-bottom</td>
+<td class="sg">&apos;.mb&apos;</td>
+<td class="sg">&apos;margin-bottom&apos;</td>
+<td class="sg">&apos;.margin-bottom&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">margin-left</td>
+<td class="sg">&apos;.ml&apos;</td>
+<td class="sg">&apos;margin-left&apos;</td>
+<td class="sg">&apos;.margin-left&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">margin-right</td>
+<td class="sg">&apos;.mr&apos;</td>
+<td class="sg">&apos;margin-right&apos;</td>
+<td class="sg">&apos;.margin-right&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">padding</td>
+<td class="sg">&apos;.p&apos;</td>
+<td class="sg">&apos;padding&apos;</td>
+<td class="sg">&apos;.padding&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">padding-top</td>
+<td class="sg">&apos;.pt&apos;</td>
+<td class="sg">&apos;padding-top&apos;</td>
+<td class="sg">&apos;.padding-top&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">padding-bottom</td>
+<td class="sg">&apos;.pb&apos;</td>
+<td class="sg">&apos;padding-bottom&apos;</td>
+<td class="sg">&apos;.padding-bottom&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">padding-left</td>
+<td class="sg">&apos;.pl&apos;</td>
+<td class="sg">&apos;padding-left&apos;</td>
+<td class="sg">&apos;.padding-left&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">padding-right</td>
+<td class="sg">&apos;.pr&apos;</td>
+<td class="sg">&apos;padding-right&apos;</td>
+<td class="sg">&apos;.padding-right&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">line-height</td>
+<td class="sg">&apos;.lh&apos;</td>
+<td class="sg">&apos;line-height&apos;</td>
+<td class="sg">&apos;.line-height&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">font-size</td>
+<td class="sg">&apos;.font&apos;</td>
+<td class="sg">&apos;font-size&apos;</td>
+<td class="sg">&apos;.font-size&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">font-family</td>
+<td class="sg">&apos;.font&apos;</td>
+<td class="sg">&apos;font-family&apos;</td>
+<td class="sg">&apos;.font-family&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">font-weight</td>
+<td class="sg">&apos;.font&apos;</td>
+<td class="sg">&apos;font-weight&apos;</td>
+<td class="sg">&apos;.font-weight&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">font-style</td>
+<td class="sg">&apos;.font&apos;</td>
+<td class="sg">&apos;font-style&apos;</td>
+<td class="sg">&apos;.font-style&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">color</td>
+<td class="sg">&apos;.color&apos;</td>
+<td class="sg">&apos;color&apos;</td>
+<td class="sg">&apos;.font-color&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">background-color</td>
+<td class="sg">&apos;.back&apos;</td>
+<td class="sg">&apos;background-color&apos;</td>
+<td class="sg">&apos;.background-color&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-color</td>
+<td class="sg">&apos;.border&apos;</td>
+<td class="sg">&apos;border-color&apos;</td>
+<td class="sg">&apos;.border-color&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-radius</td>
+<td class="sg">&apos;.br&apos;</td>
+<td class="sg">&apos;border-radius&apos;</td>
+<td class="sg">&apos;.border-radius&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-top-right-radius</td>
+<td class="sg">&apos;.br-tr&apos;</td>
+<td class="sg">&apos;border-top-right-radius&apos;</td>
+<td class="sg">&apos;.border-top-right-radius&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-top-left-radius</td>
+<td class="sg">&apos;.br-tl&apos;</td>
+<td class="sg">&apos;border-top-left-radius&apos;</td>
+<td class="sg">&apos;.border-top-left-radius&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-bottom-right-radius</td>
+<td class="sg">&apos;.br-br&apos;</td>
+<td class="sg">&apos;border-bottom-right-radius&apos;</td>
+<td class="sg">&apos;.border-bottom-right-radius&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-bottom-left-radius</td>
+<td class="sg">&apos;.br-bl&apos;</td>
+<td class="sg">&apos;border-bottom-left-radius&apos;</td>
+<td class="sg">&apos;.border-bottom-left-radius&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-width</td>
+<td class="sg">&apos;.b&apos;</td>
+<td class="sg">&apos;border-width&apos;</td>
+<td class="sg">&apos;.border-width&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-top-width</td>
+<td class="sg">&apos;.bw-t&apos;</td>
+<td class="sg">&apos;border-top-width&apos;</td>
+<td class="sg">&apos;.border-top-width&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-right-width</td>
+<td class="sg">&apos;.bw-r&apos;</td>
+<td class="sg">&apos;border-right-width&apos;</td>
+<td class="sg">&apos;.border-right-width&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-left-width</td>
+<td class="sg">&apos;.bw-l&apos;</td>
+<td class="sg">&apos;border-left-width&apos;</td>
+<td class="sg">&apos;.border-left-width&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">border-bottom-width</td>
+<td class="sg">&apos;.bw-b&apos;</td>
+<td class="sg">&apos;border-bottom-width&apos;</td>
+<td class="sg">&apos;.border-bottom-width&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">width</td>
+<td class="sg">&apos;.w&apos;</td>
+<td class="sg">&apos;width&apos;</td>
+<td class="sg">&apos;.width&apos;</td>
+</tr>
+</tbody>
+</table>
 <h3 class="sg" name="values">Values</h3>
-<ul>
-<li class="sg"><strong>n4:</strong> font: -4 on modular scale, margin: -2x, padding: Not Used, line-height: Not Used</li>
-<li class="sg"><strong>n4:</strong> font: -4 on modular scale, margin: -1x, padding: Not Used, line-height: Not Used</li>
-<li class="sg"><strong>n3:</strong> font: -3 on modular scale, margin: -.5x, padding: Not Used, line-height: Not Used</li>
-<li class="sg"><strong>n2:</strong> font: -2 on modular scale, margin: -.25x, padding: Not Used, line-height: Not Used</li>
-<li class="sg"><strong>n1:</strong> font: -1 on modular scale, margin: -1px, padding: Not Used, line-height: Not Used</li>
-<li class="sg"><strong>0:</strong> font: 0 on modular scale, margin:1px, padding: 1px, line-height: 0</li>
-<li class="sg"><strong>1:</strong> font: 1 on modular scale, margin:.25x, padding: .25x, line-height: 1</li>
-<li class="sg"><strong>2:</strong> font: 2 on modular scale, margin:.5x, padding: .5x, line-height: 1.2</li>
-<li class="sg"><strong>3:</strong> font: 3 on modular scale, margin:1x, padding: 1x, line-height: 1.4</li>
-<li class="sg"><strong>4:</strong> font: 4 on modular scale, margin:2x, padding: 2x, line-height: 1.7</li>
-</ul>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">Value Postfix</th>
+<th class="sg">Font Size</th>
+<th class="sg">Margin</th>
+<th class="sg">Padding</th>
+<th class="sg">Line Height</th>
+<th class="sg">Color</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">n5</td>
+<td class="sg">ms(-5)</td>
+<td class="sg">-2 * X&#x2020;</td>
+<td class="sg">Not Used</td>
+<td class="sg">Not Used</td>
+<td class="sg">mix(color, black, 90%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n4</td>
+<td class="sg">ms(-4)</td>
+<td class="sg">-1 * X&#x2020;</td>
+<td class="sg">Not Used</td>
+<td class="sg">Not Used</td>
+<td class="sg">mix(color, black, 70%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n3</td>
+<td class="sg">ms(-3)</td>
+<td class="sg">-.5 * X&#x2020;</td>
+<td class="sg">Not Used</td>
+<td class="sg">Not Used</td>
+<td class="sg">mix(color, black, 50%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n2</td>
+<td class="sg">ms(-2)</td>
+<td class="sg">-.25 * X&#x2020;</td>
+<td class="sg">Not Used</td>
+<td class="sg">Not Used</td>
+<td class="sg">mix(color, black, 30%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n1</td>
+<td class="sg">ms(-1)</td>
+<td class="sg">-.1 * X&#x2020;</td>
+<td class="sg">Not Used</td>
+<td class="sg">Not Used</td>
+<td class="sg">mix(color, black, 10%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">0</td>
+<td class="sg">ms(0)</td>
+<td class="sg">0</td>
+<td class="sg">0</td>
+<td class="sg">0</td>
+<td class="sg">color @ 100%</td>
+</tr>
+<tr class="sg">
+<td class="sg">n1</td>
+<td class="sg">ms(1)</td>
+<td class="sg">.1 * X&#x2020;</td>
+<td class="sg">.1 * X&#x2020;</td>
+<td class="sg">1</td>
+<td class="sg">mix(color, white, 10%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n2</td>
+<td class="sg">ms(2)</td>
+<td class="sg">.25 * X&#x2020;</td>
+<td class="sg">.25 * X&#x2020;</td>
+<td class="sg">1.45</td>
+<td class="sg">mix(color, white, 30%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n3</td>
+<td class="sg">ms(3)</td>
+<td class="sg">.5 * X&#x2020;</td>
+<td class="sg">5 * X&#x2020;</td>
+<td class="sg">1.65</td>
+<td class="sg">mix(color, white, 50%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n4</td>
+<td class="sg">ms(4)</td>
+<td class="sg">1 * X&#x2020;</td>
+<td class="sg">1 * X&#x2020;</td>
+<td class="sg">1.75</td>
+<td class="sg">mix(color, white, 70%)</td>
+</tr>
+<tr class="sg">
+<td class="sg">n5</td>
+<td class="sg">ms(5)</td>
+<td class="sg">2 * X&#x2020;</td>
+<td class="sg">2 * X&#x2020;</td>
+<td class="sg">2</td>
+<td class="sg">mix(color, white, 90%)</td>
+</tr>
+</tbody>
+</table>
+<p class="sg">&#x2020; x = global spacing 1 rem</p>
+<h3 class="sg" name="alternate-values">Alternate Values</h3>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">Value Postfix</th>
+<th class="sg">Border Radius Values</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">square</td>
+<td class="sg">0</td>
+</tr>
+<tr class="sg">
+<td class="sg">radius</td>
+<td class="sg">5p or Global Radius</td>
+</tr>
+<tr class="sg">
+<td class="sg">round</td>
+<td class="sg">999px</td>
+</tr>
+<tr class="sg">
+<td class="sg">circle</td>
+<td class="sg">100%</td>
+</tr>
+</tbody>
+</table>
 <h2 class="sg" name="reserved-names">Reserved Names</h2>
 <h3 class="sg" name="reserved-words-and-modifier-descriptors">Reserved Words and Modifier Descriptors</h3>
 <p class="sg">These words should be used to describe states and generic elements of the UI and should be used instead of some variation or alternate name.</p>
@@ -159,11 +431,8 @@
 <li class="sg">Scrub Colors
 <ul>
 <li class="sg">-accBlue</li>
-<li class="sg">-productColor, -teal</li>
 <li class="sg">-teal</li>
 <li class="sg">-blue</li>
-<li class="sg">-softGreen</li>
-<li class="sg">-leafGreen</li>
 <li class="sg">-purple</li>
 <li class="sg">-magenta</li>
 </ul>
@@ -174,6 +443,8 @@
 <li class="sg">-warning, -orange</li>
 <li class="sg">-alert, -red</li>
 <li class="sg">-primary, -productColor</li>
+<li class="sg">-secondary</li>
+<li class="sg">-highlight</li>
 </ul>
 </li>
 <li class="sg">Grey
@@ -192,7 +463,7 @@
 <li class="sg">Black</li>
 <li class="sg">White</li>
 </ul>
-<h3 class="sg" name="modifiers">Modifiers</h3>
+<h3 class="sg" name="modifiers-(not-recommended)">Modifiers (Not Recommended)</h3>
 <ul>
 <li class="sg"><strong>-soft:</strong> Color made pale and almost white.</li>
 <li class="sg"><strong>-light:</strong> Color mixed with white</li>

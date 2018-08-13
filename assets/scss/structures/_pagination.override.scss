@@ -20,7 +20,9 @@
 
  Styleguide 20.20
 */
-
+.pagination-previous,.pagination-next{
+	@extend .back_secondary-3;
+}
 .pagination .disabled:hover{
 	@include texture-disabled;
 }
@@ -32,17 +34,17 @@
  This is what pagination should look like and its modifications.
 
  markup:
- <nav aria-label="Pagination" class="padding_3 padding-top_0 padding-bottom_0 back_primary border-top-width_3">
-  <ul class="pagination maring-bottom_3">
-    <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
-    <li class="current back_white color_primary"><span class="show-for-sr">You're on page</span> 1</li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 2">2</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 3">3</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 4">4</a></li>
-    <li class="back_primary color_white fal fa-ellipsis-h back_primary color_white" aria-hidden="true"></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 12">12</a></li>
-    <li class="back_primary color_white"><a href="#" aria-label="Page 13">13</a></li>
-    <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+ <nav aria-label="Pagination" class=" pagination-container">
+  <ul class="pagination float-right">
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li class=""><a href="#" aria-label="Page 2">2</a></li>
+    <li class=""><a href="#" aria-label="Page 3">3</a></li>
+    <li class=""><a href="#" aria-label="Page 4">4</a></li>
+    <li class=" fal fa-ellipsis-h " aria-hidden="true"></li>
+    <li class=""><a href="#" aria-label="Page 12">12</a></li>
+    <li class=""><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
   </ul>
 </nav>
 
@@ -56,3 +58,23 @@ sg-wrapper:
 
  Styleguide 20.21
 */
+
+
+.pagination-container{
+    @extend .back_primary;
+    @extend .padding-right_3;
+    @extend .padding-left_3;
+    @extend .padding-top_0;
+    @extend .padding-bottom_0;
+    .pagination{ @extend .margin-bottom_3;}
+    .current{
+     	 @extend .back_white;
+     	 @extend .color_primary;
+    }
+    a:not([class="pagination-previous"]):not([class="pagination-next"]){
+    	@extend .color_white;
+    	&:hover{
+    		@extend .color_black;
+    	}
+    }
+}

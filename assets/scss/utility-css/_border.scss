@@ -128,6 +128,15 @@
 @include size-loop(border-bottom-right-radius, border-radius,1);
 @include size-loop(border-bottom-left-radius, border-radius,1);
 
+@each  $val-name, $val in  map-get($values,border-radius){
+  .#{$val-name}{
+      &,.switch-paddle,.switch-paddle::after{
+        border-radius: $val;
+      }
+  }
+}
+
+
 
 /*
   Border Colors

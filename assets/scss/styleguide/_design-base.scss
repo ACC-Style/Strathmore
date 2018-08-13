@@ -1,13 +1,18 @@
 /*
  Design Base
 
- ### Colors
- ### Papers
- ### Ink Marks
- ### Standard Icons
  Strathmroe is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
 
  Styleguide 0.0
+*/
+
+/*
+
+Fonts: 
+
+The ACC is focused on stable, conservative, clean fonts.   Roboto Slab is the standard serif fonts across all products at the ACC.  Muli is the current successor to Open Sans, and Maven is a slightly modern font to give a small level of interests which replaces Raleway, or Lato in other products.
+
+ Styleguide 0.1
 */
 
 
@@ -18,15 +23,15 @@ Font: Roboto Slab
  A beuatiful slab font that shows a complexity and texture to the fonts used in the design. 
 
  markup:
-	<div class="font-family_slab">
-		<h2 class="font-family_slab group-divide-bottom font--name small-12">
+	<div class="font_slab">
+		<h2 class="font_slab group-divide-bottom font--name small-12">
 			Roboto Slab
 			<span class="sub-line">font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Rs</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_slab">Slab Font</h3>
+				<h3 class="font_slab">Slab Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -37,24 +42,24 @@ Font: Roboto Slab
 		</div>
 	</div>
 
- Styleguide 0.2.1
+ Styleguide 0.1.1
 */
 /*
 
 Font: Maven Pro
  
- A Slick font that has a slight interest used for UI elements. 
+ A Slick font that has a slight interest used for headers and UI. 
 
  markup:
-	<div class="font-family_display">
-		<h2 class="font-family_display group-divide-bottom font--name small-12">
+	<div class="font_display">
+		<h2 class="font_display group-divide-bottom font--name small-12">
 			Maven Pro
 			<span class="sub-line">font-family: 'Maven Pro', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Mp</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_display">Display Font</h3>
+				<h3 class="font_display">Display Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -65,7 +70,7 @@ Font: Maven Pro
 		</div>
 	</div>
 
- Styleguide 0.2.2
+ Styleguide 0.1.2
 */
 
 /*
@@ -75,15 +80,15 @@ Font: Muli
  A clean font for content and text of none UI elements. 
 
  markup:
-	<div class="font-family_normal">
-		<h2 class="font-family_normal group-divide-bottom font--name small-12">
+	<div class="font_normal">
+		<h2 class="font_normal group-divide-bottom font--name small-12">
 			Muli
 			<span class="sub-line">font-family: 'Muli', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font grid-x grid-padding-x grid-padding-y">
 			<div class="cell shrink font_10 font--dropcase_2x">Mu</div>
 			<div class="cell auto font--example">
-				<h3 class="font-family_normal">Content Font</h3>
+				<h3 class="font_normal">Content Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -94,7 +99,7 @@ Font: Muli
 		</div>
 	</div>
 
- Styleguide 0.2.3
+ Styleguide 0.1.3
 */
 
 .font{

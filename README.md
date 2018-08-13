@@ -32,15 +32,15 @@ This is a library of modular styles extending the popular framework of Zurb Foun
     *   remove layout SCCS and components
     *   Removal of states coloring replaced by utility styling.
     *   **Refactoring SCSS to be More BEM and Dry** [**BEM**](https://css-tricks.com/bem-101/) / [**DRY**](https://alistapart.com/article/dry-ing-out-your-sass-mixins)
-        *   simplification of required holder in questions.
-        *   reduction of nesting specification on styling.
+    *   simplification of required holder in questions.
+    *   reduction of nesting specification on styling.
 *   ** UX Definition **
     * Best Practices and JavaScript Template for
-        * Mobile Header
-        * Pagination
-        * Switches
-        * Section Toggles
-        * Search and Results
+    * Mobile Header
+    * Pagination
+    * Switches
+    * Section Toggles
+    * Search and Results
 *   ** Design Changes **
     * question look and feel
     * mobile header
@@ -63,47 +63,70 @@ This is a library of modular styles extending the popular framework of Zurb Foun
 ## Utility Classes
 ### Naming Convention
 
-_[style short hand]--[modifier,direction]_[value+unit]-[break point]_
+_[style name]_[value+unit]-[modifier]_[break point]_
 
 ### Definition of Style Short Hand
+| Style | Short Name    | CSS      | Long Nmae         |
+| ---   | ---           | ---            | ---               |
+| margin                    | '.m'       |  'margin'      |  '.margin'    |
+| margin-top                | '.mt'      |  'margin-top'      |  '.margin-top'    |
+| margin-bottom             | '.mb'      |  'margin-bottom'      |  '.margin-bottom'    |
+| margin-left               | '.ml'      |  'margin-left'      |  '.margin-left'    |
+| margin-right              | '.mr'      |  'margin-right'      |  '.margin-right'    |
+| padding                   | '.p'       |  'padding'      |  '.padding'    |
+| padding-top               | '.pt'      |  'padding-top'      |  '.padding-top'    |
+| padding-bottom            | '.pb'      |  'padding-bottom'      |  '.padding-bottom'    |
+| padding-left              | '.pl'      |  'padding-left'      |  '.padding-left'    |
+| padding-right             | '.pr'      |  'padding-right'      |  '.padding-right'    |
+| line-height               | '.lh'      |  'line-height'      |  '.line-height'    |
+| font-size                 | '.font'      |  'font-size'      |  '.font-size'    |
+| font-family                 | '.font'      |  'font-family'      |  '.font-family'    |
+| font-weight                 | '.font'      |  'font-weight'      |  '.font-weight'    |
+| font-style                 | '.font'      |  'font-style'      |  '.font-style'    |
+| color                     | '.color'      |  'color'      |  '.font-color'    |
+| background-color          | '.back'      |  'background-color'      |  '.background-color'    |
+| border-color                  | '.border'      |  'border-color'      |  '.border-color'    |
+| border-radius                 | '.br'      |  'border-radius'      |  '.border-radius'    |
+| border-top-right-radius       | '.br-tr'      |  'border-top-right-radius'      |  '.border-top-right-radius'      |
+| border-top-left-radius        | '.br-tl'      |  'border-top-left-radius'      |  '.border-top-left-radius'       |
+| border-bottom-right-radius    | '.br-br'      |  'border-bottom-right-radius'      |  '.border-bottom-right-radius'    |
+| border-bottom-left-radius     | '.br-bl'      |  'border-bottom-left-radius'      |  '.border-bottom-left-radius'    |
+| border-width                  | '.b'      |  'border-width'      |  '.border-width'    |
+| border-top-width              | '.bw-t'      |  'border-top-width'      |  '.border-top-width'    |
+| border-right-width            | '.bw-r'      |  'border-right-width'      |  '.border-right-width'    |
+| border-left-width             | '.bw-l'      |  'border-left-width'      |  '.border-left-width'    |
+| border-bottom-width           | '.bw-b'      |  'border-bottom-width'                      | '.border-bottom-width'    |
+| width                         | '.w'      |  'width'      |  '.width'    |
 
-*   **Padding:** P-
-*   **Border:** B-
-*   **Margin:** M-
-*   **Border-radius:** Br-
-*   **Border-width:** Bw-
-*   **Border-color:** Bc-
-*   **Background-image:** Texture-, BACKi-
-*   **Background-color:** BACKc-
-*   **Font-weight:** Fw-
-*   **Color:** Fc-
-*   **Font-family:** F-
-*   **Line-height:** Lh-
-*   **Flex:** Flex-
-*   **Display:** Display-
-*   **Float:** use foundation pull-right, pull-left
-*   **Drop-Shadow:** Layer-
 
-### Directions
-
-*   **all:** no direction modifier
-*   **top:** T-
-*   **bottom:** B-
-*   **right:** R-
-*   **left:** L-
 
 ### Values
+| Value Postfix      | Font Size            | Margin     | Padding   | Line Height   | Color   |
+| ---                | ---                  | ---        | ---       | ---           | ---     |
+| n5    |  ms(-5)  | -2 * X†  | Not Used  | Not Used   | mix(color, black, 90%)   |
+| n4    |  ms(-4)  | -1 * X†  | Not Used  | Not Used   | mix(color, black, 70%)   |
+| n3    |  ms(-3)  | -.5 * X†  | Not Used  | Not Used   | mix(color, black, 50%)   |
+| n2    |  ms(-2)  | -.25 * X†  | Not Used  | Not Used   | mix(color, black, 30%)   |
+| n1    |  ms(-1)  | -.1 * X†  | Not Used  | Not Used   | mix(color, black, 10%)   |
+| 0     | ms(0)   | 0     | 0     | 0     | color @ 100%   |
+| n1    | ms(1)  | .1 * X†  | .1 * X†  | 1  | mix(color, white, 10%)   |
+| n2    | ms(2)  | .25 * X†  | .25 * X†  | 1.45   | mix(color, white, 30%)   |
+| n3    | ms(3)  | .5 * X†  | 5 * X†  | 1.65   | mix(color, white, 50%)   |
+| n4    | ms(4)  | 1 * X†  |  1 * X†  | 1.75   | mix(color, white, 70%)   |
+| n5    | ms(5)  | 2 * X†  |  2 * X†  | 2   | mix(color, white, 90%)   |
 
-*   **n4:** font: -4 on modular scale, margin: -2x, padding: Not Used, line-height: Not Used
-*   **n4:** font: -4 on modular scale, margin: -1x, padding: Not Used, line-height: Not Used
-*   **n3:** font: -3 on modular scale, margin: -.5x, padding: Not Used, line-height: Not Used
-*   **n2:** font: -2 on modular scale, margin: -.25x, padding: Not Used, line-height: Not Used
-*   **n1:** font: -1 on modular scale, margin: -1px, padding: Not Used, line-height: Not Used
-*   **0:** font: 0 on modular scale, margin:1px, padding: 1px, line-height: 0
-*   **1:** font: 1 on modular scale, margin:.25x, padding: .25x, line-height: 1
-*   **2:** font: 2 on modular scale, margin:.5x, padding: .5x, line-height: 1.2
-*   **3:** font: 3 on modular scale, margin:1x, padding: 1x, line-height: 1.4
-*   **4:** font: 4 on modular scale, margin:2x, padding: 2x, line-height: 1.7
+
+† x = global spacing 1 rem
+
+### Alternate Values 
+
+| Value Postfix         | Border Radius Values      |
+| ---                   | ---                       |
+| square                | 0                         |
+| radius                | 5p or Global Radius       |
+| round                 | 999px                     |
+| circle                | 100%                      |
+
 
 ## Reserved Names
 ### Reserved Words and Modifier Descriptors
@@ -134,11 +157,8 @@ These words should be used to describe states and generic elements of the UI and
 ## Colors
 *   Scrub Colors
     *   -accBlue
-    *   -productColor, -teal
     *   -teal
     *   -blue
-    *   -softGreen
-    *   -leafGreen
     *   -purple
     *   -magenta
 *   State Colors
@@ -146,6 +166,8 @@ These words should be used to describe states and generic elements of the UI and
     *   -warning, -orange
     *   -alert, -red
     *   -primary, -productColor
+    *   -secondary
+    *   -highlight
 *   Grey
     *   -10,
     *   -20,
@@ -159,7 +181,7 @@ These words should be used to describe states and generic elements of the UI and
 *   Black
 *   White
 
-### Modifiers 
+### Modifiers (Not Recommended)
 * __-soft:__ Color made pale and almost white. 
 * __-light:__ Color mixed with white
 * __-dark:__ Color mixed with black 
