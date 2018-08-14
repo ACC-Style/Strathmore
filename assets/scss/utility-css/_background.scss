@@ -1,62 +1,60 @@
 /*
+  Utility CSS: Backgrounds 
+ 
+  Background of containers can be easily maniputlated with textures and colors.  
+  
+  Styleguide 81.0
+*/
+/*
   Background Colors
  
-  Background colors can be easily change with back_{{color-name}}-{{mix value}}  
+  Background colors can be easily change with back_{{color-name}}  
  
   back_primary            	- background color warning color
   back_secondary            	- background color warning color
   back_alert            	- background color alert color
   back_warning            	- background color warning color
-  back_success            	- background color success color
-  back_primary-5             - background color mixed with white
-  back_primary-4             - background color mixed with white
-  back_primary-3             - background color mixed with white
-  back_primary-2             - background color mixed with white
-  back_primary-1             - background color mixed with white
-  back_primary            	- background color primary color
-  back_primary-n1             - background color mixed with black
-  back_primary-n2             - background color mixed with black
-  back_primary-n3             - background color mixed with black
-  back_primary-n4             - background color mixed with black
-  back_primary-n5             - background color mixed with black 
-  back_secondary-5             - background color mixed with white
-  back_secondary-4             - background color mixed with white
-  back_secondary-3             - background color mixed with white
-  back_secondary-2             - background color mixed with white
-  back_secondary-1             - background color mixed with white
-  back_secondary              - background color primary color
-  back_secondary-n1             - background color mixed with black
-  back_secondary-n2             - background color mixed with black
-  back_secondary-n3             - background color mixed with black
-  back_secondary-n4             - background color mixed with black
-  back_secondary-n5             - background color mixed with black 
-  back_highlighted-5             - background color mixed with white
-  back_highlighted-4             - background color mixed with white
-  back_highlighted-3             - background color mixed with white
-  back_highlighted-2             - background color mixed with white
-  back_highlighted-1             - background color mixed with white
-  back_highlighted              - background color primary color
-  back_highlighted-n1             - background color mixed with black
-  back_highlighted-n2             - background color mixed with black
-  back_highlighted-n3             - background color mixed with black
-  back_highlighted-n4             - background color mixed with black
-  back_highlighted-n5             - background color mixed with black 
-  back_info-5             - background color mixed with white
-  back_info-4             - background color mixed with white
-  back_info-3             - background color mixed with white
-  back_info-2             - background color mixed with white
-  back_info-1             - background color mixed with white
-  back_info              - background color primary color
-  back_info-n1             - background color mixed with black
-  back_info-n2             - background color mixed with black
-  back_info-n3             - background color mixed with black
-  back_info-n4             - background color mixed with black
-  back_info-n5             - background color mixed with black 
+  back_success              - background color success color
+  back_info              - background color success color
+  back_hightlight              - background color success color
+
 
   markup:
   <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
  
-  Styleguide 80.1
+  Styleguide 81.1
+ 
+ */
+ /*
+  Background Color Shades
+ 
+  Background colors can be shifted by appending a modifier back_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
+ 
+  back_primary              - background color modified light to dark
+  back_secondary              - background color modified light to dark
+  back_info              - background color modified light to dark
+  back_hightlight              - background color success color
+  back_success              - background color modified light to dark
+  back_warning              - background color modified light to dark
+  back_alert              - background color modified light to dark
+
+  markup:
+  <div class="grid-x">
+    <div class="{$modifiers}-5 cell auto text-center  padding_2">5</div>
+    <div class="{$modifiers}-4 cell auto text-center  padding_2">4</div>
+    <div class="{$modifiers}-3 cell auto text-center  padding_2">3</div>
+    <div class="{$modifiers}-2 cell auto text-center  padding_2">2</div>
+    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2">1</div>
+    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2">n5</div>
+  </div>
+
+ 
+  Styleguide 81.2
  
  */
 

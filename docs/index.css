@@ -3314,11 +3314,11 @@ h3 {
   background-color: #58439d;
   color: #fefefe;
 }
-.button.highlighted {
+.button.hightlight {
   background-color: #c45e99;
   color: #0a0a0a;
 }
-.button.highlighted:hover, .button.highlighted:focus {
+.button.hightlight:hover, .button.hightlight:focus {
   background-color: #aa3e7c;
   color: #0a0a0a;
 }
@@ -3394,11 +3394,11 @@ h3 {
   background-color: #735dba;
   color: #fefefe;
 }
-.button.disabled.highlighted, .button[disabled].highlighted {
+.button.disabled.hightlight, .button[disabled].hightlight {
   opacity: 0.45;
   cursor: not-allowed;
 }
-.button.disabled.highlighted, .button.disabled.highlighted:hover, .button.disabled.highlighted:focus, .button[disabled].highlighted, .button[disabled].highlighted:hover, .button[disabled].highlighted:focus {
+.button.disabled.hightlight, .button.disabled.hightlight:hover, .button.disabled.hightlight:focus, .button[disabled].hightlight, .button[disabled].hightlight:hover, .button[disabled].hightlight:focus {
   background-color: #c45e99;
   color: #0a0a0a;
 }
@@ -3516,15 +3516,15 @@ h3 {
   border: 1px solid #735dba;
   color: #735dba;
 }
-.button.hollow.highlighted {
+.button.hollow.hightlight {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
-.button.hollow.highlighted:hover, .button.hollow.highlighted:focus {
+.button.hollow.hightlight:hover, .button.hollow.hightlight:focus {
   border-color: #6a274e;
   color: #6a274e;
 }
-.button.hollow.highlighted:hover.disabled, .button.hollow.highlighted:hover[disabled], .button.hollow.highlighted:focus.disabled, .button.hollow.highlighted:focus[disabled] {
+.button.hollow.hightlight:hover.disabled, .button.hollow.hightlight:hover[disabled], .button.hollow.hightlight:focus.disabled, .button.hollow.hightlight:focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
@@ -3669,19 +3669,19 @@ h3 {
 .button.clear.info, .button.clear.info.disabled, .button.clear.info[disabled], .button.clear.info:hover, .button.clear.info:hover.disabled, .button.clear.info:hover[disabled], .button.clear.info:focus, .button.clear.info:focus.disabled, .button.clear.info:focus[disabled] {
   border-color: transparent;
 }
-.button.clear.highlighted {
+.button.clear.hightlight {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
-.button.clear.highlighted:hover, .button.clear.highlighted:focus {
+.button.clear.hightlight:hover, .button.clear.hightlight:focus {
   border-color: #6a274e;
   color: #6a274e;
 }
-.button.clear.highlighted:hover.disabled, .button.clear.highlighted:hover[disabled], .button.clear.highlighted:focus.disabled, .button.clear.highlighted:focus[disabled] {
+.button.clear.hightlight:hover.disabled, .button.clear.hightlight:hover[disabled], .button.clear.hightlight:focus.disabled, .button.clear.hightlight:focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
-.button.clear.highlighted, .button.clear.highlighted.disabled, .button.clear.highlighted[disabled], .button.clear.highlighted:hover, .button.clear.highlighted:hover.disabled, .button.clear.highlighted:hover[disabled], .button.clear.highlighted:focus, .button.clear.highlighted:focus.disabled, .button.clear.highlighted:focus[disabled] {
+.button.clear.hightlight, .button.clear.hightlight.disabled, .button.clear.hightlight[disabled], .button.clear.hightlight:hover, .button.clear.hightlight:hover.disabled, .button.clear.hightlight:hover[disabled], .button.clear.hightlight:focus, .button.clear.hightlight:focus.disabled, .button.clear.hightlight:focus[disabled] {
   border-color: transparent;
 }
 .button.dropdown::after {
@@ -3726,7 +3726,7 @@ h3 {
 .button.dropdown.hollow.info::after {
   border-top-color: #735dba;
 }
-.button.dropdown.hollow.highlighted::after {
+.button.dropdown.hollow.hightlight::after {
   border-top-color: #c45e99;
 }
 .button.arrow-only::after {
@@ -3843,11 +3843,11 @@ a.button:hover, a.button:focus {
   background-color: #58439d;
   color: #fefefe;
 }
-.button-group.highlighted .button {
+.button-group.hightlight .button {
   background-color: #c45e99;
   color: #0a0a0a;
 }
-.button-group.highlighted .button:hover, .button-group.highlighted .button:focus {
+.button-group.hightlight .button:hover, .button-group.hightlight .button:focus {
   background-color: #aa3e7c;
   color: #0a0a0a;
 }
@@ -3961,7 +3961,7 @@ a.button:hover, a.button:focus {
   background: #735dba;
   color: #fefefe;
 }
-.label.highlighted {
+.label.hightlight {
   background: #c45e99;
   color: #0a0a0a;
 }
@@ -3996,7 +3996,7 @@ a.button:hover, a.button:focus {
 .progress.info .progress-meter {
   background-color: #735dba;
 }
-.progress.highlighted .progress-meter {
+.progress.hightlight .progress-meter {
   background-color: #c45e99;
 }
 
@@ -4369,7 +4369,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background: #735dba;
   color: #fefefe;
 }
-.badge.highlighted {
+.badge.hightlight {
   background: #c45e99;
   color: #0a0a0a;
 }
@@ -4459,7 +4459,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background-color: #eae7f5;
   color: #0a0a0a;
 }
-.callout.highlighted {
+.callout.hightlight {
   background-color: #f6e7f0;
   color: #0a0a0a;
 }
@@ -6872,11 +6872,11 @@ markup:
   background-color: #58439d;
   color: white;
 }
-.button.highlighted {
+.button.hightlight {
   background-color: #c45e99;
   color: white;
 }
-.button.highlighted:hover, .button.highlighted:focus {
+.button.hightlight:hover, .button.hightlight:focus {
   background-color: #aa3e7c;
   color: white;
 }
@@ -6911,7 +6911,7 @@ markup:
 
 	.back_primary				- textures are slightly transparent so they can be colored with background-color classess
 	.back_secondary				- textures are slightly transparent so they can be colored with background-color classess
-	.back_highlighted				- textures are slightly transparent so they can be colored with background-color classess
+	.back_highligh				- textures are slightly transparent so they can be colored with background-color classess
 	.back_warning				- textures are slightly transparent so they can be colored with background-color classess
 	.back_alert				- textures are slightly transparent so they can be colored with background-color classess
 
@@ -6947,7 +6947,7 @@ markup:
  markup:
  <nav aria-label="Pagination" class="border_solid border_primary border-top-width_3">
   <ul class="pagination">
-    <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
     <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
     <li><a href="#" aria-label="Page 2">2</a></li>
     <li><a href="#" aria-label="Page 3">3</a></li>
@@ -6955,7 +6955,7 @@ markup:
     <li class="fal fa-ellipsis-h" aria-hidden="true"></li>
     <li><a href="#" aria-label="Page 12">12</a></li>
     <li><a href="#" aria-label="Page 13">13</a></li>
-    <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
   </ul>
 </nav>
 
@@ -7002,7 +7002,7 @@ sg-wrapper:
 
 
 	markup: 
-	  <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 border_solid border-right-width_1 border_primary font-size_n1">One</a></li>
+	  <li class="quicklinks__item"><a href="#" class="quicklinks__link ">One</a></li>
 
 	sg-wrapper:
 	  <ul class="menu quicklinks">
@@ -7010,7 +7010,7 @@ sg-wrapper:
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
-	     <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 font-size_n1">End</a></li>
+	     <li class="quicklinks__item"><a href="#" class="quicklinks__link">End</a></li>
 	  </ul>
 
 	Styleguide 20.11
@@ -7018,6 +7018,22 @@ sg-wrapper:
 .quicklinks a:hover {
   background-color: #e4f6fb;
   color: #0a0a0a;
+}
+
+.quicklinks__item {
+  border-right: 1px solid #1da3c9;
+  padding: 0 2px;
+}
+.quicklinks__item:last-child {
+  border-right-width: 0;
+}
+
+.quicklinks__item .quicklinks__link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.quicklinks__item .quicklinks__link:last-child {
+  border-right: 0;
 }
 
 /*
@@ -7028,6 +7044,646 @@ Utility CSS
  Styleguide 80.0
 */
 /* No styleguide reference. */
+/*
+  Utility CSS: Backgrounds 
+ 
+  Background of containers can be easily maniputlated with textures and colors.  
+  
+  Styleguide 81.0
+*/
+/*
+  Background Colors
+ 
+  Background colors can be easily change with back_{{color-name}}  
+ 
+  back_primary            	- background color warning color
+  back_secondary            	- background color warning color
+  back_alert            	- background color alert color
+  back_warning            	- background color warning color
+  back_success              - background color success color
+  back_info              - background color success color
+  back_hightlight              - background color success color
+
+
+  markup:
+  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
+ 
+  Styleguide 81.1
+ 
+ */
+/*
+  Background Color Shades
+ 
+  Background colors can be shifted by appending a modifier back_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
+ 
+  back_primary              - background color modified light to dark
+  back_secondary              - background color modified light to dark
+  back_info              - background color modified light to dark
+  back_hightlight              - background color success color
+  back_success              - background color modified light to dark
+  back_warning              - background color modified light to dark
+  back_alert              - background color modified light to dark
+
+  markup:
+  <div class="grid-x">
+    <div class="{$modifiers}-5 cell auto text-center  padding_2">5</div>
+    <div class="{$modifiers}-4 cell auto text-center  padding_2">4</div>
+    <div class="{$modifiers}-3 cell auto text-center  padding_2">3</div>
+    <div class="{$modifiers}-2 cell auto text-center  padding_2">2</div>
+    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2">1</div>
+    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2">n5</div>
+  </div>
+
+ 
+  Styleguide 81.2
+ 
+ */
+.back_primary, .pagination-container {
+  background-color: #198dae !important;
+}
+
+.back_primary-0 {
+  background-color: #198dae !important;
+}
+
+.back_primary-1 {
+  background-color: #3098b6 !important;
+}
+
+.back_primary-2 {
+  background-color: #5eafc6 !important;
+}
+
+.back_primary-3 {
+  background-color: #8cc6d7 !important;
+}
+
+.back_primary-4 {
+  background-color: #badde7 !important;
+}
+
+.back_primary-5 {
+  background-color: #e8f4f7 !important;
+}
+
+.back_primary-n1 {
+  background-color: #177f9d !important;
+}
+
+.back_primary-n2 {
+  background-color: #12637a !important;
+}
+
+.back_primary-n3 {
+  background-color: #0d4757 !important;
+}
+
+.back_primary-n4 {
+  background-color: #082a34 !important;
+}
+
+.back_primary-n5 {
+  background-color: #030e11 !important;
+}
+
+.back_secondary {
+  background-color: #63646b !important;
+}
+
+.back_secondary-0 {
+  background-color: #63646b !important;
+}
+
+.back_secondary-1 {
+  background-color: #73747a !important;
+}
+
+.back_secondary-2 {
+  background-color: #929397 !important;
+}
+
+.back_secondary-3, .pagination-previous, .pagination-next {
+  background-color: #b1b2b5 !important;
+}
+
+.back_secondary-4 {
+  background-color: #d0d1d3 !important;
+}
+
+.back_secondary-5 {
+  background-color: #eff0f0 !important;
+}
+
+.back_secondary-n1 {
+  background-color: #595a60 !important;
+}
+
+.back_secondary-n2 {
+  background-color: #45464b !important;
+}
+
+.back_secondary-n3 {
+  background-color: #323236 !important;
+}
+
+.back_secondary-n4 {
+  background-color: #1e1e20 !important;
+}
+
+.back_secondary-n5 {
+  background-color: #0a0a0b !important;
+}
+
+.back_success {
+  background-color: #09911f !important;
+}
+
+.back_success-0 {
+  background-color: #09911f !important;
+}
+
+.back_success-1 {
+  background-color: #229c35 !important;
+}
+
+.back_success-2 {
+  background-color: #53b262 !important;
+}
+
+.back_success-3 {
+  background-color: #84c88f !important;
+}
+
+.back_success-4 {
+  background-color: #b5debc !important;
+}
+
+.back_success-5 {
+  background-color: #e6f4e9 !important;
+}
+
+.back_success-n1 {
+  background-color: #08831c !important;
+}
+
+.back_success-n2 {
+  background-color: #066616 !important;
+}
+
+.back_success-n3 {
+  background-color: #054910 !important;
+}
+
+.back_success-n4 {
+  background-color: #032c09 !important;
+}
+
+.back_success-n5 {
+  background-color: #010f03 !important;
+}
+
+.back_warning {
+  background-color: #e18725 !important;
+}
+
+.back_warning-0 {
+  background-color: #e18725 !important;
+}
+
+.back_warning-1 {
+  background-color: #e4933b !important;
+}
+
+.back_warning-2 {
+  background-color: #eaab66 !important;
+}
+
+.back_warning-3 {
+  background-color: #f0c392 !important;
+}
+
+.back_warning-4 {
+  background-color: #f6dbbe !important;
+}
+
+.back_warning-5 {
+  background-color: #fcf3e9 !important;
+}
+
+.back_warning-n1 {
+  background-color: #cb7a21 !important;
+}
+
+.back_warning-n2 {
+  background-color: #9e5f1a !important;
+}
+
+.back_warning-n3 {
+  background-color: #714413 !important;
+}
+
+.back_warning-n4 {
+  background-color: #44290b !important;
+}
+
+.back_warning-n5 {
+  background-color: #170e04 !important;
+}
+
+.back_alert {
+  background-color: #cb241c !important;
+}
+
+.back_alert-0 {
+  background-color: #cb241c !important;
+}
+
+.back_alert-1 {
+  background-color: #d03a33 !important;
+}
+
+.back_alert-2 {
+  background-color: #db6660 !important;
+}
+
+.back_alert-3 {
+  background-color: #e5928e !important;
+}
+
+.back_alert-4 {
+  background-color: #efbdbb !important;
+}
+
+.back_alert-5 {
+  background-color: #fae9e8 !important;
+}
+
+.back_alert-n1 {
+  background-color: #b72019 !important;
+}
+
+.back_alert-n2 {
+  background-color: #8e1914 !important;
+}
+
+.back_alert-n3 {
+  background-color: #66120e !important;
+}
+
+.back_alert-n4 {
+  background-color: #3d0b08 !important;
+}
+
+.back_alert-n5 {
+  background-color: #140403 !important;
+}
+
+.back_navigation {
+  background-color: #4f74bf !important;
+}
+
+.back_navigation-0 {
+  background-color: #4f74bf !important;
+}
+
+.back_navigation-1 {
+  background-color: #6182c5 !important;
+}
+
+.back_navigation-2 {
+  background-color: #849ed2 !important;
+}
+
+.back_navigation-3 {
+  background-color: #a7badf !important;
+}
+
+.back_navigation-4 {
+  background-color: #cad5ec !important;
+}
+
+.back_navigation-5 {
+  background-color: #edf1f9 !important;
+}
+
+.back_navigation-n1 {
+  background-color: #4768ac !important;
+}
+
+.back_navigation-n2 {
+  background-color: #375186 !important;
+}
+
+.back_navigation-n3 {
+  background-color: #283a60 !important;
+}
+
+.back_navigation-n4 {
+  background-color: #182339 !important;
+}
+
+.back_navigation-n5 {
+  background-color: #080c13 !important;
+}
+
+.back_selected {
+  background-color: #509f6c !important;
+}
+
+.back_selected-0 {
+  background-color: #509f6c !important;
+}
+
+.back_selected-1 {
+  background-color: #62a97b !important;
+}
+
+.back_selected-2 {
+  background-color: #85bc98 !important;
+}
+
+.back_selected-3 {
+  background-color: #a8cfb6 !important;
+}
+
+.back_selected-4 {
+  background-color: #cbe2d3 !important;
+}
+
+.back_selected-5 {
+  background-color: #eef5f0 !important;
+}
+
+.back_selected-n1 {
+  background-color: #488f61 !important;
+}
+
+.back_selected-n2 {
+  background-color: #386f4c !important;
+}
+
+.back_selected-n3 {
+  background-color: #285036 !important;
+}
+
+.back_selected-n4 {
+  background-color: #183020 !important;
+}
+
+.back_selected-n5 {
+  background-color: #08100b !important;
+}
+
+.back_info {
+  background-color: #735dba !important;
+}
+
+.back_info-0 {
+  background-color: #735dba !important;
+}
+
+.back_info-1 {
+  background-color: #816dc1 !important;
+}
+
+.back_info-2 {
+  background-color: #9d8ecf !important;
+}
+
+.back_info-3 {
+  background-color: #b9aedd !important;
+}
+
+.back_info-4 {
+  background-color: #d5ceea !important;
+}
+
+.back_info-5 {
+  background-color: #f1eff8 !important;
+}
+
+.back_info-n1 {
+  background-color: #6854a7 !important;
+}
+
+.back_info-n2 {
+  background-color: #514182 !important;
+}
+
+.back_info-n3 {
+  background-color: #3a2f5d !important;
+}
+
+.back_info-n4 {
+  background-color: #231c38 !important;
+}
+
+.back_info-n5 {
+  background-color: #0c0913 !important;
+}
+
+.back_hightlight {
+  background-color: #c45e99 !important;
+}
+
+.back_hightlight-0 {
+  background-color: #c45e99 !important;
+}
+
+.back_hightlight-1 {
+  background-color: #ca6ea3 !important;
+}
+
+.back_hightlight-2 {
+  background-color: #d68eb8 !important;
+}
+
+.back_hightlight-3 {
+  background-color: #e2afcc !important;
+}
+
+.back_hightlight-4 {
+  background-color: #edcfe0 !important;
+}
+
+.back_hightlight-5 {
+  background-color: #f9eff5 !important;
+}
+
+.back_hightlight-n1 {
+  background-color: #b0558a !important;
+}
+
+.back_hightlight-n2 {
+  background-color: #89426b !important;
+}
+
+.back_hightlight-n3 {
+  background-color: #622f4d !important;
+}
+
+.back_hightlight-n4 {
+  background-color: #3b1c2e !important;
+}
+
+.back_hightlight-n5 {
+  background-color: #14090f !important;
+}
+
+.back_white, .pagination-container .current {
+  background-color: #fefefe;
+}
+
+.shadow_0 {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.shadow {
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
+}
+
+.shadow_1 {
+  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_2 {
+  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_3 {
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+}
+
+.shadow_4 {
+  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_5 {
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+.shadow_n1 {
+  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_n2 {
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_n3 {
+  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+}
+
+.shadow_n4 {
+  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_n5 {
+  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+/*
+	Textures
+
+	All textures in the Strathmore design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities. 
+
+	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
+	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
+	.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
+	.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
+	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
+	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
+
+	markup:
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+
+	Styleguide 81.3
+
+ */
+.texture_light {
+  background-image: url("/assets/img/whisper.png");
+}
+
+.texture_medium {
+  background-image: url("/assets/img/billie-holiday-speck.png");
+}
+
+.texture_dark {
+  background-image: url("/assets/img/cross_stripes.png");
+}
+
+.texture_dust {
+  background-image: url("/assets/img/dust.png");
+}
+
+.texture_disabled, .disabled, .disabled:hover {
+  background-image: url("/assets/img/cross_disabled.png");
+}
+
+.texture_cross {
+  background-image: url("/assets/img/cross_color.png");
+}
+
+/*
+	Textures Plus Background Colors
+
+	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
+
+	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_alert              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_alert             	- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+
+	Styleguide 81.4
+
+ */
+/*
+	Textures Plus Background Shades
+
+	All textures are slightly transparent.  You can further shade the background colors to achieve even more flexablity.  
+
+	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_info              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_info             	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_warning              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_warning             	- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="grid-x">
+		<div class="{$modifiers}-n3 padding_3 cell auto text-center color_white">n3</div>
+		<div class="{$modifiers}-n1 padding_3 cell auto text-center color_white">n1</div>
+		<div class="{$modifiers}-1 padding_3 cell auto text-center color_white">1</div>
+		<div class="{$modifiers}-3 padding_3 cell auto text-center color_white">3</div>
+	</div>
+
+	Styleguide 81.5
+
+ */
 /*
 	Margin CSS
 
@@ -7062,223 +7718,223 @@ Utility CSS
 
  */
 .margin_0 {
-  margin: 0rem !important;
+  margin: 0rem;
 }
 
 .margin_1 {
-  margin: 1px !important;
+  margin: 1px;
 }
 
 .margin_2 {
-  margin: 0.25rem !important;
+  margin: 0.25rem;
 }
 
 .margin_3 {
-  margin: 0.5rem !important;
+  margin: 0.5rem;
 }
 
 .margin_4 {
-  margin: 1rem !important;
+  margin: 1rem;
 }
 
 .margin_5 {
-  margin: 2rem !important;
+  margin: 2rem;
 }
 
 .margin-top_0 {
-  margin-top: 0rem !important;
+  margin-top: 0rem;
 }
 
 .margin-top_1 {
-  margin-top: 1px !important;
+  margin-top: 1px;
 }
 
 .margin-top_2 {
-  margin-top: 0.25rem !important;
+  margin-top: 0.25rem;
 }
 
 .margin-top_3 {
-  margin-top: 0.5rem !important;
+  margin-top: 0.5rem;
 }
 
 .margin-top_4 {
-  margin-top: 1rem !important;
+  margin-top: 1rem;
 }
 
 .margin-top_5 {
-  margin-top: 2rem !important;
+  margin-top: 2rem;
 }
 
 .margin-bottom_0 {
-  margin-bottom: 0rem !important;
+  margin-bottom: 0rem;
 }
 
 .margin-bottom_1 {
-  margin-bottom: 1px !important;
+  margin-bottom: 1px;
 }
 
 .margin-bottom_2 {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.25rem;
 }
 
 .margin-bottom_3, .pagination-container .pagination {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
 }
 
 .margin-bottom_4 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1rem;
 }
 
 .margin-bottom_5 {
-  margin-bottom: 2rem !important;
+  margin-bottom: 2rem;
 }
 
 .margin-right_0 {
-  margin-right: 0rem !important;
+  margin-right: 0rem;
 }
 
 .margin-right_1 {
-  margin-right: 1px !important;
+  margin-right: 1px;
 }
 
 .margin-right_2 {
-  margin-right: 0.25rem !important;
+  margin-right: 0.25rem;
 }
 
 .margin-right_3 {
-  margin-right: 0.5rem !important;
+  margin-right: 0.5rem;
 }
 
 .margin-right_4 {
-  margin-right: 1rem !important;
+  margin-right: 1rem;
 }
 
 .margin-right_5 {
-  margin-right: 2rem !important;
+  margin-right: 2rem;
 }
 
 .margin-left_0 {
-  margin-left: 0rem !important;
+  margin-left: 0rem;
 }
 
 .margin-left_1 {
-  margin-left: 1px !important;
+  margin-left: 1px;
 }
 
 .margin-left_2 {
-  margin-left: 0.25rem !important;
+  margin-left: 0.25rem;
 }
 
 .margin-left_3 {
-  margin-left: 0.5rem !important;
+  margin-left: 0.5rem;
 }
 
 .margin-left_4 {
-  margin-left: 1rem !important;
+  margin-left: 1rem;
 }
 
 .margin-left_5 {
-  margin-left: 2rem !important;
+  margin-left: 2rem;
 }
 
 .margin-top_n1 {
-  margin-top: -1px !important;
+  margin-top: -1px;
 }
 
 .margin-top_n2 {
-  margin-top: -0.25rem !important;
+  margin-top: -0.25rem;
 }
 
 .margin-top_n3 {
-  margin-top: -0.5rem !important;
+  margin-top: -0.5rem;
 }
 
 .margin-top_n4 {
-  margin-top: -1rem !important;
+  margin-top: -1rem;
 }
 
 .margin-top_n5 {
-  margin-top: -2rem !important;
+  margin-top: -2rem;
 }
 
 .margin-bottom_n1 {
-  margin-bottom: -1px !important;
+  margin-bottom: -1px;
 }
 
 .margin-bottom_n2 {
-  margin-bottom: -0.25rem !important;
+  margin-bottom: -0.25rem;
 }
 
 .margin-bottom_n3 {
-  margin-bottom: -0.5rem !important;
+  margin-bottom: -0.5rem;
 }
 
 .margin-bottom_n4 {
-  margin-bottom: -1rem !important;
+  margin-bottom: -1rem;
 }
 
 .margin-bottom_n5 {
-  margin-bottom: -2rem !important;
+  margin-bottom: -2rem;
 }
 
 .margin-right_n1 {
-  margin-right: -1px !important;
+  margin-right: -1px;
 }
 
 .margin-right_n2 {
-  margin-right: -0.25rem !important;
+  margin-right: -0.25rem;
 }
 
 .margin-right_n3 {
-  margin-right: -0.5rem !important;
+  margin-right: -0.5rem;
 }
 
 .margin-right_n4 {
-  margin-right: -1rem !important;
+  margin-right: -1rem;
 }
 
 .margin-right_n5 {
-  margin-right: -2rem !important;
+  margin-right: -2rem;
 }
 
 .margin-left_n1 {
-  margin-left: -1px !important;
+  margin-left: -1px;
 }
 
 .margin-left_n2 {
-  margin-left: -0.25rem !important;
+  margin-left: -0.25rem;
 }
 
 .margin-left_n3 {
-  margin-left: -0.5rem !important;
+  margin-left: -0.5rem;
 }
 
 .margin-left_n4 {
-  margin-left: -1rem !important;
+  margin-left: -1rem;
 }
 
 .margin-left_n5 {
-  margin-left: -2rem !important;
+  margin-left: -2rem;
 }
 
 .margin_n1 {
-  margin: -1px !important;
+  margin: -1px;
 }
 
 .margin_n2 {
-  margin: -0.25rem !important;
+  margin: -0.25rem;
 }
 
 .margin_n3 {
-  margin: -0.5rem !important;
+  margin: -0.5rem;
 }
 
 .margin_n4 {
-  margin: -1rem !important;
+  margin: -1rem;
 }
 
 .margin_n5 {
-  margin: -2rem !important;
+  margin: -2rem;
 }
 
 /*
@@ -7304,127 +7960,135 @@ Utility CSS
 
  */
 .padding_0 {
-  padding: 0rem  !important;
+  padding: 0rem;
 }
 
 .padding_1 {
-  padding: 1px  !important;
+  padding: 1px;
 }
 
 .padding_2 {
-  padding: 0.25rem  !important;
+  padding: 0.25rem;
 }
 
 .padding_3 {
-  padding: 0.5rem  !important;
+  padding: 0.5rem;
 }
 
 .padding_4 {
-  padding: 1rem  !important;
+  padding: 1rem;
 }
 
 .padding_5 {
-  padding: 2rem  !important;
+  padding: 2rem;
 }
 
 .padding-top_0, .pagination-container {
-  padding-top: 0rem  !important;
+  padding-top: 0rem;
 }
 
 .padding-top_1 {
-  padding-top: 1px  !important;
+  padding-top: 1px;
 }
 
 .padding-top_2 {
-  padding-top: 0.25rem  !important;
+  padding-top: 0.25rem;
 }
 
 .padding-top_3 {
-  padding-top: 0.5rem  !important;
+  padding-top: 0.5rem;
 }
 
 .padding-top_4 {
-  padding-top: 1rem  !important;
+  padding-top: 1rem;
 }
 
 .padding-top_5 {
-  padding-top: 2rem  !important;
+  padding-top: 2rem;
 }
 
 .padding-bottom_0, .pagination-container {
-  padding-bottom: 0rem  !important;
+  padding-bottom: 0rem;
 }
 
 .padding-bottom_1 {
-  padding-bottom: 1px  !important;
+  padding-bottom: 1px;
 }
 
 .padding-bottom_2 {
-  padding-bottom: 0.25rem  !important;
+  padding-bottom: 0.25rem;
 }
 
 .padding-bottom_3 {
-  padding-bottom: 0.5rem  !important;
+  padding-bottom: 0.5rem;
 }
 
 .padding-bottom_4 {
-  padding-bottom: 1rem  !important;
+  padding-bottom: 1rem;
 }
 
 .padding-bottom_5 {
-  padding-bottom: 2rem  !important;
+  padding-bottom: 2rem;
 }
 
 .padding-right_0 {
-  padding-right: 0rem  !important;
+  padding-right: 0rem;
 }
 
 .padding-right_1 {
-  padding-right: 1px  !important;
+  padding-right: 1px;
 }
 
 .padding-right_2 {
-  padding-right: 0.25rem  !important;
+  padding-right: 0.25rem;
 }
 
 .padding-right_3, .pagination-container {
-  padding-right: 0.5rem  !important;
+  padding-right: 0.5rem;
 }
 
 .padding-right_4 {
-  padding-right: 1rem  !important;
+  padding-right: 1rem;
 }
 
 .padding-right_5 {
-  padding-right: 2rem  !important;
+  padding-right: 2rem;
 }
 
 .padding-left_0 {
-  padding-left: 0rem  !important;
+  padding-left: 0rem;
 }
 
 .padding-left_1 {
-  padding-left: 1px  !important;
+  padding-left: 1px;
 }
 
 .padding-left_2 {
-  padding-left: 0.25rem  !important;
+  padding-left: 0.25rem;
 }
 
 .padding-left_3, .pagination-container {
-  padding-left: 0.5rem  !important;
+  padding-left: 0.5rem;
 }
 
 .padding-left_4 {
-  padding-left: 1rem  !important;
+  padding-left: 1rem;
 }
 
 .padding-left_5 {
-  padding-left: 2rem  !important;
+  padding-left: 2rem;
 }
 
 /*
-	Border Styles
+ Border Utility CSS: Borders
+
+  Borders a complex utlit that demands a combo of many classes to acheive the effect. 
+
+  Styleguide 83.0
+ 
+ */
+/*
+	Border Type
 
 	Depends on base border module in _borders.css
 
@@ -7434,9 +8098,9 @@ Utility CSS
 	border_solid          - solid
 
 	markup:
-	<div class="{$modifiers} padding_3">{$modifiers} border</div>
+	<div class="{$modifiers} border_black border-width_1 padding_3">{$modifiers} border</div>
 
-	Styleguide 80.10
+	Styleguide 83.1
 
  */
 .border_dotted, .border_dashed, .border_solid, .border_none {
@@ -7511,69 +8175,87 @@ Utility CSS
   }
 }
 /*
+  Border Color
+  Border black has attached alpha 
+ 
+  border_primary            - border color
+  border_secondary             - border color
+  border_alert             - border color
+  border_warning             - border color
+  border_info            - border color
+  border_highlighted             - border color
+
+ 
+  markup:
+  <div class="{$modifiers} padding_3 border_solid border-width_3">{$modifiers} border</div>
+ 
+  Styleguide 83.2
+ 
+ */
+/*
   Border Color Black with Alpha
  
   Border black has attached alpha 
  
-  border-color_black             - border black with alpha of 100%
-  border-color_black-1             - border black with alpha of 90%
-  border-color_black-2             - border black with alpha of 80%
-  border-color_black-3             - border black with alpha of 70%
-  border-color_black-4             - border black with alpha of 60%
-  border-color_black-5             - border black with alpha of 50%
-  border-color_black-6             - border black with alpha of 40%
-  border-color_black-7             - border black with alpha of 30%
-  border-color_black-8             - border black with alpha of 20%
-  border-color_black-9             - border black with alpha of 10%
-  border-color_black-0             - border black with alpha of 2%
+  border_black             - border black with alpha of 100%
+  border_black-1             - border black with alpha of 90%
+  border_black-2             - border black with alpha of 80%
+  border_black-3             - border black with alpha of 70%
+  border_black-4             - border black with alpha of 60%
+  border_black-5             - border black with alpha of 50%
+  border_black-6             - border black with alpha of 40%
+  border_black-7             - border black with alpha of 30%
+  border_black-8             - border black with alpha of 20%
+  border_black-9             - border black with alpha of 10%
+  border_black-0             - border black with alpha of 2%
  
   markup:
-  <div class="{$modifiers} padding_3 border_solid back_primary-1 color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border-width_5 back_primary-1 color_white">{$modifiers} border</div>
  
-  Styleguide 80.11
+  Styleguide 83.2.1
  
  */
-.border-color_black {
+.border_black {
   border-color: black;
 }
 
-.border-color_black-1 {
+.border_black-1 {
   border-color: rgba(0, 0, 0, 0.9);
 }
 
-.border-color_black-2 {
+.border_black-2 {
   border-color: rgba(0, 0, 0, 0.8);
 }
 
-.border-color_black-3 {
+.border_black-3 {
   border-color: rgba(0, 0, 0, 0.7);
 }
 
-.border-color_black-4 {
+.border_black-4 {
   border-color: rgba(0, 0, 0, 0.6);
 }
 
-.border-color_black-5 {
+.border_black-5 {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-.border-color_black-6 {
+.border_black-6 {
   border-color: rgba(0, 0, 0, 0.4);
 }
 
-.border-color_black-7 {
+.border_black-7 {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.border-color_black-8 {
+.border_black-8 {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.border-color_black-9 {
+.border_black-9 {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-.border-color_black-0 {
+.border_black-0 {
   border-color: rgba(0, 0, 0, 0.02);
 }
 
@@ -7605,9 +8287,9 @@ Utility CSS
 
 
 	markup:
-	<div class="{$modifiers} padding_3 border-color_black border_solid">{$modifiers} border</div>
+	<div class="{$modifiers} padding_3 border_black border_solid border-width_2">{$modifiers} border</div>
 
-	Styleguide 80.12
+	Styleguide 83.3
 
  */
 .border-radius_square {
@@ -7712,7 +8394,7 @@ Utility CSS
   Border black has attached alpha   
 
   border_primary            	- border color primary
-  border_error            	- border color error
+  border_alert            	- border color alert
   border_warning            	- border color warning
   border_success            	- border color success
   border_primary-1             - border color mixed with white
@@ -7727,9 +8409,9 @@ Utility CSS
   border_primary-n5             - border color mixed with black 
 
   markup:
-  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border-width_1 color_white">{$modifiers} border</div>
  
-  Styleguide 80.13
+  Styleguide 83.4
  
  */
 .border_primary {
@@ -8116,51 +8798,51 @@ Utility CSS
   border-color: #0c0913 !important;
 }
 
-.border_highlighted {
+.border_hightlight {
   border-color: #c45e99 !important;
 }
 
-.border_highlighted-0 {
+.border_hightlight-0 {
   border-color: #c45e99 !important;
 }
 
-.border_highlighted-1 {
+.border_hightlight-1 {
   border-color: #ca6ea3 !important;
 }
 
-.border_highlighted-2 {
+.border_hightlight-2 {
   border-color: #d68eb8 !important;
 }
 
-.border_highlighted-3 {
+.border_hightlight-3 {
   border-color: #e2afcc !important;
 }
 
-.border_highlighted-4 {
+.border_hightlight-4 {
   border-color: #edcfe0 !important;
 }
 
-.border_highlighted-5 {
+.border_hightlight-5 {
   border-color: #f9eff5 !important;
 }
 
-.border_highlighted-n1 {
+.border_hightlight-n1 {
   border-color: #b0558a !important;
 }
 
-.border_highlighted-n2 {
+.border_hightlight-n2 {
   border-color: #89426b !important;
 }
 
-.border_highlighted-n3 {
+.border_hightlight-n3 {
   border-color: #622f4d !important;
 }
 
-.border_highlighted-n4 {
+.border_hightlight-n4 {
   border-color: #3b1c2e !important;
 }
 
-.border_highlighted-n5 {
+.border_hightlight-n5 {
   border-color: #14090f !important;
 }
 
@@ -8175,18 +8857,18 @@ Utility CSS
   border-width_3            	- all borders with .25rem
   border-width_4            	- all borders with .5rem
   border-width_5            	- all borders with rem
-  border-left-width_1.border-width_0            	- all border with no border
-  border-left-width_1.border-width_1            	- all borders with 1px
-  border-left-width_1.border-width_2            	- all borders with .125rem
-  border-left-width_1.border-width_3            	- all borders with .25rem
-  border-left-width_1.border-width_4            	- all borders with .5rem
-  border-left-width_1.border-width_5            	- all borders with rem
+  border-left-width_0.border-width_1            	- left border with no border
+  border-left-width_1.border-width_1            	- left borders with 1px
+  border-left-width_2.border-width_1            	- left borders with .125rem
+  border-left-width_3.border-width_1            	- left borders with .25rem
+  border-left-width_4.border-width_1            	- left borders with .5rem
+  border-left-width_5.border-width_1            	- left borders with rem
 
 
   markup:
-  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border_black color_black">{$modifiers} border</div>
  
-  Styleguide 80.14
+  Styleguide 83.5
  
  */
 .border-width_0 {
@@ -8324,7 +9006,7 @@ Utility CSS
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 81.0
+  Styleguide 82.0
  */
 .line-height_0 {
   line-height: 0;
@@ -8734,51 +9416,51 @@ Utility CSS
   color: #0c0913 !important;
 }
 
-.color_highlighted {
+.color_hightlight {
   color: #c45e99 !important;
 }
 
-.color_highlighted-0 {
+.color_hightlight-0 {
   color: #c45e99 !important;
 }
 
-.color_highlighted-1 {
+.color_hightlight-1 {
   color: #ca6ea3 !important;
 }
 
-.color_highlighted-2 {
+.color_hightlight-2 {
   color: #d68eb8 !important;
 }
 
-.color_highlighted-3 {
+.color_hightlight-3 {
   color: #e2afcc !important;
 }
 
-.color_highlighted-4 {
+.color_hightlight-4 {
   color: #edcfe0 !important;
 }
 
-.color_highlighted-5 {
+.color_hightlight-5 {
   color: #f9eff5 !important;
 }
 
-.color_highlighted-n1 {
+.color_hightlight-n1 {
   color: #b0558a !important;
 }
 
-.color_highlighted-n2 {
+.color_hightlight-n2 {
   color: #89426b !important;
 }
 
-.color_highlighted-n3 {
+.color_hightlight-n3 {
   color: #622f4d !important;
 }
 
-.color_highlighted-n4 {
+.color_hightlight-n4 {
   color: #3b1c2e !important;
 }
 
-.color_highlighted-n5 {
+.color_hightlight-n5 {
   color: #14090f !important;
 }
 
@@ -8819,7 +9501,7 @@ Utility CSS
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 81.1
+  Styleguide 82.1
  */
 .font-weight_light, .font_light {
   font-weight: 100 !important;
@@ -8869,7 +9551,7 @@ Utility CSS
   font-size: 6.1917364224rem;
 }
 
-.font-size_n1, .font_n1 {
+.font-size_n1, .font_n1, .quicklinks__item .quicklinks__link {
   font-size: 0.8333333333rem;
 }
 
@@ -9674,615 +10356,6 @@ Utility CSS
   }
 }
 /*
-  Background Colors
- 
-  Background colors can be easily change with back_{{color-name}}-{{mix value}}  
- 
-  back_primary            	- background color warning color
-  back_secondary            	- background color warning color
-  back_alert            	- background color alert color
-  back_warning            	- background color warning color
-  back_success            	- background color success color
-  back_primary-5             - background color mixed with white
-  back_primary-4             - background color mixed with white
-  back_primary-3             - background color mixed with white
-  back_primary-2             - background color mixed with white
-  back_primary-1             - background color mixed with white
-  back_primary            	- background color primary color
-  back_primary-n1             - background color mixed with black
-  back_primary-n2             - background color mixed with black
-  back_primary-n3             - background color mixed with black
-  back_primary-n4             - background color mixed with black
-  back_primary-n5             - background color mixed with black 
-  back_secondary-5             - background color mixed with white
-  back_secondary-4             - background color mixed with white
-  back_secondary-3             - background color mixed with white
-  back_secondary-2             - background color mixed with white
-  back_secondary-1             - background color mixed with white
-  back_secondary              - background color primary color
-  back_secondary-n1             - background color mixed with black
-  back_secondary-n2             - background color mixed with black
-  back_secondary-n3             - background color mixed with black
-  back_secondary-n4             - background color mixed with black
-  back_secondary-n5             - background color mixed with black 
-  back_highlighted-5             - background color mixed with white
-  back_highlighted-4             - background color mixed with white
-  back_highlighted-3             - background color mixed with white
-  back_highlighted-2             - background color mixed with white
-  back_highlighted-1             - background color mixed with white
-  back_highlighted              - background color primary color
-  back_highlighted-n1             - background color mixed with black
-  back_highlighted-n2             - background color mixed with black
-  back_highlighted-n3             - background color mixed with black
-  back_highlighted-n4             - background color mixed with black
-  back_highlighted-n5             - background color mixed with black 
-  back_info-5             - background color mixed with white
-  back_info-4             - background color mixed with white
-  back_info-3             - background color mixed with white
-  back_info-2             - background color mixed with white
-  back_info-1             - background color mixed with white
-  back_info              - background color primary color
-  back_info-n1             - background color mixed with black
-  back_info-n2             - background color mixed with black
-  back_info-n3             - background color mixed with black
-  back_info-n4             - background color mixed with black
-  back_info-n5             - background color mixed with black 
-
-  markup:
-  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
- 
-  Styleguide 80.1
- 
- */
-.back_primary, .pagination-container {
-  background-color: #198dae !important;
-}
-
-.back_primary-0 {
-  background-color: #198dae !important;
-}
-
-.back_primary-1 {
-  background-color: #3098b6 !important;
-}
-
-.back_primary-2 {
-  background-color: #5eafc6 !important;
-}
-
-.back_primary-3 {
-  background-color: #8cc6d7 !important;
-}
-
-.back_primary-4 {
-  background-color: #badde7 !important;
-}
-
-.back_primary-5 {
-  background-color: #e8f4f7 !important;
-}
-
-.back_primary-n1 {
-  background-color: #177f9d !important;
-}
-
-.back_primary-n2 {
-  background-color: #12637a !important;
-}
-
-.back_primary-n3 {
-  background-color: #0d4757 !important;
-}
-
-.back_primary-n4 {
-  background-color: #082a34 !important;
-}
-
-.back_primary-n5 {
-  background-color: #030e11 !important;
-}
-
-.back_secondary {
-  background-color: #63646b !important;
-}
-
-.back_secondary-0 {
-  background-color: #63646b !important;
-}
-
-.back_secondary-1 {
-  background-color: #73747a !important;
-}
-
-.back_secondary-2 {
-  background-color: #929397 !important;
-}
-
-.back_secondary-3, .pagination-previous, .pagination-next {
-  background-color: #b1b2b5 !important;
-}
-
-.back_secondary-4 {
-  background-color: #d0d1d3 !important;
-}
-
-.back_secondary-5 {
-  background-color: #eff0f0 !important;
-}
-
-.back_secondary-n1 {
-  background-color: #595a60 !important;
-}
-
-.back_secondary-n2 {
-  background-color: #45464b !important;
-}
-
-.back_secondary-n3 {
-  background-color: #323236 !important;
-}
-
-.back_secondary-n4 {
-  background-color: #1e1e20 !important;
-}
-
-.back_secondary-n5 {
-  background-color: #0a0a0b !important;
-}
-
-.back_success {
-  background-color: #09911f !important;
-}
-
-.back_success-0 {
-  background-color: #09911f !important;
-}
-
-.back_success-1 {
-  background-color: #229c35 !important;
-}
-
-.back_success-2 {
-  background-color: #53b262 !important;
-}
-
-.back_success-3 {
-  background-color: #84c88f !important;
-}
-
-.back_success-4 {
-  background-color: #b5debc !important;
-}
-
-.back_success-5 {
-  background-color: #e6f4e9 !important;
-}
-
-.back_success-n1 {
-  background-color: #08831c !important;
-}
-
-.back_success-n2 {
-  background-color: #066616 !important;
-}
-
-.back_success-n3 {
-  background-color: #054910 !important;
-}
-
-.back_success-n4 {
-  background-color: #032c09 !important;
-}
-
-.back_success-n5 {
-  background-color: #010f03 !important;
-}
-
-.back_warning {
-  background-color: #e18725 !important;
-}
-
-.back_warning-0 {
-  background-color: #e18725 !important;
-}
-
-.back_warning-1 {
-  background-color: #e4933b !important;
-}
-
-.back_warning-2 {
-  background-color: #eaab66 !important;
-}
-
-.back_warning-3 {
-  background-color: #f0c392 !important;
-}
-
-.back_warning-4 {
-  background-color: #f6dbbe !important;
-}
-
-.back_warning-5 {
-  background-color: #fcf3e9 !important;
-}
-
-.back_warning-n1 {
-  background-color: #cb7a21 !important;
-}
-
-.back_warning-n2 {
-  background-color: #9e5f1a !important;
-}
-
-.back_warning-n3 {
-  background-color: #714413 !important;
-}
-
-.back_warning-n4 {
-  background-color: #44290b !important;
-}
-
-.back_warning-n5 {
-  background-color: #170e04 !important;
-}
-
-.back_alert {
-  background-color: #cb241c !important;
-}
-
-.back_alert-0 {
-  background-color: #cb241c !important;
-}
-
-.back_alert-1 {
-  background-color: #d03a33 !important;
-}
-
-.back_alert-2 {
-  background-color: #db6660 !important;
-}
-
-.back_alert-3 {
-  background-color: #e5928e !important;
-}
-
-.back_alert-4 {
-  background-color: #efbdbb !important;
-}
-
-.back_alert-5 {
-  background-color: #fae9e8 !important;
-}
-
-.back_alert-n1 {
-  background-color: #b72019 !important;
-}
-
-.back_alert-n2 {
-  background-color: #8e1914 !important;
-}
-
-.back_alert-n3 {
-  background-color: #66120e !important;
-}
-
-.back_alert-n4 {
-  background-color: #3d0b08 !important;
-}
-
-.back_alert-n5 {
-  background-color: #140403 !important;
-}
-
-.back_navigation {
-  background-color: #4f74bf !important;
-}
-
-.back_navigation-0 {
-  background-color: #4f74bf !important;
-}
-
-.back_navigation-1 {
-  background-color: #6182c5 !important;
-}
-
-.back_navigation-2 {
-  background-color: #849ed2 !important;
-}
-
-.back_navigation-3 {
-  background-color: #a7badf !important;
-}
-
-.back_navigation-4 {
-  background-color: #cad5ec !important;
-}
-
-.back_navigation-5 {
-  background-color: #edf1f9 !important;
-}
-
-.back_navigation-n1 {
-  background-color: #4768ac !important;
-}
-
-.back_navigation-n2 {
-  background-color: #375186 !important;
-}
-
-.back_navigation-n3 {
-  background-color: #283a60 !important;
-}
-
-.back_navigation-n4 {
-  background-color: #182339 !important;
-}
-
-.back_navigation-n5 {
-  background-color: #080c13 !important;
-}
-
-.back_selected {
-  background-color: #509f6c !important;
-}
-
-.back_selected-0 {
-  background-color: #509f6c !important;
-}
-
-.back_selected-1 {
-  background-color: #62a97b !important;
-}
-
-.back_selected-2 {
-  background-color: #85bc98 !important;
-}
-
-.back_selected-3 {
-  background-color: #a8cfb6 !important;
-}
-
-.back_selected-4 {
-  background-color: #cbe2d3 !important;
-}
-
-.back_selected-5 {
-  background-color: #eef5f0 !important;
-}
-
-.back_selected-n1 {
-  background-color: #488f61 !important;
-}
-
-.back_selected-n2 {
-  background-color: #386f4c !important;
-}
-
-.back_selected-n3 {
-  background-color: #285036 !important;
-}
-
-.back_selected-n4 {
-  background-color: #183020 !important;
-}
-
-.back_selected-n5 {
-  background-color: #08100b !important;
-}
-
-.back_info {
-  background-color: #735dba !important;
-}
-
-.back_info-0 {
-  background-color: #735dba !important;
-}
-
-.back_info-1 {
-  background-color: #816dc1 !important;
-}
-
-.back_info-2 {
-  background-color: #9d8ecf !important;
-}
-
-.back_info-3 {
-  background-color: #b9aedd !important;
-}
-
-.back_info-4 {
-  background-color: #d5ceea !important;
-}
-
-.back_info-5 {
-  background-color: #f1eff8 !important;
-}
-
-.back_info-n1 {
-  background-color: #6854a7 !important;
-}
-
-.back_info-n2 {
-  background-color: #514182 !important;
-}
-
-.back_info-n3 {
-  background-color: #3a2f5d !important;
-}
-
-.back_info-n4 {
-  background-color: #231c38 !important;
-}
-
-.back_info-n5 {
-  background-color: #0c0913 !important;
-}
-
-.back_highlighted {
-  background-color: #c45e99 !important;
-}
-
-.back_highlighted-0 {
-  background-color: #c45e99 !important;
-}
-
-.back_highlighted-1 {
-  background-color: #ca6ea3 !important;
-}
-
-.back_highlighted-2 {
-  background-color: #d68eb8 !important;
-}
-
-.back_highlighted-3 {
-  background-color: #e2afcc !important;
-}
-
-.back_highlighted-4 {
-  background-color: #edcfe0 !important;
-}
-
-.back_highlighted-5 {
-  background-color: #f9eff5 !important;
-}
-
-.back_highlighted-n1 {
-  background-color: #b0558a !important;
-}
-
-.back_highlighted-n2 {
-  background-color: #89426b !important;
-}
-
-.back_highlighted-n3 {
-  background-color: #622f4d !important;
-}
-
-.back_highlighted-n4 {
-  background-color: #3b1c2e !important;
-}
-
-.back_highlighted-n5 {
-  background-color: #14090f !important;
-}
-
-.back_white, .pagination-container .current {
-  background-color: #fefefe;
-}
-
-.shadow_0 {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-
-.shadow {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
-}
-
-.shadow_1 {
-  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
-}
-
-.shadow_2 {
-  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-.shadow_3 {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
-}
-
-.shadow_4 {
-  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
-}
-
-.shadow_5 {
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
-}
-
-.shadow_n1 {
-  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
-}
-
-.shadow_n2 {
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-.shadow_n3 {
-  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
-}
-
-.shadow_n4 {
-  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
-}
-
-.shadow_n5 {
-  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
-}
-
-/*
-	Textures
-
-	All textures in the Strathmore design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities. 
-
-	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
-	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
-	.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
-	.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
-	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
-	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
-
-	markup:
-	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
-
-	Styleguide 80.5
-
- */
-.texture_light {
-  background-image: url("/assets/img/whisper.png");
-}
-
-.texture_medium {
-  background-image: url("/assets/img/billie-holiday-speck.png");
-}
-
-.texture_dark {
-  background-image: url("/assets/img/cross_stripes.png");
-}
-
-.texture_dust {
-  background-image: url("/assets/img/dust.png");
-}
-
-.texture_disabled, .disabled, .disabled:hover {
-  background-image: url("/assets/img/cross_disabled.png");
-}
-
-.texture_cross {
-  background-image: url("/assets/img/cross_color.png");
-}
-
-/*
-	Textures Plus Background Colors
-
-	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
-
-	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_light.back_alert              		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_disabled.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-
-	markup:
-	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
-
-	Styleguide 80.6
-
- */
-/*
  Design Base
 
  Strathmroe is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
@@ -10291,7 +10364,7 @@ Utility CSS
 */
 /*
 
-Fonts: 
+Fonts 
 
 The ACC is focused on stable, conservative, clean fonts.   Roboto Slab is the standard serif fonts across all products at the ACC.  Muli is the current successor to Open Sans, and Maven is a slightly modern font to give a small level of interests which replaces Raleway, or Lato in other products.
 
@@ -10299,7 +10372,7 @@ The ACC is focused on stable, conservative, clean fonts.   Roboto Slab is the st
 */
 /*
 
-Font: Roboto Slab
+Roboto Slab
  
  A beuatiful slab font that shows a complexity and texture to the fonts used in the design. 
 
@@ -10327,7 +10400,7 @@ Font: Roboto Slab
 */
 /*
 
-Font: Maven Pro
+Maven Pro
  
  A Slick font that has a slight interest used for headers and UI. 
 
@@ -10355,7 +10428,7 @@ Font: Maven Pro
 */
 /*
 
-Font: Muli
+Muli
  
  A clean font for content and text of none UI elements. 
 

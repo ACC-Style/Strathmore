@@ -33,17 +33,17 @@
  */
 
 //@mixin size-loop( $style-name:null , $size-variation:null ,$multiplier:null , $breakpoint:null )
-@include size-loop(margin, positive, 1rem, "", "!important");
-@include size-loop(margin-top, positive, 1rem, "", "!important");
-@include size-loop(margin-bottom , positive, 1rem, "", "!important");
-@include size-loop(margin-right, positive, 1rem, "", "!important");
-@include size-loop(margin-left, positive, 1rem, "", "!important");
+@include size-loop(margin, positive, 1rem, "", "");
+@include size-loop(margin-top, positive, 1rem, "", "");
+@include size-loop(margin-bottom , positive, 1rem, "", "");
+@include size-loop(margin-right, positive, 1rem, "", "");
+@include size-loop(margin-left, positive, 1rem, "", "");
 
-@include size-loop(margin-top, negative, 1rem, "", "!important");
-@include size-loop(margin-bottom , negative, 1rem, "", "!important");
-@include size-loop(margin-right, negative, 1rem, "", "!important");
-@include size-loop(margin-left, negative, 1rem, "", "!important");
-@include size-loop(margin, negative, 1rem, "", "!important");
+@include size-loop(margin-top, negative, 1rem, "", "");
+@include size-loop(margin-bottom , negative, 1rem, "", "");
+@include size-loop(margin-right, negative, 1rem, "", "");
+@include size-loop(margin-left, negative, 1rem, "", "");
+@include size-loop(margin, negative, 1rem, "", "");
 
 
 /*
@@ -69,8 +69,8 @@
 
  */
 
-@include size-loop(padding, positive, 1rem, "", " !important");
-@include size-loop(padding-top, positive, 1rem, "", " !important");
-@include size-loop(padding-bottom , positive, 1rem, "", " !important");
-@include size-loop(padding-right, positive, 1rem, "", " !important");
-@include size-loop(padding-left, positive, 1rem, "", " !important");
+@include size-loop(padding, positive, 1rem, "", "");
+@include size-loop(padding-top, positive, 1rem, "", "");
+@include size-loop(padding-bottom , positive, 1rem, "", "");
+@include size-loop(padding-right, positive, 1rem, "", "");
+@include size-loop(padding-left, positive, 1rem, "", "");

@@ -1,6 +1,6 @@
 $debug-trace: true !default;
 
-@mixin size-loop( $key:null, $size-variation:null, $multiplier:1, $breakpoint:"" ,$imporant:""){
+@mixin size-loop( $key:null, $size-variation:null, $multiplier:1, $breakpoint:"" ,$important:""){
 	$short-name:    	get-css-shortname($key);	 
   	$long-name:    		get-css-longname($key);	
   	$style:			    get-css-style($key);  
@@ -17,7 +17,7 @@ $debug-trace: true !default;
 			@else{ $unit: $multiplier * $val;}
 
 			#{ $long-name }_#{ $val-name }#{$breakpoint}{
-				#{$style}:$unit #{$imporant};	
+				@include build-style($style, $unit, $important);
 			}
 		}		
 	}
@@ -27,4 +27,16 @@ $debug-trace: true !default;
 		@debug "Long Name #{$long-name}";
 
 	}
+}
+
+@mixin get-sized-style( $key:null, $size-variation:null, $level:0,   $multiplier:1, $important:""){
+	$style:			    get-css-style($key);
+	$val: 			 	map-get( map-get( $values, $size-variation ), $level);
+	$unit: 				$val * $multiplier;
+	@include build-style($style, $unit, $important);
+}
+
+@mixin build-style( $style, $unit, $important:""){
+	#{$style}: $unit #{$important};
+
 }

@@ -13,7 +13,7 @@
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
 
-	Styleguide 80.5
+	Styleguide 81.3
 
  */
 
@@ -53,11 +53,45 @@
 	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_disabled.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
 
-	Styleguide 80.6
+	Styleguide 81.4
+
+ */
+
+ /*
+	Textures Plus Background Shades
+
+	All textures are slightly transparent.  You can further shade the background colors to achieve even more flexablity.  
+
+	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_info              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_info             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_info             	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.back_warning              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.back_warning             	- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="grid-x">
+		<div class="{$modifiers}-n3 padding_3 cell auto text-center color_white">n3</div>
+		<div class="{$modifiers}-n1 padding_3 cell auto text-center color_white">n1</div>
+		<div class="{$modifiers}-1 padding_3 cell auto text-center color_white">1</div>
+		<div class="{$modifiers}-3 padding_3 cell auto text-center color_white">3</div>
+	</div>
+
+	Styleguide 81.5
 
  */

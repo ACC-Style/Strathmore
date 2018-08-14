@@ -1,11 +1,15 @@
-// Converted Variables
+/*
+ Border Utility CSS: Borders
 
+  Borders a complex utlit that demands a combo of many classes to acheive the effect. 
 
-// Custom Media Query Variables
+  Styleguide 83.0
+ 
+ */
 
 
 /*
-	Border Styles
+	Border Type
 
 	Depends on base border module in _borders.css
 
@@ -15,9 +19,9 @@
 	border_solid          - solid
 
 	markup:
-	<div class="{$modifiers} padding_3">{$modifiers} border</div>
+	<div class="{$modifiers} border_black border-width_1 padding_3">{$modifiers} border</div>
 
-	Styleguide 80.10
+	Styleguide 83.1
 
  */
 .border_dotted,.border_dashed,.border_solid,.border_none{border-width:0;}
@@ -49,7 +53,24 @@
 
 
 
+/*
+  Border Color
+  Border black has attached alpha 
+ 
+  border_primary            - border color
+  border_secondary             - border color
+  border_alert             - border color
+  border_warning             - border color
+  border_info            - border color
+  border_highlighted             - border color
 
+ 
+  markup:
+  <div class="{$modifiers} padding_3 border_solid border-width_3">{$modifiers} border</div>
+ 
+  Styleguide 83.2
+ 
+ */
 
 
 /*
@@ -57,38 +78,38 @@
  
   Border black has attached alpha 
  
-  border-color_black             - border black with alpha of 100%
-  border-color_black-1             - border black with alpha of 90%
-  border-color_black-2             - border black with alpha of 80%
-  border-color_black-3             - border black with alpha of 70%
-  border-color_black-4             - border black with alpha of 60%
-  border-color_black-5             - border black with alpha of 50%
-  border-color_black-6             - border black with alpha of 40%
-  border-color_black-7             - border black with alpha of 30%
-  border-color_black-8             - border black with alpha of 20%
-  border-color_black-9             - border black with alpha of 10%
-  border-color_black-0             - border black with alpha of 2%
+  border_black             - border black with alpha of 100%
+  border_black-1             - border black with alpha of 90%
+  border_black-2             - border black with alpha of 80%
+  border_black-3             - border black with alpha of 70%
+  border_black-4             - border black with alpha of 60%
+  border_black-5             - border black with alpha of 50%
+  border_black-6             - border black with alpha of 40%
+  border_black-7             - border black with alpha of 30%
+  border_black-8             - border black with alpha of 20%
+  border_black-9             - border black with alpha of 10%
+  border_black-0             - border black with alpha of 2%
  
   markup:
-  <div class="{$modifiers} padding_3 border_solid back_primary-1 color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border-width_5 back_primary-1 color_white">{$modifiers} border</div>
  
-  Styleguide 80.11
+  Styleguide 83.2.1
  
  */
  
  
  
-.border-color_black{ border-color:rgba(#000,1)}
-.border-color_black-1{ border-color:rgba(#000,.9)}
-.border-color_black-2{ border-color:rgba(#000,.8)}
-.border-color_black-3{ border-color:rgba(#000,.7)}
-.border-color_black-4{ border-color:rgba(#000,.6)}
-.border-color_black-5{ border-color:rgba(#000,.5)}
-.border-color_black-6{ border-color:rgba(#000,.4)}
-.border-color_black-7{ border-color:rgba(#000,.3)}
-.border-color_black-8{ border-color:rgba(#000,.2)}
-.border-color_black-9{ border-color:rgba(#000,.1)}
-.border-color_black-0{ border-color:rgba(#000,.02)}
+.border_black{ border-color:rgba(#000,1)}
+.border_black-1{ border-color:rgba(#000,.9)}
+.border_black-2{ border-color:rgba(#000,.8)}
+.border_black-3{ border-color:rgba(#000,.7)}
+.border_black-4{ border-color:rgba(#000,.6)}
+.border_black-5{ border-color:rgba(#000,.5)}
+.border_black-6{ border-color:rgba(#000,.4)}
+.border_black-7{ border-color:rgba(#000,.3)}
+.border_black-8{ border-color:rgba(#000,.2)}
+.border_black-9{ border-color:rgba(#000,.1)}
+.border_black-0{ border-color:rgba(#000,.02)}
  
 .border_transparent{border-color:transparent;}
 
@@ -115,9 +136,9 @@
 
 
 	markup:
-	<div class="{$modifiers} padding_3 border-color_black border_solid">{$modifiers} border</div>
+	<div class="{$modifiers} padding_3 border_black border_solid border-width_2">{$modifiers} border</div>
 
-	Styleguide 80.12
+	Styleguide 83.3
 
  */
 
@@ -144,7 +165,7 @@
   Border black has attached alpha   
 
   border_primary            	- border color primary
-  border_error            	- border color error
+  border_alert            	- border color alert
   border_warning            	- border color warning
   border_success            	- border color success
   border_primary-1             - border color mixed with white
@@ -159,9 +180,9 @@
   border_primary-n5             - border color mixed with black 
 
   markup:
-  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border-width_1 color_white">{$modifiers} border</div>
  
-  Styleguide 80.13
+  Styleguide 83.4
  
  */
  
@@ -181,18 +202,18 @@
   border-width_3            	- all borders with .25rem
   border-width_4            	- all borders with .5rem
   border-width_5            	- all borders with rem
-  border-left-width_1.border-width_0            	- all border with no border
-  border-left-width_1.border-width_1            	- all borders with 1px
-  border-left-width_1.border-width_2            	- all borders with .125rem
-  border-left-width_1.border-width_3            	- all borders with .25rem
-  border-left-width_1.border-width_4            	- all borders with .5rem
-  border-left-width_1.border-width_5            	- all borders with rem
+  border-left-width_0.border-width_1            	- left border with no border
+  border-left-width_1.border-width_1            	- left borders with 1px
+  border-left-width_2.border-width_1            	- left borders with .125rem
+  border-left-width_3.border-width_1            	- left borders with .25rem
+  border-left-width_4.border-width_1            	- left borders with .5rem
+  border-left-width_5.border-width_1            	- left borders with rem
 
 
   markup:
-  <div class="{$modifiers} padding_3 border_solid  color_white">{$modifiers} border</div>
+  <div class="{$modifiers} padding_3 border_solid border_black color_black">{$modifiers} border</div>
  
-  Styleguide 80.14
+  Styleguide 83.5
  
  */
 

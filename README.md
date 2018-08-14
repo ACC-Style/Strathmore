@@ -103,20 +103,20 @@ _[style name]_[value+unit]-[modifier]_[break point]_
 ### Values
 | Value Postfix      | Font Size            | Margin     | Padding   | Line Height   | Color   |
 | ---                | ---                  | ---        | ---       | ---           | ---     |
-| n5    |  ms(-5)  | -2 * X†  | Not Used  | Not Used   | mix(color, black, 90%)   |
-| n4    |  ms(-4)  | -1 * X†  | Not Used  | Not Used   | mix(color, black, 70%)   |
-| n3    |  ms(-3)  | -.5 * X†  | Not Used  | Not Used   | mix(color, black, 50%)   |
-| n2    |  ms(-2)  | -.25 * X†  | Not Used  | Not Used   | mix(color, black, 30%)   |
-| n1    |  ms(-1)  | -.1 * X†  | Not Used  | Not Used   | mix(color, black, 10%)   |
+| n5    |  ms(-5)  | -2 * X<sup>†</sup>  | Not Used  | Not Used   | mix(color, black, 90%)   |
+| n4    |  ms(-4)  | -1 * X<sup>†</sup>  | Not Used  | Not Used   | mix(color, black, 70%)   |
+| n3    |  ms(-3)  | -.5 * X<sup>†</sup>  | Not Used  | Not Used   | mix(color, black, 50%)   |
+| n2    |  ms(-2)  | -.25 * X<sup>†</sup>  | Not Used  | Not Used   | mix(color, black, 30%)   |
+| n1    |  ms(-1)  | -.1 * X<sup>†</sup>  | Not Used  | Not Used   | mix(color, black, 10%)   |
 | 0     | ms(0)   | 0     | 0     | 0     | color @ 100%   |
-| n1    | ms(1)  | .1 * X†  | .1 * X†  | 1  | mix(color, white, 10%)   |
-| n2    | ms(2)  | .25 * X†  | .25 * X†  | 1.45   | mix(color, white, 30%)   |
-| n3    | ms(3)  | .5 * X†  | 5 * X†  | 1.65   | mix(color, white, 50%)   |
-| n4    | ms(4)  | 1 * X†  |  1 * X†  | 1.75   | mix(color, white, 70%)   |
-| n5    | ms(5)  | 2 * X†  |  2 * X†  | 2   | mix(color, white, 90%)   |
+| n1    | ms(1)  | .1 * X<sup>†</sup>  | .1 * X<sup>†</sup>  | 1  | mix(color, white, 10%)   |
+| n2    | ms(2)  | .25 * X<sup>†</sup>  | .25 * X<sup>†</sup>  | 1.45   | mix(color, white, 30%)   |
+| n3    | ms(3)  | .5 * X<sup>†</sup>  | 5 * X<sup>†</sup>  | 1.65   | mix(color, white, 50%)   |
+| n4    | ms(4)  | 1 * X<sup>†</sup>  |  1 * X<sup>†</sup>  | 1.75   | mix(color, white, 70%)   |
+| n5    | ms(5)  | 2 * X<sup>†</sup>  |  2 * X<sup>†</sup>  | 2   | mix(color, white, 90%)   |
 
 
-† x = global spacing 1 rem
+<sup>†</sup> x = global spacing 1 rem
 
 ### Alternate Values 
 

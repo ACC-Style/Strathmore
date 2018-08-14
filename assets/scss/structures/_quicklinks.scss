@@ -5,7 +5,7 @@
 
 
 	markup: 
-	  <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 border_solid border-right-width_1 border_primary font-size_n1">One</a></li>
+	  <li class="quicklinks__item"><a href="#" class="quicklinks__link ">One</a></li>
 
 	sg-wrapper:
 	  <ul class="menu quicklinks">
@@ -13,7 +13,7 @@
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
 	    <sg-wrapper-content/>
-	     <li class="quicklinks__item"><a href="#" class="padding-top_2 padding-bottom_2 font-size_n1">End</a></li>
+	     <li class="quicklinks__item"><a href="#" class="quicklinks__link">End</a></li>
 	  </ul>
 
 	Styleguide 20.11
@@ -24,5 +24,19 @@
 	a:hover{
 		background-color: get-themecolor(primary, 5);
 		color:$black;
+	}
+}
+
+.quicklinks__item{
+	border-right:1px solid get-themecolor(primary, 1);
+	padding:0 2px;
+	&:last-child{border-right-width:0;}
+} 
+.quicklinks__item .quicklinks__link{
+	@include get-sized-style(padding-top, positive, 2, 1rem, "" );
+	@include get-sized-style(padding-bottom, positive, 2, 1rem, "" );
+	@extend .font_n1;
+	&:last-child{
+		border-right:0;
 	}
 }

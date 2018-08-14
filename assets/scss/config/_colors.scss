@@ -17,7 +17,7 @@ $acc-palette: (
   navigation: $blue,
   selected:$green-alt,
   info:$purple,
-  highlighted:$magenta
+  hightlight:$magenta
 );
 
 @function get-themecolor($key:primary, $modifier:0){

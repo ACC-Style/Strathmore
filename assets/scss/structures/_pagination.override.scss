@@ -6,7 +6,7 @@
  markup:
  <nav aria-label="Pagination" class="border_solid border_primary border-top-width_3">
   <ul class="pagination">
-    <li class="pagination-previous disabled back_secondary-4"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
     <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
     <li><a href="#" aria-label="Page 2">2</a></li>
     <li><a href="#" aria-label="Page 3">3</a></li>
@@ -14,7 +14,7 @@
     <li class="fal fa-ellipsis-h" aria-hidden="true"></li>
     <li><a href="#" aria-label="Page 12">12</a></li>
     <li><a href="#" aria-label="Page 13">13</a></li>
-    <li class="pagination-next back_secondary-3"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
   </ul>
 </nav>
 

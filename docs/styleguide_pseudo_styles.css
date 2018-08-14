@@ -124,8 +124,8 @@ a.pseudo-class-focus {
   color: #fefefe;
 }
 
-.button.highlighted.pseudo-class-hover,
-.button.highlighted.pseudo-class-focus {
+.button.hightlight.pseudo-class-hover,
+.button.hightlight.pseudo-class-focus {
   background-color: #aa3e7c;
   color: #0a0a0a;
 }
@@ -202,10 +202,10 @@ a.pseudo-class-focus {
   color: #fefefe;
 }
 
-.button.disabled.highlighted.pseudo-class-hover,
-.button.disabled.highlighted.pseudo-class-focus,
-.button[disabled].highlighted.pseudo-class-hover,
-.button[disabled].highlighted.pseudo-class-focus {
+.button.disabled.hightlight.pseudo-class-hover,
+.button.disabled.hightlight.pseudo-class-focus,
+.button[disabled].hightlight.pseudo-class-hover,
+.button[disabled].hightlight.pseudo-class-focus {
   background-color: #c45e99;
   color: #0a0a0a;
 }
@@ -348,16 +348,16 @@ a.pseudo-class-focus {
   color: #735dba;
 }
 
-.button.hollow.highlighted.pseudo-class-hover,
-.button.hollow.highlighted.pseudo-class-focus {
+.button.hollow.hightlight.pseudo-class-hover,
+.button.hollow.hightlight.pseudo-class-focus {
   border-color: #6a274e;
   color: #6a274e;
 }
 
-.button.hollow.highlighted.pseudo-class-hover.disabled,
-.button.hollow.highlighted.pseudo-class-hover[disabled],
-.button.hollow.highlighted.pseudo-class-focus.disabled,
-.button.hollow.highlighted.pseudo-class-focus[disabled] {
+.button.hollow.hightlight.pseudo-class-hover.disabled,
+.button.hollow.hightlight.pseudo-class-hover[disabled],
+.button.hollow.hightlight.pseudo-class-focus.disabled,
+.button.hollow.hightlight.pseudo-class-focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
@@ -581,26 +581,26 @@ a.pseudo-class-focus {
   border-color: transparent;
 }
 
-.button.clear.highlighted.pseudo-class-hover,
-.button.clear.highlighted.pseudo-class-focus {
+.button.clear.hightlight.pseudo-class-hover,
+.button.clear.hightlight.pseudo-class-focus {
   border-color: #6a274e;
   color: #6a274e;
 }
 
-.button.clear.highlighted.pseudo-class-hover.disabled,
-.button.clear.highlighted.pseudo-class-hover[disabled],
-.button.clear.highlighted.pseudo-class-focus.disabled,
-.button.clear.highlighted.pseudo-class-focus[disabled] {
+.button.clear.hightlight.pseudo-class-hover.disabled,
+.button.clear.hightlight.pseudo-class-hover[disabled],
+.button.clear.hightlight.pseudo-class-focus.disabled,
+.button.clear.hightlight.pseudo-class-focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
 
-.button.clear.highlighted.pseudo-class-hover,
-.button.clear.highlighted.pseudo-class-hover.disabled,
-.button.clear.highlighted.pseudo-class-hover[disabled],
-.button.clear.highlighted.pseudo-class-focus,
-.button.clear.highlighted.pseudo-class-focus.disabled,
-.button.clear.highlighted.pseudo-class-focus[disabled] {
+.button.clear.hightlight.pseudo-class-hover,
+.button.clear.hightlight.pseudo-class-hover.disabled,
+.button.clear.hightlight.pseudo-class-hover[disabled],
+.button.clear.hightlight.pseudo-class-focus,
+.button.clear.hightlight.pseudo-class-focus.disabled,
+.button.clear.hightlight.pseudo-class-focus[disabled] {
   border-color: transparent;
 }
 
@@ -661,8 +661,8 @@ a.button.pseudo-class-focus {
   color: #fefefe;
 }
 
-.button-group.highlighted .button.pseudo-class-hover,
-.button-group.highlighted .button.pseudo-class-focus {
+.button-group.hightlight .button.pseudo-class-hover,
+.button-group.hightlight .button.pseudo-class-focus {
   background-color: #aa3e7c;
   color: #0a0a0a;
 }
@@ -911,8 +911,8 @@ a.thumbnail.pseudo-class-focus {
   color: white;
 }
 
-.button.highlighted.pseudo-class-hover,
-.button.highlighted.pseudo-class-focus {
+.button.hightlight.pseudo-class-hover,
+.button.hightlight.pseudo-class-focus {
   background-color: #aa3e7c;
   color: white;
 }
@@ -934,10 +934,18 @@ a.thumbnail.pseudo-class-focus {
   color: #0a0a0a;
 }
 
-.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
-  color: #0a0a0a;
+.quicklinks__item.pseudo-class-last-child {
+  border-right-width: 0;
+}
+
+.quicklinks__item .quicklinks__link.pseudo-class-last-child {
+  border-right: 0;
 }
 
 .disabled.pseudo-class-hover {
   background-image: url("/assets/img/cross_disabled.png");
+}
+
+.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
+  color: #0a0a0a;
 }
