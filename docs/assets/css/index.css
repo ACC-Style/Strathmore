@@ -7836,6 +7836,7 @@ Utility CSS
 
 	quickly alter the margin around an object 
 
+	.margin_auto.small-6              - Margin 0 auto
 	.margin_0              - All margins set to 0
 	.margin_1              - All margins set to 1px
 	.margin_2              - All margins set to 1/4 of global margin
@@ -7854,16 +7855,20 @@ Utility CSS
 
 
 	markup:
-	<div class="{$modifiers} padding_2 border_transparent border_solid back_primary-5 text-center">Container With Margins</div>
+	<div class="{$modifiers} padding_2  back_primary text-center color_white cell auto opacity_5">Container With Margins</div>
 
  	sg-wrapper:
-	<div class="back_warning-3 border_transparent border_solid">
+	<div class="back_warning-3 clearfix grid-x border-width_1 border_solid">
 	   <sg-wrapper-content/>
 	</div>
 
 	Styleguide 80.20
 
  */
+.margin_auto {
+  margin: 0 auto;
+}
+
 .margin_0 {
   margin: 0rem;
 }
@@ -8340,9 +8345,9 @@ Utility CSS
  
  */
 /*
-  Border Color Black with Alpha
+  Border Alpha Black
  
-  Border black has attached alpha 
+  Border black has attached alpha modifiers to allow for greater flexablity 
  
   border_black             - border black with alpha of 100%
   border_black-1             - border black with alpha of 90%
@@ -8362,52 +8367,115 @@ Utility CSS
   Styleguide 83.2.1
  
  */
+/*
+ Border Alpha White
+
+ Border white has attached alpha modifiers to allow for greater flexablity 
+
+ border_white             - border white with alpha of 100%
+ border_white-1             - border white with alpha of 90%
+ border_white-2             - border white with alpha of 80%
+ border_white-3             - border white with alpha of 70%
+ border_white-4             - border white with alpha of 60%
+ border_white-5             - border white with alpha of 50%
+ border_white-6             - border white with alpha of 40%
+ border_white-7             - border white with alpha of 30%
+ border_white-8             - border white with alpha of 20%
+ border_white-9             - border white with alpha of 10%
+ border_white-0             - border white with alpha of 2%
+
+ markup:
+ <div class="{$modifiers} padding_3 border_solid border-width_5 back_primary-1 color_white">{$modifiers} border</div>
+
+ Styleguide 83.2.2
+
+*/
 .border_black {
-  border-color: black;
+  border-color: #0a0a0a;
 }
 
 .border_black-1 {
-  border-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(10, 10, 10, 0.9);
 }
 
 .border_black-2 {
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(10, 10, 10, 0.8);
 }
 
 .border_black-3 {
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(10, 10, 10, 0.7);
 }
 
 .border_black-4 {
-  border-color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(10, 10, 10, 0.6);
 }
 
 .border_black-5 {
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(10, 10, 10, 0.5);
 }
 
 .border_black-6 {
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(10, 10, 10, 0.4);
 }
 
 .border_black-7 {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(10, 10, 10, 0.3);
 }
 
 .border_black-8 {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(10, 10, 10, 0.2);
 }
 
 .border_black-9 {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(10, 10, 10, 0.1);
 }
 
 .border_black-0 {
-  border-color: rgba(0, 0, 0, 0.02);
+  border-color: rgba(10, 10, 10, 0.02);
 }
 
-.border_transparent {
-  border-color: transparent;
+.border_white {
+  border-color: #fefefe;
+}
+
+.border_white-1 {
+  border-color: rgba(254, 254, 254, 0.9);
+}
+
+.border_white-2 {
+  border-color: rgba(254, 254, 254, 0.8);
+}
+
+.border_white-3 {
+  border-color: rgba(254, 254, 254, 0.7);
+}
+
+.border_white-4 {
+  border-color: rgba(254, 254, 254, 0.6);
+}
+
+.border_white-5 {
+  border-color: rgba(254, 254, 254, 0.5);
+}
+
+.border_white-6 {
+  border-color: rgba(254, 254, 254, 0.4);
+}
+
+.border_white-7 {
+  border-color: rgba(254, 254, 254, 0.3);
+}
+
+.border_white-8 {
+  border-color: rgba(254, 254, 254, 0.2);
+}
+
+.border_white-9 {
+  border-color: rgba(254, 254, 254, 0.1);
+}
+
+.border_white-0 {
+  border-color: rgba(254, 254, 254, 0.02);
 }
 
 .border_transparent {
@@ -10598,6 +10666,50 @@ Utility CSS
     flex-shrink: 1;
   }
 }
+.opacicty_0 {
+  opacity: 0;
+}
+
+.opacity_1 {
+  opacity: 0.1;
+}
+
+.opacity_2 {
+  opacity: 0.2;
+}
+
+.opacity_3 {
+  opacity: 0.3;
+}
+
+.opacity_4 {
+  opacity: 0.4;
+}
+
+.opacity_5 {
+  opacity: 0.5;
+}
+
+.opacity_6 {
+  opacity: 0.6;
+}
+
+.opacity_7 {
+  opacity: 0.7;
+}
+
+.opacity_8 {
+  opacity: 0.8;
+}
+
+.opacity_9 {
+  opacity: 0.9;
+}
+
+.opacity_none {
+  opacity: 1;
+}
+
 /*
  Design Base
 

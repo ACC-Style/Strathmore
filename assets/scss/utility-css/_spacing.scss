@@ -3,6 +3,7 @@
 
 	quickly alter the margin around an object 
 
+	.margin_auto.small-6              - Margin 0 auto
 	.margin_0              - All margins set to 0
 	.margin_1              - All margins set to 1px
 	.margin_2              - All margins set to 1/4 of global margin
@@ -21,10 +22,10 @@
 
 
 	markup:
-	<div class="{$modifiers} padding_2 border_transparent border_solid back_primary-5 text-center">Container With Margins</div>
+	<div class="{$modifiers} padding_2  back_primary text-center color_white cell auto opacity_5">Container With Margins</div>
 
  	sg-wrapper:
-	<div class="back_warning-3 border_transparent border_solid">
+	<div class="back_warning-3 clearfix grid-x border-width_1 border_solid">
 	   <sg-wrapper-content/>
 	</div>
 
@@ -33,6 +34,8 @@
  */
 
 //@mixin size-loop( $style-name:null , $size-variation:null ,$multiplier:null , $breakpoint:null )
+
+.margin_auto{ margin:0 auto;}
 @include size-loop(margin, positive, 1rem, "", "");
 @include size-loop(margin-top, positive, 1rem, "", "");
 @include size-loop(margin-bottom , positive, 1rem, "", "");
