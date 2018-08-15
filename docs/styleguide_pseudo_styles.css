@@ -130,6 +130,12 @@ a.pseudo-class-focus {
   color: #0a0a0a;
 }
 
+.button.acc.pseudo-class-hover,
+.button.acc.pseudo-class-focus {
+  background-color: #002d56;
+  color: #fefefe;
+}
+
 .button.disabled.pseudo-class-hover,
 .button.disabled.pseudo-class-focus,
 .button[disabled].pseudo-class-hover,
@@ -208,6 +214,14 @@ a.pseudo-class-focus {
 .button[disabled].hightlight.pseudo-class-focus {
   background-color: #c45e99;
   color: #0a0a0a;
+}
+
+.button.disabled.acc.pseudo-class-hover,
+.button.disabled.acc.pseudo-class-focus,
+.button[disabled].acc.pseudo-class-hover,
+.button[disabled].acc.pseudo-class-focus {
+  background-color: #00386b;
+  color: #fefefe;
 }
 
 .button.hollow.pseudo-class-hover,
@@ -360,6 +374,20 @@ a.pseudo-class-focus {
 .button.hollow.hightlight.pseudo-class-focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
+}
+
+.button.hollow.acc.pseudo-class-hover,
+.button.hollow.acc.pseudo-class-focus {
+  border-color: #001c36;
+  color: #001c36;
+}
+
+.button.hollow.acc.pseudo-class-hover.disabled,
+.button.hollow.acc.pseudo-class-hover[disabled],
+.button.hollow.acc.pseudo-class-focus.disabled,
+.button.hollow.acc.pseudo-class-focus[disabled] {
+  border: 1px solid #00386b;
+  color: #00386b;
 }
 
 .button.clear.pseudo-class-hover,
@@ -604,6 +632,29 @@ a.pseudo-class-focus {
   border-color: transparent;
 }
 
+.button.clear.acc.pseudo-class-hover,
+.button.clear.acc.pseudo-class-focus {
+  border-color: #001c36;
+  color: #001c36;
+}
+
+.button.clear.acc.pseudo-class-hover.disabled,
+.button.clear.acc.pseudo-class-hover[disabled],
+.button.clear.acc.pseudo-class-focus.disabled,
+.button.clear.acc.pseudo-class-focus[disabled] {
+  border: 1px solid #00386b;
+  color: #00386b;
+}
+
+.button.clear.acc.pseudo-class-hover,
+.button.clear.acc.pseudo-class-hover.disabled,
+.button.clear.acc.pseudo-class-hover[disabled],
+.button.clear.acc.pseudo-class-focus,
+.button.clear.acc.pseudo-class-focus.disabled,
+.button.clear.acc.pseudo-class-focus[disabled] {
+  border-color: transparent;
+}
+
 a.button.pseudo-class-hover,
 a.button.pseudo-class-focus {
   text-decoration: none;
@@ -665,6 +716,12 @@ a.button.pseudo-class-focus {
 .button-group.hightlight .button.pseudo-class-focus {
   background-color: #aa3e7c;
   color: #0a0a0a;
+}
+
+.button-group.acc .button.pseudo-class-hover,
+.button-group.acc .button.pseudo-class-focus {
+  background-color: #002d56;
+  color: #fefefe;
 }
 
 .button-group.stacked .button.pseudo-class-last-child,
@@ -914,6 +971,12 @@ a.thumbnail.pseudo-class-focus {
 .button.hightlight.pseudo-class-hover,
 .button.hightlight.pseudo-class-focus {
   background-color: #aa3e7c;
+  color: white;
+}
+
+.button.acc.pseudo-class-hover,
+.button.acc.pseudo-class-focus {
+  background-color: #002d56;
   color: white;
 }
 
