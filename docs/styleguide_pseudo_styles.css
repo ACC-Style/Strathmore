@@ -2221,7 +2221,7 @@ a.thumbnail.pseudo-class-focus {
 }
 
 .hover_underline.pseudo-class-hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
