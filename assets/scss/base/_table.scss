@@ -1,0 +1,68 @@
+/*
+
+table
+
+table description
+
+markup:
+<table class="table">
+  <thead class="table__thead">
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>table row 1 table cell A
+        <br>
+        <small class="color_primary">this is small text in blue</small>
+      </td>
+      <td>table row 1 table cell B
+        <br>
+        <small class="color_highlight">this is small text with magenta</small>
+      </td>
+      <td>table row 1 table cell C</td>
+    </tr>
+    <tr>
+      <td>table row 2 table cell A</td>
+      <td>table row 2 table cell B</td>
+      <td>table row 2 table cell C</td>
+    </tr>
+  </tbody>
+  <tfoot class="table__tfoot">
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 200.0
+*/
+.table {
+	
+}
+.table__thead{
+	 @extend .font_0;
+	 background-color: $white;
+
+		th, td{
+			border-bottom: 2px solid get-themecolor(primary, 1);
+
+			
+
+		}
+}
+.table__tfoot{
+	 @extend .font_n1;
+	 background-color: get-themecolor(secondary, 5);
+
+		th, td{
+			border-top: 1px solid get-themecolor(secondary, 1);
+			font-style: italic;
+
+			
+
+		}
+}

@@ -6869,6 +6869,63 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /*
+
+table
+
+table description
+
+markup:
+<table class="table">
+  <thead class="table__thead">
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>table row 1 table cell A
+        <br>
+        <small class="color_primary">this is small text in blue</small>
+      </td>
+      <td>table row 1 table cell B
+        <br>
+        <small class="color_highlight">this is small text with magenta</small>
+      </td>
+      <td>table row 1 table cell C</td>
+    </tr>
+    <tr>
+      <td>table row 2 table cell A</td>
+      <td>table row 2 table cell B</td>
+      <td>table row 2 table cell C</td>
+    </tr>
+  </tbody>
+  <tfoot class="table__tfoot">
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 200.0
+*/
+.table__thead {
+  background-color: #fefefe;
+}
+.table__thead th, .table__thead td {
+  border-bottom: 2px solid #1da3c9;
+}
+
+.table__tfoot {
+  background-color: #efeff0;
+}
+.table__tfoot th, .table__tfoot td {
+  border-top: 1px solid #72737b;
+  font-style: italic;
+}
+
+/*
 Buttons
 
 Basic Buttons
@@ -7706,7 +7763,7 @@ Utility CSS
 	markup:
 	<div class="{$modifiers} padding_3 border_solid border_black-1 border-width_1 color_white">container has shadow of {$modifiers}</div>
 
-	Styleguide 200.0
+	Styleguide 81.6
  
  */
 .shadow_0 {
@@ -9857,7 +9914,7 @@ Utility CSS
   font-style: italic !important;
 }
 
-.font-size_0, .font_0 {
+.font-size_0, .font_0, .table__thead {
   font-size: 1rem;
 }
 
@@ -9885,7 +9942,7 @@ Utility CSS
   font-size: 6.1917364224rem;
 }
 
-.font-size_n1, .font_n1, .quicklinks__item .quicklinks__link {
+.font-size_n1, .font_n1, .table__tfoot, .quicklinks__item .quicklinks__link {
   font-size: 0.8333333333rem;
 }
 

@@ -1,1 +1,21 @@
-                        vvv
+
+/*
+  Shadows
+ 
+ Shadows can be easily added to container {{modifier}}  
+ 
+  back_primary            	- background color warning color
+  back_secondary            	- background color warning color
+  back_alert            	- background color alert color
+  back_warning            	- background color warning color
+  back_success              - background color success color
+  back_info              - background color success color
+  back_hightlight              - background color success color
+
+
+  markup:
+  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
+ 
+  Styleguide 81.1
+ 
+ */                        
