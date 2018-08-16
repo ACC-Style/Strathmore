@@ -52,18 +52,18 @@ $values:(
 		),
 	percent-positive:(
 		0:0%,
-		1:10%,
-		2:30%,
-		3:50%,
-		4:70%,
+		1:15%,
+		2:37%,
+		3:60%,
+		4:78%,
 		5:90%
 		),
 	percent-negative:(
 		n1:10%,
-		n2:30%,
-		n3:50%,
-		n4:70%,
-		n5:90%
+		n2:25%,
+		n3:45%,
+		n4:60%,
+		n5:75%
 		),
 	border-radius:(
 		square: 0px,
@@ -203,7 +203,17 @@ $style-definition:(
 		short-name:'.border-bottom',
 		css-style:'border-bottom-width',
 		long-name:'.border-bottom-width',
-		),	
+		),
+	hover-bg:(
+		short-name:'.hover',
+		css-style:'background-color',
+		long-name:'.hover-back',
+		),
+	hover-text:(
+		short-name: '.hover-text',
+		css-style: 'color',
+		long-name: '.hover-text',
+		),		
 
 );
 

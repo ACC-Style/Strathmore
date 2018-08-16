@@ -6,6 +6,249 @@
   background-origin: border-box;
 }
 
+.hover-text_acc-n5.pseudo-class-hover,
+.hover-text_acc-n4.pseudo-class-hover,
+.hover-text_acc-n3.pseudo-class-hover,
+.hover-text_acc-n2.pseudo-class-hover,
+.hover-text_acc-n1.pseudo-class-hover,
+.hover-text_acc-5.pseudo-class-hover,
+.hover-text_acc-4.pseudo-class-hover,
+.hover-text_acc-3.pseudo-class-hover,
+.hover-text_acc-2.pseudo-class-hover,
+.hover-text_acc-1.pseudo-class-hover,
+.hover-text_acc-0.pseudo-class-hover,
+.hover-text_acc.pseudo-class-hover,
+.hover_acc-n5.pseudo-class-hover,
+.hover_acc-n4.pseudo-class-hover,
+.hover_acc-n3.pseudo-class-hover,
+.hover_acc-n2.pseudo-class-hover,
+.hover_acc-n1.pseudo-class-hover,
+.hover_acc-5.pseudo-class-hover,
+.hover_acc-4.pseudo-class-hover,
+.hover_acc-3.pseudo-class-hover,
+.hover_acc-2.pseudo-class-hover,
+.hover_acc-1.pseudo-class-hover,
+.hover_acc-0.pseudo-class-hover,
+.hover_acc.pseudo-class-hover,
+.hover-text_hightlight-n5.pseudo-class-hover,
+.hover-text_hightlight-n4.pseudo-class-hover,
+.hover-text_hightlight-n3.pseudo-class-hover,
+.hover-text_hightlight-n2.pseudo-class-hover,
+.hover-text_hightlight-n1.pseudo-class-hover,
+.hover-text_hightlight-5.pseudo-class-hover,
+.hover-text_hightlight-4.pseudo-class-hover,
+.hover-text_hightlight-3.pseudo-class-hover,
+.hover-text_hightlight-2.pseudo-class-hover,
+.hover-text_hightlight-1.pseudo-class-hover,
+.hover-text_hightlight-0.pseudo-class-hover,
+.hover-text_hightlight.pseudo-class-hover,
+.hover_hightlight-n5.pseudo-class-hover,
+.hover_hightlight-n4.pseudo-class-hover,
+.hover_hightlight-n3.pseudo-class-hover,
+.hover_hightlight-n2.pseudo-class-hover,
+.hover_hightlight-n1.pseudo-class-hover,
+.hover_hightlight-5.pseudo-class-hover,
+.hover_hightlight-4.pseudo-class-hover,
+.hover_hightlight-3.pseudo-class-hover,
+.hover_hightlight-2.pseudo-class-hover,
+.hover_hightlight-1.pseudo-class-hover,
+.hover_hightlight-0.pseudo-class-hover,
+.hover_hightlight.pseudo-class-hover,
+.hover-text_info-n5.pseudo-class-hover,
+.hover-text_info-n4.pseudo-class-hover,
+.hover-text_info-n3.pseudo-class-hover,
+.hover-text_info-n2.pseudo-class-hover,
+.hover-text_info-n1.pseudo-class-hover,
+.hover-text_info-5.pseudo-class-hover,
+.hover-text_info-4.pseudo-class-hover,
+.hover-text_info-3.pseudo-class-hover,
+.hover-text_info-2.pseudo-class-hover,
+.hover-text_info-1.pseudo-class-hover,
+.hover-text_info-0.pseudo-class-hover,
+.hover-text_info.pseudo-class-hover,
+.hover_info-n5.pseudo-class-hover,
+.hover_info-n4.pseudo-class-hover,
+.hover_info-n3.pseudo-class-hover,
+.hover_info-n2.pseudo-class-hover,
+.hover_info-n1.pseudo-class-hover,
+.hover_info-5.pseudo-class-hover,
+.hover_info-4.pseudo-class-hover,
+.hover_info-3.pseudo-class-hover,
+.hover_info-2.pseudo-class-hover,
+.hover_info-1.pseudo-class-hover,
+.hover_info-0.pseudo-class-hover,
+.hover_info.pseudo-class-hover,
+.hover-text_selected-n5.pseudo-class-hover,
+.hover-text_selected-n4.pseudo-class-hover,
+.hover-text_selected-n3.pseudo-class-hover,
+.hover-text_selected-n2.pseudo-class-hover,
+.hover-text_selected-n1.pseudo-class-hover,
+.hover-text_selected-5.pseudo-class-hover,
+.hover-text_selected-4.pseudo-class-hover,
+.hover-text_selected-3.pseudo-class-hover,
+.hover-text_selected-2.pseudo-class-hover,
+.hover-text_selected-1.pseudo-class-hover,
+.hover-text_selected-0.pseudo-class-hover,
+.hover-text_selected.pseudo-class-hover,
+.hover_selected-n5.pseudo-class-hover,
+.hover_selected-n4.pseudo-class-hover,
+.hover_selected-n3.pseudo-class-hover,
+.hover_selected-n2.pseudo-class-hover,
+.hover_selected-n1.pseudo-class-hover,
+.hover_selected-5.pseudo-class-hover,
+.hover_selected-4.pseudo-class-hover,
+.hover_selected-3.pseudo-class-hover,
+.hover_selected-2.pseudo-class-hover,
+.hover_selected-1.pseudo-class-hover,
+.hover_selected-0.pseudo-class-hover,
+.hover_selected.pseudo-class-hover,
+.hover-text_navigation-n5.pseudo-class-hover,
+.hover-text_navigation-n4.pseudo-class-hover,
+.hover-text_navigation-n3.pseudo-class-hover,
+.hover-text_navigation-n2.pseudo-class-hover,
+.hover-text_navigation-n1.pseudo-class-hover,
+.hover-text_navigation-5.pseudo-class-hover,
+.hover-text_navigation-4.pseudo-class-hover,
+.hover-text_navigation-3.pseudo-class-hover,
+.hover-text_navigation-2.pseudo-class-hover,
+.hover-text_navigation-1.pseudo-class-hover,
+.hover-text_navigation-0.pseudo-class-hover,
+.hover-text_navigation.pseudo-class-hover,
+.hover_navigation-n5.pseudo-class-hover,
+.hover_navigation-n4.pseudo-class-hover,
+.hover_navigation-n3.pseudo-class-hover,
+.hover_navigation-n2.pseudo-class-hover,
+.hover_navigation-n1.pseudo-class-hover,
+.hover_navigation-5.pseudo-class-hover,
+.hover_navigation-4.pseudo-class-hover,
+.hover_navigation-3.pseudo-class-hover,
+.hover_navigation-2.pseudo-class-hover,
+.hover_navigation-1.pseudo-class-hover,
+.hover_navigation-0.pseudo-class-hover,
+.hover_navigation.pseudo-class-hover,
+.hover-text_alert-n5.pseudo-class-hover,
+.hover-text_alert-n4.pseudo-class-hover,
+.hover-text_alert-n3.pseudo-class-hover,
+.hover-text_alert-n2.pseudo-class-hover,
+.hover-text_alert-n1.pseudo-class-hover,
+.hover-text_alert-5.pseudo-class-hover,
+.hover-text_alert-4.pseudo-class-hover,
+.hover-text_alert-3.pseudo-class-hover,
+.hover-text_alert-2.pseudo-class-hover,
+.hover-text_alert-1.pseudo-class-hover,
+.hover-text_alert-0.pseudo-class-hover,
+.hover-text_alert.pseudo-class-hover,
+.hover_alert-n5.pseudo-class-hover,
+.hover_alert-n4.pseudo-class-hover,
+.hover_alert-n3.pseudo-class-hover,
+.hover_alert-n2.pseudo-class-hover,
+.hover_alert-n1.pseudo-class-hover,
+.hover_alert-5.pseudo-class-hover,
+.hover_alert-4.pseudo-class-hover,
+.hover_alert-3.pseudo-class-hover,
+.hover_alert-2.pseudo-class-hover,
+.hover_alert-1.pseudo-class-hover,
+.hover_alert-0.pseudo-class-hover,
+.hover_alert.pseudo-class-hover,
+.hover-text_warning-n5.pseudo-class-hover,
+.hover-text_warning-n4.pseudo-class-hover,
+.hover-text_warning-n3.pseudo-class-hover,
+.hover-text_warning-n2.pseudo-class-hover,
+.hover-text_warning-n1.pseudo-class-hover,
+.hover-text_warning-5.pseudo-class-hover,
+.hover-text_warning-4.pseudo-class-hover,
+.hover-text_warning-3.pseudo-class-hover,
+.hover-text_warning-2.pseudo-class-hover,
+.hover-text_warning-1.pseudo-class-hover,
+.hover-text_warning-0.pseudo-class-hover,
+.hover-text_warning.pseudo-class-hover,
+.hover_warning-n5.pseudo-class-hover,
+.hover_warning-n4.pseudo-class-hover,
+.hover_warning-n3.pseudo-class-hover,
+.hover_warning-n2.pseudo-class-hover,
+.hover_warning-n1.pseudo-class-hover,
+.hover_warning-5.pseudo-class-hover,
+.hover_warning-4.pseudo-class-hover,
+.hover_warning-3.pseudo-class-hover,
+.hover_warning-2.pseudo-class-hover,
+.hover_warning-1.pseudo-class-hover,
+.hover_warning-0.pseudo-class-hover,
+.hover_warning.pseudo-class-hover,
+.hover-text_success-n5.pseudo-class-hover,
+.hover-text_success-n4.pseudo-class-hover,
+.hover-text_success-n3.pseudo-class-hover,
+.hover-text_success-n2.pseudo-class-hover,
+.hover-text_success-n1.pseudo-class-hover,
+.hover-text_success-5.pseudo-class-hover,
+.hover-text_success-4.pseudo-class-hover,
+.hover-text_success-3.pseudo-class-hover,
+.hover-text_success-2.pseudo-class-hover,
+.hover-text_success-1.pseudo-class-hover,
+.hover-text_success-0.pseudo-class-hover,
+.hover-text_success.pseudo-class-hover,
+.hover_success-n5.pseudo-class-hover,
+.hover_success-n4.pseudo-class-hover,
+.hover_success-n3.pseudo-class-hover,
+.hover_success-n2.pseudo-class-hover,
+.hover_success-n1.pseudo-class-hover,
+.hover_success-5.pseudo-class-hover,
+.hover_success-4.pseudo-class-hover,
+.hover_success-3.pseudo-class-hover,
+.hover_success-2.pseudo-class-hover,
+.hover_success-1.pseudo-class-hover,
+.hover_success-0.pseudo-class-hover,
+.hover_success.pseudo-class-hover,
+.hover-text_secondary-n5.pseudo-class-hover,
+.hover-text_secondary-n4.pseudo-class-hover,
+.hover-text_secondary-n3.pseudo-class-hover,
+.hover-text_secondary-n2.pseudo-class-hover,
+.hover-text_secondary-n1.pseudo-class-hover,
+.hover-text_secondary-5.pseudo-class-hover,
+.hover-text_secondary-4.pseudo-class-hover,
+.hover-text_secondary-3.pseudo-class-hover,
+.hover-text_secondary-2.pseudo-class-hover,
+.hover-text_secondary-1.pseudo-class-hover,
+.hover-text_secondary-0.pseudo-class-hover,
+.hover-text_secondary.pseudo-class-hover,
+.hover_secondary-n5.pseudo-class-hover,
+.hover_secondary-n4.pseudo-class-hover,
+.hover_secondary-n3.pseudo-class-hover,
+.hover_secondary-n2.pseudo-class-hover,
+.hover_secondary-n1.pseudo-class-hover,
+.hover_secondary-5.pseudo-class-hover,
+.hover_secondary-4.pseudo-class-hover,
+.hover_secondary-3.pseudo-class-hover,
+.hover_secondary-2.pseudo-class-hover,
+.hover_secondary-1.pseudo-class-hover,
+.hover_secondary-0.pseudo-class-hover,
+.hover_secondary.pseudo-class-hover,
+.hover-text_primary-n5.pseudo-class-hover,
+.hover-text_primary-n4.pseudo-class-hover,
+.hover-text_primary-n3.pseudo-class-hover,
+.hover-text_primary-n2.pseudo-class-hover,
+.hover-text_primary-n1.pseudo-class-hover,
+.hover-text_primary-5.pseudo-class-hover,
+.hover-text_primary-4.pseudo-class-hover,
+.hover-text_primary-3.pseudo-class-hover,
+.hover-text_primary-2.pseudo-class-hover,
+.hover-text_primary-1.pseudo-class-hover,
+.hover-text_primary-0.pseudo-class-hover,
+.hover-text_primary.pseudo-class-hover,
+.hover_primary-n5.pseudo-class-hover,
+.hover_primary-n4.pseudo-class-hover,
+.hover_primary-n3.pseudo-class-hover,
+.hover_primary-n2.pseudo-class-hover,
+.hover_primary-n1.pseudo-class-hover,
+.hover_primary-5.pseudo-class-hover,
+.hover_primary-4.pseudo-class-hover,
+.hover_primary-3.pseudo-class-hover,
+.hover_primary-2.pseudo-class-hover,
+.hover_primary-1.pseudo-class-hover,
+.hover_primary-0.pseudo-class-hover,
+.hover_primary.pseudo-class-hover {
+  cursor: pointer;
+}
+
 [type=text].pseudo-class-focus,
 [type=password].pseudo-class-focus,
 [type=date].pseudo-class-focus,
@@ -1009,6 +1252,982 @@ a.thumbnail.pseudo-class-focus {
   background-image: url("/assets/img/cross_disabled.png");
 }
 
+.hover_primary.pseudo-class-hover {
+  background-color: #198dae !important;
+}
+
+.hover_primary-0.pseudo-class-hover {
+  background-color: #198dae !important;
+}
+
+.hover_primary-1.pseudo-class-hover {
+  background-color: #3c9eba !important;
+}
+
+.hover_primary-2.pseudo-class-hover {
+  background-color: #6eb7cc !important;
+}
+
+.hover_primary-3.pseudo-class-hover {
+  background-color: #a3d1df !important;
+}
+
+.hover_primary-4.pseudo-class-hover {
+  background-color: #cce6ed !important;
+}
+
+.hover_primary-5.pseudo-class-hover {
+  background-color: #e8f4f7 !important;
+}
+
+.hover_primary-n1.pseudo-class-hover {
+  background-color: #177f9d !important;
+}
+
+.hover_primary-n2.pseudo-class-hover {
+  background-color: #136a83 !important;
+}
+
+.hover_primary-n3.pseudo-class-hover {
+  background-color: #0e4e60 !important;
+}
+
+.hover_primary-n4.pseudo-class-hover {
+  background-color: #0a3846 !important;
+}
+
+.hover_primary-n5.pseudo-class-hover {
+  background-color: #06232c !important;
+}
+
+.hover-text_primary.pseudo-class-hover {
+  color: #198dae !important;
+}
+
+.hover-text_primary-0.pseudo-class-hover {
+  color: #198dae !important;
+}
+
+.hover-text_primary-1.pseudo-class-hover {
+  color: #3c9eba !important;
+}
+
+.hover-text_primary-2.pseudo-class-hover {
+  color: #6eb7cc !important;
+}
+
+.hover-text_primary-3.pseudo-class-hover {
+  color: #a3d1df !important;
+}
+
+.hover-text_primary-4.pseudo-class-hover {
+  color: #cce6ed !important;
+}
+
+.hover-text_primary-5.pseudo-class-hover {
+  color: #e8f4f7 !important;
+}
+
+.hover-text_primary-n1.pseudo-class-hover {
+  color: #177f9d !important;
+}
+
+.hover-text_primary-n2.pseudo-class-hover {
+  color: #136a83 !important;
+}
+
+.hover-text_primary-n3.pseudo-class-hover {
+  color: #0e4e60 !important;
+}
+
+.hover-text_primary-n4.pseudo-class-hover {
+  color: #0a3846 !important;
+}
+
+.hover-text_primary-n5.pseudo-class-hover {
+  color: #06232c !important;
+}
+
+.hover_secondary.pseudo-class-hover {
+  background-color: #63646b !important;
+}
+
+.hover_secondary-0.pseudo-class-hover {
+  background-color: #63646b !important;
+}
+
+.hover_secondary-1.pseudo-class-hover {
+  background-color: #7a7b81 !important;
+}
+
+.hover_secondary-2.pseudo-class-hover {
+  background-color: #9d9da2 !important;
+}
+
+.hover_secondary-3.pseudo-class-hover {
+  background-color: #c1c1c4 !important;
+}
+
+.hover_secondary-4.pseudo-class-hover {
+  background-color: #ddddde !important;
+}
+
+.hover_secondary-5.pseudo-class-hover {
+  background-color: #eff0f0 !important;
+}
+
+.hover_secondary-n1.pseudo-class-hover {
+  background-color: #595a60 !important;
+}
+
+.hover_secondary-n2.pseudo-class-hover {
+  background-color: #4a4b50 !important;
+}
+
+.hover_secondary-n3.pseudo-class-hover {
+  background-color: #36373b !important;
+}
+
+.hover_secondary-n4.pseudo-class-hover {
+  background-color: #28282b !important;
+}
+
+.hover_secondary-n5.pseudo-class-hover {
+  background-color: #19191b !important;
+}
+
+.hover-text_secondary.pseudo-class-hover {
+  color: #63646b !important;
+}
+
+.hover-text_secondary-0.pseudo-class-hover {
+  color: #63646b !important;
+}
+
+.hover-text_secondary-1.pseudo-class-hover {
+  color: #7a7b81 !important;
+}
+
+.hover-text_secondary-2.pseudo-class-hover {
+  color: #9d9da2 !important;
+}
+
+.hover-text_secondary-3.pseudo-class-hover {
+  color: #c1c1c4 !important;
+}
+
+.hover-text_secondary-4.pseudo-class-hover {
+  color: #ddddde !important;
+}
+
+.hover-text_secondary-5.pseudo-class-hover {
+  color: #eff0f0 !important;
+}
+
+.hover-text_secondary-n1.pseudo-class-hover {
+  color: #595a60 !important;
+}
+
+.hover-text_secondary-n2.pseudo-class-hover {
+  color: #4a4b50 !important;
+}
+
+.hover-text_secondary-n3.pseudo-class-hover {
+  color: #36373b !important;
+}
+
+.hover-text_secondary-n4.pseudo-class-hover {
+  color: #28282b !important;
+}
+
+.hover-text_secondary-n5.pseudo-class-hover {
+  color: #19191b !important;
+}
+
+.hover_success.pseudo-class-hover {
+  background-color: #09911f !important;
+}
+
+.hover_success-0.pseudo-class-hover {
+  background-color: #09911f !important;
+}
+
+.hover_success-1.pseudo-class-hover {
+  background-color: #2ea241 !important;
+}
+
+.hover_success-2.pseudo-class-hover {
+  background-color: #64ba72 !important;
+}
+
+.hover_success-3.pseudo-class-hover {
+  background-color: #9dd3a5 !important;
+}
+
+.hover_success-4.pseudo-class-hover {
+  background-color: #c9e7ce !important;
+}
+
+.hover_success-5.pseudo-class-hover {
+  background-color: #e6f4e9 !important;
+}
+
+.hover_success-n1.pseudo-class-hover {
+  background-color: #08831c !important;
+}
+
+.hover_success-n2.pseudo-class-hover {
+  background-color: #076d17 !important;
+}
+
+.hover_success-n3.pseudo-class-hover {
+  background-color: #055011 !important;
+}
+
+.hover_success-n4.pseudo-class-hover {
+  background-color: #043a0c !important;
+}
+
+.hover_success-n5.pseudo-class-hover {
+  background-color: #022408 !important;
+}
+
+.hover-text_success.pseudo-class-hover {
+  color: #09911f !important;
+}
+
+.hover-text_success-0.pseudo-class-hover {
+  color: #09911f !important;
+}
+
+.hover-text_success-1.pseudo-class-hover {
+  color: #2ea241 !important;
+}
+
+.hover-text_success-2.pseudo-class-hover {
+  color: #64ba72 !important;
+}
+
+.hover-text_success-3.pseudo-class-hover {
+  color: #9dd3a5 !important;
+}
+
+.hover-text_success-4.pseudo-class-hover {
+  color: #c9e7ce !important;
+}
+
+.hover-text_success-5.pseudo-class-hover {
+  color: #e6f4e9 !important;
+}
+
+.hover-text_success-n1.pseudo-class-hover {
+  color: #08831c !important;
+}
+
+.hover-text_success-n2.pseudo-class-hover {
+  color: #076d17 !important;
+}
+
+.hover-text_success-n3.pseudo-class-hover {
+  color: #055011 !important;
+}
+
+.hover-text_success-n4.pseudo-class-hover {
+  color: #043a0c !important;
+}
+
+.hover-text_success-n5.pseudo-class-hover {
+  color: #022408 !important;
+}
+
+.hover_warning.pseudo-class-hover {
+  background-color: #e18725 !important;
+}
+
+.hover_warning-0.pseudo-class-hover {
+  background-color: #e18725 !important;
+}
+
+.hover_warning-1.pseudo-class-hover {
+  background-color: #e69946 !important;
+}
+
+.hover_warning-2.pseudo-class-hover {
+  background-color: #ecb376 !important;
+}
+
+.hover_warning-3.pseudo-class-hover {
+  background-color: #f3cfa8 !important;
+}
+
+.hover_warning-4.pseudo-class-hover {
+  background-color: #f8e5cf !important;
+}
+
+.hover_warning-5.pseudo-class-hover {
+  background-color: #fcf3e9 !important;
+}
+
+.hover_warning-n1.pseudo-class-hover {
+  background-color: #cb7a21 !important;
+}
+
+.hover_warning-n2.pseudo-class-hover {
+  background-color: #a9651c !important;
+}
+
+.hover_warning-n3.pseudo-class-hover {
+  background-color: #7c4a14 !important;
+}
+
+.hover_warning-n4.pseudo-class-hover {
+  background-color: #5a360f !important;
+}
+
+.hover_warning-n5.pseudo-class-hover {
+  background-color: #382209 !important;
+}
+
+.hover-text_warning.pseudo-class-hover {
+  color: #e18725 !important;
+}
+
+.hover-text_warning-0.pseudo-class-hover {
+  color: #e18725 !important;
+}
+
+.hover-text_warning-1.pseudo-class-hover {
+  color: #e69946 !important;
+}
+
+.hover-text_warning-2.pseudo-class-hover {
+  color: #ecb376 !important;
+}
+
+.hover-text_warning-3.pseudo-class-hover {
+  color: #f3cfa8 !important;
+}
+
+.hover-text_warning-4.pseudo-class-hover {
+  color: #f8e5cf !important;
+}
+
+.hover-text_warning-5.pseudo-class-hover {
+  color: #fcf3e9 !important;
+}
+
+.hover-text_warning-n1.pseudo-class-hover {
+  color: #cb7a21 !important;
+}
+
+.hover-text_warning-n2.pseudo-class-hover {
+  color: #a9651c !important;
+}
+
+.hover-text_warning-n3.pseudo-class-hover {
+  color: #7c4a14 !important;
+}
+
+.hover-text_warning-n4.pseudo-class-hover {
+  color: #5a360f !important;
+}
+
+.hover-text_warning-n5.pseudo-class-hover {
+  color: #382209 !important;
+}
+
+.hover_alert.pseudo-class-hover {
+  background-color: #cb241c !important;
+}
+
+.hover_alert-0.pseudo-class-hover {
+  background-color: #cb241c !important;
+}
+
+.hover_alert-1.pseudo-class-hover {
+  background-color: #d3453e !important;
+}
+
+.hover_alert-2.pseudo-class-hover {
+  background-color: #de7570 !important;
+}
+
+.hover_alert-3.pseudo-class-hover {
+  background-color: #eaa7a4 !important;
+}
+
+.hover_alert-4.pseudo-class-hover {
+  background-color: #f4cfcd !important;
+}
+
+.hover_alert-5.pseudo-class-hover {
+  background-color: #fae9e8 !important;
+}
+
+.hover_alert-n1.pseudo-class-hover {
+  background-color: #b72019 !important;
+}
+
+.hover_alert-n2.pseudo-class-hover {
+  background-color: #981b15 !important;
+}
+
+.hover_alert-n3.pseudo-class-hover {
+  background-color: #70140f !important;
+}
+
+.hover_alert-n4.pseudo-class-hover {
+  background-color: #510e0b !important;
+}
+
+.hover_alert-n5.pseudo-class-hover {
+  background-color: #330907 !important;
+}
+
+.hover-text_alert.pseudo-class-hover {
+  color: #cb241c !important;
+}
+
+.hover-text_alert-0.pseudo-class-hover {
+  color: #cb241c !important;
+}
+
+.hover-text_alert-1.pseudo-class-hover {
+  color: #d3453e !important;
+}
+
+.hover-text_alert-2.pseudo-class-hover {
+  color: #de7570 !important;
+}
+
+.hover-text_alert-3.pseudo-class-hover {
+  color: #eaa7a4 !important;
+}
+
+.hover-text_alert-4.pseudo-class-hover {
+  color: #f4cfcd !important;
+}
+
+.hover-text_alert-5.pseudo-class-hover {
+  color: #fae9e8 !important;
+}
+
+.hover-text_alert-n1.pseudo-class-hover {
+  color: #b72019 !important;
+}
+
+.hover-text_alert-n2.pseudo-class-hover {
+  color: #981b15 !important;
+}
+
+.hover-text_alert-n3.pseudo-class-hover {
+  color: #70140f !important;
+}
+
+.hover-text_alert-n4.pseudo-class-hover {
+  color: #510e0b !important;
+}
+
+.hover-text_alert-n5.pseudo-class-hover {
+  color: #330907 !important;
+}
+
+.hover_navigation.pseudo-class-hover {
+  background-color: #4f74bf !important;
+}
+
+.hover_navigation-0.pseudo-class-hover {
+  background-color: #4f74bf !important;
+}
+
+.hover_navigation-1.pseudo-class-hover {
+  background-color: #6989c9 !important;
+}
+
+.hover_navigation-2.pseudo-class-hover {
+  background-color: #90a7d7 !important;
+}
+
+.hover_navigation-3.pseudo-class-hover {
+  background-color: #b9c7e5 !important;
+}
+
+.hover_navigation-4.pseudo-class-hover {
+  background-color: #d8e0f1 !important;
+}
+
+.hover_navigation-5.pseudo-class-hover {
+  background-color: #edf1f9 !important;
+}
+
+.hover_navigation-n1.pseudo-class-hover {
+  background-color: #4768ac !important;
+}
+
+.hover_navigation-n2.pseudo-class-hover {
+  background-color: #3b578f !important;
+}
+
+.hover_navigation-n3.pseudo-class-hover {
+  background-color: #2b4069 !important;
+}
+
+.hover_navigation-n4.pseudo-class-hover {
+  background-color: #202e4c !important;
+}
+
+.hover_navigation-n5.pseudo-class-hover {
+  background-color: #141d30 !important;
+}
+
+.hover-text_navigation.pseudo-class-hover {
+  color: #4f74bf !important;
+}
+
+.hover-text_navigation-0.pseudo-class-hover {
+  color: #4f74bf !important;
+}
+
+.hover-text_navigation-1.pseudo-class-hover {
+  color: #6989c9 !important;
+}
+
+.hover-text_navigation-2.pseudo-class-hover {
+  color: #90a7d7 !important;
+}
+
+.hover-text_navigation-3.pseudo-class-hover {
+  color: #b9c7e5 !important;
+}
+
+.hover-text_navigation-4.pseudo-class-hover {
+  color: #d8e0f1 !important;
+}
+
+.hover-text_navigation-5.pseudo-class-hover {
+  color: #edf1f9 !important;
+}
+
+.hover-text_navigation-n1.pseudo-class-hover {
+  color: #4768ac !important;
+}
+
+.hover-text_navigation-n2.pseudo-class-hover {
+  color: #3b578f !important;
+}
+
+.hover-text_navigation-n3.pseudo-class-hover {
+  color: #2b4069 !important;
+}
+
+.hover-text_navigation-n4.pseudo-class-hover {
+  color: #202e4c !important;
+}
+
+.hover-text_navigation-n5.pseudo-class-hover {
+  color: #141d30 !important;
+}
+
+.hover_selected.pseudo-class-hover {
+  background-color: #509f6c !important;
+}
+
+.hover_selected-0.pseudo-class-hover {
+  background-color: #509f6c !important;
+}
+
+.hover_selected-1.pseudo-class-hover {
+  background-color: #6aad82 !important;
+}
+
+.hover_selected-2.pseudo-class-hover {
+  background-color: #91c3a2 !important;
+}
+
+.hover_selected-3.pseudo-class-hover {
+  background-color: #b9d9c4 !important;
+}
+
+.hover_selected-4.pseudo-class-hover {
+  background-color: #d9eadf !important;
+}
+
+.hover_selected-5.pseudo-class-hover {
+  background-color: #eef5f0 !important;
+}
+
+.hover_selected-n1.pseudo-class-hover {
+  background-color: #488f61 !important;
+}
+
+.hover_selected-n2.pseudo-class-hover {
+  background-color: #3c7751 !important;
+}
+
+.hover_selected-n3.pseudo-class-hover {
+  background-color: #2c573b !important;
+}
+
+.hover_selected-n4.pseudo-class-hover {
+  background-color: #20402b !important;
+}
+
+.hover_selected-n5.pseudo-class-hover {
+  background-color: #14281b !important;
+}
+
+.hover-text_selected.pseudo-class-hover {
+  color: #509f6c !important;
+}
+
+.hover-text_selected-0.pseudo-class-hover {
+  color: #509f6c !important;
+}
+
+.hover-text_selected-1.pseudo-class-hover {
+  color: #6aad82 !important;
+}
+
+.hover-text_selected-2.pseudo-class-hover {
+  color: #91c3a2 !important;
+}
+
+.hover-text_selected-3.pseudo-class-hover {
+  color: #b9d9c4 !important;
+}
+
+.hover-text_selected-4.pseudo-class-hover {
+  color: #d9eadf !important;
+}
+
+.hover-text_selected-5.pseudo-class-hover {
+  color: #eef5f0 !important;
+}
+
+.hover-text_selected-n1.pseudo-class-hover {
+  color: #488f61 !important;
+}
+
+.hover-text_selected-n2.pseudo-class-hover {
+  color: #3c7751 !important;
+}
+
+.hover-text_selected-n3.pseudo-class-hover {
+  color: #2c573b !important;
+}
+
+.hover-text_selected-n4.pseudo-class-hover {
+  color: #20402b !important;
+}
+
+.hover-text_selected-n5.pseudo-class-hover {
+  color: #14281b !important;
+}
+
+.hover_info.pseudo-class-hover {
+  background-color: #735dba !important;
+}
+
+.hover_info-0.pseudo-class-hover {
+  background-color: #735dba !important;
+}
+
+.hover_info-1.pseudo-class-hover {
+  background-color: #8875c4 !important;
+}
+
+.hover_info-2.pseudo-class-hover {
+  background-color: #a799d4 !important;
+}
+
+.hover_info-3.pseudo-class-hover {
+  background-color: #c7bee3 !important;
+}
+
+.hover_info-4.pseudo-class-hover {
+  background-color: #e0dbf0 !important;
+}
+
+.hover_info-5.pseudo-class-hover {
+  background-color: #f1eff8 !important;
+}
+
+.hover_info-n1.pseudo-class-hover {
+  background-color: #6854a7 !important;
+}
+
+.hover_info-n2.pseudo-class-hover {
+  background-color: #56468c !important;
+}
+
+.hover_info-n3.pseudo-class-hover {
+  background-color: #3f3366 !important;
+}
+
+.hover_info-n4.pseudo-class-hover {
+  background-color: #2e254a !important;
+}
+
+.hover_info-n5.pseudo-class-hover {
+  background-color: #1d172f !important;
+}
+
+.hover-text_info.pseudo-class-hover {
+  color: #735dba !important;
+}
+
+.hover-text_info-0.pseudo-class-hover {
+  color: #735dba !important;
+}
+
+.hover-text_info-1.pseudo-class-hover {
+  color: #8875c4 !important;
+}
+
+.hover-text_info-2.pseudo-class-hover {
+  color: #a799d4 !important;
+}
+
+.hover-text_info-3.pseudo-class-hover {
+  color: #c7bee3 !important;
+}
+
+.hover-text_info-4.pseudo-class-hover {
+  color: #e0dbf0 !important;
+}
+
+.hover-text_info-5.pseudo-class-hover {
+  color: #f1eff8 !important;
+}
+
+.hover-text_info-n1.pseudo-class-hover {
+  color: #6854a7 !important;
+}
+
+.hover-text_info-n2.pseudo-class-hover {
+  color: #56468c !important;
+}
+
+.hover-text_info-n3.pseudo-class-hover {
+  color: #3f3366 !important;
+}
+
+.hover-text_info-n4.pseudo-class-hover {
+  color: #2e254a !important;
+}
+
+.hover-text_info-n5.pseudo-class-hover {
+  color: #1d172f !important;
+}
+
+.hover_hightlight.pseudo-class-hover {
+  background-color: #c45e99 !important;
+}
+
+.hover_hightlight-0.pseudo-class-hover {
+  background-color: #c45e99 !important;
+}
+
+.hover_hightlight-1.pseudo-class-hover {
+  background-color: #cd76a8 !important;
+}
+
+.hover_hightlight-2.pseudo-class-hover {
+  background-color: #da9abf !important;
+}
+
+.hover_hightlight-3.pseudo-class-hover {
+  background-color: #e7bfd6 !important;
+}
+
+.hover_hightlight-4.pseudo-class-hover {
+  background-color: #f2dce9 !important;
+}
+
+.hover_hightlight-5.pseudo-class-hover {
+  background-color: #f9eff5 !important;
+}
+
+.hover_hightlight-n1.pseudo-class-hover {
+  background-color: #b0558a !important;
+}
+
+.hover_hightlight-n2.pseudo-class-hover {
+  background-color: #934773 !important;
+}
+
+.hover_hightlight-n3.pseudo-class-hover {
+  background-color: #6c3454 !important;
+}
+
+.hover_hightlight-n4.pseudo-class-hover {
+  background-color: #4e263d !important;
+}
+
+.hover_hightlight-n5.pseudo-class-hover {
+  background-color: #311826 !important;
+}
+
+.hover-text_hightlight.pseudo-class-hover {
+  color: #c45e99 !important;
+}
+
+.hover-text_hightlight-0.pseudo-class-hover {
+  color: #c45e99 !important;
+}
+
+.hover-text_hightlight-1.pseudo-class-hover {
+  color: #cd76a8 !important;
+}
+
+.hover-text_hightlight-2.pseudo-class-hover {
+  color: #da9abf !important;
+}
+
+.hover-text_hightlight-3.pseudo-class-hover {
+  color: #e7bfd6 !important;
+}
+
+.hover-text_hightlight-4.pseudo-class-hover {
+  color: #f2dce9 !important;
+}
+
+.hover-text_hightlight-5.pseudo-class-hover {
+  color: #f9eff5 !important;
+}
+
+.hover-text_hightlight-n1.pseudo-class-hover {
+  color: #b0558a !important;
+}
+
+.hover-text_hightlight-n2.pseudo-class-hover {
+  color: #934773 !important;
+}
+
+.hover-text_hightlight-n3.pseudo-class-hover {
+  color: #6c3454 !important;
+}
+
+.hover-text_hightlight-n4.pseudo-class-hover {
+  color: #4e263d !important;
+}
+
+.hover-text_hightlight-n5.pseudo-class-hover {
+  color: #311826 !important;
+}
+
+.hover_acc.pseudo-class-hover {
+  background-color: #00386b !important;
+}
+
+.hover_acc-0.pseudo-class-hover {
+  background-color: #00386b !important;
+}
+
+.hover_acc-1.pseudo-class-hover {
+  background-color: #265681 !important;
+}
+
+.hover_acc-2.pseudo-class-hover {
+  background-color: #5e82a2 !important;
+}
+
+.hover_acc-3.pseudo-class-hover {
+  background-color: #99afc4 !important;
+}
+
+.hover_acc-4.pseudo-class-hover {
+  background-color: #c7d3de !important;
+}
+
+.hover_acc-5.pseudo-class-hover {
+  background-color: #e6ebf0 !important;
+}
+
+.hover_acc-n1.pseudo-class-hover {
+  background-color: #003260 !important;
+}
+
+.hover_acc-n2.pseudo-class-hover {
+  background-color: #002a50 !important;
+}
+
+.hover_acc-n3.pseudo-class-hover {
+  background-color: #001f3b !important;
+}
+
+.hover_acc-n4.pseudo-class-hover {
+  background-color: #00162b !important;
+}
+
+.hover_acc-n5.pseudo-class-hover {
+  background-color: #000e1b !important;
+}
+
+.hover-text_acc.pseudo-class-hover {
+  color: #00386b !important;
+}
+
+.hover-text_acc-0.pseudo-class-hover {
+  color: #00386b !important;
+}
+
+.hover-text_acc-1.pseudo-class-hover {
+  color: #265681 !important;
+}
+
+.hover-text_acc-2.pseudo-class-hover {
+  color: #5e82a2 !important;
+}
+
+.hover-text_acc-3.pseudo-class-hover {
+  color: #99afc4 !important;
+}
+
+.hover-text_acc-4.pseudo-class-hover {
+  color: #c7d3de !important;
+}
+
+.hover-text_acc-5.pseudo-class-hover {
+  color: #e6ebf0 !important;
+}
+
+.hover-text_acc-n1.pseudo-class-hover {
+  color: #003260 !important;
+}
+
+.hover-text_acc-n2.pseudo-class-hover {
+  color: #002a50 !important;
+}
+
+.hover-text_acc-n3.pseudo-class-hover {
+  color: #001f3b !important;
+}
+
+.hover-text_acc-n4.pseudo-class-hover {
+  color: #00162b !important;
+}
+
+.hover-text_acc-n5.pseudo-class-hover {
+  color: #000e1b !important;
+}
+
+.hover-text_white.pseudo-class-hover {
+  color: white;
+}
+
+.hover-text_black.pseudo-class-hover {
+  color: black;
+}
+
+.hover_underline.pseudo-class-hover {
+  text-decoration: none;
+}
+
 .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
   color: #0a0a0a;
+}
+
+.hover_opacity.pseudo-class-hover {
+  opacity: 1;
 }

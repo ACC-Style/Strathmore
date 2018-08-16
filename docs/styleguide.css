@@ -103,6 +103,10 @@ html {
 /**
 * Foundation for Sites Settings END
  */
+.hover-text_acc-n5:hover, .hover-text_acc-n4:hover, .hover-text_acc-n3:hover, .hover-text_acc-n2:hover, .hover-text_acc-n1:hover, .hover-text_acc-5:hover, .hover-text_acc-4:hover, .hover-text_acc-3:hover, .hover-text_acc-2:hover, .hover-text_acc-1:hover, .hover-text_acc-0:hover, .hover-text_acc:hover, .hover_acc-n5:hover, .hover_acc-n4:hover, .hover_acc-n3:hover, .hover_acc-n2:hover, .hover_acc-n1:hover, .hover_acc-5:hover, .hover_acc-4:hover, .hover_acc-3:hover, .hover_acc-2:hover, .hover_acc-1:hover, .hover_acc-0:hover, .hover_acc:hover, .hover-text_hightlight-n5:hover, .hover-text_hightlight-n4:hover, .hover-text_hightlight-n3:hover, .hover-text_hightlight-n2:hover, .hover-text_hightlight-n1:hover, .hover-text_hightlight-5:hover, .hover-text_hightlight-4:hover, .hover-text_hightlight-3:hover, .hover-text_hightlight-2:hover, .hover-text_hightlight-1:hover, .hover-text_hightlight-0:hover, .hover-text_hightlight:hover, .hover_hightlight-n5:hover, .hover_hightlight-n4:hover, .hover_hightlight-n3:hover, .hover_hightlight-n2:hover, .hover_hightlight-n1:hover, .hover_hightlight-5:hover, .hover_hightlight-4:hover, .hover_hightlight-3:hover, .hover_hightlight-2:hover, .hover_hightlight-1:hover, .hover_hightlight-0:hover, .hover_hightlight:hover, .hover-text_info-n5:hover, .hover-text_info-n4:hover, .hover-text_info-n3:hover, .hover-text_info-n2:hover, .hover-text_info-n1:hover, .hover-text_info-5:hover, .hover-text_info-4:hover, .hover-text_info-3:hover, .hover-text_info-2:hover, .hover-text_info-1:hover, .hover-text_info-0:hover, .hover-text_info:hover, .hover_info-n5:hover, .hover_info-n4:hover, .hover_info-n3:hover, .hover_info-n2:hover, .hover_info-n1:hover, .hover_info-5:hover, .hover_info-4:hover, .hover_info-3:hover, .hover_info-2:hover, .hover_info-1:hover, .hover_info-0:hover, .hover_info:hover, .hover-text_selected-n5:hover, .hover-text_selected-n4:hover, .hover-text_selected-n3:hover, .hover-text_selected-n2:hover, .hover-text_selected-n1:hover, .hover-text_selected-5:hover, .hover-text_selected-4:hover, .hover-text_selected-3:hover, .hover-text_selected-2:hover, .hover-text_selected-1:hover, .hover-text_selected-0:hover, .hover-text_selected:hover, .hover_selected-n5:hover, .hover_selected-n4:hover, .hover_selected-n3:hover, .hover_selected-n2:hover, .hover_selected-n1:hover, .hover_selected-5:hover, .hover_selected-4:hover, .hover_selected-3:hover, .hover_selected-2:hover, .hover_selected-1:hover, .hover_selected-0:hover, .hover_selected:hover, .hover-text_navigation-n5:hover, .hover-text_navigation-n4:hover, .hover-text_navigation-n3:hover, .hover-text_navigation-n2:hover, .hover-text_navigation-n1:hover, .hover-text_navigation-5:hover, .hover-text_navigation-4:hover, .hover-text_navigation-3:hover, .hover-text_navigation-2:hover, .hover-text_navigation-1:hover, .hover-text_navigation-0:hover, .hover-text_navigation:hover, .hover_navigation-n5:hover, .hover_navigation-n4:hover, .hover_navigation-n3:hover, .hover_navigation-n2:hover, .hover_navigation-n1:hover, .hover_navigation-5:hover, .hover_navigation-4:hover, .hover_navigation-3:hover, .hover_navigation-2:hover, .hover_navigation-1:hover, .hover_navigation-0:hover, .hover_navigation:hover, .hover-text_alert-n5:hover, .hover-text_alert-n4:hover, .hover-text_alert-n3:hover, .hover-text_alert-n2:hover, .hover-text_alert-n1:hover, .hover-text_alert-5:hover, .hover-text_alert-4:hover, .hover-text_alert-3:hover, .hover-text_alert-2:hover, .hover-text_alert-1:hover, .hover-text_alert-0:hover, .hover-text_alert:hover, .hover_alert-n5:hover, .hover_alert-n4:hover, .hover_alert-n3:hover, .hover_alert-n2:hover, .hover_alert-n1:hover, .hover_alert-5:hover, .hover_alert-4:hover, .hover_alert-3:hover, .hover_alert-2:hover, .hover_alert-1:hover, .hover_alert-0:hover, .hover_alert:hover, .hover-text_warning-n5:hover, .hover-text_warning-n4:hover, .hover-text_warning-n3:hover, .hover-text_warning-n2:hover, .hover-text_warning-n1:hover, .hover-text_warning-5:hover, .hover-text_warning-4:hover, .hover-text_warning-3:hover, .hover-text_warning-2:hover, .hover-text_warning-1:hover, .hover-text_warning-0:hover, .hover-text_warning:hover, .hover_warning-n5:hover, .hover_warning-n4:hover, .hover_warning-n3:hover, .hover_warning-n2:hover, .hover_warning-n1:hover, .hover_warning-5:hover, .hover_warning-4:hover, .hover_warning-3:hover, .hover_warning-2:hover, .hover_warning-1:hover, .hover_warning-0:hover, .hover_warning:hover, .hover-text_success-n5:hover, .hover-text_success-n4:hover, .hover-text_success-n3:hover, .hover-text_success-n2:hover, .hover-text_success-n1:hover, .hover-text_success-5:hover, .hover-text_success-4:hover, .hover-text_success-3:hover, .hover-text_success-2:hover, .hover-text_success-1:hover, .hover-text_success-0:hover, .hover-text_success:hover, .hover_success-n5:hover, .hover_success-n4:hover, .hover_success-n3:hover, .hover_success-n2:hover, .hover_success-n1:hover, .hover_success-5:hover, .hover_success-4:hover, .hover_success-3:hover, .hover_success-2:hover, .hover_success-1:hover, .hover_success-0:hover, .hover_success:hover, .hover-text_secondary-n5:hover, .hover-text_secondary-n4:hover, .hover-text_secondary-n3:hover, .hover-text_secondary-n2:hover, .hover-text_secondary-n1:hover, .hover-text_secondary-5:hover, .hover-text_secondary-4:hover, .hover-text_secondary-3:hover, .hover-text_secondary-2:hover, .hover-text_secondary-1:hover, .hover-text_secondary-0:hover, .hover-text_secondary:hover, .hover_secondary-n5:hover, .hover_secondary-n4:hover, .hover_secondary-n3:hover, .hover_secondary-n2:hover, .hover_secondary-n1:hover, .hover_secondary-5:hover, .hover_secondary-4:hover, .hover_secondary-3:hover, .hover_secondary-2:hover, .hover_secondary-1:hover, .hover_secondary-0:hover, .hover_secondary:hover, .hover-text_primary-n5:hover, .hover-text_primary-n4:hover, .hover-text_primary-n3:hover, .hover-text_primary-n2:hover, .hover-text_primary-n1:hover, .hover-text_primary-5:hover, .hover-text_primary-4:hover, .hover-text_primary-3:hover, .hover-text_primary-2:hover, .hover-text_primary-1:hover, .hover-text_primary-0:hover, .hover-text_primary:hover, .hover_primary-n5:hover, .hover_primary-n4:hover, .hover_primary-n3:hover, .hover_primary-n2:hover, .hover_primary-n1:hover, .hover_primary-5:hover, .hover_primary-4:hover, .hover_primary-3:hover, .hover_primary-2:hover, .hover_primary-1:hover, .hover_primary-0:hover, .hover_primary:hover {
+  cursor: pointer;
+}
+
 /**
 * Strathmore
  * Foundation for Sites by ZURB
@@ -6981,7 +6985,6 @@ markup:
 }
 .button.shadow {
   box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
-  transition: box-shadow ease-out 0.25s;
 }
 .button.shadow:hover {
   box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
@@ -7120,7 +7123,7 @@ sg-wrapper:
 }
 
 .quicklinks__item {
-  border-right: 1px solid #1da3c9;
+  border-right: 1px solid #1faed7;
   padding: 0 2px;
 }
 .quicklinks__item:last-child {
@@ -7185,17 +7188,19 @@ Utility CSS
 
   markup:
   <div class="grid-x">
-    <div class="{$modifiers}-5 cell auto text-center  padding_2">5</div>
-    <div class="{$modifiers}-4 cell auto text-center  padding_2">4</div>
-    <div class="{$modifiers}-3 cell auto text-center  padding_2">3</div>
-    <div class="{$modifiers}-2 cell auto text-center  padding_2">2</div>
-    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2">1</div>
-    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2">0</div>
-    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2">n1</div>
-    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2">n2</div>
-    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2">n3</div>
-    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2">n4</div>
-    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2">n5</div>
+    <div class="back_white cell auto text-center padding_2 padding-top_5 padding-bottom_5 ">white</div>
+    <div class="{$modifiers}-5 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">5</div>
+    <div class="{$modifiers}-4 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">4</div>
+    <div class="{$modifiers}-3 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">3</div>
+    <div class="{$modifiers}-2 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">2</div>
+    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">1</div>
+    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n5</div>
+    <div class="back_black cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">black</div>
   </div>
 
  
@@ -7211,19 +7216,19 @@ Utility CSS
 }
 
 .back_primary-1 {
-  background-color: #3098b6 !important;
+  background-color: #3c9eba !important;
 }
 
 .back_primary-2 {
-  background-color: #5eafc6 !important;
+  background-color: #6eb7cc !important;
 }
 
 .back_primary-3 {
-  background-color: #8cc6d7 !important;
+  background-color: #a3d1df !important;
 }
 
 .back_primary-4 {
-  background-color: #badde7 !important;
+  background-color: #cce6ed !important;
 }
 
 .back_primary-5 {
@@ -7235,19 +7240,19 @@ Utility CSS
 }
 
 .back_primary-n2 {
-  background-color: #12637a !important;
+  background-color: #136a83 !important;
 }
 
 .back_primary-n3 {
-  background-color: #0d4757 !important;
+  background-color: #0e4e60 !important;
 }
 
 .back_primary-n4 {
-  background-color: #082a34 !important;
+  background-color: #0a3846 !important;
 }
 
 .back_primary-n5 {
-  background-color: #030e11 !important;
+  background-color: #06232c !important;
 }
 
 .back_secondary {
@@ -7259,19 +7264,19 @@ Utility CSS
 }
 
 .back_secondary-1 {
-  background-color: #73747a !important;
+  background-color: #7a7b81 !important;
 }
 
 .back_secondary-2 {
-  background-color: #929397 !important;
+  background-color: #9d9da2 !important;
 }
 
 .back_secondary-3, .pagination-previous, .pagination-next {
-  background-color: #b1b2b5 !important;
+  background-color: #c1c1c4 !important;
 }
 
 .back_secondary-4 {
-  background-color: #d0d1d3 !important;
+  background-color: #ddddde !important;
 }
 
 .back_secondary-5 {
@@ -7283,19 +7288,19 @@ Utility CSS
 }
 
 .back_secondary-n2 {
-  background-color: #45464b !important;
+  background-color: #4a4b50 !important;
 }
 
 .back_secondary-n3 {
-  background-color: #323236 !important;
+  background-color: #36373b !important;
 }
 
 .back_secondary-n4 {
-  background-color: #1e1e20 !important;
+  background-color: #28282b !important;
 }
 
 .back_secondary-n5 {
-  background-color: #0a0a0b !important;
+  background-color: #19191b !important;
 }
 
 .back_success {
@@ -7307,19 +7312,19 @@ Utility CSS
 }
 
 .back_success-1 {
-  background-color: #229c35 !important;
+  background-color: #2ea241 !important;
 }
 
 .back_success-2 {
-  background-color: #53b262 !important;
+  background-color: #64ba72 !important;
 }
 
 .back_success-3 {
-  background-color: #84c88f !important;
+  background-color: #9dd3a5 !important;
 }
 
 .back_success-4 {
-  background-color: #b5debc !important;
+  background-color: #c9e7ce !important;
 }
 
 .back_success-5 {
@@ -7331,19 +7336,19 @@ Utility CSS
 }
 
 .back_success-n2 {
-  background-color: #066616 !important;
+  background-color: #076d17 !important;
 }
 
 .back_success-n3 {
-  background-color: #054910 !important;
+  background-color: #055011 !important;
 }
 
 .back_success-n4 {
-  background-color: #032c09 !important;
+  background-color: #043a0c !important;
 }
 
 .back_success-n5 {
-  background-color: #010f03 !important;
+  background-color: #022408 !important;
 }
 
 .back_warning {
@@ -7355,19 +7360,19 @@ Utility CSS
 }
 
 .back_warning-1 {
-  background-color: #e4933b !important;
+  background-color: #e69946 !important;
 }
 
 .back_warning-2 {
-  background-color: #eaab66 !important;
+  background-color: #ecb376 !important;
 }
 
 .back_warning-3 {
-  background-color: #f0c392 !important;
+  background-color: #f3cfa8 !important;
 }
 
 .back_warning-4 {
-  background-color: #f6dbbe !important;
+  background-color: #f8e5cf !important;
 }
 
 .back_warning-5 {
@@ -7379,19 +7384,19 @@ Utility CSS
 }
 
 .back_warning-n2 {
-  background-color: #9e5f1a !important;
+  background-color: #a9651c !important;
 }
 
 .back_warning-n3 {
-  background-color: #714413 !important;
+  background-color: #7c4a14 !important;
 }
 
 .back_warning-n4 {
-  background-color: #44290b !important;
+  background-color: #5a360f !important;
 }
 
 .back_warning-n5 {
-  background-color: #170e04 !important;
+  background-color: #382209 !important;
 }
 
 .back_alert {
@@ -7403,19 +7408,19 @@ Utility CSS
 }
 
 .back_alert-1 {
-  background-color: #d03a33 !important;
+  background-color: #d3453e !important;
 }
 
 .back_alert-2 {
-  background-color: #db6660 !important;
+  background-color: #de7570 !important;
 }
 
 .back_alert-3 {
-  background-color: #e5928e !important;
+  background-color: #eaa7a4 !important;
 }
 
 .back_alert-4 {
-  background-color: #efbdbb !important;
+  background-color: #f4cfcd !important;
 }
 
 .back_alert-5 {
@@ -7427,19 +7432,19 @@ Utility CSS
 }
 
 .back_alert-n2 {
-  background-color: #8e1914 !important;
+  background-color: #981b15 !important;
 }
 
 .back_alert-n3 {
-  background-color: #66120e !important;
+  background-color: #70140f !important;
 }
 
 .back_alert-n4 {
-  background-color: #3d0b08 !important;
+  background-color: #510e0b !important;
 }
 
 .back_alert-n5 {
-  background-color: #140403 !important;
+  background-color: #330907 !important;
 }
 
 .back_navigation {
@@ -7451,19 +7456,19 @@ Utility CSS
 }
 
 .back_navigation-1 {
-  background-color: #6182c5 !important;
+  background-color: #6989c9 !important;
 }
 
 .back_navigation-2 {
-  background-color: #849ed2 !important;
+  background-color: #90a7d7 !important;
 }
 
 .back_navigation-3 {
-  background-color: #a7badf !important;
+  background-color: #b9c7e5 !important;
 }
 
 .back_navigation-4 {
-  background-color: #cad5ec !important;
+  background-color: #d8e0f1 !important;
 }
 
 .back_navigation-5 {
@@ -7475,19 +7480,19 @@ Utility CSS
 }
 
 .back_navigation-n2 {
-  background-color: #375186 !important;
+  background-color: #3b578f !important;
 }
 
 .back_navigation-n3 {
-  background-color: #283a60 !important;
+  background-color: #2b4069 !important;
 }
 
 .back_navigation-n4 {
-  background-color: #182339 !important;
+  background-color: #202e4c !important;
 }
 
 .back_navigation-n5 {
-  background-color: #080c13 !important;
+  background-color: #141d30 !important;
 }
 
 .back_selected {
@@ -7499,19 +7504,19 @@ Utility CSS
 }
 
 .back_selected-1 {
-  background-color: #62a97b !important;
+  background-color: #6aad82 !important;
 }
 
 .back_selected-2 {
-  background-color: #85bc98 !important;
+  background-color: #91c3a2 !important;
 }
 
 .back_selected-3 {
-  background-color: #a8cfb6 !important;
+  background-color: #b9d9c4 !important;
 }
 
 .back_selected-4 {
-  background-color: #cbe2d3 !important;
+  background-color: #d9eadf !important;
 }
 
 .back_selected-5 {
@@ -7523,19 +7528,19 @@ Utility CSS
 }
 
 .back_selected-n2 {
-  background-color: #386f4c !important;
+  background-color: #3c7751 !important;
 }
 
 .back_selected-n3 {
-  background-color: #285036 !important;
+  background-color: #2c573b !important;
 }
 
 .back_selected-n4 {
-  background-color: #183020 !important;
+  background-color: #20402b !important;
 }
 
 .back_selected-n5 {
-  background-color: #08100b !important;
+  background-color: #14281b !important;
 }
 
 .back_info {
@@ -7547,19 +7552,19 @@ Utility CSS
 }
 
 .back_info-1 {
-  background-color: #816dc1 !important;
+  background-color: #8875c4 !important;
 }
 
 .back_info-2 {
-  background-color: #9d8ecf !important;
+  background-color: #a799d4 !important;
 }
 
 .back_info-3 {
-  background-color: #b9aedd !important;
+  background-color: #c7bee3 !important;
 }
 
 .back_info-4 {
-  background-color: #d5ceea !important;
+  background-color: #e0dbf0 !important;
 }
 
 .back_info-5 {
@@ -7571,19 +7576,19 @@ Utility CSS
 }
 
 .back_info-n2 {
-  background-color: #514182 !important;
+  background-color: #56468c !important;
 }
 
 .back_info-n3 {
-  background-color: #3a2f5d !important;
+  background-color: #3f3366 !important;
 }
 
 .back_info-n4 {
-  background-color: #231c38 !important;
+  background-color: #2e254a !important;
 }
 
 .back_info-n5 {
-  background-color: #0c0913 !important;
+  background-color: #1d172f !important;
 }
 
 .back_hightlight {
@@ -7595,19 +7600,19 @@ Utility CSS
 }
 
 .back_hightlight-1 {
-  background-color: #ca6ea3 !important;
+  background-color: #cd76a8 !important;
 }
 
 .back_hightlight-2 {
-  background-color: #d68eb8 !important;
+  background-color: #da9abf !important;
 }
 
 .back_hightlight-3 {
-  background-color: #e2afcc !important;
+  background-color: #e7bfd6 !important;
 }
 
 .back_hightlight-4 {
-  background-color: #edcfe0 !important;
+  background-color: #f2dce9 !important;
 }
 
 .back_hightlight-5 {
@@ -7619,19 +7624,19 @@ Utility CSS
 }
 
 .back_hightlight-n2 {
-  background-color: #89426b !important;
+  background-color: #934773 !important;
 }
 
 .back_hightlight-n3 {
-  background-color: #622f4d !important;
+  background-color: #6c3454 !important;
 }
 
 .back_hightlight-n4 {
-  background-color: #3b1c2e !important;
+  background-color: #4e263d !important;
 }
 
 .back_hightlight-n5 {
-  background-color: #14090f !important;
+  background-color: #311826 !important;
 }
 
 .back_acc {
@@ -7643,19 +7648,19 @@ Utility CSS
 }
 
 .back_acc-1 {
-  background-color: #1a4c7a !important;
+  background-color: #265681 !important;
 }
 
 .back_acc-2 {
-  background-color: #4d7497 !important;
+  background-color: #5e82a2 !important;
 }
 
 .back_acc-3 {
-  background-color: #809cb5 !important;
+  background-color: #99afc4 !important;
 }
 
 .back_acc-4 {
-  background-color: #b3c3d3 !important;
+  background-color: #c7d3de !important;
 }
 
 .back_acc-5 {
@@ -7667,48 +7672,36 @@ Utility CSS
 }
 
 .back_acc-n2 {
-  background-color: #00274b !important;
+  background-color: #002a50 !important;
 }
 
 .back_acc-n3 {
-  background-color: #001c36 !important;
+  background-color: #001f3b !important;
 }
 
 .back_acc-n4 {
-  background-color: #001120 !important;
+  background-color: #00162b !important;
 }
 
 .back_acc-n5 {
-  background-color: #00060b !important;
+  background-color: #000e1b !important;
 }
 
 .back_white, .pagination-container .current {
   background-color: #fefefe;
 }
 
+.back_black {
+  background-color: #0a0a0a;
+}
+
 /*
-	Shadows
+  CSS Utlitiy: Hover
 
-	Shadows can be easily added to container .shadow_{{modifier}}  
+  Make any Object hover action. 
 
-	shadow_n1			- inset shadow
-	shadow_n2			- inset shadow
-	shadow_n3			- inset shadow
-	shadow_n4			- inset shadow
-	shadow_n5			- inset shadow
-	shadow_0			- no shadow
-	shadow_1			- box shadow
-	shadow_2			- box shadow
-	shadow_3			- box shadow
-	shadow_4			- box shadow
-	shadow_5			- box shadow
-
-	markup:
-	<div class="{$modifiers} padding_3 border_solid border_black-1 border-width_1 color_white">container has shadow of {$modifiers}</div>
-
-	Styleguide 200.0
- 
- */
+  Styleguide 84.0
+*/
 .shadow_0 {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
@@ -7853,6 +7846,1073 @@ Utility CSS
 
 	Styleguide 81.5
 
+ */
+/*
+  Hover:Backgrounds
+ 
+  hovers can easily be added to objects
+
+  hover_primary              - background color modified light to dark
+  hover_secondary              - background color modified light to dark
+  hover_info              - background color modified light to dark
+  hover_hightlight              - background color success color
+  hover_success              - background color modified light to dark
+  hover_warning              - background color modified light to dark
+  hover_alert              - background color modified light to dark
+
+  markup:
+  <div class="grid-x margin_5">
+    <div class="{$modifiers}-5 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">5</div>
+    <div class="{$modifiers}-4 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">4</div>
+    <div class="{$modifiers}-3 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">3</div>
+    <div class="{$modifiers}-2 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">2</div>
+    <div class="{$modifiers}-1 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">1</div>
+    <div class="{$modifiers}-0 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 hover-text_white">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 hover-text_white">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 hover-text_white">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 hover-text_white">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 hover-text_white">n5</div>
+  </div>
+
+ 
+  Styleguide 84.1
+ 
+ */
+.hover_opacity, .button.shadow, *[class^=hover_], *[class^=" hover_"] {
+  transition: all ease-out 0.75s;
+}
+
+.hover_primary:hover {
+  background-color: #198dae !important;
+}
+
+.hover_primary-0:hover {
+  background-color: #198dae !important;
+}
+
+.hover_primary-1:hover {
+  background-color: #3c9eba !important;
+}
+
+.hover_primary-2:hover {
+  background-color: #6eb7cc !important;
+}
+
+.hover_primary-3:hover {
+  background-color: #a3d1df !important;
+}
+
+.hover_primary-4:hover {
+  background-color: #cce6ed !important;
+}
+
+.hover_primary-5:hover {
+  background-color: #e8f4f7 !important;
+}
+
+.hover_primary-n1:hover {
+  background-color: #177f9d !important;
+}
+
+.hover_primary-n2:hover {
+  background-color: #136a83 !important;
+}
+
+.hover_primary-n3:hover {
+  background-color: #0e4e60 !important;
+}
+
+.hover_primary-n4:hover {
+  background-color: #0a3846 !important;
+}
+
+.hover_primary-n5:hover {
+  background-color: #06232c !important;
+}
+
+.hover-text_primary:hover {
+  color: #198dae !important;
+}
+
+.hover-text_primary-0:hover {
+  color: #198dae !important;
+}
+
+.hover-text_primary-1:hover {
+  color: #3c9eba !important;
+}
+
+.hover-text_primary-2:hover {
+  color: #6eb7cc !important;
+}
+
+.hover-text_primary-3:hover {
+  color: #a3d1df !important;
+}
+
+.hover-text_primary-4:hover {
+  color: #cce6ed !important;
+}
+
+.hover-text_primary-5:hover {
+  color: #e8f4f7 !important;
+}
+
+.hover-text_primary-n1:hover {
+  color: #177f9d !important;
+}
+
+.hover-text_primary-n2:hover {
+  color: #136a83 !important;
+}
+
+.hover-text_primary-n3:hover {
+  color: #0e4e60 !important;
+}
+
+.hover-text_primary-n4:hover {
+  color: #0a3846 !important;
+}
+
+.hover-text_primary-n5:hover {
+  color: #06232c !important;
+}
+
+.hover_secondary:hover {
+  background-color: #63646b !important;
+}
+
+.hover_secondary-0:hover {
+  background-color: #63646b !important;
+}
+
+.hover_secondary-1:hover {
+  background-color: #7a7b81 !important;
+}
+
+.hover_secondary-2:hover {
+  background-color: #9d9da2 !important;
+}
+
+.hover_secondary-3:hover {
+  background-color: #c1c1c4 !important;
+}
+
+.hover_secondary-4:hover {
+  background-color: #ddddde !important;
+}
+
+.hover_secondary-5:hover {
+  background-color: #eff0f0 !important;
+}
+
+.hover_secondary-n1:hover {
+  background-color: #595a60 !important;
+}
+
+.hover_secondary-n2:hover {
+  background-color: #4a4b50 !important;
+}
+
+.hover_secondary-n3:hover {
+  background-color: #36373b !important;
+}
+
+.hover_secondary-n4:hover {
+  background-color: #28282b !important;
+}
+
+.hover_secondary-n5:hover {
+  background-color: #19191b !important;
+}
+
+.hover-text_secondary:hover {
+  color: #63646b !important;
+}
+
+.hover-text_secondary-0:hover {
+  color: #63646b !important;
+}
+
+.hover-text_secondary-1:hover {
+  color: #7a7b81 !important;
+}
+
+.hover-text_secondary-2:hover {
+  color: #9d9da2 !important;
+}
+
+.hover-text_secondary-3:hover {
+  color: #c1c1c4 !important;
+}
+
+.hover-text_secondary-4:hover {
+  color: #ddddde !important;
+}
+
+.hover-text_secondary-5:hover {
+  color: #eff0f0 !important;
+}
+
+.hover-text_secondary-n1:hover {
+  color: #595a60 !important;
+}
+
+.hover-text_secondary-n2:hover {
+  color: #4a4b50 !important;
+}
+
+.hover-text_secondary-n3:hover {
+  color: #36373b !important;
+}
+
+.hover-text_secondary-n4:hover {
+  color: #28282b !important;
+}
+
+.hover-text_secondary-n5:hover {
+  color: #19191b !important;
+}
+
+.hover_success:hover {
+  background-color: #09911f !important;
+}
+
+.hover_success-0:hover {
+  background-color: #09911f !important;
+}
+
+.hover_success-1:hover {
+  background-color: #2ea241 !important;
+}
+
+.hover_success-2:hover {
+  background-color: #64ba72 !important;
+}
+
+.hover_success-3:hover {
+  background-color: #9dd3a5 !important;
+}
+
+.hover_success-4:hover {
+  background-color: #c9e7ce !important;
+}
+
+.hover_success-5:hover {
+  background-color: #e6f4e9 !important;
+}
+
+.hover_success-n1:hover {
+  background-color: #08831c !important;
+}
+
+.hover_success-n2:hover {
+  background-color: #076d17 !important;
+}
+
+.hover_success-n3:hover {
+  background-color: #055011 !important;
+}
+
+.hover_success-n4:hover {
+  background-color: #043a0c !important;
+}
+
+.hover_success-n5:hover {
+  background-color: #022408 !important;
+}
+
+.hover-text_success:hover {
+  color: #09911f !important;
+}
+
+.hover-text_success-0:hover {
+  color: #09911f !important;
+}
+
+.hover-text_success-1:hover {
+  color: #2ea241 !important;
+}
+
+.hover-text_success-2:hover {
+  color: #64ba72 !important;
+}
+
+.hover-text_success-3:hover {
+  color: #9dd3a5 !important;
+}
+
+.hover-text_success-4:hover {
+  color: #c9e7ce !important;
+}
+
+.hover-text_success-5:hover {
+  color: #e6f4e9 !important;
+}
+
+.hover-text_success-n1:hover {
+  color: #08831c !important;
+}
+
+.hover-text_success-n2:hover {
+  color: #076d17 !important;
+}
+
+.hover-text_success-n3:hover {
+  color: #055011 !important;
+}
+
+.hover-text_success-n4:hover {
+  color: #043a0c !important;
+}
+
+.hover-text_success-n5:hover {
+  color: #022408 !important;
+}
+
+.hover_warning:hover {
+  background-color: #e18725 !important;
+}
+
+.hover_warning-0:hover {
+  background-color: #e18725 !important;
+}
+
+.hover_warning-1:hover {
+  background-color: #e69946 !important;
+}
+
+.hover_warning-2:hover {
+  background-color: #ecb376 !important;
+}
+
+.hover_warning-3:hover {
+  background-color: #f3cfa8 !important;
+}
+
+.hover_warning-4:hover {
+  background-color: #f8e5cf !important;
+}
+
+.hover_warning-5:hover {
+  background-color: #fcf3e9 !important;
+}
+
+.hover_warning-n1:hover {
+  background-color: #cb7a21 !important;
+}
+
+.hover_warning-n2:hover {
+  background-color: #a9651c !important;
+}
+
+.hover_warning-n3:hover {
+  background-color: #7c4a14 !important;
+}
+
+.hover_warning-n4:hover {
+  background-color: #5a360f !important;
+}
+
+.hover_warning-n5:hover {
+  background-color: #382209 !important;
+}
+
+.hover-text_warning:hover {
+  color: #e18725 !important;
+}
+
+.hover-text_warning-0:hover {
+  color: #e18725 !important;
+}
+
+.hover-text_warning-1:hover {
+  color: #e69946 !important;
+}
+
+.hover-text_warning-2:hover {
+  color: #ecb376 !important;
+}
+
+.hover-text_warning-3:hover {
+  color: #f3cfa8 !important;
+}
+
+.hover-text_warning-4:hover {
+  color: #f8e5cf !important;
+}
+
+.hover-text_warning-5:hover {
+  color: #fcf3e9 !important;
+}
+
+.hover-text_warning-n1:hover {
+  color: #cb7a21 !important;
+}
+
+.hover-text_warning-n2:hover {
+  color: #a9651c !important;
+}
+
+.hover-text_warning-n3:hover {
+  color: #7c4a14 !important;
+}
+
+.hover-text_warning-n4:hover {
+  color: #5a360f !important;
+}
+
+.hover-text_warning-n5:hover {
+  color: #382209 !important;
+}
+
+.hover_alert:hover {
+  background-color: #cb241c !important;
+}
+
+.hover_alert-0:hover {
+  background-color: #cb241c !important;
+}
+
+.hover_alert-1:hover {
+  background-color: #d3453e !important;
+}
+
+.hover_alert-2:hover {
+  background-color: #de7570 !important;
+}
+
+.hover_alert-3:hover {
+  background-color: #eaa7a4 !important;
+}
+
+.hover_alert-4:hover {
+  background-color: #f4cfcd !important;
+}
+
+.hover_alert-5:hover {
+  background-color: #fae9e8 !important;
+}
+
+.hover_alert-n1:hover {
+  background-color: #b72019 !important;
+}
+
+.hover_alert-n2:hover {
+  background-color: #981b15 !important;
+}
+
+.hover_alert-n3:hover {
+  background-color: #70140f !important;
+}
+
+.hover_alert-n4:hover {
+  background-color: #510e0b !important;
+}
+
+.hover_alert-n5:hover {
+  background-color: #330907 !important;
+}
+
+.hover-text_alert:hover {
+  color: #cb241c !important;
+}
+
+.hover-text_alert-0:hover {
+  color: #cb241c !important;
+}
+
+.hover-text_alert-1:hover {
+  color: #d3453e !important;
+}
+
+.hover-text_alert-2:hover {
+  color: #de7570 !important;
+}
+
+.hover-text_alert-3:hover {
+  color: #eaa7a4 !important;
+}
+
+.hover-text_alert-4:hover {
+  color: #f4cfcd !important;
+}
+
+.hover-text_alert-5:hover {
+  color: #fae9e8 !important;
+}
+
+.hover-text_alert-n1:hover {
+  color: #b72019 !important;
+}
+
+.hover-text_alert-n2:hover {
+  color: #981b15 !important;
+}
+
+.hover-text_alert-n3:hover {
+  color: #70140f !important;
+}
+
+.hover-text_alert-n4:hover {
+  color: #510e0b !important;
+}
+
+.hover-text_alert-n5:hover {
+  color: #330907 !important;
+}
+
+.hover_navigation:hover {
+  background-color: #4f74bf !important;
+}
+
+.hover_navigation-0:hover {
+  background-color: #4f74bf !important;
+}
+
+.hover_navigation-1:hover {
+  background-color: #6989c9 !important;
+}
+
+.hover_navigation-2:hover {
+  background-color: #90a7d7 !important;
+}
+
+.hover_navigation-3:hover {
+  background-color: #b9c7e5 !important;
+}
+
+.hover_navigation-4:hover {
+  background-color: #d8e0f1 !important;
+}
+
+.hover_navigation-5:hover {
+  background-color: #edf1f9 !important;
+}
+
+.hover_navigation-n1:hover {
+  background-color: #4768ac !important;
+}
+
+.hover_navigation-n2:hover {
+  background-color: #3b578f !important;
+}
+
+.hover_navigation-n3:hover {
+  background-color: #2b4069 !important;
+}
+
+.hover_navigation-n4:hover {
+  background-color: #202e4c !important;
+}
+
+.hover_navigation-n5:hover {
+  background-color: #141d30 !important;
+}
+
+.hover-text_navigation:hover {
+  color: #4f74bf !important;
+}
+
+.hover-text_navigation-0:hover {
+  color: #4f74bf !important;
+}
+
+.hover-text_navigation-1:hover {
+  color: #6989c9 !important;
+}
+
+.hover-text_navigation-2:hover {
+  color: #90a7d7 !important;
+}
+
+.hover-text_navigation-3:hover {
+  color: #b9c7e5 !important;
+}
+
+.hover-text_navigation-4:hover {
+  color: #d8e0f1 !important;
+}
+
+.hover-text_navigation-5:hover {
+  color: #edf1f9 !important;
+}
+
+.hover-text_navigation-n1:hover {
+  color: #4768ac !important;
+}
+
+.hover-text_navigation-n2:hover {
+  color: #3b578f !important;
+}
+
+.hover-text_navigation-n3:hover {
+  color: #2b4069 !important;
+}
+
+.hover-text_navigation-n4:hover {
+  color: #202e4c !important;
+}
+
+.hover-text_navigation-n5:hover {
+  color: #141d30 !important;
+}
+
+.hover_selected:hover {
+  background-color: #509f6c !important;
+}
+
+.hover_selected-0:hover {
+  background-color: #509f6c !important;
+}
+
+.hover_selected-1:hover {
+  background-color: #6aad82 !important;
+}
+
+.hover_selected-2:hover {
+  background-color: #91c3a2 !important;
+}
+
+.hover_selected-3:hover {
+  background-color: #b9d9c4 !important;
+}
+
+.hover_selected-4:hover {
+  background-color: #d9eadf !important;
+}
+
+.hover_selected-5:hover {
+  background-color: #eef5f0 !important;
+}
+
+.hover_selected-n1:hover {
+  background-color: #488f61 !important;
+}
+
+.hover_selected-n2:hover {
+  background-color: #3c7751 !important;
+}
+
+.hover_selected-n3:hover {
+  background-color: #2c573b !important;
+}
+
+.hover_selected-n4:hover {
+  background-color: #20402b !important;
+}
+
+.hover_selected-n5:hover {
+  background-color: #14281b !important;
+}
+
+.hover-text_selected:hover {
+  color: #509f6c !important;
+}
+
+.hover-text_selected-0:hover {
+  color: #509f6c !important;
+}
+
+.hover-text_selected-1:hover {
+  color: #6aad82 !important;
+}
+
+.hover-text_selected-2:hover {
+  color: #91c3a2 !important;
+}
+
+.hover-text_selected-3:hover {
+  color: #b9d9c4 !important;
+}
+
+.hover-text_selected-4:hover {
+  color: #d9eadf !important;
+}
+
+.hover-text_selected-5:hover {
+  color: #eef5f0 !important;
+}
+
+.hover-text_selected-n1:hover {
+  color: #488f61 !important;
+}
+
+.hover-text_selected-n2:hover {
+  color: #3c7751 !important;
+}
+
+.hover-text_selected-n3:hover {
+  color: #2c573b !important;
+}
+
+.hover-text_selected-n4:hover {
+  color: #20402b !important;
+}
+
+.hover-text_selected-n5:hover {
+  color: #14281b !important;
+}
+
+.hover_info:hover {
+  background-color: #735dba !important;
+}
+
+.hover_info-0:hover {
+  background-color: #735dba !important;
+}
+
+.hover_info-1:hover {
+  background-color: #8875c4 !important;
+}
+
+.hover_info-2:hover {
+  background-color: #a799d4 !important;
+}
+
+.hover_info-3:hover {
+  background-color: #c7bee3 !important;
+}
+
+.hover_info-4:hover {
+  background-color: #e0dbf0 !important;
+}
+
+.hover_info-5:hover {
+  background-color: #f1eff8 !important;
+}
+
+.hover_info-n1:hover {
+  background-color: #6854a7 !important;
+}
+
+.hover_info-n2:hover {
+  background-color: #56468c !important;
+}
+
+.hover_info-n3:hover {
+  background-color: #3f3366 !important;
+}
+
+.hover_info-n4:hover {
+  background-color: #2e254a !important;
+}
+
+.hover_info-n5:hover {
+  background-color: #1d172f !important;
+}
+
+.hover-text_info:hover {
+  color: #735dba !important;
+}
+
+.hover-text_info-0:hover {
+  color: #735dba !important;
+}
+
+.hover-text_info-1:hover {
+  color: #8875c4 !important;
+}
+
+.hover-text_info-2:hover {
+  color: #a799d4 !important;
+}
+
+.hover-text_info-3:hover {
+  color: #c7bee3 !important;
+}
+
+.hover-text_info-4:hover {
+  color: #e0dbf0 !important;
+}
+
+.hover-text_info-5:hover {
+  color: #f1eff8 !important;
+}
+
+.hover-text_info-n1:hover {
+  color: #6854a7 !important;
+}
+
+.hover-text_info-n2:hover {
+  color: #56468c !important;
+}
+
+.hover-text_info-n3:hover {
+  color: #3f3366 !important;
+}
+
+.hover-text_info-n4:hover {
+  color: #2e254a !important;
+}
+
+.hover-text_info-n5:hover {
+  color: #1d172f !important;
+}
+
+.hover_hightlight:hover {
+  background-color: #c45e99 !important;
+}
+
+.hover_hightlight-0:hover {
+  background-color: #c45e99 !important;
+}
+
+.hover_hightlight-1:hover {
+  background-color: #cd76a8 !important;
+}
+
+.hover_hightlight-2:hover {
+  background-color: #da9abf !important;
+}
+
+.hover_hightlight-3:hover {
+  background-color: #e7bfd6 !important;
+}
+
+.hover_hightlight-4:hover {
+  background-color: #f2dce9 !important;
+}
+
+.hover_hightlight-5:hover {
+  background-color: #f9eff5 !important;
+}
+
+.hover_hightlight-n1:hover {
+  background-color: #b0558a !important;
+}
+
+.hover_hightlight-n2:hover {
+  background-color: #934773 !important;
+}
+
+.hover_hightlight-n3:hover {
+  background-color: #6c3454 !important;
+}
+
+.hover_hightlight-n4:hover {
+  background-color: #4e263d !important;
+}
+
+.hover_hightlight-n5:hover {
+  background-color: #311826 !important;
+}
+
+.hover-text_hightlight:hover {
+  color: #c45e99 !important;
+}
+
+.hover-text_hightlight-0:hover {
+  color: #c45e99 !important;
+}
+
+.hover-text_hightlight-1:hover {
+  color: #cd76a8 !important;
+}
+
+.hover-text_hightlight-2:hover {
+  color: #da9abf !important;
+}
+
+.hover-text_hightlight-3:hover {
+  color: #e7bfd6 !important;
+}
+
+.hover-text_hightlight-4:hover {
+  color: #f2dce9 !important;
+}
+
+.hover-text_hightlight-5:hover {
+  color: #f9eff5 !important;
+}
+
+.hover-text_hightlight-n1:hover {
+  color: #b0558a !important;
+}
+
+.hover-text_hightlight-n2:hover {
+  color: #934773 !important;
+}
+
+.hover-text_hightlight-n3:hover {
+  color: #6c3454 !important;
+}
+
+.hover-text_hightlight-n4:hover {
+  color: #4e263d !important;
+}
+
+.hover-text_hightlight-n5:hover {
+  color: #311826 !important;
+}
+
+.hover_acc:hover {
+  background-color: #00386b !important;
+}
+
+.hover_acc-0:hover {
+  background-color: #00386b !important;
+}
+
+.hover_acc-1:hover {
+  background-color: #265681 !important;
+}
+
+.hover_acc-2:hover {
+  background-color: #5e82a2 !important;
+}
+
+.hover_acc-3:hover {
+  background-color: #99afc4 !important;
+}
+
+.hover_acc-4:hover {
+  background-color: #c7d3de !important;
+}
+
+.hover_acc-5:hover {
+  background-color: #e6ebf0 !important;
+}
+
+.hover_acc-n1:hover {
+  background-color: #003260 !important;
+}
+
+.hover_acc-n2:hover {
+  background-color: #002a50 !important;
+}
+
+.hover_acc-n3:hover {
+  background-color: #001f3b !important;
+}
+
+.hover_acc-n4:hover {
+  background-color: #00162b !important;
+}
+
+.hover_acc-n5:hover {
+  background-color: #000e1b !important;
+}
+
+.hover-text_acc:hover {
+  color: #00386b !important;
+}
+
+.hover-text_acc-0:hover {
+  color: #00386b !important;
+}
+
+.hover-text_acc-1:hover {
+  color: #265681 !important;
+}
+
+.hover-text_acc-2:hover {
+  color: #5e82a2 !important;
+}
+
+.hover-text_acc-3:hover {
+  color: #99afc4 !important;
+}
+
+.hover-text_acc-4:hover {
+  color: #c7d3de !important;
+}
+
+.hover-text_acc-5:hover {
+  color: #e6ebf0 !important;
+}
+
+.hover-text_acc-n1:hover {
+  color: #003260 !important;
+}
+
+.hover-text_acc-n2:hover {
+  color: #002a50 !important;
+}
+
+.hover-text_acc-n3:hover {
+  color: #001f3b !important;
+}
+
+.hover-text_acc-n4:hover {
+  color: #00162b !important;
+}
+
+.hover-text_acc-n5:hover {
+  color: #000e1b !important;
+}
+
+/*
+  Hover: Text 
+ 
+  hovers can easily be added to objects
+
+  hover-text_primary              - text color modified light to dark
+  hover-text_secondary              - text color modified light to dark
+  hover-text_info              - text color modified light to dark
+  hover-text_hightlight              - text color success color
+  hover-text_success              - text color modified light to dark
+  hover-text_warning              - text color modified light to dark
+  hover-text_alert              - text color modified light to dark
+
+  markup:
+  <div class="grid-x margin_5">
+    <div class="{$modifiers}-5 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">5</div>
+    <div class="{$modifiers}-4 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">4</div>
+    <div class="{$modifiers}-3 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">3</div>
+    <div class="{$modifiers}-2 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">2</div>
+    <div class="{$modifiers}-1 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">1</div>
+    <div class="{$modifiers}-0 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">0</div>
+    <div class="{$modifiers}-n1 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 hover-text_white">n1</div>
+    <div class="{$modifiers}-n2 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 hover-text_white">n2</div>
+    <div class="{$modifiers}-n3 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 hover-text_white">n3</div>
+    <div class="{$modifiers}-n4 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 hover-text_white">n4</div>
+    <div class="{$modifiers}-n5 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 hover-text_white">n5</div>
+  </div>
+
+ 
+  Styleguide 84.2
+ 
+ */
+.hover-text_white.hover-text_black {
+  transition: all ease-in 0.5s;
+}
+
+.hover-text_white:hover {
+  color: white;
+}
+
+.hover-text_black:hover {
+  color: black;
+}
+
+.hover_underline {
+  text-decoration: none;
+}
+.hover_underline:hover {
+  text-decoration: none;
+}
+
+/*
+  Hover: Underline 
+ 
+  Sometimes is is needed to add an underline on a peice of text when it hovers.
+
+  markup:
+  <p class="font_1">
+    Lorem ipsum dolor sit amet, 
+    <span class="color_primary hover_underline hover-text_primary-n3">consectetur</span>
+    adipisicing elit. 
+    <span class="color_warning hover_underline hover-text_warning-n3">Tenetur, similique</span>. 
+    Sapiente facilis ipsam unde, dolorem illo ullam, tempore quos maiores quaerat quibusdam voluptatibus laboriosam. Nisi 
+    <span class="color_alert hover_underline hover-text_alert-n3">harum magni</span>
+    aut nulla et.
+  </p>
+
+ 
+  Styleguide 84.3
+ 
  */
 /*
 	Margin CSS
@@ -8661,19 +9721,19 @@ Utility CSS
 }
 
 .border_primary-1 {
-  border-color: #3098b6 !important;
+  border-color: #3c9eba !important;
 }
 
 .border_primary-2 {
-  border-color: #5eafc6 !important;
+  border-color: #6eb7cc !important;
 }
 
 .border_primary-3 {
-  border-color: #8cc6d7 !important;
+  border-color: #a3d1df !important;
 }
 
 .border_primary-4 {
-  border-color: #badde7 !important;
+  border-color: #cce6ed !important;
 }
 
 .border_primary-5 {
@@ -8685,19 +9745,19 @@ Utility CSS
 }
 
 .border_primary-n2 {
-  border-color: #12637a !important;
+  border-color: #136a83 !important;
 }
 
 .border_primary-n3 {
-  border-color: #0d4757 !important;
+  border-color: #0e4e60 !important;
 }
 
 .border_primary-n4 {
-  border-color: #082a34 !important;
+  border-color: #0a3846 !important;
 }
 
 .border_primary-n5 {
-  border-color: #030e11 !important;
+  border-color: #06232c !important;
 }
 
 .border_secondary {
@@ -8709,19 +9769,19 @@ Utility CSS
 }
 
 .border_secondary-1 {
-  border-color: #73747a !important;
+  border-color: #7a7b81 !important;
 }
 
 .border_secondary-2 {
-  border-color: #929397 !important;
+  border-color: #9d9da2 !important;
 }
 
 .border_secondary-3 {
-  border-color: #b1b2b5 !important;
+  border-color: #c1c1c4 !important;
 }
 
 .border_secondary-4 {
-  border-color: #d0d1d3 !important;
+  border-color: #ddddde !important;
 }
 
 .border_secondary-5 {
@@ -8733,19 +9793,19 @@ Utility CSS
 }
 
 .border_secondary-n2 {
-  border-color: #45464b !important;
+  border-color: #4a4b50 !important;
 }
 
 .border_secondary-n3 {
-  border-color: #323236 !important;
+  border-color: #36373b !important;
 }
 
 .border_secondary-n4 {
-  border-color: #1e1e20 !important;
+  border-color: #28282b !important;
 }
 
 .border_secondary-n5 {
-  border-color: #0a0a0b !important;
+  border-color: #19191b !important;
 }
 
 .border_success {
@@ -8757,19 +9817,19 @@ Utility CSS
 }
 
 .border_success-1 {
-  border-color: #229c35 !important;
+  border-color: #2ea241 !important;
 }
 
 .border_success-2 {
-  border-color: #53b262 !important;
+  border-color: #64ba72 !important;
 }
 
 .border_success-3 {
-  border-color: #84c88f !important;
+  border-color: #9dd3a5 !important;
 }
 
 .border_success-4 {
-  border-color: #b5debc !important;
+  border-color: #c9e7ce !important;
 }
 
 .border_success-5 {
@@ -8781,19 +9841,19 @@ Utility CSS
 }
 
 .border_success-n2 {
-  border-color: #066616 !important;
+  border-color: #076d17 !important;
 }
 
 .border_success-n3 {
-  border-color: #054910 !important;
+  border-color: #055011 !important;
 }
 
 .border_success-n4 {
-  border-color: #032c09 !important;
+  border-color: #043a0c !important;
 }
 
 .border_success-n5 {
-  border-color: #010f03 !important;
+  border-color: #022408 !important;
 }
 
 .border_warning {
@@ -8805,19 +9865,19 @@ Utility CSS
 }
 
 .border_warning-1 {
-  border-color: #e4933b !important;
+  border-color: #e69946 !important;
 }
 
 .border_warning-2 {
-  border-color: #eaab66 !important;
+  border-color: #ecb376 !important;
 }
 
 .border_warning-3 {
-  border-color: #f0c392 !important;
+  border-color: #f3cfa8 !important;
 }
 
 .border_warning-4 {
-  border-color: #f6dbbe !important;
+  border-color: #f8e5cf !important;
 }
 
 .border_warning-5 {
@@ -8829,19 +9889,19 @@ Utility CSS
 }
 
 .border_warning-n2 {
-  border-color: #9e5f1a !important;
+  border-color: #a9651c !important;
 }
 
 .border_warning-n3 {
-  border-color: #714413 !important;
+  border-color: #7c4a14 !important;
 }
 
 .border_warning-n4 {
-  border-color: #44290b !important;
+  border-color: #5a360f !important;
 }
 
 .border_warning-n5 {
-  border-color: #170e04 !important;
+  border-color: #382209 !important;
 }
 
 .border_alert {
@@ -8853,19 +9913,19 @@ Utility CSS
 }
 
 .border_alert-1 {
-  border-color: #d03a33 !important;
+  border-color: #d3453e !important;
 }
 
 .border_alert-2 {
-  border-color: #db6660 !important;
+  border-color: #de7570 !important;
 }
 
 .border_alert-3 {
-  border-color: #e5928e !important;
+  border-color: #eaa7a4 !important;
 }
 
 .border_alert-4 {
-  border-color: #efbdbb !important;
+  border-color: #f4cfcd !important;
 }
 
 .border_alert-5 {
@@ -8877,19 +9937,19 @@ Utility CSS
 }
 
 .border_alert-n2 {
-  border-color: #8e1914 !important;
+  border-color: #981b15 !important;
 }
 
 .border_alert-n3 {
-  border-color: #66120e !important;
+  border-color: #70140f !important;
 }
 
 .border_alert-n4 {
-  border-color: #3d0b08 !important;
+  border-color: #510e0b !important;
 }
 
 .border_alert-n5 {
-  border-color: #140403 !important;
+  border-color: #330907 !important;
 }
 
 .border_navigation {
@@ -8901,19 +9961,19 @@ Utility CSS
 }
 
 .border_navigation-1 {
-  border-color: #6182c5 !important;
+  border-color: #6989c9 !important;
 }
 
 .border_navigation-2 {
-  border-color: #849ed2 !important;
+  border-color: #90a7d7 !important;
 }
 
 .border_navigation-3 {
-  border-color: #a7badf !important;
+  border-color: #b9c7e5 !important;
 }
 
 .border_navigation-4 {
-  border-color: #cad5ec !important;
+  border-color: #d8e0f1 !important;
 }
 
 .border_navigation-5 {
@@ -8925,19 +9985,19 @@ Utility CSS
 }
 
 .border_navigation-n2 {
-  border-color: #375186 !important;
+  border-color: #3b578f !important;
 }
 
 .border_navigation-n3 {
-  border-color: #283a60 !important;
+  border-color: #2b4069 !important;
 }
 
 .border_navigation-n4 {
-  border-color: #182339 !important;
+  border-color: #202e4c !important;
 }
 
 .border_navigation-n5 {
-  border-color: #080c13 !important;
+  border-color: #141d30 !important;
 }
 
 .border_selected {
@@ -8949,19 +10009,19 @@ Utility CSS
 }
 
 .border_selected-1 {
-  border-color: #62a97b !important;
+  border-color: #6aad82 !important;
 }
 
 .border_selected-2 {
-  border-color: #85bc98 !important;
+  border-color: #91c3a2 !important;
 }
 
 .border_selected-3 {
-  border-color: #a8cfb6 !important;
+  border-color: #b9d9c4 !important;
 }
 
 .border_selected-4 {
-  border-color: #cbe2d3 !important;
+  border-color: #d9eadf !important;
 }
 
 .border_selected-5 {
@@ -8973,19 +10033,19 @@ Utility CSS
 }
 
 .border_selected-n2 {
-  border-color: #386f4c !important;
+  border-color: #3c7751 !important;
 }
 
 .border_selected-n3 {
-  border-color: #285036 !important;
+  border-color: #2c573b !important;
 }
 
 .border_selected-n4 {
-  border-color: #183020 !important;
+  border-color: #20402b !important;
 }
 
 .border_selected-n5 {
-  border-color: #08100b !important;
+  border-color: #14281b !important;
 }
 
 .border_info {
@@ -8997,19 +10057,19 @@ Utility CSS
 }
 
 .border_info-1 {
-  border-color: #816dc1 !important;
+  border-color: #8875c4 !important;
 }
 
 .border_info-2 {
-  border-color: #9d8ecf !important;
+  border-color: #a799d4 !important;
 }
 
 .border_info-3 {
-  border-color: #b9aedd !important;
+  border-color: #c7bee3 !important;
 }
 
 .border_info-4 {
-  border-color: #d5ceea !important;
+  border-color: #e0dbf0 !important;
 }
 
 .border_info-5 {
@@ -9021,19 +10081,19 @@ Utility CSS
 }
 
 .border_info-n2 {
-  border-color: #514182 !important;
+  border-color: #56468c !important;
 }
 
 .border_info-n3 {
-  border-color: #3a2f5d !important;
+  border-color: #3f3366 !important;
 }
 
 .border_info-n4 {
-  border-color: #231c38 !important;
+  border-color: #2e254a !important;
 }
 
 .border_info-n5 {
-  border-color: #0c0913 !important;
+  border-color: #1d172f !important;
 }
 
 .border_hightlight {
@@ -9045,19 +10105,19 @@ Utility CSS
 }
 
 .border_hightlight-1 {
-  border-color: #ca6ea3 !important;
+  border-color: #cd76a8 !important;
 }
 
 .border_hightlight-2 {
-  border-color: #d68eb8 !important;
+  border-color: #da9abf !important;
 }
 
 .border_hightlight-3 {
-  border-color: #e2afcc !important;
+  border-color: #e7bfd6 !important;
 }
 
 .border_hightlight-4 {
-  border-color: #edcfe0 !important;
+  border-color: #f2dce9 !important;
 }
 
 .border_hightlight-5 {
@@ -9069,19 +10129,19 @@ Utility CSS
 }
 
 .border_hightlight-n2 {
-  border-color: #89426b !important;
+  border-color: #934773 !important;
 }
 
 .border_hightlight-n3 {
-  border-color: #622f4d !important;
+  border-color: #6c3454 !important;
 }
 
 .border_hightlight-n4 {
-  border-color: #3b1c2e !important;
+  border-color: #4e263d !important;
 }
 
 .border_hightlight-n5 {
-  border-color: #14090f !important;
+  border-color: #311826 !important;
 }
 
 .border_acc {
@@ -9093,19 +10153,19 @@ Utility CSS
 }
 
 .border_acc-1 {
-  border-color: #1a4c7a !important;
+  border-color: #265681 !important;
 }
 
 .border_acc-2 {
-  border-color: #4d7497 !important;
+  border-color: #5e82a2 !important;
 }
 
 .border_acc-3 {
-  border-color: #809cb5 !important;
+  border-color: #99afc4 !important;
 }
 
 .border_acc-4 {
-  border-color: #b3c3d3 !important;
+  border-color: #c7d3de !important;
 }
 
 .border_acc-5 {
@@ -9117,19 +10177,19 @@ Utility CSS
 }
 
 .border_acc-n2 {
-  border-color: #00274b !important;
+  border-color: #002a50 !important;
 }
 
 .border_acc-n3 {
-  border-color: #001c36 !important;
+  border-color: #001f3b !important;
 }
 
 .border_acc-n4 {
-  border-color: #001120 !important;
+  border-color: #00162b !important;
 }
 
 .border_acc-n5 {
-  border-color: #00060b !important;
+  border-color: #000e1b !important;
 }
 
 /*
@@ -9294,6 +10354,42 @@ Utility CSS
 
   Styleguide 82.0
  */
+.font_slab, .font-family_slab {
+  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif !important;
+}
+
+.font_normal, .font-family_normal {
+  font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+.font_display, .font-family_display {
+  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+/*
+  Font Style
+
+  You can change the features of the text with some simple use classes.
+
+  .font-style_normal            - Sets font style to normal
+  .font-style_italic            - Sets font style to italic      
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 82.1
+ */
+.font-style_normal {
+  font-style: normal !important;
+}
+
+.font-style_italic {
+  font-style: italic !important;
+}
+
 .line-height_0 {
   line-height: 0;
 }
@@ -9327,19 +10423,19 @@ Utility CSS
 }
 
 .color_primary-1 {
-  color: #3098b6 !important;
+  color: #3c9eba !important;
 }
 
 .color_primary-2 {
-  color: #5eafc6 !important;
+  color: #6eb7cc !important;
 }
 
 .color_primary-3 {
-  color: #8cc6d7 !important;
+  color: #a3d1df !important;
 }
 
 .color_primary-4 {
-  color: #badde7 !important;
+  color: #cce6ed !important;
 }
 
 .color_primary-5 {
@@ -9351,19 +10447,19 @@ Utility CSS
 }
 
 .color_primary-n2 {
-  color: #12637a !important;
+  color: #136a83 !important;
 }
 
 .color_primary-n3 {
-  color: #0d4757 !important;
+  color: #0e4e60 !important;
 }
 
 .color_primary-n4 {
-  color: #082a34 !important;
+  color: #0a3846 !important;
 }
 
 .color_primary-n5 {
-  color: #030e11 !important;
+  color: #06232c !important;
 }
 
 .color_secondary {
@@ -9375,19 +10471,19 @@ Utility CSS
 }
 
 .color_secondary-1 {
-  color: #73747a !important;
+  color: #7a7b81 !important;
 }
 
 .color_secondary-2 {
-  color: #929397 !important;
+  color: #9d9da2 !important;
 }
 
 .color_secondary-3 {
-  color: #b1b2b5 !important;
+  color: #c1c1c4 !important;
 }
 
 .color_secondary-4 {
-  color: #d0d1d3 !important;
+  color: #ddddde !important;
 }
 
 .color_secondary-5 {
@@ -9399,19 +10495,19 @@ Utility CSS
 }
 
 .color_secondary-n2 {
-  color: #45464b !important;
+  color: #4a4b50 !important;
 }
 
 .color_secondary-n3 {
-  color: #323236 !important;
+  color: #36373b !important;
 }
 
 .color_secondary-n4 {
-  color: #1e1e20 !important;
+  color: #28282b !important;
 }
 
 .color_secondary-n5 {
-  color: #0a0a0b !important;
+  color: #19191b !important;
 }
 
 .color_success {
@@ -9423,19 +10519,19 @@ Utility CSS
 }
 
 .color_success-1 {
-  color: #229c35 !important;
+  color: #2ea241 !important;
 }
 
 .color_success-2 {
-  color: #53b262 !important;
+  color: #64ba72 !important;
 }
 
 .color_success-3 {
-  color: #84c88f !important;
+  color: #9dd3a5 !important;
 }
 
 .color_success-4 {
-  color: #b5debc !important;
+  color: #c9e7ce !important;
 }
 
 .color_success-5 {
@@ -9447,19 +10543,19 @@ Utility CSS
 }
 
 .color_success-n2 {
-  color: #066616 !important;
+  color: #076d17 !important;
 }
 
 .color_success-n3 {
-  color: #054910 !important;
+  color: #055011 !important;
 }
 
 .color_success-n4 {
-  color: #032c09 !important;
+  color: #043a0c !important;
 }
 
 .color_success-n5 {
-  color: #010f03 !important;
+  color: #022408 !important;
 }
 
 .color_warning {
@@ -9471,19 +10567,19 @@ Utility CSS
 }
 
 .color_warning-1 {
-  color: #e4933b !important;
+  color: #e69946 !important;
 }
 
 .color_warning-2 {
-  color: #eaab66 !important;
+  color: #ecb376 !important;
 }
 
 .color_warning-3 {
-  color: #f0c392 !important;
+  color: #f3cfa8 !important;
 }
 
 .color_warning-4 {
-  color: #f6dbbe !important;
+  color: #f8e5cf !important;
 }
 
 .color_warning-5 {
@@ -9495,19 +10591,19 @@ Utility CSS
 }
 
 .color_warning-n2 {
-  color: #9e5f1a !important;
+  color: #a9651c !important;
 }
 
 .color_warning-n3 {
-  color: #714413 !important;
+  color: #7c4a14 !important;
 }
 
 .color_warning-n4 {
-  color: #44290b !important;
+  color: #5a360f !important;
 }
 
 .color_warning-n5 {
-  color: #170e04 !important;
+  color: #382209 !important;
 }
 
 .color_alert {
@@ -9519,19 +10615,19 @@ Utility CSS
 }
 
 .color_alert-1 {
-  color: #d03a33 !important;
+  color: #d3453e !important;
 }
 
 .color_alert-2 {
-  color: #db6660 !important;
+  color: #de7570 !important;
 }
 
 .color_alert-3 {
-  color: #e5928e !important;
+  color: #eaa7a4 !important;
 }
 
 .color_alert-4 {
-  color: #efbdbb !important;
+  color: #f4cfcd !important;
 }
 
 .color_alert-5 {
@@ -9543,19 +10639,19 @@ Utility CSS
 }
 
 .color_alert-n2 {
-  color: #8e1914 !important;
+  color: #981b15 !important;
 }
 
 .color_alert-n3 {
-  color: #66120e !important;
+  color: #70140f !important;
 }
 
 .color_alert-n4 {
-  color: #3d0b08 !important;
+  color: #510e0b !important;
 }
 
 .color_alert-n5 {
-  color: #140403 !important;
+  color: #330907 !important;
 }
 
 .color_navigation {
@@ -9567,19 +10663,19 @@ Utility CSS
 }
 
 .color_navigation-1 {
-  color: #6182c5 !important;
+  color: #6989c9 !important;
 }
 
 .color_navigation-2 {
-  color: #849ed2 !important;
+  color: #90a7d7 !important;
 }
 
 .color_navigation-3 {
-  color: #a7badf !important;
+  color: #b9c7e5 !important;
 }
 
 .color_navigation-4 {
-  color: #cad5ec !important;
+  color: #d8e0f1 !important;
 }
 
 .color_navigation-5 {
@@ -9591,19 +10687,19 @@ Utility CSS
 }
 
 .color_navigation-n2 {
-  color: #375186 !important;
+  color: #3b578f !important;
 }
 
 .color_navigation-n3 {
-  color: #283a60 !important;
+  color: #2b4069 !important;
 }
 
 .color_navigation-n4 {
-  color: #182339 !important;
+  color: #202e4c !important;
 }
 
 .color_navigation-n5 {
-  color: #080c13 !important;
+  color: #141d30 !important;
 }
 
 .color_selected {
@@ -9615,19 +10711,19 @@ Utility CSS
 }
 
 .color_selected-1 {
-  color: #62a97b !important;
+  color: #6aad82 !important;
 }
 
 .color_selected-2 {
-  color: #85bc98 !important;
+  color: #91c3a2 !important;
 }
 
 .color_selected-3 {
-  color: #a8cfb6 !important;
+  color: #b9d9c4 !important;
 }
 
 .color_selected-4 {
-  color: #cbe2d3 !important;
+  color: #d9eadf !important;
 }
 
 .color_selected-5 {
@@ -9639,19 +10735,19 @@ Utility CSS
 }
 
 .color_selected-n2 {
-  color: #386f4c !important;
+  color: #3c7751 !important;
 }
 
 .color_selected-n3 {
-  color: #285036 !important;
+  color: #2c573b !important;
 }
 
 .color_selected-n4 {
-  color: #183020 !important;
+  color: #20402b !important;
 }
 
 .color_selected-n5 {
-  color: #08100b !important;
+  color: #14281b !important;
 }
 
 .color_info {
@@ -9663,19 +10759,19 @@ Utility CSS
 }
 
 .color_info-1 {
-  color: #816dc1 !important;
+  color: #8875c4 !important;
 }
 
 .color_info-2 {
-  color: #9d8ecf !important;
+  color: #a799d4 !important;
 }
 
 .color_info-3 {
-  color: #b9aedd !important;
+  color: #c7bee3 !important;
 }
 
 .color_info-4 {
-  color: #d5ceea !important;
+  color: #e0dbf0 !important;
 }
 
 .color_info-5 {
@@ -9687,19 +10783,19 @@ Utility CSS
 }
 
 .color_info-n2 {
-  color: #514182 !important;
+  color: #56468c !important;
 }
 
 .color_info-n3 {
-  color: #3a2f5d !important;
+  color: #3f3366 !important;
 }
 
 .color_info-n4 {
-  color: #231c38 !important;
+  color: #2e254a !important;
 }
 
 .color_info-n5 {
-  color: #0c0913 !important;
+  color: #1d172f !important;
 }
 
 .color_hightlight {
@@ -9711,19 +10807,19 @@ Utility CSS
 }
 
 .color_hightlight-1 {
-  color: #ca6ea3 !important;
+  color: #cd76a8 !important;
 }
 
 .color_hightlight-2 {
-  color: #d68eb8 !important;
+  color: #da9abf !important;
 }
 
 .color_hightlight-3 {
-  color: #e2afcc !important;
+  color: #e7bfd6 !important;
 }
 
 .color_hightlight-4 {
-  color: #edcfe0 !important;
+  color: #f2dce9 !important;
 }
 
 .color_hightlight-5 {
@@ -9735,19 +10831,19 @@ Utility CSS
 }
 
 .color_hightlight-n2 {
-  color: #89426b !important;
+  color: #934773 !important;
 }
 
 .color_hightlight-n3 {
-  color: #622f4d !important;
+  color: #6c3454 !important;
 }
 
 .color_hightlight-n4 {
-  color: #3b1c2e !important;
+  color: #4e263d !important;
 }
 
 .color_hightlight-n5 {
-  color: #14090f !important;
+  color: #311826 !important;
 }
 
 .color_acc {
@@ -9759,19 +10855,19 @@ Utility CSS
 }
 
 .color_acc-1 {
-  color: #1a4c7a !important;
+  color: #265681 !important;
 }
 
 .color_acc-2 {
-  color: #4d7497 !important;
+  color: #5e82a2 !important;
 }
 
 .color_acc-3 {
-  color: #809cb5 !important;
+  color: #99afc4 !important;
 }
 
 .color_acc-4 {
-  color: #b3c3d3 !important;
+  color: #c7d3de !important;
 }
 
 .color_acc-5 {
@@ -9783,19 +10879,19 @@ Utility CSS
 }
 
 .color_acc-n2 {
-  color: #00274b !important;
+  color: #002a50 !important;
 }
 
 .color_acc-n3 {
-  color: #001c36 !important;
+  color: #001f3b !important;
 }
 
 .color_acc-n4 {
-  color: #001120 !important;
+  color: #00162b !important;
 }
 
 .color_acc-n5 {
-  color: #00060b !important;
+  color: #000e1b !important;
 }
 
 .color_white, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]) {
@@ -9806,28 +10902,18 @@ Utility CSS
   color: #0a0a0a;
 }
 
-.font_slab, .font-family_slab {
-  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif !important;
-}
-
-.font_normal, .font-family_normal {
-  font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-}
-
-.font_display, .font-family_display {
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+.color_inherit {
+  color: inherit;
 }
 
 /*
-  Fonts Utility Classes
+  Font Weight
 
   You can change the features of the text with some simple use classes.
 
   .font-weight_light            -  Light, 100
   .font-weight_regular          -  Regular, 400           
-  .font-weight_bold             -  Bold, 900 
-  .font-style_normal            - Sets font style to normal
-  .font-style_italic            - Sets font style to italic      
+  .font-weight_bold             -  Bold, 900     
 
   markup:
   <div class="{$modifiers} font-family_normal font_2">
@@ -9835,7 +10921,7 @@ Utility CSS
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 82.1
+  Styleguide 82.2
  */
 .font-weight_light, .font_light {
   font-weight: 100 !important;
@@ -9849,14 +10935,21 @@ Utility CSS
   font-weight: 900 !important;
 }
 
-.font-style_normal {
-  font-style: normal !important;
-}
+/*
+  Font Size
 
-.font-style_italic {
-  font-style: italic !important;
-}
+  You can change the features of the text with some simple use classes.
 
+  .font_x               - font size of    
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 82.3
+ */
 .font-size_0, .font_0 {
   font-size: 1rem;
 }
@@ -10689,7 +11782,35 @@ Utility CSS
     flex-shrink: 1;
   }
 }
-.opacicty_0 {
+/*
+	Utility CSS: Opacity
+
+	Set the Opacity of an object
+
+	.opacity_0                        - Opacity of 0%
+	.opacity_1                        - Opacity of 10%
+	.opacity_2                        - Opacity of 20%
+	.opacity_3                        - Opacity of 30%
+	.opacity_4                        - Opacity of 40%
+	.opacity_5                        - Opacity of 50%
+	.opacity_6                        - Opacity of 60%
+	.opacity_7                        - Opacity of 70%
+	.opacity_8                        - Opacity of 80%
+	.opacity_9                        - Opacity of 90%
+	.opacity_none                     - No Opacity
+
+	markup:
+	<div class="{$modifiers} border-width_1 border-solid border_white padding_2 back_warning color_white">{$modifiers}</div>
+
+	sg-wrapper: 
+	<div class="padding_4 back_primary">
+		<sg-wrapper-content/>
+	</div>
+
+	Styleguide 85.0
+ 
+ */
+.opacity_0 {
   opacity: 0;
 }
 
@@ -10730,6 +11851,28 @@ Utility CSS
 }
 
 .opacity_none {
+  opacity: 1;
+}
+
+/*
+	Opacity: Hover
+
+	Set the Opacity of an object to 100% while hovered.
+
+	.opacity_1.hover_opacity                        - Opacity of 10%
+
+	markup:
+	<div class="{$modifiers} border-width_1 border-solid border_white padding_2 back_warning color_white">{$modifiers}</div>
+
+	sg-wrapper: 
+	<div class="padding_4 back_primary">
+		<sg-wrapper-content/>
+	</div>
+
+	Styleguide 85.1
+ 
+ */
+.hover_opacity:hover {
   opacity: 1;
 }
 

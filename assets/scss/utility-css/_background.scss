@@ -40,17 +40,19 @@
 
   markup:
   <div class="grid-x">
-    <div class="{$modifiers}-5 cell auto text-center  padding_2">5</div>
-    <div class="{$modifiers}-4 cell auto text-center  padding_2">4</div>
-    <div class="{$modifiers}-3 cell auto text-center  padding_2">3</div>
-    <div class="{$modifiers}-2 cell auto text-center  padding_2">2</div>
-    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2">1</div>
-    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2">0</div>
-    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2">n1</div>
-    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2">n2</div>
-    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2">n3</div>
-    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2">n4</div>
-    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2">n5</div>
+    <div class="back_white cell auto text-center padding_2 padding-top_5 padding-bottom_5 ">white</div>
+    <div class="{$modifiers}-5 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">5</div>
+    <div class="{$modifiers}-4 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">4</div>
+    <div class="{$modifiers}-3 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">3</div>
+    <div class="{$modifiers}-2 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">2</div>
+    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">1</div>
+    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n5</div>
+    <div class="back_black cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">black</div>
   </div>
 
  
@@ -65,3 +67,16 @@
 .back_white{
   background-color: $white;
 }
+.back_black{
+  background-color: $black;
+}
+
+
+/*
+  CSS Utlitiy: Hover
+
+  Make any Object hover action. 
+
+  Styleguide 84.0
+*/
+
