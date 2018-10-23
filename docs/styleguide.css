@@ -9,15 +9,15 @@
 
   Strathmore color is based off of the ACC Scrub Colors  
 
-  back_primary              		- Scrub Teal used for primary colors often this color is swapped out for the product color of the product. This color can be found on most UI items. 
-  back_secondary              		- Grey used secondary colors and secondary actions
-  back_navigation					- Scrub Blue reserved for navigation items. IE next, previous, forard, back buttons. 
-  back_info             	 		- Scrub Magenta for information 
-  back_hightlight              		- Scrub Purple used for highlighting 
-  back_success              		- Action color for Success and Complete
-  back_warning              		- Action color for warnings
-  back_alert              			- Action colors for alerts and errors
-  back_acc							- ACC Blue  
+  back_primary                  - Scrub Teal used for primary colors often this color is swapped out for the product color of the product. This color can be found on most UI items. 
+  back_secondary                  - Grey used secondary colors and secondary actions
+  back_navigation         - Scrub Blue reserved for navigation items. IE next, previous, forard, back buttons. 
+  back_info                   - Scrub Magenta for information 
+  back_hightlight                 - Scrub Purple used for highlighting 
+  back_success                  - Action color for Success and Complete
+  back_warning                  - Action color for warnings
+  back_alert                    - Action colors for alerts and errors
+  back_acc              - ACC Blue  
 
   markup:
   <div class="{$modifiers} cell auto text-center color_white padding_2">{$modifiers}</div>  
@@ -103,7 +103,7 @@ html {
 /**
 * Foundation for Sites Settings END
  */
-.hover-text_acc-n5:hover, .hover-text_acc-n4:hover, .hover-text_acc-n3:hover, .hover-text_acc-n2:hover, .hover-text_acc-n1:hover, .hover-text_acc-5:hover, .hover-text_acc-4:hover, .hover-text_acc-3:hover, .hover-text_acc-2:hover, .hover-text_acc-1:hover, .hover-text_acc-0:hover, .hover-text_acc:hover, .hover_acc-n5:hover, .hover_acc-n4:hover, .hover_acc-n3:hover, .hover_acc-n2:hover, .hover_acc-n1:hover, .hover_acc-5:hover, .hover_acc-4:hover, .hover_acc-3:hover, .hover_acc-2:hover, .hover_acc-1:hover, .hover_acc-0:hover, .hover_acc:hover, .hover-text_hightlight-n5:hover, .hover-text_hightlight-n4:hover, .hover-text_hightlight-n3:hover, .hover-text_hightlight-n2:hover, .hover-text_hightlight-n1:hover, .hover-text_hightlight-5:hover, .hover-text_hightlight-4:hover, .hover-text_hightlight-3:hover, .hover-text_hightlight-2:hover, .hover-text_hightlight-1:hover, .hover-text_hightlight-0:hover, .hover-text_hightlight:hover, .hover_hightlight-n5:hover, .hover_hightlight-n4:hover, .hover_hightlight-n3:hover, .hover_hightlight-n2:hover, .hover_hightlight-n1:hover, .hover_hightlight-5:hover, .hover_hightlight-4:hover, .hover_hightlight-3:hover, .hover_hightlight-2:hover, .hover_hightlight-1:hover, .hover_hightlight-0:hover, .hover_hightlight:hover, .hover-text_info-n5:hover, .hover-text_info-n4:hover, .hover-text_info-n3:hover, .hover-text_info-n2:hover, .hover-text_info-n1:hover, .hover-text_info-5:hover, .hover-text_info-4:hover, .hover-text_info-3:hover, .hover-text_info-2:hover, .hover-text_info-1:hover, .hover-text_info-0:hover, .hover-text_info:hover, .hover_info-n5:hover, .hover_info-n4:hover, .hover_info-n3:hover, .hover_info-n2:hover, .hover_info-n1:hover, .hover_info-5:hover, .hover_info-4:hover, .hover_info-3:hover, .hover_info-2:hover, .hover_info-1:hover, .hover_info-0:hover, .hover_info:hover, .hover-text_selected-n5:hover, .hover-text_selected-n4:hover, .hover-text_selected-n3:hover, .hover-text_selected-n2:hover, .hover-text_selected-n1:hover, .hover-text_selected-5:hover, .hover-text_selected-4:hover, .hover-text_selected-3:hover, .hover-text_selected-2:hover, .hover-text_selected-1:hover, .hover-text_selected-0:hover, .hover-text_selected:hover, .hover_selected-n5:hover, .hover_selected-n4:hover, .hover_selected-n3:hover, .hover_selected-n2:hover, .hover_selected-n1:hover, .hover_selected-5:hover, .hover_selected-4:hover, .hover_selected-3:hover, .hover_selected-2:hover, .hover_selected-1:hover, .hover_selected-0:hover, .hover_selected:hover, .hover-text_navigation-n5:hover, .hover-text_navigation-n4:hover, .hover-text_navigation-n3:hover, .hover-text_navigation-n2:hover, .hover-text_navigation-n1:hover, .hover-text_navigation-5:hover, .hover-text_navigation-4:hover, .hover-text_navigation-3:hover, .hover-text_navigation-2:hover, .hover-text_navigation-1:hover, .hover-text_navigation-0:hover, .hover-text_navigation:hover, .hover_navigation-n5:hover, .hover_navigation-n4:hover, .hover_navigation-n3:hover, .hover_navigation-n2:hover, .hover_navigation-n1:hover, .hover_navigation-5:hover, .hover_navigation-4:hover, .hover_navigation-3:hover, .hover_navigation-2:hover, .hover_navigation-1:hover, .hover_navigation-0:hover, .hover_navigation:hover, .hover-text_alert-n5:hover, .hover-text_alert-n4:hover, .hover-text_alert-n3:hover, .hover-text_alert-n2:hover, .hover-text_alert-n1:hover, .hover-text_alert-5:hover, .hover-text_alert-4:hover, .hover-text_alert-3:hover, .hover-text_alert-2:hover, .hover-text_alert-1:hover, .hover-text_alert-0:hover, .hover-text_alert:hover, .hover_alert-n5:hover, .hover_alert-n4:hover, .hover_alert-n3:hover, .hover_alert-n2:hover, .hover_alert-n1:hover, .hover_alert-5:hover, .hover_alert-4:hover, .hover_alert-3:hover, .hover_alert-2:hover, .hover_alert-1:hover, .hover_alert-0:hover, .hover_alert:hover, .hover-text_warning-n5:hover, .hover-text_warning-n4:hover, .hover-text_warning-n3:hover, .hover-text_warning-n2:hover, .hover-text_warning-n1:hover, .hover-text_warning-5:hover, .hover-text_warning-4:hover, .hover-text_warning-3:hover, .hover-text_warning-2:hover, .hover-text_warning-1:hover, .hover-text_warning-0:hover, .hover-text_warning:hover, .hover_warning-n5:hover, .hover_warning-n4:hover, .hover_warning-n3:hover, .hover_warning-n2:hover, .hover_warning-n1:hover, .hover_warning-5:hover, .hover_warning-4:hover, .hover_warning-3:hover, .hover_warning-2:hover, .hover_warning-1:hover, .hover_warning-0:hover, .hover_warning:hover, .hover-text_success-n5:hover, .hover-text_success-n4:hover, .hover-text_success-n3:hover, .hover-text_success-n2:hover, .hover-text_success-n1:hover, .hover-text_success-5:hover, .hover-text_success-4:hover, .hover-text_success-3:hover, .hover-text_success-2:hover, .hover-text_success-1:hover, .hover-text_success-0:hover, .hover-text_success:hover, .hover_success-n5:hover, .hover_success-n4:hover, .hover_success-n3:hover, .hover_success-n2:hover, .hover_success-n1:hover, .hover_success-5:hover, .hover_success-4:hover, .hover_success-3:hover, .hover_success-2:hover, .hover_success-1:hover, .hover_success-0:hover, .hover_success:hover, .hover-text_secondary-n5:hover, .hover-text_secondary-n4:hover, .hover-text_secondary-n3:hover, .hover-text_secondary-n2:hover, .hover-text_secondary-n1:hover, .hover-text_secondary-5:hover, .hover-text_secondary-4:hover, .hover-text_secondary-3:hover, .hover-text_secondary-2:hover, .hover-text_secondary-1:hover, .hover-text_secondary-0:hover, .hover-text_secondary:hover, .hover_secondary-n5:hover, .hover_secondary-n4:hover, .hover_secondary-n3:hover, .hover_secondary-n2:hover, .hover_secondary-n1:hover, .hover_secondary-5:hover, .hover_secondary-4:hover, .hover_secondary-3:hover, .hover_secondary-2:hover, .hover_secondary-1:hover, .hover_secondary-0:hover, .hover_secondary:hover, .hover-text_primary-n5:hover, .hover-text_primary-n4:hover, .hover-text_primary-n3:hover, .hover-text_primary-n2:hover, .hover-text_primary-n1:hover, .hover-text_primary-5:hover, .hover-text_primary-4:hover, .hover-text_primary-3:hover, .hover-text_primary-2:hover, .hover-text_primary-1:hover, .hover-text_primary-0:hover, .hover-text_primary:hover, .hover_primary-n5:hover, .hover_primary-n4:hover, .hover_primary-n3:hover, .hover_primary-n2:hover, .hover_primary-n1:hover, .hover_primary-5:hover, .hover_primary-4:hover, .hover_primary-3:hover, .hover_primary-2:hover, .hover_primary-1:hover, .hover_primary-0:hover, .hover_primary:hover {
+.hover-text_secondaryalt-n5:hover, .hover-text_secondaryalt-n4:hover, .hover-text_secondaryalt-n3:hover, .hover-text_secondaryalt-n2:hover, .hover-text_secondaryalt-n1:hover, .hover-text_secondaryalt-5:hover, .hover-text_secondaryalt-4:hover, .hover-text_secondaryalt-3:hover, .hover-text_secondaryalt-2:hover, .hover-text_secondaryalt-1:hover, .hover-text_secondaryalt-0:hover, .hover-text_secondaryalt:hover, .hover_secondaryalt-n5:hover, .hover_secondaryalt-n4:hover, .hover_secondaryalt-n3:hover, .hover_secondaryalt-n2:hover, .hover_secondaryalt-n1:hover, .hover_secondaryalt-5:hover, .hover_secondaryalt-4:hover, .hover_secondaryalt-3:hover, .hover_secondaryalt-2:hover, .hover_secondaryalt-1:hover, .hover_secondaryalt-0:hover, .hover_secondaryalt:hover, .hover-text_acc-n5:hover, .hover-text_acc-n4:hover, .hover-text_acc-n3:hover, .hover-text_acc-n2:hover, .hover-text_acc-n1:hover, .hover-text_acc-5:hover, .hover-text_acc-4:hover, .hover-text_acc-3:hover, .hover-text_acc-2:hover, .hover-text_acc-1:hover, .hover-text_acc-0:hover, .hover-text_acc:hover, .hover_acc-n5:hover, .hover_acc-n4:hover, .hover_acc-n3:hover, .hover_acc-n2:hover, .hover_acc-n1:hover, .hover_acc-5:hover, .hover_acc-4:hover, .hover_acc-3:hover, .hover_acc-2:hover, .hover_acc-1:hover, .hover_acc-0:hover, .hover_acc:hover, .hover-text_hightlight-n5:hover, .hover-text_hightlight-n4:hover, .hover-text_hightlight-n3:hover, .hover-text_hightlight-n2:hover, .hover-text_hightlight-n1:hover, .hover-text_hightlight-5:hover, .hover-text_hightlight-4:hover, .hover-text_hightlight-3:hover, .hover-text_hightlight-2:hover, .hover-text_hightlight-1:hover, .hover-text_hightlight-0:hover, .hover-text_hightlight:hover, .hover_hightlight-n5:hover, .hover_hightlight-n4:hover, .hover_hightlight-n3:hover, .hover_hightlight-n2:hover, .hover_hightlight-n1:hover, .hover_hightlight-5:hover, .hover_hightlight-4:hover, .hover_hightlight-3:hover, .hover_hightlight-2:hover, .hover_hightlight-1:hover, .hover_hightlight-0:hover, .hover_hightlight:hover, .hover-text_info-n5:hover, .hover-text_info-n4:hover, .hover-text_info-n3:hover, .hover-text_info-n2:hover, .hover-text_info-n1:hover, .hover-text_info-5:hover, .hover-text_info-4:hover, .hover-text_info-3:hover, .hover-text_info-2:hover, .hover-text_info-1:hover, .hover-text_info-0:hover, .hover-text_info:hover, .hover_info-n5:hover, .hover_info-n4:hover, .hover_info-n3:hover, .hover_info-n2:hover, .hover_info-n1:hover, .hover_info-5:hover, .hover_info-4:hover, .hover_info-3:hover, .hover_info-2:hover, .hover_info-1:hover, .hover_info-0:hover, .hover_info:hover, .hover-text_selected-n5:hover, .hover-text_selected-n4:hover, .hover-text_selected-n3:hover, .hover-text_selected-n2:hover, .hover-text_selected-n1:hover, .hover-text_selected-5:hover, .hover-text_selected-4:hover, .hover-text_selected-3:hover, .hover-text_selected-2:hover, .hover-text_selected-1:hover, .hover-text_selected-0:hover, .hover-text_selected:hover, .hover_selected-n5:hover, .hover_selected-n4:hover, .hover_selected-n3:hover, .hover_selected-n2:hover, .hover_selected-n1:hover, .hover_selected-5:hover, .hover_selected-4:hover, .hover_selected-3:hover, .hover_selected-2:hover, .hover_selected-1:hover, .hover_selected-0:hover, .hover_selected:hover, .hover-text_navigation-n5:hover, .hover-text_navigation-n4:hover, .hover-text_navigation-n3:hover, .hover-text_navigation-n2:hover, .hover-text_navigation-n1:hover, .hover-text_navigation-5:hover, .hover-text_navigation-4:hover, .hover-text_navigation-3:hover, .hover-text_navigation-2:hover, .hover-text_navigation-1:hover, .hover-text_navigation-0:hover, .hover-text_navigation:hover, .hover_navigation-n5:hover, .hover_navigation-n4:hover, .hover_navigation-n3:hover, .hover_navigation-n2:hover, .hover_navigation-n1:hover, .hover_navigation-5:hover, .hover_navigation-4:hover, .hover_navigation-3:hover, .hover_navigation-2:hover, .hover_navigation-1:hover, .hover_navigation-0:hover, .hover_navigation:hover, .hover-text_alert-n5:hover, .hover-text_alert-n4:hover, .hover-text_alert-n3:hover, .hover-text_alert-n2:hover, .hover-text_alert-n1:hover, .hover-text_alert-5:hover, .hover-text_alert-4:hover, .hover-text_alert-3:hover, .hover-text_alert-2:hover, .hover-text_alert-1:hover, .hover-text_alert-0:hover, .hover-text_alert:hover, .hover_alert-n5:hover, .hover_alert-n4:hover, .hover_alert-n3:hover, .hover_alert-n2:hover, .hover_alert-n1:hover, .hover_alert-5:hover, .hover_alert-4:hover, .hover_alert-3:hover, .hover_alert-2:hover, .hover_alert-1:hover, .hover_alert-0:hover, .hover_alert:hover, .hover-text_warning-n5:hover, .hover-text_warning-n4:hover, .hover-text_warning-n3:hover, .hover-text_warning-n2:hover, .hover-text_warning-n1:hover, .hover-text_warning-5:hover, .hover-text_warning-4:hover, .hover-text_warning-3:hover, .hover-text_warning-2:hover, .hover-text_warning-1:hover, .hover-text_warning-0:hover, .hover-text_warning:hover, .hover_warning-n5:hover, .hover_warning-n4:hover, .hover_warning-n3:hover, .hover_warning-n2:hover, .hover_warning-n1:hover, .hover_warning-5:hover, .hover_warning-4:hover, .hover_warning-3:hover, .hover_warning-2:hover, .hover_warning-1:hover, .hover_warning-0:hover, .hover_warning:hover, .hover-text_success-n5:hover, .hover-text_success-n4:hover, .hover-text_success-n3:hover, .hover-text_success-n2:hover, .hover-text_success-n1:hover, .hover-text_success-5:hover, .hover-text_success-4:hover, .hover-text_success-3:hover, .hover-text_success-2:hover, .hover-text_success-1:hover, .hover-text_success-0:hover, .hover-text_success:hover, .hover_success-n5:hover, .hover_success-n4:hover, .hover_success-n3:hover, .hover_success-n2:hover, .hover_success-n1:hover, .hover_success-5:hover, .hover_success-4:hover, .hover_success-3:hover, .hover_success-2:hover, .hover_success-1:hover, .hover_success-0:hover, .hover_success:hover, .hover-text_secondary-n5:hover, .hover-text_secondary-n4:hover, .hover-text_secondary-n3:hover, .hover-text_secondary-n2:hover, .hover-text_secondary-n1:hover, .hover-text_secondary-5:hover, .hover-text_secondary-4:hover, .hover-text_secondary-3:hover, .hover-text_secondary-2:hover, .hover-text_secondary-1:hover, .hover-text_secondary-0:hover, .hover-text_secondary:hover, .hover_secondary-n5:hover, .hover_secondary-n4:hover, .hover_secondary-n3:hover, .hover_secondary-n2:hover, .hover_secondary-n1:hover, .hover_secondary-5:hover, .hover_secondary-4:hover, .hover_secondary-3:hover, .hover_secondary-2:hover, .hover_secondary-1:hover, .hover_secondary-0:hover, .hover_secondary:hover, .hover-text_primary-n5:hover, .hover-text_primary-n4:hover, .hover-text_primary-n3:hover, .hover-text_primary-n2:hover, .hover-text_primary-n1:hover, .hover-text_primary-5:hover, .hover-text_primary-4:hover, .hover-text_primary-3:hover, .hover-text_primary-2:hover, .hover-text_primary-1:hover, .hover-text_primary-0:hover, .hover-text_primary:hover, .hover_primary-n5:hover, .hover_primary-n4:hover, .hover_primary-n3:hover, .hover_primary-n2:hover, .hover_primary-n1:hover, .hover_primary-5:hover, .hover_primary-4:hover, .hover_primary-3:hover, .hover_primary-2:hover, .hover_primary-1:hover, .hover_primary-0:hover, .hover_primary:hover {
   cursor: pointer;
 }
 
@@ -3285,11 +3285,11 @@ h3 {
   color: #0a0a0a;
 }
 .button.secondary {
-  background-color: #63646b;
+  background-color: #5a5c69;
   color: #fefefe;
 }
 .button.secondary:hover, .button.secondary:focus {
-  background-color: #4f5056;
+  background-color: #484a54;
   color: #fefefe;
 }
 .button.success {
@@ -3356,6 +3356,14 @@ h3 {
   background-color: #002d56;
   color: #fefefe;
 }
+.button.secondaryalt {
+  background-color: #c5bfba;
+  color: #0a0a0a;
+}
+.button.secondaryalt:hover, .button.secondaryalt:focus {
+  background-color: #a29890;
+  color: #0a0a0a;
+}
 .button.disabled, .button[disabled] {
   opacity: 0.45;
   cursor: not-allowed;
@@ -3377,7 +3385,7 @@ h3 {
   cursor: not-allowed;
 }
 .button.disabled.secondary, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  background-color: #63646b;
+  background-color: #5a5c69;
   color: #fefefe;
 }
 .button.disabled.success, .button[disabled].success {
@@ -3444,6 +3452,14 @@ h3 {
   background-color: #00386b;
   color: #fefefe;
 }
+.button.disabled.secondaryalt, .button[disabled].secondaryalt {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.button.disabled.secondaryalt, .button.disabled.secondaryalt:hover, .button.disabled.secondaryalt:focus, .button[disabled].secondaryalt, .button[disabled].secondaryalt:hover, .button[disabled].secondaryalt:focus {
+  background-color: #c5bfba;
+  color: #0a0a0a;
+}
 .button.hollow {
   border: 1px solid #198dae;
   color: #198dae;
@@ -3475,16 +3491,16 @@ h3 {
   color: #198dae;
 }
 .button.hollow.secondary {
-  border: 1px solid #63646b;
-  color: #63646b;
+  border: 1px solid #5a5c69;
+  color: #5a5c69;
 }
 .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-  border-color: #323236;
-  color: #323236;
+  border-color: #2d2e35;
+  color: #2d2e35;
 }
 .button.hollow.secondary:hover.disabled, .button.hollow.secondary:hover[disabled], .button.hollow.secondary:focus.disabled, .button.hollow.secondary:focus[disabled] {
-  border: 1px solid #63646b;
-  color: #63646b;
+  border: 1px solid #5a5c69;
+  color: #5a5c69;
 }
 .button.hollow.success {
   border: 1px solid #09911f;
@@ -3582,6 +3598,18 @@ h3 {
   border: 1px solid #00386b;
   color: #00386b;
 }
+.button.hollow.secondaryalt {
+  border: 1px solid #c5bfba;
+  color: #c5bfba;
+}
+.button.hollow.secondaryalt:hover, .button.hollow.secondaryalt:focus {
+  border-color: #685f57;
+  color: #685f57;
+}
+.button.hollow.secondaryalt:hover.disabled, .button.hollow.secondaryalt:hover[disabled], .button.hollow.secondaryalt:focus.disabled, .button.hollow.secondaryalt:focus[disabled] {
+  border: 1px solid #c5bfba;
+  color: #c5bfba;
+}
 .button.clear {
   border: 1px solid #198dae;
   color: #198dae;
@@ -3619,16 +3647,16 @@ h3 {
   border-color: transparent;
 }
 .button.clear.secondary {
-  border: 1px solid #63646b;
-  color: #63646b;
+  border: 1px solid #5a5c69;
+  color: #5a5c69;
 }
 .button.clear.secondary:hover, .button.clear.secondary:focus {
-  border-color: #323236;
-  color: #323236;
+  border-color: #2d2e35;
+  color: #2d2e35;
 }
 .button.clear.secondary:hover.disabled, .button.clear.secondary:hover[disabled], .button.clear.secondary:focus.disabled, .button.clear.secondary:focus[disabled] {
-  border: 1px solid #63646b;
-  color: #63646b;
+  border: 1px solid #5a5c69;
+  color: #5a5c69;
 }
 .button.clear.secondary, .button.clear.secondary.disabled, .button.clear.secondary[disabled], .button.clear.secondary:hover, .button.clear.secondary:hover.disabled, .button.clear.secondary:hover[disabled], .button.clear.secondary:focus, .button.clear.secondary:focus.disabled, .button.clear.secondary:focus[disabled] {
   border-color: transparent;
@@ -3753,6 +3781,21 @@ h3 {
 .button.clear.acc, .button.clear.acc.disabled, .button.clear.acc[disabled], .button.clear.acc:hover, .button.clear.acc:hover.disabled, .button.clear.acc:hover[disabled], .button.clear.acc:focus, .button.clear.acc:focus.disabled, .button.clear.acc:focus[disabled] {
   border-color: transparent;
 }
+.button.clear.secondaryalt {
+  border: 1px solid #c5bfba;
+  color: #c5bfba;
+}
+.button.clear.secondaryalt:hover, .button.clear.secondaryalt:focus {
+  border-color: #685f57;
+  color: #685f57;
+}
+.button.clear.secondaryalt:hover.disabled, .button.clear.secondaryalt:hover[disabled], .button.clear.secondaryalt:focus.disabled, .button.clear.secondaryalt:focus[disabled] {
+  border: 1px solid #c5bfba;
+  color: #c5bfba;
+}
+.button.clear.secondaryalt, .button.clear.secondaryalt.disabled, .button.clear.secondaryalt[disabled], .button.clear.secondaryalt:hover, .button.clear.secondaryalt:hover.disabled, .button.clear.secondaryalt:hover[disabled], .button.clear.secondaryalt:focus, .button.clear.secondaryalt:focus.disabled, .button.clear.secondaryalt:focus[disabled] {
+  border-color: transparent;
+}
 .button.dropdown::after {
   display: block;
   width: 0;
@@ -3775,7 +3818,7 @@ h3 {
   border-top-color: #198dae;
 }
 .button.dropdown.hollow.secondary::after {
-  border-top-color: #63646b;
+  border-top-color: #5a5c69;
 }
 .button.dropdown.hollow.success::after {
   border-top-color: #09911f;
@@ -3800,6 +3843,9 @@ h3 {
 }
 .button.dropdown.hollow.acc::after {
   border-top-color: #00386b;
+}
+.button.dropdown.hollow.secondaryalt::after {
+  border-top-color: #c5bfba;
 }
 .button.arrow-only::after {
   top: -0.1em;
@@ -3860,11 +3906,11 @@ a.button:hover, a.button:focus {
   color: #0a0a0a;
 }
 .button-group.secondary .button {
-  background-color: #63646b;
+  background-color: #5a5c69;
   color: #fefefe;
 }
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background-color: #4f5056;
+  background-color: #484a54;
   color: #fefefe;
 }
 .button-group.success .button {
@@ -3930,6 +3976,14 @@ a.button:hover, a.button:focus {
 .button-group.acc .button:hover, .button-group.acc .button:focus {
   background-color: #002d56;
   color: #fefefe;
+}
+.button-group.secondaryalt .button {
+  background-color: #c5bfba;
+  color: #0a0a0a;
+}
+.button-group.secondaryalt .button:hover, .button-group.secondaryalt .button:focus {
+  background-color: #a29890;
+  color: #0a0a0a;
 }
 .button-group.stacked, .button-group.stacked-for-small, .button-group.stacked-for-medium {
   flex-wrap: wrap;
@@ -4014,7 +4068,7 @@ a.button:hover, a.button:focus {
   color: #0a0a0a;
 }
 .label.secondary {
-  background: #63646b;
+  background: #5a5c69;
   color: #fefefe;
 }
 .label.success {
@@ -4049,6 +4103,10 @@ a.button:hover, a.button:focus {
   background: #00386b;
   color: #fefefe;
 }
+.label.secondaryalt {
+  background: #c5bfba;
+  color: #0a0a0a;
+}
 
 .progress {
   height: 1rem;
@@ -4060,7 +4118,7 @@ a.button:hover, a.button:focus {
   background-color: #198dae;
 }
 .progress.secondary .progress-meter {
-  background-color: #63646b;
+  background-color: #5a5c69;
 }
 .progress.success .progress-meter {
   background-color: #09911f;
@@ -4085,6 +4143,9 @@ a.button:hover, a.button:focus {
 }
 .progress.acc .progress-meter {
   background-color: #00386b;
+}
+.progress.secondaryalt .progress-meter {
+  background-color: #c5bfba;
 }
 
 .progress-meter {
@@ -4429,7 +4490,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   color: #0a0a0a;
 }
 .badge.secondary {
-  background: #63646b;
+  background: #5a5c69;
   color: #fefefe;
 }
 .badge.success {
@@ -4463,6 +4524,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .badge.acc {
   background: #00386b;
   color: #fefefe;
+}
+.badge.secondaryalt {
+  background: #c5bfba;
+  color: #0a0a0a;
 }
 
 .breadcrumbs {
@@ -4523,7 +4588,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   color: #0a0a0a;
 }
 .callout.secondary {
-  background-color: #e7e8e9;
+  background-color: #e6e6e9;
   color: #0a0a0a;
 }
 .callout.success {
@@ -4556,6 +4621,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 .callout.acc {
   background-color: #c3e2ff;
+  color: #0a0a0a;
+}
+.callout.secondaryalt {
+  background-color: #f6f5f5;
   color: #0a0a0a;
 }
 .callout.small {
@@ -7150,85 +7219,11 @@ markup:
 .button {
   white-space: nowrap;
 }
-.button.primary {
-  background-color: #198dae;
-  color: white;
+.button.hollow {
+  background-color: transparent;
 }
-.button.primary:hover, .button.primary:focus {
-  background-color: #14718b;
-  color: white;
-}
-.button.secondary {
-  background-color: #63646b;
-  color: white;
-}
-.button.secondary:hover, .button.secondary:focus {
-  background-color: #4f5056;
-  color: white;
-}
-.button.success {
-  background-color: #09911f;
-  color: white;
-}
-.button.success:hover, .button.success:focus {
-  background-color: #077419;
-  color: white;
-}
-.button.warning {
-  background-color: #e18725;
-  color: white;
-}
-.button.warning:hover, .button.warning:focus {
-  background-color: #b86c19;
-  color: white;
-}
-.button.alert {
-  background-color: #cb241c;
-  color: white;
-}
-.button.alert:hover, .button.alert:focus {
-  background-color: #a21d16;
-  color: white;
-}
-.button.navigation {
-  background-color: #4f74bf;
-  color: white;
-}
-.button.navigation:hover, .button.navigation:focus {
-  background-color: #3a5b9e;
-  color: white;
-}
-.button.selected {
-  background-color: #509f6c;
-  color: white;
-}
-.button.selected:hover, .button.selected:focus {
-  background-color: #407f56;
-  color: white;
-}
-.button.info {
-  background-color: #735dba;
-  color: white;
-}
-.button.info:hover, .button.info:focus {
-  background-color: #58439d;
-  color: white;
-}
-.button.hightlight {
-  background-color: #c45e99;
-  color: white;
-}
-.button.hightlight:hover, .button.hightlight:focus {
-  background-color: #aa3e7c;
-  color: white;
-}
-.button.acc {
-  background-color: #00386b;
-  color: white;
-}
-.button.acc:hover, .button.acc:focus {
-  background-color: #002d56;
-  color: white;
+.button.clear {
+  border-color: transparent;
 }
 .button.shadow {
   box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
@@ -7311,7 +7306,7 @@ markup:
  Styleguide 20.20
 */
 .pagination .disabled:hover {
-  background-image: url("/assets/img/cross_disabled.png");
+  background-image: url("../img/cross_disabled.png");
 }
 
 /*
@@ -7503,51 +7498,51 @@ Utility CSS
 }
 
 .back_secondary {
-  background-color: #63646b !important;
+  background-color: #5a5c69 !important;
 }
 
 .back_secondary-0 {
-  background-color: #63646b !important;
+  background-color: #5a5c69 !important;
 }
 
 .back_secondary-1 {
-  background-color: #7a7b81 !important;
+  background-color: #737480 !important;
 }
 
 .back_secondary-2 {
-  background-color: #9d9da2 !important;
+  background-color: #9798a1 !important;
 }
 
 .back_secondary-3, .pagination-previous, .pagination-next {
-  background-color: #c1c1c4 !important;
+  background-color: #bdbec3 !important;
 }
 
 .back_secondary-4 {
-  background-color: #ddddde !important;
+  background-color: #dbdbde !important;
 }
 
 .back_secondary-5 {
-  background-color: #eff0f0 !important;
+  background-color: #efeff0 !important;
 }
 
 .back_secondary-n1 {
-  background-color: #595a60 !important;
+  background-color: #51535f !important;
 }
 
 .back_secondary-n2 {
-  background-color: #4a4b50 !important;
+  background-color: #44454f !important;
 }
 
 .back_secondary-n3 {
-  background-color: #36373b !important;
+  background-color: #32333a !important;
 }
 
 .back_secondary-n4 {
-  background-color: #28282b !important;
+  background-color: #24252a !important;
 }
 
 .back_secondary-n5 {
-  background-color: #19191b !important;
+  background-color: #17171a !important;
 }
 
 .back_success {
@@ -7934,6 +7929,54 @@ Utility CSS
   background-color: #000e1b !important;
 }
 
+.back_secondaryalt {
+  background-color: #c5bfba !important;
+}
+
+.back_secondaryalt-0 {
+  background-color: #c5bfba !important;
+}
+
+.back_secondaryalt-1 {
+  background-color: #cec9c4 !important;
+}
+
+.back_secondaryalt-2 {
+  background-color: #dad7d4 !important;
+}
+
+.back_secondaryalt-3 {
+  background-color: #e8e5e3 !important;
+}
+
+.back_secondaryalt-4 {
+  background-color: #f2f1f0 !important;
+}
+
+.back_secondaryalt-5 {
+  background-color: #f9f9f8 !important;
+}
+
+.back_secondaryalt-n1 {
+  background-color: #b1aca7 !important;
+}
+
+.back_secondaryalt-n2 {
+  background-color: #948f8c !important;
+}
+
+.back_secondaryalt-n3 {
+  background-color: #6c6966 !important;
+}
+
+.back_secondaryalt-n4 {
+  background-color: #4f4c4a !important;
+}
+
+.back_secondaryalt-n5 {
+  background-color: #31302f !important;
+}
+
 .back_white, .pagination-container .current {
   background-color: #fefefe;
 }
@@ -8039,27 +8082,27 @@ Utility CSS
 
  */
 .texture_light {
-  background-image: url("/assets/img/whisper.png");
+  background-image: url("../img/whisper.png");
 }
 
 .texture_medium {
-  background-image: url("/assets/img/billie-holiday-speck.png");
+  background-image: url("../img/billie-holiday-speck.png");
 }
 
 .texture_dark {
-  background-image: url("/assets/img/cross_stripes.png");
+  background-image: url("../img/cross_stripes.png");
 }
 
 .texture_dust {
-  background-image: url("/assets/img/dust.png");
+  background-image: url("../img/dust.png");
 }
 
 .texture_disabled, .disabled, .disabled:hover {
-  background-image: url("/assets/img/cross_disabled.png");
+  background-image: url("../img/cross_disabled.png");
 }
 
 .texture_cross {
-  background-image: url("/assets/img/cross_color.png");
+  background-image: url("../img/cross_color.png");
 }
 
 /*
@@ -8250,99 +8293,99 @@ Utility CSS
 }
 
 .hover_secondary:hover {
-  background-color: #63646b !important;
+  background-color: #5a5c69 !important;
 }
 
 .hover_secondary-0:hover {
-  background-color: #63646b !important;
+  background-color: #5a5c69 !important;
 }
 
 .hover_secondary-1:hover {
-  background-color: #7a7b81 !important;
+  background-color: #737480 !important;
 }
 
 .hover_secondary-2:hover {
-  background-color: #9d9da2 !important;
+  background-color: #9798a1 !important;
 }
 
 .hover_secondary-3:hover {
-  background-color: #c1c1c4 !important;
+  background-color: #bdbec3 !important;
 }
 
 .hover_secondary-4:hover {
-  background-color: #ddddde !important;
+  background-color: #dbdbde !important;
 }
 
 .hover_secondary-5:hover {
-  background-color: #eff0f0 !important;
+  background-color: #efeff0 !important;
 }
 
 .hover_secondary-n1:hover {
-  background-color: #595a60 !important;
+  background-color: #51535f !important;
 }
 
 .hover_secondary-n2:hover {
-  background-color: #4a4b50 !important;
+  background-color: #44454f !important;
 }
 
 .hover_secondary-n3:hover {
-  background-color: #36373b !important;
+  background-color: #32333a !important;
 }
 
 .hover_secondary-n4:hover {
-  background-color: #28282b !important;
+  background-color: #24252a !important;
 }
 
 .hover_secondary-n5:hover {
-  background-color: #19191b !important;
+  background-color: #17171a !important;
 }
 
 .hover-text_secondary:hover {
-  color: #63646b !important;
+  color: #5a5c69 !important;
 }
 
 .hover-text_secondary-0:hover {
-  color: #63646b !important;
+  color: #5a5c69 !important;
 }
 
 .hover-text_secondary-1:hover {
-  color: #7a7b81 !important;
+  color: #737480 !important;
 }
 
 .hover-text_secondary-2:hover {
-  color: #9d9da2 !important;
+  color: #9798a1 !important;
 }
 
 .hover-text_secondary-3:hover {
-  color: #c1c1c4 !important;
+  color: #bdbec3 !important;
 }
 
 .hover-text_secondary-4:hover {
-  color: #ddddde !important;
+  color: #dbdbde !important;
 }
 
 .hover-text_secondary-5:hover {
-  color: #eff0f0 !important;
+  color: #efeff0 !important;
 }
 
 .hover-text_secondary-n1:hover {
-  color: #595a60 !important;
+  color: #51535f !important;
 }
 
 .hover-text_secondary-n2:hover {
-  color: #4a4b50 !important;
+  color: #44454f !important;
 }
 
 .hover-text_secondary-n3:hover {
-  color: #36373b !important;
+  color: #32333a !important;
 }
 
 .hover-text_secondary-n4:hover {
-  color: #28282b !important;
+  color: #24252a !important;
 }
 
 .hover-text_secondary-n5:hover {
-  color: #19191b !important;
+  color: #17171a !important;
 }
 
 .hover_success:hover {
@@ -9113,6 +9156,102 @@ Utility CSS
   color: #000e1b !important;
 }
 
+.hover_secondaryalt:hover {
+  background-color: #c5bfba !important;
+}
+
+.hover_secondaryalt-0:hover {
+  background-color: #c5bfba !important;
+}
+
+.hover_secondaryalt-1:hover {
+  background-color: #cec9c4 !important;
+}
+
+.hover_secondaryalt-2:hover {
+  background-color: #dad7d4 !important;
+}
+
+.hover_secondaryalt-3:hover {
+  background-color: #e8e5e3 !important;
+}
+
+.hover_secondaryalt-4:hover {
+  background-color: #f2f1f0 !important;
+}
+
+.hover_secondaryalt-5:hover {
+  background-color: #f9f9f8 !important;
+}
+
+.hover_secondaryalt-n1:hover {
+  background-color: #b1aca7 !important;
+}
+
+.hover_secondaryalt-n2:hover {
+  background-color: #948f8c !important;
+}
+
+.hover_secondaryalt-n3:hover {
+  background-color: #6c6966 !important;
+}
+
+.hover_secondaryalt-n4:hover {
+  background-color: #4f4c4a !important;
+}
+
+.hover_secondaryalt-n5:hover {
+  background-color: #31302f !important;
+}
+
+.hover-text_secondaryalt:hover {
+  color: #c5bfba !important;
+}
+
+.hover-text_secondaryalt-0:hover {
+  color: #c5bfba !important;
+}
+
+.hover-text_secondaryalt-1:hover {
+  color: #cec9c4 !important;
+}
+
+.hover-text_secondaryalt-2:hover {
+  color: #dad7d4 !important;
+}
+
+.hover-text_secondaryalt-3:hover {
+  color: #e8e5e3 !important;
+}
+
+.hover-text_secondaryalt-4:hover {
+  color: #f2f1f0 !important;
+}
+
+.hover-text_secondaryalt-5:hover {
+  color: #f9f9f8 !important;
+}
+
+.hover-text_secondaryalt-n1:hover {
+  color: #b1aca7 !important;
+}
+
+.hover-text_secondaryalt-n2:hover {
+  color: #948f8c !important;
+}
+
+.hover-text_secondaryalt-n3:hover {
+  color: #6c6966 !important;
+}
+
+.hover-text_secondaryalt-n4:hover {
+  color: #4f4c4a !important;
+}
+
+.hover-text_secondaryalt-n5:hover {
+  color: #31302f !important;
+}
+
 /*
   Hover: Text 
  
@@ -9244,6 +9383,26 @@ Utility CSS
 
 .margin_5 {
   margin: 2rem;
+}
+
+.margin_n1 {
+  margin: -1px;
+}
+
+.margin_n2 {
+  margin: -0.25rem;
+}
+
+.margin_n3 {
+  margin: -0.5rem;
+}
+
+.margin_n4 {
+  margin: -1rem;
+}
+
+.margin_n5 {
+  margin: -2rem;
 }
 
 .margin-top_0 {
@@ -9420,26 +9579,6 @@ Utility CSS
 
 .margin-left_n5 {
   margin-left: -2rem;
-}
-
-.margin_n1 {
-  margin: -1px;
-}
-
-.margin_n2 {
-  margin: -0.25rem;
-}
-
-.margin_n3 {
-  margin: -0.5rem;
-}
-
-.margin_n4 {
-  margin: -1rem;
-}
-
-.margin_n5 {
-  margin: -2rem;
 }
 
 /*
@@ -10031,51 +10170,51 @@ Utility CSS
 }
 
 .border_secondary {
-  border-color: #63646b !important;
+  border-color: #5a5c69 !important;
 }
 
 .border_secondary-0 {
-  border-color: #63646b !important;
+  border-color: #5a5c69 !important;
 }
 
 .border_secondary-1 {
-  border-color: #7a7b81 !important;
+  border-color: #737480 !important;
 }
 
 .border_secondary-2 {
-  border-color: #9d9da2 !important;
+  border-color: #9798a1 !important;
 }
 
 .border_secondary-3 {
-  border-color: #c1c1c4 !important;
+  border-color: #bdbec3 !important;
 }
 
 .border_secondary-4 {
-  border-color: #ddddde !important;
+  border-color: #dbdbde !important;
 }
 
 .border_secondary-5 {
-  border-color: #eff0f0 !important;
+  border-color: #efeff0 !important;
 }
 
 .border_secondary-n1 {
-  border-color: #595a60 !important;
+  border-color: #51535f !important;
 }
 
 .border_secondary-n2 {
-  border-color: #4a4b50 !important;
+  border-color: #44454f !important;
 }
 
 .border_secondary-n3 {
-  border-color: #36373b !important;
+  border-color: #32333a !important;
 }
 
 .border_secondary-n4 {
-  border-color: #28282b !important;
+  border-color: #24252a !important;
 }
 
 .border_secondary-n5 {
-  border-color: #19191b !important;
+  border-color: #17171a !important;
 }
 
 .border_success {
@@ -10462,6 +10601,54 @@ Utility CSS
   border-color: #000e1b !important;
 }
 
+.border_secondaryalt {
+  border-color: #c5bfba !important;
+}
+
+.border_secondaryalt-0 {
+  border-color: #c5bfba !important;
+}
+
+.border_secondaryalt-1 {
+  border-color: #cec9c4 !important;
+}
+
+.border_secondaryalt-2 {
+  border-color: #dad7d4 !important;
+}
+
+.border_secondaryalt-3 {
+  border-color: #e8e5e3 !important;
+}
+
+.border_secondaryalt-4 {
+  border-color: #f2f1f0 !important;
+}
+
+.border_secondaryalt-5 {
+  border-color: #f9f9f8 !important;
+}
+
+.border_secondaryalt-n1 {
+  border-color: #b1aca7 !important;
+}
+
+.border_secondaryalt-n2 {
+  border-color: #948f8c !important;
+}
+
+.border_secondaryalt-n3 {
+  border-color: #6c6966 !important;
+}
+
+.border_secondaryalt-n4 {
+  border-color: #4f4c4a !important;
+}
+
+.border_secondaryalt-n5 {
+  border-color: #31302f !important;
+}
+
 /*
   Border Width
  
@@ -10733,51 +10920,51 @@ Utility CSS
 }
 
 .color_secondary {
-  color: #63646b !important;
+  color: #5a5c69 !important;
 }
 
 .color_secondary-0 {
-  color: #63646b !important;
+  color: #5a5c69 !important;
 }
 
 .color_secondary-1 {
-  color: #7a7b81 !important;
+  color: #737480 !important;
 }
 
 .color_secondary-2 {
-  color: #9d9da2 !important;
+  color: #9798a1 !important;
 }
 
 .color_secondary-3 {
-  color: #c1c1c4 !important;
+  color: #bdbec3 !important;
 }
 
 .color_secondary-4 {
-  color: #ddddde !important;
+  color: #dbdbde !important;
 }
 
 .color_secondary-5 {
-  color: #eff0f0 !important;
+  color: #efeff0 !important;
 }
 
 .color_secondary-n1 {
-  color: #595a60 !important;
+  color: #51535f !important;
 }
 
 .color_secondary-n2 {
-  color: #4a4b50 !important;
+  color: #44454f !important;
 }
 
 .color_secondary-n3 {
-  color: #36373b !important;
+  color: #32333a !important;
 }
 
 .color_secondary-n4 {
-  color: #28282b !important;
+  color: #24252a !important;
 }
 
 .color_secondary-n5 {
-  color: #19191b !important;
+  color: #17171a !important;
 }
 
 .color_success {
@@ -11162,6 +11349,54 @@ Utility CSS
 
 .color_acc-n5 {
   color: #000e1b !important;
+}
+
+.color_secondaryalt {
+  color: #c5bfba !important;
+}
+
+.color_secondaryalt-0 {
+  color: #c5bfba !important;
+}
+
+.color_secondaryalt-1 {
+  color: #cec9c4 !important;
+}
+
+.color_secondaryalt-2 {
+  color: #dad7d4 !important;
+}
+
+.color_secondaryalt-3 {
+  color: #e8e5e3 !important;
+}
+
+.color_secondaryalt-4 {
+  color: #f2f1f0 !important;
+}
+
+.color_secondaryalt-5 {
+  color: #f9f9f8 !important;
+}
+
+.color_secondaryalt-n1 {
+  color: #b1aca7 !important;
+}
+
+.color_secondaryalt-n2 {
+  color: #948f8c !important;
+}
+
+.color_secondaryalt-n3 {
+  color: #6c6966 !important;
+}
+
+.color_secondaryalt-n4 {
+  color: #4f4c4a !important;
+}
+
+.color_secondaryalt-n5 {
+  color: #31302f !important;
 }
 
 .color_white, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]) {

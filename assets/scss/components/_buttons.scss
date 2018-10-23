@@ -28,18 +28,24 @@ markup:
 */
 .button{ 
 	white-space: nowrap;
-	  @each $name, $color in $button-palette {
-		&.#{$name} {
-	  		@include button-style($color, auto, white);
-	  	}
-	  }
-	  &.shadow{
-	  	@extend %hover-transition !optional;
-	  	box-shadow: make-shadow(3,"drop",#000,.4);
-	  	 
-	  	&:hover{
-	  		box-shadow: make-shadow(1,"drop",#000,.1);
-	  	}
-	  }
+	 //  @each $name, $color in $button-palette {
+		// &.#{$name} {
+	 //  		@include button-style($color, auto, white);
+	 //  	}
+	 //  }
+	&.hollow{
+		background-color: transparent;
+	}
+	&.clear{
+		border-color: transparent;
+	}
+	&.shadow{
+		@extend %hover-transition !optional;
+		box-shadow: make-shadow(3,"drop",#000,.4);
+		 
+		&:hover{
+			box-shadow: make-shadow(1,"drop",#000,.1);
+		}
+	}
 }
 
