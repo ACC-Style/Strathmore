@@ -23,10 +23,7 @@ gulp.task('serve',['style'], function () {
    server: {
      baseDir: "./Strathmore/"
    }
-
   });
-  gulp.watch(SCSS_PATH +"*.scss", ['sass']);
-
 })
 
 // Style Tesks
@@ -75,7 +72,7 @@ gulp.task('styleguide:generate', function() {
   return gulp.src( SCSS_PATH + '*/**.scss' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
-        server: true,
+        server: false,
         rootPath: STYLEGUIDE_PATH,
         //appRoot: STYLEGUIDE_PATH,
         overviewPath: 'README.md',
@@ -107,10 +104,14 @@ gulp.task('package', function(){
 gulp.task('watch', ['styleguide'], function () {
   console.log('Gulp Watch Tasks');
   console.log('Gulp: I will be watching you.... even when you sleep');
-  gulp.watch(['./assets/scss/**/*.scss'], ['styleguide']);
+  gulp.watch(["assets/scss/**/*.scss"], function(event){
+    return gulp.src('./assets/scss/index.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(styleguide.applyStyles())
+      .pipe(gulp.dest(STYLEGUIDE_PATH));
+  });
 
 });
-
 // Default
 gulp.task('default', ['style','styleguide','serve']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);

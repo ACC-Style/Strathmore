@@ -1,3 +1,97 @@
+.bar{color:blue;}
+$basicSizeMultiplier:1rem;
+$valueParams :(
+	size:(
+		0:	0,
+		n5:	-2		* $basicSizeMultiplier,
+		n4:	-1		* $basicSizeMultiplier,
+		n3:	-.5		* $basicSizeMultiplier,
+		n2:	-.25	* $basicSizeMultiplier,
+		n1:	-1px,
+		1:	1px,
+		2:	.25		* $basicSizeMultiplier,
+		3:	.5		* $basicSizeMultiplier,
+		4:	1		* $basicSizeMultiplier,
+		5:	2		* $basicSizeMultiplier,
+	),
+	size-positive:(
+		0: 0,
+		1: 1px,
+		2: .25		* $basicSizeMultiplier,
+		3: .5		* $basicSizeMultiplier,
+		4: 1		* $basicSizeMultiplier,
+		5: 2		* $basicSizeMultiplier,
+	),
+	unitless:(
+		0:0,
+		n5:-5,
+		n4:-4,
+		n3:-3,
+		n2:-2,
+		n1:-1,
+		1:1,
+		2:2,
+		3:3,
+		4:4,
+		5:5
+	),
+	unitless-positive:(
+		0:0,
+		1:1,
+		2:2,
+		3:3,
+		4:4,
+		5:5
+	),
+	line-height:(
+		0:0,
+		1:1,
+		2:1.45,
+		3:1.655,
+		4:1.75,
+		5:2,
+		),
+	percent-positive:(
+		0:0%,
+		1:15%,
+		2:37%,
+		3:60%,
+		4:78%,
+		5:90%
+		),
+	percent:(
+		0:0%,
+		1:15%,
+		2:37%,
+		3:60%,
+		4:78%,
+		5:90%,
+		n1:-10%,
+		n2:-25%,
+		n3:-45%,
+		n4:-60%,
+		n5:-75%
+		),
+	border-radius:(
+		square: 0px,
+		radius: 5px,
+		round: 999px,
+		circle:100%,
+		),
+	font-size:(
+		0:0%,
+		1:15%,
+		2:37%,
+		3:60%,
+		4:78%,
+		5:90%,
+		n1:-10%,
+		n2:-25%,
+		n3:-45%,
+		n4:-60%,
+		n5:-75%
+	)
+);
 $values:(
 	wholenumber:(
 		0:0,
