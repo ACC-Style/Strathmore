@@ -8,21 +8,25 @@ var cssnano = require('cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var styleguide = require('sc5-styleguide');
 var browserSync = require('browser-sync').create();
-
+var reload = browserSync.reload();
 // Paths
 
-var SCSS_PATH = "assets/scss/";
-var CSS_PATH = "assets/css/";
+var outputPath = 'output';
+var SCSS_PATH = "./assets/scss/";
+var CSS_PATH = "./assets/css/";
 var STYLEGUIDE_PATH = 'Strathmore';
 
 // Server
-gulp.task('browserSync', function() {
+gulp.task('serve',['style'], function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
-    server: {
-      baseDir: '/'
-    },
-  })
+   server: {
+     baseDir: "./Strathmore/"
+   }
+
+  });
+  gulp.watch(SCSS_PATH +"*.scss", ['sass']);
+
 })
 
 // Style Tesks
@@ -40,7 +44,8 @@ gulp.task('style', function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest( CSS_PATH ));
+    .pipe(gulp.dest( CSS_PATH ))
+    .pipe(browserSync.stream());
 });
 
 
@@ -54,7 +59,7 @@ gulp.task('clean', function(){
 // Script Tasks
 gulp.task('script', function(){
   console.log(' Gulp Script Tasks');
-  console.log('Gulp: This bit goes here and this attaches here. Now where is tab Omega?');
+  console.log('Gulp: This bit goes here and this attaches here. Now where is tab "Omega"?');
 });
 
 // Image Tasks
@@ -67,12 +72,12 @@ gulp.task('images', function(){
 gulp.task('styleguide:generate', function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Build the Documentation!');
-  return gulp.src( CSS_PATH + 'index.css' )
+  return gulp.src( SCSS_PATH + '*/**.scss' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
-        server: false,
+        server: true,
         rootPath: STYLEGUIDE_PATH,
-        appRoot: STYLEGUIDE_PATH,
+        //appRoot: STYLEGUIDE_PATH,
         overviewPath: 'README.md',
         sideNav: true,
         showReferenceNumbers: false
@@ -83,7 +88,8 @@ gulp.task('styleguide:generate', function() {
 gulp.task('styleguide:applystyles', function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Write it down and record it!');
-  return gulp.src( CSS_PATH + 'index.css' )
+  return gulp.src('./assets/scss/index.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(styleguide.applyStyles())
     .pipe(gulp.dest(STYLEGUIDE_PATH));
 });
@@ -97,15 +103,14 @@ gulp.task('package', function(){
 });
 
 // Watch Tasks
-gulp.task('watch', function(){
+// Watch Tasks
+gulp.task('watch', ['styleguide'], function () {
   console.log('Gulp Watch Tasks');
   console.log('Gulp: I will be watching you.... even when you sleep');
+  gulp.watch(['./assets/scss/**/*.scss'], ['styleguide']);
+
 });
 
 // Default
-gulp.task('default', function(){
-  console.log('Gulp Deafault Tasks');
-  console.log('Gulp: Bringin it all together');
-
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
+gulp.task('default', ['style','styleguide','serve']);
+gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);

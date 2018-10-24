@@ -1253,7 +1253,7 @@ a.thumbnail.pseudo-class-focus {
 }
 
 .pagination .disabled.pseudo-class-hover {
-  background-image: url("../img/cross_disabled.png");
+  background-image: url("./assets/img/cross_disabled.png");
 }
 
 .quicklinks a.pseudo-class-hover {
@@ -1270,7 +1270,7 @@ a.thumbnail.pseudo-class-focus {
 }
 
 .disabled.pseudo-class-hover {
-  background-image: url("../img/cross_disabled.png");
+  background-image: url("./assets/img/cross_disabled.png");
 }
 
 .hover_primary.pseudo-class-hover {
