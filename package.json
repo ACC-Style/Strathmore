@@ -32,6 +32,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.4.1",
     "@micahgodbolt/grunt-phantomcss": "^1.0.0",
     "autoprefixer": "^8.5.0",
     "babel": "^6.23.0",

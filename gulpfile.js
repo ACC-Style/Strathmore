@@ -74,7 +74,8 @@ gulp.task('styleguide:generate', function() {
         title: 'Strathmore - Enteprise UI of the ACC',
         server: false,
         rootPath: STYLEGUIDE_PATH,
-        //appRoot: STYLEGUIDE_PATH,
+        // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
+        // //appRoot: STYLEGUIDE_PATH,
         overviewPath: 'README.md',
         sideNav: true,
         showReferenceNumbers: false
@@ -85,7 +86,13 @@ gulp.task('styleguide:generate', function() {
 gulp.task('styleguide:applystyles', function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Write it down and record it!');
-  return gulp.src('./assets/scss/index.scss')
+  return gulp.src([
+      './assets/scss/index.scss',
+      './assets/fontawesome-pro/scss/fontawesome.scss',
+      './assets/fontawesome-pro/scss/regular.scss',
+      './assets/fontawesome-pro/scss/solid.scss',
+      './assets/fontawesome-pro/scss/light.scss'
+    ])
     .pipe(sass().on('error', sass.logError))
     .pipe(styleguide.applyStyles())
     .pipe(gulp.dest(STYLEGUIDE_PATH));
