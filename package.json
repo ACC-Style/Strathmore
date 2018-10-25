@@ -29,7 +29,8 @@
   "homepage": "https://github.com/ACC-Style/Strathmore#readme",
   "dependencies": {
     "foundation-sites": "^6.5.0-rc.2",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.4.1",

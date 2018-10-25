@@ -9,6 +9,8 @@ $green-alt:#509f6c;
 $purple:#735dba;
 $magenta:#c45e99;
 $acc-blue:#00386b;
+$white:#fff;
+$black:#111;
 
 $acc-palette: (
   primary: $teal,
@@ -24,6 +26,13 @@ $acc-palette: (
   secondaryalt: $light-grey
 );
 
+%hover-text-white {
+  color: $white;
+}
+
+%hover-text-black {
+  color: $black;
+}
  /*
  
   Colors of the Design  

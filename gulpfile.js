@@ -78,7 +78,7 @@ gulp.task('styleguide:generate', function() {
         // //appRoot: STYLEGUIDE_PATH,
         overviewPath: 'README.md',
         sideNav: true,
-        showReferenceNumbers: false
+        showReferenceNumbers: true
       }))
     .pipe(gulp.dest(STYLEGUIDE_PATH));
 });
@@ -111,14 +111,9 @@ gulp.task('package', function(){
 gulp.task('watch', ['styleguide'], function () {
   console.log('Gulp Watch Tasks');
   console.log('Gulp: I will be watching you.... even when you sleep');
-  gulp.watch(["assets/scss/**/*.scss"], function(event){
-    return gulp.src('./assets/scss/index.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(styleguide.applyStyles())
-      .pipe(gulp.dest(STYLEGUIDE_PATH));
-  });
+  gulp.watch(["./assets/scss/**/index.scss"], ['styleguide:generate','styleguide:applystyles']);
 
 });
 // Default
-gulp.task('default', ['style','styleguide','serve']);
+gulp.task('default', ['style', 'styleguide:generate', 'styleguide:applystyles', 'watch', 'serve']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);

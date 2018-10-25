@@ -28,8 +28,7 @@ $debug-trace: true !default;
 %hover-cursor{
      cursor: pointer;
 }
-%hover-text-white{ color: $white; }
-%hover-text-black{ color: $black; }
+
 
 @mixin hover-loop($key, $color-name, $color){
     $white-mix:     map-get($values, percent-positive);

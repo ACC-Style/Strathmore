@@ -2,14 +2,15 @@
 	Strathmore
 	Version 1.1
 **/
+$debug-trace:false;
+$short-classnames:false;
 $ms-base: 1em; // needs to be in em's
-.foo{color:blue($color:blue);}
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";
-@import "vendor/modular-scale";
-@import "config/config";
 @import "helpers/functions/functions";
 @import "helpers/mixins/mixins";
+@import "vendor/modular-scale";
+@import "config/config";
 
 // Foundation
 @import "vendor/foundation-sites/foundation";

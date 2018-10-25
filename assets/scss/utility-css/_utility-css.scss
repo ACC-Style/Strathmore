@@ -1,19 +1,47 @@
 /*
-Utility CSS
+(UC) Utility CSS
 
- Single Class that controls single styles allowing for quick manipulations and when combined can style new types of UI without the need of new CSS. 
+ Are classes that control single styles allowing for quick manipulations and when combined can create complex and new UI without ever writing more styles to the system. Examples and reciepes for common UI can be found in this area
 
  Styleguide 80.0
 */
 /* No styleguide reference. */
 
+/*
+UC: Margin & Padding
+
+Padding and Margins are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `-medium` and with `-large` to have finer control on the spacing of objects.
+
+Styleguide 81.0
+*/
+/* No styleguide reference. */
+@import "spacing";
+
+@import "typoography";
+
+/*
+  UC: Background 
+ 
+  Background of containers can be easily maniputlated with textures and colors.  
+  
+  Styleguide 90.0
+*/
+/* No styleguide reference. */
 @import "background";
 @import "shadows";
 @import "textures";
+
+/*
+  UC: Hover
+
+  Make any Object hover action. 
+
+  Styleguide 84.0
+*/
+/* No styleguide reference. */
 @import "hover";
-@import "spacing";
 @import "border";
-@import "typoography";
+
 @import "flex";
 @import "opacity";
 
