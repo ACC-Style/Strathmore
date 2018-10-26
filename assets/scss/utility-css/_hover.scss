@@ -3,27 +3,27 @@
  
   hovers can easily be added to objects
 
+  hover_background-color_alert              - background color modified light to dark
   hover_background-color_primary              - background color modified light to dark
   hover_background-color_secondary              - background color modified light to dark
   hover_background-color_info              - background color modified light to dark
   hover_background-color_highlight              - background color success color
   hover_background-color_success              - background color modified light to dark
   hover_background-color_warning              - background color modified light to dark
-  hover_background-color_alert              - background color modified light to dark
 
   markup:
   <div class="grid-x margin_5">
-    <div class="{$modifiers}-5 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">5</div>
-    <div class="{$modifiers}-4 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">4</div>
-    <div class="{$modifiers}-3 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">3</div>
-    <div class="{$modifiers}-2 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">2</div>
-    <div class="{$modifiers}-1 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">1</div>
-    <div class="{$modifiers}-0 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2">0</div>
-    <div class="{$modifiers}-n1 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 H_text_white">n1</div>
-    <div class="{$modifiers}-n2 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 H_text_white">n2</div>
-    <div class="{$modifiers}-n3 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 H_text_white">n3</div>
-    <div class="{$modifiers}-n4 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 H_text_white">n4</div>
-    <div class="{$modifiers}-n5 cell auto text-center border-width_1 border-solid border_secondary-4 padding_2 H_text_white">n5</div>
+    <div class="{$modifiers}-5 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">5</div>
+    <div class="{$modifiers}-4 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">4</div>
+    <div class="{$modifiers}-3 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">3</div>
+    <div class="{$modifiers}-2 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">2</div>
+    <div class="{$modifiers}-1 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">1</div>
+    <div class="{$modifiers}-0 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n5</div>
   </div>
 
  

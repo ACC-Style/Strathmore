@@ -20,10 +20,8 @@ var STYLEGUIDE_PATH = 'Strathmore';
 gulp.task('serve',['style'], function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
-    server: true, browser: "google chrome" ,
-   files: ["Strathmore/*.css"]
+    server: true
   });
-  gulp.watch("Strathmore/*.html").on('change', browserSync.reload);
 });
 
 // Style Tesks
