@@ -2,10 +2,10 @@
 <html lang="en" ng-app="sgApp" route-css-class>
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/assets/img/favicon.ico">
+  <link rel="icon" href="/Strathmore/assets/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    var _styleguideConfig = {"title":"Strathmore - Enteprise UI of the ACC","disableEncapsulation":false,"disableHtml5Mode":true,"sideNav":true,"showReferenceNumbers":true,"showMarkupSection":false,"hideSubsectionsOnMainSection":false,"additionalNgDependencies":false};
+    var _styleguideConfig = {"title":"Strathmore - Enteprise UI of the ACC","disableEncapsulation":false,"disableHtml5Mode":false,"sideNav":true,"showReferenceNumbers":true,"showMarkupSection":false,"hideSubsectionsOnMainSection":false,"additionalNgDependencies":false};
     (function() {
       'use strict';
       var userStyleFiles = [
@@ -48,13 +48,14 @@
   <script type="text/javascript">
     var filesConfig = [];
   </script>
-  <base href="/" />
+  <base href="/Strathmore/" />
 </head>
 <body class="sg">
   
   <div class="sg view-index" ui-view></div>
   <script src="/Strathmore/js/vendor.js"></script>
   <script src="/Strathmore/js/app.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
   
 </body>
 </html>

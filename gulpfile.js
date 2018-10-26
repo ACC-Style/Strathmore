@@ -11,7 +11,7 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload();
 // Paths
 
-var outputPath = 'output';
+
 var SCSS_PATH = "./assets/scss/";
 var CSS_PATH = "./assets/css/";
 var STYLEGUIDE_PATH = 'Strathmore';
@@ -21,7 +21,7 @@ gulp.task('serve',['style'], function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
    server: {
-     baseDir: "./Strathmore/"
+     baseDir: "/"
    }
   });
 })
@@ -72,10 +72,10 @@ gulp.task('styleguide:generate', function() {
   return gulp.src( SCSS_PATH + '*/**.scss' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
-        server: false,
+        server: true,
         rootPath: STYLEGUIDE_PATH,
         // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
-        // //appRoot: STYLEGUIDE_PATH,
+        appRoot: "/Strathmore",
         overviewPath: 'README.md',
         sideNav: true,
         showReferenceNumbers: true
@@ -115,5 +115,5 @@ gulp.task('watch', ['styleguide'], function () {
 
 });
 // Default
-gulp.task('default', ['style', 'styleguide:generate', 'styleguide:applystyles', 'watch', 'serve']);
+gulp.task('default', ['style', 'styleguide:generate', 'styleguide:applystyles', 'watch']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
