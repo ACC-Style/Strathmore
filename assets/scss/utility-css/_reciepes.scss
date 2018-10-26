@@ -10,20 +10,64 @@ RECIPE: Mobile Footer Nav
         <a href="#/about"class="auto text-center padding_2 cell center clear color_secondary-5 color_white hover-text_primary-4 margin-bottom_0"><i class="fas fa-info-square"></i></a>
     </div>
 
- Styleguide 80.1
+ Styleguide 200.1
 */
-/* No styleguide reference. */
+
 
 
 /*
 RECIPE: User Card
 
 markup:
-<div class="detail-container "><div class="grid-x"><div class="cell auto "><div class="member-name font_1 font_slab line-height_2 member-name padding_3 padding-left_4 padding-right_3">David Y. Wilder <a class="back_secondary-4 float-right font_0 hover-back_secondary padding-left_3 padding-right_3 padding_2"><i class="fas fa-share-alt-square"></i></a></div><div><ul class="details no-bullet padding-left_3 padding-right_3 margin-bottom_0 font_0 grid-x grid-margin-x"><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6">
-<div><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-user-slash"></i>NPI</div></li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-hashtag"></i>1696062374299 </li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-at"></i>Donec@quis.org 
-<a class="link float-right padding_2"><i class="fal fa-pencil"></i></a></li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-map-pin"></i>Polatlı </li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-badge-check"></i>75988 <a href=""class="link float-right padding_2"><i class="fal fa-exchange-alt"></i></a></li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-user-circle"></i>neque.et@neque.net <a href="#"class="link float-right padding_2"><i class="fal fa-pencil"></i></a></li><li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12 large-6"><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-key"></i>GRW95WZD9VY 
-<a href="#"class="link float-right padding_2"><a href="#"class="link float-right padding_2"><i class="fal fa-pencil"></i></a></a></li></ul></div><div class="padding_4 cell small-12 large-6 flex font_n1"><i class="margin-left_3 color_secondary-2 fal fa-users-crown flex-shrink"></i><a class="link margin-left_3 margin-right_3 flex-auto">
-<i class="fas fa-chevron-circle-right padding-right_3"></i>1 linked account(s) </a><a class="link float-right margin-left_3 margin-right_3 flex-1">manage &nbsp;
-<i class="fal fa-pencil"></i></a></div></div><div class="cell shrink texture_light back_secondary-3 margin-right_3 color_secondary-1 font_n2"><ul class="flag no-bullet"><li class="padding_3 center member"><i class="fal fa-user-md"></i></li><li class="padding_3 center accbadge active"><i class="fal fa-badge-check"></i></li><li class="padding_3 center iscience"><i class="fal fa-flask"></i></li><li class="padding_3 center bruteforce"><i class="fal fa-lock-alt"></i></li><li class="padding_3 center expobadge"><i class="fal fa-exclamation-circle"></i></li></ul></div></div></div>
+  <div class="detail-container shadow border_solid border_black-1">
+      <div class="grid-x">
+          <div class="cell auto ">
+              <div class="member-name font_1 font_slab line-height_2 member-name padding_3 padding-left_4 padding-right_3">David
+                  Y. Wilder <a class="back_secondary-4 float-right font_0 hover-back_secondary padding-left_3 padding-right_3 padding_2"><i
+                          class="fas fa-share-alt-square"></i></a></div>
+              <div>
+                  <ul class="details no-bullet padding-left_3 padding-right_3 margin_0 font_0 grid-x grid-margin-x">
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12">
+                          <div><i class="margin-left_3 margin-right_3 color_secondary-2 fal fa-user-slash"></i>NPI</div>
+                      </li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-hashtag"></i>1696062374299
+                      </li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-at"></i>Donec@quis.org
+                          <a class="link float-right padding_2"><i class="fal fa-pencil"></i></a></li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-map-pin"></i>Polatlı </li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-badge-check"></i>75988 <a href=""
+                              class="link float-right padding_2"><i class="fal fa-exchange-alt"></i></a></li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-user-circle"></i>neque.et@neque.net
+                          <a href="#" class="link float-right padding_2"><i class="fal fa-pencil"></i></a></li>
+                      <li class="border-bottom-width_1 border_secondary-5 border_solid padding_2 cell small-12"><i
+                              class="margin-left_3 margin-right_3 color_secondary-2 fal fa-key"></i>GRW95WZD9VY
+                          <a href="#" class="link float-right padding_2"><a href="#" class="link float-right padding_2"><i
+                                      class="fal fa-pencil"></i></a></a></li>
+                  </ul>
+                  <div class="padding_4 flex font_n1"><i class="margin-left_3 color_secondary-2 fal fa-users-crown flex-shrink"></i><a
+                          class="link margin-left_3 margin-right_3 flex-auto">
+                          <i class="fas fa-chevron-circle-right padding-right_3"></i>1 linked account(s) </a><a class="link float-right margin-left_3 margin-right_3 flex-1">manage
+                          &nbsp;
+                          <i class="fal fa-pencil"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="cell shrink texture_light back_secondary-3 margin-right_3 color_secondary-1 font_n2">
+              <ul class="flag no-bullet">
+                  <li class="padding_3 center member"><i class="fal fa-user-md"></i></li>
+                  <li class="padding_3 center accbadge active"><i class="fal fa-badge-check"></i></li>
+                  <li class="padding_3 center iscience"><i class="fal fa-flask"></i></li>
+                  <li class="padding_3 center bruteforce"><i class="fal fa-lock-alt"></i></li>
+                  <li class="padding_3 center expobadge"><i class="fal fa-exclamation-circle"></i></li>
+              </ul>
+          </div>
+      </div>
+  </div>
 
+ Styleguide 200.2
 */

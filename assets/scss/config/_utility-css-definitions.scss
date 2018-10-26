@@ -259,9 +259,9 @@ $style-definition:(
 		long-name:'.font-size',
 		),	 
 	color:(
-		short-name:'.color',
+		short-name:'.',
 		css-style:'color',
-		long-name:'.font-color',
+		long-name:'.color',
 		unit: map-get($valueParams, 'percent')
 	 	),	 
 	background-color:(
@@ -337,15 +337,15 @@ $style-definition:(
 		long-name:'.border-bottom-width',
 		),
 	hover-bg:(
-		short-name:'.H_back',
+		short-name:'.hover_back',
 		css-style:'background-color',
 		long-name:'.hover_background-color',
 		unit: map-get($valueParams, 'hover')
 		),
 	hover-text:(
-		short-name: '.H_text',
+		short-name: '.hover_',
 		css-style: 'color',
-		long-name: '.hover_font-color',
+		long-name: '.hover_color',
 		unit: map-get($valueParams, 'hover')
 		),
 	display:(

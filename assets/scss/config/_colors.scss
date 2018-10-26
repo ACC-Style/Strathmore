@@ -21,7 +21,7 @@ $acc-palette: (
   navigation: $blue,
   selected:$green-alt,
   info:$purple,
-  hightlight:$magenta,
+  highlight:$magenta,
   acc:$acc-blue,
   secondaryalt: $light-grey
 );
@@ -43,7 +43,7 @@ $acc-palette: (
   back_secondary                  - Grey used secondary colors and secondary actions
   back_navigation         - Scrub Blue reserved for navigation items. IE next, previous, forard, back buttons. 
   back_info                   - Scrub Magenta for information 
-  back_hightlight                 - Scrub Purple used for highlighting 
+  back_highlight                 - Scrub Purple used for highlighting 
   back_success                  - Action color for Success and Complete
   back_warning                  - Action color for warnings
   back_alert                    - Action colors for alerts and errors
