@@ -40,12 +40,10 @@ $debug-trace: true !default;
         @debug "Color Loop for #{$key} painting it with #{$color-name}";
 
     }
-      #{$short-name}:hover{
+      #{$short-name}:hover,
+      #{$long-name}:hover {
             @extend %hover-cursor;
             #{$style}: $color !important;
-            @if( $key == "hover-bg" ){
-              
-            }
       }   
       @each  $val-name, $val in $white-mix {
         #{$short-name}-#{$val-name}:hover{

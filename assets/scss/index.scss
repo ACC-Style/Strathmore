@@ -4,7 +4,7 @@
 **/
 $debug-trace:false;
 $short-classnames:false;
-$ms-base: 1em; // needs to be in em's
+$ms-base: 1rem; // needs to be in em's
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";
 @import "helpers/functions/functions";

@@ -339,11 +339,11 @@ $style-definition:(
 	hover-bg:(
 		short-name:'.H_back',
 		css-style:'background-color',
-		long-name:'.hover_back',
+		long-name:'.hover_background-color',
 		unit: map-get($valueParams, 'hover')
 		),
 	hover-text:(
-		short-name: '.H_Text',
+		short-name: '.H_text',
 		css-style: 'color',
 		long-name: '.hover_font-color',
 		unit: map-get($valueParams, 'hover')

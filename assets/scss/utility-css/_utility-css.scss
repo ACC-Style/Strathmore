@@ -1,12 +1,12 @@
 /*
-(UC) Utility CSS
+UC: Introduction
 
- Are classes that control single styles allowing for quick manipulations and when combined can create complex and new UI without ever writing more styles to the system. Examples and reciepes for common UI can be found in this area
+ Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without ever writing more styles into the system. Examples of some UC built UIs can be found here as reciepes. 
 
  Styleguide 80.0
 */
 /* No styleguide reference. */
-
+@import "reciepes";
 /*
 UC: Margin & Padding
 
@@ -40,6 +40,14 @@ Styleguide 81.0
 */
 /* No styleguide reference. */
 @import "hover";
+/*
+ UC: Borders
+
+  Borders a complex utility that demands a combo UCs acheive the effect. The three UCs that must be used in combo are 'border_X','border-width_X', and 'border-color_X'.  So to make an object with single black pixel border that is solid you would have to add '.border_solid.border-width_1.border_black' 
+
+  Styleguide 83.0
+ 
+ */
 @import "border";
 
 @import "flex";
