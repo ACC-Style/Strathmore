@@ -20,11 +20,11 @@ var STYLEGUIDE_PATH = 'Strathmore';
 gulp.task('serve',['style'], function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
-   server: {
-     baseDir: "/"
-   }
+    server: true, browser: "google chrome" ,
+   files: ["Strathmore/*.css"]
   });
-})
+  gulp.watch("Strathmore/*.html").on('change', browserSync.reload);
+});
 
 // Style Tesks
 gulp.task('style', function(){
@@ -72,7 +72,7 @@ gulp.task('styleguide:generate', function() {
   return gulp.src( SCSS_PATH + '*/**.scss' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
-        server: true,
+        server: false,
         rootPath: STYLEGUIDE_PATH,
         // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
         appRoot: "/Strathmore",
@@ -115,5 +115,5 @@ gulp.task('watch', ['styleguide'], function () {
 
 });
 // Default
-gulp.task('default', ['style', 'styleguide:generate', 'styleguide:applystyles', 'watch']);
+gulp.task('default', ['styleguide:generate', 'styleguide:applystyles', 'serve', 'watch']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
