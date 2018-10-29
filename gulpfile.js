@@ -125,7 +125,7 @@ gulp.task('styleguide:applystyles', function() {
 
 
 // Package Tasks.   Copy files to the Dist Folder. 
-gulp.task('package:Dist',['clean:dist','addAutomation'], function(){
+gulp.task('package:dist',['clean:dist','addAutomation'], function(){
   console.log('Gulp Package Tasks');
   console.log('Gulp: I got a box and some bubble-wrap; now, where is the tape?');
   console.log('Gulp: All packed up');
@@ -139,14 +139,14 @@ gulp.task('package:Dist',['clean:dist','addAutomation'], function(){
   ],{base:"./"}).pipe(gulp.dest(PATHS.DIST));
 });
 // Package Tasks.   Copy files to the DOCS Folder. 
-gulp.task('package:Docs', ['clean:docs'], function () {
+gulp.task('package:docs', ['clean:docs'], function () {
   console.log('Gulp Package DOCS');
   console.log('Gulp: I got a box and tape, but now where is the bubble wrap?');
   console.log('Gulp: All packed up');
   return gulp.src([
-    PATHS.STYLEGUIDE
+    PATHS.STYLEGUIDE + "/**/*.*"
   ], {
-    base: "./"
+    base: "./Strathmore"
   }).pipe(gulp.dest(PATHS.DOCS));
 });
 
@@ -166,6 +166,6 @@ gulp.task('watch', ['styleguide'], function () {
 });
 // Default
 gulp.task('default', ['styleguide', 'serve', 'watch']);
-gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles'])
-gulp.task('build', ['watch']);
+gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
+gulp.task('docs', ['styleguide:generate', 'styleguide:applystyles','package:docs']);
 gulp.task('dist',['style']);
