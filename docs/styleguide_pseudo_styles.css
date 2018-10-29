@@ -1,276 +1,540 @@
+.hover__secondaryalt-n5.pseudo-class-hover,
+.hover_color_secondaryalt-n5.pseudo-class-hover,
+.hover__secondaryalt-n4.pseudo-class-hover,
+.hover_color_secondaryalt-n4.pseudo-class-hover,
+.hover__secondaryalt-n3.pseudo-class-hover,
+.hover_color_secondaryalt-n3.pseudo-class-hover,
+.hover__secondaryalt-n2.pseudo-class-hover,
+.hover_color_secondaryalt-n2.pseudo-class-hover,
+.hover__secondaryalt-n1.pseudo-class-hover,
+.hover_color_secondaryalt-n1.pseudo-class-hover,
+.hover__secondaryalt-5.pseudo-class-hover,
+.hover_color_secondaryalt-5.pseudo-class-hover,
+.hover__secondaryalt-4.pseudo-class-hover,
+.hover_color_secondaryalt-4.pseudo-class-hover,
+.hover__secondaryalt-3.pseudo-class-hover,
+.hover_color_secondaryalt-3.pseudo-class-hover,
+.hover__secondaryalt-2.pseudo-class-hover,
+.hover_color_secondaryalt-2.pseudo-class-hover,
+.hover__secondaryalt-1.pseudo-class-hover,
+.hover_color_secondaryalt-1.pseudo-class-hover,
+.hover__secondaryalt-0.pseudo-class-hover,
+.hover_color_secondaryalt-0.pseudo-class-hover,
+.hover__secondaryalt.pseudo-class-hover,
+.hover_color_secondaryalt.pseudo-class-hover,
+.hover_back_secondaryalt-n5.pseudo-class-hover,
+.hover_background-color_secondaryalt-n5.pseudo-class-hover,
+.hover_back_secondaryalt-n4.pseudo-class-hover,
+.hover_background-color_secondaryalt-n4.pseudo-class-hover,
+.hover_back_secondaryalt-n3.pseudo-class-hover,
+.hover_background-color_secondaryalt-n3.pseudo-class-hover,
+.hover_back_secondaryalt-n2.pseudo-class-hover,
+.hover_background-color_secondaryalt-n2.pseudo-class-hover,
+.hover_back_secondaryalt-n1.pseudo-class-hover,
+.hover_background-color_secondaryalt-n1.pseudo-class-hover,
+.hover_back_secondaryalt-5.pseudo-class-hover,
+.hover_background-color_secondaryalt-5.pseudo-class-hover,
+.hover_back_secondaryalt-4.pseudo-class-hover,
+.hover_background-color_secondaryalt-4.pseudo-class-hover,
+.hover_back_secondaryalt-3.pseudo-class-hover,
+.hover_background-color_secondaryalt-3.pseudo-class-hover,
+.hover_back_secondaryalt-2.pseudo-class-hover,
+.hover_background-color_secondaryalt-2.pseudo-class-hover,
+.hover_back_secondaryalt-1.pseudo-class-hover,
+.hover_background-color_secondaryalt-1.pseudo-class-hover,
+.hover_back_secondaryalt-0.pseudo-class-hover,
+.hover_background-color_secondaryalt-0.pseudo-class-hover,
+.hover_back_secondaryalt.pseudo-class-hover,
+.hover_background-color_secondaryalt.pseudo-class-hover,
+.hover__acc-n5.pseudo-class-hover,
+.hover_color_acc-n5.pseudo-class-hover,
+.hover__acc-n4.pseudo-class-hover,
+.hover_color_acc-n4.pseudo-class-hover,
+.hover__acc-n3.pseudo-class-hover,
+.hover_color_acc-n3.pseudo-class-hover,
+.hover__acc-n2.pseudo-class-hover,
+.hover_color_acc-n2.pseudo-class-hover,
+.hover__acc-n1.pseudo-class-hover,
+.hover_color_acc-n1.pseudo-class-hover,
+.hover__acc-5.pseudo-class-hover,
+.hover_color_acc-5.pseudo-class-hover,
+.hover__acc-4.pseudo-class-hover,
+.hover_color_acc-4.pseudo-class-hover,
+.hover__acc-3.pseudo-class-hover,
+.hover_color_acc-3.pseudo-class-hover,
+.hover__acc-2.pseudo-class-hover,
+.hover_color_acc-2.pseudo-class-hover,
+.hover__acc-1.pseudo-class-hover,
+.hover_color_acc-1.pseudo-class-hover,
+.hover__acc-0.pseudo-class-hover,
+.hover_color_acc-0.pseudo-class-hover,
+.hover__acc.pseudo-class-hover,
+.hover_color_acc.pseudo-class-hover,
+.hover_back_acc-n5.pseudo-class-hover,
+.hover_background-color_acc-n5.pseudo-class-hover,
+.hover_back_acc-n4.pseudo-class-hover,
+.hover_background-color_acc-n4.pseudo-class-hover,
+.hover_back_acc-n3.pseudo-class-hover,
+.hover_background-color_acc-n3.pseudo-class-hover,
+.hover_back_acc-n2.pseudo-class-hover,
+.hover_background-color_acc-n2.pseudo-class-hover,
+.hover_back_acc-n1.pseudo-class-hover,
+.hover_background-color_acc-n1.pseudo-class-hover,
+.hover_back_acc-5.pseudo-class-hover,
+.hover_background-color_acc-5.pseudo-class-hover,
+.hover_back_acc-4.pseudo-class-hover,
+.hover_background-color_acc-4.pseudo-class-hover,
+.hover_back_acc-3.pseudo-class-hover,
+.hover_background-color_acc-3.pseudo-class-hover,
+.hover_back_acc-2.pseudo-class-hover,
+.hover_background-color_acc-2.pseudo-class-hover,
+.hover_back_acc-1.pseudo-class-hover,
+.hover_background-color_acc-1.pseudo-class-hover,
+.hover_back_acc-0.pseudo-class-hover,
+.hover_background-color_acc-0.pseudo-class-hover,
+.hover_back_acc.pseudo-class-hover,
+.hover_background-color_acc.pseudo-class-hover,
+.hover__highlight-n5.pseudo-class-hover,
+.hover_color_highlight-n5.pseudo-class-hover,
+.hover__highlight-n4.pseudo-class-hover,
+.hover_color_highlight-n4.pseudo-class-hover,
+.hover__highlight-n3.pseudo-class-hover,
+.hover_color_highlight-n3.pseudo-class-hover,
+.hover__highlight-n2.pseudo-class-hover,
+.hover_color_highlight-n2.pseudo-class-hover,
+.hover__highlight-n1.pseudo-class-hover,
+.hover_color_highlight-n1.pseudo-class-hover,
+.hover__highlight-5.pseudo-class-hover,
+.hover_color_highlight-5.pseudo-class-hover,
+.hover__highlight-4.pseudo-class-hover,
+.hover_color_highlight-4.pseudo-class-hover,
+.hover__highlight-3.pseudo-class-hover,
+.hover_color_highlight-3.pseudo-class-hover,
+.hover__highlight-2.pseudo-class-hover,
+.hover_color_highlight-2.pseudo-class-hover,
+.hover__highlight-1.pseudo-class-hover,
+.hover_color_highlight-1.pseudo-class-hover,
+.hover__highlight-0.pseudo-class-hover,
+.hover_color_highlight-0.pseudo-class-hover,
+.hover__highlight.pseudo-class-hover,
+.hover_color_highlight.pseudo-class-hover,
+.hover_back_highlight-n5.pseudo-class-hover,
+.hover_background-color_highlight-n5.pseudo-class-hover,
+.hover_back_highlight-n4.pseudo-class-hover,
+.hover_background-color_highlight-n4.pseudo-class-hover,
+.hover_back_highlight-n3.pseudo-class-hover,
+.hover_background-color_highlight-n3.pseudo-class-hover,
+.hover_back_highlight-n2.pseudo-class-hover,
+.hover_background-color_highlight-n2.pseudo-class-hover,
+.hover_back_highlight-n1.pseudo-class-hover,
+.hover_background-color_highlight-n1.pseudo-class-hover,
+.hover_back_highlight-5.pseudo-class-hover,
+.hover_background-color_highlight-5.pseudo-class-hover,
+.hover_back_highlight-4.pseudo-class-hover,
+.hover_background-color_highlight-4.pseudo-class-hover,
+.hover_back_highlight-3.pseudo-class-hover,
+.hover_background-color_highlight-3.pseudo-class-hover,
+.hover_back_highlight-2.pseudo-class-hover,
+.hover_background-color_highlight-2.pseudo-class-hover,
+.hover_back_highlight-1.pseudo-class-hover,
+.hover_background-color_highlight-1.pseudo-class-hover,
+.hover_back_highlight-0.pseudo-class-hover,
+.hover_background-color_highlight-0.pseudo-class-hover,
+.hover_back_highlight.pseudo-class-hover,
+.hover_background-color_highlight.pseudo-class-hover,
+.hover__info-n5.pseudo-class-hover,
+.hover_color_info-n5.pseudo-class-hover,
+.hover__info-n4.pseudo-class-hover,
+.hover_color_info-n4.pseudo-class-hover,
+.hover__info-n3.pseudo-class-hover,
+.hover_color_info-n3.pseudo-class-hover,
+.hover__info-n2.pseudo-class-hover,
+.hover_color_info-n2.pseudo-class-hover,
+.hover__info-n1.pseudo-class-hover,
+.hover_color_info-n1.pseudo-class-hover,
+.hover__info-5.pseudo-class-hover,
+.hover_color_info-5.pseudo-class-hover,
+.hover__info-4.pseudo-class-hover,
+.hover_color_info-4.pseudo-class-hover,
+.hover__info-3.pseudo-class-hover,
+.hover_color_info-3.pseudo-class-hover,
+.hover__info-2.pseudo-class-hover,
+.hover_color_info-2.pseudo-class-hover,
+.hover__info-1.pseudo-class-hover,
+.hover_color_info-1.pseudo-class-hover,
+.hover__info-0.pseudo-class-hover,
+.hover_color_info-0.pseudo-class-hover,
+.hover__info.pseudo-class-hover,
+.hover_color_info.pseudo-class-hover,
+.hover_back_info-n5.pseudo-class-hover,
+.hover_background-color_info-n5.pseudo-class-hover,
+.hover_back_info-n4.pseudo-class-hover,
+.hover_background-color_info-n4.pseudo-class-hover,
+.hover_back_info-n3.pseudo-class-hover,
+.hover_background-color_info-n3.pseudo-class-hover,
+.hover_back_info-n2.pseudo-class-hover,
+.hover_background-color_info-n2.pseudo-class-hover,
+.hover_back_info-n1.pseudo-class-hover,
+.hover_background-color_info-n1.pseudo-class-hover,
+.hover_back_info-5.pseudo-class-hover,
+.hover_background-color_info-5.pseudo-class-hover,
+.hover_back_info-4.pseudo-class-hover,
+.hover_background-color_info-4.pseudo-class-hover,
+.hover_back_info-3.pseudo-class-hover,
+.hover_background-color_info-3.pseudo-class-hover,
+.hover_back_info-2.pseudo-class-hover,
+.hover_background-color_info-2.pseudo-class-hover,
+.hover_back_info-1.pseudo-class-hover,
+.hover_background-color_info-1.pseudo-class-hover,
+.hover_back_info-0.pseudo-class-hover,
+.hover_background-color_info-0.pseudo-class-hover,
+.hover_back_info.pseudo-class-hover,
+.hover_background-color_info.pseudo-class-hover,
+.hover__selected-n5.pseudo-class-hover,
+.hover_color_selected-n5.pseudo-class-hover,
+.hover__selected-n4.pseudo-class-hover,
+.hover_color_selected-n4.pseudo-class-hover,
+.hover__selected-n3.pseudo-class-hover,
+.hover_color_selected-n3.pseudo-class-hover,
+.hover__selected-n2.pseudo-class-hover,
+.hover_color_selected-n2.pseudo-class-hover,
+.hover__selected-n1.pseudo-class-hover,
+.hover_color_selected-n1.pseudo-class-hover,
+.hover__selected-5.pseudo-class-hover,
+.hover_color_selected-5.pseudo-class-hover,
+.hover__selected-4.pseudo-class-hover,
+.hover_color_selected-4.pseudo-class-hover,
+.hover__selected-3.pseudo-class-hover,
+.hover_color_selected-3.pseudo-class-hover,
+.hover__selected-2.pseudo-class-hover,
+.hover_color_selected-2.pseudo-class-hover,
+.hover__selected-1.pseudo-class-hover,
+.hover_color_selected-1.pseudo-class-hover,
+.hover__selected-0.pseudo-class-hover,
+.hover_color_selected-0.pseudo-class-hover,
+.hover__selected.pseudo-class-hover,
+.hover_color_selected.pseudo-class-hover,
+.hover_back_selected-n5.pseudo-class-hover,
+.hover_background-color_selected-n5.pseudo-class-hover,
+.hover_back_selected-n4.pseudo-class-hover,
+.hover_background-color_selected-n4.pseudo-class-hover,
+.hover_back_selected-n3.pseudo-class-hover,
+.hover_background-color_selected-n3.pseudo-class-hover,
+.hover_back_selected-n2.pseudo-class-hover,
+.hover_background-color_selected-n2.pseudo-class-hover,
+.hover_back_selected-n1.pseudo-class-hover,
+.hover_background-color_selected-n1.pseudo-class-hover,
+.hover_back_selected-5.pseudo-class-hover,
+.hover_background-color_selected-5.pseudo-class-hover,
+.hover_back_selected-4.pseudo-class-hover,
+.hover_background-color_selected-4.pseudo-class-hover,
+.hover_back_selected-3.pseudo-class-hover,
+.hover_background-color_selected-3.pseudo-class-hover,
+.hover_back_selected-2.pseudo-class-hover,
+.hover_background-color_selected-2.pseudo-class-hover,
+.hover_back_selected-1.pseudo-class-hover,
+.hover_background-color_selected-1.pseudo-class-hover,
+.hover_back_selected-0.pseudo-class-hover,
+.hover_background-color_selected-0.pseudo-class-hover,
+.hover_back_selected.pseudo-class-hover,
+.hover_background-color_selected.pseudo-class-hover,
+.hover__navigation-n5.pseudo-class-hover,
+.hover_color_navigation-n5.pseudo-class-hover,
+.hover__navigation-n4.pseudo-class-hover,
+.hover_color_navigation-n4.pseudo-class-hover,
+.hover__navigation-n3.pseudo-class-hover,
+.hover_color_navigation-n3.pseudo-class-hover,
+.hover__navigation-n2.pseudo-class-hover,
+.hover_color_navigation-n2.pseudo-class-hover,
+.hover__navigation-n1.pseudo-class-hover,
+.hover_color_navigation-n1.pseudo-class-hover,
+.hover__navigation-5.pseudo-class-hover,
+.hover_color_navigation-5.pseudo-class-hover,
+.hover__navigation-4.pseudo-class-hover,
+.hover_color_navigation-4.pseudo-class-hover,
+.hover__navigation-3.pseudo-class-hover,
+.hover_color_navigation-3.pseudo-class-hover,
+.hover__navigation-2.pseudo-class-hover,
+.hover_color_navigation-2.pseudo-class-hover,
+.hover__navigation-1.pseudo-class-hover,
+.hover_color_navigation-1.pseudo-class-hover,
+.hover__navigation-0.pseudo-class-hover,
+.hover_color_navigation-0.pseudo-class-hover,
+.hover__navigation.pseudo-class-hover,
+.hover_color_navigation.pseudo-class-hover,
+.hover_back_navigation-n5.pseudo-class-hover,
+.hover_background-color_navigation-n5.pseudo-class-hover,
+.hover_back_navigation-n4.pseudo-class-hover,
+.hover_background-color_navigation-n4.pseudo-class-hover,
+.hover_back_navigation-n3.pseudo-class-hover,
+.hover_background-color_navigation-n3.pseudo-class-hover,
+.hover_back_navigation-n2.pseudo-class-hover,
+.hover_background-color_navigation-n2.pseudo-class-hover,
+.hover_back_navigation-n1.pseudo-class-hover,
+.hover_background-color_navigation-n1.pseudo-class-hover,
+.hover_back_navigation-5.pseudo-class-hover,
+.hover_background-color_navigation-5.pseudo-class-hover,
+.hover_back_navigation-4.pseudo-class-hover,
+.hover_background-color_navigation-4.pseudo-class-hover,
+.hover_back_navigation-3.pseudo-class-hover,
+.hover_background-color_navigation-3.pseudo-class-hover,
+.hover_back_navigation-2.pseudo-class-hover,
+.hover_background-color_navigation-2.pseudo-class-hover,
+.hover_back_navigation-1.pseudo-class-hover,
+.hover_background-color_navigation-1.pseudo-class-hover,
+.hover_back_navigation-0.pseudo-class-hover,
+.hover_background-color_navigation-0.pseudo-class-hover,
+.hover_back_navigation.pseudo-class-hover,
+.hover_background-color_navigation.pseudo-class-hover,
+.hover__alert-n5.pseudo-class-hover,
+.hover_color_alert-n5.pseudo-class-hover,
+.hover__alert-n4.pseudo-class-hover,
+.hover_color_alert-n4.pseudo-class-hover,
+.hover__alert-n3.pseudo-class-hover,
+.hover_color_alert-n3.pseudo-class-hover,
+.hover__alert-n2.pseudo-class-hover,
+.hover_color_alert-n2.pseudo-class-hover,
+.hover__alert-n1.pseudo-class-hover,
+.hover_color_alert-n1.pseudo-class-hover,
+.hover__alert-5.pseudo-class-hover,
+.hover_color_alert-5.pseudo-class-hover,
+.hover__alert-4.pseudo-class-hover,
+.hover_color_alert-4.pseudo-class-hover,
+.hover__alert-3.pseudo-class-hover,
+.hover_color_alert-3.pseudo-class-hover,
+.hover__alert-2.pseudo-class-hover,
+.hover_color_alert-2.pseudo-class-hover,
+.hover__alert-1.pseudo-class-hover,
+.hover_color_alert-1.pseudo-class-hover,
+.hover__alert-0.pseudo-class-hover,
+.hover_color_alert-0.pseudo-class-hover,
+.hover__alert.pseudo-class-hover,
+.hover_color_alert.pseudo-class-hover,
+.hover_back_alert-n5.pseudo-class-hover,
+.hover_background-color_alert-n5.pseudo-class-hover,
+.hover_back_alert-n4.pseudo-class-hover,
+.hover_background-color_alert-n4.pseudo-class-hover,
+.hover_back_alert-n3.pseudo-class-hover,
+.hover_background-color_alert-n3.pseudo-class-hover,
+.hover_back_alert-n2.pseudo-class-hover,
+.hover_background-color_alert-n2.pseudo-class-hover,
+.hover_back_alert-n1.pseudo-class-hover,
+.hover_background-color_alert-n1.pseudo-class-hover,
+.hover_back_alert-5.pseudo-class-hover,
+.hover_background-color_alert-5.pseudo-class-hover,
+.hover_back_alert-4.pseudo-class-hover,
+.hover_background-color_alert-4.pseudo-class-hover,
+.hover_back_alert-3.pseudo-class-hover,
+.hover_background-color_alert-3.pseudo-class-hover,
+.hover_back_alert-2.pseudo-class-hover,
+.hover_background-color_alert-2.pseudo-class-hover,
+.hover_back_alert-1.pseudo-class-hover,
+.hover_background-color_alert-1.pseudo-class-hover,
+.hover_back_alert-0.pseudo-class-hover,
+.hover_background-color_alert-0.pseudo-class-hover,
+.hover_back_alert.pseudo-class-hover,
+.hover_background-color_alert.pseudo-class-hover,
+.hover__warning-n5.pseudo-class-hover,
+.hover_color_warning-n5.pseudo-class-hover,
+.hover__warning-n4.pseudo-class-hover,
+.hover_color_warning-n4.pseudo-class-hover,
+.hover__warning-n3.pseudo-class-hover,
+.hover_color_warning-n3.pseudo-class-hover,
+.hover__warning-n2.pseudo-class-hover,
+.hover_color_warning-n2.pseudo-class-hover,
+.hover__warning-n1.pseudo-class-hover,
+.hover_color_warning-n1.pseudo-class-hover,
+.hover__warning-5.pseudo-class-hover,
+.hover_color_warning-5.pseudo-class-hover,
+.hover__warning-4.pseudo-class-hover,
+.hover_color_warning-4.pseudo-class-hover,
+.hover__warning-3.pseudo-class-hover,
+.hover_color_warning-3.pseudo-class-hover,
+.hover__warning-2.pseudo-class-hover,
+.hover_color_warning-2.pseudo-class-hover,
+.hover__warning-1.pseudo-class-hover,
+.hover_color_warning-1.pseudo-class-hover,
+.hover__warning-0.pseudo-class-hover,
+.hover_color_warning-0.pseudo-class-hover,
+.hover__warning.pseudo-class-hover,
+.hover_color_warning.pseudo-class-hover,
+.hover_back_warning-n5.pseudo-class-hover,
+.hover_background-color_warning-n5.pseudo-class-hover,
+.hover_back_warning-n4.pseudo-class-hover,
+.hover_background-color_warning-n4.pseudo-class-hover,
+.hover_back_warning-n3.pseudo-class-hover,
+.hover_background-color_warning-n3.pseudo-class-hover,
+.hover_back_warning-n2.pseudo-class-hover,
+.hover_background-color_warning-n2.pseudo-class-hover,
+.hover_back_warning-n1.pseudo-class-hover,
+.hover_background-color_warning-n1.pseudo-class-hover,
+.hover_back_warning-5.pseudo-class-hover,
+.hover_background-color_warning-5.pseudo-class-hover,
+.hover_back_warning-4.pseudo-class-hover,
+.hover_background-color_warning-4.pseudo-class-hover,
+.hover_back_warning-3.pseudo-class-hover,
+.hover_background-color_warning-3.pseudo-class-hover,
+.hover_back_warning-2.pseudo-class-hover,
+.hover_background-color_warning-2.pseudo-class-hover,
+.hover_back_warning-1.pseudo-class-hover,
+.hover_background-color_warning-1.pseudo-class-hover,
+.hover_back_warning-0.pseudo-class-hover,
+.hover_background-color_warning-0.pseudo-class-hover,
+.hover_back_warning.pseudo-class-hover,
+.hover_background-color_warning.pseudo-class-hover,
+.hover__success-n5.pseudo-class-hover,
+.hover_color_success-n5.pseudo-class-hover,
+.hover__success-n4.pseudo-class-hover,
+.hover_color_success-n4.pseudo-class-hover,
+.hover__success-n3.pseudo-class-hover,
+.hover_color_success-n3.pseudo-class-hover,
+.hover__success-n2.pseudo-class-hover,
+.hover_color_success-n2.pseudo-class-hover,
+.hover__success-n1.pseudo-class-hover,
+.hover_color_success-n1.pseudo-class-hover,
+.hover__success-5.pseudo-class-hover,
+.hover_color_success-5.pseudo-class-hover,
+.hover__success-4.pseudo-class-hover,
+.hover_color_success-4.pseudo-class-hover,
+.hover__success-3.pseudo-class-hover,
+.hover_color_success-3.pseudo-class-hover,
+.hover__success-2.pseudo-class-hover,
+.hover_color_success-2.pseudo-class-hover,
+.hover__success-1.pseudo-class-hover,
+.hover_color_success-1.pseudo-class-hover,
+.hover__success-0.pseudo-class-hover,
+.hover_color_success-0.pseudo-class-hover,
+.hover__success.pseudo-class-hover,
+.hover_color_success.pseudo-class-hover,
+.hover_back_success-n5.pseudo-class-hover,
+.hover_background-color_success-n5.pseudo-class-hover,
+.hover_back_success-n4.pseudo-class-hover,
+.hover_background-color_success-n4.pseudo-class-hover,
+.hover_back_success-n3.pseudo-class-hover,
+.hover_background-color_success-n3.pseudo-class-hover,
+.hover_back_success-n2.pseudo-class-hover,
+.hover_background-color_success-n2.pseudo-class-hover,
+.hover_back_success-n1.pseudo-class-hover,
+.hover_background-color_success-n1.pseudo-class-hover,
+.hover_back_success-5.pseudo-class-hover,
+.hover_background-color_success-5.pseudo-class-hover,
+.hover_back_success-4.pseudo-class-hover,
+.hover_background-color_success-4.pseudo-class-hover,
+.hover_back_success-3.pseudo-class-hover,
+.hover_background-color_success-3.pseudo-class-hover,
+.hover_back_success-2.pseudo-class-hover,
+.hover_background-color_success-2.pseudo-class-hover,
+.hover_back_success-1.pseudo-class-hover,
+.hover_background-color_success-1.pseudo-class-hover,
+.hover_back_success-0.pseudo-class-hover,
+.hover_background-color_success-0.pseudo-class-hover,
+.hover_back_success.pseudo-class-hover,
+.hover_background-color_success.pseudo-class-hover,
+.hover__secondary-n5.pseudo-class-hover,
+.hover_color_secondary-n5.pseudo-class-hover,
+.hover__secondary-n4.pseudo-class-hover,
+.hover_color_secondary-n4.pseudo-class-hover,
+.hover__secondary-n3.pseudo-class-hover,
+.hover_color_secondary-n3.pseudo-class-hover,
+.hover__secondary-n2.pseudo-class-hover,
+.hover_color_secondary-n2.pseudo-class-hover,
+.hover__secondary-n1.pseudo-class-hover,
+.hover_color_secondary-n1.pseudo-class-hover,
+.hover__secondary-5.pseudo-class-hover,
+.hover_color_secondary-5.pseudo-class-hover,
+.hover__secondary-4.pseudo-class-hover,
+.hover_color_secondary-4.pseudo-class-hover,
+.hover__secondary-3.pseudo-class-hover,
+.hover_color_secondary-3.pseudo-class-hover,
+.hover__secondary-2.pseudo-class-hover,
+.hover_color_secondary-2.pseudo-class-hover,
+.hover__secondary-1.pseudo-class-hover,
+.hover_color_secondary-1.pseudo-class-hover,
+.hover__secondary-0.pseudo-class-hover,
+.hover_color_secondary-0.pseudo-class-hover,
+.hover__secondary.pseudo-class-hover,
+.hover_color_secondary.pseudo-class-hover,
+.hover_back_secondary-n5.pseudo-class-hover,
+.hover_background-color_secondary-n5.pseudo-class-hover,
+.hover_back_secondary-n4.pseudo-class-hover,
+.hover_background-color_secondary-n4.pseudo-class-hover,
+.hover_back_secondary-n3.pseudo-class-hover,
+.hover_background-color_secondary-n3.pseudo-class-hover,
+.hover_back_secondary-n2.pseudo-class-hover,
+.hover_background-color_secondary-n2.pseudo-class-hover,
+.hover_back_secondary-n1.pseudo-class-hover,
+.hover_background-color_secondary-n1.pseudo-class-hover,
+.hover_back_secondary-5.pseudo-class-hover,
+.hover_background-color_secondary-5.pseudo-class-hover,
+.hover_back_secondary-4.pseudo-class-hover,
+.hover_background-color_secondary-4.pseudo-class-hover,
+.hover_back_secondary-3.pseudo-class-hover,
+.hover_background-color_secondary-3.pseudo-class-hover,
+.hover_back_secondary-2.pseudo-class-hover,
+.hover_background-color_secondary-2.pseudo-class-hover,
+.hover_back_secondary-1.pseudo-class-hover,
+.hover_background-color_secondary-1.pseudo-class-hover,
+.hover_back_secondary-0.pseudo-class-hover,
+.hover_background-color_secondary-0.pseudo-class-hover,
+.hover_back_secondary.pseudo-class-hover,
+.hover_background-color_secondary.pseudo-class-hover,
+.hover__primary-n5.pseudo-class-hover,
+.hover_color_primary-n5.pseudo-class-hover,
+.hover__primary-n4.pseudo-class-hover,
+.hover_color_primary-n4.pseudo-class-hover,
+.hover__primary-n3.pseudo-class-hover,
+.hover_color_primary-n3.pseudo-class-hover,
+.hover__primary-n2.pseudo-class-hover,
+.hover_color_primary-n2.pseudo-class-hover,
+.hover__primary-n1.pseudo-class-hover,
+.hover_color_primary-n1.pseudo-class-hover,
+.hover__primary-5.pseudo-class-hover,
+.hover_color_primary-5.pseudo-class-hover,
+.hover__primary-4.pseudo-class-hover,
+.hover_color_primary-4.pseudo-class-hover,
+.hover__primary-3.pseudo-class-hover,
+.hover_color_primary-3.pseudo-class-hover,
+.hover__primary-2.pseudo-class-hover,
+.hover_color_primary-2.pseudo-class-hover,
+.hover__primary-1.pseudo-class-hover,
+.hover_color_primary-1.pseudo-class-hover,
+.hover__primary-0.pseudo-class-hover,
+.hover_color_primary-0.pseudo-class-hover,
+.hover__primary.pseudo-class-hover,
+.hover_color_primary.pseudo-class-hover,
+.hover_back_primary-n5.pseudo-class-hover,
+.hover_background-color_primary-n5.pseudo-class-hover,
+.hover_back_primary-n4.pseudo-class-hover,
+.hover_background-color_primary-n4.pseudo-class-hover,
+.hover_back_primary-n3.pseudo-class-hover,
+.hover_background-color_primary-n3.pseudo-class-hover,
+.hover_back_primary-n2.pseudo-class-hover,
+.hover_background-color_primary-n2.pseudo-class-hover,
+.hover_back_primary-n1.pseudo-class-hover,
+.hover_background-color_primary-n1.pseudo-class-hover,
+.hover_back_primary-5.pseudo-class-hover,
+.hover_background-color_primary-5.pseudo-class-hover,
+.hover_back_primary-4.pseudo-class-hover,
+.hover_background-color_primary-4.pseudo-class-hover,
+.hover_back_primary-3.pseudo-class-hover,
+.hover_background-color_primary-3.pseudo-class-hover,
+.hover_back_primary-2.pseudo-class-hover,
+.hover_background-color_primary-2.pseudo-class-hover,
+.hover_back_primary-1.pseudo-class-hover,
+.hover_background-color_primary-1.pseudo-class-hover,
+.hover_back_primary-0.pseudo-class-hover,
+.hover_background-color_primary-0.pseudo-class-hover,
+.hover_back_primary.pseudo-class-hover,
+.hover_background-color_primary.pseudo-class-hover {
+  cursor: pointer;
+}
+
 .disabled.pseudo-class-hover,
 .pagination .disabled.pseudo-class-hover {
   background-attachment: local;
   background-repeat: repeat;
   background-position: top right;
   background-origin: border-box;
-}
-
-.hover-text_secondaryalt-n5.pseudo-class-hover,
-.hover-text_secondaryalt-n4.pseudo-class-hover,
-.hover-text_secondaryalt-n3.pseudo-class-hover,
-.hover-text_secondaryalt-n2.pseudo-class-hover,
-.hover-text_secondaryalt-n1.pseudo-class-hover,
-.hover-text_secondaryalt-5.pseudo-class-hover,
-.hover-text_secondaryalt-4.pseudo-class-hover,
-.hover-text_secondaryalt-3.pseudo-class-hover,
-.hover-text_secondaryalt-2.pseudo-class-hover,
-.hover-text_secondaryalt-1.pseudo-class-hover,
-.hover-text_secondaryalt-0.pseudo-class-hover,
-.hover-text_secondaryalt.pseudo-class-hover,
-.hover_secondaryalt-n5.pseudo-class-hover,
-.hover_secondaryalt-n4.pseudo-class-hover,
-.hover_secondaryalt-n3.pseudo-class-hover,
-.hover_secondaryalt-n2.pseudo-class-hover,
-.hover_secondaryalt-n1.pseudo-class-hover,
-.hover_secondaryalt-5.pseudo-class-hover,
-.hover_secondaryalt-4.pseudo-class-hover,
-.hover_secondaryalt-3.pseudo-class-hover,
-.hover_secondaryalt-2.pseudo-class-hover,
-.hover_secondaryalt-1.pseudo-class-hover,
-.hover_secondaryalt-0.pseudo-class-hover,
-.hover_secondaryalt.pseudo-class-hover,
-.hover-text_acc-n5.pseudo-class-hover,
-.hover-text_acc-n4.pseudo-class-hover,
-.hover-text_acc-n3.pseudo-class-hover,
-.hover-text_acc-n2.pseudo-class-hover,
-.hover-text_acc-n1.pseudo-class-hover,
-.hover-text_acc-5.pseudo-class-hover,
-.hover-text_acc-4.pseudo-class-hover,
-.hover-text_acc-3.pseudo-class-hover,
-.hover-text_acc-2.pseudo-class-hover,
-.hover-text_acc-1.pseudo-class-hover,
-.hover-text_acc-0.pseudo-class-hover,
-.hover-text_acc.pseudo-class-hover,
-.hover_acc-n5.pseudo-class-hover,
-.hover_acc-n4.pseudo-class-hover,
-.hover_acc-n3.pseudo-class-hover,
-.hover_acc-n2.pseudo-class-hover,
-.hover_acc-n1.pseudo-class-hover,
-.hover_acc-5.pseudo-class-hover,
-.hover_acc-4.pseudo-class-hover,
-.hover_acc-3.pseudo-class-hover,
-.hover_acc-2.pseudo-class-hover,
-.hover_acc-1.pseudo-class-hover,
-.hover_acc-0.pseudo-class-hover,
-.hover_acc.pseudo-class-hover,
-.hover-text_hightlight-n5.pseudo-class-hover,
-.hover-text_hightlight-n4.pseudo-class-hover,
-.hover-text_hightlight-n3.pseudo-class-hover,
-.hover-text_hightlight-n2.pseudo-class-hover,
-.hover-text_hightlight-n1.pseudo-class-hover,
-.hover-text_hightlight-5.pseudo-class-hover,
-.hover-text_hightlight-4.pseudo-class-hover,
-.hover-text_hightlight-3.pseudo-class-hover,
-.hover-text_hightlight-2.pseudo-class-hover,
-.hover-text_hightlight-1.pseudo-class-hover,
-.hover-text_hightlight-0.pseudo-class-hover,
-.hover-text_hightlight.pseudo-class-hover,
-.hover_hightlight-n5.pseudo-class-hover,
-.hover_hightlight-n4.pseudo-class-hover,
-.hover_hightlight-n3.pseudo-class-hover,
-.hover_hightlight-n2.pseudo-class-hover,
-.hover_hightlight-n1.pseudo-class-hover,
-.hover_hightlight-5.pseudo-class-hover,
-.hover_hightlight-4.pseudo-class-hover,
-.hover_hightlight-3.pseudo-class-hover,
-.hover_hightlight-2.pseudo-class-hover,
-.hover_hightlight-1.pseudo-class-hover,
-.hover_hightlight-0.pseudo-class-hover,
-.hover_hightlight.pseudo-class-hover,
-.hover-text_info-n5.pseudo-class-hover,
-.hover-text_info-n4.pseudo-class-hover,
-.hover-text_info-n3.pseudo-class-hover,
-.hover-text_info-n2.pseudo-class-hover,
-.hover-text_info-n1.pseudo-class-hover,
-.hover-text_info-5.pseudo-class-hover,
-.hover-text_info-4.pseudo-class-hover,
-.hover-text_info-3.pseudo-class-hover,
-.hover-text_info-2.pseudo-class-hover,
-.hover-text_info-1.pseudo-class-hover,
-.hover-text_info-0.pseudo-class-hover,
-.hover-text_info.pseudo-class-hover,
-.hover_info-n5.pseudo-class-hover,
-.hover_info-n4.pseudo-class-hover,
-.hover_info-n3.pseudo-class-hover,
-.hover_info-n2.pseudo-class-hover,
-.hover_info-n1.pseudo-class-hover,
-.hover_info-5.pseudo-class-hover,
-.hover_info-4.pseudo-class-hover,
-.hover_info-3.pseudo-class-hover,
-.hover_info-2.pseudo-class-hover,
-.hover_info-1.pseudo-class-hover,
-.hover_info-0.pseudo-class-hover,
-.hover_info.pseudo-class-hover,
-.hover-text_selected-n5.pseudo-class-hover,
-.hover-text_selected-n4.pseudo-class-hover,
-.hover-text_selected-n3.pseudo-class-hover,
-.hover-text_selected-n2.pseudo-class-hover,
-.hover-text_selected-n1.pseudo-class-hover,
-.hover-text_selected-5.pseudo-class-hover,
-.hover-text_selected-4.pseudo-class-hover,
-.hover-text_selected-3.pseudo-class-hover,
-.hover-text_selected-2.pseudo-class-hover,
-.hover-text_selected-1.pseudo-class-hover,
-.hover-text_selected-0.pseudo-class-hover,
-.hover-text_selected.pseudo-class-hover,
-.hover_selected-n5.pseudo-class-hover,
-.hover_selected-n4.pseudo-class-hover,
-.hover_selected-n3.pseudo-class-hover,
-.hover_selected-n2.pseudo-class-hover,
-.hover_selected-n1.pseudo-class-hover,
-.hover_selected-5.pseudo-class-hover,
-.hover_selected-4.pseudo-class-hover,
-.hover_selected-3.pseudo-class-hover,
-.hover_selected-2.pseudo-class-hover,
-.hover_selected-1.pseudo-class-hover,
-.hover_selected-0.pseudo-class-hover,
-.hover_selected.pseudo-class-hover,
-.hover-text_navigation-n5.pseudo-class-hover,
-.hover-text_navigation-n4.pseudo-class-hover,
-.hover-text_navigation-n3.pseudo-class-hover,
-.hover-text_navigation-n2.pseudo-class-hover,
-.hover-text_navigation-n1.pseudo-class-hover,
-.hover-text_navigation-5.pseudo-class-hover,
-.hover-text_navigation-4.pseudo-class-hover,
-.hover-text_navigation-3.pseudo-class-hover,
-.hover-text_navigation-2.pseudo-class-hover,
-.hover-text_navigation-1.pseudo-class-hover,
-.hover-text_navigation-0.pseudo-class-hover,
-.hover-text_navigation.pseudo-class-hover,
-.hover_navigation-n5.pseudo-class-hover,
-.hover_navigation-n4.pseudo-class-hover,
-.hover_navigation-n3.pseudo-class-hover,
-.hover_navigation-n2.pseudo-class-hover,
-.hover_navigation-n1.pseudo-class-hover,
-.hover_navigation-5.pseudo-class-hover,
-.hover_navigation-4.pseudo-class-hover,
-.hover_navigation-3.pseudo-class-hover,
-.hover_navigation-2.pseudo-class-hover,
-.hover_navigation-1.pseudo-class-hover,
-.hover_navigation-0.pseudo-class-hover,
-.hover_navigation.pseudo-class-hover,
-.hover-text_alert-n5.pseudo-class-hover,
-.hover-text_alert-n4.pseudo-class-hover,
-.hover-text_alert-n3.pseudo-class-hover,
-.hover-text_alert-n2.pseudo-class-hover,
-.hover-text_alert-n1.pseudo-class-hover,
-.hover-text_alert-5.pseudo-class-hover,
-.hover-text_alert-4.pseudo-class-hover,
-.hover-text_alert-3.pseudo-class-hover,
-.hover-text_alert-2.pseudo-class-hover,
-.hover-text_alert-1.pseudo-class-hover,
-.hover-text_alert-0.pseudo-class-hover,
-.hover-text_alert.pseudo-class-hover,
-.hover_alert-n5.pseudo-class-hover,
-.hover_alert-n4.pseudo-class-hover,
-.hover_alert-n3.pseudo-class-hover,
-.hover_alert-n2.pseudo-class-hover,
-.hover_alert-n1.pseudo-class-hover,
-.hover_alert-5.pseudo-class-hover,
-.hover_alert-4.pseudo-class-hover,
-.hover_alert-3.pseudo-class-hover,
-.hover_alert-2.pseudo-class-hover,
-.hover_alert-1.pseudo-class-hover,
-.hover_alert-0.pseudo-class-hover,
-.hover_alert.pseudo-class-hover,
-.hover-text_warning-n5.pseudo-class-hover,
-.hover-text_warning-n4.pseudo-class-hover,
-.hover-text_warning-n3.pseudo-class-hover,
-.hover-text_warning-n2.pseudo-class-hover,
-.hover-text_warning-n1.pseudo-class-hover,
-.hover-text_warning-5.pseudo-class-hover,
-.hover-text_warning-4.pseudo-class-hover,
-.hover-text_warning-3.pseudo-class-hover,
-.hover-text_warning-2.pseudo-class-hover,
-.hover-text_warning-1.pseudo-class-hover,
-.hover-text_warning-0.pseudo-class-hover,
-.hover-text_warning.pseudo-class-hover,
-.hover_warning-n5.pseudo-class-hover,
-.hover_warning-n4.pseudo-class-hover,
-.hover_warning-n3.pseudo-class-hover,
-.hover_warning-n2.pseudo-class-hover,
-.hover_warning-n1.pseudo-class-hover,
-.hover_warning-5.pseudo-class-hover,
-.hover_warning-4.pseudo-class-hover,
-.hover_warning-3.pseudo-class-hover,
-.hover_warning-2.pseudo-class-hover,
-.hover_warning-1.pseudo-class-hover,
-.hover_warning-0.pseudo-class-hover,
-.hover_warning.pseudo-class-hover,
-.hover-text_success-n5.pseudo-class-hover,
-.hover-text_success-n4.pseudo-class-hover,
-.hover-text_success-n3.pseudo-class-hover,
-.hover-text_success-n2.pseudo-class-hover,
-.hover-text_success-n1.pseudo-class-hover,
-.hover-text_success-5.pseudo-class-hover,
-.hover-text_success-4.pseudo-class-hover,
-.hover-text_success-3.pseudo-class-hover,
-.hover-text_success-2.pseudo-class-hover,
-.hover-text_success-1.pseudo-class-hover,
-.hover-text_success-0.pseudo-class-hover,
-.hover-text_success.pseudo-class-hover,
-.hover_success-n5.pseudo-class-hover,
-.hover_success-n4.pseudo-class-hover,
-.hover_success-n3.pseudo-class-hover,
-.hover_success-n2.pseudo-class-hover,
-.hover_success-n1.pseudo-class-hover,
-.hover_success-5.pseudo-class-hover,
-.hover_success-4.pseudo-class-hover,
-.hover_success-3.pseudo-class-hover,
-.hover_success-2.pseudo-class-hover,
-.hover_success-1.pseudo-class-hover,
-.hover_success-0.pseudo-class-hover,
-.hover_success.pseudo-class-hover,
-.hover-text_secondary-n5.pseudo-class-hover,
-.hover-text_secondary-n4.pseudo-class-hover,
-.hover-text_secondary-n3.pseudo-class-hover,
-.hover-text_secondary-n2.pseudo-class-hover,
-.hover-text_secondary-n1.pseudo-class-hover,
-.hover-text_secondary-5.pseudo-class-hover,
-.hover-text_secondary-4.pseudo-class-hover,
-.hover-text_secondary-3.pseudo-class-hover,
-.hover-text_secondary-2.pseudo-class-hover,
-.hover-text_secondary-1.pseudo-class-hover,
-.hover-text_secondary-0.pseudo-class-hover,
-.hover-text_secondary.pseudo-class-hover,
-.hover_secondary-n5.pseudo-class-hover,
-.hover_secondary-n4.pseudo-class-hover,
-.hover_secondary-n3.pseudo-class-hover,
-.hover_secondary-n2.pseudo-class-hover,
-.hover_secondary-n1.pseudo-class-hover,
-.hover_secondary-5.pseudo-class-hover,
-.hover_secondary-4.pseudo-class-hover,
-.hover_secondary-3.pseudo-class-hover,
-.hover_secondary-2.pseudo-class-hover,
-.hover_secondary-1.pseudo-class-hover,
-.hover_secondary-0.pseudo-class-hover,
-.hover_secondary.pseudo-class-hover,
-.hover-text_primary-n5.pseudo-class-hover,
-.hover-text_primary-n4.pseudo-class-hover,
-.hover-text_primary-n3.pseudo-class-hover,
-.hover-text_primary-n2.pseudo-class-hover,
-.hover-text_primary-n1.pseudo-class-hover,
-.hover-text_primary-5.pseudo-class-hover,
-.hover-text_primary-4.pseudo-class-hover,
-.hover-text_primary-3.pseudo-class-hover,
-.hover-text_primary-2.pseudo-class-hover,
-.hover-text_primary-1.pseudo-class-hover,
-.hover-text_primary-0.pseudo-class-hover,
-.hover-text_primary.pseudo-class-hover,
-.hover_primary-n5.pseudo-class-hover,
-.hover_primary-n4.pseudo-class-hover,
-.hover_primary-n3.pseudo-class-hover,
-.hover_primary-n2.pseudo-class-hover,
-.hover_primary-n1.pseudo-class-hover,
-.hover_primary-5.pseudo-class-hover,
-.hover_primary-4.pseudo-class-hover,
-.hover_primary-3.pseudo-class-hover,
-.hover_primary-2.pseudo-class-hover,
-.hover_primary-1.pseudo-class-hover,
-.hover_primary-0.pseudo-class-hover,
-.hover_primary.pseudo-class-hover {
-  cursor: pointer;
 }
 
 [type=text].pseudo-class-focus,
@@ -290,7 +554,7 @@
 textarea.pseudo-class-focus {
   outline: none;
   border: 1px solid #8a8a8a;
-  background-color: #fefefe;
+  background-color: #fff;
   box-shadow: 0 0 5px #cacaca;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 }
@@ -322,7 +586,7 @@ textarea.pseudo-class-disabled {
 select.pseudo-class-focus {
   outline: none;
   border: 1px solid #8a8a8a;
-  background-color: #fefefe;
+  background-color: #fff;
   box-shadow: 0 0 5px #cacaca;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 }
@@ -340,73 +604,73 @@ a.pseudo-class-focus {
 .button.pseudo-class-hover,
 .button.pseudo-class-focus {
   background-color: #157894;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.primary.pseudo-class-hover,
 .button.primary.pseudo-class-focus {
   background-color: #14718b;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.secondary.pseudo-class-hover,
 .button.secondary.pseudo-class-focus {
   background-color: #484a54;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.success.pseudo-class-hover,
 .button.success.pseudo-class-focus {
   background-color: #077419;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.warning.pseudo-class-hover,
 .button.warning.pseudo-class-focus {
   background-color: #b86c19;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.alert.pseudo-class-hover,
 .button.alert.pseudo-class-focus {
   background-color: #a21d16;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.navigation.pseudo-class-hover,
 .button.navigation.pseudo-class-focus {
   background-color: #3a5b9e;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.selected.pseudo-class-hover,
 .button.selected.pseudo-class-focus {
   background-color: #407f56;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.info.pseudo-class-hover,
 .button.info.pseudo-class-focus {
   background-color: #58439d;
-  color: #fefefe;
+  color: #fff;
 }
 
-.button.hightlight.pseudo-class-hover,
-.button.hightlight.pseudo-class-focus {
+.button.highlight.pseudo-class-hover,
+.button.highlight.pseudo-class-focus {
   background-color: #aa3e7c;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.acc.pseudo-class-hover,
 .button.acc.pseudo-class-focus {
   background-color: #002d56;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.secondaryalt.pseudo-class-hover,
 .button.secondaryalt.pseudo-class-focus {
   background-color: #a29890;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.disabled.pseudo-class-hover,
@@ -414,7 +678,7 @@ a.pseudo-class-focus {
 .button[disabled].pseudo-class-hover,
 .button[disabled].pseudo-class-focus {
   background-color: #198dae;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.disabled.primary.pseudo-class-hover,
@@ -422,7 +686,7 @@ a.pseudo-class-focus {
 .button[disabled].primary.pseudo-class-hover,
 .button[disabled].primary.pseudo-class-focus {
   background-color: #198dae;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.disabled.secondary.pseudo-class-hover,
@@ -430,7 +694,7 @@ a.pseudo-class-focus {
 .button[disabled].secondary.pseudo-class-hover,
 .button[disabled].secondary.pseudo-class-focus {
   background-color: #5a5c69;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.disabled.success.pseudo-class-hover,
@@ -438,7 +702,7 @@ a.pseudo-class-focus {
 .button[disabled].success.pseudo-class-hover,
 .button[disabled].success.pseudo-class-focus {
   background-color: #09911f;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.disabled.warning.pseudo-class-hover,
@@ -446,7 +710,7 @@ a.pseudo-class-focus {
 .button[disabled].warning.pseudo-class-hover,
 .button[disabled].warning.pseudo-class-focus {
   background-color: #e18725;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.disabled.alert.pseudo-class-hover,
@@ -454,7 +718,7 @@ a.pseudo-class-focus {
 .button[disabled].alert.pseudo-class-hover,
 .button[disabled].alert.pseudo-class-focus {
   background-color: #cb241c;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.disabled.navigation.pseudo-class-hover,
@@ -462,7 +726,7 @@ a.pseudo-class-focus {
 .button[disabled].navigation.pseudo-class-hover,
 .button[disabled].navigation.pseudo-class-focus {
   background-color: #4f74bf;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.disabled.selected.pseudo-class-hover,
@@ -470,7 +734,7 @@ a.pseudo-class-focus {
 .button[disabled].selected.pseudo-class-hover,
 .button[disabled].selected.pseudo-class-focus {
   background-color: #509f6c;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.disabled.info.pseudo-class-hover,
@@ -478,15 +742,15 @@ a.pseudo-class-focus {
 .button[disabled].info.pseudo-class-hover,
 .button[disabled].info.pseudo-class-focus {
   background-color: #735dba;
-  color: #fefefe;
+  color: #fff;
 }
 
-.button.disabled.hightlight.pseudo-class-hover,
-.button.disabled.hightlight.pseudo-class-focus,
-.button[disabled].hightlight.pseudo-class-hover,
-.button[disabled].hightlight.pseudo-class-focus {
+.button.disabled.highlight.pseudo-class-hover,
+.button.disabled.highlight.pseudo-class-focus,
+.button[disabled].highlight.pseudo-class-hover,
+.button[disabled].highlight.pseudo-class-focus {
   background-color: #c45e99;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button.disabled.acc.pseudo-class-hover,
@@ -494,7 +758,7 @@ a.pseudo-class-focus {
 .button[disabled].acc.pseudo-class-hover,
 .button[disabled].acc.pseudo-class-focus {
   background-color: #00386b;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button.disabled.secondaryalt.pseudo-class-hover,
@@ -502,7 +766,7 @@ a.pseudo-class-focus {
 .button[disabled].secondaryalt.pseudo-class-hover,
 .button[disabled].secondaryalt.pseudo-class-focus {
   background-color: #c5bfba;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button.hollow.pseudo-class-hover,
@@ -643,16 +907,16 @@ a.pseudo-class-focus {
   color: #735dba;
 }
 
-.button.hollow.hightlight.pseudo-class-hover,
-.button.hollow.hightlight.pseudo-class-focus {
+.button.hollow.highlight.pseudo-class-hover,
+.button.hollow.highlight.pseudo-class-focus {
   border-color: #6a274e;
   color: #6a274e;
 }
 
-.button.hollow.hightlight.pseudo-class-hover.disabled,
-.button.hollow.hightlight.pseudo-class-hover[disabled],
-.button.hollow.hightlight.pseudo-class-focus.disabled,
-.button.hollow.hightlight.pseudo-class-focus[disabled] {
+.button.hollow.highlight.pseudo-class-hover.disabled,
+.button.hollow.highlight.pseudo-class-hover[disabled],
+.button.hollow.highlight.pseudo-class-focus.disabled,
+.button.hollow.highlight.pseudo-class-focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
@@ -904,26 +1168,26 @@ a.pseudo-class-focus {
   border-color: transparent;
 }
 
-.button.clear.hightlight.pseudo-class-hover,
-.button.clear.hightlight.pseudo-class-focus {
+.button.clear.highlight.pseudo-class-hover,
+.button.clear.highlight.pseudo-class-focus {
   border-color: #6a274e;
   color: #6a274e;
 }
 
-.button.clear.hightlight.pseudo-class-hover.disabled,
-.button.clear.hightlight.pseudo-class-hover[disabled],
-.button.clear.hightlight.pseudo-class-focus.disabled,
-.button.clear.hightlight.pseudo-class-focus[disabled] {
+.button.clear.highlight.pseudo-class-hover.disabled,
+.button.clear.highlight.pseudo-class-hover[disabled],
+.button.clear.highlight.pseudo-class-focus.disabled,
+.button.clear.highlight.pseudo-class-focus[disabled] {
   border: 1px solid #c45e99;
   color: #c45e99;
 }
 
-.button.clear.hightlight.pseudo-class-hover,
-.button.clear.hightlight.pseudo-class-hover.disabled,
-.button.clear.hightlight.pseudo-class-hover[disabled],
-.button.clear.hightlight.pseudo-class-focus,
-.button.clear.hightlight.pseudo-class-focus.disabled,
-.button.clear.hightlight.pseudo-class-focus[disabled] {
+.button.clear.highlight.pseudo-class-hover,
+.button.clear.highlight.pseudo-class-hover.disabled,
+.button.clear.highlight.pseudo-class-hover[disabled],
+.button.clear.highlight.pseudo-class-focus,
+.button.clear.highlight.pseudo-class-focus.disabled,
+.button.clear.highlight.pseudo-class-focus[disabled] {
   border-color: transparent;
 }
 
@@ -985,67 +1249,67 @@ a.button.pseudo-class-focus {
 .button-group.primary .button.pseudo-class-hover,
 .button-group.primary .button.pseudo-class-focus {
   background-color: #14718b;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button-group.secondary .button.pseudo-class-hover,
 .button-group.secondary .button.pseudo-class-focus {
   background-color: #484a54;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button-group.success .button.pseudo-class-hover,
 .button-group.success .button.pseudo-class-focus {
   background-color: #077419;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button-group.warning .button.pseudo-class-hover,
 .button-group.warning .button.pseudo-class-focus {
   background-color: #b86c19;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button-group.alert .button.pseudo-class-hover,
 .button-group.alert .button.pseudo-class-focus {
   background-color: #a21d16;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button-group.navigation .button.pseudo-class-hover,
 .button-group.navigation .button.pseudo-class-focus {
   background-color: #3a5b9e;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button-group.selected .button.pseudo-class-hover,
 .button-group.selected .button.pseudo-class-focus {
   background-color: #407f56;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button-group.info .button.pseudo-class-hover,
 .button-group.info .button.pseudo-class-focus {
   background-color: #58439d;
-  color: #fefefe;
+  color: #fff;
 }
 
-.button-group.hightlight .button.pseudo-class-hover,
-.button-group.hightlight .button.pseudo-class-focus {
+.button-group.highlight .button.pseudo-class-hover,
+.button-group.highlight .button.pseudo-class-focus {
   background-color: #aa3e7c;
-  color: #0a0a0a;
+  color: #fff;
 }
 
 .button-group.acc .button.pseudo-class-hover,
 .button-group.acc .button.pseudo-class-focus {
   background-color: #002d56;
-  color: #fefefe;
+  color: #fff;
 }
 
 .button-group.secondaryalt .button.pseudo-class-hover,
 .button-group.secondaryalt .button.pseudo-class-focus {
   background-color: #a29890;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .button-group.stacked .button.pseudo-class-last-child,
@@ -1056,7 +1320,7 @@ a.button.pseudo-class-focus {
 
 .close-button.pseudo-class-hover,
 .close-button.pseudo-class-focus {
-  color: #fefefe;
+  color: #fff;
 }
 
 .slider-handle.pseudo-class-hover {
@@ -1096,19 +1360,19 @@ input.pseudo-class-checked + label > .switch-inactive {
 }
 
 table.hover thead tr.pseudo-class-hover {
-  background-color: #f3f3f3;
+  background-color: #f4f4f4;
 }
 
 table.hover tfoot tr.pseudo-class-hover {
-  background-color: #ececec;
+  background-color: #ededed;
 }
 
 table.hover tbody tr.pseudo-class-hover {
-  background-color: #f9f9f9;
+  background-color: #fafafa;
 }
 
 table.hover:not(.unstriped) tr:nth-of-type(even).pseudo-class-hover {
-  background-color: #ececec;
+  background-color: #ededed;
 }
 
 .breadcrumbs a.pseudo-class-hover {
@@ -1189,7 +1453,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even).pseudo-class-hover {
 .orbit-previous.pseudo-class-active,
 .orbit-next.pseudo-class-focus,
 .orbit-previous.pseudo-class-focus {
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
 .orbit-bullets button.pseudo-class-hover {
@@ -1206,7 +1470,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even).pseudo-class-hover {
 }
 
 .tabs-title > a.pseudo-class-hover {
-  background: #fefefe;
+  background: #fff;
   color: #167996;
 }
 
@@ -1256,9 +1520,13 @@ a.thumbnail.pseudo-class-focus {
   background-image: url("./assets/img/cross_disabled.png");
 }
 
+.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
+  color: #111;
+}
+
 .quicklinks a.pseudo-class-hover {
   background-color: #e4f6fb;
-  color: #0a0a0a;
+  color: #111;
 }
 
 .quicklinks__item.pseudo-class-last-child {
@@ -1273,1067 +1541,1333 @@ a.thumbnail.pseudo-class-focus {
   background-image: url("./assets/img/cross_disabled.png");
 }
 
-.hover_primary.pseudo-class-hover {
+.hover_back_primary.pseudo-class-hover,
+.hover_background-color_primary.pseudo-class-hover {
   background-color: #198dae !important;
 }
 
-.hover_primary-0.pseudo-class-hover {
+.hover_back_primary-0.pseudo-class-hover,
+.hover_background-color_primary-0.pseudo-class-hover {
   background-color: #198dae !important;
 }
 
-.hover_primary-1.pseudo-class-hover {
+.hover_back_primary-1.pseudo-class-hover,
+.hover_background-color_primary-1.pseudo-class-hover {
   background-color: #3c9eba !important;
 }
 
-.hover_primary-2.pseudo-class-hover {
+.hover_back_primary-2.pseudo-class-hover,
+.hover_background-color_primary-2.pseudo-class-hover {
   background-color: #6eb7cc !important;
 }
 
-.hover_primary-3.pseudo-class-hover {
+.hover_back_primary-3.pseudo-class-hover,
+.hover_background-color_primary-3.pseudo-class-hover {
   background-color: #a3d1df !important;
 }
 
-.hover_primary-4.pseudo-class-hover {
+.hover_back_primary-4.pseudo-class-hover,
+.hover_background-color_primary-4.pseudo-class-hover {
   background-color: #cce6ed !important;
 }
 
-.hover_primary-5.pseudo-class-hover {
+.hover_back_primary-5.pseudo-class-hover,
+.hover_background-color_primary-5.pseudo-class-hover {
   background-color: #e8f4f7 !important;
 }
 
-.hover_primary-n1.pseudo-class-hover {
+.hover_back_primary-n1.pseudo-class-hover,
+.hover_background-color_primary-n1.pseudo-class-hover {
   background-color: #177f9d !important;
 }
 
-.hover_primary-n2.pseudo-class-hover {
+.hover_back_primary-n2.pseudo-class-hover,
+.hover_background-color_primary-n2.pseudo-class-hover {
   background-color: #136a83 !important;
 }
 
-.hover_primary-n3.pseudo-class-hover {
+.hover_back_primary-n3.pseudo-class-hover,
+.hover_background-color_primary-n3.pseudo-class-hover {
   background-color: #0e4e60 !important;
 }
 
-.hover_primary-n4.pseudo-class-hover {
+.hover_back_primary-n4.pseudo-class-hover,
+.hover_background-color_primary-n4.pseudo-class-hover {
   background-color: #0a3846 !important;
 }
 
-.hover_primary-n5.pseudo-class-hover {
+.hover_back_primary-n5.pseudo-class-hover,
+.hover_background-color_primary-n5.pseudo-class-hover {
   background-color: #06232c !important;
 }
 
-.hover-text_primary.pseudo-class-hover {
+.hover__primary.pseudo-class-hover,
+.hover_color_primary.pseudo-class-hover {
   color: #198dae !important;
 }
 
-.hover-text_primary-0.pseudo-class-hover {
+.hover__primary-0.pseudo-class-hover,
+.hover_color_primary-0.pseudo-class-hover {
   color: #198dae !important;
 }
 
-.hover-text_primary-1.pseudo-class-hover {
+.hover__primary-1.pseudo-class-hover,
+.hover_color_primary-1.pseudo-class-hover {
   color: #3c9eba !important;
 }
 
-.hover-text_primary-2.pseudo-class-hover {
+.hover__primary-2.pseudo-class-hover,
+.hover_color_primary-2.pseudo-class-hover {
   color: #6eb7cc !important;
 }
 
-.hover-text_primary-3.pseudo-class-hover {
+.hover__primary-3.pseudo-class-hover,
+.hover_color_primary-3.pseudo-class-hover {
   color: #a3d1df !important;
 }
 
-.hover-text_primary-4.pseudo-class-hover {
+.hover__primary-4.pseudo-class-hover,
+.hover_color_primary-4.pseudo-class-hover {
   color: #cce6ed !important;
 }
 
-.hover-text_primary-5.pseudo-class-hover {
+.hover__primary-5.pseudo-class-hover,
+.hover_color_primary-5.pseudo-class-hover {
   color: #e8f4f7 !important;
 }
 
-.hover-text_primary-n1.pseudo-class-hover {
+.hover__primary-n1.pseudo-class-hover,
+.hover_color_primary-n1.pseudo-class-hover {
   color: #177f9d !important;
 }
 
-.hover-text_primary-n2.pseudo-class-hover {
+.hover__primary-n2.pseudo-class-hover,
+.hover_color_primary-n2.pseudo-class-hover {
   color: #136a83 !important;
 }
 
-.hover-text_primary-n3.pseudo-class-hover {
+.hover__primary-n3.pseudo-class-hover,
+.hover_color_primary-n3.pseudo-class-hover {
   color: #0e4e60 !important;
 }
 
-.hover-text_primary-n4.pseudo-class-hover {
+.hover__primary-n4.pseudo-class-hover,
+.hover_color_primary-n4.pseudo-class-hover {
   color: #0a3846 !important;
 }
 
-.hover-text_primary-n5.pseudo-class-hover {
+.hover__primary-n5.pseudo-class-hover,
+.hover_color_primary-n5.pseudo-class-hover {
   color: #06232c !important;
 }
 
-.hover_secondary.pseudo-class-hover {
+.hover_back_secondary.pseudo-class-hover,
+.hover_background-color_secondary.pseudo-class-hover {
   background-color: #5a5c69 !important;
 }
 
-.hover_secondary-0.pseudo-class-hover {
+.hover_back_secondary-0.pseudo-class-hover,
+.hover_background-color_secondary-0.pseudo-class-hover {
   background-color: #5a5c69 !important;
 }
 
-.hover_secondary-1.pseudo-class-hover {
+.hover_back_secondary-1.pseudo-class-hover,
+.hover_background-color_secondary-1.pseudo-class-hover {
   background-color: #737480 !important;
 }
 
-.hover_secondary-2.pseudo-class-hover {
+.hover_back_secondary-2.pseudo-class-hover,
+.hover_background-color_secondary-2.pseudo-class-hover {
   background-color: #9798a1 !important;
 }
 
-.hover_secondary-3.pseudo-class-hover {
+.hover_back_secondary-3.pseudo-class-hover,
+.hover_background-color_secondary-3.pseudo-class-hover {
   background-color: #bdbec3 !important;
 }
 
-.hover_secondary-4.pseudo-class-hover {
+.hover_back_secondary-4.pseudo-class-hover,
+.hover_background-color_secondary-4.pseudo-class-hover {
   background-color: #dbdbde !important;
 }
 
-.hover_secondary-5.pseudo-class-hover {
+.hover_back_secondary-5.pseudo-class-hover,
+.hover_background-color_secondary-5.pseudo-class-hover {
   background-color: #efeff0 !important;
 }
 
-.hover_secondary-n1.pseudo-class-hover {
+.hover_back_secondary-n1.pseudo-class-hover,
+.hover_background-color_secondary-n1.pseudo-class-hover {
   background-color: #51535f !important;
 }
 
-.hover_secondary-n2.pseudo-class-hover {
+.hover_back_secondary-n2.pseudo-class-hover,
+.hover_background-color_secondary-n2.pseudo-class-hover {
   background-color: #44454f !important;
 }
 
-.hover_secondary-n3.pseudo-class-hover {
+.hover_back_secondary-n3.pseudo-class-hover,
+.hover_background-color_secondary-n3.pseudo-class-hover {
   background-color: #32333a !important;
 }
 
-.hover_secondary-n4.pseudo-class-hover {
+.hover_back_secondary-n4.pseudo-class-hover,
+.hover_background-color_secondary-n4.pseudo-class-hover {
   background-color: #24252a !important;
 }
 
-.hover_secondary-n5.pseudo-class-hover {
+.hover_back_secondary-n5.pseudo-class-hover,
+.hover_background-color_secondary-n5.pseudo-class-hover {
   background-color: #17171a !important;
 }
 
-.hover-text_secondary.pseudo-class-hover {
+.hover__secondary.pseudo-class-hover,
+.hover_color_secondary.pseudo-class-hover {
   color: #5a5c69 !important;
 }
 
-.hover-text_secondary-0.pseudo-class-hover {
+.hover__secondary-0.pseudo-class-hover,
+.hover_color_secondary-0.pseudo-class-hover {
   color: #5a5c69 !important;
 }
 
-.hover-text_secondary-1.pseudo-class-hover {
+.hover__secondary-1.pseudo-class-hover,
+.hover_color_secondary-1.pseudo-class-hover {
   color: #737480 !important;
 }
 
-.hover-text_secondary-2.pseudo-class-hover {
+.hover__secondary-2.pseudo-class-hover,
+.hover_color_secondary-2.pseudo-class-hover {
   color: #9798a1 !important;
 }
 
-.hover-text_secondary-3.pseudo-class-hover {
+.hover__secondary-3.pseudo-class-hover,
+.hover_color_secondary-3.pseudo-class-hover {
   color: #bdbec3 !important;
 }
 
-.hover-text_secondary-4.pseudo-class-hover {
+.hover__secondary-4.pseudo-class-hover,
+.hover_color_secondary-4.pseudo-class-hover {
   color: #dbdbde !important;
 }
 
-.hover-text_secondary-5.pseudo-class-hover {
+.hover__secondary-5.pseudo-class-hover,
+.hover_color_secondary-5.pseudo-class-hover {
   color: #efeff0 !important;
 }
 
-.hover-text_secondary-n1.pseudo-class-hover {
+.hover__secondary-n1.pseudo-class-hover,
+.hover_color_secondary-n1.pseudo-class-hover {
   color: #51535f !important;
 }
 
-.hover-text_secondary-n2.pseudo-class-hover {
+.hover__secondary-n2.pseudo-class-hover,
+.hover_color_secondary-n2.pseudo-class-hover {
   color: #44454f !important;
 }
 
-.hover-text_secondary-n3.pseudo-class-hover {
+.hover__secondary-n3.pseudo-class-hover,
+.hover_color_secondary-n3.pseudo-class-hover {
   color: #32333a !important;
 }
 
-.hover-text_secondary-n4.pseudo-class-hover {
+.hover__secondary-n4.pseudo-class-hover,
+.hover_color_secondary-n4.pseudo-class-hover {
   color: #24252a !important;
 }
 
-.hover-text_secondary-n5.pseudo-class-hover {
+.hover__secondary-n5.pseudo-class-hover,
+.hover_color_secondary-n5.pseudo-class-hover {
   color: #17171a !important;
 }
 
-.hover_success.pseudo-class-hover {
+.hover_back_success.pseudo-class-hover,
+.hover_background-color_success.pseudo-class-hover {
   background-color: #09911f !important;
 }
 
-.hover_success-0.pseudo-class-hover {
+.hover_back_success-0.pseudo-class-hover,
+.hover_background-color_success-0.pseudo-class-hover {
   background-color: #09911f !important;
 }
 
-.hover_success-1.pseudo-class-hover {
+.hover_back_success-1.pseudo-class-hover,
+.hover_background-color_success-1.pseudo-class-hover {
   background-color: #2ea241 !important;
 }
 
-.hover_success-2.pseudo-class-hover {
+.hover_back_success-2.pseudo-class-hover,
+.hover_background-color_success-2.pseudo-class-hover {
   background-color: #64ba72 !important;
 }
 
-.hover_success-3.pseudo-class-hover {
+.hover_back_success-3.pseudo-class-hover,
+.hover_background-color_success-3.pseudo-class-hover {
   background-color: #9dd3a5 !important;
 }
 
-.hover_success-4.pseudo-class-hover {
+.hover_back_success-4.pseudo-class-hover,
+.hover_background-color_success-4.pseudo-class-hover {
   background-color: #c9e7ce !important;
 }
 
-.hover_success-5.pseudo-class-hover {
+.hover_back_success-5.pseudo-class-hover,
+.hover_background-color_success-5.pseudo-class-hover {
   background-color: #e6f4e9 !important;
 }
 
-.hover_success-n1.pseudo-class-hover {
+.hover_back_success-n1.pseudo-class-hover,
+.hover_background-color_success-n1.pseudo-class-hover {
   background-color: #08831c !important;
 }
 
-.hover_success-n2.pseudo-class-hover {
+.hover_back_success-n2.pseudo-class-hover,
+.hover_background-color_success-n2.pseudo-class-hover {
   background-color: #076d17 !important;
 }
 
-.hover_success-n3.pseudo-class-hover {
+.hover_back_success-n3.pseudo-class-hover,
+.hover_background-color_success-n3.pseudo-class-hover {
   background-color: #055011 !important;
 }
 
-.hover_success-n4.pseudo-class-hover {
+.hover_back_success-n4.pseudo-class-hover,
+.hover_background-color_success-n4.pseudo-class-hover {
   background-color: #043a0c !important;
 }
 
-.hover_success-n5.pseudo-class-hover {
+.hover_back_success-n5.pseudo-class-hover,
+.hover_background-color_success-n5.pseudo-class-hover {
   background-color: #022408 !important;
 }
 
-.hover-text_success.pseudo-class-hover {
+.hover__success.pseudo-class-hover,
+.hover_color_success.pseudo-class-hover {
   color: #09911f !important;
 }
 
-.hover-text_success-0.pseudo-class-hover {
+.hover__success-0.pseudo-class-hover,
+.hover_color_success-0.pseudo-class-hover {
   color: #09911f !important;
 }
 
-.hover-text_success-1.pseudo-class-hover {
+.hover__success-1.pseudo-class-hover,
+.hover_color_success-1.pseudo-class-hover {
   color: #2ea241 !important;
 }
 
-.hover-text_success-2.pseudo-class-hover {
+.hover__success-2.pseudo-class-hover,
+.hover_color_success-2.pseudo-class-hover {
   color: #64ba72 !important;
 }
 
-.hover-text_success-3.pseudo-class-hover {
+.hover__success-3.pseudo-class-hover,
+.hover_color_success-3.pseudo-class-hover {
   color: #9dd3a5 !important;
 }
 
-.hover-text_success-4.pseudo-class-hover {
+.hover__success-4.pseudo-class-hover,
+.hover_color_success-4.pseudo-class-hover {
   color: #c9e7ce !important;
 }
 
-.hover-text_success-5.pseudo-class-hover {
+.hover__success-5.pseudo-class-hover,
+.hover_color_success-5.pseudo-class-hover {
   color: #e6f4e9 !important;
 }
 
-.hover-text_success-n1.pseudo-class-hover {
+.hover__success-n1.pseudo-class-hover,
+.hover_color_success-n1.pseudo-class-hover {
   color: #08831c !important;
 }
 
-.hover-text_success-n2.pseudo-class-hover {
+.hover__success-n2.pseudo-class-hover,
+.hover_color_success-n2.pseudo-class-hover {
   color: #076d17 !important;
 }
 
-.hover-text_success-n3.pseudo-class-hover {
+.hover__success-n3.pseudo-class-hover,
+.hover_color_success-n3.pseudo-class-hover {
   color: #055011 !important;
 }
 
-.hover-text_success-n4.pseudo-class-hover {
+.hover__success-n4.pseudo-class-hover,
+.hover_color_success-n4.pseudo-class-hover {
   color: #043a0c !important;
 }
 
-.hover-text_success-n5.pseudo-class-hover {
+.hover__success-n5.pseudo-class-hover,
+.hover_color_success-n5.pseudo-class-hover {
   color: #022408 !important;
 }
 
-.hover_warning.pseudo-class-hover {
+.hover_back_warning.pseudo-class-hover,
+.hover_background-color_warning.pseudo-class-hover {
   background-color: #e18725 !important;
 }
 
-.hover_warning-0.pseudo-class-hover {
+.hover_back_warning-0.pseudo-class-hover,
+.hover_background-color_warning-0.pseudo-class-hover {
   background-color: #e18725 !important;
 }
 
-.hover_warning-1.pseudo-class-hover {
+.hover_back_warning-1.pseudo-class-hover,
+.hover_background-color_warning-1.pseudo-class-hover {
   background-color: #e69946 !important;
 }
 
-.hover_warning-2.pseudo-class-hover {
+.hover_back_warning-2.pseudo-class-hover,
+.hover_background-color_warning-2.pseudo-class-hover {
   background-color: #ecb376 !important;
 }
 
-.hover_warning-3.pseudo-class-hover {
+.hover_back_warning-3.pseudo-class-hover,
+.hover_background-color_warning-3.pseudo-class-hover {
   background-color: #f3cfa8 !important;
 }
 
-.hover_warning-4.pseudo-class-hover {
+.hover_back_warning-4.pseudo-class-hover,
+.hover_background-color_warning-4.pseudo-class-hover {
   background-color: #f8e5cf !important;
 }
 
-.hover_warning-5.pseudo-class-hover {
+.hover_back_warning-5.pseudo-class-hover,
+.hover_background-color_warning-5.pseudo-class-hover {
   background-color: #fcf3e9 !important;
 }
 
-.hover_warning-n1.pseudo-class-hover {
+.hover_back_warning-n1.pseudo-class-hover,
+.hover_background-color_warning-n1.pseudo-class-hover {
   background-color: #cb7a21 !important;
 }
 
-.hover_warning-n2.pseudo-class-hover {
+.hover_back_warning-n2.pseudo-class-hover,
+.hover_background-color_warning-n2.pseudo-class-hover {
   background-color: #a9651c !important;
 }
 
-.hover_warning-n3.pseudo-class-hover {
+.hover_back_warning-n3.pseudo-class-hover,
+.hover_background-color_warning-n3.pseudo-class-hover {
   background-color: #7c4a14 !important;
 }
 
-.hover_warning-n4.pseudo-class-hover {
+.hover_back_warning-n4.pseudo-class-hover,
+.hover_background-color_warning-n4.pseudo-class-hover {
   background-color: #5a360f !important;
 }
 
-.hover_warning-n5.pseudo-class-hover {
+.hover_back_warning-n5.pseudo-class-hover,
+.hover_background-color_warning-n5.pseudo-class-hover {
   background-color: #382209 !important;
 }
 
-.hover-text_warning.pseudo-class-hover {
+.hover__warning.pseudo-class-hover,
+.hover_color_warning.pseudo-class-hover {
   color: #e18725 !important;
 }
 
-.hover-text_warning-0.pseudo-class-hover {
+.hover__warning-0.pseudo-class-hover,
+.hover_color_warning-0.pseudo-class-hover {
   color: #e18725 !important;
 }
 
-.hover-text_warning-1.pseudo-class-hover {
+.hover__warning-1.pseudo-class-hover,
+.hover_color_warning-1.pseudo-class-hover {
   color: #e69946 !important;
 }
 
-.hover-text_warning-2.pseudo-class-hover {
+.hover__warning-2.pseudo-class-hover,
+.hover_color_warning-2.pseudo-class-hover {
   color: #ecb376 !important;
 }
 
-.hover-text_warning-3.pseudo-class-hover {
+.hover__warning-3.pseudo-class-hover,
+.hover_color_warning-3.pseudo-class-hover {
   color: #f3cfa8 !important;
 }
 
-.hover-text_warning-4.pseudo-class-hover {
+.hover__warning-4.pseudo-class-hover,
+.hover_color_warning-4.pseudo-class-hover {
   color: #f8e5cf !important;
 }
 
-.hover-text_warning-5.pseudo-class-hover {
+.hover__warning-5.pseudo-class-hover,
+.hover_color_warning-5.pseudo-class-hover {
   color: #fcf3e9 !important;
 }
 
-.hover-text_warning-n1.pseudo-class-hover {
+.hover__warning-n1.pseudo-class-hover,
+.hover_color_warning-n1.pseudo-class-hover {
   color: #cb7a21 !important;
 }
 
-.hover-text_warning-n2.pseudo-class-hover {
+.hover__warning-n2.pseudo-class-hover,
+.hover_color_warning-n2.pseudo-class-hover {
   color: #a9651c !important;
 }
 
-.hover-text_warning-n3.pseudo-class-hover {
+.hover__warning-n3.pseudo-class-hover,
+.hover_color_warning-n3.pseudo-class-hover {
   color: #7c4a14 !important;
 }
 
-.hover-text_warning-n4.pseudo-class-hover {
+.hover__warning-n4.pseudo-class-hover,
+.hover_color_warning-n4.pseudo-class-hover {
   color: #5a360f !important;
 }
 
-.hover-text_warning-n5.pseudo-class-hover {
+.hover__warning-n5.pseudo-class-hover,
+.hover_color_warning-n5.pseudo-class-hover {
   color: #382209 !important;
 }
 
-.hover_alert.pseudo-class-hover {
+.hover_back_alert.pseudo-class-hover,
+.hover_background-color_alert.pseudo-class-hover {
   background-color: #cb241c !important;
 }
 
-.hover_alert-0.pseudo-class-hover {
+.hover_back_alert-0.pseudo-class-hover,
+.hover_background-color_alert-0.pseudo-class-hover {
   background-color: #cb241c !important;
 }
 
-.hover_alert-1.pseudo-class-hover {
+.hover_back_alert-1.pseudo-class-hover,
+.hover_background-color_alert-1.pseudo-class-hover {
   background-color: #d3453e !important;
 }
 
-.hover_alert-2.pseudo-class-hover {
+.hover_back_alert-2.pseudo-class-hover,
+.hover_background-color_alert-2.pseudo-class-hover {
   background-color: #de7570 !important;
 }
 
-.hover_alert-3.pseudo-class-hover {
+.hover_back_alert-3.pseudo-class-hover,
+.hover_background-color_alert-3.pseudo-class-hover {
   background-color: #eaa7a4 !important;
 }
 
-.hover_alert-4.pseudo-class-hover {
+.hover_back_alert-4.pseudo-class-hover,
+.hover_background-color_alert-4.pseudo-class-hover {
   background-color: #f4cfcd !important;
 }
 
-.hover_alert-5.pseudo-class-hover {
+.hover_back_alert-5.pseudo-class-hover,
+.hover_background-color_alert-5.pseudo-class-hover {
   background-color: #fae9e8 !important;
 }
 
-.hover_alert-n1.pseudo-class-hover {
+.hover_back_alert-n1.pseudo-class-hover,
+.hover_background-color_alert-n1.pseudo-class-hover {
   background-color: #b72019 !important;
 }
 
-.hover_alert-n2.pseudo-class-hover {
+.hover_back_alert-n2.pseudo-class-hover,
+.hover_background-color_alert-n2.pseudo-class-hover {
   background-color: #981b15 !important;
 }
 
-.hover_alert-n3.pseudo-class-hover {
+.hover_back_alert-n3.pseudo-class-hover,
+.hover_background-color_alert-n3.pseudo-class-hover {
   background-color: #70140f !important;
 }
 
-.hover_alert-n4.pseudo-class-hover {
+.hover_back_alert-n4.pseudo-class-hover,
+.hover_background-color_alert-n4.pseudo-class-hover {
   background-color: #510e0b !important;
 }
 
-.hover_alert-n5.pseudo-class-hover {
+.hover_back_alert-n5.pseudo-class-hover,
+.hover_background-color_alert-n5.pseudo-class-hover {
   background-color: #330907 !important;
 }
 
-.hover-text_alert.pseudo-class-hover {
+.hover__alert.pseudo-class-hover,
+.hover_color_alert.pseudo-class-hover {
   color: #cb241c !important;
 }
 
-.hover-text_alert-0.pseudo-class-hover {
+.hover__alert-0.pseudo-class-hover,
+.hover_color_alert-0.pseudo-class-hover {
   color: #cb241c !important;
 }
 
-.hover-text_alert-1.pseudo-class-hover {
+.hover__alert-1.pseudo-class-hover,
+.hover_color_alert-1.pseudo-class-hover {
   color: #d3453e !important;
 }
 
-.hover-text_alert-2.pseudo-class-hover {
+.hover__alert-2.pseudo-class-hover,
+.hover_color_alert-2.pseudo-class-hover {
   color: #de7570 !important;
 }
 
-.hover-text_alert-3.pseudo-class-hover {
+.hover__alert-3.pseudo-class-hover,
+.hover_color_alert-3.pseudo-class-hover {
   color: #eaa7a4 !important;
 }
 
-.hover-text_alert-4.pseudo-class-hover {
+.hover__alert-4.pseudo-class-hover,
+.hover_color_alert-4.pseudo-class-hover {
   color: #f4cfcd !important;
 }
 
-.hover-text_alert-5.pseudo-class-hover {
+.hover__alert-5.pseudo-class-hover,
+.hover_color_alert-5.pseudo-class-hover {
   color: #fae9e8 !important;
 }
 
-.hover-text_alert-n1.pseudo-class-hover {
+.hover__alert-n1.pseudo-class-hover,
+.hover_color_alert-n1.pseudo-class-hover {
   color: #b72019 !important;
 }
 
-.hover-text_alert-n2.pseudo-class-hover {
+.hover__alert-n2.pseudo-class-hover,
+.hover_color_alert-n2.pseudo-class-hover {
   color: #981b15 !important;
 }
 
-.hover-text_alert-n3.pseudo-class-hover {
+.hover__alert-n3.pseudo-class-hover,
+.hover_color_alert-n3.pseudo-class-hover {
   color: #70140f !important;
 }
 
-.hover-text_alert-n4.pseudo-class-hover {
+.hover__alert-n4.pseudo-class-hover,
+.hover_color_alert-n4.pseudo-class-hover {
   color: #510e0b !important;
 }
 
-.hover-text_alert-n5.pseudo-class-hover {
+.hover__alert-n5.pseudo-class-hover,
+.hover_color_alert-n5.pseudo-class-hover {
   color: #330907 !important;
 }
 
-.hover_navigation.pseudo-class-hover {
+.hover_back_navigation.pseudo-class-hover,
+.hover_background-color_navigation.pseudo-class-hover {
   background-color: #4f74bf !important;
 }
 
-.hover_navigation-0.pseudo-class-hover {
+.hover_back_navigation-0.pseudo-class-hover,
+.hover_background-color_navigation-0.pseudo-class-hover {
   background-color: #4f74bf !important;
 }
 
-.hover_navigation-1.pseudo-class-hover {
+.hover_back_navigation-1.pseudo-class-hover,
+.hover_background-color_navigation-1.pseudo-class-hover {
   background-color: #6989c9 !important;
 }
 
-.hover_navigation-2.pseudo-class-hover {
+.hover_back_navigation-2.pseudo-class-hover,
+.hover_background-color_navigation-2.pseudo-class-hover {
   background-color: #90a7d7 !important;
 }
 
-.hover_navigation-3.pseudo-class-hover {
+.hover_back_navigation-3.pseudo-class-hover,
+.hover_background-color_navigation-3.pseudo-class-hover {
   background-color: #b9c7e5 !important;
 }
 
-.hover_navigation-4.pseudo-class-hover {
+.hover_back_navigation-4.pseudo-class-hover,
+.hover_background-color_navigation-4.pseudo-class-hover {
   background-color: #d8e0f1 !important;
 }
 
-.hover_navigation-5.pseudo-class-hover {
+.hover_back_navigation-5.pseudo-class-hover,
+.hover_background-color_navigation-5.pseudo-class-hover {
   background-color: #edf1f9 !important;
 }
 
-.hover_navigation-n1.pseudo-class-hover {
+.hover_back_navigation-n1.pseudo-class-hover,
+.hover_background-color_navigation-n1.pseudo-class-hover {
   background-color: #4768ac !important;
 }
 
-.hover_navigation-n2.pseudo-class-hover {
+.hover_back_navigation-n2.pseudo-class-hover,
+.hover_background-color_navigation-n2.pseudo-class-hover {
   background-color: #3b578f !important;
 }
 
-.hover_navigation-n3.pseudo-class-hover {
+.hover_back_navigation-n3.pseudo-class-hover,
+.hover_background-color_navigation-n3.pseudo-class-hover {
   background-color: #2b4069 !important;
 }
 
-.hover_navigation-n4.pseudo-class-hover {
+.hover_back_navigation-n4.pseudo-class-hover,
+.hover_background-color_navigation-n4.pseudo-class-hover {
   background-color: #202e4c !important;
 }
 
-.hover_navigation-n5.pseudo-class-hover {
+.hover_back_navigation-n5.pseudo-class-hover,
+.hover_background-color_navigation-n5.pseudo-class-hover {
   background-color: #141d30 !important;
 }
 
-.hover-text_navigation.pseudo-class-hover {
+.hover__navigation.pseudo-class-hover,
+.hover_color_navigation.pseudo-class-hover {
   color: #4f74bf !important;
 }
 
-.hover-text_navigation-0.pseudo-class-hover {
+.hover__navigation-0.pseudo-class-hover,
+.hover_color_navigation-0.pseudo-class-hover {
   color: #4f74bf !important;
 }
 
-.hover-text_navigation-1.pseudo-class-hover {
+.hover__navigation-1.pseudo-class-hover,
+.hover_color_navigation-1.pseudo-class-hover {
   color: #6989c9 !important;
 }
 
-.hover-text_navigation-2.pseudo-class-hover {
+.hover__navigation-2.pseudo-class-hover,
+.hover_color_navigation-2.pseudo-class-hover {
   color: #90a7d7 !important;
 }
 
-.hover-text_navigation-3.pseudo-class-hover {
+.hover__navigation-3.pseudo-class-hover,
+.hover_color_navigation-3.pseudo-class-hover {
   color: #b9c7e5 !important;
 }
 
-.hover-text_navigation-4.pseudo-class-hover {
+.hover__navigation-4.pseudo-class-hover,
+.hover_color_navigation-4.pseudo-class-hover {
   color: #d8e0f1 !important;
 }
 
-.hover-text_navigation-5.pseudo-class-hover {
+.hover__navigation-5.pseudo-class-hover,
+.hover_color_navigation-5.pseudo-class-hover {
   color: #edf1f9 !important;
 }
 
-.hover-text_navigation-n1.pseudo-class-hover {
+.hover__navigation-n1.pseudo-class-hover,
+.hover_color_navigation-n1.pseudo-class-hover {
   color: #4768ac !important;
 }
 
-.hover-text_navigation-n2.pseudo-class-hover {
+.hover__navigation-n2.pseudo-class-hover,
+.hover_color_navigation-n2.pseudo-class-hover {
   color: #3b578f !important;
 }
 
-.hover-text_navigation-n3.pseudo-class-hover {
+.hover__navigation-n3.pseudo-class-hover,
+.hover_color_navigation-n3.pseudo-class-hover {
   color: #2b4069 !important;
 }
 
-.hover-text_navigation-n4.pseudo-class-hover {
+.hover__navigation-n4.pseudo-class-hover,
+.hover_color_navigation-n4.pseudo-class-hover {
   color: #202e4c !important;
 }
 
-.hover-text_navigation-n5.pseudo-class-hover {
+.hover__navigation-n5.pseudo-class-hover,
+.hover_color_navigation-n5.pseudo-class-hover {
   color: #141d30 !important;
 }
 
-.hover_selected.pseudo-class-hover {
+.hover_back_selected.pseudo-class-hover,
+.hover_background-color_selected.pseudo-class-hover {
   background-color: #509f6c !important;
 }
 
-.hover_selected-0.pseudo-class-hover {
+.hover_back_selected-0.pseudo-class-hover,
+.hover_background-color_selected-0.pseudo-class-hover {
   background-color: #509f6c !important;
 }
 
-.hover_selected-1.pseudo-class-hover {
+.hover_back_selected-1.pseudo-class-hover,
+.hover_background-color_selected-1.pseudo-class-hover {
   background-color: #6aad82 !important;
 }
 
-.hover_selected-2.pseudo-class-hover {
+.hover_back_selected-2.pseudo-class-hover,
+.hover_background-color_selected-2.pseudo-class-hover {
   background-color: #91c3a2 !important;
 }
 
-.hover_selected-3.pseudo-class-hover {
+.hover_back_selected-3.pseudo-class-hover,
+.hover_background-color_selected-3.pseudo-class-hover {
   background-color: #b9d9c4 !important;
 }
 
-.hover_selected-4.pseudo-class-hover {
+.hover_back_selected-4.pseudo-class-hover,
+.hover_background-color_selected-4.pseudo-class-hover {
   background-color: #d9eadf !important;
 }
 
-.hover_selected-5.pseudo-class-hover {
+.hover_back_selected-5.pseudo-class-hover,
+.hover_background-color_selected-5.pseudo-class-hover {
   background-color: #eef5f0 !important;
 }
 
-.hover_selected-n1.pseudo-class-hover {
+.hover_back_selected-n1.pseudo-class-hover,
+.hover_background-color_selected-n1.pseudo-class-hover {
   background-color: #488f61 !important;
 }
 
-.hover_selected-n2.pseudo-class-hover {
+.hover_back_selected-n2.pseudo-class-hover,
+.hover_background-color_selected-n2.pseudo-class-hover {
   background-color: #3c7751 !important;
 }
 
-.hover_selected-n3.pseudo-class-hover {
+.hover_back_selected-n3.pseudo-class-hover,
+.hover_background-color_selected-n3.pseudo-class-hover {
   background-color: #2c573b !important;
 }
 
-.hover_selected-n4.pseudo-class-hover {
+.hover_back_selected-n4.pseudo-class-hover,
+.hover_background-color_selected-n4.pseudo-class-hover {
   background-color: #20402b !important;
 }
 
-.hover_selected-n5.pseudo-class-hover {
+.hover_back_selected-n5.pseudo-class-hover,
+.hover_background-color_selected-n5.pseudo-class-hover {
   background-color: #14281b !important;
 }
 
-.hover-text_selected.pseudo-class-hover {
+.hover__selected.pseudo-class-hover,
+.hover_color_selected.pseudo-class-hover {
   color: #509f6c !important;
 }
 
-.hover-text_selected-0.pseudo-class-hover {
+.hover__selected-0.pseudo-class-hover,
+.hover_color_selected-0.pseudo-class-hover {
   color: #509f6c !important;
 }
 
-.hover-text_selected-1.pseudo-class-hover {
+.hover__selected-1.pseudo-class-hover,
+.hover_color_selected-1.pseudo-class-hover {
   color: #6aad82 !important;
 }
 
-.hover-text_selected-2.pseudo-class-hover {
+.hover__selected-2.pseudo-class-hover,
+.hover_color_selected-2.pseudo-class-hover {
   color: #91c3a2 !important;
 }
 
-.hover-text_selected-3.pseudo-class-hover {
+.hover__selected-3.pseudo-class-hover,
+.hover_color_selected-3.pseudo-class-hover {
   color: #b9d9c4 !important;
 }
 
-.hover-text_selected-4.pseudo-class-hover {
+.hover__selected-4.pseudo-class-hover,
+.hover_color_selected-4.pseudo-class-hover {
   color: #d9eadf !important;
 }
 
-.hover-text_selected-5.pseudo-class-hover {
+.hover__selected-5.pseudo-class-hover,
+.hover_color_selected-5.pseudo-class-hover {
   color: #eef5f0 !important;
 }
 
-.hover-text_selected-n1.pseudo-class-hover {
+.hover__selected-n1.pseudo-class-hover,
+.hover_color_selected-n1.pseudo-class-hover {
   color: #488f61 !important;
 }
 
-.hover-text_selected-n2.pseudo-class-hover {
+.hover__selected-n2.pseudo-class-hover,
+.hover_color_selected-n2.pseudo-class-hover {
   color: #3c7751 !important;
 }
 
-.hover-text_selected-n3.pseudo-class-hover {
+.hover__selected-n3.pseudo-class-hover,
+.hover_color_selected-n3.pseudo-class-hover {
   color: #2c573b !important;
 }
 
-.hover-text_selected-n4.pseudo-class-hover {
+.hover__selected-n4.pseudo-class-hover,
+.hover_color_selected-n4.pseudo-class-hover {
   color: #20402b !important;
 }
 
-.hover-text_selected-n5.pseudo-class-hover {
+.hover__selected-n5.pseudo-class-hover,
+.hover_color_selected-n5.pseudo-class-hover {
   color: #14281b !important;
 }
 
-.hover_info.pseudo-class-hover {
+.hover_back_info.pseudo-class-hover,
+.hover_background-color_info.pseudo-class-hover {
   background-color: #735dba !important;
 }
 
-.hover_info-0.pseudo-class-hover {
+.hover_back_info-0.pseudo-class-hover,
+.hover_background-color_info-0.pseudo-class-hover {
   background-color: #735dba !important;
 }
 
-.hover_info-1.pseudo-class-hover {
+.hover_back_info-1.pseudo-class-hover,
+.hover_background-color_info-1.pseudo-class-hover {
   background-color: #8875c4 !important;
 }
 
-.hover_info-2.pseudo-class-hover {
+.hover_back_info-2.pseudo-class-hover,
+.hover_background-color_info-2.pseudo-class-hover {
   background-color: #a799d4 !important;
 }
 
-.hover_info-3.pseudo-class-hover {
+.hover_back_info-3.pseudo-class-hover,
+.hover_background-color_info-3.pseudo-class-hover {
   background-color: #c7bee3 !important;
 }
 
-.hover_info-4.pseudo-class-hover {
+.hover_back_info-4.pseudo-class-hover,
+.hover_background-color_info-4.pseudo-class-hover {
   background-color: #e0dbf0 !important;
 }
 
-.hover_info-5.pseudo-class-hover {
+.hover_back_info-5.pseudo-class-hover,
+.hover_background-color_info-5.pseudo-class-hover {
   background-color: #f1eff8 !important;
 }
 
-.hover_info-n1.pseudo-class-hover {
+.hover_back_info-n1.pseudo-class-hover,
+.hover_background-color_info-n1.pseudo-class-hover {
   background-color: #6854a7 !important;
 }
 
-.hover_info-n2.pseudo-class-hover {
+.hover_back_info-n2.pseudo-class-hover,
+.hover_background-color_info-n2.pseudo-class-hover {
   background-color: #56468c !important;
 }
 
-.hover_info-n3.pseudo-class-hover {
+.hover_back_info-n3.pseudo-class-hover,
+.hover_background-color_info-n3.pseudo-class-hover {
   background-color: #3f3366 !important;
 }
 
-.hover_info-n4.pseudo-class-hover {
+.hover_back_info-n4.pseudo-class-hover,
+.hover_background-color_info-n4.pseudo-class-hover {
   background-color: #2e254a !important;
 }
 
-.hover_info-n5.pseudo-class-hover {
+.hover_back_info-n5.pseudo-class-hover,
+.hover_background-color_info-n5.pseudo-class-hover {
   background-color: #1d172f !important;
 }
 
-.hover-text_info.pseudo-class-hover {
+.hover__info.pseudo-class-hover,
+.hover_color_info.pseudo-class-hover {
   color: #735dba !important;
 }
 
-.hover-text_info-0.pseudo-class-hover {
+.hover__info-0.pseudo-class-hover,
+.hover_color_info-0.pseudo-class-hover {
   color: #735dba !important;
 }
 
-.hover-text_info-1.pseudo-class-hover {
+.hover__info-1.pseudo-class-hover,
+.hover_color_info-1.pseudo-class-hover {
   color: #8875c4 !important;
 }
 
-.hover-text_info-2.pseudo-class-hover {
+.hover__info-2.pseudo-class-hover,
+.hover_color_info-2.pseudo-class-hover {
   color: #a799d4 !important;
 }
 
-.hover-text_info-3.pseudo-class-hover {
+.hover__info-3.pseudo-class-hover,
+.hover_color_info-3.pseudo-class-hover {
   color: #c7bee3 !important;
 }
 
-.hover-text_info-4.pseudo-class-hover {
+.hover__info-4.pseudo-class-hover,
+.hover_color_info-4.pseudo-class-hover {
   color: #e0dbf0 !important;
 }
 
-.hover-text_info-5.pseudo-class-hover {
+.hover__info-5.pseudo-class-hover,
+.hover_color_info-5.pseudo-class-hover {
   color: #f1eff8 !important;
 }
 
-.hover-text_info-n1.pseudo-class-hover {
+.hover__info-n1.pseudo-class-hover,
+.hover_color_info-n1.pseudo-class-hover {
   color: #6854a7 !important;
 }
 
-.hover-text_info-n2.pseudo-class-hover {
+.hover__info-n2.pseudo-class-hover,
+.hover_color_info-n2.pseudo-class-hover {
   color: #56468c !important;
 }
 
-.hover-text_info-n3.pseudo-class-hover {
+.hover__info-n3.pseudo-class-hover,
+.hover_color_info-n3.pseudo-class-hover {
   color: #3f3366 !important;
 }
 
-.hover-text_info-n4.pseudo-class-hover {
+.hover__info-n4.pseudo-class-hover,
+.hover_color_info-n4.pseudo-class-hover {
   color: #2e254a !important;
 }
 
-.hover-text_info-n5.pseudo-class-hover {
+.hover__info-n5.pseudo-class-hover,
+.hover_color_info-n5.pseudo-class-hover {
   color: #1d172f !important;
 }
 
-.hover_hightlight.pseudo-class-hover {
+.hover_back_highlight.pseudo-class-hover,
+.hover_background-color_highlight.pseudo-class-hover {
   background-color: #c45e99 !important;
 }
 
-.hover_hightlight-0.pseudo-class-hover {
+.hover_back_highlight-0.pseudo-class-hover,
+.hover_background-color_highlight-0.pseudo-class-hover {
   background-color: #c45e99 !important;
 }
 
-.hover_hightlight-1.pseudo-class-hover {
+.hover_back_highlight-1.pseudo-class-hover,
+.hover_background-color_highlight-1.pseudo-class-hover {
   background-color: #cd76a8 !important;
 }
 
-.hover_hightlight-2.pseudo-class-hover {
+.hover_back_highlight-2.pseudo-class-hover,
+.hover_background-color_highlight-2.pseudo-class-hover {
   background-color: #da9abf !important;
 }
 
-.hover_hightlight-3.pseudo-class-hover {
+.hover_back_highlight-3.pseudo-class-hover,
+.hover_background-color_highlight-3.pseudo-class-hover {
   background-color: #e7bfd6 !important;
 }
 
-.hover_hightlight-4.pseudo-class-hover {
+.hover_back_highlight-4.pseudo-class-hover,
+.hover_background-color_highlight-4.pseudo-class-hover {
   background-color: #f2dce9 !important;
 }
 
-.hover_hightlight-5.pseudo-class-hover {
+.hover_back_highlight-5.pseudo-class-hover,
+.hover_background-color_highlight-5.pseudo-class-hover {
   background-color: #f9eff5 !important;
 }
 
-.hover_hightlight-n1.pseudo-class-hover {
+.hover_back_highlight-n1.pseudo-class-hover,
+.hover_background-color_highlight-n1.pseudo-class-hover {
   background-color: #b0558a !important;
 }
 
-.hover_hightlight-n2.pseudo-class-hover {
+.hover_back_highlight-n2.pseudo-class-hover,
+.hover_background-color_highlight-n2.pseudo-class-hover {
   background-color: #934773 !important;
 }
 
-.hover_hightlight-n3.pseudo-class-hover {
+.hover_back_highlight-n3.pseudo-class-hover,
+.hover_background-color_highlight-n3.pseudo-class-hover {
   background-color: #6c3454 !important;
 }
 
-.hover_hightlight-n4.pseudo-class-hover {
+.hover_back_highlight-n4.pseudo-class-hover,
+.hover_background-color_highlight-n4.pseudo-class-hover {
   background-color: #4e263d !important;
 }
 
-.hover_hightlight-n5.pseudo-class-hover {
+.hover_back_highlight-n5.pseudo-class-hover,
+.hover_background-color_highlight-n5.pseudo-class-hover {
   background-color: #311826 !important;
 }
 
-.hover-text_hightlight.pseudo-class-hover {
+.hover__highlight.pseudo-class-hover,
+.hover_color_highlight.pseudo-class-hover {
   color: #c45e99 !important;
 }
 
-.hover-text_hightlight-0.pseudo-class-hover {
+.hover__highlight-0.pseudo-class-hover,
+.hover_color_highlight-0.pseudo-class-hover {
   color: #c45e99 !important;
 }
 
-.hover-text_hightlight-1.pseudo-class-hover {
+.hover__highlight-1.pseudo-class-hover,
+.hover_color_highlight-1.pseudo-class-hover {
   color: #cd76a8 !important;
 }
 
-.hover-text_hightlight-2.pseudo-class-hover {
+.hover__highlight-2.pseudo-class-hover,
+.hover_color_highlight-2.pseudo-class-hover {
   color: #da9abf !important;
 }
 
-.hover-text_hightlight-3.pseudo-class-hover {
+.hover__highlight-3.pseudo-class-hover,
+.hover_color_highlight-3.pseudo-class-hover {
   color: #e7bfd6 !important;
 }
 
-.hover-text_hightlight-4.pseudo-class-hover {
+.hover__highlight-4.pseudo-class-hover,
+.hover_color_highlight-4.pseudo-class-hover {
   color: #f2dce9 !important;
 }
 
-.hover-text_hightlight-5.pseudo-class-hover {
+.hover__highlight-5.pseudo-class-hover,
+.hover_color_highlight-5.pseudo-class-hover {
   color: #f9eff5 !important;
 }
 
-.hover-text_hightlight-n1.pseudo-class-hover {
+.hover__highlight-n1.pseudo-class-hover,
+.hover_color_highlight-n1.pseudo-class-hover {
   color: #b0558a !important;
 }
 
-.hover-text_hightlight-n2.pseudo-class-hover {
+.hover__highlight-n2.pseudo-class-hover,
+.hover_color_highlight-n2.pseudo-class-hover {
   color: #934773 !important;
 }
 
-.hover-text_hightlight-n3.pseudo-class-hover {
+.hover__highlight-n3.pseudo-class-hover,
+.hover_color_highlight-n3.pseudo-class-hover {
   color: #6c3454 !important;
 }
 
-.hover-text_hightlight-n4.pseudo-class-hover {
+.hover__highlight-n4.pseudo-class-hover,
+.hover_color_highlight-n4.pseudo-class-hover {
   color: #4e263d !important;
 }
 
-.hover-text_hightlight-n5.pseudo-class-hover {
+.hover__highlight-n5.pseudo-class-hover,
+.hover_color_highlight-n5.pseudo-class-hover {
   color: #311826 !important;
 }
 
-.hover_acc.pseudo-class-hover {
+.hover_back_acc.pseudo-class-hover,
+.hover_background-color_acc.pseudo-class-hover {
   background-color: #00386b !important;
 }
 
-.hover_acc-0.pseudo-class-hover {
+.hover_back_acc-0.pseudo-class-hover,
+.hover_background-color_acc-0.pseudo-class-hover {
   background-color: #00386b !important;
 }
 
-.hover_acc-1.pseudo-class-hover {
+.hover_back_acc-1.pseudo-class-hover,
+.hover_background-color_acc-1.pseudo-class-hover {
   background-color: #265681 !important;
 }
 
-.hover_acc-2.pseudo-class-hover {
+.hover_back_acc-2.pseudo-class-hover,
+.hover_background-color_acc-2.pseudo-class-hover {
   background-color: #5e82a2 !important;
 }
 
-.hover_acc-3.pseudo-class-hover {
+.hover_back_acc-3.pseudo-class-hover,
+.hover_background-color_acc-3.pseudo-class-hover {
   background-color: #99afc4 !important;
 }
 
-.hover_acc-4.pseudo-class-hover {
+.hover_back_acc-4.pseudo-class-hover,
+.hover_background-color_acc-4.pseudo-class-hover {
   background-color: #c7d3de !important;
 }
 
-.hover_acc-5.pseudo-class-hover {
+.hover_back_acc-5.pseudo-class-hover,
+.hover_background-color_acc-5.pseudo-class-hover {
   background-color: #e6ebf0 !important;
 }
 
-.hover_acc-n1.pseudo-class-hover {
+.hover_back_acc-n1.pseudo-class-hover,
+.hover_background-color_acc-n1.pseudo-class-hover {
   background-color: #003260 !important;
 }
 
-.hover_acc-n2.pseudo-class-hover {
+.hover_back_acc-n2.pseudo-class-hover,
+.hover_background-color_acc-n2.pseudo-class-hover {
   background-color: #002a50 !important;
 }
 
-.hover_acc-n3.pseudo-class-hover {
+.hover_back_acc-n3.pseudo-class-hover,
+.hover_background-color_acc-n3.pseudo-class-hover {
   background-color: #001f3b !important;
 }
 
-.hover_acc-n4.pseudo-class-hover {
+.hover_back_acc-n4.pseudo-class-hover,
+.hover_background-color_acc-n4.pseudo-class-hover {
   background-color: #00162b !important;
 }
 
-.hover_acc-n5.pseudo-class-hover {
+.hover_back_acc-n5.pseudo-class-hover,
+.hover_background-color_acc-n5.pseudo-class-hover {
   background-color: #000e1b !important;
 }
 
-.hover-text_acc.pseudo-class-hover {
+.hover__acc.pseudo-class-hover,
+.hover_color_acc.pseudo-class-hover {
   color: #00386b !important;
 }
 
-.hover-text_acc-0.pseudo-class-hover {
+.hover__acc-0.pseudo-class-hover,
+.hover_color_acc-0.pseudo-class-hover {
   color: #00386b !important;
 }
 
-.hover-text_acc-1.pseudo-class-hover {
+.hover__acc-1.pseudo-class-hover,
+.hover_color_acc-1.pseudo-class-hover {
   color: #265681 !important;
 }
 
-.hover-text_acc-2.pseudo-class-hover {
+.hover__acc-2.pseudo-class-hover,
+.hover_color_acc-2.pseudo-class-hover {
   color: #5e82a2 !important;
 }
 
-.hover-text_acc-3.pseudo-class-hover {
+.hover__acc-3.pseudo-class-hover,
+.hover_color_acc-3.pseudo-class-hover {
   color: #99afc4 !important;
 }
 
-.hover-text_acc-4.pseudo-class-hover {
+.hover__acc-4.pseudo-class-hover,
+.hover_color_acc-4.pseudo-class-hover {
   color: #c7d3de !important;
 }
 
-.hover-text_acc-5.pseudo-class-hover {
+.hover__acc-5.pseudo-class-hover,
+.hover_color_acc-5.pseudo-class-hover {
   color: #e6ebf0 !important;
 }
 
-.hover-text_acc-n1.pseudo-class-hover {
+.hover__acc-n1.pseudo-class-hover,
+.hover_color_acc-n1.pseudo-class-hover {
   color: #003260 !important;
 }
 
-.hover-text_acc-n2.pseudo-class-hover {
+.hover__acc-n2.pseudo-class-hover,
+.hover_color_acc-n2.pseudo-class-hover {
   color: #002a50 !important;
 }
 
-.hover-text_acc-n3.pseudo-class-hover {
+.hover__acc-n3.pseudo-class-hover,
+.hover_color_acc-n3.pseudo-class-hover {
   color: #001f3b !important;
 }
 
-.hover-text_acc-n4.pseudo-class-hover {
+.hover__acc-n4.pseudo-class-hover,
+.hover_color_acc-n4.pseudo-class-hover {
   color: #00162b !important;
 }
 
-.hover-text_acc-n5.pseudo-class-hover {
+.hover__acc-n5.pseudo-class-hover,
+.hover_color_acc-n5.pseudo-class-hover {
   color: #000e1b !important;
 }
 
-.hover_secondaryalt.pseudo-class-hover {
+.hover_back_secondaryalt.pseudo-class-hover,
+.hover_background-color_secondaryalt.pseudo-class-hover {
   background-color: #c5bfba !important;
 }
 
-.hover_secondaryalt-0.pseudo-class-hover {
+.hover_back_secondaryalt-0.pseudo-class-hover,
+.hover_background-color_secondaryalt-0.pseudo-class-hover {
   background-color: #c5bfba !important;
 }
 
-.hover_secondaryalt-1.pseudo-class-hover {
+.hover_back_secondaryalt-1.pseudo-class-hover,
+.hover_background-color_secondaryalt-1.pseudo-class-hover {
   background-color: #cec9c4 !important;
 }
 
-.hover_secondaryalt-2.pseudo-class-hover {
+.hover_back_secondaryalt-2.pseudo-class-hover,
+.hover_background-color_secondaryalt-2.pseudo-class-hover {
   background-color: #dad7d4 !important;
 }
 
-.hover_secondaryalt-3.pseudo-class-hover {
+.hover_back_secondaryalt-3.pseudo-class-hover,
+.hover_background-color_secondaryalt-3.pseudo-class-hover {
   background-color: #e8e5e3 !important;
 }
 
-.hover_secondaryalt-4.pseudo-class-hover {
+.hover_back_secondaryalt-4.pseudo-class-hover,
+.hover_background-color_secondaryalt-4.pseudo-class-hover {
   background-color: #f2f1f0 !important;
 }
 
-.hover_secondaryalt-5.pseudo-class-hover {
+.hover_back_secondaryalt-5.pseudo-class-hover,
+.hover_background-color_secondaryalt-5.pseudo-class-hover {
   background-color: #f9f9f8 !important;
 }
 
-.hover_secondaryalt-n1.pseudo-class-hover {
+.hover_back_secondaryalt-n1.pseudo-class-hover,
+.hover_background-color_secondaryalt-n1.pseudo-class-hover {
   background-color: #b1aca7 !important;
 }
 
-.hover_secondaryalt-n2.pseudo-class-hover {
+.hover_back_secondaryalt-n2.pseudo-class-hover,
+.hover_background-color_secondaryalt-n2.pseudo-class-hover {
   background-color: #948f8c !important;
 }
 
-.hover_secondaryalt-n3.pseudo-class-hover {
+.hover_back_secondaryalt-n3.pseudo-class-hover,
+.hover_background-color_secondaryalt-n3.pseudo-class-hover {
   background-color: #6c6966 !important;
 }
 
-.hover_secondaryalt-n4.pseudo-class-hover {
+.hover_back_secondaryalt-n4.pseudo-class-hover,
+.hover_background-color_secondaryalt-n4.pseudo-class-hover {
   background-color: #4f4c4a !important;
 }
 
-.hover_secondaryalt-n5.pseudo-class-hover {
+.hover_back_secondaryalt-n5.pseudo-class-hover,
+.hover_background-color_secondaryalt-n5.pseudo-class-hover {
   background-color: #31302f !important;
 }
 
-.hover-text_secondaryalt.pseudo-class-hover {
+.hover__secondaryalt.pseudo-class-hover,
+.hover_color_secondaryalt.pseudo-class-hover {
   color: #c5bfba !important;
 }
 
-.hover-text_secondaryalt-0.pseudo-class-hover {
+.hover__secondaryalt-0.pseudo-class-hover,
+.hover_color_secondaryalt-0.pseudo-class-hover {
   color: #c5bfba !important;
 }
 
-.hover-text_secondaryalt-1.pseudo-class-hover {
+.hover__secondaryalt-1.pseudo-class-hover,
+.hover_color_secondaryalt-1.pseudo-class-hover {
   color: #cec9c4 !important;
 }
 
-.hover-text_secondaryalt-2.pseudo-class-hover {
+.hover__secondaryalt-2.pseudo-class-hover,
+.hover_color_secondaryalt-2.pseudo-class-hover {
   color: #dad7d4 !important;
 }
 
-.hover-text_secondaryalt-3.pseudo-class-hover {
+.hover__secondaryalt-3.pseudo-class-hover,
+.hover_color_secondaryalt-3.pseudo-class-hover {
   color: #e8e5e3 !important;
 }
 
-.hover-text_secondaryalt-4.pseudo-class-hover {
+.hover__secondaryalt-4.pseudo-class-hover,
+.hover_color_secondaryalt-4.pseudo-class-hover {
   color: #f2f1f0 !important;
 }
 
-.hover-text_secondaryalt-5.pseudo-class-hover {
+.hover__secondaryalt-5.pseudo-class-hover,
+.hover_color_secondaryalt-5.pseudo-class-hover {
   color: #f9f9f8 !important;
 }
 
-.hover-text_secondaryalt-n1.pseudo-class-hover {
+.hover__secondaryalt-n1.pseudo-class-hover,
+.hover_color_secondaryalt-n1.pseudo-class-hover {
   color: #b1aca7 !important;
 }
 
-.hover-text_secondaryalt-n2.pseudo-class-hover {
+.hover__secondaryalt-n2.pseudo-class-hover,
+.hover_color_secondaryalt-n2.pseudo-class-hover {
   color: #948f8c !important;
 }
 
-.hover-text_secondaryalt-n3.pseudo-class-hover {
+.hover__secondaryalt-n3.pseudo-class-hover,
+.hover_color_secondaryalt-n3.pseudo-class-hover {
   color: #6c6966 !important;
 }
 
-.hover-text_secondaryalt-n4.pseudo-class-hover {
+.hover__secondaryalt-n4.pseudo-class-hover,
+.hover_color_secondaryalt-n4.pseudo-class-hover {
   color: #4f4c4a !important;
 }
 
-.hover-text_secondaryalt-n5.pseudo-class-hover {
+.hover__secondaryalt-n5.pseudo-class-hover,
+.hover_color_secondaryalt-n5.pseudo-class-hover {
   color: #31302f !important;
 }
 
-.hover-text_white.pseudo-class-hover {
+.hover_color_white.pseudo-class-hover,
+.hover_white.pseudo-class-hover {
   color: white;
 }
 
-.hover-text_black.pseudo-class-hover {
+.hover_color_black.pseudo-class-hover,
+.hover_black.pseudo-class-hover {
   color: black;
 }
 
@@ -2341,10 +2875,14 @@ a.thumbnail.pseudo-class-focus {
   text-decoration: underline;
 }
 
-.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
-  color: #0a0a0a;
-}
-
 .hover_opacity.pseudo-class-hover {
   opacity: 1;
+}.sr-only-focusable.pseudo-class-active,
+.sr-only-focusable.pseudo-class-focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }

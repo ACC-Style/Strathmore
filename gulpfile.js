@@ -11,7 +11,7 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload();
 // Paths
 
-var outputPath = 'output';
+
 var SCSS_PATH = "./assets/scss/";
 var CSS_PATH = "./assets/css/";
 var STYLEGUIDE_PATH = 'Strathmore';
@@ -20,11 +20,9 @@ var STYLEGUIDE_PATH = 'Strathmore';
 gulp.task('serve',['style'], function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
-   server: {
-     baseDir: "./Strathmore/"
-   }
+    server: true
   });
-})
+});
 
 // Style Tesks
 gulp.task('style', function(){
@@ -75,7 +73,7 @@ gulp.task('styleguide:generate', function() {
         server: false,
         rootPath: STYLEGUIDE_PATH,
         // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
-        // //appRoot: STYLEGUIDE_PATH,
+        appRoot: "/Strathmore",
         overviewPath: 'README.md',
         sideNav: true,
         showReferenceNumbers: true
@@ -115,5 +113,5 @@ gulp.task('watch', ['styleguide'], function () {
 
 });
 // Default
-gulp.task('default', ['style', 'styleguide:generate', 'styleguide:applystyles', 'watch', 'serve']);
+gulp.task('default', ['styleguide:generate', 'styleguide:applystyles', 'serve', 'watch']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);

@@ -66,3 +66,11 @@ tests/phantomcss/results/
 .next
 
 package-lock\.json
+
+docs/assets/fontawesome-pro/svgs/
+
+docs/assets/fontawesome-pro/sprites/
+
+docs/assets/fontawesome-pro/scss/
+
+docs/assets/fontawesome-pro/less/
