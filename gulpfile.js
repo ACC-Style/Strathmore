@@ -42,23 +42,23 @@ gulp.task('serve',['style'], function () {
 gulp.task('style', function(){
   console.log('Gulp Style Tasks');
   console.log('Gulp: I am making this pretty.');
+  console.log(PATHS.SRC + PATHS.SCSS);
   var plugins = [
   		pixrem(),
       autoprefixer({browsers: ['last 2 version']}),
       cssnano(),
-
     ];
-   return gulp.src( PATHS.SRC + PATHS.STYLEGUIDE_OUTPUT)
+   return gulp.src(PATHS.SRC + PATHS.SCSS)
    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest(PATHS.SRC + PATHS.STYLEGUIDE_OUTPUT));
+    .pipe(gulp.dest('./assets/css/'));
 });
 
 
 // Cleaning DIST FOLDER
-gulp.task('clean:dist', function(){
+gulp.task('clean:dist',['style'], function(){
   console.log(' Gulp Cleaning "dist" folder');
   console.log('Gulp: Hold on I am busy cleaning up this mess.  Why do you leave things just lying around.');
   return gulp.src(PATHS.DIST, {
@@ -68,7 +68,7 @@ gulp.task('clean:dist', function(){
 });
 
 // Cleaning DOCS FOLDER
-gulp.task('clean:docs', function () {
+gulp.task('clean:docs', ['styleguide'], function () {
   console.log(' Gulp Cleaning "docs"');
   console.log('Gulp: Hold on I am busy cleaning up this mess. Dirty socks on the chandelier? .. really?');
   return gulp.src(PATHS.DOCS, {
@@ -93,7 +93,7 @@ gulp.task('images', function(){
 gulp.task('styleguide:generate', function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Build the Documentation!');
-  return gulp.src( SCSS_PATH + '*/**.scss' )
+  return gulp.src('./assets/**/*.scss' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
         server: false,
@@ -102,7 +102,8 @@ gulp.task('styleguide:generate', function() {
         appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
         overviewPath: 'README.md',
         sideNav: true,
-        showReferenceNumbers: true
+        showReferenceNumbers: true,
+        disableEncapsulation:true
       }))
     .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
@@ -112,10 +113,10 @@ gulp.task('styleguide:applystyles', function() {
 	console.log('Gulp: Write it down and record it!');
   return gulp.src([
       './assets/scss/index.scss',
-      './assets/fontawesome-pro/scss/fontawesome.scss',
-      './assets/fontawesome-pro/scss/regular.scss',
-      './assets/fontawesome-pro/scss/solid.scss',
-      './assets/fontawesome-pro/scss/light.scss'
+      './assets/scss/vendor/fontawesome/fontawesome.scss',
+      './assets/scss/vendor/fontawesome/regular.scss',
+      './assets/scss/vendor/fontawesome/solid.scss',
+      './assets/scss/vendor/fontawesome/light.scss'
     ])
     .pipe(sass().on('error', sass.logError))
     .pipe(styleguide.applyStyles())
@@ -125,7 +126,7 @@ gulp.task('styleguide:applystyles', function() {
 
 
 // Package Tasks.   Copy files to the Dist Folder. 
-gulp.task('package:dist',['clean:dist','addAutomation'], function(){
+gulp.task('package:dist',['addAutomation'], function(){
   console.log('Gulp Package Tasks');
   console.log('Gulp: I got a box and some bubble-wrap; now, where is the tape?');
   console.log('Gulp: All packed up');
@@ -151,7 +152,7 @@ gulp.task('package:docs', ['clean:docs'], function () {
 });
 
 // Add Automation Tasks to the Dist Folder so it can be used by product teams.
-gulp.task('addAutomation',function(){
+gulp.task('addAutomation', ['clean:dist'], function () {
   gulp.src("dist-package.json").pipe(rename("package.json")).pipe(gulp.dest(PATHS.DIST));
   gulp.src("dist-gulpfile.js").pipe(rename("gulpfile.js")).pipe(gulp.dest(PATHS.DIST));
 })
@@ -167,5 +168,5 @@ gulp.task('watch', ['styleguide'], function () {
 // Default
 gulp.task('default', ['styleguide', 'serve', 'watch']);
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
-gulp.task('docs', ['styleguide:generate', 'styleguide:applystyles','package:docs']);
-gulp.task('dist',['style']);
+gulp.task('docs', ['package:docs']);
+gulp.task('dist', ['package:dist']);
