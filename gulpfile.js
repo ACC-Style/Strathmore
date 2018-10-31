@@ -85,7 +85,7 @@ gulp.task('images', function(){
 });
 
 // Style Guide Tasks. Build and Copy files for the style guide in local  
-gulp.task('styleguide:generate', function() {
+gulp.task('styleguide:generate',['style'], function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Build the Documentation!');
   return gulp.src('./assets/css/index.css' )
@@ -96,6 +96,7 @@ gulp.task('styleguide:generate', function() {
         appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
         overviewPath: 'README.md',
         sideNav: true,
+        extraHead: '<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Muli|Roboto+Slab" rel="stylesheet">',
         styleVariables:false,
         showReferenceNumbers: false,
         disableEncapsulation:true,
