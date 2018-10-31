@@ -2,7 +2,7 @@
 	Strathmore
 	Version 1.1
 **/
-
+// styleguide:ignore:start
 $debug-trace:false;
 $short-classnames:false;
 $ms-base: 1rem; // needs to be in em's
@@ -16,7 +16,7 @@ $ms-base: 1rem; // needs to be in em's
 // Foundation
 @import "vendor/foundation-sites/foundation";
 @include foundation-everything();
-
+// styleguide:ignore:end
 // ACC Design Alterations
 @import "base/base";
 @import "components/components";

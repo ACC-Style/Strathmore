@@ -11,12 +11,9 @@ var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
 var rename = require('gulp-rename');
 // Paths
-
 var PATHS ={
     SRC:'./',
-    STYLEGUIDE:'./Strathmore',
-    DIST:'./dist',
-    DOCS:'./docs',
+    STYLEGUIDE:'./Strathmore', DIST:'./dist', DOCS:'./docs',
     CSS :'assets/css/**/*.css',
     SCSS: 'assets/scss/**/*.scss',
     JS: 'assets/js/**/*.js',
@@ -28,12 +25,12 @@ var PATHS ={
 
 
 // Server
-gulp.task('serve',['style'], function () {
+gulp.task('serve',['style'],function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
     server: './',
     open: "local",
-    startPath: PATHS.STYLEGUIDE_OUTPUT + "/index.html"
+    startPath: PATHS.STYLEGUIDE_OUTPUT + "/"
   });
    gulp.watch(PATHS.STYLEGUIDE_OUTPUT +"/**/*.css" ).on('change', browserSync.reload);
 });
@@ -98,12 +95,13 @@ gulp.task('styleguide:generate', function() {
         title: 'Strathmore - Enteprise UI of the ACC',
         server: false,
         rootPath: PATHS.STYLEGUIDE_OUTPUT,
-        // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
         appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
         overviewPath: 'README.md',
         sideNav: true,
-        showReferenceNumbers: true,
-        disableEncapsulation:true
+        styleVariables:false,
+        showReferenceNumbers: false,
+        disableEncapsulation:false,
+        
       }))
     .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
@@ -155,7 +153,7 @@ gulp.task('package:docs', ['clean:docs'], function () {
 gulp.task('addAutomation', ['clean:dist'], function () {
   gulp.src("dist-package.json").pipe(rename("package.json")).pipe(gulp.dest(PATHS.DIST));
   gulp.src("dist-gulpfile.js").pipe(rename("gulpfile.js")).pipe(gulp.dest(PATHS.DIST));
-})
+});
 
 // Watch Tasks
 gulp.task('watch', ['styleguide'], function () {

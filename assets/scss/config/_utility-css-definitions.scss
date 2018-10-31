@@ -1,3 +1,4 @@
+// styleguide:ignore:start
 $basicSizeMultiplier:1rem;
 $valueParams :(
 	size:(
@@ -355,9 +356,4 @@ $style-definition:(
 		unit: map-get($valueParams, 'display')
 	)		
 );
-
-
-
-
-
-
+// styleguide:ignore:end
