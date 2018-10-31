@@ -46,10 +46,8 @@ gulp.task('style', function(){
       cssnano(),
     ];
    return gulp.src(PATHS.SRC + PATHS.SCSS)
-   .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss(plugins))
-    .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest('./assets/css/'));
 });
 
@@ -90,7 +88,7 @@ gulp.task('images', function(){
 gulp.task('styleguide:generate', function() {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Build the Documentation!');
-  return gulp.src('./assets/**/*.scss' )
+  return gulp.src('./assets/css/index.css' )
     .pipe(styleguide.generate({
         title: 'Strathmore - Enteprise UI of the ACC',
         server: false,
@@ -100,7 +98,7 @@ gulp.task('styleguide:generate', function() {
         sideNav: true,
         styleVariables:false,
         showReferenceNumbers: false,
-        disableEncapsulation:false,
+        disableEncapsulation:true,
         
       }))
     .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
