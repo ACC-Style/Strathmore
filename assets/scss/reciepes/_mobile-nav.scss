@@ -34,34 +34,21 @@
     Grid Button Splash
 
     markup:
-    <div class="grid-y"style="width:480;height: 640px; background-image:url('https://picsum.photos/640/480')">
-    <div class="cell small-3">
-        <div class="grid-x">
-            <div class="small-4 cell back_white-1"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-2"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
-        </div>
+    <div class="grid-y line-height_1 "style="width:412px;height: 732px; background-image:url('https://picsum.photos/412/732/?image=857')">
+    <div class="cell small-6 grid-x">
+            <div class="small-8 cell color_white padding_4 padding-top_5 text-center"><h1 class="font-size_3 font_display">Conference App</h1><h2 class="font-size_1">Sub Text</h2></div>
+            <div class=" align-self-bottom small-4 cell shadow_n3 border_white-9 border-solid back_black-3 color_white padding_4 padding-top_5  text-center"><i class="fas fa-ghost font_2"></i><h3>Fun &amp;
+            Games<h3></div>
     </div>
-    <div class="cell small-3">
-        <div class="grid-x">
-            <div class="small-4 cell back_white-2"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
-        </div>
+    <div class="cell small-3 grid-x">
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-4 color_white padding_4 text-center"><i class="fas fa-calendar-alt"></i><div class="font_0">Events</div></div>
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-3 color_white padding_4 text-center"><i class="fas fa-map-marked"></i><div class="font_0">Maps</div></div>
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-2 color_white padding_4 text-center"><i class="fas fa-cogs font_4"></i><div class="font_0">Options</div></div>
     </div>
-    <div class="cell small-3">
-        <div class="grid-x">
-            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-5"><i class="fal fa-pin"></i></div>
-        </div>
-    </div>
-    <div class="cell small-3">
-        <div class="grid-x">
-            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-5"><i class="fal fa-pin"></i></div>
-            <div class="small-4 cell back_white-6"><i class="fal fa-pin"></i></div>
-        </div>
+    <div class="cell small-3 grid-x">
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-3 color_white padding_4 text-center"><i class="fas fa-ghost font_4"></i><div class="font_0">Options</div></div>
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-2 color_white padding_4 text-center"><i class="fas fa-ghost font_4"></i><div class="font_0">Options</div></div>
+            <div class="small-4 cell shadow_n3 border_white-9 border-solid back_black-1 color_white padding_4 text-center"><i class="fas fa-ghost font_4"></i><div class="font_0">Options</div></div>
     </div>
     </div>    
 
