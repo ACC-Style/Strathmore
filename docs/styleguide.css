@@ -3,8 +3,17 @@
 	Strathmore
 	Version 1.1
 **/
+<<<<<<< Updated upstream
 div[class^=hover_] {
   cursor: pointer;
+=======
+.foo {
+  color: 255;
+}
+
+.bar {
+  color: blue;
+>>>>>>> Stashed changes
 }
 
 /*
@@ -6978,8 +6987,6 @@ Table (States Cells Recipe)
 Example of utilities classes to show cell states
 
 
-
-
 markup:
 <table class="table">
   <tr>
@@ -7022,6 +7029,79 @@ markup:
 </table>
 
 Styleguide 10.2.5
+*/
+/*
+
+Table Row(Seperator + State Recipe)
+
+Example of utilities classes to show seperator and state
+
+
+
+markup:
+<table class="table stripped">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_info-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_info font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With Info</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_success-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_success font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With success</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_alert-1 border_solid border-left-width_0 border-right-width_0 border-width_1 border border_alert font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With Alert</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+   <tr class="back_warning-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_warning font-weight_bold font-size_n2 text-left">
+      <td colspan='3' class="padding_2">Separator With warning</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+   <tr class="back_secondary-3 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_secondary font-weight_bold font-size_n2 text-left">
+      <td colspan='3' class="padding_2">Separator With disabled</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.6
 */
 /*
 Buttons
@@ -7084,6 +7164,7 @@ markup:
 }
 
 /*
+<<<<<<< Updated upstream
     Icon Toggle
     
     Many momment there are needs for toggles of icon when the parent is in the state `is-active`
@@ -7156,6 +7237,226 @@ i.icon-toggle_check:before {
 }
 
 /*
+=======
+	Social
+
+	Example of utilities classes to show seperator and state
+
+	
+
+	markup:
+	<h4 class="color_white margin-left_4">Stay Connected</h4>
+	<ul class="grid-x social-bar no-bullet">
+	<li class="auto cell"><a href="https://twitter.com/accintouch" target="_blank" class="color_white twitter social-bar--button hover_primary-0 icon"><i class="fab fa-twitter font-size_2"></i></a></li>
+	<li class="auto cell"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="color_white facebook social-bar--button hover_primary-0 icon"><i class="fab fa-facebook font-size_2"></i></a></li>
+	<li class="auto cell"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="color_white linkedin social-bar--button hover_primary-0 icon"><i class="fab fa-linkedin font-size_2"></i></a></li>
+	<li class="auto cell"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="color_white google-plus social-bar--button hover_primary-0 icon"><i class="fab fa-google-plus font-size_2"></i></a></li>
+	<li class="auto cell"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="color_white youtube social-bar--button hover_primary-0 icon"><i class="fab fa-youtube font-size_2"></i></a></li>
+	</ul>
+
+	Styleguide 200.1
+
+*/
+.social-bar li {
+  margin-right: 0.005rem;
+}
+
+.social-bar li:last-child {
+  margin-right: 0rem;
+}
+
+a.icon:hover, a.icon:active {
+  color: white;
+}
+
+.twitter {
+  background-color: #00aced;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.linkedin {
+  background-color: #007bb6;
+}
+
+.google-plus {
+  background-color: #dd4b39;
+}
+
+.youtube {
+  background-color: #bb0000;
+}
+
+.social-bar--button {
+  padding: 1.125rem 0rem 0rem 3.5rem;
+  display: block;
+  width: 95px;
+  height: 56px;
+}
+
+/*
+	Address
+
+	Address and contact information for Heart House
+
+	
+
+	markup:
+ <section class="address row color_white margin-left_4">
+     <h3 class="font_slab font-size_2">American College of Cardiology</h3>
+     <address>
+         <!-- http://microformats.org/wiki/hcard -->
+         <h4 class="font_slab font-size_2 margin-bottom_4">Heart House</h4>
+         <div class="grid-x">
+         <div class="cell small-5">
+             <ul>
+                 <li class="margin-bottom_4 font-size_0 font_normal">
+                     <span class="street-address">2400 N. St. NW</span>
+                 </li>
+                 <li class="margin-bottom_4 font-size_0 font_normal">
+                     <span class="locality">Washington</span>,
+                     <span class="country-name">
+                   <abbr title="District of Colombia">DC</abbr>
+                 </span>
+                     <span class="postal-code">20037</span>
+                 </li>
+                 <li class="margin-bottom_4 font-size_0 font_normal">
+                     <strong>Email:</strong><a href="mailto:resource@acc.org" class="email color_white">
+                                     resource@acc.org</a>
+                 </li>
+             </ul>
+         </div>
+          <div class="cell small-7">
+         <ul>
+             <li class="margin-bottom_4 font-size_0 font_normal">
+                 <span tel="+12023756000" class="tel">
+                   <strong>Phone:</strong>(202) 375-6000, ext. 5603</span>
+             </li>
+             <li class="margin-bottom_4 font-size_0 font_normal">
+                 <span tel="+18002574737" class="tel">
+                   <strong>Toll Free:</strong>(800) 253-4636, ext. 5603</span>
+             </li>
+             <li class="margin-bottom_4 font-size_0 font_normal">
+                 <span fax="+12023757000" class="fax">
+                   <strong>Fax:</strong>(202) 375-7000</span>
+             </li>
+         </ul>
+         </div>
+         </div>
+     </address>
+ </section>
+
+ sg-wrapper:
+ 	<div class="texture_dark padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.2
+
+*/
+.address ul {
+  list-style-type: none;
+}
+
+/*
+	Improving Cardiovascular Care
+
+	Links to acc-websites
+
+	
+
+	markup:
+<section class="acc-websites row color_white ">
+    <h4 class="font_slab">Improving Cardiovascular Care</h4>
+    <nav class="nav-list small">
+        <ul class="">
+            <li class="border_solid border-bottom-width_1 border-top-width_1 border_white-8 hover_secondary-1">
+                <a target="_blank" class="margin-left_4" href="http://www.acc.org">
+                  <span class="text color_white">Acc</span>
+                  <i class="fa fa-external-link-square color_white margin-left_4"></i>
+                </a>
+            </li>
+            <li class="border_solid border-bottom-width_1 border_white-8 hover_secondary-1">
+                <a target="_blank" class="margin-left_4" href="https://cvquality.acc.org/Accreditation?">
+                  <span class="text color_white">Accreditation Services</span>
+                  <i class="fa fa-external-link-square color_white margin-left_4"></i>
+                </a>
+            </li>
+            <li class="border_solid border-bottom-width_1 border_white-8 hover_secondary-1">
+                <a target="_blank" class="margin-left_4" href="http://www.ncdr.com">
+                  <span class="text color_white">NCDR</span>
+                  <i class="fa fa-external-link-square color_white margin-left_4"></i>
+                </a>
+            </li>
+            <li class="border_solid border-bottom-width_1 border_white-8 hover_secondary-1">
+                <a target="_blank" class="margin-left_4" href="http://www.cardiosmart.org">
+                  <span class="text color_white">CardioSmart</span>
+                  <i class="fa fa-external-link-square color_white margin-left_4"></i>
+                </a>
+            </li>
+            <li class="border_solid border-bottom-width_1 border_white-8 hover_secondary-1">
+                <a target="_blank" class="margin-left_4" href="http://www.onlinejacc.org/">
+                  <span class="text color_white">JACC</span>
+                  <i class="fa fa-external-link-square color_white margin-left_4"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>	
+
+	sg-wrapper:
+ 	<div class="texture_dark padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>                   
+              
+
+	Styleguide 200.3
+
+*/
+.acc-websites {
+  margin-left: 120px;
+}
+
+.acc-websites ul {
+  list-style-type: none;
+}
+
+/*
+	Logo
+
+	American College of Cardiology Logo
+
+	markup:
+<img class="logo margin-left_4" src="/assets/img/acc-logo-mobile.svg" alt="Home" width="141" height="60">
+
+	sg-wrapper:
+ 	<div class="texture_dark padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.4
+
+*/
+/*
+	Cite
+
+	Contains copy right 
+
+	markup:
+<cite class="font-style_italic font-weight_bold font-size_0 padding_4 line-height_2 font_normal color_black">&copy; 2015 American College of Cardiology</cite>
+
+	sg-wrapper:
+ 	<div class="texture_medium padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.5
+
+*/
+/*
+>>>>>>> Stashed changes
 	Cards
 
 	Build from the basicfoundation card utility classes can be added to make many variations on the theme.
@@ -7306,7 +7607,47 @@ sg-wrapper:
 }
 
 /*
+<<<<<<< Updated upstream
 Utility Classes (UCs)
+=======
+Footer (Recipe)
+
+
+This defines the web footer 
+
+ markup:
+ <div class="grid-container footer">
+    <div class="grid-y">
+        <div class="grid-x border-top_3 border_solid border_secondary-n1 texture_medium ">
+            <sg-insert>200.4</sg-insert>
+        </div>
+        <div class="grid-x texture_dark">
+                <div class="cell medium-5">
+                   <sg-insert>200.2</sg-insert>
+                </div> 
+                <div class="cell medium-6">  
+                   <sg-insert>200.3</sg-insert>
+                </div>
+        </div>
+		<div class="grid-x texture_dark">
+				<div class="cell medium-6">
+				<sg-insert>200.1</sg-insert>
+				</div>				
+		</div>	
+        <div class="grid-x texture_medium">
+            	<div class="cell medium-12">
+                <sg-insert>200.5</sg-insert>
+                </div>
+        </div>
+    </div>
+</div>
+    
+
+Styleguide 200.0
+*/
+/*
+Utility CSS:Space
+>>>>>>> Stashed changes
 
  Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as reciepes. Learn more about UCs in the Introduction section
  
@@ -8270,6 +8611,11 @@ Styleguide 101.0
 
 	Styleguide 101.3
 
+<<<<<<< Updated upstream
+=======
+	Styleguide 81.9
+ 
+>>>>>>> Stashed changes
  */
 .padding_0,
 .p_0 {
@@ -12167,9 +12513,576 @@ Styleguide 101.0
   border-color: #488f61 !important;
 }
 
+<<<<<<< Updated upstream
 .border_selected-n2, .border-color_selected-n2 {
   border-color: #3c7751 !important;
 }
+=======
+/*
+  Font Color
+
+  You can change the color of the text with some simple use classes.
+
+
+
+  .color_white - text that's white
+  .color_black -  text that's black
+  .color_primary -  text that's primary
+  .color_alert -  text that's alert
+  .color_info -  text that's info
+  .color_inherit - text that inherits from its parent
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2 back_secondary-4 padding_3">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+
+  Styleguide 82.4
+ */
+.color_primary, .pagination-container .current {
+  color: #198dae !important;
+}
+
+.color_primary-0 {
+  color: #198dae !important;
+}
+
+.color_primary-1 {
+  color: #3c9eba !important;
+}
+
+.color_primary-2 {
+  color: #6eb7cc !important;
+}
+
+.color_primary-3 {
+  color: #a3d1df !important;
+}
+
+.color_primary-4 {
+  color: #cce6ed !important;
+}
+
+.color_primary-5 {
+  color: #e8f4f7 !important;
+}
+
+.color_primary-n1 {
+  color: #177f9d !important;
+}
+
+.color_primary-n2 {
+  color: #136a83 !important;
+}
+
+.color_primary-n3 {
+  color: #0e4e60 !important;
+}
+
+.color_primary-n4 {
+  color: #0a3846 !important;
+}
+
+.color_primary-n5 {
+  color: #06232c !important;
+}
+
+.color_secondary {
+  color: #5a5c69 !important;
+}
+
+.color_secondary-0 {
+  color: #5a5c69 !important;
+}
+
+.color_secondary-1 {
+  color: #737480 !important;
+}
+
+.color_secondary-2 {
+  color: #9798a1 !important;
+}
+
+.color_secondary-3 {
+  color: #bdbec3 !important;
+}
+
+.color_secondary-4 {
+  color: #dbdbde !important;
+}
+
+.color_secondary-5 {
+  color: #efeff0 !important;
+}
+
+.color_secondary-n1 {
+  color: #51535f !important;
+}
+
+.color_secondary-n2 {
+  color: #44454f !important;
+}
+
+.color_secondary-n3 {
+  color: #32333a !important;
+}
+
+.color_secondary-n4 {
+  color: #24252a !important;
+}
+
+.color_secondary-n5 {
+  color: #17171a !important;
+}
+
+.color_success {
+  color: #09911f !important;
+}
+
+.color_success-0 {
+  color: #09911f !important;
+}
+
+.color_success-1 {
+  color: #2ea241 !important;
+}
+
+.color_success-2 {
+  color: #64ba72 !important;
+}
+
+.color_success-3 {
+  color: #9dd3a5 !important;
+}
+
+.color_success-4 {
+  color: #c9e7ce !important;
+}
+
+.color_success-5 {
+  color: #e6f4e9 !important;
+}
+
+.color_success-n1 {
+  color: #08831c !important;
+}
+
+.color_success-n2 {
+  color: #076d17 !important;
+}
+
+.color_success-n3 {
+  color: #055011 !important;
+}
+
+.color_success-n4 {
+  color: #043a0c !important;
+}
+
+.color_success-n5 {
+  color: #022408 !important;
+}
+
+.color_warning {
+  color: #e18725 !important;
+}
+
+.color_warning-0 {
+  color: #e18725 !important;
+}
+
+.color_warning-1 {
+  color: #e69946 !important;
+}
+
+.color_warning-2 {
+  color: #ecb376 !important;
+}
+
+.color_warning-3 {
+  color: #f3cfa8 !important;
+}
+
+.color_warning-4 {
+  color: #f8e5cf !important;
+}
+
+.color_warning-5 {
+  color: #fcf3e9 !important;
+}
+
+.color_warning-n1 {
+  color: #cb7a21 !important;
+}
+
+.color_warning-n2 {
+  color: #a9651c !important;
+}
+
+.color_warning-n3 {
+  color: #7c4a14 !important;
+}
+
+.color_warning-n4 {
+  color: #5a360f !important;
+}
+
+.color_warning-n5 {
+  color: #382209 !important;
+}
+
+.color_alert {
+  color: #cb241c !important;
+}
+
+.color_alert-0 {
+  color: #cb241c !important;
+}
+
+.color_alert-1 {
+  color: #d3453e !important;
+}
+
+.color_alert-2 {
+  color: #de7570 !important;
+}
+
+.color_alert-3 {
+  color: #eaa7a4 !important;
+}
+
+.color_alert-4 {
+  color: #f4cfcd !important;
+}
+
+.color_alert-5 {
+  color: #fae9e8 !important;
+}
+
+.color_alert-n1 {
+  color: #b72019 !important;
+}
+
+.color_alert-n2 {
+  color: #981b15 !important;
+}
+
+.color_alert-n3 {
+  color: #70140f !important;
+}
+
+.color_alert-n4 {
+  color: #510e0b !important;
+}
+
+.color_alert-n5 {
+  color: #330907 !important;
+}
+
+.color_navigation {
+  color: #4f74bf !important;
+}
+
+.color_navigation-0 {
+  color: #4f74bf !important;
+}
+
+.color_navigation-1 {
+  color: #6989c9 !important;
+}
+
+.color_navigation-2 {
+  color: #90a7d7 !important;
+}
+
+.color_navigation-3 {
+  color: #b9c7e5 !important;
+}
+
+.color_navigation-4 {
+  color: #d8e0f1 !important;
+}
+
+.color_navigation-5 {
+  color: #edf1f9 !important;
+}
+
+.color_navigation-n1 {
+  color: #4768ac !important;
+}
+
+.color_navigation-n2 {
+  color: #3b578f !important;
+}
+
+.color_navigation-n3 {
+  color: #2b4069 !important;
+}
+
+.color_navigation-n4 {
+  color: #202e4c !important;
+}
+
+.color_navigation-n5 {
+  color: #141d30 !important;
+}
+
+.color_selected {
+  color: #509f6c !important;
+}
+
+.color_selected-0 {
+  color: #509f6c !important;
+}
+
+.color_selected-1 {
+  color: #6aad82 !important;
+}
+
+.color_selected-2 {
+  color: #91c3a2 !important;
+}
+
+.color_selected-3 {
+  color: #b9d9c4 !important;
+}
+
+.color_selected-4 {
+  color: #d9eadf !important;
+}
+
+.color_selected-5 {
+  color: #eef5f0 !important;
+}
+
+.color_selected-n1 {
+  color: #488f61 !important;
+}
+
+.color_selected-n2 {
+  color: #3c7751 !important;
+}
+
+.color_selected-n3 {
+  color: #2c573b !important;
+}
+
+.color_selected-n4 {
+  color: #20402b !important;
+}
+
+.color_selected-n5 {
+  color: #14281b !important;
+}
+
+.color_info {
+  color: #735dba !important;
+}
+
+.color_info-0 {
+  color: #735dba !important;
+}
+
+.color_info-1 {
+  color: #8875c4 !important;
+}
+
+.color_info-2 {
+  color: #a799d4 !important;
+}
+
+.color_info-3 {
+  color: #c7bee3 !important;
+}
+
+.color_info-4 {
+  color: #e0dbf0 !important;
+}
+
+.color_info-5 {
+  color: #f1eff8 !important;
+}
+
+.color_info-n1 {
+  color: #6854a7 !important;
+}
+
+.color_info-n2 {
+  color: #56468c !important;
+}
+
+.color_info-n3 {
+  color: #3f3366 !important;
+}
+
+.color_info-n4 {
+  color: #2e254a !important;
+}
+
+.color_info-n5 {
+  color: #1d172f !important;
+}
+
+.color_hightlight {
+  color: #c45e99 !important;
+}
+
+.color_hightlight-0 {
+  color: #c45e99 !important;
+}
+
+.color_hightlight-1 {
+  color: #cd76a8 !important;
+}
+
+.color_hightlight-2 {
+  color: #da9abf !important;
+}
+
+.color_hightlight-3 {
+  color: #e7bfd6 !important;
+}
+
+.color_hightlight-4 {
+  color: #f2dce9 !important;
+}
+
+.color_hightlight-5 {
+  color: #f9eff5 !important;
+}
+
+.color_hightlight-n1 {
+  color: #b0558a !important;
+}
+
+.color_hightlight-n2 {
+  color: #934773 !important;
+}
+
+.color_hightlight-n3 {
+  color: #6c3454 !important;
+}
+
+.color_hightlight-n4 {
+  color: #4e263d !important;
+}
+
+.color_hightlight-n5 {
+  color: #311826 !important;
+}
+
+.color_acc {
+  color: #00386b !important;
+}
+
+.color_acc-0 {
+  color: #00386b !important;
+}
+
+.color_acc-1 {
+  color: #265681 !important;
+}
+
+.color_acc-2 {
+  color: #5e82a2 !important;
+}
+
+.color_acc-3 {
+  color: #99afc4 !important;
+}
+
+.color_acc-4 {
+  color: #c7d3de !important;
+}
+
+.color_acc-5 {
+  color: #e6ebf0 !important;
+}
+
+.color_acc-n1 {
+  color: #003260 !important;
+}
+
+.color_acc-n2 {
+  color: #002a50 !important;
+}
+
+.color_acc-n3 {
+  color: #001f3b !important;
+}
+
+.color_acc-n4 {
+  color: #00162b !important;
+}
+
+.color_acc-n5 {
+  color: #000e1b !important;
+}
+
+.color_secondaryalt {
+  color: #c5bfba !important;
+}
+
+.color_secondaryalt-0 {
+  color: #c5bfba !important;
+}
+
+.color_secondaryalt-1 {
+  color: #cec9c4 !important;
+}
+
+.color_secondaryalt-2 {
+  color: #dad7d4 !important;
+}
+
+.color_secondaryalt-3 {
+  color: #e8e5e3 !important;
+}
+
+.color_secondaryalt-4 {
+  color: #f2f1f0 !important;
+}
+
+.color_secondaryalt-5 {
+  color: #f9f9f8 !important;
+}
+
+.color_secondaryalt-n1 {
+  color: #b1aca7 !important;
+}
+
+.color_secondaryalt-n2 {
+  color: #948f8c !important;
+}
+
+.color_secondaryalt-n3 {
+  color: #6c6966 !important;
+}
+
+.color_secondaryalt-n4 {
+  color: #4f4c4a !important;
+}
+
+.color_secondaryalt-n5 {
+  color: #31302f !important;
+}
+
+.color_white, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]) {
+  color: #fefefe;
+}
+
+.color_black, .pagination-container a:not([class=pagination-previous]):not([class=pagination-next]):hover {
+  color: #0a0a0a;
+}
+
+.color_inherit {
+  color: inherit;
+}
+
+/*
+>>>>>>> Stashed changes
 
 .border_selected-n3, .border-color_selected-n3 {
   border-color: #2c573b !important;

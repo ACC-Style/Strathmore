@@ -163,3 +163,33 @@
 .text_lowercase{ text-transform: lowercase;}
 .text_uppercase{ text-transform: uppercase;}
 .text-underline{ text-decoration: underline;}
+
+/*
+  Font Color
+
+  You can change the color of the text with some simple use classes.
+
+
+
+  .color_white - text that's white
+  .color_black -  text that's black
+  .color_primary -  text that's primary
+  .color_alert -  text that's alert
+  .color_info -  text that's info
+  .color_inherit - text that inherits from its parent
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2 back_secondary-4 padding_3">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+
+  Styleguide 82.4
+ */
+ @each $color-name, $hex-value in $acc-palette{
+  @include color-loop(color, $color-name,$hex-value);
+}
+.color_white{color:$white;}
+.color_black{color:$black;}
+.color_inherit{color:inherit;}
