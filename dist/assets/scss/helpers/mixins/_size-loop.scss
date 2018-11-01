@@ -3,10 +3,10 @@ $debug-trace: true !default;
 		$short-name: 	get-css-shortname($key);
 		$long-name: 	get-css-longname($key);
 		$style: 		get-css-style($key);
-		$sizes:			get-css-unit($key);
-		 @each $unit, $val in $sizes{
+		$sizes: 		get-css-unit($key);
+		@each $unit, $val in $sizes{
 		#{ $long-name }_#{ $unit }#{$breakpoint},
-		#{ $short-name }_#{ $unit }#{$breakpoint},
+		#{ $short-name }_#{ $unit }#{$breakpoint}
 			{
 				#{$style}: $val #{$important};
 			}
