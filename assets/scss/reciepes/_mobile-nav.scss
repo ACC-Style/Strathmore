@@ -25,5 +25,45 @@
         <a class="button secondary"><i class="far icon-toggle_check"></i> Two</a>
         <a class="button secondary"><i class="far icon-toggle_check"></i> Three</a>
     </div>
+
     Styleguide 200.002
 */
+
+
+/* 
+    Grid Button Splash
+
+    markup:
+    <div class="grid-y"style="width:480;height: 640px; background-image:url('https://picsum.photos/640/480')">
+    <div class="cell small-3">
+        <div class="grid-x">
+            <div class="small-4 cell back_white-1"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-2"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
+        </div>
+    </div>
+    <div class="cell small-3">
+        <div class="grid-x">
+            <div class="small-4 cell back_white-2"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
+        </div>
+    </div>
+    <div class="cell small-3">
+        <div class="grid-x">
+            <div class="small-4 cell back_white-3"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-5"><i class="fal fa-pin"></i></div>
+        </div>
+    </div>
+    <div class="cell small-3">
+        <div class="grid-x">
+            <div class="small-4 cell back_white-4"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-5"><i class="fal fa-pin"></i></div>
+            <div class="small-4 cell back_white-6"><i class="fal fa-pin"></i></div>
+        </div>
+    </div>
+    </div>    
+
+    Styleguide 200.003
+    */
