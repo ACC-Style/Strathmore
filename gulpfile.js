@@ -96,16 +96,23 @@ gulp.task('styleguide:generate',['style'], function() {
         appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
         overviewPath: 'README.md',
         sideNav: true,
-        extraHead: '<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Muli|Roboto+Slab" rel="stylesheet">',
+        extraHead: [
+          '<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Muli|Roboto+Slab" rel="stylesheet">',
+          '<script src="assets/js/jquery.js"></script>',
+          '<script src="assets/js/what-input.js" ></script>', 
+          '<script src="assets/js/foundation/foundation.js"></script>',
+          '<script src="assets/js/styleguide.js"></script>'
+        ],
+        afterBody: '',
         styleVariables:false,
-        showReferenceNumbers: false,
+        showReferenceNumbers: true,
         disableEncapsulation:true,
         
       }))
     .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
 
-gulp.task('styleguide:applystyles', function() {
+gulp.task('styleguide:applystyles', ['package:strathmore'], function () {
 	console.log('Gulp Style Guide Tasks');
 	console.log('Gulp: Write it down and record it!');
   return gulp.src([
@@ -120,7 +127,16 @@ gulp.task('styleguide:applystyles', function() {
     .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
 
-
+gulp.task('package:strathmore',function(){
+  console.log('Gulp Package Tasks');
+  console.log('Gulp: Gosh my back is tired. Moving boxes from Assets to the styleguide');
+  return gulp.src([
+    PATHS.SRC + PATHS.FONTS,
+    PATHS.SRC + PATHS.ICONS,
+    PATHS.SRC + PATHS.JS,
+    PATHS.SRC + PATHS.IMG
+  ],{ base: "./" }).pipe(gulp.dest(PATHS.STYLEGUIDE));
+});
 
 // Package Tasks.   Copy files to the Dist Folder. 
 gulp.task('package:dist',['addAutomation'], function(){
