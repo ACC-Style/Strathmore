@@ -13331,9 +13331,9 @@ Styleguide 101.0
     markup:
     <div class="grid-y line-height_1 " style="width:412px;height: 732px; background-image:url('https://picsum.photos/412/732/?image=857')">
         <div class="cell small-6 grid-x">
-            <div class="small-8 cell color_white padding-top_5 line-height_1 text-left">
-                <h1 class="font-size_5 font_display">Conference App</h1>
-                <h2 class="font-size_2">Sub Text</h2>
+            <div class="small-8 cell color_white padding_5 line-height_1 text-left">
+                <h1 class="font-size_5 font_display line-height_1">Annual Scientific Session</h1>
+                <h2 class="font-size_1 font_bold">2018 | New Orleans</h2>
             </div>
             <div class="small-4 cell color_white text-center">
                 <div class="grid-y grid-frame">
