@@ -1,0 +1,150 @@
+/*
+    Footer (Recipe)
+
+
+    This defines the web footer 
+
+    markup:
+        <div class="grid-container footer">
+            <div class="grid-y">
+                <div class="cell padding-top_3 padding-bottom_3 padding_4 grid-x border-top-width_3 border_solid border_secondary-n1 color_secondary-1 texture_light back_secondary-1">
+                    <sg-insert>0.5</sg-insert>
+                    <!-- Logo -->
+                </div>
+                <div class="cell grid-x texture_dark grid-padding-x padding_5-large padding_4 padding-bottom_3">
+                    <div class="cell medium-7 large-8">
+                        <sg-insert>200.110</sg-insert>
+                        <!-- Address -->
+                            <sg-insert>200.040.3</sg-insert>
+                            <!-- Social -->
+                    </div>
+                    <div class="cell medium-5 large-4">
+                        <sg-insert>200.040.2</sg-insert>
+                        <!-- Footer External Links -->
+                    </div>
+                </div>
+                <div class="cell grid-x texture_light back_secondary-1">
+                    <div class="cell medium-12">
+                        <sg-insert>200.040.5</sg-insert>
+                        <!-- Footer Cite -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    Styleguide 200.040
+*/
+.footer {}
+
+/*
+	PARTIAL: Cite
+
+	Contains copy right 
+
+	markup:
+    <cite class="color_secondary-1 font-style_italic font-weight_bold font-size_n1 padding_3 line-height_2">&copy;
+    2015 American College of Cardiology</cite>
+
+	sg-wrapper:
+ 	<div class="texture_light back_secondary-1 padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.040.5
+
+*/
+
+/*
+	PARTIAL: Footer External Nav
+
+	Links to acc-websites
+
+	markup:
+    <section class="acc-websites row color_white">
+        <h4 class="font_slab">Improving Cardiovascular Care</h4>
+        <nav class="nav-list small">
+            <ul class="no-bullet line-height_1 font_0 ">
+                <li class="hover_back_secondary-1 color_white border_solid border-bottom-width_1 border-top-width_1 border_white-8 hover_back_secondary-1">
+                    <a target="_blank" class="color_white margin-left_4 margin-right_4 margin_3 display_block"href="http://www.acc.org">
+                    <span class="">Acc</span>
+                    <i class="float-right fa color_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="hover_back_secondary-1 color_white border_solid border-bottom-width_1 border_white-8 hover_back_secondary-1">
+                    <a target="_blank" class="color_white margin-left_4 margin-right_4 margin_3 display_block" href="https://cvquality.acc.org/Accreditation?">
+                    <span class="">Accreditation Services</span>
+                    <i class="float-right fa color_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="hover_back_secondary-1 color_white border_solid border-bottom-width_1 border_white-8 hover_back_secondary-1">
+                    <a target="_blank" class="color_white margin-left_4 margin-right_4 margin_3 display_block" href="http://www.ncdr.com">
+                    <span class="">NCDR</span>
+                    <i class="float-right fa color_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="hover_back_secondary-1 color_white border_solid border-bottom-width_1 border_white-8 hover_back_secondary-1">
+                    <a target="_blank" class="color_white margin-left_4 margin-right_4 margin_3 display_block" href="http://www.cardiosmart.org">
+                    <span class="">CardioSmart</span>
+                    <i class="float-right fa color_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="hover_back_secondary-1 color_white border_solid border-bottom-width_1 border_white-8 hover_back_secondary-1">
+                    <a target="_blank" class="color_white margin-left_4 margin-right_4 margin_3 display_block" href="http://www.onlinejacc.org/">
+                    <span class="">JACC</span>
+                    <i class="float-right fa color_white fa-external-link-square "></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>	
+
+	sg-wrapper:
+ 	<div class="texture_dark">
+ 	    <sg-wrapper-content/>
+ 	</div>                   
+              
+
+	Styleguide 200.040.2
+
+*/
+
+
+/*
+	Social
+
+	The social networks that the acc is a part of 
+
+	markup:
+	<h4 class="font_slab color_white">Stay Connected</h4>
+	<ul class="grid-x social-bar no-bullet color_white hover_color_white">
+	<li class="auto cell margin-right_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button margin-bottom_0 button expanded text_right hover_back_primary-n1 text-right"><i class="fab fa-twitter font-size_2 "></i></a></li>
+	<li class="auto cell margin-right_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button margin-bottom_0 button expanded text_right hover_back_primary-n1 text-right"><i class="fab fa-facebook font-size_2 "></i></a></li>
+	<li class="auto cell margin-right_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button margin-bottom_0 button expanded text_right hover_back_primary-n1 text-right"><i class="fab fa-linkedin font-size_2 "></i></a></li>
+	<li class="auto cell margin-right_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button margin-bottom_0 button expanded text_right hover_back_primary-n1 text-right"><i class="fab fa-google-plus font-size_2 "></i></a></li>
+	<li class="auto cell margin-right_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button margin-bottom_0 button expanded text_right hover_back_primary-n1 text-right"><i class="fab fa-youtube font-size_2 "></i></a></li>
+	</ul>
+
+	Styleguide 200.040.3
+
+*/
+
+
+.twitter {
+    background-color: #00aced;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.linkedin {
+    background-color: #007bb6;
+}
+
+.google-plus {
+    background-color: #dd4b39;
+}
+
+.youtube {
+    background-color: #bb0000;
+}

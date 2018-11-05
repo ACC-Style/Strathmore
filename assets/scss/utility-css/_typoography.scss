@@ -162,8 +162,14 @@
 .text-demo{white-space: pre-wrap;  letter-spacing: -.1em;}
 .text_lowercase{ text-transform: lowercase;}
 .text_uppercase{ text-transform: uppercase;}
-.text-underline{ text-decoration: underline;}
-
+.text_underline{ text-decoration: underline;}
+.text_right{text-align: right !important;}
+.text_center {
+  text-align: center !important;
+}
+.text_left {
+  text-align: left !important;
+}
 /*
   Font Color
 

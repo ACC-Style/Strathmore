@@ -57,3 +57,64 @@
         
     Styleguide 200.100
 */
+
+
+/*
+	Address
+
+	Address and contact information for Heart House
+
+	markup:
+    <section class="address color_white">
+        <h3 class="font_slab font-size_2">American College of Cardiology</h3>
+        <address>
+            <!-- http://microformats.org/wiki/hcard -->
+            <h4 class="font_slab font-size_1 margin-bottom_4">Heart House</h4>
+            <div class="grid-x">
+            <div class="cell medium-5 large-4">
+                <ul class="no-bullet">
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <span class="street-address">2400 N. St. NW</span>
+                    </li>
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <span class="locality">Washington</span>,
+                        <span class="country-name">
+                    <abbr title="District of Colombia">DC</abbr>
+                    </span>
+                        <span class="postal-code">20037</span>
+                    </li>
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <strong class="padding-right_2">Email:</strong><a href="mailto:resource@acc.org" class="email color_white text_underline">
+                                        resource@acc.org</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-7 large-8">
+            <ul class="no-bullet">
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span tel="+12023756000" class="tel">
+                    <strong class="padding-right_2">Phone:</strong>(202) 375-6000, ext. 5603</span>
+                </li>
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span tel="+18002574737" class="tel">
+                    <strong class="padding-right_2">Toll Free:</strong>(800) 253-4636, ext. 5603</span>
+                </li>
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span fax="+12023757000" class="fax">
+                    <strong class="padding-right_2">Fax:</strong>(202) 375-7000</span>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </address>
+    </section>
+
+ sg-wrapper:
+ 	<div class="texture_dark padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.110
+
+*/
+
