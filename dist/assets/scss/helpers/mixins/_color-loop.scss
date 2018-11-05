@@ -24,8 +24,7 @@ $debug-trace: true !default;
   		  }
       }
 }
-
-%hover-cursor{
+div[class^="hover_"]{
      cursor: pointer;
 }
 
@@ -38,22 +37,18 @@ $debug-trace: true !default;
     $style:         get-css-style($key); 
     @if $debug-trace{ 
         @debug "Color Loop for #{$key} painting it with #{$color-name}";
-
     }
       #{$short-name}:hover,
-      #{$long-name}:hover {
-            @extend %hover-cursor;
+      #{$long-name}:hover {            
             #{$style}: $color !important;
       }   
       @each  $val-name, $val in $white-mix {
-        #{$short-name}-#{$val-name}:hover,#{$long-name}-#{$val-name}:hover{
-            @extend %hover-cursor;
+        #{$short-name}-#{$val-name}:hover,#{$long-name}-#{$val-name}:hover{     
             #{$style}:mix(white, $color,  $val) !important;
         }
       }
       @each  $val-name, $val in $black-mix {
-        #{$short-name}-#{$val-name}:hover,#{$long-name}-#{$val-name}:hover{
-            @extend %hover-cursor;
+        #{$short-name}-#{$val-name}:hover,#{$long-name}-#{$val-name}:hover{    
           #{$style}:mix(black, $color,  $val) !important;
         }
       }
