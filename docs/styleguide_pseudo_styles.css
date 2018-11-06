@@ -952,15 +952,6 @@ a.thumbnail.pseudo-class-focus {
   outline: none;
 }
 
-.social-bar li.pseudo-class-last-child {
-  margin-right: 0rem;
-}
-
-a.icon.pseudo-class-hover,
-a.icon.pseudo-class-active {
-  color: white;
-}
-
 .pagination .disabled.pseudo-class-hover {
   background-image: url("./assets/img/cross_disabled.png");
 }
@@ -2318,14 +2309,6 @@ a.icon.pseudo-class-active {
 
 .hover_underline.pseudo-class-hover {
   text-decoration: underline;
-}
-
-.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
-  color: #0a0a0a;
-}
-
-.pagination-container a:not([class=pagination-previous]):not([class=pagination-next]).pseudo-class-hover {
-  color: #0a0a0a;
 }
 
 .hover_opacity.pseudo-class-hover {
