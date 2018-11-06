@@ -20,3 +20,7 @@ $padding_3:get-css-size(padding, 3);
 $padding_4:get-css-size(padding, 4);
 $padding_5:get-css-size(padding, 5);
 
+$border_square:0;
+$border_radius:get-css-size(border-radius, radius);
+$border_round:get-css-size(border-radius, round);
+$border_circle:get-css-size(border-radius, circle);

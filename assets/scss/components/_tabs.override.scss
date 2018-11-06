@@ -28,25 +28,25 @@
 */
 .tabs {
     border: unset;
-    border-bottom: 0.125rem solid #bdbec3;
+    border-bottom: 0.125rem solid get-themecolor(secondary, 3);//#bdbec3;
     padding: 0.25rem 0.5rem 0;
     box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .tabs-title>a {
     font-size: unset;
-    &::hover{
-        background: transparent;
+    &:hover{
+        background: get-themecolor(secondary, 4);
         text-decoration: underline;        
     }
 }
 
 .tabs .tabs-title.is-active {
-    margin-bottom: -0.25rem;
+    margin-bottom: $margin_n2;
     a{
         border-width: 0.125rem;
         border-bottom-width: 0rem;
-        border-color: #bdbec3;
+        border-color: get-themecolor(secondary, 3);
         border-top-left-radius: 5px;
         border-style: solid;
         border-top-right-radius: 5px;
