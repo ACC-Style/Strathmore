@@ -911,8 +911,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even).pseudo-class-hover {
 }
 
 .tabs-title > a.pseudo-class-focus {
-  background: #e6e6e6;
-  color: #198dae;
+  background: #fff;
+  color: #111;
 }
 
 a.thumbnail.pseudo-class-hover,
@@ -950,6 +950,11 @@ a.thumbnail.pseudo-class-focus {
 
 .close-button.pseudo-class-focus {
   outline: none;
+}
+
+.tabs-title > a:.pseudo-class-hover {
+  background: transparent;
+  text-decoration: underline;
 }
 
 .pagination .disabled.pseudo-class-hover {

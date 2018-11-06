@@ -196,7 +196,7 @@ div[class^=texture_] {
 	American College of Cardiology Logo
 
 	markup:
-    <img class="logo" src="/assets/img/acc-logo-mobile.svg" alt="Home">
+    <img class="logo" src="assets/img/acc-logo-mobile.svg" alt="Home">
 
 	sg-wrapper:
  	<div class="texture_dark padding_4">
@@ -5084,8 +5084,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   color: #167996;
 }
 .tabs-title > a:focus, .tabs-title > a[aria-selected=true] {
-  background: #e6e6e6;
-  color: #198dae;
+  background: #fff;
+  color: #111;
 }
 
 .tabs-content {
@@ -7294,7 +7294,7 @@ markup:
     sg-wrapper: 
     <ul class="no-bullet"><sg-wrapper-content/></ul>
 
-    Styleguide 20.3
+    Styleguide 20.100
 */
 i.icon-toggle_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_plus-minus:before {
   margin: 0 0.25rem;
@@ -7336,6 +7336,61 @@ i.icon-toggle_check:before {
 }
 
 /*
+    Tabs
+
+    markup:
+    <ul class="border-bottom-width_2 border_secondary-2 border_solid texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active tabs-title"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+            <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+        </div>
+        <div class="tabs-panel" id="panel4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    Styleguide 20.30
+
+*/
+.tabs {
+  border: unset;
+  border-bottom: 0.125rem solid #bdbec3;
+  padding: 0.25rem 0.5rem 0;
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.tabs-title > a {
+  font-size: unset;
+}
+.tabs-title > a::hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.tabs .tabs-title.is-active {
+  margin-bottom: -0.25rem;
+}
+.tabs .tabs-title.is-active a {
+  border-width: 0.125rem;
+  border-bottom-width: 0rem;
+  border-color: #bdbec3;
+  border-top-left-radius: 5px;
+  border-style: solid;
+  border-top-right-radius: 5px;
+}
+
+/*
 	Cards
 
 	Build from the basicfoundation card utility classes can be added to make many variations on the theme.
@@ -7364,6 +7419,37 @@ i.icon-toggle_check:before {
 	 </div>
 
 	Styleguide 40.1
+
+ */
+/*
+	Page Messages
+
+	Page Messages are altered cards to bring attention to the content we are trying to convey to the user
+
+	primary				- This page message is used for X
+	secondary			- This page message is used for X
+	highlight 		- This page message is used for X
+	warning				- This page message is used for X
+	alert					- This page message is used for X
+
+	markup:
+	<div class="card shadow_2 cell small-6 large-4" style="width: 300px;">
+	  <div class=" font_slab border-top-left-square color_white font-size_3 padding_4 texture_dust {$modifiers}">
+	    This is a header
+	  </div>
+	  <img src="https://picsum.photos/400/300">
+	  <div class="card-section">
+	    <h4>This is a card.</h4>
+	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+	  </div>
+	</div>
+
+	 sg-wrapper:
+	 <div class="grid-x grid-margin-x grid-margin-y texture_light back_secondary-4">
+	   <sg-wrapper-content/>
+	 </div>
+
+	Styleguide 40.2
 
  */
 /*
@@ -7424,7 +7510,7 @@ sg-wrapper:
   <sg-wrapper-content/>
 </div>
 
- Styleguide 20.21
+ Styleguide 20.20.1
 */
 .pagination-container {
   background: #198dae;
@@ -7483,6 +7569,71 @@ sg-wrapper:
 }
 .quicklinks__item .quicklinks__link:last-child {
   border-right: 0;
+}
+
+/*
+
+    Question Structure
+
+    default - default decoration when there is no validation run on the input.
+    alert   - alert settings for questions
+    warning - warning decoration for when required is missing. 
+    info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
+    success - On rare occations it is needed for a success response on an input.
+
+    markup:
+    <div class="question required {$modifiers}">
+    <label for="input-x" class="grid-x color_{$modifiers} font_1">
+        <span class="text cell shrink">Question Text</span>
+        <span class="required-holder cell shrink">
+            <i class="fas fa-asterisk color_warning font_n3 vertical-align_top"></i>
+        </span>
+        </label>
+    <div class="input-holder grid-x color_{$modifiers}">
+        <div class="alert border_{$modifiers}-3  back_{$modifiers}-4  value-space cell shrink  border_solid border-width_1 padding_3 padding-bottom_2 border_secondary-4 texture_light">
+            <span class="color_{$modifiers} padding_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+        </div>
+        <div class="warning border_{$modifiers}-3  back_{$modifiers}-4  value-space cell shrink  border_solid border-width_1 padding_3 padding-bottom_2 border_secondary-4 texture_light">
+            <span class="color_{$modifiers} padding_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+        </div>
+        <div class="info border_{$modifiers}-3  back_{$modifiers}-4  value-space cell shrink  border_solid border-width_1 padding_3 padding-bottom_2 border_secondary-4 texture_light">
+            <span class="color_{$modifiers} padding_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+        </div>
+        <div class="success border_{$modifiers}-3  back_{$modifiers}-4  value-space cell shrink  border_solid border-width_1 padding_3 padding-bottom_2 border_secondary-4 texture_light">
+            <span class="color_{$modifiers} padding_2"><i class="fas fa-fw fa-check-square"></i></span>
+        </div>
+        <div class="input-space cell auto">
+            <input id="input-x" type="text" class="margin-bottom_0 border_{$modifiers}-3 " />
+        </div>
+        <div class="border_{$modifiers}-3  back_{$modifiers}-4  value-space cell shrink  border_solid border-width_1 padding_3 padding-bottom_2 border_secondary-4 texture_light">
+            <span class="value">Years</span>
+        </div>
+    </div>
+    <div class="message-holder font_n1">
+        <div class="alert padding_2 back_alert-n1 color_white">
+        <i class="fas fa-fw fa-exclamation-square margin-right_3 margin-left_2"></i> Error message</div>
+        <div class="warning padding_2 back_warning-n1 color_white">
+        <i class="fas fa-fw fa-exclamation-triangle margin-right_3 margin-left_2"></i> Warning message</div>
+        <div class="info padding_2 back_info-n1 color_white">
+        <i class="fas fa-fw fa-lightbulb-exclamation margin-right_3 margin-left_2"></i> Informational message about your input</div>
+    </div>
+    <div class="hint margin-top_2 font_n1 color_secondary padding_2 padding-top_0">This is some hint text</div>
+    </div>
+
+    Styleguide 30.1
+*/
+.question div.alert,
+.question div.warning,
+.question div.info,
+.question div.success {
+  display: none;
+}
+
+.alert.question div.alert,
+.warning.question div.warning,
+.info.question div.info,
+.success.question div.success {
+  display: block;
 }
 
 /*
@@ -8929,6 +9080,18 @@ Styleguide 101.0
 
 .display_none {
   display: none;
+}
+
+.vertical-align_top {
+  vertical-align: top;
+}
+
+.vertical-align_middle {
+  vertical-align: middle;
+}
+
+.vertical-align_bottom {
+  vertical-align: bottom;
 }
 
 /*
@@ -13858,6 +14021,161 @@ Styleguide 101.0
   }
 }
 /*
+/*
+	UC: Counters
+
+	Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
+
+	Styleguide 106.0
+ 
+ */
+/*
+	Counter
+
+	Counter can be incremented by the `counter_increment` class.  
+
+	markup:
+    <div class="counter_reset">
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide 106.2
+
+*/
+/*
+	Counter Sub
+
+	Counter Subs can be nested inside of counters
+
+	markup:
+    <div class="counter_reset ">
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+            <div class="counter-sub_reset">
+                <div class="margin_3 padding_2 padding-left_4 back_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="margin_3 padding_2 padding-left_4 back_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="margin_3 padding_2 padding-left_4 back_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+            </div>
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+        <div class="back_primary-2 padding_3 margin_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide 106.3
+
+*/
+/*
+	Counter Types
+
+	Create different types of lists with the counter types
+	
+	counter 										- Defualt Number Listing
+	counter_lower-alpha         - Lowercase Alphabetic Listing
+	counter_upper-alpha         - Uppercase Alphabetic Listing
+	counter_lower-roman         - Lowercase Roman Listing
+	counter_upper-roman         - Uppercase Roman Listing
+
+	markup:
+	<div class="counter_reset">
+			<div class="margin_3 padding_3 back_primary-2"><span class="{$modifiers} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="margin_3 padding_3 back_primary-2"><span class="{$modifiers} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="margin_3 padding_3 back_primary-2"><span class="{$modifiers} font_bold counter_increment"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide 106.4
+
+*/
+/*
+	Order Markers
+
+	Quickly decorate the counter with a circle.  Change the  background and font color with utility classes to acheive different effects.
+
+
+	markup:
+    <div class="counter_reset">
+        <div class="margin_3 padding_3"><span class="font_bold counter counter_increment order-marker back_primary-2"></span> Item, Object, or Section</div>
+        <div class="margin_3 padding_3"><span class="font_bold counter counter_increment order-marker back_highlight-2"></span> Item, Object, or Section</div>
+        <div class="margin_3 padding_3"><span class="font_bold counter counter_increment order-marker back_info-2"></span> Item, Object, or Section</div>
+        <div class="margin_3 padding_3"><span class="font_bold counter counter_increment order-marker back_warning-2"></span> Item, Object, or Section</div>
+    </div>
+
+	Styleguide 106.5
+
+*/
+.counter_reset {
+  counter-reset: a;
+}
+
+.counter_increment {
+  counter-increment: a;
+}
+
+.counter:before {
+  content: counter(a);
+}
+
+.counter_lower-alpha:before {
+  content: counter(a, lower-alpha);
+}
+
+.counter_upper-alpha:before {
+  content: counter(a, upper-alpha);
+}
+
+.counter_lower-roman:before {
+  content: counter(a, lower-roman);
+}
+
+.counter_upper-roman:before {
+  content: counter(a, upper-roman);
+}
+
+.counter-sub_reset {
+  counter-reset: b;
+}
+
+.counter-sub_increment {
+  counter-increment: b;
+}
+
+.counter-sub:before {
+  content: counter(b);
+}
+
+.counter-sub_lower-alpha:before {
+  content: counter(b, lower-alpha);
+}
+
+.counter-sub_upper-alpha:before {
+  content: counter(b, upper-alpha);
+}
+
+.counter_lower-roman:before {
+  content: counter(a, lower-roman);
+}
+
+.counter_upper-roman:before {
+  content: counter(a, upper-roman);
+}
+
+.order-marker {
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0.75em 0 0 0;
+  position: relative;
+  top: -0.25em;
+  margin-right: 0.5em;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 0;
+  vertical-align: top;
+}
+
+/*
 	UC: Opacity
 
 	A subtle set of  UCs that can make objects less interactive or combine to show a level of focus.
@@ -14063,7 +14381,7 @@ Styleguide 101.0
                 </div>
                 <div class="cell grid-x texture_dark grid-padding-x padding_5-large padding_4 padding-bottom_3">
                     <div class="cell medium-7 large-8">
-                        <sg-insert>200.110</sg-insert>
+                        <sg-insert>200.040.4</sg-insert>
                         <!-- Address -->
                             <sg-insert>200.040.3</sg-insert>
                             <!-- Social -->
@@ -14192,6 +14510,64 @@ Styleguide 101.0
   background-color: #bb0000;
 }
 
+/*
+	Address
+
+	Address and contact information for Heart House
+
+	markup:
+    <section class="address color_white">
+        <h3 class="font_slab font-size_2">American College of Cardiology</h3>
+        <address>
+            <!-- http://microformats.org/wiki/hcard -->
+            <h4 class="font_slab font-size_1 margin-bottom_4">Heart House</h4>
+            <div class="grid-x">
+            <div class="cell medium-5 large-4">
+                <ul class="no-bullet">
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <span class="street-address">2400 N. St. NW</span>
+                    </li>
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <span class="locality">Washington</span>,
+                        <span class="country-name">
+                    <abbr title="District of Colombia">DC</abbr>
+                    </span>
+                        <span class="postal-code">20037</span>
+                    </li>
+                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                        <strong class="padding-right_2">Email:</strong><a href="mailto:resource@acc.org" class="email color_white text_underline">
+                                        resource@acc.org</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-7 large-8">
+            <ul class="no-bullet">
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span tel="+12023756000" class="tel">
+                    <strong class="padding-right_2">Phone:</strong>(202) 375-6000, ext. 5603</span>
+                </li>
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span tel="+18002574737" class="tel">
+                    <strong class="padding-right_2">Toll Free:</strong>(800) 253-4636, ext. 5603</span>
+                </li>
+                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+                    <span fax="+12023757000" class="fax">
+                    <strong class="padding-right_2">Fax:</strong>(202) 375-7000</span>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </address>
+    </section>
+
+ sg-wrapper:
+ 	<div class="texture_dark padding_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.040.4
+
+*/
 /* content 200.100 */
 /*
     RECIPE: Accordians
@@ -14223,6 +14599,49 @@ Styleguide 101.0
     Styleguide 200.200
 
 */
+/*
+  RECIPE: Ordered Cards
+
+  Having cards order on page to help users find there way through steps can some times be very helpful. 
+
+  markup:
+  <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 border-top-left-square color_white font-size_3texture_dust back_alert">
+          <div class="cell shrink padding_3 back_alert-n4"><span class="counter counter_increment font_5 line-height_0 font_display color_white"></span></div>
+      <div class="cell auto padding_3">First it is bad</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+      <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 border-top-left-square color_white font-size_3texture_dust back_warning">
+          <div class="cell shrink padding_3 back_warning-n4"><span class="counter counter_increment font_5 line-height_0 font_display color_white"></span></div>
+      <div class="cell auto padding_3">Then it is not right</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+      <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 border-top-left-square color_white font-size_3texture_dust back_success">
+          <div class="cell shrink padding_3 back_success-n4"><span class="counter counter_increment font_5 line-height_0 font_display color_white"></span></div>
+      <div class="cell auto padding_3">At last it is good</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+
+  sg-wrapper: 
+  <div class="grid-x grid-margin-x grid-margin-y texture_medium counter_reset"><sg-wrapper-content/></div>
+
+  Styleguide 200.201
+
+    */
 /* content 200.200 */
 /*
     RECIPE: User Card
@@ -14282,64 +14701,6 @@ Styleguide 101.0
     <div class="padding_5 padding-top_3 padding-bottom_3 texture_light back_secondary-4"><sg-wrapper-content/></div>
         
     Styleguide 200.100
-*/
-/*
-	Address
-
-	Address and contact information for Heart House
-
-	markup:
-    <section class="address color_white">
-        <h3 class="font_slab font-size_2">American College of Cardiology</h3>
-        <address>
-            <!-- http://microformats.org/wiki/hcard -->
-            <h4 class="font_slab font-size_1 margin-bottom_4">Heart House</h4>
-            <div class="grid-x">
-            <div class="cell medium-5 large-4">
-                <ul class="no-bullet">
-                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                        <span class="street-address">2400 N. St. NW</span>
-                    </li>
-                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                        <span class="locality">Washington</span>,
-                        <span class="country-name">
-                    <abbr title="District of Colombia">DC</abbr>
-                    </span>
-                        <span class="postal-code">20037</span>
-                    </li>
-                    <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                        <strong class="padding-right_2">Email:</strong><a href="mailto:resource@acc.org" class="email color_white text_underline">
-                                        resource@acc.org</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cell medium-7 large-8">
-            <ul class="no-bullet">
-                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                    <span tel="+12023756000" class="tel">
-                    <strong class="padding-right_2">Phone:</strong>(202) 375-6000, ext. 5603</span>
-                </li>
-                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                    <span tel="+18002574737" class="tel">
-                    <strong class="padding-right_2">Toll Free:</strong>(800) 253-4636, ext. 5603</span>
-                </li>
-                <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
-                    <span fax="+12023757000" class="fax">
-                    <strong class="padding-right_2">Fax:</strong>(202) 375-7000</span>
-                </li>
-            </ul>
-            </div>
-            </div>
-        </address>
-    </section>
-
- sg-wrapper:
- 	<div class="texture_dark padding_4">
- 	<sg-wrapper-content/>
- 	</div>
-
-	Styleguide 200.110
-
 */
 /*
  Design Base
@@ -14782,8 +15143,7 @@ Components are basic HTML patterns enhanced by either a class decorator or a con
 /*
  Question Block
 
- ## .text_primary Can I Use Markdown
- Highly sturctured Combination of components to make a functional streamlined and consistent experiance when asking for information. 
+The Question has been stripped back to the basic inplementation from zurb foundation. Utility classes have been applied to the decorate the desgin and make it look more robust.
 
  Styleguide 30.0
 */
