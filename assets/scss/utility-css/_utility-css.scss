@@ -63,8 +63,16 @@ Styleguide 101.0
 
 @import "flex";
 
+/*
+/*
+	UC: Counters
 
+	Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
 
+	Styleguide 106.0
+ 
+ */
+@import "counters";
  /*
 	UC: Opacity
 
