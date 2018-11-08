@@ -2131,12 +2131,12 @@ a.thumbnail.pseudo-class-focus {
 
 .hover\:color_white.pseudo-class-hover,
 .hover\:white.pseudo-class-hover {
-  color: white;
+  color: white !important;
 }
 
 .hover\:color_black.pseudo-class-hover,
 .hover\:black.pseudo-class-hover {
-  color: black;
+  color: black !important;
 }
 
 .hover\:dotted.pseudo-class-hover,

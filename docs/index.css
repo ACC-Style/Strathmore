@@ -7304,8 +7304,11 @@ i.icon-toggle_check:before {
 
 .tabs-title {
   margin-bottom: -0.25rem;
+  border-color: #c0c1c5;
 }
 .tabs-title > a {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   font-size: unset;
 }
 .tabs-title > a:hover {
@@ -7319,10 +7322,8 @@ i.icon-toggle_check:before {
 .tabs .tabs-title.is-active a {
   border-width: 3px;
   border-bottom-width: 0;
-  border-color: #c0c1c5;
-  border-top-left-radius: 5px;
+  border-color: inherit;
   border-style: solid;
-  border-top-right-radius: 5px;
 }
 .tabs .tabs-title.is-active a:hover {
   background: white;
@@ -7332,11 +7333,11 @@ i.icon-toggle_check:before {
     RECIEPE: Tabs
 
     markup:
-    <ul class="texture_light tabs border-color_primary back_primary_2"data-active-collapse="true"data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active border-color_primary "><a class="hover:white hover:back_primary" href="#panel1c"aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel2c">Tab 2</a></li>
-        <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel3c">Tab 3</a></li>
-        <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel4c">Tab 4</a></li>
+    <ul class="texture_light tabs border-color_primary back_primary-3" data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a class="hover:back_white border-color_primary"href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel4c">Tab 4</a></li>
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
         <div class="tabs-panel is-active" id="panel1c">
@@ -7653,7 +7654,7 @@ The breakdown of the names for UCs follow a structured patter for easy muscle me
       <div class="font_1 margin-top_2">Alter the background on hover to a lighter value of alert</div>
       <div class="flex margin-top_3">
           <div class="flex_auto back_success-3 padding_3">hover</div>
-          <div class="flex_auto back_warning-3 padding_3">_</div>
+          <div class="flex_auto back_warning-3 padding_3">:</div>
           <div class="flex_auto back_primary-3 padding_3">background-color</div>
           <div class="flex_auto back_warning-3 padding_3">_</div>
           <div class="flex_auto back_highlight-3 padding_3">alert</div>
@@ -12067,11 +12068,11 @@ Styleguide 101.0
  
  */
 .hover\:color_white:hover, .hover\:white:hover {
-  color: white;
+  color: white !important;
 }
 
 .hover\:color_black:hover, .hover\:black:hover {
-  color: black;
+  color: black !important;
 }
 
 .hover\:dotted, .hover\:double, .hover\:dashed, .hover\:underline {
