@@ -174,7 +174,7 @@
 @include loop-style(border-bottom-right-radius);
 @include loop-style(border-bottom-left-radius);
 
-@each  $val-name, $val in  map-get($valueParams,border-radius){
+@each  $val-name, $val in  map-get($valueParams,radius){
   .#{$val-name}{
       &,.switch-paddle,.switch-paddle::after{
         border-radius: $val;
