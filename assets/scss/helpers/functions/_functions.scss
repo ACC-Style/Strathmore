@@ -17,7 +17,7 @@
   } 
   @else{
     $mod: 50%;
-    $mix: map-get($values, percent-positive);
+    $mix: map-get($valueParams, percent-positive);
     @if $modifier < 0 {
       $modifier: $modifier * -1;
       $mod:map-get($mix, $modifier) * -1;

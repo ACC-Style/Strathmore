@@ -26,7 +26,7 @@ $debug-trace: true !default;
 		@debug "size-loop mixin has errored. $size-variation can not be nulll";
 	}
 	@else{
-		$sizes: map-get($values,$size-variation); 
+		$sizes: map-get($valueParams,$size-variation); 
 		@if $debug-trace{ @debug $sizes;}
 		@each  $val-name, $val in $sizes {
 			$unit:0;

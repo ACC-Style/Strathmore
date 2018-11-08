@@ -50,7 +50,7 @@
 
 
 
-@include size-loop(line-height, line-height, 1);
+@include loop-style(line-height);
 
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(color, $color-name,$hex-value);
