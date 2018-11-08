@@ -59,6 +59,13 @@ $valueParams :(
 		4:78%,
 		5:90%
 		),
+	percent-negative:(
+		n1:10%,
+		n2:25%,
+		n3:45%,
+		n4:60%,
+		n5:75%
+		),
 	percent:(
 		0:0%,
 		1:15%,
@@ -103,7 +110,7 @@ $valueParams :(
 		dark:-50%,
 		light:50%
 	),
-	border:(
+	border-width:(
 		0:0px,
 		1:1px,
 		2:3px,
@@ -316,37 +323,42 @@ $style-definition:(
 		short-name:'.border',
 		css-style:'border-width',
 		long-name:'.border-width',
+		unit: map-get($valueParams, border-width)
 		),	
 	border-top-width:(
 		short-name:'.border-top',
 		css-style:'border-top-width',
 		long-name:'.border-top-width',
+		unit: map-get($valueParams, border-width)
 		),	
 	border-right-width:(
 		short-name:'.border-right',
 		css-style:'border-right-width',
 		long-name:'.border-right-width',
+		unit: map-get($valueParams, border-width)
 		),	
 	border-left-width:(
 		short-name:'.border-left',
 		css-style:'border-left-width',
 		long-name:'.border-left-width',
+		unit: map-get($valueParams, border-width)
 		),	
 	border-bottom-width:(
 		short-name:'.border-bottom',
 		css-style:'border-bottom-width',
 		long-name:'.border-bottom-width',
+		unit: map-get($valueParams, border-width)
 		),
 	hover-bg:(
-		short-name:'.hover_back',
+		short-name:'.hover\\3A back',
 		css-style:'background-color',
-		long-name:'.hover_background-color',
+		long-name:'.hover\\3A background-color',
 		unit: map-get($valueParams, 'hover')
 		),
 	hover-text:(
-		short-name: '.hover_',
+		short-name: '.hover\\3A ',
 		css-style: 'color',
-		long-name: '.hover_color',
+		long-name: '.hover\\3A color',
 		unit: map-get($valueParams, 'hover')
 		),
 	display:(

@@ -33,8 +33,6 @@
 
  */
 
-//@mixin size-loop( $style-name:null , $size-variation:null ,$multiplier:null , $breakpoint:null )
-
 .margin_auto{ margin:0 auto;}
 @include loop-style(margin,"","");
 @media #{$medium-up} {
