@@ -119,7 +119,7 @@ gulp.task('styleguide:applystyles', ['package:strathmore'], function () {
       './assets/scss/index.scss',
       './assets/scss/vendor/fontawesome/fontawesome.scss',
       './assets/scss/vendor/fontawesome/regular.scss',
-      './assets/scss/vendor/fontawesome/brands.scss',
+      './assets/scss/vendor/fontawesome/fa.sub.brands.scss',
       './assets/scss/vendor/fontawesome/solid.scss',
       './assets/scss/vendor/fontawesome/light.scss'
     ])
