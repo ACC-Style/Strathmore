@@ -15,7 +15,7 @@
 // .#{$fa-css-prefix}-adversal:before { content: fa-content($fa-var-adversal); }
 // .#{$fa-css-prefix}-affiliatetheme:before { content: fa-content($fa-var-affiliatetheme); }
 // .#{$fa-css-prefix}-air-freshener:before { content: fa-content($fa-var-air-freshener); }
-// .#{$fa-css-prefix}-alarm-clock:before { content: fa-content($fa-var-alarm-clock); }
+.#{$fa-css-prefix}-alarm-clock:before { content: fa-content($fa-var-alarm-clock); }
 // .#{$fa-css-prefix}-algolia:before { content: fa-content($fa-var-algolia); }
 // .#{$fa-css-prefix}-alicorn:before { content: fa-content($fa-var-alicorn); }
 .#{$fa-css-prefix}-align-center:before { content: fa-content($fa-var-align-center); }
@@ -112,7 +112,7 @@
 // .#{$fa-css-prefix}-autoprefixer:before { content: fa-content($fa-var-autoprefixer); }
 // .#{$fa-css-prefix}-avianex:before { content: fa-content($fa-var-avianex); }
 // .#{$fa-css-prefix}-aviato:before { content: fa-content($fa-var-aviato); }
-// .#{$fa-css-prefix}-award:before { content: fa-content($fa-var-award); }
+.#{$fa-css-prefix}-award:before { content: fa-content($fa-var-award); }
 // .#{$fa-css-prefix}-aws:before { content: fa-content($fa-var-aws); }
 // .#{$fa-css-prefix}-axe:before { content: fa-content($fa-var-axe); }
 // .#{$fa-css-prefix}-axe-battle:before { content: fa-content($fa-var-axe-battle); }
@@ -230,14 +230,14 @@
 // .#{$fa-css-prefix}-cabinet-filing:before { content: fa-content($fa-var-cabinet-filing); }
 // .#{$fa-css-prefix}-calculator:before { content: fa-content($fa-var-calculator); }
 // .#{$fa-css-prefix}-calculator-alt:before { content: fa-content($fa-var-calculator-alt); }
-// .#{$fa-css-prefix}-calendar:before { content: fa-content($fa-var-calendar); }
-// .#{$fa-css-prefix}-calendar-alt:before { content: fa-content($fa-var-calendar-alt); }
-// .#{$fa-css-prefix}-calendar-check:before { content: fa-content($fa-var-calendar-check); }
-// .#{$fa-css-prefix}-calendar-edit:before { content: fa-content($fa-var-calendar-edit); }
-// .#{$fa-css-prefix}-calendar-exclamation:before { content: fa-content($fa-var-calendar-exclamation); }
-// .#{$fa-css-prefix}-calendar-minus:before { content: fa-content($fa-var-calendar-minus); }
-// .#{$fa-css-prefix}-calendar-plus:before { content: fa-content($fa-var-calendar-plus); }
-// .#{$fa-css-prefix}-calendar-times:before { content: fa-content($fa-var-calendar-times); }
+.#{$fa-css-prefix}-calendar:before { content: fa-content($fa-var-calendar); }
+.#{$fa-css-prefix}-calendar-alt:before { content: fa-content($fa-var-calendar-alt); }
+.#{$fa-css-prefix}-calendar-check:before { content: fa-content($fa-var-calendar-check); }
+.#{$fa-css-prefix}-calendar-edit:before { content: fa-content($fa-var-calendar-edit); }
+.#{$fa-css-prefix}-calendar-exclamation:before { content: fa-content($fa-var-calendar-exclamation); }
+.#{$fa-css-prefix}-calendar-minus:before { content: fa-content($fa-var-calendar-minus); }
+.#{$fa-css-prefix}-calendar-plus:before { content: fa-content($fa-var-calendar-plus); }
+.#{$fa-css-prefix}-calendar-times:before { content: fa-content($fa-var-calendar-times); }
 // .#{$fa-css-prefix}-camera:before { content: fa-content($fa-var-camera); }
 // .#{$fa-css-prefix}-camera-alt:before { content: fa-content($fa-var-camera-alt); }
 // .#{$fa-css-prefix}-camera-retro:before { content: fa-content($fa-var-camera-retro); }
@@ -300,22 +300,22 @@
 .#{$fa-css-prefix}-check-circle:before { content: fa-content($fa-var-check-circle); }
 .#{$fa-css-prefix}-check-double:before { content: fa-content($fa-var-check-double); }
 .#{$fa-css-prefix}-check-square:before { content: fa-content($fa-var-check-square); }
-// .#{$fa-css-prefix}-chess:before { content: fa-content($fa-var-chess); }
-// .#{$fa-css-prefix}-chess-bishop:before { content: fa-content($fa-var-chess-bishop); }
-// .#{$fa-css-prefix}-chess-bishop-alt:before { content: fa-content($fa-var-chess-bishop-alt); }
-// .#{$fa-css-prefix}-chess-board:before { content: fa-content($fa-var-chess-board); }
-// .#{$fa-css-prefix}-chess-clock:before { content: fa-content($fa-var-chess-clock); }
-// .#{$fa-css-prefix}-chess-clock-alt:before { content: fa-content($fa-var-chess-clock-alt); }
-// .#{$fa-css-prefix}-chess-king:before { content: fa-content($fa-var-chess-king); }
-// .#{$fa-css-prefix}-chess-king-alt:before { content: fa-content($fa-var-chess-king-alt); }
-// .#{$fa-css-prefix}-chess-knight:before { content: fa-content($fa-var-chess-knight); }
-// .#{$fa-css-prefix}-chess-knight-alt:before { content: fa-content($fa-var-chess-knight-alt); }
-// .#{$fa-css-prefix}-chess-pawn:before { content: fa-content($fa-var-chess-pawn); }
-// .#{$fa-css-prefix}-chess-pawn-alt:before { content: fa-content($fa-var-chess-pawn-alt); }
-// .#{$fa-css-prefix}-chess-queen:before { content: fa-content($fa-var-chess-queen); }
-// .#{$fa-css-prefix}-chess-queen-alt:before { content: fa-content($fa-var-chess-queen-alt); }
-// .#{$fa-css-prefix}-chess-rook:before { content: fa-content($fa-var-chess-rook); }
-// .#{$fa-css-prefix}-chess-rook-alt:before { content: fa-content($fa-var-chess-rook-alt); }
+.#{$fa-css-prefix}-chess:before { content: fa-content($fa-var-chess); }
+.#{$fa-css-prefix}-chess-bishop:before { content: fa-content($fa-var-chess-bishop); }
+.#{$fa-css-prefix}-chess-bishop-alt:before { content: fa-content($fa-var-chess-bishop-alt); }
+.#{$fa-css-prefix}-chess-board:before { content: fa-content($fa-var-chess-board); }
+.#{$fa-css-prefix}-chess-clock:before { content: fa-content($fa-var-chess-clock); }
+.#{$fa-css-prefix}-chess-clock-alt:before { content: fa-content($fa-var-chess-clock-alt); }
+.#{$fa-css-prefix}-chess-king:before { content: fa-content($fa-var-chess-king); }
+.#{$fa-css-prefix}-chess-king-alt:before { content: fa-content($fa-var-chess-king-alt); }
+.#{$fa-css-prefix}-chess-knight:before { content: fa-content($fa-var-chess-knight); }
+.#{$fa-css-prefix}-chess-knight-alt:before { content: fa-content($fa-var-chess-knight-alt); }
+.#{$fa-css-prefix}-chess-pawn:before { content: fa-content($fa-var-chess-pawn); }
+.#{$fa-css-prefix}-chess-pawn-alt:before { content: fa-content($fa-var-chess-pawn-alt); }
+.#{$fa-css-prefix}-chess-queen:before { content: fa-content($fa-var-chess-queen); }
+.#{$fa-css-prefix}-chess-queen-alt:before { content: fa-content($fa-var-chess-queen-alt); }
+.#{$fa-css-prefix}-chess-rook:before { content: fa-content($fa-var-chess-rook); }
+.#{$fa-css-prefix}-chess-rook-alt:before { content: fa-content($fa-var-chess-rook-alt); }
 .#{$fa-css-prefix}-chevron-circle-down:before { content: fa-content($fa-var-chevron-circle-down); }
 .#{$fa-css-prefix}-chevron-circle-left:before { content: fa-content($fa-var-chevron-circle-left); }
 .#{$fa-css-prefix}-chevron-circle-right:before { content: fa-content($fa-var-chevron-circle-right); }
@@ -340,29 +340,29 @@
 // .#{$fa-css-prefix}-city:before { content: fa-content($fa-var-city); }
 // .#{$fa-css-prefix}-claw-marks:before { content: fa-content($fa-var-claw-marks); }
 // .#{$fa-css-prefix}-clipboard:before { content: fa-content($fa-var-clipboard); }
-// .#{$fa-css-prefix}-clipboard-check:before { content: fa-content($fa-var-clipboard-check); }
-// .#{$fa-css-prefix}-clipboard-list:before { content: fa-content($fa-var-clipboard-list); }
-// .#{$fa-css-prefix}-clipboard-prescription:before { content: fa-content($fa-var-clipboard-prescription); }
-// .#{$fa-css-prefix}-clock:before { content: fa-content($fa-var-clock); }
+.#{$fa-css-prefix}-clipboard-check:before { content: fa-content($fa-var-clipboard-check); }
+.#{$fa-css-prefix}-clipboard-list:before { content: fa-content($fa-var-clipboard-list); }
+.#{$fa-css-prefix}-clipboard-prescription:before { content: fa-content($fa-var-clipboard-prescription); }
+.#{$fa-css-prefix}-clock:before { content: fa-content($fa-var-clock); }
 // .#{$fa-css-prefix}-clone:before { content: fa-content($fa-var-clone); }
 // .#{$fa-css-prefix}-closed-captioning:before { content: fa-content($fa-var-closed-captioning); }
-// .#{$fa-css-prefix}-cloud:before { content: fa-content($fa-var-cloud); }
-// .#{$fa-css-prefix}-cloud-download:before { content: fa-content($fa-var-cloud-download); }
-// .#{$fa-css-prefix}-cloud-download-alt:before { content: fa-content($fa-var-cloud-download-alt); }
-// .#{$fa-css-prefix}-cloud-moon:before { content: fa-content($fa-var-cloud-moon); }
-// .#{$fa-css-prefix}-cloud-sun:before { content: fa-content($fa-var-cloud-sun); }
-// .#{$fa-css-prefix}-cloud-upload:before { content: fa-content($fa-var-cloud-upload); }
-// .#{$fa-css-prefix}-cloud-upload-alt:before { content: fa-content($fa-var-cloud-upload-alt); }
+.#{$fa-css-prefix}-cloud:before { content: fa-content($fa-var-cloud); }
+.#{$fa-css-prefix}-cloud-download:before { content: fa-content($fa-var-cloud-download); }
+.#{$fa-css-prefix}-cloud-download-alt:before { content: fa-content($fa-var-cloud-download-alt); }
+.#{$fa-css-prefix}-cloud-moon:before { content: fa-content($fa-var-cloud-moon); }
+.#{$fa-css-prefix}-cloud-sun:before { content: fa-content($fa-var-cloud-sun); }
+.#{$fa-css-prefix}-cloud-upload:before { content: fa-content($fa-var-cloud-upload); }
+.#{$fa-css-prefix}-cloud-upload-alt:before { content: fa-content($fa-var-cloud-upload-alt); }
 // .#{$fa-css-prefix}-cloudscale:before { content: fa-content($fa-var-cloudscale); }
 // .#{$fa-css-prefix}-cloudsmith:before { content: fa-content($fa-var-cloudsmith); }
 // .#{$fa-css-prefix}-cloudversify:before { content: fa-content($fa-var-cloudversify); }
 // .#{$fa-css-prefix}-club:before { content: fa-content($fa-var-club); }
 // .#{$fa-css-prefix}-cocktail:before { content: fa-content($fa-var-cocktail); }
-// .#{$fa-css-prefix}-code:before { content: fa-content($fa-var-code); }
-// .#{$fa-css-prefix}-code-branch:before { content: fa-content($fa-var-code-branch); }
-// .#{$fa-css-prefix}-code-commit:before { content: fa-content($fa-var-code-commit); }
-// .#{$fa-css-prefix}-code-merge:before { content: fa-content($fa-var-code-merge); }
-// .#{$fa-css-prefix}-codepen:before { content: fa-content($fa-var-codepen); }
+.#{$fa-css-prefix}-code:before { content: fa-content($fa-var-code); }
+.#{$fa-css-prefix}-code-branch:before { content: fa-content($fa-var-code-branch); }
+.#{$fa-css-prefix}-code-commit:before { content: fa-content($fa-var-code-commit); }
+.#{$fa-css-prefix}-code-merge:before { content: fa-content($fa-var-code-merge); }
+.#{$fa-css-prefix}-codepen:before { content: fa-content($fa-var-codepen); }
 // .#{$fa-css-prefix}-codiepie:before { content: fa-content($fa-var-codiepie); }
 // .#{$fa-css-prefix}-coffee:before { content: fa-content($fa-var-coffee); }
 // .#{$fa-css-prefix}-coffee-togo:before { content: fa-content($fa-var-coffee-togo); }
@@ -443,7 +443,7 @@
 // .#{$fa-css-prefix}-cross:before { content: fa-content($fa-var-cross); }
 // .#{$fa-css-prefix}-crosshairs:before { content: fa-content($fa-var-crosshairs); }
 // .#{$fa-css-prefix}-crow:before { content: fa-content($fa-var-crow); }
-// .#{$fa-css-prefix}-crown:before { content: fa-content($fa-var-crown); }
+.#{$fa-css-prefix}-crown:before { content: fa-content($fa-var-crown); }
 // .#{$fa-css-prefix}-css3:before { content: fa-content($fa-var-css3); }
 // .#{$fa-css-prefix}-css3-alt:before { content: fa-content($fa-var-css3-alt); }
 // .#{$fa-css-prefix}-cube:before { content: fa-content($fa-var-cube); }
@@ -504,15 +504,15 @@
 // .#{$fa-css-prefix}-donate:before { content: fa-content($fa-var-donate); }
 // .#{$fa-css-prefix}-door-closed:before { content: fa-content($fa-var-door-closed); }
 // .#{$fa-css-prefix}-door-open:before { content: fa-content($fa-var-door-open); }
-// .#{$fa-css-prefix}-dot-circle:before { content: fa-content($fa-var-dot-circle); }
+.#{$fa-css-prefix}-dot-circle:before { content: fa-content($fa-var-dot-circle); }
 // .#{$fa-css-prefix}-dove:before { content: fa-content($fa-var-dove); }
 // .#{$fa-css-prefix}-download:before { content: fa-content($fa-var-download); }
 // .#{$fa-css-prefix}-draft2digital:before { content: fa-content($fa-var-draft2digital); }
 // .#{$fa-css-prefix}-drafting-compass:before { content: fa-content($fa-var-drafting-compass); }
 // .#{$fa-css-prefix}-dragon:before { content: fa-content($fa-var-dragon); }
-// .#{$fa-css-prefix}-draw-circle:before { content: fa-content($fa-var-draw-circle); }
-// .#{$fa-css-prefix}-draw-polygon:before { content: fa-content($fa-var-draw-polygon); }
-// .#{$fa-css-prefix}-draw-square:before { content: fa-content($fa-var-draw-square); }
+.#{$fa-css-prefix}-draw-circle:before { content: fa-content($fa-var-draw-circle); }
+.#{$fa-css-prefix}-draw-polygon:before { content: fa-content($fa-var-draw-polygon); }
+.#{$fa-css-prefix}-draw-square:before { content: fa-content($fa-var-draw-square); }
 // .#{$fa-css-prefix}-dribbble:before { content: fa-content($fa-var-dribbble); }
 // .#{$fa-css-prefix}-dribbble-square:before { content: fa-content($fa-var-dribbble-square); }
 // .#{$fa-css-prefix}-dropbox:before { content: fa-content($fa-var-dropbox); }
@@ -556,20 +556,20 @@
 // .#{$fa-css-prefix}-euro-sign:before { content: fa-content($fa-var-euro-sign); }
 // .#{$fa-css-prefix}-exchange:before { content: fa-content($fa-var-exchange); }
 // .#{$fa-css-prefix}-exchange-alt:before { content: fa-content($fa-var-exchange-alt); }
-// .#{$fa-css-prefix}-exclamation:before { content: fa-content($fa-var-exclamation); }
-// .#{$fa-css-prefix}-exclamation-circle:before { content: fa-content($fa-var-exclamation-circle); }
-// .#{$fa-css-prefix}-exclamation-square:before { content: fa-content($fa-var-exclamation-square); }
-// .#{$fa-css-prefix}-exclamation-triangle:before { content: fa-content($fa-var-exclamation-triangle); }
+.#{$fa-css-prefix}-exclamation:before { content: fa-content($fa-var-exclamation); }
+.#{$fa-css-prefix}-exclamation-circle:before { content: fa-content($fa-var-exclamation-circle); }
+.#{$fa-css-prefix}-exclamation-square:before { content: fa-content($fa-var-exclamation-square); }
+.#{$fa-css-prefix}-exclamation-triangle:before { content: fa-content($fa-var-exclamation-triangle); }
 .#{$fa-css-prefix}-expand:before { content: fa-content($fa-var-expand); }
 .#{$fa-css-prefix}-expand-alt:before { content: fa-content($fa-var-expand-alt); }
 .#{$fa-css-prefix}-expand-arrows:before { content: fa-content($fa-var-expand-arrows); }
 .#{$fa-css-prefix}-expand-arrows-alt:before { content: fa-content($fa-var-expand-arrows-alt); }
 .#{$fa-css-prefix}-expand-wide:before { content: fa-content($fa-var-expand-wide); }
 // .#{$fa-css-prefix}-expeditedssl:before { content: fa-content($fa-var-expeditedssl); }
-// .#{$fa-css-prefix}-external-link:before { content: fa-content($fa-var-external-link); }
-// .#{$fa-css-prefix}-external-link-alt:before { content: fa-content($fa-var-external-link-alt); }
-// .#{$fa-css-prefix}-external-link-square:before { content: fa-content($fa-var-external-link-square); }
-// .#{$fa-css-prefix}-external-link-square-alt:before { content: fa-content($fa-var-external-link-square-alt); }
+.#{$fa-css-prefix}-external-link:before { content: fa-content($fa-var-external-link); }
+.#{$fa-css-prefix}-external-link-alt:before { content: fa-content($fa-var-external-link-alt); }
+.#{$fa-css-prefix}-external-link-square:before { content: fa-content($fa-var-external-link-square); }
+.#{$fa-css-prefix}-external-link-square-alt:before { content: fa-content($fa-var-external-link-square-alt); }
 // .#{$fa-css-prefix}-eye:before { content: fa-content($fa-var-eye); }
 // .#{$fa-css-prefix}-eye-dropper:before { content: fa-content($fa-var-eye-dropper); }
 // .#{$fa-css-prefix}-eye-evil:before { content: fa-content($fa-var-eye-evil); }
@@ -742,9 +742,9 @@
 // .#{$fa-css-prefix}-grin-tongue-squint:before { content: fa-content($fa-var-grin-tongue-squint); }
 // .#{$fa-css-prefix}-grin-tongue-wink:before { content: fa-content($fa-var-grin-tongue-wink); }
 // .#{$fa-css-prefix}-grin-wink:before { content: fa-content($fa-var-grin-wink); }
-// .#{$fa-css-prefix}-grip-horizontal:before { content: fa-content($fa-var-grip-horizontal); }
-// .#{$fa-css-prefix}-grip-vertical:before { content: fa-content($fa-var-grip-vertical); }
-// .#{$fa-css-prefix}-gripfire:before { content: fa-content($fa-var-gripfire); }
+.#{$fa-css-prefix}-grip-horizontal:before { content: fa-content($fa-var-grip-horizontal); }
+.#{$fa-css-prefix}-grip-vertical:before { content: fa-content($fa-var-grip-vertical); }
+.#{$fa-css-prefix}-gripfire:before { content: fa-content($fa-var-gripfire); }
 // .#{$fa-css-prefix}-grunt:before { content: fa-content($fa-var-grunt); }
 // .#{$fa-css-prefix}-gulp:before { content: fa-content($fa-var-gulp); }
 // .#{$fa-css-prefix}-h-square:before { content: fa-content($fa-var-h-square); }
@@ -847,9 +847,9 @@
 // .#{$fa-css-prefix}-industry:before { content: fa-content($fa-var-industry); }
 // .#{$fa-css-prefix}-industry-alt:before { content: fa-content($fa-var-industry-alt); }
 // .#{$fa-css-prefix}-infinity:before { content: fa-content($fa-var-infinity); }
-// .#{$fa-css-prefix}-info:before { content: fa-content($fa-var-info); }
-// .#{$fa-css-prefix}-info-circle:before { content: fa-content($fa-var-info-circle); }
-// .#{$fa-css-prefix}-info-square:before { content: fa-content($fa-var-info-square); }
+.#{$fa-css-prefix}-info:before { content: fa-content($fa-var-info); }
+.#{$fa-css-prefix}-info-circle:before { content: fa-content($fa-var-info-circle); }
+.#{$fa-css-prefix}-info-square:before { content: fa-content($fa-var-info-square); }
 // .#{$fa-css-prefix}-inhaler:before { content: fa-content($fa-var-inhaler); }
 // .#{$fa-css-prefix}-instagram:before { content: fa-content($fa-var-instagram); }
 // .#{$fa-css-prefix}-integral:before { content: fa-content($fa-var-integral); }
@@ -874,8 +874,8 @@
 // .#{$fa-css-prefix}-jsfiddle:before { content: fa-content($fa-var-jsfiddle); }
 // .#{$fa-css-prefix}-kaaba:before { content: fa-content($fa-var-kaaba); }
 // .#{$fa-css-prefix}-kaggle:before { content: fa-content($fa-var-kaggle); }
-// .#{$fa-css-prefix}-key:before { content: fa-content($fa-var-key); }
-// .#{$fa-css-prefix}-key-skeleton:before { content: fa-content($fa-var-key-skeleton); }
+.#{$fa-css-prefix}-key:before { content: fa-content($fa-var-key); }
+.#{$fa-css-prefix}-key-skeleton:before { content: fa-content($fa-var-key-skeleton); }
 // .#{$fa-css-prefix}-keybase:before { content: fa-content($fa-var-keybase); }
 // .#{$fa-css-prefix}-keyboard:before { content: fa-content($fa-var-keyboard); }
 // .#{$fa-css-prefix}-keycdn:before { content: fa-content($fa-var-keycdn); }
@@ -913,19 +913,19 @@
 // .#{$fa-css-prefix}-leaf-oak:before { content: fa-content($fa-var-leaf-oak); }
 // .#{$fa-css-prefix}-leanpub:before { content: fa-content($fa-var-leanpub); }
 // .#{$fa-css-prefix}-lemon:before { content: fa-content($fa-var-lemon); }
-// .#{$fa-css-prefix}-less:before { content: fa-content($fa-var-less); }
-// .#{$fa-css-prefix}-less-than:before { content: fa-content($fa-var-less-than); }
-// .#{$fa-css-prefix}-less-than-equal:before { content: fa-content($fa-var-less-than-equal); }
-// .#{$fa-css-prefix}-level-down:before { content: fa-content($fa-var-level-down); }
-// .#{$fa-css-prefix}-level-down-alt:before { content: fa-content($fa-var-level-down-alt); }
-// .#{$fa-css-prefix}-level-up:before { content: fa-content($fa-var-level-up); }
-// .#{$fa-css-prefix}-level-up-alt:before { content: fa-content($fa-var-level-up-alt); }
+.#{$fa-css-prefix}-less:before { content: fa-content($fa-var-less); }
+.#{$fa-css-prefix}-less-than:before { content: fa-content($fa-var-less-than); }
+.#{$fa-css-prefix}-less-than-equal:before { content: fa-content($fa-var-less-than-equal); }
+.#{$fa-css-prefix}-level-down:before { content: fa-content($fa-var-level-down); }
+.#{$fa-css-prefix}-level-down-alt:before { content: fa-content($fa-var-level-down-alt); }
+.#{$fa-css-prefix}-level-up:before { content: fa-content($fa-var-level-up); }
+.#{$fa-css-prefix}-level-up-alt:before { content: fa-content($fa-var-level-up-alt); }
 // .#{$fa-css-prefix}-life-ring:before { content: fa-content($fa-var-life-ring); }
-// .#{$fa-css-prefix}-lightbulb:before { content: fa-content($fa-var-lightbulb); }
-// .#{$fa-css-prefix}-lightbulb-dollar:before { content: fa-content($fa-var-lightbulb-dollar); }
-// .#{$fa-css-prefix}-lightbulb-exclamation:before { content: fa-content($fa-var-lightbulb-exclamation); }
-// .#{$fa-css-prefix}-lightbulb-on:before { content: fa-content($fa-var-lightbulb-on); }
-// .#{$fa-css-prefix}-lightbulb-slash:before { content: fa-content($fa-var-lightbulb-slash); }
+.#{$fa-css-prefix}-lightbulb:before { content: fa-content($fa-var-lightbulb); }
+.#{$fa-css-prefix}-lightbulb-dollar:before { content: fa-content($fa-var-lightbulb-dollar); }
+.#{$fa-css-prefix}-lightbulb-exclamation:before { content: fa-content($fa-var-lightbulb-exclamation); }
+.#{$fa-css-prefix}-lightbulb-on:before { content: fa-content($fa-var-lightbulb-on); }
+.#{$fa-css-prefix}-lightbulb-slash:before { content: fa-content($fa-var-lightbulb-slash); }
 // .#{$fa-css-prefix}-line:before { content: fa-content($fa-var-line); }
 // .#{$fa-css-prefix}-link:before { content: fa-content($fa-var-link); }
 // .#{$fa-css-prefix}-linkedin:before { content: fa-content($fa-var-linkedin); }
@@ -987,7 +987,7 @@
 .#{$fa-css-prefix}-map-pin:before { content: fa-content($fa-var-map-pin); }
 .#{$fa-css-prefix}-map-signs:before { content: fa-content($fa-var-map-signs); }
 // .#{$fa-css-prefix}-markdown:before { content: fa-content($fa-var-markdown); }
-// .#{$fa-css-prefix}-marker:before { content: fa-content($fa-var-marker); }
+.#{$fa-css-prefix}-marker:before { content: fa-content($fa-var-marker); }
 // .#{$fa-css-prefix}-mars:before { content: fa-content($fa-var-mars); }
 // .#{$fa-css-prefix}-mars-double:before { content: fa-content($fa-var-mars-double); }
 // .#{$fa-css-prefix}-mars-stroke:before { content: fa-content($fa-var-mars-stroke); }
@@ -996,8 +996,8 @@
 // .#{$fa-css-prefix}-mask:before { content: fa-content($fa-var-mask); }
 // .#{$fa-css-prefix}-mastodon:before { content: fa-content($fa-var-mastodon); }
 // .#{$fa-css-prefix}-maxcdn:before { content: fa-content($fa-var-maxcdn); }
-// .#{$fa-css-prefix}-medal:before { content: fa-content($fa-var-medal); }
-// .#{$fa-css-prefix}-medapps:before { content: fa-content($fa-var-medapps); }
+.#{$fa-css-prefix}-medal:before { content: fa-content($fa-var-medal); }
+.#{$fa-css-prefix}-medapps:before { content: fa-content($fa-var-medapps); }
 // .#{$fa-css-prefix}-medium:before { content: fa-content($fa-var-medium); }
 // .#{$fa-css-prefix}-medium-m:before { content: fa-content($fa-var-medium-m); }
 // .#{$fa-css-prefix}-medkit:before { content: fa-content($fa-var-medkit); }
@@ -1172,28 +1172,28 @@
 // .#{$fa-css-prefix}-poo:before { content: fa-content($fa-var-poo); }
 // .#{$fa-css-prefix}-poop:before { content: fa-content($fa-var-poop); }
 // .#{$fa-css-prefix}-portrait:before { content: fa-content($fa-var-portrait); }
-// .#{$fa-css-prefix}-pound-sign:before { content: fa-content($fa-var-pound-sign); }
+.#{$fa-css-prefix}-pound-sign:before { content: fa-content($fa-var-pound-sign); }
 // .#{$fa-css-prefix}-power-off:before { content: fa-content($fa-var-power-off); }
 // .#{$fa-css-prefix}-pray:before { content: fa-content($fa-var-pray); }
 // .#{$fa-css-prefix}-praying-hands:before { content: fa-content($fa-var-praying-hands); }
-// .#{$fa-css-prefix}-prescription:before { content: fa-content($fa-var-prescription); }
-// .#{$fa-css-prefix}-prescription-bottle:before { content: fa-content($fa-var-prescription-bottle); }
-// .#{$fa-css-prefix}-prescription-bottle-alt:before { content: fa-content($fa-var-prescription-bottle-alt); }
-// .#{$fa-css-prefix}-presentation:before { content: fa-content($fa-var-presentation); }
-// .#{$fa-css-prefix}-print:before { content: fa-content($fa-var-print); }
-// .#{$fa-css-prefix}-print-slash:before { content: fa-content($fa-var-print-slash); }
-// .#{$fa-css-prefix}-procedures:before { content: fa-content($fa-var-procedures); }
+.#{$fa-css-prefix}-prescription:before { content: fa-content($fa-var-prescription); }
+.#{$fa-css-prefix}-prescription-bottle:before { content: fa-content($fa-var-prescription-bottle); }
+.#{$fa-css-prefix}-prescription-bottle-alt:before { content: fa-content($fa-var-prescription-bottle-alt); }
+.#{$fa-css-prefix}-presentation:before { content: fa-content($fa-var-presentation); }
+.#{$fa-css-prefix}-print:before { content: fa-content($fa-var-print); }
+.#{$fa-css-prefix}-print-slash:before { content: fa-content($fa-var-print-slash); }
+.#{$fa-css-prefix}-procedures:before { content: fa-content($fa-var-procedures); }
 // .#{$fa-css-prefix}-product-hunt:before { content: fa-content($fa-var-product-hunt); }
-// .#{$fa-css-prefix}-project-diagram:before { content: fa-content($fa-var-project-diagram); }
+.#{$fa-css-prefix}-project-diagram:before { content: fa-content($fa-var-project-diagram); }
 // .#{$fa-css-prefix}-pumpkin:before { content: fa-content($fa-var-pumpkin); }
 // .#{$fa-css-prefix}-pushed:before { content: fa-content($fa-var-pushed); }
 // .#{$fa-css-prefix}-puzzle-piece:before { content: fa-content($fa-var-puzzle-piece); }
 // .#{$fa-css-prefix}-python:before { content: fa-content($fa-var-python); }
 // .#{$fa-css-prefix}-qq:before { content: fa-content($fa-var-qq); }
 // .#{$fa-css-prefix}-qrcode:before { content: fa-content($fa-var-qrcode); }
-// .#{$fa-css-prefix}-question:before { content: fa-content($fa-var-question); }
-// .#{$fa-css-prefix}-question-circle:before { content: fa-content($fa-var-question-circle); }
-// .#{$fa-css-prefix}-question-square:before { content: fa-content($fa-var-question-square); }
+.#{$fa-css-prefix}-question:before { content: fa-content($fa-var-question); }
+.#{$fa-css-prefix}-question-circle:before { content: fa-content($fa-var-question-circle); }
+.#{$fa-css-prefix}-question-square:before { content: fa-content($fa-var-question-square); }
 // .#{$fa-css-prefix}-quidditch:before { content: fa-content($fa-var-quidditch); }
 // .#{$fa-css-prefix}-quinscape:before { content: fa-content($fa-var-quinscape); }
 // .#{$fa-css-prefix}-quora:before { content: fa-content($fa-var-quora); }
@@ -1220,22 +1220,22 @@
 // .#{$fa-css-prefix}-reddit:before { content: fa-content($fa-var-reddit); }
 // .#{$fa-css-prefix}-reddit-alien:before { content: fa-content($fa-var-reddit-alien); }
 // .#{$fa-css-prefix}-reddit-square:before { content: fa-content($fa-var-reddit-square); }
-// .#{$fa-css-prefix}-redo:before { content: fa-content($fa-var-redo); }
-// .#{$fa-css-prefix}-redo-alt:before { content: fa-content($fa-var-redo-alt); }
-// .#{$fa-css-prefix}-registered:before { content: fa-content($fa-var-registered); }
+.#{$fa-css-prefix}-redo:before { content: fa-content($fa-var-redo); }
+.#{$fa-css-prefix}-redo-alt:before { content: fa-content($fa-var-redo-alt); }
+.#{$fa-css-prefix}-registered:before { content: fa-content($fa-var-registered); }
 // .#{$fa-css-prefix}-rendact:before { content: fa-content($fa-var-rendact); }
 // .#{$fa-css-prefix}-renren:before { content: fa-content($fa-var-renren); }
 // .#{$fa-css-prefix}-repeat:before { content: fa-content($fa-var-repeat); }
 // .#{$fa-css-prefix}-repeat-1:before { content: fa-content($fa-var-repeat-1); }
 // .#{$fa-css-prefix}-repeat-1-alt:before { content: fa-content($fa-var-repeat-1-alt); }
 // .#{$fa-css-prefix}-repeat-alt:before { content: fa-content($fa-var-repeat-alt); }
-// .#{$fa-css-prefix}-reply:before { content: fa-content($fa-var-reply); }
-// .#{$fa-css-prefix}-reply-all:before { content: fa-content($fa-var-reply-all); }
-// .#{$fa-css-prefix}-replyd:before { content: fa-content($fa-var-replyd); }
+.#{$fa-css-prefix}-reply:before { content: fa-content($fa-var-reply); }
+.#{$fa-css-prefix}-reply-all:before { content: fa-content($fa-var-reply-all); }
+.#{$fa-css-prefix}-replyd:before { content: fa-content($fa-var-replyd); }
 // .#{$fa-css-prefix}-researchgate:before { content: fa-content($fa-var-researchgate); }
 // .#{$fa-css-prefix}-resolving:before { content: fa-content($fa-var-resolving); }
-// .#{$fa-css-prefix}-retweet:before { content: fa-content($fa-var-retweet); }
-// .#{$fa-css-prefix}-retweet-alt:before { content: fa-content($fa-var-retweet-alt); }
+.#{$fa-css-prefix}-retweet:before { content: fa-content($fa-var-retweet); }
+.#{$fa-css-prefix}-retweet-alt:before { content: fa-content($fa-var-retweet-alt); }
 // .#{$fa-css-prefix}-rev:before { content: fa-content($fa-var-rev); }
 // .#{$fa-css-prefix}-ribbon:before { content: fa-content($fa-var-ribbon); }
 // .#{$fa-css-prefix}-ring:before { content: fa-content($fa-var-ring); }
@@ -1315,11 +1315,11 @@
 // .#{$fa-css-prefix}-shuttlecock:before { content: fa-content($fa-var-shuttlecock); }
 // .#{$fa-css-prefix}-sigma:before { content: fa-content($fa-var-sigma); }
 // .#{$fa-css-prefix}-sign:before { content: fa-content($fa-var-sign); }
-// .#{$fa-css-prefix}-sign-in:before { content: fa-content($fa-var-sign-in); }
-// .#{$fa-css-prefix}-sign-in-alt:before { content: fa-content($fa-var-sign-in-alt); }
+.#{$fa-css-prefix}-sign-in:before { content: fa-content($fa-var-sign-in); }
+.#{$fa-css-prefix}-sign-in-alt:before { content: fa-content($fa-var-sign-in-alt); }
 // .#{$fa-css-prefix}-sign-language:before { content: fa-content($fa-var-sign-language); }
-// .#{$fa-css-prefix}-sign-out:before { content: fa-content($fa-var-sign-out); }
-// .#{$fa-css-prefix}-sign-out-alt:before { content: fa-content($fa-var-sign-out-alt); }
+.#{$fa-css-prefix}-sign-out:before { content: fa-content($fa-var-sign-out); }
+.#{$fa-css-prefix}-sign-out-alt:before { content: fa-content($fa-var-sign-out-alt); }
 // .#{$fa-css-prefix}-signal:before { content: fa-content($fa-var-signal); }
 // .#{$fa-css-prefix}-signal-1:before { content: fa-content($fa-var-signal-1); }
 // .#{$fa-css-prefix}-signal-2:before { content: fa-content($fa-var-signal-2); }
@@ -1501,11 +1501,11 @@
 .#{$fa-css-prefix}-ticket:before { content: fa-content($fa-var-ticket); }
 .#{$fa-css-prefix}-ticket-alt:before { content: fa-content($fa-var-ticket-alt); }
 // .#{$fa-css-prefix}-tilde:before { content: fa-content($fa-var-tilde); }
-// .#{$fa-css-prefix}-times:before { content: fa-content($fa-var-times); }
-// .#{$fa-css-prefix}-times-circle:before { content: fa-content($fa-var-times-circle); }
-// .#{$fa-css-prefix}-times-hexagon:before { content: fa-content($fa-var-times-hexagon); }
-// .#{$fa-css-prefix}-times-octagon:before { content: fa-content($fa-var-times-octagon); }
-// .#{$fa-css-prefix}-times-square:before { content: fa-content($fa-var-times-square); }
+.#{$fa-css-prefix}-times:before { content: fa-content($fa-var-times); }
+.#{$fa-css-prefix}-times-circle:before { content: fa-content($fa-var-times-circle); }
+.#{$fa-css-prefix}-times-hexagon:before { content: fa-content($fa-var-times-hexagon); }
+.#{$fa-css-prefix}-times-octagon:before { content: fa-content($fa-var-times-octagon); }
+.#{$fa-css-prefix}-times-square:before { content: fa-content($fa-var-times-square); }
 // .#{$fa-css-prefix}-tint:before { content: fa-content($fa-var-tint); }
 // .#{$fa-css-prefix}-tint-slash:before { content: fa-content($fa-var-tint-slash); }
 // .#{$fa-css-prefix}-tire:before { content: fa-content($fa-var-tire); }
