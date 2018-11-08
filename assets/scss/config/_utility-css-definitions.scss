@@ -117,6 +117,19 @@ $valueParams :(
 		3:5px,
 		4:.5rem,
 		5:1rem,
+	),
+	shadow:(
+		0:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		1:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		2:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		3:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		4:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		5:2px 2px 8px 1px rgba(0, 0, 0, 0.65),
+		n1:inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
+		n2:inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
+		n3:inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
+		n4:inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
+		n5:inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
 	)
 );
 
@@ -292,6 +305,12 @@ $style-definition:(
 		css-style:'display',
 		long-name:'display',
 		unit: map-get($valueParams, 'display')
+	),
+	shadow:(
+		short-name:'.shadow',
+		css-name:'box-shadow',
+		long-name:'.box-shadow',
+		unit:map-get($valueParams,'shadow')
 	)		
 );
 // styleguide:ignore:end
