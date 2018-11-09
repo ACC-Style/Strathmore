@@ -6,14 +6,11 @@ var autoprefixer = require('autoprefixer');
 var pixrem = require('pixrem');
 var cssnano = require('cssnano');
 var sourcemaps = require('gulp-sourcemaps');
-var styleguide = require('sc5-styleguide');
-var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
 // Paths
 
 var PATHS ={
     SRC:'./',
-    STYLEGUIDE:'./Strathmore',
     DIST:'./dist',
     CSS :'assets/css/**/*.css',
     SCSS: 'assets/scss/**/*.scss',
@@ -21,7 +18,6 @@ var PATHS ={
     FONTS:'assets/fonts/*',
     IMG:'assets/img/*',
     ICONS:'assets/icons/*',
-    STYLEGUIDE_OUTPUT : 'Strathmore'
 };
 
 
@@ -33,7 +29,6 @@ gulp.task('serve',['style'], function () {
     open: "local",
     startPath: PATHS.STYLEGUIDE_OUTPUT + "/index.html"
   });
-   gulp.watch(PATHS.STYLEGUIDE_OUTPUT +"/**/*.css" ).on('change', browserSync.reload);
 });
 
 // Style Tesks
@@ -78,38 +73,8 @@ gulp.task('images', function(){
   console.log('Gulp: This is pretty what happens when I smash it!');
 });
 
-// Style Guide Tasks. Build and Copy files for the style guide in local  
-gulp.task('styleguide:generate', function() {
-	console.log('Gulp Style Guide Tasks');
-	console.log('Gulp: Build the Documentation!');
-  return gulp.src( SCSS_PATH + '*/**.scss' )
-    .pipe(styleguide.generate({
-        title: 'Strathmore - Enteprise UI of the ACC',
-        server: false,
-        rootPath: PATHS.STYLEGUIDE_OUTPUT,
-        // extraHead: '<link rel="stylesheet" href="assets/fontawesome-pro/css/all.css" crossorigin="anonymous">',
-        appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
-        overviewPath: 'README.md',
-        sideNav: true,
-        showReferenceNumbers: true
-      }))
-    .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
-});
 
-gulp.task('styleguide:applystyles', function() {
-	console.log('Gulp Style Guide Tasks');
-	console.log('Gulp: Write it down and record it!');
-  return gulp.src([
-      './assets/scss/index.scss',
-      './assets/fontawesome-pro/scss/fontawesome.scss',
-      './assets/fontawesome-pro/scss/regular.scss',
-      './assets/fontawesome-pro/scss/solid.scss',
-      './assets/fontawesome-pro/scss/light.scss'
-    ])
-    .pipe(sass().on('error', sass.logError))
-    .pipe(styleguide.applyStyles())
-    .pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
-});
+
 
 
 
@@ -133,15 +98,10 @@ gulp.task('addAutomation',function(){
 
 // Watch Tasks
 // Watch Tasks
-gulp.task('watch', ['styleguide'], function () {
+gulp.task('watch', function () {
   console.log('Gulp Watch Tasks');
   console.log('Gulp: I will be watching you.... even when you sleep');
-  gulp.watch([PATHS.SRC + PATHS.SCSS], ['styleguide']);
- 
-
+  gulp.watch([PATHS.SRC + PATHS.SCSS], ['style']);
 });
 // Default
-gulp.task('default', ['styleguide', 'serve', 'watch']);
-gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles'])
-gulp.task('build', ['watch']);
-gulp.task('dist',['style']);
+gulp.task('default', ['style', 'watch']);

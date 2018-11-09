@@ -115,22 +115,20 @@
  
   Sometimes is is needed to add an underline on a peice of text when it hovers adding `hover` infront of the type of underline you would like gives that type of underline to the text when hoverd.
 
-  underline - classic anchor text
-  dotted - great for popups or hint text
-  double - extra loud underlines for the really important links or modals
-  dashed - extra loud dots for info and hint texts reveals.
+  underline.color_primary - classic anchor text
+  dotted.color_warning - great for popups or hint text
+  double.color_highlight - extra loud underlines for the really important links or modals
+  dashed.color_accent - extra loud dots for info and hint texts reveals.
 
   markup:
   <p class="font_1">
     Lorem ipsum dolor sit amet, 
-    <span class="color_primary hover:underline hover:primary-n3">consectetur</span>
+    <span class="hover:{$modifiers} hover:primary-n3">consectetur</span>
     adipisicing elit. 
-    <span class="color_warning hover:dotted hover:warning-n3">Tenetur, similique</span>. 
+    <span class="hover:{$modifiers} hover:primary-n3">Tenetur, similique</span>. 
     Sapiente facilis ipsam unde, dolorem illo ullam, tempore quos maiores quaerat quibusdam voluptatibus laboriosam. Nisi 
-    <span class="color_alert hover:dashed hover:alert-n3">harum magni</span>
-        adipisicing elit. 
-    <span class="color_info hover:double hover:info-n3">Tenetur, similique</span>. 
-    aut nulla et.
+    <span class="hover:{$modifiers} hover:primary-n3">harum magni</span>
+        adipisicing elit aut nulla et.
   </p>
 
  
