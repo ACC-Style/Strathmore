@@ -48,12 +48,17 @@ i.icon-toggle_plus-minus:before {
 }
 i.icon-toggle_chevron-double-up-down:before {
     @extend %icon-toggle-space;
-
     content: "\f103";
-    
-
     .is-active & {
         content: '\f325'
+    }
+}
+
+i.icon-toggle_chevron-double-left-right:before {
+    @extend %icon-toggle-space;
+    content: "\f324";
+   .is-active & {
+        content: '\f323'
     }
 }
 

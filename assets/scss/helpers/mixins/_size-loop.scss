@@ -1,20 +1,21 @@
 $debug-trace: true !default;
 @mixin loop-style($key, $breakpoint:"", $important:""){
-		$short-name: 	get-css-shortname($key);
-		$long-name: 	get-css-longname($key);
-		$style: 		get-css-style($key);
-		$sizes: 		get-css-unit($key);
-		@each $unit, $val in $sizes{
-		#{ $long-name }_#{ $unit }#{$breakpoint},
-		#{ $short-name }_#{ $unit }#{$breakpoint}
-			{
+	$short-name: 	get-css-shortname($key);
+	$long-name: 	get-css-longname($key);
+	$styles: 		get-css-style($key);
+	$sizes: 		get-css-unit($key);
+	@each $unit, $val in $sizes{
+	#{ $long-name }_#{ $unit }#{$breakpoint},
+	#{ $short-name }_#{ $unit }#{$breakpoint}
+		{
+			@each $style in $styles{
 				#{$style}: $val #{$important};
 			}
-		 }
-		@if $debug-trace {
-			@debug "Loop Style Running #{$key}";
-			@debug "Short Name #{$short-name}";
-			@debug "Long Name #{$long-name}";
 		}
-
+		}
+	@if $debug-trace {
+		@debug "Loop Style Running #{$key}";
+		@debug "Short Name #{$short-name}";
+		@debug "Long Name #{$long-name}";
+	}
 }
