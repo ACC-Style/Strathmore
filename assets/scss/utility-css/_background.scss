@@ -1,4 +1,3 @@
-
 /*
   Background Colors
  
@@ -19,7 +18,7 @@
   Styleguide 104.1
  
  */
- /*
+/*
   Background Color Shades
  
   Background colors can be shifted by appending a modifier back_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
@@ -54,17 +53,21 @@
  
  */
 
-@each $color-name, $color in $acc-palette{
-  	@include color-loop(background-color, $color-name, $color);
+@each $color-name, $color in $acc-palette {
+	@include color-loop(background-color, $color-name, $color);
 }
 
-.back_white{
-  background-color: $white;
+.bg_wht {
+	background-color: $white;
 }
-.back_black{
-  background-color: $black;
+.bg_blk {
+	background-color: $black;
 }
-
-
-
-
+@if $short-names-only {
+	.back_white {
+		@extend .bg_wht;
+	}
+	.back_black {
+		@extend .bg_blk;
+	}
+}

@@ -1,29 +1,29 @@
- /*
+/*
   Hover:Backgrounds
  
-  hovers can easily be added to objects by adding `hover:` in front of the background color utility like `hover:back_primary`
+  hovers can easily be added to objects by adding `hover:` in front of the background color utility like `hover:bg_primary`
 
-  background-color_alert              - background color modified light to dark
-  background-color_primary              - background color modified light to dark
-  background-color_secondary              - background color modified light to dark
-  background-color_info              - background color modified light to dark
-  background-color_highlight              - background color success color
-  background-color_success              - background color modified light to dark
-  background-color_warning              - background color modified light to dark
+  bg_alert              - background color modified light to dark
+  bg_primary              - background color modified light to dark
+  bg_secondary              - background color modified light to dark
+  bg_info              - background color modified light to dark
+  bg_highlight              - background color success color
+  bg_success              - background color modified light to dark
+  bg_warning              - background color modified light to dark
 
   markup:
   <div class="grid-x margin_5">
-    <div class="hover:{$modifiers}-5 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">5</div>
-    <div class="hover:{$modifiers}-4 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">4</div>
-    <div class="hover:{$modifiers}-3 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">3</div>
-    <div class="hover:{$modifiers}-2 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">2</div>
-    <div class="hover:{$modifiers}-1 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">1</div>
-    <div class="hover:{$modifiers}-0 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2">0</div>
-    <div class="hover:{$modifiers}-n1 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n1</div>
-    <div class="hover:{$modifiers}-n2 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n2</div>
-    <div class="hover:{$modifiers}-n3 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n3</div>
-    <div class="hover:{$modifiers}-n4 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n4</div>
-    <div class="hover:{$modifiers}-n5 cell auto text-center border-width_1 border_solid border_secondary-4 padding_2 H_text_white">n5</div>
+    <div class="hover:{$modifiers}-5 cell auto text-center br_1 br_solid br_secondary-4 p_2">5</div>
+    <div class="hover:{$modifiers}-4 cell auto text-center br_1 br_solid br_secondary-4 p_2">4</div>
+    <div class="hover:{$modifiers}-3 cell auto text-center br_1 br_solid br_secondary-4 p_2">3</div>
+    <div class="hover:{$modifiers}-2 cell auto text-center br_1 br_solid br_secondary-4 p_2">2</div>
+    <div class="hover:{$modifiers}-1 cell auto text-center br_1 br_solid br_secondary-4 p_2">1</div>
+    <div class="hover:{$modifiers}-0 cell auto text-center br_1 br_solid br_secondary-4 p_2">0</div>
+    <div class="hover:{$modifiers}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n1</div>
+    <div class="hover:{$modifiers}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n2</div>
+    <div class="hover:{$modifiers}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n3</div>
+    <div class="hover:{$modifiers}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n4</div>
+    <div class="hover:{$modifiers}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n5</div>
   </div>
 
  
@@ -31,47 +31,46 @@
  
  */
 
-%hover_transition,*[class^="hover"],*[class^=" hover:"]{
-  transition: all ease-out .75s; // used for backgrounds
+%hover_transition,
+*[class^="hover"],
+*[class^=" hover:"] {
+	transition: all ease-out 0.75s; // used for backgrounds
 }
-%hover_transition-in{
-  transition: all ease-in .5s; // used for text
-}
-
-@each $color-name, $color in $acc-palette{
-    @include hover-loop(hover-bg, $color-name, $color);
-    @include hover-loop(hover-text, $color-name, $color);
-
+%hover_transition-in {
+	transition: all ease-in 0.5s; // used for text
 }
 
+@each $color-name, $color in $acc-palette {
+	@include hover-loop(hover-bg, $color-name, $color);
+	@include hover-loop(hover-text, $color-name, $color);
+}
 
-
- /*
+/*
   Hover: Text 
  
   hovers can easily be added to change the text color by adding `hover:` in front of the text color utility like `hover:primary`
 
-  color_primary              - text color modified light to dark
-  color_secondary              - text color modified light to dark
-  color_info              - text color modified light to dark
-  color_highlight              - text color success color
-  color_success              - text color modified light to dark
-  color_warning              - text color modified light to dark
-  color_alert              - text color modified light to dark
+  c_primary              - text color modified light to dark
+  c_secondary              - text color modified light to dark
+  c_info              - text color modified light to dark
+  c_highlight              - text color success color
+  c_success              - text color modified light to dark
+  c_warning              - text color modified light to dark
+  c_alert              - text color modified light to dark
 
   markup:
   <div class="grid-x margin_5">
-    <div class="hover:{$modifiers}-5 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">5</div>
-    <div class="hover:{$modifiers}-4 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">4</div>
-    <div class="hover:{$modifiers}-3 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">3</div>
-    <div class="hover:{$modifiers}-2 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">2</div>
-    <div class="hover:{$modifiers}-1 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">1</div>
-    <div class="hover:{$modifiers}-0 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1">0</div>
-    <div class="hover:{$modifiers}-n1 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 ">n1</div>
-    <div class="hover:{$modifiers}-n2 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 ">n2</div>
-    <div class="hover:{$modifiers}-n3 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 ">n3</div>
-    <div class="hover:{$modifiers}-n4 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 ">n4</div>
-    <div class="hover:{$modifiers}-n5 cell auto font_bold back_secondary-3 font_4 font_slab text-center border-width_1 border-solid border_secondary-4 padding_1 ">n5</div>
+    <div class="hover:{$modifiers}-5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="hover:{$modifiers}-4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="hover:{$modifiers}-3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="hover:{$modifiers}-2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="hover:{$modifiers}-1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="hover:{$modifiers}-0 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="hover:{$modifiers}-n1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n1</div>
+    <div class="hover:{$modifiers}-n2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n2</div>
+    <div class="hover:{$modifiers}-n3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n3</div>
+    <div class="hover:{$modifiers}-n4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n4</div>
+    <div class="hover:{$modifiers}-n5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n5</div>
   </div>
 
  
@@ -79,55 +78,65 @@
  
  */
 
+.hover\:color_white.hover\:color_black,
+.hover\:c_blk,
+.hover\:c_wht {
+	@extend %hover_transition-in;
+}
+.hover\:color_white:hover,
+.hover\:c_wht:hover {
+	color: white !important;
+}
+.hover\:color_black:hover,
+.hover\:c_blk:hover {
+	color: black !important;
+}
+%hover_text-decoration {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.hover\:underline {
+	@extend %hover_text-decoration;
+}
+.hover\:dashed {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: dashed;
+	}
+}
+.hover\:double {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: double;
+	}
+}
+.hover\:dotted {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: dotted;
+	}
+}
 
-
-.hover\:color_white.hover\:color_black,.hover\:black,.hover\:white{
-  @extend %hover_transition-in;
-
-}
-.hover\:color_white:hover,.hover\:white:hover{
-  color:white !important;
-}
-.hover\:color_black:hover,.hover\:black:hover{
-  color:black !important;
-}
-%hover_text-decoration{text-decoration: none;
-  &:hover{text-decoration: underline;}
-}
-.hover\:underline{
-  @extend %hover_text-decoration;
-}
-.hover\:dashed{
-  @extend %hover_text-decoration;
-  &:hover{text-decoration-style: dashed;}
-}
-.hover\:double{
-  @extend %hover_text-decoration;
-  &:hover{text-decoration-style: double;}
-}
-.hover\:dotted{
-  @extend %hover_text-decoration;
-  &:hover{text-decoration-style: dotted;}
-}
-
- /*
+/*
   Hover: Underline 
  
   Sometimes is is needed to add an underline on a peice of text when it hovers adding `hover` infront of the type of underline you would like gives that type of underline to the text when hoverd.
 
-  underline.color_primary - classic anchor text
-  dotted.color_warning - great for popups or hint text
-  double.color_highlight - extra loud underlines for the really important links or modals
-  dashed.color_accent - extra loud dots for info and hint texts reveals.
+  underline.c_primary - classic anchor text
+  dotted.c_warning - great for popups or hint text
+  double.c_highlight - extra loud underlines for the really important links or modals
+  dashed.c_accent - extra loud dots for info and hint texts reveals.
 
   markup:
   <p class="font_1">
     Lorem ipsum dolor sit amet, 
-    <span class="hover:{$modifiers} hover:primary-n3">consectetur</span>
+    <span class="hover:{$modifiers} hover:c_primary-n3">consectetur</span>
     adipisicing elit. 
-    <span class="hover:{$modifiers} hover:primary-n3">Tenetur, similique</span>. 
+    <span class="hover:{$modifiers} hover:c_primary-n3">Tenetur, similique</span>. 
     Sapiente facilis ipsam unde, dolorem illo ullam, tempore quos maiores quaerat quibusdam voluptatibus laboriosam. Nisi 
-    <span class="hover:{$modifiers} hover:primary-n3">harum magni</span>
+    <span class="hover:{$modifiers} hover:c_primary-n3">harum magni</span>
         adipisicing elit aut nulla et.
   </p>
 
