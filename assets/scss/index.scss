@@ -3,8 +3,8 @@
 	Version 1.1
 **/
 // styleguide:ignore:start
-$debug-trace:false;
-$short-names-only:false;
+$debug-trace: false;
+$short-names-only: true;
 $ms-base: 1rem; // needs to be in em's
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";
@@ -25,6 +25,3 @@ $ms-base: 1rem; // needs to be in em's
 @import "reciepes/reciepes";
 //StyleGuide
 @import "styleguide/styleguide";
-
-
-
