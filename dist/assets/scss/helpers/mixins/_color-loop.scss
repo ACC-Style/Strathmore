@@ -1,8 +1,8 @@
 $debug-trace: true !default;
 
 @mixin color-loop($key, $color-name, $color){
-    $white-mix:     map-get($values, percent-positive);
-    $black-mix:     map-get($values, percent-negative);
+    $white-mix:     map-get($valueParams, percent-positive);
+    $black-mix:     map-get($valueParams, percent-negative);
 	  $short-name:    #{ get-css-shortname($key) }_#{ $color-name }; 	 
   	$long-name:     #{ get-css-longname($key)  }_#{  $color-name };	
   	$style:			    get-css-style($key); 
@@ -24,14 +24,14 @@ $debug-trace: true !default;
   		  }
       }
 }
-div[class^="hover_"]{
+div[class^="hover"]{
      cursor: pointer;
 }
 
 
 @mixin hover-loop($key, $color-name, $color){
-    $white-mix:     map-get($values, percent-positive);
-    $black-mix:     map-get($values, percent-negative);
+    $white-mix:     map-get($valueParams, percent-positive);
+    $black-mix:     map-get($valueParams, percent-negative);
     $short-name:    #{ get-css-shortname($key) }_#{ $color-name };   
     $long-name:     #{ get-css-longname($key)  }_#{  $color-name }; 
     $style:         get-css-style($key); 

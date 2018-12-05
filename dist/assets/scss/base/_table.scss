@@ -243,8 +243,6 @@ Table (States Cells Recipe)
 Example of utilities classes to show cell states
 
 
-
-
 markup:
 <table class="table">
   <tr>
@@ -288,5 +286,88 @@ markup:
 
 Styleguide 10.2.5
 */
+
+
+/*
+
+Table Row(Seperator + State Recipe)
+
+Example of utilities classes to show seperator and state
+
+
+
+markup:
+<table class="table stripped">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_info-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_info font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With Info</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_success-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_success font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With success</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr class="back_alert-1 border_solid border-left-width_0 border-right-width_0 border-width_1 border border_alert font-weight_bold font-size_n2 text-left color_white">
+      <td colspan='3' class="padding_2">Separator With Alert</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+   <tr class="back_warning-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_warning font-weight_bold font-size_n2 text-left">
+      <td colspan='3' class="padding_2">Separator With warning</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+   <tr class="back_secondary-3 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_secondary font-weight_bold font-size_n2 text-left">
+      <td colspan='3' class="padding_2">Separator With disabled</td>
+    </tr>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.6
+*/
+
+
+
+
+
+
+
+
 
 

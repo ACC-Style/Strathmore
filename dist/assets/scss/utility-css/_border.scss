@@ -168,13 +168,13 @@
  */
 
 
-@include size-loop(border-radius, border-radius,1);
-@include size-loop(border-top-right-radius, border-radius,1);
-@include size-loop(border-top-left-radius, border-radius,1);
-@include size-loop(border-bottom-right-radius, border-radius,1);
-@include size-loop(border-bottom-left-radius, border-radius,1);
+@include loop-style(border-radius);
+@include loop-style(border-top-right-radius);
+@include loop-style(border-top-left-radius);
+@include loop-style(border-bottom-right-radius);
+@include loop-style(border-bottom-left-radius);
 
-@each  $val-name, $val in  map-get($values,border-radius){
+@each  $val-name, $val in  map-get($valueParams,radius){
   .#{$val-name}{
       &,.switch-paddle,.switch-paddle::after{
         border-radius: $val;
@@ -243,11 +243,11 @@
  */
 
 
-@include size-loop(border-width, positive,.5rem);
-@include size-loop(border-top-width, positive,.5rem);
-@include size-loop(border-right-width, positive,.5rem);
-@include size-loop(border-left-width, positive,.5rem);
-@include size-loop(border-bottom-width, positive,.5rem);
+@include loop-style(border-width);
+@include loop-style(border-top-width);
+@include loop-style(border-right-width);
+@include loop-style(border-left-width);
+@include loop-style(border-bottom-width);
 
 
 
