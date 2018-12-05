@@ -92,13 +92,13 @@
 }
 @mixin font-bold {
     font-family:  'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -.25px;
 
 }
 @mixin font-italic-bold {
     font-family: 'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: italic;
 
 }

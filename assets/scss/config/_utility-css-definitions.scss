@@ -123,6 +123,11 @@ $valueParams: (
     3: 5px,
     4: 0.5rem,
     5: 1rem
+  ), 
+  font-family: (
+    slab: ('Roboto Slab', 'Times New Roman',  'Lucida Bright', Georgia, serif),
+    display:('Maven Pro','Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif),
+    copy:('Muli','Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif)
   ),
   shadow: (
     0: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
@@ -264,12 +269,22 @@ $style-definition: (
     unit: map-get($valueParams, "line-height")
   ),
   font-size: (
-    short-name: ".fs",
+    short-name: ".font",
     css-style: (
       "font-size"
     ),
     long-name: ".font-size"
+
   ),
+  font-family:(
+    short-name:"font",
+    css-style: (
+      "font-family"
+    ),
+    long-name:".font-family",
+    unit: map-get($valueParams, "font-family")
+  )
+  ,
   color: (
     short-name: ".c",
     css-style: (
@@ -350,7 +365,7 @@ $style-definition: (
     long-name: ".width"
   ),
   border-width: (
-    short-name: ".bw",
+    short-name: ".br",
     css-style: (
       "border-width"
     ),
@@ -358,7 +373,7 @@ $style-definition: (
     unit: map-get($valueParams, border-width)
   ),
   border-top-width: (
-    short-name: ".bw-t",
+    short-name: ".br-t",
     css-style: (
       "border-top-width"
     ),
@@ -366,7 +381,7 @@ $style-definition: (
     unit: map-get($valueParams, border-width)
   ),
   border-right-width: (
-    short-name: ".bw-r",
+    short-name: ".br-r",
     css-style: (
       "border-right-width"
     ),
@@ -374,7 +389,7 @@ $style-definition: (
     unit: map-get($valueParams, border-width)
   ),
   border-left-width: (
-    short-name: ".bw-l",
+    short-name: ".br-l",
     css-style: (
       "border-left-width"
     ),
@@ -382,7 +397,7 @@ $style-definition: (
     unit: map-get($valueParams, border-width)
   ),
   border-bottom-width: (
-    short-name: ".bw-b",
+    short-name: ".br-b",
     css-style: (
       "border-bottom-width"
     ),

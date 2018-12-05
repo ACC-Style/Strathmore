@@ -4,7 +4,7 @@
 **/
 // styleguide:ignore:start
 $debug-trace:false;
-$short-names-only:false;
+$short-names-only:true;
 $ms-base: 1rem; // needs to be in em's
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";

@@ -15,17 +15,22 @@
 
   Styleguide 102.1
  */
-.font_slab,.font-family_slab{
-   font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
-}
+// .font_slab{
+//    font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
+// }
 
-.font_normal,.font-family_normal{
-    font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-}
-.font_display,.font-family_display{
-    font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-}
-
+// .font_copy{
+//     font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+// }
+// .font_display,{
+//     font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+// }
+// @if ($short-names-only == false){
+// .font-family_slab{}
+// .font-family_copy{}
+// .font-family_display{}
+// }
+@include loop-style(font-family);
 /*
   Font Style
 
@@ -50,14 +55,20 @@
 
 
 
-@include size-loop(line-height, line-height, 1);
+@include loop-style(line-height);
 
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(color, $color-name,$hex-value);
 }
-.color_white{color:$white;}
-.color_black{color:$black;}
-.color_inherit{color:inherit;}
+.c_wht{color:$white;}
+.c_blk{color:$black;}
+.c_inherit{color:inherit;}
+@if ($short-names-only == false){
+  .color_white{@extend .c_wht;}
+  .color_black{@extend .c_blk;}
+  .color_inherit{@extend .c_inherit;}
+}
+
 
 
 
@@ -81,8 +92,8 @@
  */
 .font-weight_light,.font_light{ font-weight: 100 !important;}
 .font-weight_regular,.font_regular{ font-weight: 400 !important;}
-.font-weight_bold,.font_bold{ font-weight: 900 !important;}
-
+.font-weight_bold,.font_bold{ font-weight: 700 !important;}
+.font-weight_xbold,.font_xbold{ font-weight: 900 !important;}
 
 
 /*
@@ -162,4 +173,40 @@
 .text-demo{white-space: pre-wrap;  letter-spacing: -.1em;}
 .text_lowercase{ text-transform: lowercase;}
 .text_uppercase{ text-transform: uppercase;}
-.text-underline{ text-decoration: underline;}
+.text_underline{ text-decoration: underline;}
+.text_right{text-align: right !important;}
+.text_center {
+  text-align: center !important;
+}
+.text_left {
+  text-align: left !important;
+}
+/*
+  Font Color
+
+  You can change the color of the text with some simple use classes.
+
+
+
+  .color_white - text that's white
+  .color_black -  text that's black
+  .color_primary -  text that's primary
+  .color_alert -  text that's alert
+  .color_info -  text that's info
+  .color_inherit - text that inherits from its parent
+
+  markup:
+  <div class="{$modifiers} font-family_normal font_2 back_secondary-4 padding_3">
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+
+  Styleguide 82.4
+ */
+ @each $color-name, $hex-value in $acc-palette{
+  @include color-loop(color, $color-name,$hex-value);
+}
+.color_white{color:$white;}
+.color_black{color:$black;}
+.color_inherit{color:inherit;}
