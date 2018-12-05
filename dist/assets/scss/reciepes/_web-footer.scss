@@ -7,7 +7,11 @@
     markup:
         <div class="grid-container footer">
             <div class="grid-y">
+<<<<<<< HEAD
                 <div class="cell padding-top_3 padding-bottom_3 padding_4 grid-x border-top-width_3 border_solid border_secondary-n1 color_secondary-1 texture_light back_secondary-1">
+=======
+                <div class="cell padding-top_3 padding-bottom_3 padding_4 grid-x border-top-width_3 br_solid border_secondary-n1 color_secondary-1 texture_light back_secondary-1">
+>>>>>>> master
                     <sg-insert>0.5</sg-insert>
                     <!-- Logo -->
                 </div>
@@ -60,6 +64,7 @@
 	Links to acc-websites
 
 	markup:
+<<<<<<< HEAD
     <section class="acc-websites row color_white">
         <h4 class="font_slab padding-left_4 padding-right_4 ">Improving Cardiovascular Care</h4>
         <nav class="nav-list small">
@@ -92,6 +97,40 @@
                     <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 color_white padding-left_4 padding-right_4 padding_3 display_block" href="http://www.onlinejacc.org/">
                     <span class="">JACC</span>
                     <i class="float-right fa color_white fa-external-link-square "></i>
+=======
+    <section class="acc-websites row c_white">
+        <h4 class="font_slab padding-left_4 padding-right_4 ">Improving Cardiovascular Care</h4>
+        <nav class="nav-list small">
+            <ul class="no-bullet lh_1 font_0 br_solid border-top-width_1  br_white-8">
+                <li class="c_white br_solid  br_0 br-b_1  br_white-8 ">
+                    <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 c_white padding-left_4 padding-right_4 padding_3 display_block" href="http://www.acc.org">
+                    <span class="">Acc</span>
+                    <i class="float-right fa c_white hover:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-8 ">
+                    <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 c_white padding-left_4 padding-right_4 padding_3 display_block" href="https://cvquality.acc.org/Accreditation?">
+                    <span class="">Accreditation Services</span>
+                    <i class="float-right fa c_white hover:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-8 ">
+                    <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 c_white padding-left_4 padding-right_4 padding_3 display_block" href="http://www.ncdr.com">
+                    <span class="">NCDR</span>
+                    <i class="float-right fa c_white hover:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-8 ">
+                    <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 c_white padding-left_4 padding-right_4 padding_3 display_block" href="http://www.cardiosmart.org">
+                    <span class="">CardioSmart</span>
+                    <i class="float-right fa c_white hover:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-8 ">
+                    <a target="_blank" class="hover:back_secondary-1  hover:back_secondary-1 c_white padding-left_4 padding-right_4 padding_3 display_block" href="http://www.onlinejacc.org/">
+                    <span class="">JACC</span>
+                    <i class="float-right fa c_white fa-external-link-square "></i>
+>>>>>>> master
                     </a>
                 </li>
             </ul>
@@ -115,10 +154,17 @@
 	The social networks that the acc is a part of 
 
 	markup:
+<<<<<<< HEAD
 	<h4 class="font_slab color_white">Stay Connected</h4>
 	<ul class="grid-x social-bar no-bullet color_white hover:color_white">
 	<li class="auto cell margin-right_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-twitter font-size_2 "></i></a></li>
 	<li class="auto cell margin-right_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-facebook font-size_2 "></i></a></li>
+=======
+	<h4 class="font_slab c_white">Stay Connected</h4>
+	<ul class="grid-x social-bar no-bullet c_white hover:c_white">
+	<li class="auto cell margin-right_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-twitter-square font-size_2 "></i></a></li>
+	<li class="auto cell margin-right_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-facebook-square font-size_2 "></i></a></li>
+>>>>>>> master
 	<li class="auto cell margin-right_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-linkedin font-size_2 "></i></a></li>
 	<li class="auto cell margin-right_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-google-plus font-size_2 "></i></a></li>
 	<li class="auto cell margin-right_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button margin-bottom_0 button expanded text_right hover:back_primary-n1 text-right"><i class="fab fa-youtube font-size_2 "></i></a></li>
@@ -155,7 +201,11 @@
 	Address and contact information for Heart House
 
 	markup:
+<<<<<<< HEAD
     <section class="address color_white">
+=======
+    <section class="address c_white">
+>>>>>>> master
         <h3 class="font_slab font-size_2">American College of Cardiology</h3>
         <address>
             <!-- http://microformats.org/wiki/hcard -->
@@ -174,7 +224,11 @@
                         <span class="postal-code">20037</span>
                     </li>
                     <li class="margin-bottom_1 margin-bottom_3-medium font-size_0 font_normal">
+<<<<<<< HEAD
                         <strong class="padding-right_2">Email:</strong><a href="mailto:resource@acc.org" class="email color_white text_underline">
+=======
+                        <strong class="padding-right_2">Email:</strong><a href="mailto:resource@acc.org" class="email c_white text_underline">
+>>>>>>> master
                                         resource@acc.org</a>
                     </li>
                 </ul>

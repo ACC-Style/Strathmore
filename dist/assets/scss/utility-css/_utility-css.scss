@@ -7,7 +7,15 @@ Utility Classes (UCs)
 */
 /* No styleguide reference. */
 @import "introduction";
+/*
+	UC: Counters
 
+	Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
+
+	Styleguide 106.0
+ 
+ */
+@import "counters";
 /*
 UC: Margin & Padding
 
@@ -64,10 +72,13 @@ Styleguide 101.0
 @import "flex";
 
 /*
+<<<<<<< HEAD
 /*
 	UC: Counters
 
 	Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
+=======
+>>>>>>> master
 
 	Styleguide 106.0
  

@@ -14,7 +14,8 @@ var rename = require('gulp-rename');
 var PATHS ={
     SRC:'./',
     STYLEGUIDE:'./Strathmore', DIST:'./dist', DOCS:'./docs',
-    CSS :'assets/css/**/*.css',
+  CSS: 'assets/css/**/*.css',
+  CSS_MAPS: 'assets/css/**/*.map',
     SCSS: 'assets/scss/**/*.scss',
     JS: 'assets/js/**/*.js',
     FONTS:'assets/fonts/*',
@@ -25,7 +26,7 @@ var PATHS ={
 
 
 // Server
-gulp.task('serve',['style'],function () {
+gulp.task('serve',['stylemin'],function () {
 	console.log('Gulp: Magic there is a browser!');
   browserSync.init({
     server: './',
@@ -35,25 +36,45 @@ gulp.task('serve',['style'],function () {
    gulp.watch(PATHS.STYLEGUIDE_OUTPUT +"/**/*.css" ).on('change', browserSync.reload);
 });
 
-// Style Tasks
-gulp.task('style', function(){
+// Style Tasks minified and cleaned
+gulp.task('style', function () {
   console.log('Gulp Style Tasks');
   console.log('Gulp: I am making this pretty.');
   console.log(PATHS.SRC + PATHS.SCSS);
   var plugins = [
-  		pixrem(),
-      autoprefixer({browsers: ['last 2 version']}),
-      cssnano(),
-    ];
-   return gulp.src(PATHS.SRC + PATHS.SCSS)
+    pixrem(),
+    autoprefixer({ browsers: ['last 2 version'] }),
+  ];
+  return gulp
+    .src(PATHS.SRC + PATHS.SCSS)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./assets/css/'));
+    .pipe(sass().on("error", sass.logError))
+    .pipe(sourcemaps.write("/maps"))
+    .pipe(gulp.dest("./assets/css/"));
+});
+// Style Tasks minified and cleaned
+gulp.task('stylemin', function(){
+  console.log('Gulp Style Min Tasks');
+  console.log('Gulp: I am folding this into a swan.');
+  console.log(PATHS.SRC + PATHS.SCSS);
+  var plugins = [
+  	pixrem(),
+    autoprefixer({ browsers: ['last 2 version'] }),
+    cssnano(),
+    ];
+  return gulp
+        .src(PATHS.SRC + PATHS.SCSS)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on("error", sass.logError))
+        .pipe(postcss(plugins))
+        .pipe(sourcemaps.write("/maps"))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(gulp.dest("./assets/css/"));
 });
 
 
 // Cleaning DIST FOLDER
-gulp.task('clean:dist',['style'], function(){
+gulp.task('clean:dist',['stylemin'], function(){
   console.log(' Gulp Cleaning "dist" folder');
   console.log('Gulp: Hold on I am busy cleaning up this mess.  Why do you leave things just lying around.');
   return gulp.src(PATHS.DIST, {
@@ -144,14 +165,20 @@ gulp.task('package:dist',['addAutomation'], function(){
   console.log('Gulp Package Tasks');
   console.log('Gulp: I got a box and some bubble-wrap; now, where is the tape?');
   console.log('Gulp: All packed up');
-  return gulp.src([
-    PATHS.SRC + PATHS.CSS,
-    PATHS.SRC + PATHS.FONTS,
-    PATHS.SRC + PATHS.ICONS,
-    PATHS.SRC + PATHS.JS,
-    PATHS.SRC + PATHS.IMG,
-    PATHS.SRC + PATHS.SCSS
-  ],{base:"./"}).pipe(gulp.dest(PATHS.DIST));
+  return gulp
+		.src(
+			[
+      PATHS.SRC + PATHS.CSS, 
+      PATHS.SRC + PATHS.CSS_MAPS,
+				PATHS.SRC + PATHS.FONTS,
+				PATHS.SRC + PATHS.ICONS,
+				PATHS.SRC + PATHS.JS,
+				PATHS.SRC + PATHS.IMG,
+				PATHS.SRC + PATHS.SCSS
+			],
+			{ base: "./" }
+		)
+		.pipe(gulp.dest(PATHS.DIST));
 });
 // Package Tasks.   Copy files to the DOCS Folder. 
 gulp.task('package:docs', ['clean:docs'], function () {

@@ -15,17 +15,22 @@
 
   Styleguide 102.1
  */
-.font_slab,.font-family_slab{
-   font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
-}
+// .font_slab{
+//    font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif !important;
+// }
 
-.font_normal,.font-family_normal{
-    font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-}
-.font_display,.font-family_display{
-    font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-}
-
+// .font_copy{
+//     font-family:'Muli','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+// }
+// .font_display,{
+//     font-family:'Maven Pro','Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+// }
+// @if ($short-names-only == false){
+// .font-family_slab{}
+// .font-family_copy{}
+// .font-family_display{}
+// }
+@include loop-style(font-family);
 /*
   Font Style
 
@@ -55,9 +60,15 @@
 @each $color-name, $hex-value in $acc-palette{
   @include color-loop(color, $color-name,$hex-value);
 }
-.color_white{color:$white;}
-.color_black{color:$black;}
-.color_inherit{color:inherit;}
+.c_wht{color:$white;}
+.c_blk{color:$black;}
+.c_inherit{color:inherit;}
+@if ($short-names-only == false){
+  .color_white{@extend .c_wht;}
+  .color_black{@extend .c_blk;}
+  .color_inherit{@extend .c_inherit;}
+}
+
 
 
 
@@ -81,8 +92,8 @@
  */
 .font-weight_light,.font_light{ font-weight: 100 !important;}
 .font-weight_regular,.font_regular{ font-weight: 400 !important;}
-.font-weight_bold,.font_bold{ font-weight: 900 !important;}
-
+.font-weight_bold,.font_bold{ font-weight: 700 !important;}
+.font-weight_xbold,.font_xbold{ font-weight: 900 !important;}
 
 
 /*

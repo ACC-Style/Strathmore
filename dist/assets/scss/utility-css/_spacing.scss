@@ -35,11 +35,25 @@
 
 .margin_auto{ margin:0 auto;}
 @include loop-style(margin,"","");
+<<<<<<< HEAD
 @media #{$medium-up} {
 	@include loop-style(margin, $bp_medium, "");
 }
 @media #{$large-up} {
 	@include loop-style(margin, $bp_large, "");
+=======
+@include loop-style(margin-vertical, "", "");
+@include loop-style(margin-horizontal,"", "");
+@media #{$medium-up} {
+	@include loop-style(margin, $bp_medium, "");
+	@include loop-style(margin-vertical, $bp_medium, "");
+	@include loop-style(margin-horizontal, $bp_medium, "");
+}
+@media #{$large-up} {
+	@include loop-style(margin, $bp_large, "");
+	@include loop-style(margin-vertical, $bp_large, "");
+	@include loop-style(margin-horizontal, $bp_large, "");
+>>>>>>> master
 }
 @include loop-style(margin-top, "", "");
 @include loop-style(margin-bottom,"","");
@@ -87,12 +101,26 @@
 
 
 @include loop-style(padding, "", "");
+<<<<<<< HEAD
 @media #{$medium-up} {
 	@include loop-style(padding, $bp_medium, "");
+=======
+@include loop-style(padding-vertical, "", "");
+@include loop-style(padding-horizontal,"", "");
+@media #{$medium-up} {
+	@include loop-style(padding, $bp_medium, "");
+	@include loop-style(padding-vertical, $bp_medium, "");
+	@include loop-style(padding-horizontal, $bp_medium, "");
+>>>>>>> master
 }
 
 @media #{$large-up} {
 	@include loop-style(padding, $bp_large, "");
+<<<<<<< HEAD
+=======
+	@include loop-style(padding-vertical,$bp_large, "");
+	@include loop-style(padding-horizontal, $bp_large, "");
+>>>>>>> master
 }
 @include loop-style(padding-top, "", "");
 @include loop-style(padding-bottom, "", "");

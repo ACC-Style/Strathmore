@@ -35,7 +35,14 @@
 
 .tabs-title{
     margin-bottom: get-css-size(margin,n2);
+<<<<<<< HEAD
     >a {
+=======
+    border-color: get-themecolor(secondary, 3);
+    >a {
+        border-top-right-radius: get-css-size(border-radius, radius);
+        border-top-left-radius: get-css-size(border-radius, radius);
+>>>>>>> master
         font-size: unset;
         @extend %hover_transition;
         &:hover{
@@ -51,10 +58,15 @@
     a{
         border-width: get-css-size(border-width,2);
         border-bottom-width: 0;
+<<<<<<< HEAD
         border-color: get-themecolor(secondary, 3);
         border-top-left-radius: get-css-size(border-radius,radius);
         border-style: solid;
         border-top-right-radius: get-css-size(border-radius,radius);
+=======
+        border-color: inherit; 
+         border-style: solid;
+>>>>>>> master
         &:hover{ background: white;}
     }
 }
@@ -64,11 +76,19 @@
     RECIEPE: Tabs
 
     markup:
+<<<<<<< HEAD
     <ul class="texture_light tabs border-color_primary back_primary_2"data-active-collapse="true"data-tabs id="collapsing-tabs">
         <li class="tabs-title is-active border-color_primary "><a class="hover:white hover:back_primary" href="#panel1c"aria-selected="true">Tab 1</a></li>
         <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel2c">Tab 2</a></li>
         <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel3c">Tab 3</a></li>
         <li class="tabs-title border-color_primary "><a class="hover:white hover:back_primary" href="#panel4c">Tab 4</a></li>
+=======
+    <ul class="texture_light tabs border-color_primary back_primary-3" data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a class="hover:back_white border-color_primary"href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel4c">Tab 4</a></li>
+>>>>>>> master
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
         <div class="tabs-panel is-active" id="panel1c">

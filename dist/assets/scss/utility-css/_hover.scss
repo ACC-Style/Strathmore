@@ -86,10 +86,17 @@
 
 }
 .hover\:color_white:hover,.hover\:white:hover{
+<<<<<<< HEAD
   color:white;
 }
 .hover\:color_black:hover,.hover\:black:hover{
   color:black;
+=======
+  color:white !important;
+}
+.hover\:color_black:hover,.hover\:black:hover{
+  color:black !important;
+>>>>>>> master
 }
 %hover_text-decoration{text-decoration: none;
   &:hover{text-decoration: underline;}
