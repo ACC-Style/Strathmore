@@ -14,14 +14,10 @@ $debug-trace: true !default;
 				#{$style}: $val #{$important};
 			}
 		}
-<<<<<<< HEAD
-
-=======
 	}
 	@if $debug-trace {
 		@debug "Loop Style Running #{$key}";
 		@debug "Short Name #{$short-name}";
 		@debug "Long Name #{$long-name}";
 	}
->>>>>>> master
 }
