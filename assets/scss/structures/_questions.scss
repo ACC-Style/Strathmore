@@ -106,9 +106,21 @@
 .success.question div.success {
 	display: block;
 }
-
-.required-holder {
-	display: none;
+.alert.question select {
+	border-color: get-themecolor(alert, 2);
+	color: get-themecolor(alert, -2);
+}
+.warning.question select {
+	border-color: get-themecolor(warning, 2);
+	color: get-themecolor(warning, -2);
+}
+.info.question select {
+	border-color: get-themecolor(info, 2);
+	color: get-themecolor(info, -2);
+}
+.success.question select {
+	border-color: get-themecolor(success, 2);
+	color: get-themecolor(success, -2);
 }
 
 .required .required-holder {
@@ -182,7 +194,7 @@ select {
             <div class="input-space cell auto">
                 <input id="input-x" type="text" class="m-b_0 br_{$modifiers}-3 " />
             </div>
-            <div class="br_{$modifiers}-3  bg_{$modifiers}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <div class="br_{$modifiers}-3  bg_{$modifiers}-4  value-space cell shrink br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
                 <span class="value">Years</span>
             </div>
         </div>
@@ -205,6 +217,7 @@ select {
     Question with grouped inputs
 
     secondary - default decoration when there is no validation run on the input.
+    alert - alerts show up when errors are validated from the input.
 
     markup:
     <div class="question required {$modifiers}">
@@ -237,7 +250,7 @@ select {
             <div class="input-space cell auto">
                 <input id="input-x" type="text" class="m-b_0 br_{$modifiers}-3 " />
             </div>
-            <div class="br_{$modifiers}-3  bg_{$modifiers}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <div class="br_{$modifiers}-3  bg_{$modifiers}-4 c_{$modifiers}-n2  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
                 <span class="value">Years</span>
             </div>
         </div>
