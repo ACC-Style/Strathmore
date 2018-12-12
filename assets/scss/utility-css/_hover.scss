@@ -30,11 +30,17 @@
   Styleguide 109.1
  
  */
-a:focus{all:unset;}
+a[class^=" hover:"]:focus {
+	all: inherit;
+}
 %hover_transition,
 *[class^=" hover:"] {
-  transition: all ease-out 0.75s; // used for backgrounds
-  &:focus{background: inherit;border:inherit; color:inherit;}
+	transition: all ease-out 0.75s; // used for backgrounds
+	&:focus {
+		background: inherit;
+		border: inherit;
+		color: inherit;
+	}
 }
 %hover_transition-in {
 	transition: all ease-in 0.5s; // used for text
@@ -87,16 +93,17 @@ a:focus{all:unset;}
 	color: white !important;
 }
 
-
 .hover\:c_black:hover {
 	color: black !important;
 }
 @if ($short-names-only == false) {
-.hover\:color_black:hover{ @extend .hover\:c_black:hover }
-.hover\:color_white:hover{ @extend .hover\:c_white:hover  }
-
+	.hover\:color_black:hover {
+		@extend .hover\:c_black:hover;
+	}
+	.hover\:color_white:hover {
+		@extend .hover\:c_white:hover;
+	}
 }
-
 
 %hover_text-decoration {
 	text-decoration: none;
@@ -152,73 +159,72 @@ a:focus{all:unset;}
  
  */
 
-
-.hover\:bg_white:hover{
-  background-color:$white
+.hover\:bg_white:hover {
+	background-color: $white;
 }
-.hover\:bg_black:hover{
-  background-color:$black
+.hover\:bg_black:hover {
+	background-color: $black;
 }
 
-.hover\:bg_white-0:hover{
+.hover\:bg_white-0:hover {
 	background-color: rgba($white, 0.02);
 }
-.hover\:bg_white-1:hover{
+.hover\:bg_white-1:hover {
 	background-color: rgba($white, 0.1);
 }
-.hover\:bg_white-2:hover{
+.hover\:bg_white-2:hover {
 	background-color: rgba($white, 0.2);
 }
-.hover\:bg_white-3:hover{
+.hover\:bg_white-3:hover {
 	background-color: rgba($white, 0.3);
 }
-.hover\:bg_white-4:hover{
+.hover\:bg_white-4:hover {
 	background-color: rgba($white, 0.4);
 }
-.hover\:bg_white-5:hover{
+.hover\:bg_white-5:hover {
 	background-color: rgba($white, 0.5);
 }
-.hover\:bg_white-6:hover{
+.hover\:bg_white-6:hover {
 	background-color: rgba($white, 0.6);
 }
-.hover\:bg_white-7:hover{
+.hover\:bg_white-7:hover {
 	background-color: rgba($white, 0.7);
 }
-.hover\:bg_white-8:hover{
+.hover\:bg_white-8:hover {
 	background-color: rgba($white, 0.8);
 }
-.hover\:bg_white-9:hover{
+.hover\:bg_white-9:hover {
 	background-color: rgba($white, 0.9);
 }
 
-.hover\:bg_black-0:hover{
+.hover\:bg_black-0:hover {
 	background-color: rgba($black, 0.02);
 }
-.hover\:bg_black-1:hover{
+.hover\:bg_black-1:hover {
 	background-color: rgba($black, 0.1);
 }
-.hover\:bg_black-2:hover{
+.hover\:bg_black-2:hover {
 	background-color: rgba($black, 0.2);
 }
-.hover\:bg_black-3:hover{
+.hover\:bg_black-3:hover {
 	background-color: rgba($black, 0.3);
 }
-.hover\:bg_black-4:hover{
+.hover\:bg_black-4:hover {
 	background-color: rgba($black, 0.4);
 }
-.hover\:bg_black-5:hover{
+.hover\:bg_black-5:hover {
 	background-color: rgba($black, 0.5);
 }
-.hover\:bg_black-6:hover{
+.hover\:bg_black-6:hover {
 	background-color: rgba($black, 0.6);
 }
-.hover\:bg_black-7:hover{
+.hover\:bg_black-7:hover {
 	background-color: rgba($black, 0.7);
 }
-.hover\:bg_black-8:hover{
+.hover\:bg_black-8:hover {
 	background-color: rgba($black, 0.8);
 }
-.hover\:bg_black-9:hover{
+.hover\:bg_black-9:hover {
 	background-color: rgba($black, 0.9);
 }
 
