@@ -54,10 +54,10 @@
 @each $color-name, $hex-value in $acc-palette {
 	@include color-loop(color, $color-name, $hex-value);
 }
-.c_wht {
+.c_white {
 	color: $white;
 }
-.c_blk {
+.c_black {
 	color: $black;
 }
 .c_inherit {
@@ -65,10 +65,10 @@
 }
 @if ($short-names-only == false) {
 	.color_white {
-		@extend .c_wht;
+		@extend .c_white;
 	}
 	.color_black {
-		@extend .c_blk;
+		@extend .c_black;
 	}
 	.color_inherit {
 		@extend .c_inherit;

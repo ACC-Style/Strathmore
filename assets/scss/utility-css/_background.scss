@@ -57,17 +57,18 @@
 	@include color-loop(background-color, $color-name, $color);
 }
 
-.bg_wht {
+.bg_white {
 	background-color: $white;
 }
-.bg_blk {
+.bg_black {
 	background-color: $black;
 }
 @if $short-names-only {
-	.back_white {
-		@extend .bg_wht;
+  
+  .back_white {
+		@extend .bg_white;
 	}
 	.back_black {
-		@extend .bg_blk;
+		@extend .bg_black;
 	}
 }

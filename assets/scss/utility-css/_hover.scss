@@ -19,22 +19,22 @@
     <div class="hover:{$modifiers}-2 cell auto text-center br_1 br_solid br_secondary-4 p_2">2</div>
     <div class="hover:{$modifiers}-1 cell auto text-center br_1 br_solid br_secondary-4 p_2">1</div>
     <div class="hover:{$modifiers}-0 cell auto text-center br_1 br_solid br_secondary-4 p_2">0</div>
-    <div class="hover:{$modifiers}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n1</div>
-    <div class="hover:{$modifiers}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n2</div>
-    <div class="hover:{$modifiers}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n3</div>
-    <div class="hover:{$modifiers}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n4</div>
-    <div class="hover:{$modifiers}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_wht">n5</div>
+    <div class="hover:{$modifiers}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_white">n1</div>
+    <div class="hover:{$modifiers}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_white">n2</div>
+    <div class="hover:{$modifiers}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_white">n3</div>
+    <div class="hover:{$modifiers}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_white">n4</div>
+    <div class="hover:{$modifiers}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 hover:c_white">n5</div>
   </div>
 
  
   Styleguide 109.1
  
  */
-
+a:focus{all:unset;}
 %hover_transition,
-*[class^="hover"],
 *[class^=" hover:"] {
-	transition: all ease-out 0.75s; // used for backgrounds
+  transition: all ease-out 0.75s; // used for backgrounds
+  &:focus{background: inherit;border:inherit; color:inherit;}
 }
 %hover_transition-in {
 	transition: all ease-in 0.5s; // used for text
@@ -78,19 +78,26 @@
  
  */
 
-.hover\:color_white.hover\:color_black,
-.hover\:c_blk,
-.hover\:c_wht {
+.hover\:c_black,
+.hover\:c_white {
 	@extend %hover_transition-in;
 }
-.hover\:color_white:hover,
-.hover\:c_wht:hover {
+
+.hover\:c_white:hover {
 	color: white !important;
 }
-.hover\:color_black:hover,
-.hover\:c_blk:hover {
+
+
+.hover\:c_black:hover {
 	color: black !important;
 }
+@if ($short-names-only == false) {
+.hover\:color_black:hover{ @extend .hover\:c_black:hover }
+.hover\:color_white:hover{ @extend .hover\:c_white:hover  }
+
+}
+
+
 %hover_text-decoration {
 	text-decoration: none;
 	&:hover {
@@ -142,5 +149,103 @@
 
  
   Styleguide 109.3
+ 
+ */
+
+
+.hover\:bg_white:hover{
+  background-color:$white
+}
+.hover\:bg_black:hover{
+  background-color:$black
+}
+
+.hover\:bg_white-0:hover{
+	background-color: rgba($white, 0.02);
+}
+.hover\:bg_white-1:hover{
+	background-color: rgba($white, 0.1);
+}
+.hover\:bg_white-2:hover{
+	background-color: rgba($white, 0.2);
+}
+.hover\:bg_white-3:hover{
+	background-color: rgba($white, 0.3);
+}
+.hover\:bg_white-4:hover{
+	background-color: rgba($white, 0.4);
+}
+.hover\:bg_white-5:hover{
+	background-color: rgba($white, 0.5);
+}
+.hover\:bg_white-6:hover{
+	background-color: rgba($white, 0.6);
+}
+.hover\:bg_white-7:hover{
+	background-color: rgba($white, 0.7);
+}
+.hover\:bg_white-8:hover{
+	background-color: rgba($white, 0.8);
+}
+.hover\:bg_white-9:hover{
+	background-color: rgba($white, 0.9);
+}
+
+.hover\:bg_black-0:hover{
+	background-color: rgba($black, 0.02);
+}
+.hover\:bg_black-1:hover{
+	background-color: rgba($black, 0.1);
+}
+.hover\:bg_black-2:hover{
+	background-color: rgba($black, 0.2);
+}
+.hover\:bg_black-3:hover{
+	background-color: rgba($black, 0.3);
+}
+.hover\:bg_black-4:hover{
+	background-color: rgba($black, 0.4);
+}
+.hover\:bg_black-5:hover{
+	background-color: rgba($black, 0.5);
+}
+.hover\:bg_black-6:hover{
+	background-color: rgba($black, 0.6);
+}
+.hover\:bg_black-7:hover{
+	background-color: rgba($black, 0.7);
+}
+.hover\:bg_black-8:hover{
+	background-color: rgba($black, 0.8);
+}
+.hover\:bg_black-9:hover{
+	background-color: rgba($black, 0.9);
+}
+
+/*
+  Hover: Background Black and White Opacity 
+ 
+  black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
+
+  bg_white              - text color modified light to dark
+  bg_black              - text color modified light to dark
+
+  markup:
+  <div class="grid-x margin_5 bg_primary m_5">
+    <div class="hover:{$modifiers}-0 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">0</div>
+    <div class="hover:{$modifiers}-1 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">1</div>
+    <div class="hover:{$modifiers}-2 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">2</div>
+    <div class="hover:{$modifiers}-3 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">3</div>
+    <div class="hover:{$modifiers}-4 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">4</div>
+    <div class="hover:{$modifiers}-5 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">5</div>
+    <div class="hover:{$modifiers}-6 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">6</div>
+    <div class="hover:{$modifiers}-7 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">7</div>
+    <div class="hover:{$modifiers}-8 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">8</div>
+    <div class="hover:{$modifiers}-9 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">9</div>
+    <div class="hover:{$modifiers} cell p-y_3 p-x_4 auto font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">default</div>
+  </div>
+
+ 
+  Styleguide 109.4
  
  */
