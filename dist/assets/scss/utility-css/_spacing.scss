@@ -111,3 +111,35 @@
 	@include loop-style(padding-left, $bp_large, "");
 	@include loop-style(padding-right, $bp_large, "");
 }
+
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+.sticky {
+	position: sticky;
+}
+
+@include loop-style(top, "", "");
+@include loop-style(bottom, "", "");
+@include loop-style(left, "", "");
+@include loop-style(right, "", "");
+@media #{$medium-up} {
+	@include loop-style(top, $bp_medium, "");
+	@include loop-style(bottom, $bp_medium, "");
+	@include loop-style(left, $bp_medium, "");
+	@include loop-style(right, $bp_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(top, $bp_large, "");
+	@include loop-style(bottom, $bp_large, "");
+	@include loop-style(left, $bp_large, "");
+	@include loop-style(right, $bp_large, "");
+}

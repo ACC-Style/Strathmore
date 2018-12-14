@@ -32,56 +32,61 @@
     Styleguide 20.100
 */
 
-%icon-toggle-space{
-    margin: $margin_0 $margin_2;
+%icon-toggle-space {
+	margin: $margin_0 $margin_2;
 }
-
 
 i.icon-toggle_plus-minus:before {
-    @extend %icon-toggle-space;
+	@extend %icon-toggle-space;
 
-    content: "\f0fe";
+	content: "\f0fe";
 
-    .is-active & {
-        content: '\f146'
-    }
+	.is-active & {
+		content: "\f146";
+	}
+}
+i.icon-toggle_chevron-up-down:before {
+	@extend %icon-toggle-space;
+	content: "\f077";
+	.is-active & {
+		content: "\f107";
+	}
 }
 i.icon-toggle_chevron-double-up-down:before {
-    @extend %icon-toggle-space;
-    content: "\f103";
-    .is-active & {
-        content: '\f325'
-    }
+	@extend %icon-toggle-space;
+	content: "\f103";
+	.is-active & {
+		content: "\f325";
+	}
 }
 
 i.icon-toggle_chevron-double-left-right:before {
-    @extend %icon-toggle-space;
-    content: "\f324";
-   .is-active & {
-        content: '\f323'
-    }
+	@extend %icon-toggle-space;
+	content: "\f324";
+	.is-active & {
+		content: "\f323";
+	}
 }
 
 i.icon-toggle_caret-circle-right-down:before {
-    @extend %icon-toggle-space;
-    content: "\f330";
-    .is-active & {
-        content: '\f32d'
-    }
+	@extend %icon-toggle-space;
+	content: "\f330";
+	.is-active & {
+		content: "\f32d";
+	}
 }
 i.icon-toggle_arrow-circle:before {
-    @extend %icon-toggle-space;
-    content: "\f356";
-    .is-active & {
-        content: '\f0a9'
-    }
+	@extend %icon-toggle-space;
+	content: "\f356";
+	.is-active & {
+		content: "\f0a9";
+	}
 }
 
 i.icon-toggle_check:before {
-    @extend %icon-toggle-space;
-    content: "";
-    .is-active & {
-        content: '\f00c'
-    }
+	@extend %icon-toggle-space;
+	content: "";
+	.is-active & {
+		content: "\f00c";
+	}
 }
-

@@ -194,12 +194,15 @@
 	font-size: ms(-5) / 1em * 1rem;
 }
 
+.wrap {
+	white-space: normal;
+}
 .pre-wrap {
 	white-space: pre-wrap;
 	letter-spacing: -0.1em;
 }
-.pre-wrap {
-	white-space: normal;
+.nowrap {
+	white-space: nowrap;
 }
 .lowercase {
 	text-transform: lowercase;
@@ -227,6 +230,29 @@
 }
 .text_left {
 	text-align: left !important;
+}
+
+.overflow_hidden {
+	overflow: hidden;
+}
+
+.overflow_visible {
+	overflow: visible;
+}
+.overflow_auto {
+	overflow: auto;
+}
+.overflow_auto {
+	overflow: auto;
+}
+.overflow-clip {
+	@extend .overflow_hidden;
+	text-overflow: clip;
+}
+
+.overflow-ellipsis {
+	@extend .overflow_hidden;
+	text-overflow: ellipsis;
 }
 /*
   Font Color

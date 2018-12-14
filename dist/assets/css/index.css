@@ -7128,7 +7128,7 @@ markup:
 
     Styleguide 20.100
 */
-i.icon-toggle_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_plus-minus:before {
+i.icon-toggle_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before {
   margin: 0 0.25rem;
 }
 
@@ -7137,6 +7137,13 @@ i.icon-toggle_plus-minus:before {
 }
 .is-active i.icon-toggle_plus-minus:before {
   content: "";
+}
+
+i.icon-toggle_chevron-up-down:before {
+  content: "";
+}
+.is-active i.icon-toggle_chevron-up-down:before {
+  content: "";
 }
 
 i.icon-toggle_chevron-double-up-down:before {
@@ -9638,6 +9645,552 @@ Styleguide 101.0
     padding-right: 2rem;
   }
 }
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.t_0 {
+  top: 0;
+}
+
+.t_n5 {
+  top: -2rem;
+}
+
+.t_n4 {
+  top: -1rem;
+}
+
+.t_n3 {
+  top: -0.5rem;
+}
+
+.t_n2 {
+  top: -0.25rem;
+}
+
+.t_n1 {
+  top: -1px;
+}
+
+.t_1 {
+  top: 1px;
+}
+
+.t_2 {
+  top: 0.25rem;
+}
+
+.t_3 {
+  top: 0.5rem;
+}
+
+.t_4 {
+  top: 1rem;
+}
+
+.t_5 {
+  top: 2rem;
+}
+
+.b_0 {
+  bottom: 0;
+}
+
+.b_n5 {
+  bottom: -2rem;
+}
+
+.b_n4 {
+  bottom: -1rem;
+}
+
+.b_n3 {
+  bottom: -0.5rem;
+}
+
+.b_n2 {
+  bottom: -0.25rem;
+}
+
+.b_n1 {
+  bottom: -1px;
+}
+
+.b_1 {
+  bottom: 1px;
+}
+
+.b_2 {
+  bottom: 0.25rem;
+}
+
+.b_3 {
+  bottom: 0.5rem;
+}
+
+.b_4 {
+  bottom: 1rem;
+}
+
+.b_5 {
+  bottom: 2rem;
+}
+
+.l_0 {
+  left: 0;
+}
+
+.l_n5 {
+  left: -2rem;
+}
+
+.l_n4 {
+  left: -1rem;
+}
+
+.l_n3 {
+  left: -0.5rem;
+}
+
+.l_n2 {
+  left: -0.25rem;
+}
+
+.l_n1 {
+  left: -1px;
+}
+
+.l_1 {
+  left: 1px;
+}
+
+.l_2 {
+  left: 0.25rem;
+}
+
+.l_3 {
+  left: 0.5rem;
+}
+
+.l_4 {
+  left: 1rem;
+}
+
+.l_5 {
+  left: 2rem;
+}
+
+.r_0 {
+  right: 0;
+}
+
+.r_n5 {
+  right: -2rem;
+}
+
+.r_n4 {
+  right: -1rem;
+}
+
+.r_n3 {
+  right: -0.5rem;
+}
+
+.r_n2 {
+  right: -0.25rem;
+}
+
+.r_n1 {
+  right: -1px;
+}
+
+.r_1 {
+  right: 1px;
+}
+
+.r_2 {
+  right: 0.25rem;
+}
+
+.r_3 {
+  right: 0.5rem;
+}
+
+.r_4 {
+  right: 1rem;
+}
+
+.r_5 {
+  right: 2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .t_0\:medium {
+    top: 0;
+  }
+
+  .t_n5\:medium {
+    top: -2rem;
+  }
+
+  .t_n4\:medium {
+    top: -1rem;
+  }
+
+  .t_n3\:medium {
+    top: -0.5rem;
+  }
+
+  .t_n2\:medium {
+    top: -0.25rem;
+  }
+
+  .t_n1\:medium {
+    top: -1px;
+  }
+
+  .t_1\:medium {
+    top: 1px;
+  }
+
+  .t_2\:medium {
+    top: 0.25rem;
+  }
+
+  .t_3\:medium {
+    top: 0.5rem;
+  }
+
+  .t_4\:medium {
+    top: 1rem;
+  }
+
+  .t_5\:medium {
+    top: 2rem;
+  }
+
+  .b_0\:medium {
+    bottom: 0;
+  }
+
+  .b_n5\:medium {
+    bottom: -2rem;
+  }
+
+  .b_n4\:medium {
+    bottom: -1rem;
+  }
+
+  .b_n3\:medium {
+    bottom: -0.5rem;
+  }
+
+  .b_n2\:medium {
+    bottom: -0.25rem;
+  }
+
+  .b_n1\:medium {
+    bottom: -1px;
+  }
+
+  .b_1\:medium {
+    bottom: 1px;
+  }
+
+  .b_2\:medium {
+    bottom: 0.25rem;
+  }
+
+  .b_3\:medium {
+    bottom: 0.5rem;
+  }
+
+  .b_4\:medium {
+    bottom: 1rem;
+  }
+
+  .b_5\:medium {
+    bottom: 2rem;
+  }
+
+  .l_0\:medium {
+    left: 0;
+  }
+
+  .l_n5\:medium {
+    left: -2rem;
+  }
+
+  .l_n4\:medium {
+    left: -1rem;
+  }
+
+  .l_n3\:medium {
+    left: -0.5rem;
+  }
+
+  .l_n2\:medium {
+    left: -0.25rem;
+  }
+
+  .l_n1\:medium {
+    left: -1px;
+  }
+
+  .l_1\:medium {
+    left: 1px;
+  }
+
+  .l_2\:medium {
+    left: 0.25rem;
+  }
+
+  .l_3\:medium {
+    left: 0.5rem;
+  }
+
+  .l_4\:medium {
+    left: 1rem;
+  }
+
+  .l_5\:medium {
+    left: 2rem;
+  }
+
+  .r_0\:medium {
+    right: 0;
+  }
+
+  .r_n5\:medium {
+    right: -2rem;
+  }
+
+  .r_n4\:medium {
+    right: -1rem;
+  }
+
+  .r_n3\:medium {
+    right: -0.5rem;
+  }
+
+  .r_n2\:medium {
+    right: -0.25rem;
+  }
+
+  .r_n1\:medium {
+    right: -1px;
+  }
+
+  .r_1\:medium {
+    right: 1px;
+  }
+
+  .r_2\:medium {
+    right: 0.25rem;
+  }
+
+  .r_3\:medium {
+    right: 0.5rem;
+  }
+
+  .r_4\:medium {
+    right: 1rem;
+  }
+
+  .r_5\:medium {
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  .t_0\:large {
+    top: 0;
+  }
+
+  .t_n5\:large {
+    top: -2rem;
+  }
+
+  .t_n4\:large {
+    top: -1rem;
+  }
+
+  .t_n3\:large {
+    top: -0.5rem;
+  }
+
+  .t_n2\:large {
+    top: -0.25rem;
+  }
+
+  .t_n1\:large {
+    top: -1px;
+  }
+
+  .t_1\:large {
+    top: 1px;
+  }
+
+  .t_2\:large {
+    top: 0.25rem;
+  }
+
+  .t_3\:large {
+    top: 0.5rem;
+  }
+
+  .t_4\:large {
+    top: 1rem;
+  }
+
+  .t_5\:large {
+    top: 2rem;
+  }
+
+  .b_0\:large {
+    bottom: 0;
+  }
+
+  .b_n5\:large {
+    bottom: -2rem;
+  }
+
+  .b_n4\:large {
+    bottom: -1rem;
+  }
+
+  .b_n3\:large {
+    bottom: -0.5rem;
+  }
+
+  .b_n2\:large {
+    bottom: -0.25rem;
+  }
+
+  .b_n1\:large {
+    bottom: -1px;
+  }
+
+  .b_1\:large {
+    bottom: 1px;
+  }
+
+  .b_2\:large {
+    bottom: 0.25rem;
+  }
+
+  .b_3\:large {
+    bottom: 0.5rem;
+  }
+
+  .b_4\:large {
+    bottom: 1rem;
+  }
+
+  .b_5\:large {
+    bottom: 2rem;
+  }
+
+  .l_0\:large {
+    left: 0;
+  }
+
+  .l_n5\:large {
+    left: -2rem;
+  }
+
+  .l_n4\:large {
+    left: -1rem;
+  }
+
+  .l_n3\:large {
+    left: -0.5rem;
+  }
+
+  .l_n2\:large {
+    left: -0.25rem;
+  }
+
+  .l_n1\:large {
+    left: -1px;
+  }
+
+  .l_1\:large {
+    left: 1px;
+  }
+
+  .l_2\:large {
+    left: 0.25rem;
+  }
+
+  .l_3\:large {
+    left: 0.5rem;
+  }
+
+  .l_4\:large {
+    left: 1rem;
+  }
+
+  .l_5\:large {
+    left: 2rem;
+  }
+
+  .r_0\:large {
+    right: 0;
+  }
+
+  .r_n5\:large {
+    right: -2rem;
+  }
+
+  .r_n4\:large {
+    right: -1rem;
+  }
+
+  .r_n3\:large {
+    right: -0.5rem;
+  }
+
+  .r_n2\:large {
+    right: -0.25rem;
+  }
+
+  .r_n1\:large {
+    right: -1px;
+  }
+
+  .r_1\:large {
+    right: 1px;
+  }
+
+  .r_2\:large {
+    right: 0.25rem;
+  }
+
+  .r_3\:large {
+    right: 0.5rem;
+  }
+
+  .r_4\:large {
+    right: 1rem;
+  }
+
+  .r_5\:large {
+    right: 2rem;
+  }
+}
 .block {
   display: block;
 }
@@ -9758,15 +10311,15 @@ Styleguide 101.0
 
   Styleguide 102.1
  */
-font_slab {
+.font_slab {
   font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
 }
 
-font_display {
+.font_display {
   font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-font_copy {
+.font_copy {
   font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
@@ -10437,13 +10990,17 @@ tfoot,
   font-size: 0.401877572rem;
 }
 
+.wrap {
+  white-space: normal;
+}
+
 .pre-wrap {
   white-space: pre-wrap;
   letter-spacing: -0.1em;
 }
 
-.pre-wrap {
-  white-space: normal;
+.nowrap {
+  white-space: nowrap;
 }
 
 .lowercase {
@@ -10480,6 +11037,30 @@ tfoot,
 
 .text_left {
   text-align: left !important;
+}
+
+.overflow_hidden, .overflow-ellipsis, .overflow-clip {
+  overflow: hidden;
+}
+
+.overflow_visible {
+  overflow: visible;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
 }
 
 /*
@@ -11008,19 +11589,19 @@ tfoot,
 /*
   Background Colors
  
-  Background colors can be easily change with back_{{color-name}}  
+  Background colors can be easily change with bg_{{color-name}}  
  
-  back_primary            	- background color warning color
-  back_secondary            	- background color warning color
-  back_alert            	- background color alert color
-  back_warning            	- background color warning color
-  back_success              - background color success color
-  back_info              - background color success color
-  back_highlight              - background color success color
+  bg_primary            	- background color warning color
+  bg_secondary            	- background color warning color
+  bg_alert            	- background color alert color
+  bg_warning            	- background color warning color
+  bg_success              - background color success color
+  bg_info              - background color success color
+  bg_highlight              - background color success color
 
 
   markup:
-  <div class="{$modifiers} padding_3 color_white">Background Color of {$modifiers}</div>
+  <div class="{$modifiers} p_3 c_white">Background Color of {$modifiers}</div>
  
   Styleguide 104.1
  
@@ -11028,31 +11609,31 @@ tfoot,
 /*
   Background Color Shades
  
-  Background colors can be shifted by appending a modifier back_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
+  Background colors can be shifted by appending a modifier bg_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
  
-  back_primary              - background color modified light to dark
-  back_secondary              - background color modified light to dark
-  back_info              - background color modified light to dark
-  back_highlight              - background color success color
-  back_success              - background color modified light to dark
-  back_warning              - background color modified light to dark
-  back_alert              - background color modified light to dark
+  bg_primary              - background color modified light to dark
+  bg_secondary              - background color modified light to dark
+  bg_info              - background color modified light to dark
+  bg_highlight              - background color success color
+  bg_success              - background color modified light to dark
+  bg_warning              - background color modified light to dark
+  bg_alert              - background color modified light to dark
 
   markup:
   <div class="grid-x">
-    <div class="back_white cell auto text-center padding_2 padding-top_5 padding-bottom_5 ">white</div>
-    <div class="{$modifiers}-5 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">5</div>
-    <div class="{$modifiers}-4 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">4</div>
-    <div class="{$modifiers}-3 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">3</div>
-    <div class="{$modifiers}-2 cell auto text-center  padding_2 padding-top_5 padding-bottom_5">2</div>
-    <div class="{$modifiers}-1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">1</div>
-    <div class="{$modifiers}-0 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">0</div>
-    <div class="{$modifiers}-n1 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n1</div>
-    <div class="{$modifiers}-n2 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n2</div>
-    <div class="{$modifiers}-n3 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n3</div>
-    <div class="{$modifiers}-n4 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n4</div>
-    <div class="{$modifiers}-n5 cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">n5</div>
-    <div class="back_black cell auto text-center  color_white padding_2 padding-top_5 padding-bottom_5">black</div>
+    <div class="bg_white cell auto text-center p_2 p-y_5 ">white</div>
+    <div class="{$modifiers}-5 cell auto text-center  p_2 p-y_5">5</div>
+    <div class="{$modifiers}-4 cell auto text-center  p_2 p-y_5">4</div>
+    <div class="{$modifiers}-3 cell auto text-center  p_2 p-y_5">3</div>
+    <div class="{$modifiers}-2 cell auto text-center  p_2 p-y_5">2</div>
+    <div class="{$modifiers}-1 cell auto text-center  c_white p_2 p-y_5">1</div>
+    <div class="{$modifiers}-0 cell auto text-center  c_white p_2 p-y_5">0</div>
+    <div class="{$modifiers}-n1 cell auto text-center  c_white p_2 p-y_5">n1</div>
+    <div class="{$modifiers}-n2 cell auto text-center  c_white p_2 p-y_5">n2</div>
+    <div class="{$modifiers}-n3 cell auto text-center  c_white p_2 p-y_5">n3</div>
+    <div class="{$modifiers}-n4 cell auto text-center  c_white p_2 p-y_5">n4</div>
+    <div class="{$modifiers}-n5 cell auto text-center  c_white p_2 p-y_5">n5</div>
+    <div class="bg_black cell auto text-center  c_white p_2 p-y_5">black</div>
   </div>
 
  
@@ -11539,11 +12120,11 @@ tfoot,
   background-color: #000e1b !important;
 }
 
-.bg_white, .back_white {
+.bg_white {
   background-color: #fff;
 }
 
-.bg_black, .back_black {
+.bg_black {
   background-color: #111;
 }
 
@@ -11631,7 +12212,7 @@ tfoot,
 	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
 	markup:
-	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+	<div class="{$modifiers} p_5 br_black-8 br_1 br_solid text-center">{$modifiers}</div>
 
 	Styleguide 90.3
 
@@ -11652,7 +12233,9 @@ tfoot,
   background-image: url("./assets/img/dust.png");
 }
 
-.texture_disabled, .disabled, .disabled:hover {
+.texture_disabled,
+.disabled,
+.disabled:hover {
   background-image: url("./assets/img/cross_disabled.png");
 }
 
@@ -11677,7 +12260,7 @@ tfoot,
 	.texture_disabled.back_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
-	<div class="{$modifiers} padding_5 border-color_black-8 border-width_1 border_solid text-center">{$modifiers}</div>
+	<div class="{$modifiers} p_5 br_black-8 br_1 br_solid text-center">{$modifiers}</div>
 
 	Styleguide 90.4
 
@@ -11706,10 +12289,10 @@ tfoot,
 
 	markup:
 	<div class="grid-x">
-		<div class="{$modifiers}-n3 padding_3 cell auto text-center color_white">n3</div>
-		<div class="{$modifiers}-n1 padding_3 cell auto text-center color_white">n1</div>
-		<div class="{$modifiers}-1 padding_3 cell auto text-center color_white">1</div>
-		<div class="{$modifiers}-3 padding_3 cell auto text-center color_white">3</div>
+		<div class="{$modifiers}-n3 p_3 cell auto text-center c_white">n3</div>
+		<div class="{$modifiers}-n1 p_3 cell auto text-center c_white">n1</div>
+		<div class="{$modifiers}-1 p_3 cell auto text-center c_white">1</div>
+		<div class="{$modifiers}-3 p_3 cell auto text-center c_white">3</div>
 	</div>
 
 	Styleguide 90.5
@@ -14686,10 +15269,10 @@ Styleguide 103.2.1
 	.opacity_none                     - No Opacity
 
 	markup:
-	<div class="{$modifiers} border-width_1 border-solid border_white padding_2 back_warning color_white">{$modifiers}</div>
+	<div class="{$modifiers} br_1 br_solid br_white p_2 bg_warning c_white">{$modifiers}</div>
 
 	sg-wrapper: 
-	<div class="padding_4 back_primary">
+	<div class="p_4 bg_primary">
 		<sg-wrapper-content/>
 	</div>
 
@@ -14748,10 +15331,10 @@ Styleguide 103.2.1
 	.opacity_1.hover:opacity                        - Opacity of 10%
 
 	markup:
-	<div class="{$modifiers} border-width_1 border-solid border_white padding_2 back_warning color_white">{$modifiers}</div>
+	<div class="{$modifiers} br_1 br_solid br_white p_2 bg_warning c_white">{$modifiers}</div>
 
 	sg-wrapper: 
-	<div class="padding_4 back_primary">
+	<div class="p_4 bg_primary">
 		<sg-wrapper-content/>
 	</div>
 
@@ -15189,6 +15772,64 @@ Styleguide 103.2.1
     <div class="p_5 p-t_3 p-b_3 texture_light bg_secondary-4"><sg-wrapper-content/></div>
         
     Styleguide 200.100
+*/
+/* content 200.250 */
+/*
+    RECIPE: Guidline Search Result
+
+    Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
+
+    paragraph - basic layout of a result which returns a paragraph as a result
+    recomendation - basic layout of a result which returns a paragraph as a result
+    table-figure - basic layout of a result which returns a paragraph as a result
+
+    markup:
+    <article class="result {$modifiers} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
+        <header class="grid-x font_1 font_display">
+            <div class="cell auto result-title overflow-ellipsis nowrap font_1 wrap">
+                <span class="c_acc font_slab">Result Title</span>
+                <span class="font_italic c_secondary-3 font_n1">{$modifiers}</span>
+            </div>
+            <div class="cell shrink LOE-COR grid-x m-l_3 font_bold">
+                <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
+                <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+            </div>
+        </header>
+        <nav class="grid-x font_n2">
+            <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                    class="fas fa-save m-r_3"></i><span>SAVE</span></a>
+            <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                    class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
+            <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                    class="fas fa-print m-r_3"></i><span>PRINT</span></a>
+        </nav>
+        <main class="result-content p-y_2">
+            <p class="lh_3 font_0 m-b_0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam alias explicabo impedit eius, ducimus nihil animi sapiente placeat ullam sequi, hic quod <span class="bg_highlight-4 c_highlight-n4  underline p-x_2">expedita laboriosam</span>, dolor et. Maiores, illum animi!</p>
+        </main>
+        <footer class="result-docuemnt br-t_1 br_0 br_dashed br_acc-3 p-t_2 is-active">
+            <div class="clear-fix document-title overflow-ellipsis font_slab c_acc-1 nowrap font_n1">
+               <i class="fas icon-toggle_chevron-up-down"></i> International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements
+                with Heart
+            </div>
+            <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
+            <nav class="grid-x font_n2">
+                <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+            </nav>
+        </footer>
+        <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+            <div class="grid-x font_n3 c_secondary-1  p_1 p-x_3">
+                <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                <span class="cell auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
+            </div>
+        </aside>
+    </article>
+
+    sg-wrapper: 
+    <div class="p_5 p-t_3 p-b_3 bg_secondary-5"><sg-wrapper-content/></div>
+        
+    Styleguide 200.250
 */
 /*
  Design Base

@@ -223,6 +223,38 @@ $style-definition: (
 		long-name: ".margin-right",
 		unit: map-get($valueParams, "size")
 	),
+	top: (
+		short-name: ".t",
+		css-style: (
+			"top"
+		),
+		long-name: ".top",
+		unit: map-get($valueParams, "size")
+	),
+	bottom: (
+		short-name: ".b",
+		css-style: (
+			"bottom"
+		),
+		long-name: ".bottom",
+		unit: map-get($valueParams, "size")
+	),
+	right: (
+		short-name: ".r",
+		css-style: (
+			"right"
+		),
+		long-name: ".right",
+		unit: map-get($valueParams, "size")
+	),
+	left: (
+		short-name: ".l",
+		css-style: (
+			"left"
+		),
+		long-name: ".left",
+		unit: map-get($valueParams, "size")
+	),
 	padding: (
 		short-name: ".p",
 		css-style: (
@@ -297,7 +329,7 @@ $style-definition: (
 		long-name: ".font-size"
 	),
 	font-family: (
-		short-name: "font",
+		short-name: ".font",
 		css-style: (
 			"font-family"
 		),
