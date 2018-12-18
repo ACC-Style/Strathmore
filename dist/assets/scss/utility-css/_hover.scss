@@ -30,9 +30,7 @@
   Styleguide 109.1
  
  */
-a[class^=" hover:"]:focus {
-	all: inherit;
-}
+a:focus{color:unset;}
 %hover_transition,
 *[class^=" hover:"] {
 	transition: all ease-out 0.75s; // used for backgrounds
