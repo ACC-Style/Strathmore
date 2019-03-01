@@ -1,5 +1,46 @@
 $debug-trace: true !default;
 
+@function default-util-size($key) {
+	@if ($key == "font-family") {
+		$default: copy;
+	} @else if($key == "border-style") {
+		$default: none;
+	} @else if ($key == "display") {
+		$default: block;
+	} @else if
+		(
+			$key ==
+				"border-radius" or
+				$key ==
+				"border-top-right-radius" or
+				$key ==
+				"border-top-left-radius" or
+				$key ==
+				"border-bottom-right-radius" or
+				$key ==
+				"border-bottom-left-radius"
+		)
+	{
+		$default: square;
+	} @else {
+		$default: 0;
+	}
+	@return $default;
+}
+
+@function util-style($key, $size: default) {
+	$style: get-css-style($key);
+
+	@if ($size == default) {
+		$size: default-util-size($key);
+	}
+	$unit: map-get(get-css-unit($key), $size);
+	@return single-util-style($style, $unit);
+}
+@mixin single-util-style($style, $unit) {
+	#{$style}: #{$unit};
+}
+
 @mixin color-loop($key, $color-name, $color) {
 	$white-mix: map-get($valueParams, percent-positive);
 	$black-mix: map-get($valueParams, percent-negative);
