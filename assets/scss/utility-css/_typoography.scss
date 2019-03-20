@@ -136,6 +136,13 @@
  */
 
 @include loop-style(font-size);
+@media #{$medium-up} {
+	@include loop-style(font-size, $bp_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(font-size, $bp_large, "");
+}
 
 /*
   Golden Ratio Font Size
@@ -232,31 +239,52 @@
 
 
 
-  .color_white - text that's white
-  .color_black -  text that's black
-  .color_primary -  text that's primary
-  .color_alert -  text that's alert
-  .color_info -  text that's info
-  .color_inherit - text that inherits from its parent
+  .c_white - text that's white
+  .c_black -  text that's black
+  .c_primary -  text that's primary
+  .c_alert -  text that's alert
+  .c_info -  text that's info
+    .c_warning -  text that's warning the user
+  .c_inherit - text that inherits from its parent
 
   markup:
-  <div class="{$modifiers} font_normal font_2 back_secondary-4 padding_3">
+  <div class="{$modifiers} font_normal font_2 font_bold back_secondary-4 padding_3">
     <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
 
-  Styleguide 82.4
+  Styleguide 102.5
  */
 @each $color-name, $hex-value in $acc-palette {
 	@include color-loop(color, $color-name, $hex-value);
 }
-.color_white {
+.c_white {
 	color: $white;
 }
-.color_black {
+.c_black {
 	color: $black;
 }
-.color_inherit {
+.c_inherit {
 	color: inherit;
 }
+/*
+	Text Shadows
+
+	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+
+	ts_white-n1			- inset white shadow
+	ts_white-1			- white shadow
+	ts_black-n1			- inset black shadow
+	ts_black-1			- black shadow
+	ts_none			- no shadow
+
+
+	markup:
+	<div class="{$modifiers} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {$modifiers}</div>
+
+	Styleguide 102.5.1
+
+ */
+
+@include loop-style(text-shadow);
