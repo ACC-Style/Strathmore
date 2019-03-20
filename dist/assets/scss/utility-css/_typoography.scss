@@ -127,13 +127,57 @@
   .font_n5 - smallest
 
   markup:
-  <div class="{$modifiers} font-family_normal">
+  <div class="{$modifiers} font_normal">
     <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
   Styleguide 102.4
  */
+
+/*
+  Marketing Fonts (Golden Ratio)
+
+  To Accomplish a more agressive size increase you can use the marketing golden ratio fonts.  Unlike the font size classes these golden ratios are based on EM's so they can be effected by the parent's font size. for demo sake the wrapper is set to font_n2.   
+
+  .golden_0 - golden ratio for  marketing text
+  .golden_1 - golden ratio for  marketing text
+  .golden_2 - golden ratio for  marketing text
+  .golden_3 - golden ratio for  marketing text
+  .golden_4 - golden ratio for  marketing text
+  .golden_5 - golden ratio for  marketing text
+
+  markup:
+  <div class="{$modifiers} font_display c_white">
+    <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  sg-wrapper:
+  <div class="font_n3 bg_primary-n1 p-x_5 p-y_3 lh_1" >
+    <sg-wrapper-content/>
+  </div>
+
+  Styleguide 102.4.1
+ */
+.golden_0 {
+	font-size: ms-calc(1, $ms-base, $golden);
+}
+.golden_1 {
+	font-size: ms-calc(1, $ms-base, $golden);
+}
+.golden_2 {
+	font-size: ms-calc(2, $ms-base, $golden);
+}
+.golden_3 {
+	font-size: ms-calc(3, $ms-base, $golden);
+}
+.golden_4 {
+	font-size: ms-calc(4, $ms-base, $golden);
+}
+.golden_5 {
+	font-size: ms-calc(5, $ms-base, $golden);
+}
 
 .font-size_0,
 .font_0 {
@@ -269,7 +313,7 @@
   .color_inherit - text that inherits from its parent
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2 back_secondary-4 padding_3">
+  <div class="{$modifiers} font_normal font_2 back_secondary-4 padding_3">
     <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>

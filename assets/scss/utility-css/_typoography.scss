@@ -127,7 +127,7 @@
   .font_n5 - smallest
 
   markup:
-  <div class="{$modifiers} font-family_normal">
+  <div class="{$modifiers} font_normal">
     <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -240,7 +240,7 @@
   .color_inherit - text that inherits from its parent
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2 back_secondary-4 padding_3">
+  <div class="{$modifiers} font_normal font_2 back_secondary-4 padding_3">
     <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
