@@ -91,17 +91,30 @@ $valueParams: (
 		dotted: dotted
 	),
 	font-size: (
-		0: 0%,
-		1: 15%,
-		2: 37%,
-		3: 60%,
-		4: 78%,
-		5: 90%,
-		n1: -10%,
-		n2: -25%,
-		n3: -45%,
-		n4: -60%,
-		n5: -75%
+		0: strip-unit(ms(0)) * 1rem,
+		1: strip-unit(ms(1)) * 1rem,
+		2: strip-unit(ms(2)) * 1rem,
+		3: strip-unit(ms(3)) * 1rem,
+		4: strip-unit(ms(4)) * 1rem,
+		5: strip-unit(ms(5)) * 1rem,
+		6: strip-unit(ms(6)) * 1rem,
+		7: strip-unit(ms(7)) * 1rem,
+		8: strip-unit(ms(8)) * 1rem,
+		9: strip-unit(ms(9)) * 1rem,
+		10: strip-unit(ms(10)) * 1rem,
+		n1: strip-unit(ms(-1)) * 1rem,
+		n2: strip-unit(ms(-2)) * 1rem,
+		n3: strip-unit(ms(-3)) * 1rem,
+		n4: strip-unit(ms(-4)) * 1rem,
+		n5: strip-unit(ms(-5)) * 1rem
+	),
+	font-size-golden: (
+		0: ms-calc(0, $ms-base, $golden),
+		1: ms-calc(1, $ms-base, $golden),
+		2: ms-calc(2, $ms-base, $golden),
+		3: ms-calc(3, $ms-base, $golden),
+		4: ms-calc(4, $ms-base, $golden),
+		5: ms-calc(5, $ms-base, $golden)
 	),
 	display: (
 		block: block,
@@ -150,20 +163,28 @@ $valueParams: (
 			sans-serif
 		)
 	),
+	text-shadow: (
+		none: 0px 0px 0px rgba(0, 0, 0, 0),
+		white-1: 2px 2px 2px rgba(255, 255, 255, 0.25),
+		black-1: 2px 2px 2px rgba(0, 0, 0, 0.25),
+		white-n1: -1px -1px 2px rgba(255, 255, 255, 0.5),
+		black-n1: -1px -1px 2px rgba(0, 0, 0, 0.5)
+	),
 	shadow: (
-		0: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		1: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		2: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		3: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		4: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		5: 2px 2px 8px 1px rgba(0, 0, 0, 0.65),
-		n1: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
-		n2: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
-		n3: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
-		n4: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1),
-		n5: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1)
+		0: make-shadow(3, "drop", #000, 0.4),
+		1: make-shadow(1, "drop", #000, 0.1),
+		2: make-shadow(2, "drop", #000, 0.2),
+		3: make-shadow(3, "drop", #000, 0.3),
+		4: make-shadow(3.5, "drop", #000, 0.5),
+		5: make-shadow(4, "drop", #000, 0.65),
+		n1: make-shadow(1, "inset", #000, 0.1),
+		n2: make-shadow(2, "inset", #000, 0.2),
+		n3: make-shadow(3, "inset", #000, 0.3),
+		n4: make-shadow(3.5, "inset", #000, 0.5),
+		n5: make-shadow(4, "inset", #000, 0.65)
 	)
 );
+
 $style-definition: (
 	margin: (
 		short-name: ".m",
@@ -326,7 +347,16 @@ $style-definition: (
 		css-style: (
 			"font-size"
 		),
-		long-name: ".font-size"
+		long-name: ".font-size",
+		unit: map-get($valueParams, "font-size")
+	),
+	golden: (
+		short-name: ".golden",
+		css-style: (
+			"font-size"
+		),
+		long-name: ".font-size-golden",
+		unit: map-get($valueParams, "font-size-golden")
 	),
 	font-family: (
 		short-name: ".font",
@@ -480,9 +510,20 @@ $style-definition: (
 		unit: map-get($valueParams, "display"),
 		alt: "none"
 	),
-	shadow: (
-		short-name: ".shadow",
-		css-name: "box-shadow",
+	text-shadow: (
+		short-name: ".ts",
+		css-style: (
+			"text-shadow"
+		),
+		long-name: ".text-shadow",
+		unit: map-get($valueParams, "text-shadow"),
+		alt: "none"
+	),
+	box-shadow: (
+		short-name: ".s",
+		css-style: (
+			"box-shadow"
+		),
 		long-name: ".box-shadow",
 		unit: map-get($valueParams, "shadow"),
 		alt: "none"
