@@ -30,7 +30,6 @@ $debug-trace: true !default;
 
 @function util-style($key, $size: default) {
 	$style: get-css-style($key);
-
 	@if ($size == default) {
 		$size: default-util-size($key);
 	}

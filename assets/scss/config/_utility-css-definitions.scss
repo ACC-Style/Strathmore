@@ -108,7 +108,7 @@ $valueParams: (
 		n4: strip-unit(ms(-4)) * 1rem,
 		n5: strip-unit(ms(-5)) * 1rem
 	),
-	font-size-gold: (
+	font-size-golden: (
 		0: ms-calc(0, $ms-base, $golden),
 		1: ms-calc(1, $ms-base, $golden),
 		2: ms-calc(2, $ms-base, $golden),
@@ -343,12 +343,12 @@ $style-definition: (
 		unit: map-get($valueParams, "font-size")
 	),
 	golden: (
-		short-name: ".font-gold",
+		short-name: ".golden",
 		css-style: (
 			"font-size"
 		),
-		long-name: ".font-size-gold",
-		unit: map-get($valueParams, "font-size-gold")
+		long-name: ".font-size-golden",
+		unit: map-get($valueParams, "font-size-golden")
 	),
 	font-family: (
 		short-name: ".font",
