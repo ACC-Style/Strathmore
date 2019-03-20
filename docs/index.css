@@ -6759,17 +6759,25 @@ markup:
 
 Styleguide 10.2.1
 */
-.table__thead, thead {
+.table__thead,
+thead {
   background-color: #fff;
 }
-.table__thead th, .table__thead td, thead th, thead td {
+.table__thead th,
+.table__thead td,
+thead th,
+thead td {
   border-bottom: 2px solid #1faed7;
 }
 
-.table__tfoot, tfoot {
+.table__tfoot,
+tfoot {
   background-color: #eff0f1;
 }
-.table__tfoot th, .table__tfoot td, tfoot th, tfoot td {
+.table__tfoot th,
+.table__tfoot td,
+tfoot th,
+tfoot td {
   border-top: 1px solid #7a7c85;
   font-style: italic;
 }
@@ -6861,13 +6869,16 @@ markup:
 
 Styleguide 10.2.3
 */
-.table.banded .table__head th:nth-child(even), .table.banded thead th:nth-child(even) {
+.table.banded .table__head th:nth-child(even),
+.table.banded thead th:nth-child(even) {
   background-color: #d7ecff;
 }
-.table.banded .table__body td:nth-child(even), .table.banded tbody td:nth-child(even) {
+.table.banded .table__body td:nth-child(even),
+.table.banded tbody td:nth-child(even) {
   background-color: #e4f6fb;
 }
-.table.banded .table__body tr:nth-child(even) td:nth-child(even), .table.banded tbody tr:nth-child(even) td:nth-child(even) {
+.table.banded .table__body tr:nth-child(even) td:nth-child(even),
+.table.banded tbody tr:nth-child(even) td:nth-child(even) {
   background-color: #a6d5ff;
 }
 
@@ -7476,6 +7487,7 @@ sg-wrapper:
 .quicklinks__item .quicklinks__link {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  font-size: 0.8333333333rem;
 }
 .quicklinks__item .quicklinks__link:last-child {
   border-right: 0;
@@ -10928,33 +10940,228 @@ Styleguide 101.0
 
   Styleguide 102.4
  */
+.font_0 {
+  font-size: 1rem;
+}
+
+.font_1 {
+  font-size: 1.2rem;
+}
+
+.font_2 {
+  font-size: 1.44rem;
+}
+
+.font_3 {
+  font-size: 1.728rem;
+}
+
+.font_4 {
+  font-size: 2.0736rem;
+}
+
+.font_5 {
+  font-size: 2.48832rem;
+}
+
+.font_6 {
+  font-size: 2.985984rem;
+}
+
+.font_7 {
+  font-size: 3.5831808rem;
+}
+
+.font_8 {
+  font-size: 4.29981696rem;
+}
+
+.font_9 {
+  font-size: 5.159780352rem;
+}
+
+.font_10 {
+  font-size: 6.1917364224rem;
+}
+
+.font_n1 {
+  font-size: 0.8333333333rem;
+}
+
+.font_n2 {
+  font-size: 0.6944444444rem;
+}
+
+.font_n3 {
+  font-size: 0.5787037037rem;
+}
+
+.font_n4 {
+  font-size: 0.4822530864rem;
+}
+
+.font_n5 {
+  font-size: 0.401877572rem;
+}
+
+@media screen and (min-width: 40em) {
+  .font_0\:medium {
+    font-size: 1rem;
+  }
+
+  .font_1\:medium {
+    font-size: 1.2rem;
+  }
+
+  .font_2\:medium {
+    font-size: 1.44rem;
+  }
+
+  .font_3\:medium {
+    font-size: 1.728rem;
+  }
+
+  .font_4\:medium {
+    font-size: 2.0736rem;
+  }
+
+  .font_5\:medium {
+    font-size: 2.48832rem;
+  }
+
+  .font_6\:medium {
+    font-size: 2.985984rem;
+  }
+
+  .font_7\:medium {
+    font-size: 3.5831808rem;
+  }
+
+  .font_8\:medium {
+    font-size: 4.29981696rem;
+  }
+
+  .font_9\:medium {
+    font-size: 5.159780352rem;
+  }
+
+  .font_10\:medium {
+    font-size: 6.1917364224rem;
+  }
+
+  .font_n1\:medium {
+    font-size: 0.8333333333rem;
+  }
+
+  .font_n2\:medium {
+    font-size: 0.6944444444rem;
+  }
+
+  .font_n3\:medium {
+    font-size: 0.5787037037rem;
+  }
+
+  .font_n4\:medium {
+    font-size: 0.4822530864rem;
+  }
+
+  .font_n5\:medium {
+    font-size: 0.401877572rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  .font_0\:large {
+    font-size: 1rem;
+  }
+
+  .font_1\:large {
+    font-size: 1.2rem;
+  }
+
+  .font_2\:large {
+    font-size: 1.44rem;
+  }
+
+  .font_3\:large {
+    font-size: 1.728rem;
+  }
+
+  .font_4\:large {
+    font-size: 2.0736rem;
+  }
+
+  .font_5\:large {
+    font-size: 2.48832rem;
+  }
+
+  .font_6\:large {
+    font-size: 2.985984rem;
+  }
+
+  .font_7\:large {
+    font-size: 3.5831808rem;
+  }
+
+  .font_8\:large {
+    font-size: 4.29981696rem;
+  }
+
+  .font_9\:large {
+    font-size: 5.159780352rem;
+  }
+
+  .font_10\:large {
+    font-size: 6.1917364224rem;
+  }
+
+  .font_n1\:large {
+    font-size: 0.8333333333rem;
+  }
+
+  .font_n2\:large {
+    font-size: 0.6944444444rem;
+  }
+
+  .font_n3\:large {
+    font-size: 0.5787037037rem;
+  }
+
+  .font_n4\:large {
+    font-size: 0.4822530864rem;
+  }
+
+  .font_n5\:large {
+    font-size: 0.401877572rem;
+  }
+}
 /*
-  Marketing Fonts (Golden Ratio)
+  Golden Ratio Font Size
 
-  To Accomplish a more agressive size increase you can use the marketing golden ratio fonts.  Unlike the font size classes these golden ratios are based on EM's so they can be effected by the parent's font size. for demo sake the wrapper is set to font_n2.   
+  Golden Ratio Fonts can make a more impactful text for marketing areas.  Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.  
 
-  .golden_0 - golden ratio for  marketing text
-  .golden_1 - golden ratio for  marketing text
-  .golden_2 - golden ratio for  marketing text
-  .golden_3 - golden ratio for  marketing text
-  .golden_4 - golden ratio for  marketing text
-  .golden_5 - golden ratio for  marketing text
+  .font-gold_5 - Largest
+  .font-gold_4 - Large
+  .font-gold_3 - Big
+  .font-gold_2 - Big-ish
+  .font-gold_1 - Slightly Bigger
+  .font-gold_0 - Default Size
+
 
   markup:
-  <div class="{$modifiers} font_display c_white">
-    <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-    <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  <div class="{$modifiers} font-family_normal">
+    <div class="uppercase">{$modifiers} with Parent of .font_n2</div>
   </div>
 
   sg-wrapper:
-  <div class="font_n3 bg_primary-n1 p-x_5 p-y_3 lh_1" >
+   <div class="font_n3">
     <sg-wrapper-content/>
-  </div>
+   </div>
+
 
   Styleguide 102.4.1
  */
 .golden_0 {
-  font-size: 1.618034em;
+  font-size: 1em;
 }
 
 .golden_1 {
@@ -10977,78 +11184,13 @@ Styleguide 101.0
   font-size: 11.0901703293em;
 }
 
-.font-size_0,
-.font_0,
-.table__thead,
-thead {
-  font-size: 1rem;
-}
-
-.font-size_1,
-.font_1 {
-  font-size: 1.2rem;
-}
-
-.font-size_2,
-.font_2 {
-  font-size: 1.44rem;
-}
-
-.font-size_3,
-.font_3 {
-  font-size: 1.728rem;
-}
-
-.font-size_4,
-.font_4 {
-  font-size: 2.0736rem;
-}
-
-.font-size_5,
-.font_5 {
-  font-size: 2.48832rem;
-}
-
-.font-size_10,
-.font_10 {
-  font-size: 6.1917364224rem;
-}
-
-.font-size_n1,
-.font_n1,
-.table__tfoot,
-tfoot,
-.quicklinks__item .quicklinks__link {
-  font-size: 0.8333333333rem;
-}
-
-.font-size_n2,
-.font_n2 {
-  font-size: 0.6944444444rem;
-}
-
-.font-size_n3,
-.font_n3 {
-  font-size: 0.5787037037rem;
-}
-
-.font-size_n4,
-.font_n4 {
-  font-size: 0.4822530864rem;
-}
-
-.font-size_n5,
-.font_n5 {
-  font-size: 0.401877572rem;
-}
-
 .wrap {
   white-space: normal;
 }
 
 .pre-wrap {
   white-space: pre-wrap;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.01em;
 }
 
 .nowrap {
@@ -11122,21 +11264,22 @@ tfoot,
 
 
 
-  .color_white - text that's white
-  .color_black -  text that's black
-  .color_primary -  text that's primary
-  .color_alert -  text that's alert
-  .color_info -  text that's info
-  .color_inherit - text that inherits from its parent
+  .c_white - text that's white
+  .c_black -  text that's black
+  .c_primary -  text that's primary
+  .c_alert -  text that's alert
+  .c_info -  text that's info
+    .c_warning -  text that's warning the user
+  .c_inherit - text that inherits from its parent
 
   markup:
-  <div class="{$modifiers} font_normal font_2 back_secondary-4 padding_3">
+  <div class="{$modifiers} font_normal font_2 font_bold back_secondary-4 padding_3">
     <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
 
-  Styleguide 82.4
+  Styleguide 102.5
  */
 .c_primary {
   color: #198dae !important;
@@ -11618,16 +11761,54 @@ tfoot,
   color: #000e1b !important;
 }
 
-.color_white {
+.c_white {
   color: #fff;
 }
 
-.color_black {
+.c_black {
   color: #111;
 }
 
-.color_inherit {
+.c_inherit {
   color: inherit;
+}
+
+/*
+	Text Shadows
+
+	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+
+	ts_white-n1			- inset white shadow
+	ts_white-1			- white shadow
+	ts_black-n1			- inset black shadow
+	ts_black-1			- black shadow
+	ts_none			- no shadow
+
+
+	markup:
+	<div class="{$modifiers} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {$modifiers}</div>
+
+	Styleguide 102.5.1
+
+ */
+.ts_none {
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.ts_white-1 {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+}
+
+.ts_black-1 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ts_white-n1 {
+  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.ts_black-n1 {
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -12183,71 +12364,67 @@ tfoot,
 /*
 	Shadows
 
-	Shadows can be easily added to container .shadow_{{modifier}}  
+	Shadows can be easily added to container .s_{{modifier}}  
 
-	shadow_n1			- inset shadow
-	shadow_n2			- inset shadow
-	shadow_n3			- inset shadow
-	shadow_n4			- inset shadow
-	shadow_n5			- inset shadow
-	shadow_0			- no shadow
-	shadow_1			- box shadow
-	shadow_2			- box shadow
-	shadow_3			- box shadow
-	shadow_4			- box shadow
-	shadow_5			- box shadow
+	s_n1			- inset shadow
+	s_n2			- inset shadow
+	s_n3			- inset shadow
+	s_n4			- inset shadow
+	s_n5			- inset shadow
+	s_0			- no shadow
+	s_1			- box shadow
+	s_2			- box shadow
+	s_3			- box shadow
+	s_4			- box shadow
+	s_5			- box shadow
 
 	markup:
-	<div class="{$modifiers} padding_3 border_solid border_black-1 border-width_1 color_white">container has shadow of {$modifiers}</div>
+	<div class="{$modifiers} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {$modifiers}</div>
 
-	Styleguide 90.9
+	Styleguide 104.3
  
  */
-.shadow_0 {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-
-.shadow {
+.s_0 {
   box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
 }
 
-.shadow_1 {
+.s_1 {
   box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
-.shadow_2 {
+.s_2 {
   box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-.shadow_3 {
+.s_3 {
   box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
-.shadow_4 {
+.s_4 {
   box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
-.shadow_5 {
+.s_5 {
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
-.shadow_n1 {
+.s_n1 {
   box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
-.shadow_n2 {
+.s_n2 {
   box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-.shadow_n3 {
+.s_n3 {
   box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
-.shadow_n4 {
+.s_n4 {
   box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
-.shadow_n5 {
+.s_n5 {
   box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
@@ -12266,7 +12443,7 @@ tfoot,
 	markup:
 	<div class="{$modifiers} p_5 br_black-8 br_1 br_solid text-center">{$modifiers}</div>
 
-	Styleguide 90.3
+	Styleguide 104.4
 
  */
 .texture_light {
@@ -12334,7 +12511,7 @@ tfoot,
 	markup:
 	<div class="{$modifiers} p_5 br_black-8 br_1 br_solid text-center">{$modifiers}</div>
 
-	Styleguide 90.4
+	Styleguide 104.4.1
 
  */
 /*
@@ -12367,7 +12544,7 @@ tfoot,
 		<div class="{$modifiers}-3 p_3 cell auto text-center c_white">3</div>
 	</div>
 
-	Styleguide 90.5
+	Styleguide 104.4.2
 
  */
 /*
@@ -15749,7 +15926,7 @@ Styleguide 103.2.1
 
   markup:
   <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_whiste font-size_3 texture_dust bg_alert">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font-size_3 texture_dust bg_alert">
           <div class="cell shrink p_3  bg_alert-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
       <div class="cell auto p_3">First it is bad</div>
       </div>
@@ -15759,7 +15936,7 @@ Styleguide 103.2.1
       </div>
   </div>
       <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_whiste font-size_3 texture_dust bg_warning">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font-size_3 texture_dust bg_warning">
           <div class="cell shrink p_3  bg_warning-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
       <div class="cell auto p_3">Then it is not right</div>
       </div>
@@ -15769,7 +15946,7 @@ Styleguide 103.2.1
       </div>
   </div>
       <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_whiste font-size_3 texture_dust bg_success">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font-size_3 texture_dust bg_success">
           <div class="cell shrink p_3  bg_success-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
       <div class="cell auto p_3">At last it is good</div>
       </div>
