@@ -91,17 +91,30 @@ $valueParams: (
 		dotted: dotted
 	),
 	font-size: (
-		0: 0%,
-		1: 15%,
-		2: 37%,
-		3: 60%,
-		4: 78%,
-		5: 90%,
-		n1: -10%,
-		n2: -25%,
-		n3: -45%,
-		n4: -60%,
-		n5: -75%
+		0: strip-unit(ms(0)) * 1rem,
+		1: strip-unit(ms(1)) * 1rem,
+		2: strip-unit(ms(2)) * 1rem,
+		3: strip-unit(ms(3)) * 1rem,
+		4: strip-unit(ms(4)) * 1rem,
+		5: strip-unit(ms(5)) * 1rem,
+		6: strip-unit(ms(6)) * 1rem,
+		7: strip-unit(ms(7)) * 1rem,
+		8: strip-unit(ms(8)) * 1rem,
+		9: strip-unit(ms(9)) * 1rem,
+		10: strip-unit(ms(10)) * 1rem,
+		n1: strip-unit(ms(-1)) * 1rem,
+		n2: strip-unit(ms(-2)) * 1rem,
+		n3: strip-unit(ms(-3)) * 1rem,
+		n4: strip-unit(ms(-4)) * 1rem,
+		n5: strip-unit(ms(-5)) * 1rem
+	),
+	font-size-gold: (
+		0: ms-calc(0, $ms-base, $golden),
+		1: ms-calc(1, $ms-base, $golden),
+		2: ms-calc(2, $ms-base, $golden),
+		3: ms-calc(3, $ms-base, $golden),
+		4: ms-calc(4, $ms-base, $golden),
+		5: ms-calc(5, $ms-base, $golden)
 	),
 	display: (
 		block: block,
@@ -326,7 +339,16 @@ $style-definition: (
 		css-style: (
 			"font-size"
 		),
-		long-name: ".font-size"
+		long-name: ".font-size",
+		unit: map-get($valueParams, "font-size")
+	),
+	golden: (
+		short-name: ".font-gold",
+		css-style: (
+			"font-size"
+		),
+		long-name: ".font-size-gold",
+		unit: map-get($valueParams, "font-size-gold")
 	),
 	font-family: (
 		short-name: ".font",

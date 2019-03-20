@@ -135,71 +135,42 @@
   Styleguide 102.4
  */
 
-.font-size_0,
-.font_0 {
-	font-size: ms(0) / 1em * 1rem;
-}
+@include loop-style(font-size);
 
-.font-size_1,
-.font_1 {
-	font-size: ms(1) / 1em * 1rem;
-}
+/*
+  Golden Ratio Font Size
 
-.font-size_2,
-.font_2 {
-	font-size: ms(2) / 1em * 1rem;
-}
+  Golden Ratio Fonts can make a more impactful text for marketing areas.  Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.  
 
-.font-size_3,
-.font_3 {
-	font-size: ms(3) / 1em * 1rem;
-}
+  .font-gold_5 - Largest
+  .font-gold_4 - Large
+  .font-gold_3 - Big
+  .font-gold_2 - Big-ish
+  .font-gold_1 - Slightly Bigger
+  .font-gold_0 - Default Size
 
-.font-size_4,
-.font_4 {
-	font-size: ms(4) / 1em * 1rem;
-}
 
-.font-size_5,
-.font_5 {
-	font-size: ms(5) / 1em * 1rem;
-}
-.font-size_10,
-.font_10 {
-	font-size: ms(10) / 1em * 1rem;
-}
+  markup:
+  <div class="{$modifiers} font-family_normal">
+    <div class="uppercase">{$modifiers} with Parent of .font_n2</div>
+  </div>
 
-.font-size_n1,
-.font_n1 {
-	font-size: ms(-1) / 1em * 1rem;
-}
+  sg-wrapper:
+   <div class="font_n3">
+    <sg-wrapper-content/>
+   </div>
 
-.font-size_n2,
-.font_n2 {
-	font-size: ms(-2) / 1em * 1rem;
-}
 
-.font-size_n3,
-.font_n3 {
-	font-size: ms(-3) / 1em * 1rem;
-}
-
-.font-size_n4,
-.font_n4 {
-	font-size: ms(-4) / 1em * 1rem;
-}
-
-.font-size_n5,
-.font_n5 {
-	font-size: ms(-5) / 1em * 1rem;
-}
+  Styleguide 102.4.1
+ */
+@include loop-style(golden);
 
 .wrap {
 	white-space: normal;
 }
 .pre-wrap {
 	white-space: pre-wrap;
-	letter-spacing: -0.1em;
+	letter-spacing: -0.01em;
 }
 .nowrap {
 	white-space: nowrap;

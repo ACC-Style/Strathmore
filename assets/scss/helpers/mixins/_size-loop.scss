@@ -1,16 +1,25 @@
 $debug-trace: true !default;
-@mixin loop-style($key, $breakpoint:"", $important:""){
-	$short-name: 	get-css-shortname($key);
-	$long-name: 	get-css-longname($key);
-	$styles: 		get-css-style($key);
-	$sizes: 		get-css-unit($key);
-	@each $unit, $val in $sizes{
-		$names: 		#{ $short-name }_#{ $unit }#{$breakpoint};
-		@if ($short-names-only == false){
-			$names:	#{ $long-name }_#{ $unit }#{$breakpoint},#{ $short-name }_#{ $unit }#{$breakpoint};
+@mixin loop-style($key, $breakpoint: "", $important: "") {
+	$short-name: get-css-shortname($key);
+	$long-name: get-css-longname($key);
+	$styles: get-css-style($key);
+	$sizes: get-css-unit($key);
+	@if ($breakpoint == "sm") {
+		$breakpoint: "";
+	}
+	@if ($breakpoint == "md") {
+		$breakpoint: "";
+	}
+	@if ($breakpoint == "lg") {
+		$breakpoint: "";
+	}
+	@each $unit, $val in $sizes {
+		$names: #{$short-name}_#{$unit}#{$breakpoint};
+		@if ($short-names-only == false) {
+			$names: #{$long-name}_#{$unit}#{$breakpoint}, #{$short-name}_#{$unit}#{$breakpoint};
 		}
-		#{$names}{
-			@each $style in $styles{
+		#{$names} {
+			@each $style in $styles {
 				#{$style}: $val #{$important};
 			}
 		}
