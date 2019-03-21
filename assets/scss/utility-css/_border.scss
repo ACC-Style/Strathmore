@@ -1,16 +1,17 @@
-*[class^="bw"],
-*[class^="border-width"] {
+*[class^="br"] {
 	border-style: solid;
 }
 .br_dotted,
 .br_dashed,
 .br_solid,
-.br_none,
 .border_dotted,
 .border_dashed,
-.border_solid,
-.border_none {
+.border_solid {
 	border-width: 1px;
+}
+.br_none,
+.border_none {
+	border-width: 0;
 }
 
 /*
@@ -139,7 +140,7 @@ Styleguide 103.2.1
 	border-color: rgba($black, 0.9);
 }
 
-@if ($short-names-only == true) {
+@if ($short-names-only == false) {
 	.border_black {
 		@extend .br_black;
 	}
@@ -209,7 +210,7 @@ Styleguide 103.2.1
 	border-color: rgba($white, 0.9);
 }
 
-@if ($short-names-only == true) {
+@if ($short-names-only == false) {
 	.border_white {
 		@extend .br_white;
 	}

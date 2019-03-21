@@ -57,17 +57,9 @@
 	@include color-loop(background-color, $color-name, $color);
 }
 
-.bg_white {
+#{ class-name-constructor(background-color, white)} {
 	background-color: $white;
 }
-.bg_black {
+#{ class-name-constructor(background-color, black)} {
 	background-color: $black;
-}
-@if $short-names-only {
-	.bg_white {
-		@extend .bg_white;
-	}
-	.bg_black {
-		@extend .bg_black;
-	}
 }
