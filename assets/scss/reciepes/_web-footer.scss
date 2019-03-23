@@ -43,7 +43,7 @@
 	Contains copy right 
 
 	markup:
-    <cite class="c_secondary-1 font-style_italic font-weight_bold font_n1 p_3 line-height_2">&copy;
+    <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy;
     2015 American College of Cardiology</cite>
 
 	sg-wrapper:
@@ -63,34 +63,34 @@
 	markup:
     <section class="acc-websites row c_white p-x_3">
         <h4 class="font_slab">Improving Cardiovascular Care</h4>
-        <nav class="nav-list small">
-            <ul class="no-bullet lh_1 font_0">
+        <nav class="nav-list small d_block clearfix">
+            <ul class="no-bullet lh_2 font_0">
                 <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="hover:bg_black-2  hover:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
                     <span class="">Acc</span>
-                    <i class="float-right fas c_white hover:c_white fa-external-link-square "></i>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
                     </a>
                 </li>
                 <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="hover:bg_black-2  hover:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
                     <span class="">Accreditation Services</span>
-                    <i class="float-right fas c_white hover:c_white fa-external-link-square "></i>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
                     </a>
                 </li>
                 <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="hover:bg_black-2  hover:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
                     <span class="">NCDR</span>
-                    <i class="float-right fas c_white hover:c_white fa-external-link-square "></i>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
                     </a>
                 </li>
                 <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="hover:bg_black-2  hover:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
                     <span class="">CardioSmart</span>
-                    <i class="float-right fas c_white hover:c_white fa-external-link-square "></i>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
                     </a>
                 </li>
                 <li class="c_white">
-                    <a target="_blank" class="hover:bg_black-2  hover:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
                     <span class="">JACC</span>
                     <i class="float-right fas c_white fa-external-link-square "></i>
                     </a>
@@ -116,12 +116,12 @@
 
 	markup:
 	<h4 class="font_slab c_white">Stay Connected</h4>
-	<ul class="grid-x social-bar no-bullet c_white hover:c_white">
-	<li class="auto cell m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button m-b_0 button expanded text_right hover:bg_primary-n1"><i class="fab fa-twitter-square font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button m-b_0 button expanded text_right hover:bg_primary-n1"><i class="fab fa-facebook-square font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button m-b_0 button expanded text_right hover:bg_primary-n1"><i class="fab fa-linkedin font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button m-b_0 button expanded text_right hover:bg_primary-n1"><i class="fab fa-google-plus font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button m-b_0 button expanded text_right hover:bg_primary-n1"><i class="fab fa-youtube font_2 "></i></a></li>
+	<ul class="grid-x social-bar no-bullet c_white h:c_white">
+	<li class="auto cell m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-youtube font_2 "></i></a></li>
 	</ul>
 
 	Styleguide 200.040.3
@@ -173,7 +173,7 @@
                         <span class="postal-code">20037</span>
                     </li>
                     <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                        <a href="mailto:resource@acc.org" class="email c_white text_underline lh_2 hover:c_white ">
+                        <a href="mailto:resource@acc.org" class="email c_white text_underline lh_2 h:c_white ">
                             <strong class="p-r_2 inline block:medium inline:large">Email:</strong>
                             <span class="inline block:medium inline:large">resource@acc.org</span></a>
                     </li>
@@ -182,16 +182,16 @@
             <div class="cell medium-7 large-8">
             <ul class="no-bullet">
                 <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a tel="+12023756000" href="tel:+12023756000" class="lh_2 tel c_white hover:c_white hover:underline">
-                    <strong class="br_transparent p-r_2 block:medium inline:large">Phone:</strong><span class=" block:medium inline:large">(202) 375-6000, ext. 5603</span></a>
+                    <a tel="+12023756000" href="tel:+12023756000" class="lh_2 tel c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Phone:</strong><span class=" block:medium inline:large">(202) 375-6000, ext. 5603</span></a>
                 </li>
                 <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a tel="+18002574737" href="tel:+18002534636.5603" class="lh_2 tel c_white hover:c_white hover:underline">
-                    <strong class="br_transparent p-r_2 block:medium inline:large">Toll Free:</strong><span class=" block:medium inline:large">(800) 253-4636, ext. 5603</span></a>
+                    <a tel="+18002574737" href="tel:+18002534636.5603" class="lh_2 tel c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Toll Free:</strong><span class=" block:medium inline:large">(800) 253-4636, ext. 5603</span></a>
                 </li>
                 <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a fax="+12023757000" href="fax:+12023757000" class="lh_2 fax c_white hover:c_white hover:underline">
-                    <strong class="br_transparent p-r_2 block:medium inline:large">Fax:</strong>
+                    <a fax="+12023757000" href="fax:+12023757000" class="lh_2 fax c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Fax:</strong>
                     <span class="block:medium inline:large">(202) 375-7000</span>
                     </a>
                 </li>

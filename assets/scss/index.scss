@@ -9,8 +9,7 @@ $short-names-only: true;
 $ms-base: 1rem; // needs to be in em's
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";
-@import "helpers/functions/functions";
-@import "helpers/mixins/mixins";
+@import "helpers/helpers";
 @import "vendor/modular-scale";
 @import "config/config";
 
@@ -22,6 +21,10 @@ $ms-base: 1rem; // needs to be in em's
 @import "base/base";
 @import "components/components";
 @import "structures/structures";
+// #override-container {
+// 	@import "utility-css/utility-css";
+// }
+
 @import "utility-css/utility-css";
 @import "reciepes/reciepes";
 //StyleGuide

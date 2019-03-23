@@ -1,5 +1,5 @@
 /*
-    Icon Toggle
+    Toggle Icons
     
     Many momment there are needs for toggles of icon when the parent is in the state `is-active`
 
@@ -10,26 +10,26 @@
     .icon-toggle_check - Toggle a check mark to show.
 
     markup:
-    <li class="font_bold border_solid border_secondary-5 padding_3 border-width_1">
-        <div class="font_bold color_secondary-3">FA Solid {$modifiers}</div>
-        <div class="padding_2 font_4"><span>Default => <i class="fas fa-fw {$modifiers}"></i></span> vs
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Solid {$modifiers}</div>
+        <div class="p_2 font_4"><span>Default => <i class="fas fa-fw {$modifiers}"></i></span> vs
             <span class="is-active">IS_Acitve => <i class="fas {$modifiers}"></i></span></div>
     </li>
-    <li class="font_bold border_solid border_secondary-5 padding_3 border-width_1">
-        <div class="font_bold color_secondary-3">FA Regular {$modifiers}</div>
-        <div class="padding_2 font_4"><span>Default => <i class="far fa-fw {$modifiers}"></i></span> vs
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Regular {$modifiers}</div>
+        <div class="p_2 font_4"><span>Default => <i class="far fa-fw {$modifiers}"></i></span> vs
             <span class="is-active">IS_Acitve => <i class="far {$modifiers}"></i></span></div>
     </li>
-    <li class="font_bold border_solid border_secondary-5 padding_3 border-width_1">
-        <div class="font_bold color_secondary-3">FA Light {$modifiers}</div>
-        <div class="padding_2 font_4"><span>Default => <i class="fal fa-fw {$modifiers}"></i></span> vs
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Light {$modifiers}</div>
+        <div class="p_2 font_4"><span>Default => <i class="fal fa-fw {$modifiers}"></i></span> vs
             <span class="is-active">IS_Acitve => <i class="fal {$modifiers}"></i></span></div>
     </li>
 
     sg-wrapper: 
     <ul class="no-bullet"><sg-wrapper-content/></ul>
 
-    Styleguide 20.100
+    Styleguide 21.0
 */
 
 %icon-toggle-space {

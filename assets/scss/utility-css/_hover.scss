@@ -12,7 +12,7 @@
   bg_warning              - background color modified light to dark
 
   markup:
-  <div class="grid-x margin_5">
+  <div class="grid-x m_5">
     <div class="h:{$modifiers}-5 cell auto text-center br_1 br_solid br_secondary-4 p_2">5</div>
     <div class="h:{$modifiers}-4 cell auto text-center br_1 br_solid br_secondary-4 p_2">4</div>
     <div class="h:{$modifiers}-3 cell auto text-center br_1 br_solid br_secondary-4 p_2">3</div>
@@ -71,7 +71,7 @@ a:focus {
   c_alert              - text color modified light to dark
 
   markup:
-  <div class="grid-x margin_5">
+  <div class="grid-x m_5">
     <div class="h:{$modifiers}-5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">5</div>
     <div class="h:{$modifiers}-4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">4</div>
     <div class="h:{$modifiers}-3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">3</div>
@@ -234,7 +234,7 @@ a:focus {
   bg_black              - text color modified light to dark
 
   markup:
-  <div class="grid-x margin_5 bg_primary m_5">
+  <div class="grid-x m_5 bg_primary m_5">
     <div class="hover:{$modifiers}-0 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">0</div>
     <div class="hover:{$modifiers}-1 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">1</div>
     <div class="hover:{$modifiers}-2 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">2</div>

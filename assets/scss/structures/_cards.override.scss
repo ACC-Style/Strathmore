@@ -3,15 +3,15 @@
 
 	Build from the basicfoundation card utility classes can be added to make many variations on the theme.
 
-	.card-divider.back_primary				- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.back_secondary			- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.back_highlight 		- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.back_warning				- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.back_alert					- textures are slightly transparent so they can be colored with background-color classess
+	.card-divider.bg_primary				- textures are slightly transparent so they can be colored with background-color classess
+	.card-divider.bg_secondary			- textures are slightly transparent so they can be colored with background-color classess
+	.card-divider.bg_highlight 		- textures are slightly transparent so they can be colored with background-color classess
+	.card-divider.bg_warning				- textures are slightly transparent so they can be colored with background-color classess
+	.card-divider.bg_alert					- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="card shadow_2 cell small-6 large-4" style="width: 300px;">
-	  <div class=" font_slab border-top-left-square color_white font-size_3 padding_4 texture_dust {$modifiers}">
+	  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust {$modifiers}">
 	    This is a header
 	  </div>
 	  <img src="https://picsum.photos/400/300">
@@ -22,7 +22,7 @@
 	</div>
 
 	 sg-wrapper:
-	 <div class="grid-x grid-margin-x grid-margin-y texture_light back_secondary-4">
+	 <div class="grid-x grid-margin-x grid-margin-y texture_light bg_secondary-4">
 	   <sg-wrapper-content/>
 	 </div>
 
@@ -30,10 +30,7 @@
 
  */
 
-
-
-
- /*
+/*
 	Page Messages
 
 	Page Messages are altered cards to bring attention to the content we are trying to convey to the user
@@ -46,7 +43,7 @@
 
 	markup:
 	<div class="card shadow_2 cell small-6 large-4" style="width: 300px;">
-	  <div class=" font_slab border-top-left-square color_white font-size_3 padding_4 texture_dust {$modifiers}">
+	  <div class=" font_slab br-tl_square c_whitc__3 p_4 texture_dust {$modifiers}">
 	    This is a header
 	  </div>
 	  <img src="https://picsum.photos/400/300">
@@ -57,7 +54,7 @@
 	</div>
 
 	 sg-wrapper:
-	 <div class="grid-x grid-margin-x grid-margin-y texture_light back_secondary-4">
+	 <div class="grid-x grid-margin-x grid-margin-y texture_light bg_secondary-4">
 	   <sg-wrapper-content/>
 	 </div>
 

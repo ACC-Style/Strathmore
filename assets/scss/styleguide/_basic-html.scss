@@ -8,47 +8,6 @@
 
 */
 
-
-/*
-  Basic Table
-
-  An unstylzed pure dom version of a table
-
-  markup:
-  <table>
-    <thead>
-      <tr>
-        <th>Table Header</th>
-        <th>Table Header</th>
-        <th>Table Header</th>
-        <th>Table Header</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-    </tbody>
-  </table>
-
- Styleguide 10.2
-*/
-
 /*
 
   Switches
@@ -75,7 +34,6 @@
 
   Styleguide 10.3
   */
-
 
 /*
 
@@ -114,151 +72,117 @@
   Styleguide 10.4
   */
 
+/*
 
+  Basic HTML: Call Out Example
 
-// <ul class="pagination" role="navigation" aria-label="Pagination">
-//   <li class="disabled">Previous <span class="show-for-sr">page</span></li>
-//   <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-//   <li><a href="#0" aria-label="Page 2">2</a></li>
-//   <li><a href="#0" aria-label="Page 3">3</a></li>
-//   <li><a href="#0" aria-label="Page 4">4</a></li>
-//   <li class="ellipsis" aria-hidden="true"></li>
-//   <li><a href="#0" aria-label="Page 12">12</a></li>
-//   <li><a href="#0" aria-label="Page 13">13</a></li>
-//   <li><a href="#0" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-// </ul>
-// <span class="primary label">Primary Label</span>
-// <span class="secondary label">Secondary Label</span>
-// <span class="success label">Success Label</span>
-// <span class="alert label">Alert Label</span>
-// <span class="warning label">Warning Label</span>
-// <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
-// <div class="dropdown-pane" id="example-dropdown" data-dropdown>
-//   Just some junk that needs to be said. Or not. Your choice.
-// </div>
-// <div class="callout" data-closable>
-//   <button class="close-button" aria-label="Close alert" type="button" data-close>
-//     <span aria-hidden="true"><i class="fas fa-times"></i></span>
-//   </button>
-//   <p>This is a close button example.</p>
-// </div>
-// <ul class="accordion" data-accordion>
-//   <li class="accordion-item is-active" data-accordion-item>
-//     <a href="#" class="accordion-title">Accordion 1</a>
-//     <div class="accordion-content" data-tab-content >
-//       <p>Panel 1. Lorem ipsum dolor</p>
-//       <a href="#">Nowhere to Go</a>
-//     </div>
-//   </li>
-//   <li class="accordion-item" data-accordion-item>
-//     <a href="#" class="accordion-title">Accordion 2</a>
-//     <div class="accordion-content" data-tab-content>
-//       <textarea></textarea>
-//       <button class="button">I do nothing!</button>
-//     </div>
-//   </li>
-//   <li class="accordion-item" data-accordion-item>
-//     <a href="#" class="accordion-title">Accordion 3</a>
-//     <div class="accordion-content" data-tab-content>
-//       Type your name!
-//       <input type="text"></input>
-//     </div>
-//   </li>
-// </ul>
-// <nav aria-label="You are here:" role="navigation">
-//   <ul class="breadcrumbs">
-//     <li><a href="#0">Home</a></li>
-//     <li><a href="#0">Features</a></li>
-//     <li class="disabled">Gene Splicing</li>
-//     <li>
-//       <span class="show-for-sr">Current: </span> Cloning
-//     </li>
-//   </ul>
-// </nav>
-//  <form>
-//   <label>Input Label
-//     <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
-//   </label>
-//   <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-//   <label>
-//     How many puppies?
-//     <input type="number" value="100">
-//   </label>
-//   <label>
-//     What books did you read over summer break?
-//     <textarea placeholder="None"></textarea>
-//   </label>
-//   <label>Select Menu
-//     <select>
-//       <option value="husker">Husker</option>
-//       <option value="starbuck">Starbuck</option>
-//       <option value="hotdog">Hot Dog</option>
-//       <option value="apollo">Apollo</option>
-//     </select>
-//   </label>
-//   <div class="callout">
-//   <h5>This is a callout.</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
+  markup:
+  <div class="callout" data-closable>
+    <button class="close-button" aria-label="Close alert" type="button" data-close>
+      <span aria-hidden="true"><i class="fas fa-times"></i></span>
+    </button>
+    <div class="p_3 p-x_4">
+    <h1>Hello User</h1>
+    <p>This is a callout with close button example.</p>
+    </div>
+  </div>
 
-// <div class="callout primary">
-//   <h5>This is a primary callout.</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
+  Styleguide 11.0
+*/
 
-// <div class="callout secondary">
-//   <h5>This is a secondary callout</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
+/*
 
-// <div class="callout success">
-//   <h5>This is a success callout</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
+  Basic HTML: Accordian.
+  
+  You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
-// <div class="callout warning">
-//   <h5>This is a warning callout</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
+  markup:
+  <ul class="accordion" data-accordion>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 1</a>
+      <div class="accordion-content" data-tab-content >
+        <p>Panel 1. Lorem ipsum dolor</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title"><i class="fas icon-toggle_plus-minus"></i> Accordion 2</a>
+      <div class="accordion-content" data-tab-content>
+        <textarea></textarea>
+        <button class="button">I do nothing!</button>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title font_2 bg_primary-3 h:c_white h:bg_primary"><i class="fas icon-toggle_caret-circle-right-down"></i> Accordion 3</a>
+      <div class="accordion-content shadow_n1 texture_light" data-tab-content>
+        Type your name!
+        <input type="text"></input>
+      </div>
+    </li>
+  </ul>
 
-// <div class="callout alert">
-//   <h5>This is an alert callout</h5>
-//   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-//   <a href="#0">It's dangerous to go alone, take this.</a>
-// </div>
-//   <div class="grid-x grid-margin-x">
-//     <fieldset class="cell large-6">
-//       <legend>Choose Your Favorite</legend>
-//       <input type="radio" name="pokemon" value="Red" id="formRed" required><label for="formRed">Red</label>
-//       <input type="radio" name="pokemon" value="Blue" id="formBlue"><label for="formBlue">Blue</label>
-//       <input type="radio" name="pokemon" value="Yellow" id="formYellow"><label for="formYellow">Yellow</label>
-//     </fieldset>
-//     <fieldset class="cell large-6">
-//       <legend>Check these out</legend>
-//       <input id="formCheckbox1" type="checkbox"><label for="formCheckbox1">Checkbox 1</label>
-//       <input id="formCheckbox2" type="checkbox"><label for="formCheckbox2">Checkbox 2</label>
-//       <input id="formCheckbox3" type="checkbox"><label for="formCheckbox3">Checkbox 3</label>
-//     </fieldset>
-//   </div>
-//   <div class="grid-x grid-margin-x">
-//     <div class="cell small-3">
-//       <label for="middle-label" class="text-right middle">Label</label>
-//     </div>
-//     <div class="cell small-9">
-//       <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-//     </div>
-//   </div>
-//   <div class="input-group">
-//     <span class="input-group-label">$</span>
-//     <input class="input-group-field" type="url">
-//     <div class="input-group-button">
-//       <input type="submit" class="button" value="Submit">
-//     </div>
-//   </div>
-// </form>
+  Styleguide 12.0
+*/
 
+/*
+
+  Basic HTML: Breadcrumbs
+
+  markup:
+  <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs font_1">
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">Features</a></li>
+      <li class="font-italic">Gene Splicing</li>
+      <li>
+        <span class="show-for-sr">Current: </span> Cloning
+      </li>
+    </ul>
+  </nav>
+
+  Styleguide 13.0
+*/
+
+/*
+
+  Basic HTML: Tabs
+
+  markup:
+  <ul class="tabs" data-tabs id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a><i class="fal icon-toggle_check"></i></li>
+    <li class="tabs-title"><a href="#panel2">Tab 2</a><i class="fal icon-toggle_check"></i></li>
+    <li class="tabs-title"><a href="#panel3">Tab 3</a><i class="fal icon-toggle_check"></i></li>
+    <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+    <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+    <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+  </ul>
+
+  <div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+      <p>One</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+      <p>Two</p>
+      <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+    </div>
+    <div class="tabs-panel" id="panel3">
+      <p>Three</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel4">
+      <p>Four</p>
+      <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+    </div>
+    <div class="tabs-panel" id="panel5">
+      <p>Five</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel6">
+      <p>Six</p>
+      <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+    </div>
+  </div>
+  
+  Styleguide 14.0
+*/

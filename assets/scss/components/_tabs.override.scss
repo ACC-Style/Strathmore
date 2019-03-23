@@ -27,49 +27,52 @@
 
 */
 .tabs {
-    border: unset;
-    border-bottom: get-css-size(border-width,2) solid get-themecolor(secondary, 3);//#bdbec3;
-    padding: get-css-size(padding,3) get-css-size(padding,3) get-css-size(padding,2);
-    box-shadow: make-shadow(2,"inset",#000,.2);
+	border: unset;
+	border-bottom: get-css-size(border-width, 2) solid
+		get-themecolor(secondary, 3); //#bdbec3;
+	padding: get-css-size(padding, 3) get-css-size(padding, 3)
+		get-css-size(padding, 2);
+	box-shadow: make-shadow(2, "inset", #000, 0.2);
 }
 
-.tabs-title{
-    margin-bottom: get-css-size(margin,n2);
-    border-color: get-themecolor(secondary, 3);
-    >a {
-        border-top-right-radius: get-css-size(border-radius, radius);
-        border-top-left-radius: get-css-size(border-radius, radius);
-        font-size: unset;
-        @extend %hover_transition;
-        &:hover{
-            background: get-themecolor(secondary, 4);
-            text-decoration: underline;        
-        }
-    }
+.tabs-title {
+	margin-bottom: get-css-size(margin, n2);
+	border-color: get-themecolor(secondary, 3);
+	> a {
+		border-top-right-radius: get-css-size(border-radius, radius);
+		border-top-left-radius: get-css-size(border-radius, radius);
+		font-size: unset;
+		@extend %hover_transition;
+		&:hover {
+			background: get-themecolor(secondary, 4);
+			text-decoration: underline;
+		}
+	}
 }
 
-.tabs .tabs-title.is-active {  
-    margin-bottom:get-css-size(margin,n3);
-    padding-bottom:get-css-size(padding,n3); 
-    a{
-        border-width: get-css-size(border-width,2);
-        border-bottom-width: 0;
-        border-color: inherit; 
-         border-style: solid;
-        &:hover{ background: white;}
-    }
+.tabs .tabs-title.is-active {
+	margin-bottom: get-css-size(margin, n3);
+	padding-bottom: get-css-size(padding, n3);
+	a {
+		border-width: get-css-size(border-width, 2);
+		border-bottom-width: 0;
+		border-color: inherit;
+		border-style: solid;
+		&:hover {
+			background: white;
+		}
+	}
 }
-
 
 /*
     RECIEPE: Tabs
 
     markup:
-    <ul class="texture_light tabs border-color_primary back_primary-3" data-active-collapse="true"data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active"><a class="hover:back_white border-color_primary"href="#panel1c"aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel2c">Tab 2</a></li>
-        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel3c">Tab 3</a></li>
-        <li class="tabs-title"><a class="hover:white hover:back_primary" href="#panel4c">Tab 4</a></li>
+    <ul class="texture_light tabs border-c_primary bg_primary-3" data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a class="hover:bg_white border-c_primary"href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel4c">Tab 4</a></li>
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
         <div class="tabs-panel is-active" id="panel1c">

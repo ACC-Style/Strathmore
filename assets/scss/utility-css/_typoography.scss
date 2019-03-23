@@ -64,13 +64,13 @@
 	color: inherit;
 }
 @if ($short-names-only == false) {
-	.color_white {
+	.c_white {
 		@extend .c_white;
 	}
-	.color_black {
+	.c_black {
 		@extend .c_black;
 	}
-	.color_inherit {
+	.c_inherit {
 		@extend .c_inherit;
 	}
 }
@@ -248,7 +248,7 @@
   .c_inherit - text that inherits from its parent
 
   markup:
-  <div class="{$modifiers} font_normal font_2 font_bold back_secondary-4 padding_3">
+  <div class="{$modifiers} font_normal font_2 font_bold bg_secondary-4 p_3">
     <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>

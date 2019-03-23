@@ -13,7 +13,7 @@
 - [Product Color and Branding](#product-color-and-branding)
 - [Shame File](#shame-file)
 - [JavaScript Template](#javascript-templating)
-  - [ ** Project Origami ** ](ORIGAMI.md)
+- [ ** Project Origami ** ](ORIGAMI.md)
 
 ## ACC Application Framework
 
@@ -94,17 +94,18 @@ _[style name]_[value+unit]-[modifier]_[break point]_
 | color                      | '.c'       | 'color'                      | '.color'                      |
 | background-color           | '.bg'      | 'background-color'           | '.back'                       |
 | border-color               | '.br'      | 'border-color'               | '.border'                     |
-| border-radius              | '.br-r'    | 'border-radius'              | '.border-radius'              |
-| border-top-right-radius    | '.br-r-tr' | 'border-top-right-radius'    | '.border-top-right-radius'    |
-| border-top-left-radius     | '.br-r-tl' | 'border-top-left-radius'     | '.border-top-left-radius'     |
-| border-bottom-right-radius | '.br-r-br' | 'border-bottom-right-radius' | '.border-bottom-right-radius' |
-| border-bottom-left-radius  | '.br-r-bl' | 'border-bottom-left-radius'  | '.border-bottom-left-radius'  |
-| border-width               | '.br-w'    | 'border-width'               | '.border-width'               |
-| border-top-width           | '.br-w-t'  | 'border-top-width'           | '.border-top-width'           |
-| border-right-width         | '.br-w-r'  | 'border-right-width'         | '.border-right-width'         |
-| border-left-width          | '.br-w-l'  | 'border-left-width'          | '.border-left-width'          |
-| border-bottom-width        | '.br-w-b'  | 'border-bottom-width'        | '.border-bottom-width'        |
+| border-radius              | '.br'      | 'border-radius'              | '.border-radius'              |
+| border-top-right-radius    | '.br-tr'   | 'border-top-right-radius'    | '.border-top-right-radius'    |
+| border-top-left-radius     | '.br-tl'   | 'border-top-left-radius'     | '.border-top-left-radius'     |
+| border-bottom-right-radius | '.br-br'   | 'border-bottom-right-radius' | '.border-bottom-right-radius' |
+| border-bottom-left-radius  | '.br-bl'   | 'border-bottom-left-radius'  | '.border-bottom-left-radius'  |
+| border-width               | '.br'      | 'border-width'               | '.border-width'               |
+| border-top-width           | '.br-t'    | 'border-top-width'           | '.border-top-width'           |
+| border-right-width         | '.br-r'    | 'border-right-width'         | '.border-right-width'         |
+| border-left-width          | '.br-l'    | 'border-left-width'          | '.border-left-width'          |
+| border-bottom-width        | '.br-b'    | 'border-bottom-width'        | '.border-bottom-width'        |
 | width                      | '.w'       | 'width'                      | '.width'                      |
+| display                    | '.d'       | 'display'                    | '.display'                    |
 
 ### Values
 
@@ -126,15 +127,32 @@ _[style name]_[value+unit]-[modifier]_[break point]_
 
 ### Alternate Values
 
+#### Border Radius
+
 | Value Postfix | Border Radius Values |
 | ------------- | -------------------- |
 | square        | 0                    |
-| radius        | 5p or Global Radius  |
+| radius        | 5px or Global Radius |
 | round         | 999px                |
 | circle        | 100%                 |
-| none          | none                 |
-| dashed        | dashed               |
-| solid         | solid                |
+
+#### Border Style
+
+| Value Postfix | Border Style Values |
+| ------------- | ------------------- |
+| none          | none                |
+| dashed        | dashed              |
+| solid         | solid               |
+
+#### Display
+
+| Value Postfix | Display      |
+| ------------- | ------------ |
+| none          | none         |
+| block         | block        |
+| inline        | inline       |
+| inline-block  | inline-block |
+| flex          | flex         |
 
 ## Reserved Names
 
@@ -150,6 +168,7 @@ These words should be used to describe states and generic elements of the UI and
 - selected
 - focus
 - success
+- hover
 - warning
 - alert (Depreciate the use of ‘error’ for the native descriptor from foundation)
 - primary
@@ -191,7 +210,6 @@ These words should be used to describe states and generic elements of the UI and
   - -70 alpha,
   - -80 alpha,
   - -90 alpha
-
 
 ### Modifiers (Not Recommended)
 
