@@ -1,5 +1,5 @@
 /*
-    RECIPE: Guidline Seciont
+    RECIPE: Guidline Section
 
     Seciton Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
 
@@ -10,7 +10,7 @@
     <article class="result {$modifiers} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
         <header class="grid-x font_1 font_display">
             <div class="cell auto result-title overflow-ellipsis nowrap font_2 wrap">
-                <span class="c_secondary-n5 font_slab"><span class="c_acc font_bold p-r_3">5.1</span>Genetic Predisposition</span>
+                <span class="c_secondary-n5 font_slab"><span class="c_acc font_bold p-r_3">5.1</span>Genetic Predisposition</span><br>
                 <span class="font_italic c_secondary-3 font_n1">{$modifiers}</span>
             </div>
             <div class="cell shrink LOE-COR grid-x m-l_3 font_bold">

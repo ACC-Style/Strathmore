@@ -152,78 +152,19 @@ a:focus {
 
  
   Styleguide 109.3
- 
- */
+  
+  */
 
+/* Transparent Loop */
 #{ class-name-constructor(background-color, white, "", "hover")} {
 	background-color: $white;
 }
+@include loop-transparent(background-transparent, white, "", "!important", true);
 
 #{ class-name-constructor(background-color, black, "", "hover")} {
 	background-color: $black;
 }
-
-#{ class-name-constructor(background-color, white, 1, "hover")} {
-	background-color: rgba($white, 0.02);
-}
-.hover\:bg_white-1:hover {
-	background-color: rgba($white, 0.1);
-}
-.hover\:bg_white-2:hover {
-	background-color: rgba($white, 0.2);
-}
-.hover\:bg_white-3:hover {
-	background-color: rgba($white, 0.3);
-}
-.hover\:bg_white-4:hover {
-	background-color: rgba($white, 0.4);
-}
-.hover\:bg_white-5:hover {
-	background-color: rgba($white, 0.5);
-}
-.hover\:bg_white-6:hover {
-	background-color: rgba($white, 0.6);
-}
-.hover\:bg_white-7:hover {
-	background-color: rgba($white, 0.7);
-}
-.hover\:bg_white-8:hover {
-	background-color: rgba($white, 0.8);
-}
-.hover\:bg_white-9:hover {
-	background-color: rgba($white, 0.9);
-}
-
-.hover\:bg_black-0:hover {
-	background-color: rgba($black, 0.02);
-}
-.hover\:bg_black-1:hover {
-	background-color: rgba($black, 0.1);
-}
-.hover\:bg_black-2:hover {
-	background-color: rgba($black, 0.2);
-}
-.hover\:bg_black-3:hover {
-	background-color: rgba($black, 0.3);
-}
-.hover\:bg_black-4:hover {
-	background-color: rgba($black, 0.4);
-}
-.hover\:bg_black-5:hover {
-	background-color: rgba($black, 0.5);
-}
-.hover\:bg_black-6:hover {
-	background-color: rgba($black, 0.6);
-}
-.hover\:bg_black-7:hover {
-	background-color: rgba($black, 0.7);
-}
-.hover\:bg_black-8:hover {
-	background-color: rgba($black, 0.8);
-}
-.hover\:bg_black-9:hover {
-	background-color: rgba($black, 0.9);
-}
+@include loop-transparent(background-transparent, black, "", "!important", true);
 
 /*
   Hover: Background Black and White Opacity 

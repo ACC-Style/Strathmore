@@ -1,19 +1,19 @@
 /*
-  Flex
-  
-  Structure Objects quickly and change the order of the  
+	Flex
 
-  .flex-row                       - flex-row
-	.flex-column                    - flex-column
-	.flex-column-reverse            - flex-column-reverse
-	.flex-row-reverse               - flex-row-reverse
+	Structure Objects quickly and change the order of the  
 
-  markup:
-  <div class="flex {$modifiers} br_solid br_transparent bg_alert-3  text-center  p_3 bg_warning-3"> 
-    <div class="bg_primary-5 text-center flex-auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
-    <div class="bg_primary-5 text-center flex-shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
-    <div class="bg_primary-5 text-center flex-auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
-  </div>
+	.flex_row              		- the element is the a block- flex_row
+	.flex_column              		- flex_column
+	.flex_row-reverse              		- flex_column-reverse
+	.flex_column-reverse              		- flex_row-reverse
+
+	markup:
+	<div class="flex {$modifiers} br_solid br_transparent bg_alert-3  text-center  p_3 bg_warning-3"> 
+		<div class="bg_primary-5 text-center flex-auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
+		<div class="bg_primary-5 text-center flex-shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
+		<div class="bg_primary-5 text-center flex-auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
+	</div>
 
 	Styleguide 110.2
 
@@ -22,41 +22,41 @@
 .flex {
 	display: flex;
 }
-.inline-flex {
+.flex_inline {
 	display: inline-flex;
 }
 
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
+.flex_auto {
 	flex: 1 1 auto;
 	min-width: 0; /* 1 */
 	min-height: 0; /* 1 */
 }
 
-.flex-none {
+.flex_none {
 	flex: none;
 }
 
-.flex-column {
+.flex_column {
 	flex-direction: column;
 }
-.flex-row {
+.flex_row {
 	flex-direction: row;
 }
-.flex-wrap {
+.flex_wrap {
 	flex-wrap: wrap;
 }
-.flex-nowrap {
+.flex_nowrap {
 	flex-wrap: nowrap;
 }
-.flex-wrap-reverse {
+.flex_wrap-reverse {
 	flex-wrap: wrap-reverse;
 }
-.flex-column-reverse {
+.flex_column-reverse {
 	flex-direction: column-reverse;
 }
-.flex-row-reverse {
+.flex_row-reverse {
 	flex-direction: row-reverse;
 }
 
@@ -158,17 +158,17 @@
 	order: 99999;
 }
 
-.flex-grow-0 {
+.flex_grow-0 {
 	flex-grow: 0;
 }
-.flex-grow-1 {
+.flex_grow-1 {
 	flex-grow: 1;
 }
 
-.flex-shrink-0 {
+.flex_shrink-0 {
 	flex-shrink: 0;
 }
-.flex-shrink-1 {
+.flex_shrink-1 {
 	flex-shrink: 1;
 }
 
@@ -176,36 +176,36 @@
 	.flex#{$bp_medium} {
 		display: flex;
 	}
-	.inline-flex#{$bp_medium} {
+	.flex_inline#{$bp_medium} {
 		display: inline-flex;
 	}
-	.flex-auto#{$bp_medium} {
+	.flex_auto#{$bp_medium} {
 		flex: 1 1 auto;
 		min-width: 0; /* 1 */
 		min-height: 0; /* 1 */
 	}
-	.flex-none#{$bp_medium} {
+	.flex_none#{$bp_medium} {
 		flex: none;
 	}
-	.flex-column#{$bp_medium} {
+	.flex_column#{$bp_medium} {
 		flex-direction: column;
 	}
-	.flex-row#{$bp_medium} {
+	.flex_row#{$bp_medium} {
 		flex-direction: row;
 	}
-	.flex-wrap#{$bp_medium} {
+	.flex_wrap#{$bp_medium} {
 		flex-wrap: wrap;
 	}
-	.flex-nowrap#{$bp_medium} {
+	.flex_nowrap#{$bp_medium} {
 		flex-wrap: nowrap;
 	}
-	.flex-wrap-reverse#{$bp_medium} {
+	.flex_wrap-reverse#{$bp_medium} {
 		flex-wrap: wrap-reverse;
 	}
-	.flex-column-reverse#{$bp_medium} {
+	.flex_column-reverse#{$bp_medium} {
 		flex-direction: column-reverse;
 	}
-	.flex-row-reverse#{$bp_medium} {
+	.flex_row-reverse#{$bp_medium} {
 		flex-direction: row-reverse;
 	}
 	.items-start#{$bp_medium} {
@@ -306,17 +306,17 @@
 		order: 99999;
 	}
 
-	.flex-grow-0#{$bp_medium} {
+	.flex_grow-0#{$bp_medium} {
 		flex-grow: 0;
 	}
-	.flex-grow-1#{$bp_medium} {
+	.flex_grow-1#{$bp_medium} {
 		flex-grow: 1;
 	}
 
-	.flex-shrink-0#{$bp_medium} {
+	.flex_shrink-0#{$bp_medium} {
 		flex-shrink: 0;
 	}
-	.flex-shrink-1#{$bp_medium} {
+	.flex_shrink-1#{$bp_medium} {
 		flex-shrink: 1;
 	}
 }
@@ -325,36 +325,36 @@
 	.flex#{$bp_large} {
 		display: flex;
 	}
-	.inline-flex#{$bp_large} {
+	.flex_inline#{$bp_large} {
 		display: inline-flex;
 	}
-	.flex-auto#{$bp_large} {
+	.flex_auto#{$bp_large} {
 		flex: 1 1 auto;
 		min-width: 0; /* 1 */
 		min-height: 0; /* 1 */
 	}
-	.flex-none#{$bp_large} {
+	.flex_none#{$bp_large} {
 		flex: none;
 	}
-	.flex-column#{$bp_large} {
+	.flex_column#{$bp_large} {
 		flex-direction: column;
 	}
-	.flex-row#{$bp_large} {
+	.flex_row#{$bp_large} {
 		flex-direction: row;
 	}
-	.flex-wrap#{$bp_large} {
+	.flex_wrap#{$bp_large} {
 		flex-wrap: wrap;
 	}
-	.flex-nowrap#{$bp_large} {
+	.flex_nowrap#{$bp_large} {
 		flex-wrap: nowrap;
 	}
-	.flex-wrap-reverse#{$bp_large} {
+	.flex_wrap-reverse#{$bp_large} {
 		flex-wrap: wrap-reverse;
 	}
-	.flex-column-reverse#{$bp_large} {
+	.flex_column-reverse#{$bp_large} {
 		flex-direction: column-reverse;
 	}
-	.flex-row-reverse#{$bp_large} {
+	.flex_row-reverse#{$bp_large} {
 		flex-direction: row-reverse;
 	}
 
@@ -456,17 +456,17 @@
 		order: 99999;
 	}
 
-	.flex-grow-0#{$bp_large} {
+	.flex_grow-0#{$bp_large} {
 		flex-grow: 0;
 	}
-	.flex-grow-1#{$bp_large} {
+	.flex_grow-1#{$bp_large} {
 		flex-grow: 1;
 	}
 
-	.flex-shrink-0#{$bp_large} {
+	.flex_shrink-0#{$bp_large} {
 		flex-shrink: 0;
 	}
-	.flex-shrink-1#{$bp_large} {
+	.flex_shrink-1#{$bp_large} {
 		flex-shrink: 1;
 	}
 }

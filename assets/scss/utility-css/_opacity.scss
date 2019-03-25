@@ -36,9 +36,11 @@
 
 	Set the Opacity of an object to 100% while hovered.
 
+	
 	.opacity_1                        - Opacity of 5%
 	.opacity_5                        - Opacity of 50%
 	.opacity_9                        - Opacity of 95%
+	.opacity_0                        - Opacity of 95%
 
 	markup:
 	<div class="{$modifiers} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>

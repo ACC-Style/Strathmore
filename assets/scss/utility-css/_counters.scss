@@ -115,11 +115,11 @@
 	content: counter(b, upper-alpha);
 }
 
-.counter_lower-roman:before {
+.counter-sub_lower-roman:before {
 	content: counter(a, lower-roman);
 }
 
-.counter_upper-roman:before {
+.counter-sub_upper-roman:before {
 	content: counter(a, upper-roman);
 }
 

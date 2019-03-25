@@ -1,7 +1,7 @@
 /*
   Basic Table
 
-  An unstylzed pure dom version of a table
+  An unstylzed pure dom version of a table.  This is the pure version that comes from foundations
 
   markup:
   <table>
@@ -40,9 +40,9 @@
 
 /*
 
-table
+Table with .table
 
-table description
+Adding the .table class to the table tag will make it ACC's styled. 
 
 markup:
 <table class="table">
@@ -104,15 +104,136 @@ Styleguide 10.2.1
 
 /*
 
-table (Banded Recipe)
+Table Column Shaded
 
-table banded description
+table with .column-shaded  added to the table class
 
-.primary - column colored primary
-.info - column colored info 
+
 
 markup:
-<table class="table ">
+<table class="table column-shaded">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr>
+      <td>row 2 cell A</td>
+      <td>row 2 cell B</td>
+      <td>row 2 cell C</td>
+    </tr>
+    <tr>
+      <td>row 3 cell A</td>
+      <td>row 3 cell B</td>
+      <td>row 3 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.1.1
+*/
+.table.column-shaded {
+	.thead,
+	thead {
+		th:nth-child(even) {
+			// @extend .bg_acc-5;
+			background-color: get-themecolor(acc, 5);
+		}
+	}
+	.tbody,
+	tbody {
+		td:nth-child(even) {
+			// @extend .bg_primary-5;
+			background-color: get-themecolor(primary, 5);
+		}
+		tr:nth-child(even) {
+			td:nth-child(even) {
+				// @extend .bg_acc-4;
+				background-color: get-themecolor(acc, 4);
+			}
+		}
+	}
+}
+
+/*
+
+
+Table Unshaded
+
+Tables with no shadding for rows and footer just need to add `.unshaded` to the table tag.
+
+markup:
+<table class="table unshaded">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr>
+      <td>row 2 cell A</td>
+      <td>row 2 cell B</td>
+      <td>row 2 cell C</td>
+    </tr>
+    <tr>
+      <td>row 3 cell A</td>
+      <td>row 3 cell B</td>
+      <td>row 3 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.1.2
+*/
+.table.unshaded {
+	tbody tr:nth-child(even) {
+		background-color: unset;
+	}
+	tbody tr + tr td {
+		border-top: 1px get-themecolor(secondary, 5) solid;
+	}
+	tfoot {
+		background-color: unset;
+	}
+}
+
+/*
+
+Reciepe: Table (Column Shading through Utility Classes)
+
+Table shading can be much more dynamic and varied if you are willing to build with utlity classes. You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
+
+.primary          - column colored variations of primary
+.info             - column colored variations of info 
+.accent      - column colored variations of highlighted 
+
+markup:
+<table class="table">
   <thead>
     <tr>
       <th>table header</th>
@@ -148,118 +269,7 @@ Styleguide 10.2.2
 */
 
 /*
-
-table banded
-
-table banded description
-
-
-
-markup:
-<table class="table banded">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide 10.2.3
-*/
-.table.banded {
-	.thead,
-	thead {
-		th:nth-child(even) {
-			// @extend .bg_acc-5;
-			background-color: get-themecolor(acc, 5);
-		}
-	}
-	.tbody,
-	tbody {
-		td:nth-child(even) {
-			// @extend .bg_primary-5;
-			background-color: get-themecolor(primary, 5);
-		}
-		tr:nth-child(even) {
-			td:nth-child(even) {
-				// @extend .bg_acc-4;
-				background-color: get-themecolor(acc, 4);
-			}
-		}
-	}
-}
-
-/*
-
-
-table unstripped
-
-table unstripped description
-
-markup:
-<table class="table unstripped">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide 10.2.4
-*/
-.table.unstripped {
-}
-
-/*
-Table (States Cells Recipe)
+Recipe: Table Cell States
 
 Example of utilities classes to show cell states
 
@@ -305,7 +315,7 @@ markup:
   </tr>
 </table>
 
-Styleguide 10.2.5
+Styleguide 10.2.3
 */
 
 /*
@@ -379,5 +389,5 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.6
+Styleguide 10.2.4
 */

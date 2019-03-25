@@ -1,6 +1,6 @@
 # Strathmore
 
-#### Version 0.1 | Built on Foundation 6.4.3 & Font Awesome Pro
+#### Version 1.0 | Built on Foundation 6.4.3 & Font Awesome Pro
 
 ## Table of Contents
 
@@ -21,50 +21,6 @@
 
 This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project.
 **Things to note this library is built with Sass and to enjoy it's fullest power and flexibility it must be compiled.**
-
-## Intent of the Upgrade
-
-### Re-factor of the Bristol framework.
-
-- **Foundation 6.4.3**
-- removal of redundant UI that is native in foundation.
-  - Nav
-  - list item
-  - Card
-  - Typography Overrides
-  - Most of Table Override
-- **Component Simplification, Design Changes, Depreciation**
-  - Clean up of fonts to multi and maverick
-  - remove layout SCCS and components
-  - Removal of states coloring replaced by utility styling.
-  - **Refactoring SCSS to be More BEM and Dry** [**BEM**](https://css-tricks.com/bem-101/) / [**DRY**](https://alistapart.com/article/dry-ing-out-your-sass-mixins)
-  - simplification of required holder in questions.
-  - reduction of nesting specification on styling.
-- ** UX Definition **
-  - Best Practices and JavaScript Template for
-  - Mobile Header
-  - Pagination
-  - Switches
-  - Section Toggles
-  - Search and Results
-- ** Design Changes **
-  - question look and feel
-  - mobile header
-  - desktop to mobile navigation
-- **Style-guide Documentation**
-- In-Style Documentation using [KSS Documentation](https://github.com/kneath/kss)
-- Style guide built on [**sc5-styleguide**](https://github.com/SC5/sc5-styleguide#with-grunt)
-- Upgrade Styles to Use [**Font Awesome Pro**](https://fontawesome.com/)
-  - Re factor how the fa-holder works
-  - Reduction of fa-holder to reduce style duplication
-- **Utility Classes**
-- including utilities single class constructors [**See Utility Classes**](#utility-classes)
-  - Based on Tachyon CSS for short human styling [[https://tachyons.io/](https://tachyons.io/)]
-  - addition of texture-x utilities
-  - font sizing and font family utility.
-- Use of BEM for UI components
-- base class name is used through all sub components.
-- aiming to reduce code size to under a MB.
 
 ## Utility Classes
 
@@ -243,6 +199,52 @@ PNG shadows for the containers
 - -insetShadow-l
 - -insetShadow-r
 
+## Intent of the Upgrade
+
+### Re-factor of the Bristol framework.
+
+- **Foundation 6.4.3**
+- removal of redundant UI that is native in foundation.
+  - Nav
+  - list item
+  - Card
+  - Typography Overrides
+  - Most of Table Override
+- **Component Simplification, Design Changes, Depreciation**
+  - Clean up of fonts to multi and maverick
+  - remove layout SCCS and components
+  - Removal of states coloring replaced by utility styling.
+  - **Refactoring SCSS to be More BEM and Dry** [**BEM**](https://css-tricks.com/bem-101/) / [**DRY**](https://alistapart.com/article/dry-ing-out-your-sass-mixins)
+  - simplification of required holder in questions.
+  - reduction of nesting specification on styling.
+- ** UX Definition **
+  - Best Practices and JavaScript Template for
+  - Mobile Header
+  - Pagination
+  - Switches
+  - Section Toggles
+  - Search and Results
+- ** Design Changes **
+  - question look and feel
+  - mobile header
+  - desktop to mobile navigation
+- **Style-guide Documentation**
+- In-Style Documentation using [KSS Documentation](https://github.com/kneath/kss)
+- Style guide built on [**sc5-styleguide**](https://github.com/SC5/sc5-styleguide#with-grunt)
+- Upgrade Styles to Use [**Font Awesome Pro**](https://fontawesome.com/)
+  - Re factor how the fa-holder works
+  - Reduction of fa-holder to reduce style duplication
+- **Utility Classes**
+- including utilities single class constructors [**See Utility Classes**](#utility-classes)
+  - Based on Tachyon CSS for short human styling [[https://tachyons.io/](https://tachyons.io/)]
+  - addition of texture-x utilities
+  - font sizing and font family utility.
+- Use of BEM for UI components
+- base class name is used through all sub components.
+- aiming to reduce code size to under a MB.
+
+
+
 ## Folder Structure
 
 ### Structure and File Naming
@@ -250,10 +252,11 @@ PNG shadows for the containers
 To reduce improper cascades in CSS the Sass includes and folder structure has been broken into these sections. Labels like ".required" and ".override" are included in the file naming to help with readability and transparency of the code.
 
 1. **base** - any file that deals with variables, fonts and basic typography (raw tags).
-2. **helpers** or 'required.scss ' - Mostly mixins but some files that have "required" in the name are needed for other files to functions. any file that have been named with "trump" will
-3. **components** - any combination of DOM elements that make up a widget, nav, or collection of tags.
+2. **helpers** - Mostly mixins but some files that have "required" in the name are needed for other files to functions. any file that have been named with "trump" will
+3. **components** - any combination of DOM elements that make up a widget, nav, or collection of tags.  Most of these have been off loaded to utility classes.
+4. **utlity classes** - A majority of the css is broken down into single class declarations of a single style.
 4. **vendor** - Any included style from a JavaScript or Framework that needs an override to visually match with ACC standards. All files in the vendor area should be postfixed with .override. IE to override foundation's button.scss you would place a 'vendor/foundation/button.override.scss' and make your changes in the new file.
-5. **structure** - Non-Styling pure page layout code. Balanced Columns, Sidebars, Page Spacing etc...
+5. **structure** - currently the project has one structure and that is questions
 6. **trumps** or '.trump.scss' - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.
 7. **shame** or 'shame.scss' - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.
 8. **non-core** Overrides see [Expansion](#expansion)

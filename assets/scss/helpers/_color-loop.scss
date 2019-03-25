@@ -118,3 +118,32 @@ $debug-trace: true !default;
 		@debug "Color Loop for #{$key} painting it with #{$color-name}";
 	}
 }
+
+@mixin loop-transparent($key, $color: "black", $breakpoint: "", $important: "", $hover: false) {
+	$styles: get-css-style($key);
+	$sizes: get-css-unit($key);
+	$hex: #000;
+	@if ($color == "white") {
+		$hex: $white;
+	} @else {
+		$hex: $black;
+	}
+	@if $debug-trace {
+		@debug "Looping Style With Transparent Colors #{$key} #{$color}";
+	}
+	@each $unit, $val in $sizes {
+		$color-name: #{$color}-#{$unit};
+		$names: class-name-constructor($key, $color-name, $breakpoint);
+		@if ($hover == true) {
+			$names: class-name-constructor($key, $color-name, $breakpoint, "hover");
+		}
+		#{$names} {
+			@each $style in $styles {
+				#{$style}: rgba($hex, $val) #{$important};
+			}
+		}
+		@if $debug-trace {
+			@debug "My Name is  #{$name}";
+		}
+	}
+}

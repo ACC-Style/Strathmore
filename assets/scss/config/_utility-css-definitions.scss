@@ -559,6 +559,24 @@ $style-definition: (
 		unit: map-get($valueParams, "opacity"),
 		alt: "none"
 	),
+	background-transparent: (
+		short-name: ".bg",
+		css-style: (
+			"background-color"
+		),
+		long-name: ".back",
+		unit: map-get($valueParams, "opacity"),
+		alt: "none"
+	),
+	border-transparent: (
+		short-name: ".br",
+		css-style: (
+			"border-color"
+		),
+		long-name: ".border",
+		unit: map-get($valueParams, "opacity"),
+		alt: "none"
+	),
 	right: (
 		short-name: ".r",
 		css-style: (
