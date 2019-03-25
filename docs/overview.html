@@ -1,5 +1,5 @@
 <h1 class="sg" name="strathmore">Strathmore</h1>
-<h4 class="sg" name="version-0.1-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 0.1 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
+<h4 class="sg" name="version-1.0-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 1.0 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
 <h2 class="sg" name="table-of-contents">Table of Contents</h2>
 <ul>
 <li class="sg"><a href="#acc-application-framework" class="sg" du-smooth-scroll="yes">ACC Application Framework</a></li>
@@ -17,67 +17,6 @@
 <h3 class="sg" name="enterprise-ui-for-mobile-and-desktop-applications">Enterprise UI for Mobile and Desktop Applications</h3>
 <p class="sg">This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project.
 <strong>Things to note this library is built with Sass and to enjoy it&apos;s fullest power and flexibility it must be compiled.</strong></p>
-<h2 class="sg" name="intent-of-the-upgrade">Intent of the Upgrade</h2>
-<h3 class="sg" name="re-factor-of-the-bristol-framework.">Re-factor of the Bristol framework.</h3>
-<ul>
-<li class="sg"><strong>Foundation 6.4.3</strong></li>
-<li class="sg">removal of redundant UI that is native in foundation.
-<ul>
-<li class="sg">Nav</li>
-<li class="sg">list item</li>
-<li class="sg">Card</li>
-<li class="sg">Typography Overrides</li>
-<li class="sg">Most of Table Override</li>
-</ul>
-</li>
-<li class="sg"><strong>Component Simplification, Design Changes, Depreciation</strong>
-<ul>
-<li class="sg">Clean up of fonts to multi and maverick</li>
-<li class="sg">remove layout SCCS and components</li>
-<li class="sg">Removal of states coloring replaced by utility styling.</li>
-<li class="sg"><strong>Refactoring SCSS to be More BEM and Dry</strong> <a href="https://css-tricks.com/bem-101/" class="sg"><strong>BEM</strong></a> / <a href="https://alistapart.com/article/dry-ing-out-your-sass-mixins" class="sg"><strong>DRY</strong></a></li>
-<li class="sg">simplification of required holder in questions.</li>
-<li class="sg">reduction of nesting specification on styling.</li>
-</ul>
-</li>
-<li class="sg">** UX Definition **
-<ul>
-<li class="sg">Best Practices and JavaScript Template for</li>
-<li class="sg">Mobile Header</li>
-<li class="sg">Pagination</li>
-<li class="sg">Switches</li>
-<li class="sg">Section Toggles</li>
-<li class="sg">Search and Results</li>
-</ul>
-</li>
-<li class="sg">** Design Changes **
-<ul>
-<li class="sg">question look and feel</li>
-<li class="sg">mobile header</li>
-<li class="sg">desktop to mobile navigation</li>
-</ul>
-</li>
-<li class="sg"><strong>Style-guide Documentation</strong></li>
-<li class="sg">In-Style Documentation using <a href="https://github.com/kneath/kss" class="sg">KSS Documentation</a></li>
-<li class="sg">Style guide built on <a href="https://github.com/SC5/sc5-styleguide#with-grunt" class="sg"><strong>sc5-styleguide</strong></a></li>
-<li class="sg">Upgrade Styles to Use <a href="https://fontawesome.com/" class="sg"><strong>Font Awesome Pro</strong></a>
-<ul>
-<li class="sg">Re factor how the fa-holder works</li>
-<li class="sg">Reduction of fa-holder to reduce style duplication</li>
-</ul>
-</li>
-<li class="sg"><strong>Utility Classes</strong></li>
-<li class="sg">including utilities single class constructors <a href="#utility-classes" class="sg" du-smooth-scroll="yes"><strong>See Utility Classes</strong></a>
-<ul>
-<li class="sg">Based on Tachyon CSS for short human styling [<a href="https://tachyons.io/" class="sg">https://tachyons.io/</a>]</li>
-<li class="sg">addition of texture-x utilities</li>
-<li class="sg">font sizing and font family utility.</li>
-</ul>
-</li>
-<li class="sg">Use of BEM for UI components</li>
-<li class="sg">base class name is used through all sub components.</li>
-<li class="sg">aiming to reduce code size to under a MB.</li>
-</ul>
 <h2 class="sg" name="utility-classes">Utility Classes</h2>
 <h3 class="sg" name="naming-convention">Naming Convention</h3>
 <p class="sg"><em>[style name]</em>[value+unit]-[modifier]<em>[break point]</em></p>
@@ -565,15 +504,77 @@
 <li class="sg">-insetShadow-l</li>
 <li class="sg">-insetShadow-r</li>
 </ul>
+<h2 class="sg" name="intent-of-the-upgrade">Intent of the Upgrade</h2>
+<h3 class="sg" name="re-factor-of-the-bristol-framework.">Re-factor of the Bristol framework.</h3>
+<ul>
+<li class="sg"><strong>Foundation 6.4.3</strong></li>
+<li class="sg">removal of redundant UI that is native in foundation.
+<ul>
+<li class="sg">Nav</li>
+<li class="sg">list item</li>
+<li class="sg">Card</li>
+<li class="sg">Typography Overrides</li>
+<li class="sg">Most of Table Override</li>
+</ul>
+</li>
+<li class="sg"><strong>Component Simplification, Design Changes, Depreciation</strong>
+<ul>
+<li class="sg">Clean up of fonts to multi and maverick</li>
+<li class="sg">remove layout SCCS and components</li>
+<li class="sg">Removal of states coloring replaced by utility styling.</li>
+<li class="sg"><strong>Refactoring SCSS to be More BEM and Dry</strong> <a href="https://css-tricks.com/bem-101/" class="sg"><strong>BEM</strong></a> / <a href="https://alistapart.com/article/dry-ing-out-your-sass-mixins" class="sg"><strong>DRY</strong></a></li>
+<li class="sg">simplification of required holder in questions.</li>
+<li class="sg">reduction of nesting specification on styling.</li>
+</ul>
+</li>
+<li class="sg">** UX Definition **
+<ul>
+<li class="sg">Best Practices and JavaScript Template for</li>
+<li class="sg">Mobile Header</li>
+<li class="sg">Pagination</li>
+<li class="sg">Switches</li>
+<li class="sg">Section Toggles</li>
+<li class="sg">Search and Results</li>
+</ul>
+</li>
+<li class="sg">** Design Changes **
+<ul>
+<li class="sg">question look and feel</li>
+<li class="sg">mobile header</li>
+<li class="sg">desktop to mobile navigation</li>
+</ul>
+</li>
+<li class="sg"><strong>Style-guide Documentation</strong></li>
+<li class="sg">In-Style Documentation using <a href="https://github.com/kneath/kss" class="sg">KSS Documentation</a></li>
+<li class="sg">Style guide built on <a href="https://github.com/SC5/sc5-styleguide#with-grunt" class="sg"><strong>sc5-styleguide</strong></a></li>
+<li class="sg">Upgrade Styles to Use <a href="https://fontawesome.com/" class="sg"><strong>Font Awesome Pro</strong></a>
+<ul>
+<li class="sg">Re factor how the fa-holder works</li>
+<li class="sg">Reduction of fa-holder to reduce style duplication</li>
+</ul>
+</li>
+<li class="sg"><strong>Utility Classes</strong></li>
+<li class="sg">including utilities single class constructors <a href="#utility-classes" class="sg" du-smooth-scroll="yes"><strong>See Utility Classes</strong></a>
+<ul>
+<li class="sg">Based on Tachyon CSS for short human styling [<a href="https://tachyons.io/" class="sg">https://tachyons.io/</a>]</li>
+<li class="sg">addition of texture-x utilities</li>
+<li class="sg">font sizing and font family utility.</li>
+</ul>
+</li>
+<li class="sg">Use of BEM for UI components</li>
+<li class="sg">base class name is used through all sub components.</li>
+<li class="sg">aiming to reduce code size to under a MB.</li>
+</ul>
 <h2 class="sg" name="folder-structure">Folder Structure</h2>
 <h3 class="sg" name="structure-and-file-naming">Structure and File Naming</h3>
 <p class="sg">To reduce improper cascades in CSS the Sass includes and folder structure has been broken into these sections. Labels like &quot;.required&quot; and &quot;.override&quot; are included in the file naming to help with readability and transparency of the code.</p>
 <ol>
 <li class="sg"><strong>base</strong> - any file that deals with variables, fonts and basic typography (raw tags).</li>
-<li class="sg"><strong>helpers</strong> or &apos;required.scss &apos; - Mostly mixins but some files that have &quot;required&quot; in the name are needed for other files to functions. any file that have been named with &quot;trump&quot; will</li>
-<li class="sg"><strong>components</strong> - any combination of DOM elements that make up a widget, nav, or collection of tags.</li>
+<li class="sg"><strong>helpers</strong> - Mostly mixins but some files that have &quot;required&quot; in the name are needed for other files to functions. any file that have been named with &quot;trump&quot; will</li>
+<li class="sg"><strong>components</strong> - any combination of DOM elements that make up a widget, nav, or collection of tags.  Most of these have been off loaded to utility classes.</li>
+<li class="sg"><strong>utlity classes</strong> - A majority of the css is broken down into single class declarations of a single style.</li>
 <li class="sg"><strong>vendor</strong> - Any included style from a JavaScript or Framework that needs an override to visually match with ACC standards. All files in the vendor area should be postfixed with .override. IE to override foundation&apos;s button.scss you would place a &apos;vendor/foundation/button.override.scss&apos; and make your changes in the new file.</li>
-<li class="sg"><strong>structure</strong> - Non-Styling pure page layout code. Balanced Columns, Sidebars, Page Spacing etc...</li>
+<li class="sg"><strong>structure</strong> - currently the project has one structure and that is questions</li>
 <li class="sg"><strong>trumps</strong> or &apos;.trump.scss&apos; - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.</li>
 <li class="sg"><strong>shame</strong> or &apos;shame.scss&apos; - utility classes that have either high specificity or should override other uses of the same style in earlier style-sheets.</li>
 <li class="sg"><strong>non-core</strong> Overrides see <a href="#expansion" class="sg" du-smooth-scroll="yes">Expansion</a></li>

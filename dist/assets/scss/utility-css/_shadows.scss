@@ -1,24 +1,24 @@
 /*
 	Shadows
 
-	Shadows can be easily added to container .s_{{modifier}}  
+	Shadows can be easily added to container .shadow_{{modifier}}  
 
-	s_n1			- inset shadow
-	s_n2			- inset shadow
-	s_n3			- inset shadow
-	s_n4			- inset shadow
-	s_n5			- inset shadow
-	s_0			- no shadow
-	s_1			- box shadow
-	s_2			- box shadow
-	s_3			- box shadow
-	s_4			- box shadow
-	s_5			- box shadow
+	shadow_n1			- inset shadow
+	shadow_n2			- inset shadow
+	shadow_n3			- inset shadow
+	shadow_n4			- inset shadow
+	shadow_n5			- inset shadow
+	shadow_0			- no shadow
+	shadow_1			- box shadow
+	shadow_2			- box shadow
+	shadow_3			- box shadow
+	shadow_4			- box shadow
+	shadow_5			- box shadow
 
 	markup:
 	<div class="{$modifiers} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {$modifiers}</div>
 
-	Styleguide 104.3
+	Styleguide 104.5
  
  */
 @include loop-style(box-shadow);

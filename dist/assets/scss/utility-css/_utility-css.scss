@@ -6,6 +6,7 @@ Utility Classes (UCs)
  Styleguide 100.0
 */
 /* No styleguide reference. */
+
 @import "introduction";
 /*
 	UC: Counters
@@ -25,8 +26,6 @@ Styleguide 101.0
 */
 /* No styleguide reference. */
 @import "spacing";
-
-@import "display";
 
 /*
   UC: Typography
@@ -62,18 +61,14 @@ Styleguide 101.0
 /*
  UC: Borders
 
-  Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are 'border_X','border-width_X', and 'border-color_X'.  So to make an object with single black pixel border that is solid you would have to add '.border_solid.border-width_1.border_black' 
+  Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are 'br_X' where x is the value need for style color and width.  So to make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
 
   Styleguide 103.0
  
  */
 @import "border";
 
-@import "flex";
-
 /*
-
- /*
 	UC: Opacity
 
 	A subtle set of  UCs that can make objects less interactive or combine to show a level of focus.
@@ -82,3 +77,14 @@ Styleguide 101.0
  
  */
 @import "opacity";
+
+/*
+	UC: Display & Flex
+
+	Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes.. 
+
+	Styleguide 110.0
+ 
+ */
+@import "display";
+@import "flex";

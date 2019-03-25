@@ -1,12 +1,52 @@
 /*
+  Basic Table
 
-table
+  An unstylzed pure dom version of a table.  This is the pure version that comes from foundations
 
-table description
+  markup:
+  <table>
+    <thead>
+      <tr>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+        <th>Table Header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+      <tr>
+        <td>Content Goes Here</td>
+        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+        <td>Content Goes Here</td>
+        <td>Content Goes Here</td>
+      </tr>
+    </tbody>
+  </table>
+
+ Styleguide 10.2
+*/
+
+/*
+
+Table with .table
+
+Adding the .table class to the table tag will make it ACC's styled. 
 
 markup:
 <table class="table">
-  <thead class="table__thead">
+  <thead class="thead">
     <tr>
       <th>table header</th>
       <th>table header</th>
@@ -17,11 +57,11 @@ markup:
     <tr>
       <td>table row 1 table cell A
         <br>
-        <small class="color_primary">this is small text in blue</small>
+        <small class="c_primary">this is small text in blue</small>
       </td>
       <td>table row 1 table cell B
         <br>
-        <small class="color_highlight">this is small text with magenta</small>
+        <small class="c_highlight">this is small text with magenta</small>
       </td>
       <td>table row 1 table cell C</td>
     </tr>
@@ -31,7 +71,7 @@ markup:
       <td>table row 2 table cell C</td>
     </tr>
   </tbody>
-  <tfoot class="table__tfoot">
+  <tfoot class="tfoot">
     <tr>
       <td colspan="3">footer cell</td>
     </tr>
@@ -41,59 +81,180 @@ markup:
 Styleguide 10.2.1
 */
 .table {
-}
-.table__thead,
-thead {
-	background-color: $white;
+	.thead,
+	thead {
+		background-color: $white;
 
-	th,
-	td {
-		border-bottom: 2px solid get-themecolor(primary, 1);
+		th,
+		td {
+			border-bottom: 2px solid get-themecolor(primary, 1);
+		}
 	}
-}
-.table__tfoot,
-tfoot {
-	background-color: get-themecolor(secondary, 5);
+	.tfoot,
+	tfoot {
+		background-color: get-themecolor(secondary, 5);
 
-	th,
-	td {
-		border-top: 1px solid get-themecolor(secondary, 1);
-		font-style: italic;
+		th,
+		td {
+			border-top: 1px solid get-themecolor(secondary, 1);
+			font-style: italic;
+		}
 	}
 }
 
 /*
 
-table (Banded Recipe)
+Table Column Shaded
 
-table banded description
+table with .column-shaded  added to the table class
 
-.primary - column colored primary
-.info - column colored info 
+
 
 markup:
-<table class="table ">
+<table class="table column-shaded">
   <thead>
     <tr>
       <th>table header</th>
-      <th class="back_{$modifiers}-4">table header</th>
+      <th>table header</th>
       <th>table header</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>row 1 cell A</td>
-      <td class="back_{$modifiers}-5">row 1 cell B</td>
+      <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
     <tr>
       <td>row 2 cell A</td>
-      <td class="back_{$modifiers}-4">row 2 cell B</td>
+      <td>row 2 cell B</td>
       <td>row 2 cell C</td>
     </tr>
     <tr>
       <td>row 3 cell A</td>
-      <td class="back_{$modifiers}-5">row 3 cell B</td>
+      <td>row 3 cell B</td>
+      <td>row 3 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.1.1
+*/
+.table.column-shaded {
+	.thead,
+	thead {
+		th:nth-child(even) {
+			// @extend .bg_acc-5;
+			background-color: get-themecolor(acc, 5);
+		}
+	}
+	.tbody,
+	tbody {
+		td:nth-child(even) {
+			// @extend .bg_primary-5;
+			background-color: get-themecolor(primary, 5);
+		}
+		tr:nth-child(even) {
+			td:nth-child(even) {
+				// @extend .bg_acc-4;
+				background-color: get-themecolor(acc, 4);
+			}
+		}
+	}
+}
+
+/*
+
+
+Table Unshaded
+
+Tables with no shadding for rows and footer just need to add `.unshaded` to the table tag.
+
+markup:
+<table class="table unshaded">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td>row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr>
+      <td>row 2 cell A</td>
+      <td>row 2 cell B</td>
+      <td>row 2 cell C</td>
+    </tr>
+    <tr>
+      <td>row 3 cell A</td>
+      <td>row 3 cell B</td>
+      <td>row 3 cell C</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">footer cell</td>
+    </tr>
+  </tfoot>
+</table>
+
+Styleguide 10.2.1.2
+*/
+.table.unshaded {
+	tbody tr:nth-child(even) {
+		background-color: unset;
+	}
+	tbody tr + tr td {
+		border-top: 1px get-themecolor(secondary, 5) solid;
+	}
+	tfoot {
+		background-color: unset;
+	}
+}
+
+/*
+
+Reciepe: Table (Column Shading through Utility Classes)
+
+Table shading can be much more dynamic and varied if you are willing to build with utlity classes. You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
+
+.primary          - column colored variations of primary
+.info             - column colored variations of info 
+.accent      - column colored variations of highlighted 
+
+markup:
+<table class="table">
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th class="bg_{$modifiers}-4">table header</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>row 1 cell A</td>
+      <td class="bg_{$modifiers}-5">row 1 cell B</td>
+      <td>row 1 cell C</td>
+    </tr>
+    <tr>
+      <td>row 2 cell A</td>
+      <td class="bg_{$modifiers}-4">row 2 cell B</td>
+      <td>row 2 cell C</td>
+    </tr>
+    <tr>
+      <td>row 3 cell A</td>
+      <td class="bg_{$modifiers}-5">row 3 cell B</td>
       <td>row 3 cell C</td>
     </tr>
   </tbody>
@@ -108,118 +269,7 @@ Styleguide 10.2.2
 */
 
 /*
-
-table banded
-
-table banded description
-
-
-
-markup:
-<table class="table banded">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide 10.2.3
-*/
-.table.banded {
-	.table__head,
-	thead {
-		th:nth-child(even) {
-			// @extend .back_acc-5;
-			background-color: get-themecolor(acc, 5);
-		}
-	}
-	.table__body,
-	tbody {
-		td:nth-child(even) {
-			// @extend .back_primary-5;
-			background-color: get-themecolor(primary, 5);
-		}
-		tr:nth-child(even) {
-			td:nth-child(even) {
-				// @extend .back_acc-4;
-				background-color: get-themecolor(acc, 4);
-			}
-		}
-	}
-}
-
-/*
-
-
-table unstripped
-
-table unstripped description
-
-markup:
-<table class="table unstripped">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide 10.2.4
-*/
-.table.unstripped {
-}
-
-/*
-Table (States Cells Recipe)
+Recipe: Table Cell States
 
 Example of utilities classes to show cell states
 
@@ -227,23 +277,23 @@ Example of utilities classes to show cell states
 markup:
 <table class="table">
   <tr>
-    <td class="back_alert-4 border_solid border-width_1 border_alert font-weight_bold text-center">
+    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold text-center">
       <i class="fas fa-times-circle"></i>
     </td>
     <td class="">
     </td>
     <td class="">Text</td>
-    <td class="back_warning-4 border_solid border-width_1 border_warning font-weight_bold">
+    <td class="bg_warning-4 border_solid border-width_1 border_warning font-weight_bold">
       <i class="fas fa-exclamation-triangle"></i> Warning</td>
   </tr>
   <tr>
     <td class="">
     </td>
-    <td class="back_info-4 border_solid border-width_1 border_info font-weight_bold text-center">
+    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold text-center">
       <i class="fas fa-lightbulb-exclamation"></i>
     </td>
     <td class="">Text</td>
-    <td class="back_info-4 border_solid border-width_1 border_info font-weight_bold">
+    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold">
       <i class="fas fa-lightbulb-exclamation"></i>
       Info</td>
   </tr>
@@ -252,7 +302,7 @@ markup:
     </td>
     <td class="warning icon">
     </td>  
-    <td class="back_alert-4 border_solid border-width_1 border_alert font-weight_bold">Alert</td>
+    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold">Alert</td>
     <td class=""> Text</td>
   </tr>
   <tr>
@@ -260,12 +310,12 @@ markup:
     </td>
     <td class="info icon">
     </td>
-    <td class="back_success-4 border_solid border-width_1 border_success font-weight_bold"><i class="fas fa-check"></i> Success</td>
+    <td class="bg_success-4 border_solid border-width_1 border_success font-weight_bold"><i class="fas fa-check"></i> Success</td>
     <td class=""> text</td>
   </tr>
 </table>
 
-Styleguide 10.2.5
+Styleguide 10.2.3
 */
 
 /*
@@ -291,40 +341,40 @@ markup:
       <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
-    <tr class="back_info-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_info font-weight_bold font-size_n2 text-left color_white">
-      <td colspan='3' class="padding_2">Separator With Info</td>
+    <tr class="bg_info-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_info font-weight_bold font_n2 text-left c_white">
+      <td colspan='3' class="p_2">Separator With Info</td>
     </tr>
     <tr>
       <td>row 1 cell A</td>
       <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
-    <tr class="back_success-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_success font-weight_bold font-size_n2 text-left color_white">
-      <td colspan='3' class="padding_2">Separator With success</td>
+    <tr class="bg_success-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_success font-weight_bold font_n2 text-left c_white">
+      <td colspan='3' class="p_2">Separator With success</td>
     </tr>
     <tr>
       <td>row 1 cell A</td>
       <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
-    <tr class="back_alert-1 border_solid border-left-width_0 border-right-width_0 border-width_1 border border_alert font-weight_bold font-size_n2 text-left color_white">
-      <td colspan='3' class="padding_2">Separator With Alert</td>
+    <tr class="bg_alert-1 border_solid border-left-width_0 border-right-width_0 border-width_1 border border_alert font-weight_bold font_n2 text-left c_white">
+      <td colspan='3' class="p_2">Separator With Alert</td>
     </tr>
     <tr>
       <td>row 1 cell A</td>
       <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
-   <tr class="back_warning-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_warning font-weight_bold font-size_n2 text-left">
-      <td colspan='3' class="padding_2">Separator With warning</td>
+   <tr class="bg_warning-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_warning font-weight_bold font_n2 text-left">
+      <td colspan='3' class="p_2">Separator With warning</td>
     </tr>
     <tr>
       <td>row 1 cell A</td>
       <td>row 1 cell B</td>
       <td>row 1 cell C</td>
     </tr>
-   <tr class="back_secondary-3 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_secondary font-weight_bold font-size_n2 text-left">
-      <td colspan='3' class="padding_2">Separator With disabled</td>
+   <tr class="bg_secondary-3 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_secondary font-weight_bold font_n2 text-left">
+      <td colspan='3' class="p_2">Separator With disabled</td>
     </tr>
     <tr>
       <td>row 1 cell A</td>
@@ -339,5 +389,5 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.6
+Styleguide 10.2.4
 */

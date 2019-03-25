@@ -49,7 +49,7 @@
   </div>
 
  
-  Styleguide 104.2
+  Styleguide 104.1.1
  
  */
 
@@ -57,17 +57,37 @@
 	@include color-loop(background-color, $color-name, $color);
 }
 
-.bg_white {
+#{ class-name-constructor(background-color, white)} {
 	background-color: $white;
 }
-.bg_black {
+#{ class-name-constructor(background-color, black)} {
 	background-color: $black;
 }
-@if $short-names-only {
-	.bg_white {
-		@extend .bg_white;
-	}
-	.bg_black {
-		@extend .bg_black;
-	}
-}
+@include loop-transparent(background-transparent, "black", "", "!important", false);
+@include loop-transparent(background-transparent, "white", "", "!important", false);
+/*
+  Background Colors Alpha
+ 
+  Background colors of white and black can be shifted by appending a modifier bg_{{color-name}}-{{0 to 9}} to shift its transparency
+ 
+  black              - background color of black modified with alphas
+  white              - background color of white modified with alphas
+
+  markup:
+  <div class="grid-x p_4 bg_primary">
+    <div class="bg_{$modifiers}-0 cell auto text-center c_white  p_2 p-y_5">{$modifiers}-0</div>
+    <div class="bg_{$modifiers}-1 cell auto text-center c_white  p_2 p-y_5">{$modifiers}-1</div>
+    <div class="bg_{$modifiers}-2 cell auto text-center c_white  p_2 p-y_5">{$modifiers}-2</div>
+    <div class="bg_{$modifiers}-3 cell auto text-center c_white  p_2 p-y_5">{$modifiers}-3</div>
+    <div class="bg_{$modifiers}-4 cell auto text-center c_white p_2 p-y_5">{$modifiers}-4</div>
+    <div class="bg_{$modifiers}-5 cell auto text-center c_white p_2 p-y_5">{$modifiers}-5</div>
+    <div class="bg_{$modifiers}-6 cell auto text-center c_white p_2 p-y_5">{$modifiers}-6</div>
+    <div class="bg_{$modifiers}-7 cell auto text-center c_white p_2 p-y_5">{$modifiers}-7</div>
+    <div class="bg_{$modifiers}-8 cell auto text-center c_white p_2 p-y_5">{$modifiers}-8</div>
+    <div class="bg_{$modifiers}-9 cell auto text-center c_white p_2 p-y_5">{$modifiers}-9</div>
+    <div class="bg_{$modifiers} cell auto text-center c_white p_2 p-y_5">{$modifiers}</div>
+  </div>
+
+  Styleguide 104.1.2
+ 
+ */

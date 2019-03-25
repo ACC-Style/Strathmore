@@ -43,16 +43,16 @@
 
 	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
 
-	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_light.back_alert              		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_cross.back_alert             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_disabled.back_alert             	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_alert              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.bg_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="{$modifiers} p_5 br_black-8 br_1 br_solid text-center">{$modifiers}</div>
@@ -66,22 +66,16 @@
 
 	All textures are slightly transparent.  You can further shade the background colors to achieve even more flexablity.  
 
-	.texture_light.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_primary              	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_light.back_info              		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_info             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_info             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_info             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_cross.back_info             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_disabled.back_info             	- textures are slightly transparent so they can be colored with background-color classess
-	.texture_light.back_warning              		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_medium.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dust.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_dark.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_cross.back_warning             		- textures are slightly transparent so they can be colored with background-color classess
-	.texture_disabled.back_warning             	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_warning              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.bg_warning             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
 	<div class="grid-x">
