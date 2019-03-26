@@ -24,28 +24,23 @@ default		            - Medium buttons (default)
 markup:
 <a class="button {$modifiers}">{$modifiers} button</a>
 
- Styleguide 20.1
+ Styleguide 10.1
 */
-.button{ 
+.button {
 	white-space: nowrap;
-	 //  @each $name, $color in $button-palette {
-		// &.#{$name} {
-	 //  		@include button-style($color, auto, white);
-	 //  	}
-	 //  }
-	&.hollow{
+	&.hollow {
 		background-color: transparent;
 	}
-	&.clear{
+	&.clear {
+		background-color: transparent;
 		border-color: transparent;
 	}
-	&.shadow{
+	&.shadow {
 		@extend %hover_transition !optional;
-		box-shadow: make-shadow(3,"drop",#000,.4);
-		 
-		&:hover{
-			box-shadow: make-shadow(1,"drop",#000,.1);
+		box-shadow: make-shadow(3, "drop", #000, 0.4);
+
+		&:hover {
+			box-shadow: make-shadow(1, "drop", #000, 0.1);
 		}
 	}
 }
-

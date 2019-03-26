@@ -2,7 +2,7 @@
 
  Basic HTML
 
- Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many basic items should be constructed or manipulated.  
+ Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
  
  Styleguide 10.0
 
@@ -32,7 +32,7 @@
     </label>
   </div>
 
-  Styleguide 10.3
+  Styleguide 10.15
   */
 
 /*
@@ -69,12 +69,12 @@
   </div>
 </div>
 
-  Styleguide 10.4
+  Styleguide 10.10
   */
 
 /*
 
-  Basic HTML: Call Out Example
+  Call Out Example
 
   markup:
   <div class="callout" data-closable>
@@ -87,12 +87,12 @@
     </div>
   </div>
 
-  Styleguide 11.0
+  Styleguide 10.9
 */
 
 /*
 
-  Basic HTML: Accordian.
+  Accordian.
   
   You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
@@ -121,12 +121,12 @@
     </li>
   </ul>
 
-  Styleguide 12.0
+  Styleguide 10.8
 */
 
 /*
 
-  Basic HTML: Breadcrumbs
+  Breadcrumbs
 
   markup:
   <nav aria-label="You are here:" role="navigation">
@@ -140,49 +140,100 @@
     </ul>
   </nav>
 
-  Styleguide 13.0
+  Styleguide 10.3
 */
 
 /*
+    Tabs
 
-  Basic HTML: Tabs
+    markup:
+    <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel" id="panel4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
 
-  markup:
-  <ul class="tabs" data-tabs id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel2">Tab 2</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel3">Tab 3</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
-    <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
-    <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
-  </ul>
+    Styleguide 10.5.0
 
-  <div class="tabs-content" data-tabs-content="example-tabs">
-    <div class="tabs-panel is-active" id="panel1">
-      <p>One</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+*/
+
+/*
+    RECIEPE: Tabs Inset Area
+
+    markup:
+    <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel card-section  is-active" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
-    <div class="tabs-panel" id="panel2">
-      <p>Two</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+
+    Styleguide 10.5.1
+
+*/
+
+/*
+    RECIEPE: Tabs on card
+
+    markup:
+    <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel-demo2 is-active" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
-    <div class="tabs-panel" id="panel3">
-      <p>Three</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+
+    sg-wrapper:
+    <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
+      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
+      This is a header
+      </div>
+      <sg-wrapper-content/>
     </div>
-    <div class="tabs-panel" id="panel4">
-      <p>Four</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
-    </div>
-    <div class="tabs-panel" id="panel5">
-      <p>Five</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
-    </div>
-    <div class="tabs-panel" id="panel6">
-      <p>Six</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
-    </div>
-  </div>
-  
-  Styleguide 14.0
+
+    Styleguide 10.5.2
+
 */

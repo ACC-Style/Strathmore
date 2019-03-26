@@ -1,17 +1,10 @@
-*[class^="br_"],
-*[class^="br-"] {
-	border-style: solid;
-}
-.br_dotted,
-.br_dashed,
-.br_solid,
-.border_dotted,
-.border_dashed,
-.border_solid {
+/* Find Me */
+#{ class-name-constructor(border-radius,dotted)},
+#{ class-name-constructor(border-radius,dashed)},
+#{ class-name-constructor(border-radius,solid)} {
 	border-width: 1px;
 }
-.br_none,
-.border_none {
+#{ class-name-constructor(border-radius,none)} {
 	border-width: 0;
 }
 
@@ -20,7 +13,7 @@ Border Type
 
 Depends on base border module in _borders.css
 
-border_none           - none
+br_none           - none
 br_dotted         - dotted
 br_dashed         - dashed
 br_solid          - solid
@@ -214,6 +207,33 @@ Styleguide 103.2.1
   
    */
 
+// Reset all borders to zero if applying a single border dimension.
+.br-t_0,
+.br-t_1,
+.br-t_2,
+.br-t_3,
+.br-t_4,
+.br-t_5,
+.br-r_0,
+.br-r_1,
+.br-r_2,
+.br-r_3,
+.br-r_4,
+.br-r_5,
+.br-l_0,
+.br-l_1,
+.br-l_2,
+.br-l_3,
+.br-l_4,
+.br-l_5,
+.br-b_0,
+.br-b_1,
+.br-b_2,
+.br-b_3,
+.br-b_4,
+.br-b_5 {
+	border-width: 0;
+}
 @include loop-style(border-width);
 @include loop-style(border-top-width);
 @include loop-style(border-right-width);

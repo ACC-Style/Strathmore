@@ -18,16 +18,15 @@
   </ul>
 </nav>
 
- Styleguide 20.20
+ Styleguide 200.11
 */
-.pagination-previous,.pagination-next{
-   background: get-themecolor(secondary, 3);
-  
+.pagination-previous,
+.pagination-next {
+	background: get-themecolor(secondary, 3);
 }
-.pagination .disabled:hover{
+.pagination .disabled:hover {
 	@include texture-disabled;
 }
-
 
 /*
  Pagination in card
@@ -57,22 +56,23 @@ sg-wrapper:
   <sg-wrapper-content/>
 </div>
 
- Styleguide 20.20.1
+ Styleguide 200.12
 */
 
-
-.pagination-container{
-    background: get-themecolor(primary, 0);
-    padding: $padding_0 $padding_3;
-    .pagination{ margin-bottom: $margin_3}
-    .current{
-        background:$white;
-        color: get-themecolor(primary, 0);
-    }
-    a:not([class="pagination-previous"]):not([class="pagination-next"]){
-    	color:$white;
-    	&:hover{
-    		color:$black;
-    	}
-    }
+.pagination-container {
+	background: get-themecolor(primary, 0);
+	padding: $padding_0 $padding_3;
+	.pagination {
+		margin-bottom: $margin_3;
+	}
+	.current {
+		background: $white;
+		color: get-themecolor(primary, 0);
+	}
+	a:not([class="pagination-previous"]):not([class="pagination-next"]) {
+		color: $white;
+		&:hover {
+			color: $black;
+		}
+	}
 }

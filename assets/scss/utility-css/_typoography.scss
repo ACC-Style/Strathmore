@@ -35,7 +35,7 @@
   .font_italic            - Sets font style to italic      
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2">
+  <div class="{$modifiers} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -54,12 +54,17 @@
 @each $color-name, $hex-value in $acc-palette {
 	@include color-loop(color, $color-name, $hex-value);
 }
+/* Find ME */
+
 .c_white {
 	color: $white;
 }
 .c_black {
 	color: $black;
 }
+@include loop-transparent(color-transparent, "black", "", "!important", false);
+@include loop-transparent(color-transparent, "white", "", "!important", false);
+
 .c_inherit {
 	color: inherit;
 }
@@ -85,7 +90,7 @@
   .font_bold             -  Bold, 900     
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2">
+  <div class="{$modifiers} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -149,16 +154,16 @@
 
   Golden Ratio Fonts can make a more impactful text for marketing areas.  Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.  
 
-  .font-gold_5 - Largest
-  .font-gold_4 - Large
-  .font-gold_3 - Big
-  .font-gold_2 - Big-ish
-  .font-gold_1 - Slightly Bigger
-  .font-gold_0 - Default Size
+  .font-golden_5 - Largest
+  .font-golden_4 - Large
+  .font-golden_3 - Big
+  .font-golden_2 - Big-ish
+  .font-golden_1 - Slightly Bigger
+  .font-golden_0 - Default Size
 
 
   markup:
-  <div class="{$modifiers} font-family_normal">
+  <div class="{$modifiers} font_normal">
     <div class="uppercase">{$modifiers} with Parent of .font_n2</div>
   </div>
 
@@ -256,18 +261,7 @@
 
   Styleguide 102.5
  */
-@each $color-name, $hex-value in $acc-palette {
-	@include color-loop(color, $color-name, $hex-value);
-}
-.c_white {
-	color: $white;
-}
-.c_black {
-	color: $black;
-}
-.c_inherit {
-	color: inherit;
-}
+
 /*
 	Text Shadows
 
@@ -288,3 +282,24 @@
  */
 
 @include loop-style(text-shadow);
+
+/*
+  Line Height
+
+  Change the linehieght of text with `lh_x`.
+
+  .lh_0             -  0
+  .lh_1             -  1           
+  .lh_2             -  1.25  
+  .lh_3             -  1.45  
+  .lh_4             -  1.75     
+  .lh_5             -  2.5     
+
+  markup:
+  <div class=" font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3">{$modifier}</h3>
+    <p class="{$modifiers}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  Styleguide 102.6
+ */

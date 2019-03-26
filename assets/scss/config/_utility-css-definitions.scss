@@ -577,6 +577,15 @@ $style-definition: (
 		unit: map-get($valueParams, "opacity"),
 		alt: "none"
 	),
+	color-transparent: (
+		short-name: ".c",
+		css-style: (
+			"color"
+		),
+		long-name: ".color",
+		unit: map-get($valueParams, "opacity"),
+		alt: "none"
+	),
 	right: (
 		short-name: ".r",
 		css-style: (
