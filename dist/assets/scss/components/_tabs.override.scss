@@ -1,0 +1,34 @@
+// .tabs {
+// 	border: unset;
+// 	border-bottom: get-css-size(border-width, 1) solid get-themecolor(secondary, 3); //#bdbec3;
+// 	padding: get-css-size(padding, 3) get-css-size(padding, 3) get-css-size(padding, 2);
+// }
+
+// .tabs-title {
+// 	margin-bottom: get-css-size(margin, n2);
+// 	border-color: get-themecolor(secondary, 3);
+// 	> a {
+// 		border-top-right-radius: get-css-size(border-radius, radius);
+// 		border-top-left-radius: get-css-size(border-radius, radius);
+// 		font-size: unset;
+// 		@extend %hover_transition;
+// 		&:hover {
+// 			background: get-themecolor(secondary, 4);
+// 			text-decoration: underline;
+// 		}
+// 	}
+// }
+
+// .tabs .tabs-title.is-active {
+// 	margin-bottom: get-css-size(margin, n3);
+// 	padding-bottom: get-css-size(padding, n3);
+// 	a {
+// 		border-width: get-css-size(border-width, 1);
+// 		border-bottom-width: 0;
+// 		border-color: inherit;
+// 		border-style: solid;
+// 		&:hover {
+// 			background: white;
+// 		}
+// 	}
+// }
