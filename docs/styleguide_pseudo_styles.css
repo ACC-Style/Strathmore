@@ -895,15 +895,6 @@ a.thumbnail.pseudo-class-focus {
   outline: none;
 }
 
-.tabs-title > a.pseudo-class-hover {
-  background: #dcdddf;
-  text-decoration: underline;
-}
-
-.tabs .tabs-title.is-active a.pseudo-class-hover {
-  background: white;
-}
-
 .pagination .disabled.pseudo-class-hover {
   background-image: url("../img/cross_disabled.png");
 }
@@ -929,7 +920,6 @@ a.pseudo-class-focus {
 }
 
 .button.shadow.pseudo-class-focus,
-.tabs-title > a.pseudo-class-focus,
 *[class^=" hover:"].pseudo-class-focus,
 *[class^=" h:"].pseudo-class-focus {
   background: inherit;

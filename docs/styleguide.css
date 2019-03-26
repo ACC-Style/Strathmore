@@ -6926,7 +6926,7 @@ default		            - Medium buttons (default)
 markup:
 <a class="button {$modifiers}">{$modifiers} button</a>
 
- Styleguide 20.1
+ Styleguide 10.1
 */
 .button {
   white-space: nowrap;
@@ -6935,6 +6935,7 @@ markup:
   background-color: transparent;
 }
 .button.clear {
+  background-color: transparent;
   border-color: transparent;
 }
 .button.shadow {
@@ -6960,6 +6961,10 @@ markup:
   outline: none;
 }
 
+i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before {
+  margin: 0 0.25rem;
+}
+
 /*
     Toggle Icons
     
@@ -6969,23 +6974,28 @@ markup:
     .icon-toggle_chevron-double-up-down - Toggle the double chevron to point up when active
     .icon-toggle_caret-circle-right-down - Toggle the caret to point down when active.
     .icon-toggle_arrow-circle - Toggle the arrow to have a circle when active.
-    .icon-toggle_check - Toggle a check mark to show.
 
     markup:
     <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
         <div class="font_bold c_secondary-3">FA Solid {$modifiers}</div>
-        <div class="p_2 font_4"><span>Default => <i class="fas fa-fw {$modifiers}"></i></span> vs
-            <span class="is-active">IS_Acitve => <i class="fas {$modifiers}"></i></span></div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {$modifiers}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2  br_circle  bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fas {$modifiers}"></i></span></div>
     </li>
     <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
         <div class="font_bold c_secondary-3">FA Regular {$modifiers}</div>
-        <div class="p_2 font_4"><span>Default => <i class="far fa-fw {$modifiers}"></i></span> vs
-            <span class="is-active">IS_Acitve => <i class="far {$modifiers}"></i></span></div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {$modifiers}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="far {$modifiers}"></i></span></div>
     </li>
     <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
         <div class="font_bold c_secondary-3">FA Light {$modifiers}</div>
-        <div class="p_2 font_4"><span>Default => <i class="fal fa-fw {$modifiers}"></i></span> vs
-            <span class="is-active">IS_Acitve => <i class="fal {$modifiers}"></i></span></div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {$modifiers}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fal {$modifiers}"></i></span></div>
     </li>
 
     sg-wrapper: 
@@ -6993,10 +7003,6 @@ markup:
 
     Styleguide 21.0
 */
-i.icon-toggle_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before {
-  margin: 0 0.25rem;
-}
-
 i.icon-toggle_plus-minus:before {
   content: "";
 }
@@ -7033,109 +7039,62 @@ i.icon-toggle_caret-circle-right-down:before {
 }
 
 i.icon-toggle_arrow-circle:before {
-  content: "";
+  content: "";
 }
 .is-active i.icon-toggle_arrow-circle:before {
   content: "";
 }
 
-i.icon-toggle_check:before {
+/*
+	Toggle Icons Complete
+
+	This variation of the icon toggle responds to `is-complete` and not is `is-active`
+
+	.icon-complete_check - Toggle a check mark to show.
+	.icon-complete_check-circle - Toggle a check mark to show.
+
+	markup:
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Solid {$modifiers}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {$modifiers}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fas {$modifiers}"></i></span></div>
+	</li>
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Regular {$modifiers}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {$modifiers}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="far {$modifiers}"></i></span></div>
+	</li>
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Light {$modifiers}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {$modifiers}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fal {$modifiers}"></i></span></div>
+	</li>
+
+	sg-wrapper: 
+	<ul class="no-bullet"><sg-wrapper-content/></ul>
+
+	Styleguide 21.1
+*/
+i.icon-complete_check:before {
   content: "";
 }
-.is-active i.icon-toggle_check:before {
+.is-complete i.icon-complete_check:before {
   content: "";
 }
 
-/*
-    Tabs
-
-    markup:
-    <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
-        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
-        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
-    </ul>
-    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel is-active" id="panel1c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="tabs-panel" id="panel2c">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        </div>
-        <div class="tabs-panel" id="panel3c">
-            <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
-        </div>
-        <div class="tabs-panel" id="panel4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-
-    Styleguide 20.30
-
-*/
-.tabs {
-  border: unset;
-  border-bottom: 3px solid #c0c1c5;
-  padding: 0.5rem 0.5rem 0.25rem;
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+i.icon-complete_check-circle:before {
+  content: "";
+}
+.is-complete i.icon-complete_check-circle:before {
+  content: "";
 }
 
-.tabs-title {
-  margin-bottom: -0.25rem;
-  border-color: #c0c1c5;
-}
-.tabs-title > a {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  font-size: unset;
-}
-.tabs-title > a:hover {
-  background: #dcdddf;
-  text-decoration: underline;
-}
-
-.tabs .tabs-title.is-active {
-  margin-bottom: -0.5rem;
-}
-.tabs .tabs-title.is-active a {
-  border-width: 3px;
-  border-bottom-width: 0;
-  border-color: inherit;
-  border-style: solid;
-}
-.tabs .tabs-title.is-active a:hover {
-  background: white;
-}
-
-/*
-    RECIEPE: Tabs
-
-    markup:
-    <ul class="texture_light tabs border-c_primary bg_primary-3" data-active-collapse="true"data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active"><a class="hover:bg_white border-c_primary"href="#panel1c"aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel2c">Tab 2</a></li>
-        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel3c">Tab 3</a></li>
-        <li class="tabs-title"><a class="hover:white hover:bg_primary" href="#panel4c">Tab 4</a></li>
-    </ul>
-    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel is-active" id="panel1c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="tabs-panel" id="panel2c">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        </div>
-        <div class="tabs-panel" id="panel3c">
-            <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
-        </div>
-        <div class="tabs-panel" id="panel4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-
-    Styleguide 20.30.1
-
-*/
 /* Let's get this party started */
 .scrollbar-mini::-webkit-scrollbar {
   width: 0.5rem;
@@ -7524,9 +7483,10 @@ select {
   </ul>
 </nav>
 
- Styleguide 20.20
+ Styleguide 200.11
 */
-.pagination-previous, .pagination-next {
+.pagination-previous,
+.pagination-next {
   background: #c0c1c5;
 }
 
@@ -7565,7 +7525,7 @@ sg-wrapper:
   <sg-wrapper-content/>
 </div>
 
- Styleguide 20.20.1
+ Styleguide 200.12
 */
 .pagination-container {
   background: #198dae;
@@ -10011,7 +9971,7 @@ Styleguide 101.0
   .font_italic            - Sets font style to italic      
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2">
+  <div class="{$modifiers} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -10530,12 +10490,101 @@ Styleguide 101.0
   color: #000e1b !important;
 }
 
+/* Find ME */
 .c_white {
   color: #fff;
 }
 
 .c_black {
   color: #111;
+}
+
+.c_black-0 {
+  color: rgba(17, 17, 17, 0) !important;
+}
+
+.c_black-1 {
+  color: rgba(17, 17, 17, 0.05) !important;
+}
+
+.c_black-2 {
+  color: rgba(17, 17, 17, 0.12) !important;
+}
+
+.c_black-3 {
+  color: rgba(17, 17, 17, 0.25) !important;
+}
+
+.c_black-4 {
+  color: rgba(17, 17, 17, 0.38) !important;
+}
+
+.c_black-5 {
+  color: rgba(17, 17, 17, 0.5) !important;
+}
+
+.c_black-6 {
+  color: rgba(17, 17, 17, 0.62) !important;
+}
+
+.c_black-7 {
+  color: rgba(17, 17, 17, 0.75) !important;
+}
+
+.c_black-8 {
+  color: rgba(17, 17, 17, 0.88) !important;
+}
+
+.c_black-9 {
+  color: rgba(17, 17, 17, 0.95) !important;
+}
+
+.c_black-none {
+  color: #111111 !important;
+}
+
+.c_white-0 {
+  color: rgba(255, 255, 255, 0) !important;
+}
+
+.c_white-1 {
+  color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.c_white-2 {
+  color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.c_white-3 {
+  color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.c_white-4 {
+  color: rgba(255, 255, 255, 0.38) !important;
+}
+
+.c_white-5 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.c_white-6 {
+  color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.c_white-7 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.c_white-8 {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.c_white-9 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.c_white-none {
+  color: white !important;
 }
 
 .c_inherit {
@@ -10552,7 +10601,7 @@ Styleguide 101.0
   .font_bold             -  Bold, 900     
 
   markup:
-  <div class="{$modifiers} font-family_normal font_2">
+  <div class="{$modifiers} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -10803,16 +10852,16 @@ Styleguide 101.0
 
   Golden Ratio Fonts can make a more impactful text for marketing areas.  Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.  
 
-  .font-gold_5 - Largest
-  .font-gold_4 - Large
-  .font-gold_3 - Big
-  .font-gold_2 - Big-ish
-  .font-gold_1 - Slightly Bigger
-  .font-gold_0 - Default Size
+  .font-golden_5 - Largest
+  .font-golden_4 - Large
+  .font-golden_3 - Big
+  .font-golden_2 - Big-ish
+  .font-golden_1 - Slightly Bigger
+  .font-golden_0 - Default Size
 
 
   markup:
-  <div class="{$modifiers} font-family_normal">
+  <div class="{$modifiers} font_normal">
     <div class="uppercase">{$modifiers} with Parent of .font_n2</div>
   </div>
 
@@ -10945,498 +10994,6 @@ Styleguide 101.0
 
   Styleguide 102.5
  */
-.c_primary {
-  color: #198dae !important;
-}
-
-.c_primary-0 {
-  color: #198dae !important;
-}
-
-.c_primary-1 {
-  color: #3c9eba !important;
-}
-
-.c_primary-2 {
-  color: #6eb7cc !important;
-}
-
-.c_primary-3 {
-  color: #a3d1df !important;
-}
-
-.c_primary-4 {
-  color: #cce6ed !important;
-}
-
-.c_primary-5 {
-  color: #e8f4f7 !important;
-}
-
-.c_primary-n1 {
-  color: #177f9d !important;
-}
-
-.c_primary-n2 {
-  color: #136a83 !important;
-}
-
-.c_primary-n3 {
-  color: #0e4e60 !important;
-}
-
-.c_primary-n4 {
-  color: #0a3846 !important;
-}
-
-.c_primary-n5 {
-  color: #06232c !important;
-}
-
-.c_secondary {
-  color: #64666d !important;
-}
-
-.c_secondary-0 {
-  color: #64666d !important;
-}
-
-.c_secondary-1 {
-  color: #7b7d83 !important;
-}
-
-.c_secondary-2 {
-  color: #9d9fa3 !important;
-}
-
-.c_secondary-3 {
-  color: #c1c2c5 !important;
-}
-
-.c_secondary-4 {
-  color: #dddddf !important;
-}
-
-.c_secondary-5 {
-  color: #f0f0f0 !important;
-}
-
-.c_secondary-n1 {
-  color: #5a5c62 !important;
-}
-
-.c_secondary-n2 {
-  color: #4b4d52 !important;
-}
-
-.c_secondary-n3 {
-  color: #37383c !important;
-}
-
-.c_secondary-n4 {
-  color: #28292c !important;
-}
-
-.c_secondary-n5 {
-  color: #191a1b !important;
-}
-
-.c_success {
-  color: #088532 !important;
-}
-
-.c_success-0 {
-  color: #088532 !important;
-}
-
-.c_success-1 {
-  color: #2d9751 !important;
-}
-
-.c_success-2 {
-  color: #63b27e !important;
-}
-
-.c_success-3 {
-  color: #9ccead !important;
-}
-
-.c_success-4 {
-  color: #c9e4d2 !important;
-}
-
-.c_success-5 {
-  color: #e6f3eb !important;
-}
-
-.c_success-n1 {
-  color: #07782d !important;
-}
-
-.c_success-n2 {
-  color: #066426 !important;
-}
-
-.c_success-n3 {
-  color: #04491c !important;
-}
-
-.c_success-n4 {
-  color: #033514 !important;
-}
-
-.c_success-n5 {
-  color: #02210d !important;
-}
-
-.c_warning {
-  color: #db7b14 !important;
-}
-
-.c_warning-0 {
-  color: #db7b14 !important;
-}
-
-.c_warning-1 {
-  color: #e08f37 !important;
-}
-
-.c_warning-2 {
-  color: #e8ac6b !important;
-}
-
-.c_warning-3 {
-  color: #f1caa1 !important;
-}
-
-.c_warning-4 {
-  color: #f7e2cb !important;
-}
-
-.c_warning-5 {
-  color: #fbf2e8 !important;
-}
-
-.c_warning-n1 {
-  color: #c56f12 !important;
-}
-
-.c_warning-n2 {
-  color: #a45c0f !important;
-}
-
-.c_warning-n3 {
-  color: #78440b !important;
-}
-
-.c_warning-n4 {
-  color: #583108 !important;
-}
-
-.c_warning-n5 {
-  color: #371f05 !important;
-}
-
-.c_alert {
-  color: #cb241c !important;
-}
-
-.c_alert-0 {
-  color: #cb241c !important;
-}
-
-.c_alert-1 {
-  color: #d3453e !important;
-}
-
-.c_alert-2 {
-  color: #de7570 !important;
-}
-
-.c_alert-3 {
-  color: #eaa7a4 !important;
-}
-
-.c_alert-4 {
-  color: #f4cfcd !important;
-}
-
-.c_alert-5 {
-  color: #fae9e8 !important;
-}
-
-.c_alert-n1 {
-  color: #b72019 !important;
-}
-
-.c_alert-n2 {
-  color: #981b15 !important;
-}
-
-.c_alert-n3 {
-  color: #70140f !important;
-}
-
-.c_alert-n4 {
-  color: #510e0b !important;
-}
-
-.c_alert-n5 {
-  color: #330907 !important;
-}
-
-.c_navigation {
-  color: #406bc0 !important;
-}
-
-.c_navigation-0 {
-  color: #406bc0 !important;
-}
-
-.c_navigation-1 {
-  color: #5d81c9 !important;
-}
-
-.c_navigation-2 {
-  color: #87a2d7 !important;
-}
-
-.c_navigation-3 {
-  color: #b3c4e6 !important;
-}
-
-.c_navigation-4 {
-  color: #d5def1 !important;
-}
-
-.c_navigation-5 {
-  color: #ecf0f9 !important;
-}
-
-.c_navigation-n1 {
-  color: #3a60ad !important;
-}
-
-.c_navigation-n2 {
-  color: #305090 !important;
-}
-
-.c_navigation-n3 {
-  color: #233b6a !important;
-}
-
-.c_navigation-n4 {
-  color: #1a2b4d !important;
-}
-
-.c_navigation-n5 {
-  color: #101b30 !important;
-}
-
-.c_accent {
-  color: #7e4fbb !important;
-}
-
-.c_accent-0 {
-  color: #7e4fbb !important;
-}
-
-.c_accent-1 {
-  color: #9169c5 !important;
-}
-
-.c_accent-2 {
-  color: #ae90d4 !important;
-}
-
-.c_accent-3 {
-  color: #cbb9e4 !important;
-}
-
-.c_accent-4 {
-  color: #e3d8f0 !important;
-}
-
-.c_accent-5 {
-  color: #f2edf8 !important;
-}
-
-.c_accent-n1 {
-  color: #7147a8 !important;
-}
-
-.c_accent-n2 {
-  color: #5f3b8c !important;
-}
-
-.c_accent-n3 {
-  color: #452b67 !important;
-}
-
-.c_accent-n4 {
-  color: #32204b !important;
-}
-
-.c_accent-n5 {
-  color: #20142f !important;
-}
-
-.c_info {
-  color: #807871 !important;
-}
-
-.c_info-0 {
-  color: #807871 !important;
-}
-
-.c_info-1 {
-  color: #938c86 !important;
-}
-
-.c_info-2 {
-  color: #afaaa6 !important;
-}
-
-.c_info-3 {
-  color: #ccc9c6 !important;
-}
-
-.c_info-4 {
-  color: #e3e1e0 !important;
-}
-
-.c_info-5 {
-  color: #f2f2f1 !important;
-}
-
-.c_info-n1 {
-  color: #736c66 !important;
-}
-
-.c_info-n2 {
-  color: #605a55 !important;
-}
-
-.c_info-n3 {
-  color: #46423e !important;
-}
-
-.c_info-n4 {
-  color: #33302d !important;
-}
-
-.c_info-n5 {
-  color: #201e1c !important;
-}
-
-.c_highlight {
-  color: #c54c9d !important;
-}
-
-.c_highlight-0 {
-  color: #c54c9d !important;
-}
-
-.c_highlight-1 {
-  color: #ce67ac !important;
-}
-
-.c_highlight-2 {
-  color: #da8ec1 !important;
-}
-
-.c_highlight-3 {
-  color: #e8b7d8 !important;
-}
-
-.c_highlight-4 {
-  color: #f2d8e9 !important;
-}
-
-.c_highlight-5 {
-  color: #f9edf5 !important;
-}
-
-.c_highlight-n1 {
-  color: #b1448d !important;
-}
-
-.c_highlight-n2 {
-  color: #943976 !important;
-}
-
-.c_highlight-n3 {
-  color: #6c2a56 !important;
-}
-
-.c_highlight-n4 {
-  color: #4f1e3f !important;
-}
-
-.c_highlight-n5 {
-  color: #311327 !important;
-}
-
-.c_acc {
-  color: #00386b !important;
-}
-
-.c_acc-0 {
-  color: #00386b !important;
-}
-
-.c_acc-1 {
-  color: #265681 !important;
-}
-
-.c_acc-2 {
-  color: #5e82a2 !important;
-}
-
-.c_acc-3 {
-  color: #99afc4 !important;
-}
-
-.c_acc-4 {
-  color: #c7d3de !important;
-}
-
-.c_acc-5 {
-  color: #e6ebf0 !important;
-}
-
-.c_acc-n1 {
-  color: #003260 !important;
-}
-
-.c_acc-n2 {
-  color: #002a50 !important;
-}
-
-.c_acc-n3 {
-  color: #001f3b !important;
-}
-
-.c_acc-n4 {
-  color: #00162b !important;
-}
-
-.c_acc-n5 {
-  color: #000e1b !important;
-}
-
-.c_white {
-  color: #fff;
-}
-
-.c_black {
-  color: #111;
-}
-
-.c_inherit {
-  color: inherit;
-}
-
 /*
 	Text Shadows
 
@@ -11475,6 +11032,26 @@ Styleguide 101.0
   text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/*
+  Line Height
+
+  Change the linehieght of text with `lh_x`.
+
+  .lh_0             -  0
+  .lh_1             -  1           
+  .lh_2             -  1.25  
+  .lh_3             -  1.45  
+  .lh_4             -  1.75     
+  .lh_5             -  2.5     
+
+  markup:
+  <div class=" font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3">{$modifier}</h3>
+    <p class="{$modifiers}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  Styleguide 102.6
+ */
 /*
   UC: Background 
  
@@ -12363,13 +11940,13 @@ a:focus {
   color: unset;
 }
 
-.button.shadow, .tabs-title > a,
+.button.shadow,
 *[class^=" hover:"],
 *[class^=" h:"] {
   transition: all ease-out 0.75s;
   cursor: pointer;
 }
-.button.shadow:focus, .tabs-title > a:focus,
+.button.shadow:focus,
 *[class^=" hover:"]:focus,
 *[class^=" h:"]:focus {
   background: inherit;
@@ -13569,22 +13146,14 @@ a:focus {
   Styleguide 103.0
  
  */
-*[class^=br_],
-*[class^=br-] {
-  border-style: solid;
-}
-
+/* Find Me */
 .br_dotted,
 .br_dashed,
-.br_solid,
-.border_dotted,
-.border_dashed,
-.border_solid {
+.br_solid {
   border-width: 1px;
 }
 
-.br_none,
-.border_none {
+.br_none {
   border-width: 0;
 }
 
@@ -13593,7 +13162,7 @@ Border Type
 
 Depends on base border module in _borders.css
 
-border_none           - none
+br_none           - none
 br_dotted         - dotted
 br_dashed         - dashed
 br_solid          - solid
@@ -14470,6 +14039,33 @@ Styleguide 103.2.1
     Styleguide 103.5
   
    */
+.br-t_0,
+.br-t_1,
+.br-t_2,
+.br-t_3,
+.br-t_4,
+.br-t_5,
+.br-r_0,
+.br-r_1,
+.br-r_2,
+.br-r_3,
+.br-r_4,
+.br-r_5,
+.br-l_0,
+.br-l_1,
+.br-l_2,
+.br-l_3,
+.br-l_4,
+.br-l_5,
+.br-b_0,
+.br-b_1,
+.br-b_2,
+.br-b_3,
+.br-b_4,
+.br-b_5 {
+  border-width: 0;
+}
+
 .br_0 {
   border-width: 0px;
 }
@@ -15448,19 +15044,28 @@ Styleguide 103.2.1
 	alert					- This page message is used for X
 
 	markup:
-	<div class="card shadow_2 cell small-6 large-4" style="width: 300px;">
-	  <div class=" font_slab br-tl_square c_whitc__3 p_4 texture_dust {$modifiers}">
-	    This is a header
-	  </div>
-	  <img src="https://picsum.photos/400/300">
-	  <div class="card-section">
-	    <h4>This is a card.</h4>
-	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	  </div>
+	<div class="card shadow_2 bg_{$modifiers}-5">
+		<div class=" font_slab br-tl_square c_white font_3 p_4 texture_dust bg_{$modifiers}">
+			This is page message
+		</div>
+		<div class="card-section">
+			<div class="grid-x">
+				<div class="cell shrink p_4 font_5 c_{$modifiers}-n3"><i class="fas fa-check"></i></div>
+				<div class="cell auto p_4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate
+					consectetur ab pariatur ullam quo sit maiores corrupti voluptates neque
+					illum aperiam laudantium provident fugit, nihil labore incidunt at
+					impedit?
+				</div>
+			</div>
+		</div>
+		<div class="card-section br_0 br-t_1 br_solid br_{$modifiers}">
+			<a href="" class="button br_radius float-right bg_{$modifiers}-n1"><i class="fas fa-times"></i>&nbsp;close</a>
+		</div>
 	</div>
 
 	 sg-wrapper:
-	 <div class="grid-x grid-margin-x grid-margin-y texture_light bg_secondary-4">
+	 <div class="grid-x p_5 grid-margin-x grid-margin-y texture_light bg_secondary-4">
 	   <sg-wrapper-content/>
 	 </div>
 
@@ -16451,7 +16056,7 @@ Icons: Regular
 
  Basic HTML
 
- Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many basic items should be constructed or manipulated.  
+ Strathmroe is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
  
  Styleguide 10.0
 
@@ -16480,7 +16085,7 @@ Icons: Regular
     </label>
   </div>
 
-  Styleguide 10.3
+  Styleguide 10.15
   */
 /*
 
@@ -16516,11 +16121,11 @@ Icons: Regular
   </div>
 </div>
 
-  Styleguide 10.4
+  Styleguide 10.10
   */
 /*
 
-  Basic HTML: Call Out Example
+  Call Out Example
 
   markup:
   <div class="callout" data-closable>
@@ -16533,11 +16138,11 @@ Icons: Regular
     </div>
   </div>
 
-  Styleguide 11.0
+  Styleguide 10.9
 */
 /*
 
-  Basic HTML: Accordian.
+  Accordian.
   
   You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
@@ -16566,11 +16171,11 @@ Icons: Regular
     </li>
   </ul>
 
-  Styleguide 12.0
+  Styleguide 10.8
 */
 /*
 
-  Basic HTML: Breadcrumbs
+  Breadcrumbs
 
   markup:
   <nav aria-label="You are here:" role="navigation">
@@ -16584,50 +16189,99 @@ Icons: Regular
     </ul>
   </nav>
 
-  Styleguide 13.0
+  Styleguide 10.3
 */
 /*
+    Tabs
 
-  Basic HTML: Tabs
+    markup:
+    <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel" id="panel4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
 
-  markup:
-  <ul class="tabs" data-tabs id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel2">Tab 2</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel3">Tab 3</a><i class="fal icon-toggle_check"></i></li>
-    <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
-    <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
-    <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
-  </ul>
+    Styleguide 10.5.0
 
-  <div class="tabs-content" data-tabs-content="example-tabs">
-    <div class="tabs-panel is-active" id="panel1">
-      <p>One</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+*/
+/*
+    RECIEPE: Tabs Inset Area
+
+    markup:
+    <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel card-section  is-active" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
-    <div class="tabs-panel" id="panel2">
-      <p>Two</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+
+    Styleguide 10.5.1
+
+*/
+/*
+    RECIEPE: Tabs on card
+
+    markup:
+    <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel-demo2 is-active" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel-demo2 " id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
-    <div class="tabs-panel" id="panel3">
-      <p>Three</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+
+    sg-wrapper:
+    <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
+      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
+      This is a header
+      </div>
+      <sg-wrapper-content/>
     </div>
-    <div class="tabs-panel" id="panel4">
-      <p>Four</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
-    </div>
-    <div class="tabs-panel" id="panel5">
-      <p>Five</p>
-      <p>Check me out! I'm a super cool Tab panel with text content!</p>
-    </div>
-    <div class="tabs-panel" id="panel6">
-      <p>Six</p>
-      <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
-    </div>
-  </div>
-  
-  Styleguide 14.0
+
+    Styleguide 10.5.2
+
 */
 /*
 Navigation Components
