@@ -119,7 +119,13 @@ $debug-trace: true !default;
 	}
 }
 
-@mixin loop-transparent($key, $color: "black", $breakpoint: "", $important: "", $hover: false) {
+@mixin loop-transparent(
+	$key,
+	$color: "black",
+	$breakpoint: "",
+	$important: "",
+	$hover: false
+) {
 	$styles: get-css-style($key);
 	$sizes: get-css-unit($key);
 	$hex: #000;
@@ -132,7 +138,11 @@ $debug-trace: true !default;
 		@debug "Looping Style With Transparent Colors #{$key} #{$color}";
 	}
 	@each $unit, $val in $sizes {
-		$color-name: #{$color}-#{$unit};
+		$seperator: "";
+		@if ($unit != "") {
+			$seperator: "-";
+		}
+		$color-name: #{$color}#{$seperator}#{$unit};
 		$names: class-name-constructor($key, $color-name, $breakpoint);
 		@if ($hover == true) {
 			$names: class-name-constructor($key, $color-name, $breakpoint, "hover");
