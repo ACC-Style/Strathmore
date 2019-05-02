@@ -1,5 +1,5 @@
 <h1 class="sg" name="strathmore">Strathmore</h1>
-<h4 class="sg" name="version-1.0-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 1.0 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
+<h4 class="sg" name="version-1.1-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 1.1 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
 <h2 class="sg" name="table-of-contents">Table of Contents</h2>
 <ul>
 <li class="sg"><a href="#acc-application-framework" class="sg" du-smooth-scroll="yes">ACC Application Framework</a></li>
@@ -15,12 +15,16 @@
 </ul>
 <h2 class="sg" name="acc-application-framework">ACC Application Framework</h2>
 <h3 class="sg" name="enterprise-ui-for-mobile-and-desktop-applications">Enterprise UI for Mobile and Desktop Applications</h3>
-<p class="sg">This is a library of modular styles extending the popular framework of Zurb Foundation. This code base is used for both Cordova wrapped phone applications and desktop applications. It is responsive and the UI can be extended or reduced to match the needs of the project.
-<strong>Things to note this library is built with Sass and to enjoy it&apos;s fullest power and flexibility it must be compiled.</strong></p>
+<p class="sg">Strathmore is a library of utility styles extending the framework of Zurb Foundation. This code base is in products that are both Cordova web hybrid applications and desktop applications. It is fully responsive with breakpoints at small medium and large screen formats. The framework is extendable and reductive to match the needs of the project. The utility classes do give enough flexibility that building a product from the basic index.css is possible, this library uses Sass and to enjoy it&apos;s fullest power and flexibility</p>
+<p class="sg">** Compile with Sass and push the brand as far as it needs.**</p>
 <h2 class="sg" name="utility-classes">Utility Classes</h2>
+<p class="sg">Utility classes are a distinct departure from many previous learned CSS theories, but what utility classes allow for is an excellent separation of concerns between the HTML and CSS. The singular focus for utility classes is a single class controls a single style in CSS. Utility Class has significant benefits of reducing scope expansion in the CSS and also gives greater flexibility of crafting user interface components that are currently undefined. Html should continually be written using the best standards for semantics, but it is no longer a concern to follow a components design pattern because it is applicable at the HTML level.</p>
 <h3 class="sg" name="naming-convention">Naming Convention</h3>
-<p class="sg"><em>[style name]</em>[value+unit]-[modifier]<em>[break point]</em></p>
+<p class="sg">Strathmore does have a learning curve, but to reduce the curve the names follow a strict pattern. State of the elements which then effects a single style at a defined value which only effects at a specific breakpoint. <a href="./Strathmore/#!/section/100" class="sg"> read more</a></p>
+<h4 class="sg" name="[pseudo-state]:[style-name]_[value+unit]-[modifier]:[break-point]">[pseudo state]:[style name]_[value+unit]-[modifier]:[break point]</h4>
+<p class="sg">An example of wanting the text color of an object when hovered to become the primary the color only when the screen is large would be h:c_primary:lg.</p>
 <h3 class="sg" name="definition-of-style-short-hand">Definition of Style Short Hand</h3>
+<p class="sg">Strathmore utilizes an abbreviated naming convention for utility classes to save typing for developers and to also reduce overall files size.</p>
 <table class="sg">
 <thead class="sg">
 <tr class="sg">
@@ -213,6 +217,41 @@
 </tr>
 </tbody>
 </table>
+<h3 class="sg" name="pseudo-states">pseudo states</h3>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">states</th>
+<th class="sg">Short Name</th>
+<th class="sg">CSS</th>
+<th class="sg">Long Name</th>
+<th class="sg">Currently Used</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">hover</td>
+<td class="sg">&apos;h:&apos;</td>
+<td class="sg">&apos;:hover&apos;</td>
+<td class="sg">&apos;hover&apos;</td>
+<td class="sg">Yes</td>
+</tr>
+<tr class="sg">
+<td class="sg"><s>active</s></td>
+<td class="sg">&apos;a:&apos;</td>
+<td class="sg">&apos;:active&apos;</td>
+<td class="sg">&apos;active&apos;</td>
+<td class="sg">No</td>
+</tr>
+<tr class="sg">
+<td class="sg"><s>visited</s></td>
+<td class="sg">&apos;v:&apos;</td>
+<td class="sg">&apos;:visited&apos;</td>
+<td class="sg">&apos;hover&apos;</td>
+<td class="sg">No</td>
+</tr>
+</tbody>
+</table>
 <h3 class="sg" name="values">Values</h3>
 <table class="sg">
 <thead class="sg">
@@ -329,6 +368,48 @@
 </tbody>
 </table>
 <p class="sg"><sup>&#x2020;</sup> x = global spacing 1 rem</p>
+<h3 class="sg" name="break-points">Break Points</h3>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">break point</th>
+<th class="sg">Short Name</th>
+<th class="sg">css</th>
+<th class="sg">dimension</th>
+<th class="sg">Currently Used</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">all sizes</td>
+<td class="sg">&apos;&apos;</td>
+<td class="sg">min-width: 0em</td>
+<td class="sg">0px</td>
+<td class="sg">default</td>
+</tr>
+<tr class="sg">
+<td class="sg"><s>small</s></td>
+<td class="sg">&apos;:sm&apos;</td>
+<td class="sg">min-width: 30em</td>
+<td class="sg">480px</td>
+<td class="sg">No</td>
+</tr>
+<tr class="sg">
+<td class="sg">medium</td>
+<td class="sg">&apos;:md&apos;</td>
+<td class="sg">min-width: 40em</td>
+<td class="sg">640px</td>
+<td class="sg">Yes</td>
+</tr>
+<tr class="sg">
+<td class="sg">large</td>
+<td class="sg">&apos;:lg&apos;</td>
+<td class="sg">min-width: 40em</td>
+<td class="sg">1024px</td>
+<td class="sg">Yes</td>
+</tr>
+</tbody>
+</table>
 <h3 class="sg" name="alternate-values">Alternate Values</h3>
 <h4 class="sg" name="border-radius">Border Radius</h4>
 <table class="sg">
@@ -414,6 +495,14 @@
 <h2 class="sg" name="reserved-names">Reserved Names</h2>
 <h3 class="sg" name="reserved-words-and-modifier-descriptors">Reserved Words and Modifier Descriptors</h3>
 <p class="sg">These words should be used to describe states and generic elements of the UI and should be used instead of some variation or alternate name.</p>
+<h3 class="sg" name="component-name-modifier">Component Name Modifier</h3>
+<p class="sg">Components styling is most are</p>
+<ul>
+<li class="sg">** -container ** or UI Name with no modifier (Use instead of holder when items are UI based)</li>
+<li class="sg">** -group ** or UI Name with no modifier (Use instead of list, holder, collection when items or repeatable Content)</li>
+<li class="sg">** -item ** or UI Name with no modifier (generic child of container or group)</li>
+<li class="sg">** -separator ** (a visual treatment or break between items within a container or group )</li>
+</ul>
 <h3 class="sg" name="states">States</h3>
 <ul>
 <li class="sg">show</li>
@@ -430,18 +519,11 @@
 <li class="sg">reverse</li>
 <li class="sg">disabled</li>
 </ul>
-<h3 class="sg" name="name-modifier">Name Modifier</h3>
-<ul>
-<li class="sg">** -container ** or UI Name with no modifier (Use instead of holder when items are UI based)</li>
-<li class="sg">** -group ** or UI Name with no modifier (Use instead of list, holder, collection when items or repeatable Content)</li>
-<li class="sg">** -item ** or UI Name with no modifier (generic child of container or group)</li>
-<li class="sg">** -separator ** (a visual treatment or break between items within a container or group )</li>
-</ul>
 <h2 class="sg" name="colors">Colors</h2>
 <ul>
 <li class="sg">Scrub Colors
 <ul>
-<li class="sg">-accBlue</li>
+<li class="sg">-ACC Blue</li>
 <li class="sg">-teal</li>
 <li class="sg">-blue</li>
 <li class="sg">-purple</li>
@@ -571,7 +653,7 @@
 <ol>
 <li class="sg"><strong>base</strong> - any file that deals with variables, fonts and basic typography (raw tags).</li>
 <li class="sg"><strong>helpers</strong> - Mostly mixins but some files that have &quot;required&quot; in the name are needed for other files to functions. any file that have been named with &quot;trump&quot; will</li>
-<li class="sg"><strong>components</strong> - any combination of DOM elements that make up a widget, nav, or collection of tags.  Most of these have been off loaded to utility classes.</li>
+<li class="sg"><strong>components</strong> - any combination of DOM elements that make up a widget, nav, or collection of tags. Most of these have been off loaded to utility classes.</li>
 <li class="sg"><strong>utlity classes</strong> - A majority of the css is broken down into single class declarations of a single style.</li>
 <li class="sg"><strong>vendor</strong> - Any included style from a JavaScript or Framework that needs an override to visually match with ACC standards. All files in the vendor area should be postfixed with .override. IE to override foundation&apos;s button.scss you would place a &apos;vendor/foundation/button.override.scss&apos; and make your changes in the new file.</li>
 <li class="sg"><strong>structure</strong> - currently the project has one structure and that is questions</li>
