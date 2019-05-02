@@ -37,6 +37,9 @@
 .texture_cross {
 	@include texture-cross;
 }
+.texture-dynamic {
+	@include texture-dynamic;
+}
 
 /*
 	Textures Plus Background Colors
