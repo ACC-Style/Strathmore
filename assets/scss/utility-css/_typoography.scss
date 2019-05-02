@@ -1,12 +1,13 @@
 .font_unset {
-	font-style: unset;
-	font-weight: unset;
-	font-size: unset;
-	text-decoration: unset;
-	text-align: unset;
-	text-transform: unset;
-	white-space: unset;
+  font-style: unset;
+  font-weight: unset;
+  font-size: unset;
+  text-decoration: unset;
+  text-align: unset;
+  text-transform: unset;
+  white-space: unset;
 }
+
 /*
   Font Family
 
@@ -26,6 +27,7 @@
  */
 
 @include loop-style(font-family);
+
 /*
   Font Style
 
@@ -43,41 +45,49 @@
   Styleguide 102.2
  */
 .font_normal {
-	font-style: normal !important;
+  font-style: normal !important;
 }
+
 .font_italic {
-	font-style: italic !important;
+  font-style: italic !important;
 }
 
 @include loop-style(line-height);
 
-@each $color-name, $hex-value in $acc-palette {
-	@include color-loop(color, $color-name, $hex-value);
+@each $color-name,
+$hex-value in $acc-palette {
+  @include color-loop(color, $color-name, $hex-value);
 }
+
 /* Find ME */
 
 .c_white {
-	color: $white;
+  color: $white;
 }
+
 .c_black {
-	color: $black;
+  color: $black;
 }
+
 @include loop-transparent(color-transparent, "black", "", "!important", false);
 @include loop-transparent(color-transparent, "white", "", "!important", false);
 
 .c_inherit {
-	color: inherit;
+  color: inherit;
 }
-@if ($short-names-only == false) {
-	.c_white {
-		@extend .c_white;
-	}
-	.c_black {
-		@extend .c_black;
-	}
-	.c_inherit {
-		@extend .c_inherit;
-	}
+
+@if ($short-names-only==false) {
+  .c_white {
+    @extend .c_white;
+  }
+
+  .c_black {
+    @extend .c_black;
+  }
+
+  .c_inherit {
+    @extend .c_inherit;
+  }
 }
 
 /*
@@ -99,25 +109,28 @@
  */
 .font-weight_light,
 .font_light {
-	font-weight: 100 !important;
+  font-weight: 100 !important;
 }
+
 .font-weight_regular,
 .font_regular {
-	font-weight: 400 !important;
+  font-weight: 400 !important;
 }
+
 .font-weight_bold,
 .font_bold {
-	font-weight: 700 !important;
+  font-weight: 700 !important;
 }
+
 .font-weight_xbold,
 .font_xbold {
-	font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 
 /*
   Font Size
 
-  You can alter the size fo the font with 'font_x' 
+    <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
 
   .font_5 - Largest
   .font_4 - Large
@@ -141,18 +154,19 @@
  */
 
 @include loop-style(font-size);
+
 @media #{$medium-up} {
-	@include loop-style(font-size, $bp_medium, "");
+  @include loop-style(font-size, $bp_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(font-size, $bp_large, "");
+  @include loop-style(font-size, $bp_large, "");
 }
 
 /*
   Golden Ratio Font Size
 
-  Golden Ratio Fonts can make a more impactful text for marketing areas.  Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.  
+  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Golden Ratio Fonts can make a more impactful text for marketing areas. Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.
 
   .font-golden_5 - Largest
   .font-golden_4 - Large
@@ -175,68 +189,93 @@
 
   Styleguide 102.4.1
  */
+
 @include loop-style(golden);
 
+@media #{$medium-up} {
+  @include loop-style(golden, $bp_medium, "");
+}
+
+@media #{$large-up} {
+  @include loop-style(golden, $bp_large, "");
+}
+
+
 .wrap {
-	white-space: normal;
+  white-space: normal;
 }
+
 .pre-wrap {
-	white-space: pre-wrap;
-	letter-spacing: -0.01em;
+  white-space: pre-wrap;
+  letter-spacing: -0.01em;
 }
+
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
+
 .lowercase {
-	text-transform: lowercase;
+  text-transform: lowercase;
 }
+
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
 .dotted {
-	text-decoration: dotted;
+  text-decoration: dotted;
 }
+
 .double {
-	text-decoration: double;
+  text-decoration: double;
 }
+
 .dashed {
-	text-decoration: dashed;
+  text-decoration: dashed;
 }
+
 .text_right {
-	text-align: right !important;
+  text-align: right !important;
 }
+
 .text_center {
-	text-align: center !important;
+  text-align: center !important;
 }
+
 .text_left {
-	text-align: left !important;
+  text-align: left !important;
 }
 
 .overflow_hidden {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .overflow_visible {
-	overflow: visible;
+  overflow: visible;
 }
+
 .overflow_auto {
-	overflow: auto;
+  overflow: auto;
 }
+
 .overflow_auto {
-	overflow: auto;
+  overflow: auto;
 }
+
 .overflow-clip {
-	@extend .overflow_hidden;
-	text-overflow: clip;
+  @extend .overflow_hidden;
+  text-overflow: clip;
 }
 
 .overflow-ellipsis {
-	@extend .overflow_hidden;
-	text-overflow: ellipsis;
+  @extend .overflow_hidden;
+  text-overflow: ellipsis;
 }
+
 /*
   Font Color
 

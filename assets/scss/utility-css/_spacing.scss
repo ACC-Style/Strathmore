@@ -1,7 +1,7 @@
 /*
 	Margin
 
-	Margin classes are mobile first with postfix modifier for '-medium' and '-large' variations for responsive sizing.
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for '-medium'and '-large'variations for responsive sizing.
 
 	.m_auto.small-6              - Margin 0 auto
 	.m_0              - All margins set to 0
@@ -36,6 +36,7 @@
 .m_auto {
 	margin: 0 auto;
 }
+
 @include loop-style(margin, "", "");
 @include loop-style(margin-vertical, "", "");
 @include loop-style(margin-horizontal, "", "");
@@ -43,6 +44,7 @@
 @include loop-style(margin-bottom, "", "");
 @include loop-style(margin-left, "", "");
 @include loop-style(margin-right, "", "");
+
 @media #{$medium-up} {
 	@include loop-style(margin, $bp_medium, "");
 	@include loop-style(margin-vertical, $bp_medium, "");
@@ -52,6 +54,7 @@
 	@include loop-style(margin-left, $bp_medium, "");
 	@include loop-style(margin-right, $bp_medium, "");
 }
+
 @media #{$large-up} {
 	@include loop-style(margin, $bp_large, "");
 	@include loop-style(margin-vertical, $bp_large, "");
@@ -65,7 +68,7 @@
 /*
 	Padding CSS
 
-	quickly alter the padding of an object 
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object
 
 	.p_0              - All paddings set to 0
 	.p_1              - All paddings set to 1px
@@ -92,6 +95,7 @@
 @include loop-style(padding-bottom, "", "");
 @include loop-style(padding-left, "", "");
 @include loop-style(padding-right, "", "");
+
 @media #{$medium-up} {
 	@include loop-style(padding, $bp_medium, "");
 	@include loop-style(padding-vertical, $bp_medium, "");
@@ -115,6 +119,7 @@
 .absolute {
 	position: absolute;
 }
+
 .relative {
 	position: relative;
 }
@@ -122,14 +127,38 @@
 .fixed {
 	position: fixed;
 }
+
 .sticky {
 	position: sticky;
 }
+
+/*
+	Position
+
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+	.t_0 - modify top of an absolute positioned block 
+	.t_5 - modify top of an absolute positioned block
+	.b_0 - modify bottom of an absolute positioned block 
+	.b_5 - modify bottom of an absolute positioned block
+	.l_0 - modify left of an absolute positioned block 
+	.l_5 - modify left of an absolute positioned block
+	.r_0 - modify right of an absolute positioned block 
+	.r_5 - modify right of an absolute positioned block
+
+
+	markup:
+	<div class=" br_solid br_transparent bg_alert-3 relative p_5"><div class="bg_primary-5 text-center absolute {$modifiers}">Position Absolute {$modifiers}</div></div>
+
+	Styleguide 101.4
+
+ */
 
 @include loop-style(top, "", "");
 @include loop-style(bottom, "", "");
 @include loop-style(left, "", "");
 @include loop-style(right, "", "");
+
 @media #{$medium-up} {
 	@include loop-style(top, $bp_medium, "");
 	@include loop-style(bottom, $bp_medium, "");
