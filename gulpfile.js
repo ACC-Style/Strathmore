@@ -27,7 +27,7 @@ var PATHS = {
 };
 
 // Server
-gulp.task("serve", ["stylemin"], function() {
+gulp.task("serve", ["stylemin"], function () {
 	console.log("Gulp: Magic there is a browser!");
 	browserSync.init({
 		server: "./",
@@ -40,11 +40,13 @@ gulp.task("serve", ["stylemin"], function() {
 });
 
 // Style Tasks minified and cleaned
-gulp.task("style", function() {
+gulp.task("style", function () {
 	console.log("Gulp Style Tasks");
 	console.log("Gulp: I am making this pretty.");
 	console.log(PATHS.SRC + PATHS.SCSS);
-	var plugins = [pixrem(), autoprefixer({ browsers: ["last 2 version"] })];
+	var plugins = [pixrem(), autoprefixer({
+		browsers: ["last 2 version"]
+	})];
 	return gulp
 		.src(PATHS.SRC + PATHS.SCSS)
 		.pipe(sourcemaps.init())
@@ -53,13 +55,15 @@ gulp.task("style", function() {
 		.pipe(gulp.dest("./assets/css/"));
 });
 // Style Tasks minified and cleaned
-gulp.task("stylemin", function() {
+gulp.task("stylemin", function () {
 	console.log("Gulp Style Min Tasks");
 	console.log("Gulp: I am folding this into a swan.");
 	console.log(PATHS.SRC + PATHS.SCSS);
 	var plugins = [
 		pixrem(),
-		autoprefixer({ browsers: ["last 2 version"] }),
+		autoprefixer({
+			browsers: ["last 2 version"]
+		}),
 		cssnano()
 	];
 	return gulp
@@ -68,12 +72,14 @@ gulp.task("stylemin", function() {
 		.pipe(sass().on("error", sass.logError))
 		.pipe(postcss(plugins))
 		.pipe(sourcemaps.write("/maps"))
-		.pipe(rename({ suffix: ".min" }))
+		.pipe(rename({
+			suffix: ".min"
+		}))
 		.pipe(gulp.dest("./assets/css/"));
 });
 
 // Cleaning DIST FOLDER
-gulp.task("clean:dist", ["stylemin"], function() {
+gulp.task("clean:dist", ["stylemin"], function () {
 	console.log(' Gulp Cleaning "dist" folder');
 	console.log(
 		"Gulp: Hold on I am busy cleaning up this mess.  Why do you leave things just lying around."
@@ -86,7 +92,7 @@ gulp.task("clean:dist", ["stylemin"], function() {
 });
 
 // Cleaning DOCS FOLDER
-gulp.task("clean:docs", ["styleguide"], function() {
+gulp.task("clean:docs", ["styleguide"], function () {
 	console.log(' Gulp Cleaning "docs"');
 	console.log(
 		"Gulp: Hold on I am busy cleaning up this mess. Dirty socks on the chandelier? .. really?"
@@ -99,7 +105,7 @@ gulp.task("clean:docs", ["styleguide"], function() {
 });
 
 // Script Tasks
-gulp.task("script", function() {
+gulp.task("script", function () {
 	console.log(" Gulp Script Tasks");
 	console.log(
 		'Gulp: This bit goes here and this attaches here. Now where is tab "Omega"?'
@@ -107,13 +113,13 @@ gulp.task("script", function() {
 });
 
 // Image OPTIMIZE
-gulp.task("images", function() {
+gulp.task("images", function () {
 	console.log("Gulp Images Tasks");
 	console.log("Gulp: This is pretty what happens when I smash it!");
 });
 
 // Style Guide Tasks. Build and Copy files for the style guide in local
-gulp.task("styleguide:generate", ["style"], function() {
+gulp.task("styleguide:generate", ["style"], function () {
 	console.log("Gulp Style Guide Tasks");
 	console.log("Gulp: Build the Documentation!");
 	return gulp
@@ -134,15 +140,16 @@ gulp.task("styleguide:generate", ["style"], function() {
 					'<script src="assets/js/styleguide.js"></script>'
 				],
 				afterBody: "",
-				styleVariables: true,
+				styleVariables: false,
 				showReferenceNumbers: true,
+				showReferenceNumbers: false,
 				disableEncapsulation: true
 			})
 		)
 		.pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
 
-gulp.task("styleguide:applystyles", ["package:strathmore"], function() {
+gulp.task("styleguide:applystyles", ["package:strathmore"], function () {
 	console.log("Gulp Style Guide Tasks");
 	console.log("Gulp: Write it down and record it!");
 	return gulp
@@ -160,7 +167,7 @@ gulp.task("styleguide:applystyles", ["package:strathmore"], function() {
 		.pipe(gulp.dest(PATHS.STYLEGUIDE_OUTPUT));
 });
 
-gulp.task("package:strathmore", function() {
+gulp.task("package:strathmore", function () {
 	console.log("Gulp Package Tasks");
 	console.log(
 		"Gulp: Gosh my back is tired. Moving boxes from Assets to the styleguide"
@@ -172,14 +179,15 @@ gulp.task("package:strathmore", function() {
 				PATHS.SRC + PATHS.ICONS,
 				PATHS.SRC + PATHS.JS,
 				PATHS.SRC + PATHS.IMG
-			],
-			{ base: "./" }
+			], {
+				base: "./"
+			}
 		)
 		.pipe(gulp.dest(PATHS.STYLEGUIDE));
 });
 
 // Package Tasks.   Copy files to the Dist Folder.
-gulp.task("package:dist", ["addAutomation"], function() {
+gulp.task("package:dist", ["addAutomation"], function () {
 	console.log("Gulp Package Tasks");
 	console.log(
 		"Gulp: I got a box and some bubble-wrap; now, where is the tape?"
@@ -195,13 +203,14 @@ gulp.task("package:dist", ["addAutomation"], function() {
 				PATHS.SRC + PATHS.JS,
 				PATHS.SRC + PATHS.IMG,
 				PATHS.SRC + PATHS.SCSS
-			],
-			{ base: "./" }
+			], {
+				base: "./"
+			}
 		)
 		.pipe(gulp.dest(PATHS.DIST));
 });
 // Package Tasks.   Copy files to the DOCS Folder.
-gulp.task("package:docs", ["clean:docs"], function() {
+gulp.task("package:docs", ["clean:docs"], function () {
 	console.log("Gulp Package DOCS");
 	console.log("Gulp: I got a box and tape, but now where is the bubble wrap?");
 	console.log("Gulp: All packed up");
@@ -213,7 +222,7 @@ gulp.task("package:docs", ["clean:docs"], function() {
 });
 
 // Add Automation Tasks to the Dist Folder so it can be used by product teams.
-gulp.task("addAutomation", ["clean:dist"], function() {
+gulp.task("addAutomation", ["clean:dist"], function () {
 	gulp
 		.src("dist-package.json")
 		.pipe(rename("package.json"))
@@ -225,7 +234,7 @@ gulp.task("addAutomation", ["clean:dist"], function() {
 });
 
 // Watch Tasks
-gulp.task("watch", ["styleguide"], function() {
+gulp.task("watch", ["styleguide"], function () {
 	console.log("Gulp Watch Tasks");
 	console.log("Gulp: I will be watching you.... even when you sleep");
 	gulp.watch([PATHS.SRC + PATHS.SCSS], ["styleguide"]);

@@ -1,85 +1,9 @@
-/** 
-	Styleguide Overrides.
-**/
-.sg.sg-wrapper {
-  margin: 0;
-  max-width: 150em;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+.sg-nav-link.active {
+  border-left: solid 0.5rem #198dae;
+  padding-left: 0.5rem;
 }
 
-.sg.sg-wrapper .sg.sg-side-nav--toggle {
-  max-width: 40%;
-  padding-right: 2%;
-  border-right: 1px solid #ccc;
-}
-
-@media print, screen and (min-width: 40em) {
-  .sg.sg-wrapper .sg.sg-body {
-    max-width: 60%;
-    padding-left: 2%;
-  }
-}
-.sg.sg-wrapper .sg.side-nav-toggle {
-  display: block;
-  width: 9%;
-  background: #808080;
-  top: 5px;
-  text-align: center;
-  color: #fff;
-  left: 19px;
-}
-
-.sg.sg-header .sg.sg-search-container .sg-hamburger {
-  float: none;
-  display: block;
-}
-
-.sg.sg-header .sg.sg-search-container .sg-hamburger-item {
-  width: 20px;
-  background: #000;
-}
-
-.sg.sg-header .sg.sg-search-container .sg-hamburger {
-  display: none;
-  float: left;
-  cursor: pointer;
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .sg.sg-header .sg.sg-search-container .sg-hamburger {
-    display: block;
-    padding-top: 2px;
-    padding-bottom: 3px;
-  }
-}
-.sg.sg-search-container .sg-hamburger-item {
-  position: relative;
-  width: 40px;
-  height: 4px;
-  margin-bottom: 9px;
-  top: 0;
-  transition: transform 0.15s ease-in-out, top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s;
-  transform-origin: center;
-}
-
-.sg.sg-search-container .sg-hamburger-active .sg-hamburger-item {
-  transition: transform 0.15s ease-in-out 0.2s, top 0.1s ease-in-out, opacity 0.25s ease-in-out;
-}
-
-.sg.sg-search-container .sg-hamburger-active .top {
-  top: 13px;
-  transform: rotate(135deg);
-}
-
-.sg.sg-search-container .sg-hamburger-active .middle {
-  opacity: 0;
-  transform: rotate(135deg);
-}
-
-.sg.sg-search-container .sg-hamburger-active .bottom {
-  top: -13px;
-  transform: rotate(225deg);
+.sg-nav-link.sub-active {
+  border-left: solid 0.5rem #3c9eba;
+  padding-left: 0.5rem;
 }
