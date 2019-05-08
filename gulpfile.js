@@ -142,7 +142,6 @@ gulp.task("styleguide:generate", ["style"], function () {
 				afterBody: "",
 				styleVariables: false,
 				showReferenceNumbers: true,
-				showReferenceNumbers: false,
 				disableEncapsulation: true
 			})
 		)

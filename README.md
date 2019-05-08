@@ -1,3 +1,5 @@
+<div class="mw-readable m-l_5">
+
 # Strathmore
 
 #### Version 1.1 | Built on Foundation 6.4.3 & Font Awesome Pro
@@ -19,9 +21,9 @@
 
 ### Enterprise UI for Mobile and Desktop Applications
 
-Strathmore is a library of utility styles extending the framework of Zurb Foundation. This code base is in products that are both Cordova web hybrid applications and desktop applications. It is fully responsive with breakpoints at small medium and large screen formats. The framework is extendable and reductive to match the needs of the project. The utility classes do give enough flexibility that building a product from the basic index.css is possible, this library uses Sass and to enjoy it's fullest power and flexibility
+Strathmore is a library of utility styles extending the framework of Zurb Foundation. This code base is in products that are both Cordova web hybrid applications and desktop applications. It is fully responsive with breakpoints at small medium and large screen formats. The framework is extendable and reductive to match the needs of the project. The utility classes do give enough flexibility that building a product from the basic index.css is possible, this library uses Sass and to enjoy it's fullest power and flexibility.
 
-** Compile with Sass and push the brand as far as it needs.**
+**Compile with Sass and push the brand as far as it needs.**
 
 ## Utility Classes
 
@@ -38,6 +40,8 @@ An example of wanting the text color of an object when hovered to become the pri
 ### Definition of Style Short Hand
 
 Strathmore utilizes an abbreviated naming convention for utility classes to save typing for developers and to also reduce overall files size.
+
+</div>
 
 | Style                      | Short Name | CSS                          | Long Nmae                     |
 | -------------------------- | ---------- | ---------------------------- | ----------------------------- |
@@ -135,6 +139,8 @@ Strathmore utilizes an abbreviated naming convention for utility classes to save
 | inline        | inline       |
 | inline-block  | inline-block |
 | flex          | flex         |
+
+<div class="mw-readable m-r_5">
 
 ## Reserved Names
 
@@ -342,3 +348,5 @@ The intent is to have two ways you can use the style-guide. You build your own D
 -   email receipt
 
 ## Potential Projects
+
+</div>

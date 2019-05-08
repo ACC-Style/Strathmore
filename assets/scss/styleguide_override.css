@@ -1,9 +1,5 @@
-.sg-nav-link.active {
-  border-left: solid 0.5rem #198dae;
-  padding-left: 0.5rem;
-}
-
-.sg-nav-link.sub-active {
-  border-left: solid 0.5rem #3c9eba;
-  padding-left: 0.5rem;
+pre code.hljs {
+  padding-top: 2em;
+  padding-bottom: 2.5em;
+  max-height: 100%;
 }

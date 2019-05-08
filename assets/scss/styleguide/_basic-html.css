@@ -12,19 +12,19 @@
   Switches
 
   markup:
-  <div class="switch tiny switch_radius">
+  <div class="switch tiny switch_radius p_5">
     <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="tinySwitch">
       <span class="show-for-sr">Tiny Sandwiches Enabled</span>
     </label>
   </div>
-  <div class="switch small round">
+  <div class="switch small round p_5">
     <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="smallSwitch">
       <span class="show-for-sr">Small Portions Only</span>
     </label>
   </div>
-  <div class="switch large">
+  <div class="switch large p_5">
     <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="largeSwitch">
       <span class="show-for-sr">Show Large Elephants</span>
@@ -88,7 +88,7 @@
 */
 /*
 
-  Accordian.
+  Accordian
   
   You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
@@ -166,7 +166,7 @@
 
 */
 /*
-    RECIEPE: Tabs Inset Area
+    Tabs Inset Area :RECIEPE
 
     markup:
     <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -194,7 +194,7 @@
 
 */
 /*
-    RECIEPE: Tabs on card
+    Tabs on card :RECIEPE
 
     markup:
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">

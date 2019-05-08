@@ -1,36 +1,3 @@
-$teal: #198dae;
-$dark-grey: #64666d;
-$alt-grey: #807871;
-$green: #088532;
-$orange: #db7b14;
-$red: #cb241c;
-$blue: #406bc0;
-$purple: #7e4fbb;
-$magenta: #c54c9d;
-$acc-blue: #00386b;
-$white: #fff;
-$black: #111;
-
-$acc-palette: (
-	primary: $teal,
-	secondary: $dark-grey,
-	success: $green,
-	warning: $orange,
-	alert: $red,
-	navigation: $blue,
-	accent: $purple,
-	info: $alt-grey,
-	highlight: $magenta,
-	acc: $acc-blue
-);
-
-%hover-text-white {
-	color: $white !important;
-}
-
-%hover-text-black {
-	color: $black !important;
-}
 /*
  
   Colors of the Design  

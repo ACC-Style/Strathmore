@@ -1,7 +1,7 @@
 /*
-  Basic Table
+  Table
 
-  An unstylzed pure dom version of a table.  This is the pure version that comes from foundations
+  There is a basic styling around a table using pure well structured DOM.  This styling comes from zurb foundation.
 
   markup:
   <table>
@@ -40,9 +40,9 @@
 
 /*
 
-Table with .table
+Table Styled
 
-Adding the .table class to the table tag will make it ACC's styled. 
+<table class='table'> will style the table with the generic acc branded coloring and spacing. 
 
 markup:
 <table class="table">
@@ -106,7 +106,7 @@ Styleguide 10.2.1
 
 Table Column Shaded
 
-table with .column-shaded  added to the table class
+`<table class="table column-shaded">` gives a blue tint to every other column in the table.
 
 
 
@@ -173,7 +173,7 @@ Styleguide 10.2.1.1
 
 Table Unshaded
 
-Tables with no shadding for rows and footer just need to add `.unshaded` to the table tag.
+`<table class="table unshaded"> removes the shadding for rows and footer giving a cleaner table. This table type is great for small data sets and removes the 100% wide table that is default in all other tables.  
 
 markup:
 <table class="table unshaded">
@@ -211,6 +211,13 @@ markup:
 Styleguide 10.2.1.2
 */
 .table.unshaded {
+	width: auto;
+	border: none;
+	thead {
+		border-top: none;
+		border-right: none;
+		border-left: none;
+	}
 	tbody tr:nth-child(even) {
 		background-color: unset;
 	}
@@ -224,9 +231,9 @@ Styleguide 10.2.1.2
 
 /*
 
-Reciepe: Table (Column Shading through Utility Classes)
+Table Column Shading: RECIEPE
 
-Table shading can be much more dynamic and varied if you are willing to build with utlity classes. You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
+Table shading can be much more dynamic and varied if you are willing to build with utlity classes(UC's). You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
 
 .primary          - column colored variations of primary
 .info             - column colored variations of info 
@@ -269,9 +276,9 @@ Styleguide 10.2.2
 */
 
 /*
-Recipe: Table Cell States
+Table Cell States: RECIPE
 
-Example of utilities classes to show cell states
+States can be easily applied to the tables using UC's
 
 
 markup:
@@ -320,9 +327,9 @@ Styleguide 10.2.3
 
 /*
 
-Table Row(Seperator + State Recipe)
+Table Seperators: RECIPE
 
-Example of utilities classes to show seperator and state
+Styling seperators on tables is now completely controled by utility classes giving much more flexablity to designs.
 
 
 
