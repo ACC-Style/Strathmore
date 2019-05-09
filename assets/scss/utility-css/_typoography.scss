@@ -250,16 +250,19 @@
 	overflow: auto;
 }
 
-.overflow-clip {
+.overflow_clip {
 	@extend .overflow_hidden;
 	text-overflow: clip;
 }
 
-.overflow-ellipsis {
+.overflow_ellipsis {
 	@extend .overflow_hidden;
 	text-overflow: ellipsis;
 }
 
+.overflow_unset {
+	overflow: unset;
+}
 /*
   Font Color
 

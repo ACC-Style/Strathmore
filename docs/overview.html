@@ -1,5 +1,6 @@
+<div class="mw-readable m-l_5">
 <h1 class="sg" name="strathmore">Strathmore</h1>
-<h4 class="sg" name="version-1.1-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 1.1 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
+<h4 class="sg" name="version-1.5.0-|-built-on-foundation-6.4.3-&amp;-font-awesome-pro">Version 1.5.0 | Built on Foundation 6.4.3 &amp; Font Awesome Pro</h4>
 <h2 class="sg" name="table-of-contents">Table of Contents</h2>
 <ul>
 <li class="sg"><a href="#acc-application-framework" class="sg" du-smooth-scroll="yes">ACC Application Framework</a></li>
@@ -15,8 +16,8 @@
 </ul>
 <h2 class="sg" name="acc-application-framework">ACC Application Framework</h2>
 <h3 class="sg" name="enterprise-ui-for-mobile-and-desktop-applications">Enterprise UI for Mobile and Desktop Applications</h3>
-<p class="sg">Strathmore is a library of utility styles extending the framework of Zurb Foundation. This code base is in products that are both Cordova web hybrid applications and desktop applications. It is fully responsive with breakpoints at small medium and large screen formats. The framework is extendable and reductive to match the needs of the project. The utility classes do give enough flexibility that building a product from the basic index.css is possible, this library uses Sass and to enjoy it&apos;s fullest power and flexibility</p>
-<p class="sg">** Compile with Sass and push the brand as far as it needs.**</p>
+<p class="sg">Strathmore is a library of utility styles extending the framework of Zurb Foundation. This code base is in products that are both Cordova web hybrid applications and desktop applications. It is fully responsive with breakpoints at small medium and large screen formats. The framework is extendable and reductive to match the needs of the project. The utility classes do give enough flexibility that building a product from the basic index.css is possible, this library uses Sass and to enjoy it&apos;s fullest power and flexibility.</p>
+<p class="sg"><strong>Compile with Sass and push the brand as far as it needs.</strong></p>
 <h2 class="sg" name="utility-classes">Utility Classes</h2>
 <p class="sg">Utility classes are a distinct departure from many previous learned CSS theories, but what utility classes allow for is an excellent separation of concerns between the HTML and CSS. The singular focus for utility classes is a single class controls a single style in CSS. Utility Class has significant benefits of reducing scope expansion in the CSS and also gives greater flexibility of crafting user interface components that are currently undefined. Html should continually be written using the best standards for semantics, but it is no longer a concern to follow a components design pattern because it is applicable at the HTML level.</p>
 <h3 class="sg" name="naming-convention">Naming Convention</h3>
@@ -25,6 +26,7 @@
 <p class="sg">An example of wanting the text color of an object when hovered to become the primary the color only when the screen is large would be h:c_primary:lg.</p>
 <h3 class="sg" name="definition-of-style-short-hand">Definition of Style Short Hand</h3>
 <p class="sg">Strathmore utilizes an abbreviated naming convention for utility classes to save typing for developers and to also reduce overall files size.</p>
+</div>
 <table class="sg">
 <thead class="sg">
 <tr class="sg">
@@ -64,6 +66,12 @@
 <td class="sg">&apos;.m-r&apos;</td>
 <td class="sg">&apos;margin-right&apos;</td>
 <td class="sg">&apos;.margin-right&apos;</td>
+</tr>
+<tr class="sg">
+<td class="sg">overflow</td>
+<td class="sg">&apos;.overflow&apos;</td>
+<td class="sg">&apos;overflow&apos;</td>
+<td class="sg">&apos;.overflow&apos;</td>
 </tr>
 <tr class="sg">
 <td class="sg">padding</td>
@@ -215,6 +223,12 @@
 <td class="sg">&apos;display&apos;</td>
 <td class="sg">&apos;.display&apos;</td>
 </tr>
+<tr class="sg">
+<td class="sg">max-width</td>
+<td class="sg">&apos;.max-w&apos;</td>
+<td class="sg">&apos;max-width&apos;</td>
+<td class="sg">&apos;.max-width&apos;</td>
+</tr>
 </tbody>
 </table>
 <h3 class="sg" name="pseudo-states">pseudo states</h3>
@@ -238,17 +252,17 @@
 </tr>
 <tr class="sg">
 <td class="sg"><s>active</s></td>
-<td class="sg">&apos;a:&apos;</td>
+<td class="sg"><s>&apos;a:&apos;</s></td>
 <td class="sg">&apos;:active&apos;</td>
 <td class="sg">&apos;active&apos;</td>
-<td class="sg">No</td>
+<td class="sg"><span class="c_alert">No</span></td>
 </tr>
 <tr class="sg">
 <td class="sg"><s>visited</s></td>
-<td class="sg">&apos;v:&apos;</td>
+<td class="sg"><s>&apos;v:&apos;</s></td>
 <td class="sg">&apos;:visited&apos;</td>
 <td class="sg">&apos;hover&apos;</td>
-<td class="sg">No</td>
+<td class="sg"><span class="c_alert">No</span></td>
 </tr>
 </tbody>
 </table>
@@ -392,7 +406,7 @@
 <td class="sg">&apos;:sm&apos;</td>
 <td class="sg">min-width: 30em</td>
 <td class="sg">480px</td>
-<td class="sg">No</td>
+<td class="sg"><span class="c_alert">No</span></td>
 </tr>
 <tr class="sg">
 <td class="sg">medium</td>
@@ -430,7 +444,7 @@
 </tr>
 <tr class="sg">
 <td class="sg">round</td>
-<td class="sg">999px</td>
+<td class="sg">25px</td>
 </tr>
 <tr class="sg">
 <td class="sg">circle</td>
@@ -492,6 +506,46 @@
 </tr>
 </tbody>
 </table>
+<h4 class="sg" name="overflow">Overflow</h4>
+<table class="sg">
+<thead class="sg">
+<tr class="sg">
+<th class="sg">Value Postfix</th>
+<th class="sg">Overflow</th>
+</tr>
+</thead>
+<tbody class="sg">
+<tr class="sg">
+<td class="sg">auto</td>
+<td class="sg">auto</td>
+</tr>
+<tr class="sg">
+<td class="sg">clip</td>
+<td class="sg">clip</td>
+</tr>
+<tr class="sg">
+<td class="sg">scroll</td>
+<td class="sg">scroll</td>
+</tr>
+<tr class="sg">
+<td class="sg">hidden</td>
+<td class="sg">hidden</td>
+</tr>
+<tr class="sg">
+<td class="sg">ellipsis</td>
+<td class="sg">ellipsis</td>
+</tr>
+<tr class="sg">
+<td class="sg">visible</td>
+<td class="sg">visible</td>
+</tr>
+<tr class="sg">
+<td class="sg">unset</td>
+<td class="sg">unset</td>
+</tr>
+</tbody>
+</table>
+<div class="mw-readable m-r_5">
 <h2 class="sg" name="reserved-names">Reserved Names</h2>
 <h3 class="sg" name="reserved-words-and-modifier-descriptors">Reserved Words and Modifier Descriptors</h3>
 <p class="sg">These words should be used to describe states and generic elements of the UI and should be used instead of some variation or alternate name.</p>
@@ -508,7 +562,10 @@
 <li class="sg">show</li>
 <li class="sg">hide</li>
 <li class="sg">is-active</li>
-<li class="sg">selected</li>
+<li class="sg">is-complete</li>
+<li class="sg">is-disabled</li>
+<li class="sg">is-current</li>
+<li class="sg">is-selected</li>
 <li class="sg">focus</li>
 <li class="sg">success</li>
 <li class="sg">hover</li>
@@ -517,7 +574,6 @@
 <li class="sg">primary</li>
 <li class="sg">secondary</li>
 <li class="sg">reverse</li>
-<li class="sg">disabled</li>
 </ul>
 <h2 class="sg" name="colors">Colors</h2>
 <ul>
@@ -697,3 +753,4 @@
 <li class="sg">email receipt</li>
 </ul>
 <h2 class="sg" name="potential-projects">Potential Projects</h2>
+</div>

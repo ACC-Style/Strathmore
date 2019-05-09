@@ -907,6 +907,10 @@ a.thumbnail.pseudo-class-focus {
   color: #111;
 }
 
+.lorem-text.pseudo-class-last-child {
+  width: 50%;
+}
+
 .disabled.pseudo-class-hover {
   background-image: url("../img/cross_disabled.png");
 }

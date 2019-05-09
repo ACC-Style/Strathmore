@@ -6523,9 +6523,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /*
-  Basic Table
+  Table
 
-  An unstylzed pure dom version of a table.  This is the pure version that comes from foundations
+  There is a basic styling around a table using pure well structured DOM.  This styling comes from zurb foundation.
 
   markup:
   <table>
@@ -6563,9 +6563,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 */
 /*
 
-Table with .table
+Table Styled
 
-Adding the .table class to the table tag will make it ACC's styled. 
+<table class='table'> will style the table with the generic acc branded coloring and spacing. 
 
 markup:
 <table class="table">
@@ -6629,7 +6629,7 @@ Styleguide 10.2.1
 
 Table Column Shaded
 
-table with .column-shaded  added to the table class
+`<table class="table column-shaded">` gives a blue tint to every other column in the table.
 
 
 
@@ -6686,7 +6686,7 @@ Styleguide 10.2.1.1
 
 Table Unshaded
 
-Tables with no shadding for rows and footer just need to add `.unshaded` to the table tag.
+`<table class="table unshaded"> removes the shadding for rows and footer giving a cleaner table. This table type is great for small data sets and removes the 100% wide table that is default in all other tables.  
 
 markup:
 <table class="table unshaded">
@@ -6723,6 +6723,15 @@ markup:
 
 Styleguide 10.2.1.2
 */
+.table.unshaded {
+  width: auto;
+  border: none;
+}
+.table.unshaded thead {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
 .table.unshaded tbody tr:nth-child(even) {
   background-color: unset;
 }
@@ -6735,9 +6744,9 @@ Styleguide 10.2.1.2
 
 /*
 
-Reciepe: Table (Column Shading through Utility Classes)
+Table Column Shading: RECIEPE
 
-Table shading can be much more dynamic and varied if you are willing to build with utlity classes. You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
+Table shading can be much more dynamic and varied if you are willing to build with utlity classes(UC's). You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
 
 .primary          - column colored variations of primary
 .info             - column colored variations of info 
@@ -6779,9 +6788,9 @@ markup:
 Styleguide 10.2.2
 */
 /*
-Recipe: Table Cell States
+Table Cell States: RECIPE
 
-Example of utilities classes to show cell states
+States can be easily applied to the tables using UC's
 
 
 markup:
@@ -6829,9 +6838,9 @@ Styleguide 10.2.3
 */
 /*
 
-Table Row(Seperator + State Recipe)
+Table Seperators: RECIPE
 
-Example of utilities classes to show seperator and state
+Styling seperators on tables is now completely controled by utility classes giving much more flexablity to designs.
 
 
 
@@ -6961,7 +6970,7 @@ markup:
   outline: none;
 }
 
-i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before {
+i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before, i.icon-toggle_bars-times:before {
   margin: 0 0.25rem;
 }
 
@@ -6973,7 +6982,8 @@ i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, 
     .icon-toggle_plus-minus - Toggle between plus and minus square
     .icon-toggle_chevron-double-up-down - Toggle the double chevron to point up when active
     .icon-toggle_caret-circle-right-down - Toggle the caret to point down when active.
-    .icon-toggle_arrow-circle - Toggle the arrow to have a circle when active.
+	 .icon-toggle_arrow-circle - Toggle the arrow to have a circle when active.
+	 .icon-toggle_bars-times - Toggle between bars and times
 
     markup:
     <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
@@ -7001,8 +7011,15 @@ i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, 
     sg-wrapper: 
     <ul class="no-bullet"><sg-wrapper-content/></ul>
 
-    Styleguide 21.0
+    Styleguide 20.2
 */
+i.icon-toggle_bars-times:before {
+  content: "";
+}
+.is-active i.icon-toggle_bars-times:before {
+  content: "";
+}
+
 i.icon-toggle_plus-minus:before {
   content: "";
 }
@@ -7079,7 +7096,7 @@ i.icon-toggle_arrow-circle:before {
 	sg-wrapper: 
 	<ul class="no-bullet"><sg-wrapper-content/></ul>
 
-	Styleguide 21.1
+	Styleguide 20.1
 */
 i.icon-complete_check:before {
   content: "";
@@ -7569,7 +7586,7 @@ sg-wrapper:
     sg-wrapper:
     <div class="p_5 bg_primary texture_medium"><sg-wrapper-content/></div>
  
-  Styleguide 20.40
+  Styleguide 20.3
   
   */
 .lds-grid {
@@ -7636,7 +7653,147 @@ sg-wrapper:
   }
 }
 /*
-Utility Classes (UCs)
+
+Lorem Text Loader
+
+It is often we need to have space held for a return of details or text.  
+
+markup:
+<div class="max-w_3">
+   <div class="m-y_2 lorem-loader  lorem-text lorem-headline">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text">&nbsp;</div>
+</div>
+
+Styleguide 20.5
+*/
+/*
+
+Lorem Image Loader
+
+It is often we need to have space held for a return of details or text.  
+
+markup:
+<div class="max-w_3">
+   <div class="m-y_2 lorem-loader lorem-image">&nbsp;</div>
+</div>
+
+Styleguide 20.6
+*/
+.lorem-text {
+  height: 1.4em;
+  width: 100%;
+}
+
+.lorem-text:nth-child(3) {
+  width: 80%;
+}
+
+.lorem-text:last-child {
+  width: 50%;
+}
+
+.lorem-image {
+  width: 300px;
+  height: 200px;
+  height: 0;
+}
+
+.lorem-thumb {
+  width: 100px;
+  height: 200px;
+  height: 0;
+}
+
+.lorem-loader {
+  color: #fff;
+  background: linear-gradient(-45deg, #92dbef, #c0c1c5, #cdc9c6, #cbb9e4);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 8s ease infinite;
+  -moz-animation: Gradient 8s ease infinite;
+  animation: Gradient 8s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+
+Expanded Click Area
+
+allows for a relative container to be clickable by the link. 
+
+markup:
+<div class="card shadow_2 cell small-6 large-4 max-w_3" >
+  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+    This is a header
+  </div>
+  <img src="https://picsum.photos/400/300">
+  <div class="card-section">
+    <h4>This is a card.</h4>
+	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
+	 <a href="#" class="exapnded-click-area button">I am so clickable</a>
+  </div>
+</div>
+
+Styleguide 20.7
+*/
+.exapnded-click-area::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: #0000;
+}
+
+.transition-all_1s {
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-property: all;
+}
+
+.container,
+.card {
+  position: relative;
+}
+
+/*
+UC: Introduction
 
  Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as reciepes. Learn more about UCs in the Introduction section
  
@@ -10123,11 +10280,11 @@ Styleguide 101.0
 }
 
 .lh_2 {
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .lh_3 {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .lh_4 {
@@ -10620,11 +10777,11 @@ Styleguide 101.0
 
 /* Find ME */
 .c_white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .c_black {
-  color: #111;
+  color: #111 !important;
 }
 
 .c_black-0 {
@@ -11124,7 +11281,7 @@ Styleguide 101.0
   text-align: left !important;
 }
 
-.overflow_hidden, .overflow-ellipsis, .overflow-clip {
+.overflow_hidden, .overflow_ellipsis, .overflow_clip {
   overflow: hidden;
 }
 
@@ -11140,12 +11297,16 @@ Styleguide 101.0
   overflow: auto;
 }
 
-.overflow-clip {
+.overflow_clip {
   text-overflow: clip;
 }
 
-.overflow-ellipsis {
+.overflow_ellipsis {
   text-overflow: ellipsis;
+}
+
+.overflow_unset {
+  overflow: unset;
 }
 
 /*
@@ -15175,6 +15336,403 @@ Styleguide 103.2.1
   }
 }
 /*
+	UC: Widths
+
+	Control some basics of the design with max-width and width.   
+
+	Styleguide 111.0
+ 
+ */
+/*
+	Width
+
+	Control the width either with 12 x grid messurments or by 10% increments
+
+	.w_10 - modify top of an absolute positioned block 
+	.w_50 - modify top of an absolute positioned block
+	.w_70 - modify bottom of an absolute positioned block 
+	.w_90 - modify bottom of an absolute positioned block
+	.gw_2 - modify left of an absolute positioned block 
+	.gw_6 - modify left of an absolute positioned block
+	.gw_8 - modify right of an absolute positioned block 
+	.gw_9 - modify right of an absolute positioned block
+
+
+	markup:
+	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {$modifiers}">{$modifiers} </div></div>
+
+	Styleguide 111.1
+
+ */
+.max-w_0 {
+  max-width: 0 !important;
+}
+
+.max-w_1 {
+  max-width: 30rem !important;
+}
+
+.max-w_2 {
+  max-width: 40rem !important;
+}
+
+.max-w_3 {
+  max-width: 50rem !important;
+}
+
+.max-w_4 {
+  max-width: 64rem !important;
+}
+
+.max-w_5 {
+  max-width: 80rem !important;
+}
+
+.w_0 {
+  width: 0%;
+}
+
+.w_10 {
+  width: 10%;
+}
+
+.w_20 {
+  width: 20%;
+}
+
+.w_30 {
+  width: 30%;
+}
+
+.w_40 {
+  width: 40%;
+}
+
+.w_50 {
+  width: 50%;
+}
+
+.w_60 {
+  width: 60%;
+}
+
+.w_70 {
+  width: 70%;
+}
+
+.w_80 {
+  width: 80%;
+}
+
+.w_90 {
+  width: 90%;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.gw_1 {
+  width: 8.3333333333%;
+}
+
+.gw_2 {
+  width: 16.6666666667%;
+}
+
+.gw_3 {
+  width: 25%;
+}
+
+.gw_4 {
+  width: 33.3333333333%;
+}
+
+.gw_5 {
+  width: 41.6666666667%;
+}
+
+.gw_6 {
+  width: 50%;
+}
+
+.gw_7 {
+  width: 58.3333333333%;
+}
+
+.gw_8 {
+  width: 66.6666666667%;
+}
+
+.gw_9 {
+  width: 75%;
+}
+
+.gw_10 {
+  width: 83.3333333333%;
+}
+
+.gw_11 {
+  width: 91.6666666667%;
+}
+
+.gw_12 {
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .max-w_0\3A md {
+    max-width: 0 !important;
+  }
+
+  .max-w_1\3A md {
+    max-width: 30rem !important;
+  }
+
+  .max-w_2\3A md {
+    max-width: 40rem !important;
+  }
+
+  .max-w_3\3A md {
+    max-width: 50rem !important;
+  }
+
+  .max-w_4\3A md {
+    max-width: 64rem !important;
+  }
+
+  .max-w_5\3A md {
+    max-width: 80rem !important;
+  }
+
+  .w_0\3A md {
+    width: 0%;
+  }
+
+  .w_10\3A md {
+    width: 10%;
+  }
+
+  .w_20\3A md {
+    width: 20%;
+  }
+
+  .w_30\3A md {
+    width: 30%;
+  }
+
+  .w_40\3A md {
+    width: 40%;
+  }
+
+  .w_50\3A md {
+    width: 50%;
+  }
+
+  .w_60\3A md {
+    width: 60%;
+  }
+
+  .w_70\3A md {
+    width: 70%;
+  }
+
+  .w_80\3A md {
+    width: 80%;
+  }
+
+  .w_90\3A md {
+    width: 90%;
+  }
+
+  .w_100\3A md {
+    width: 100%;
+  }
+
+  .gw_1\3A md {
+    width: 8.3333333333%;
+  }
+
+  .gw_2\3A md {
+    width: 16.6666666667%;
+  }
+
+  .gw_3\3A md {
+    width: 25%;
+  }
+
+  .gw_4\3A md {
+    width: 33.3333333333%;
+  }
+
+  .gw_5\3A md {
+    width: 41.6666666667%;
+  }
+
+  .gw_6\3A md {
+    width: 50%;
+  }
+
+  .gw_7\3A md {
+    width: 58.3333333333%;
+  }
+
+  .gw_8\3A md {
+    width: 66.6666666667%;
+  }
+
+  .gw_9\3A md {
+    width: 75%;
+  }
+
+  .gw_10\3A md {
+    width: 83.3333333333%;
+  }
+
+  .gw_11\3A md {
+    width: 91.6666666667%;
+  }
+
+  .gw_12\3A md {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .max-w_0\3A lg {
+    max-width: 0 !important;
+  }
+
+  .max-w_1\3A lg {
+    max-width: 30rem !important;
+  }
+
+  .max-w_2\3A lg {
+    max-width: 40rem !important;
+  }
+
+  .max-w_3\3A lg {
+    max-width: 50rem !important;
+  }
+
+  .max-w_4\3A lg {
+    max-width: 64rem !important;
+  }
+
+  .max-w_5\3A lg {
+    max-width: 80rem !important;
+  }
+
+  .w_0\3A lg {
+    width: 0%;
+  }
+
+  .w_10\3A lg {
+    width: 10%;
+  }
+
+  .w_20\3A lg {
+    width: 20%;
+  }
+
+  .w_30\3A lg {
+    width: 30%;
+  }
+
+  .w_40\3A lg {
+    width: 40%;
+  }
+
+  .w_50\3A lg {
+    width: 50%;
+  }
+
+  .w_60\3A lg {
+    width: 60%;
+  }
+
+  .w_70\3A lg {
+    width: 70%;
+  }
+
+  .w_80\3A lg {
+    width: 80%;
+  }
+
+  .w_90\3A lg {
+    width: 90%;
+  }
+
+  .w_100\3A lg {
+    width: 100%;
+  }
+
+  .gw_1\3A lg {
+    width: 8.3333333333%;
+  }
+
+  .gw_2\3A lg {
+    width: 16.6666666667%;
+  }
+
+  .gw_3\3A lg {
+    width: 25%;
+  }
+
+  .gw_4\3A lg {
+    width: 33.3333333333%;
+  }
+
+  .gw_5\3A lg {
+    width: 41.6666666667%;
+  }
+
+  .gw_6\3A lg {
+    width: 50%;
+  }
+
+  .gw_7\3A lg {
+    width: 58.3333333333%;
+  }
+
+  .gw_8\3A lg {
+    width: 66.6666666667%;
+  }
+
+  .gw_9\3A lg {
+    width: 75%;
+  }
+
+  .gw_10\3A lg {
+    width: 83.3333333333%;
+  }
+
+  .gw_11\3A lg {
+    width: 91.6666666667%;
+  }
+
+  .gw_12\3A lg {
+    width: 100%;
+  }
+}
+/*
+	Max Width
+
+	Control the max width by 10% increments or by readable which is 65em
+
+	.max-w_1.lh_4 - width size for a column that would match up to the smallest breakpoint.
+	.max-w_2.font_n1.lh_4 - comfortable reading range for font_n1 text.
+	.max-w_3.font_0.lh_3 - comfortable reading range for font_0 text
+	.max-w_4.font_1.lh_2 - comfortable reading range for font_1 text
+	.max-w_5.lh_4 - large screen format of 1280px
+
+
+	markup:
+	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {$modifiers}"><strong>{$modifiers}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.</div></div>
+
+	Styleguide 111.2
+
+ */
+/*
 	Reciepes
 
 	Combination of UCs can make complex and rich UI elements.  Here is a collection of curated UI that can be used in projects by just following these patterns.
@@ -16248,19 +16806,19 @@ Icons: Regular
   Switches
 
   markup:
-  <div class="switch tiny switch_radius">
+  <div class="switch tiny switch_radius p_5">
     <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="tinySwitch">
       <span class="show-for-sr">Tiny Sandwiches Enabled</span>
     </label>
   </div>
-  <div class="switch small round">
+  <div class="switch small round p_5">
     <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="smallSwitch">
       <span class="show-for-sr">Small Portions Only</span>
     </label>
   </div>
-  <div class="switch large">
+  <div class="switch large p_5">
     <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="largeSwitch">
       <span class="show-for-sr">Show Large Elephants</span>
@@ -16324,7 +16882,7 @@ Icons: Regular
 */
 /*
 
-  Accordian.
+  Accordian
   
   You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
@@ -16402,7 +16960,7 @@ Icons: Regular
 
 */
 /*
-    RECIEPE: Tabs Inset Area
+    Tabs Inset Area :RECIEPE
 
     markup:
     <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -16430,7 +16988,7 @@ Icons: Regular
 
 */
 /*
-    RECIEPE: Tabs on card
+    Tabs on card :RECIEPE
 
     markup:
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -16466,9 +17024,9 @@ Icons: Regular
 
 */
 /*
-Navigation Components
+Interactive Extras
 
-Components are basic HTML patterns enhanced by either a class decorator or a container wrapper.
+Interactions can be enhanced with toggle icons or loading graphics to show the system is responding to user input.
 
  Styleguide 20.0
 */
@@ -23779,12 +24337,8 @@ readers do not read off random characters that represent icons */
 .fal {
   font-family: "Font Awesome 5 Pro";
   font-weight: 300;
-}.sg-nav-link.active {
-  border-left: solid 0.5rem #198dae;
-  padding-left: 0.5rem;
-}
-
-.sg-nav-link.sub-active {
-  border-left: solid 0.5rem #3c9eba;
-  padding-left: 0.5rem;
+}pre code.hljs {
+  padding-top: 2em;
+  padding-bottom: 2.5em;
+  max-height: 100%;
 }

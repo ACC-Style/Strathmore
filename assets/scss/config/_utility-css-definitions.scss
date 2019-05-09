@@ -45,8 +45,8 @@ $valueParams: (
 	line-height: (
 		0: 0,
 		1: 1,
-		2: 1.25,
-		3: 1.45,
+		2: 1.35,
+		3: 1.5,
 		4: 1.75,
 		5: 2.5
 	),
@@ -215,6 +215,14 @@ $valueParams: (
 		10: 5/6 * 100%,
 		11: 11/12 * 100%,
 		12: 1 * 100%
+	),
+	maxwidth: (
+		0: 0,
+		1: 30rem,
+		2: 40rem,
+		3: 50rem,
+		4: 64rem,
+		5: 80rem
 	),
 	text-shadow: (
 		none: 0px 0px 0px rgba(0, 0, 0, 0),
@@ -643,12 +651,12 @@ $style-definition: (
 		alt: "none"
 	),
 	max-width: (
-		short-name: ".mw",
+		short-name: ".max-w",
 		css-style: (
 			"max-width"
 		),
 		long-name: ".max-width",
-		unit: map-get($valueParams, grid),
+		unit: map-get($valueParams, maxwidth),
 		alt: "none"
 	)
 );

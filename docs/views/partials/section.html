@@ -1,12 +1,12 @@
-<section id="section-{{section.reference}}" class="sg sg-section" ng-class="{active: isActive(section), main: isEmptyMainSection(section)}">
+<section id="section-{{section.reference}}" class="sg sg-section m_auto mw-expanded" ng-class="{'is-active': isActive(section), main: isEmptyMainSection(section)}">
   <header class="sg">
     <a ui-sref="app.index.section({section: '{{section.reference}}'})">
       <i class="fa sfa-link"></i>
       <h1 class="sg">
         <span class="sg-reference-number" ng-if="config.data.showReferenceNumbers">{{ section.reference }}</span>
         <span ng-bind-html="section.header | unsafe"></span>
-        <span class="sg-section-source-ref" ng-if="!config.data.showReferenceNumbers">{{ section.reference }}</span>
-        <span class="sg-section-source">{{ section.file }} </span>
+        <span class="sg-section-source-ref pull-right font_n2 c_secondary-2 m-l_2" ng-if="!config.data.showReferenceNumbers">{{ section.reference }}</span>
+        <span class="sg-section-source pull-right font_n2 c_secondary-2">{{ section.file }} </span>
       </h1>
     </a>
   </header>
@@ -44,7 +44,7 @@
 
   <div class="sg sg-section-partial sg-code-listing" ng-if="section.css">
     <div ng-if="section.showCSS" class="sg sg-label">
-      <a ng-click="section.showCSS = false" target="_blank">
+      <a ng-click="section.showCSS = false" class="c_white bg_primary" target="_blank">
         <i class="fas fa-times"></i>
       </a>
     </div>
@@ -54,7 +54,7 @@
 
   <div class="sg sg-section-partial sg-code-listing" ng-if="section.markupJade">
     <div ng-if="section.showMarkupJade" class="sg sg-label">
-      <a ng-click="section.showMarkupJade = false" target="_blank">
+      <a ng-click="section.showMarkupJade = false" class="c_white bg_primary" target="_blank">
         <i class="fas fa-times"></i>
       </a>
     </div>
@@ -64,7 +64,7 @@
 
   <div class="sg sg-section-partial sg-code-listing" ng-if="section.markup">
     <div ng-if="section.showMarkup" class="sg sg-label">
-      <a ng-click="section.showMarkup = false" target="_blank">
+      <a ng-click="section.showMarkup = false" class="c_white bg_primary" target="_blank">
         <i class="fas fa-times"></i>
       </a>
     </div>

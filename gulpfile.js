@@ -126,7 +126,7 @@ gulp.task("styleguide:generate", ["style"], function () {
 		.src("./assets/css/index.css")
 		.pipe(
 			styleguide.generate({
-				title: "Strathmore - Enteprise UI of the ACC",
+				title: "Strathmore - Zurb",
 				server: false,
 				rootPath: PATHS.STYLEGUIDE_OUTPUT,
 				appRoot: "/" + PATHS.STYLEGUIDE_OUTPUT,
@@ -141,7 +141,7 @@ gulp.task("styleguide:generate", ["style"], function () {
 				],
 				afterBody: "",
 				styleVariables: false,
-				showReferenceNumbers: true,
+				showReferenceNumbers: false,
 				disableEncapsulation: true
 			})
 		)

@@ -19,18 +19,18 @@
 	Styleguide 111.1
 
  */
-@include loop-style(max-width, "", "");
+@include loop-style(max-width, "", "!important");
 @include loop-style(width, "", "");
 @include loop-style(grid-width, "", "");
 
 @media #{$medium-up} {
-	@include loop-style(max-width, $bp_medium, "");
+	@include loop-style(max-width, $bp_medium, "!important");
 	@include loop-style(width, $bp_medium, "");
 	@include loop-style(grid-width, $bp_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(max-width, $bp_large, "");
+	@include loop-style(max-width, $bp_large, "!important");
 	@include loop-style(width, $bp_large, "");
 	@include loop-style(grid-width, $bp_large, "");
 }
@@ -40,11 +40,11 @@
 
 	Control the max width by 10% increments or by readable which is 65em
 
-	.mw_10 - modify top of an absolute positioned block 
-	.mw_50 - modify top of an absolute positioned block
-	.mw_70 - modify bottom of an absolute positioned block 
-	.mw_90 - modify bottom of an absolute positioned block
-	.mw_readable - modify left of an absolute positioned block 
+	.max-w_1.lh_4 - width size for a column that would match up to the smallest breakpoint.
+	.max-w_2.font_n1.lh_4 - comfortable reading range for font_n1 text.
+	.max-w_3.font_0.lh_3 - comfortable reading range for font_0 text
+	.max-w_4.font_1.lh_2 - comfortable reading range for font_1 text
+	.max-w_5.lh_4 - large screen format of 1280px
 
 
 	markup:
@@ -53,10 +53,3 @@
 	Styleguide 111.2
 
  */
-
-.mw-readable {
-	max-width: 65em;
-}
-.mw-expanded {
-	max-width: 80em;
-}

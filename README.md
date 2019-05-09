@@ -2,7 +2,7 @@
 
 # Strathmore
 
-#### Version 1.1 | Built on Foundation 6.4.3 & Font Awesome Pro
+#### Version 1.5.0 | Built on Foundation 6.4.3 & Font Awesome Pro
 
 ## Table of Contents
 
@@ -43,46 +43,48 @@ Strathmore utilizes an abbreviated naming convention for utility classes to save
 
 </div>
 
-| Style                      | Short Name | CSS                          | Long Nmae                     |
-| -------------------------- | ---------- | ---------------------------- | ----------------------------- |
-| margin                     | '.m'       | 'margin'                     | '.margin'                     |
-| margin-top                 | '.m-t'     | 'margin-top'                 | '.margin-top'                 |
-| margin-bottom              | '.m-b'     | 'margin-bottom'              | '.margin-bottom'              |
-| margin-left                | '.m-l'     | 'margin-left'                | '.margin-left'                |
-| margin-right               | '.m-r'     | 'margin-right'               | '.margin-right'               |
-| padding                    | '.p'       | 'padding'                    | '.padding'                    |
-| padding-top                | '.p-t'     | 'padding-top'                | '.padding-top'                |
-| padding-bottom             | '.p-b'     | 'padding-bottom'             | '.padding-bottom'             |
-| padding-left               | '.p-l'     | 'padding-left'               | '.padding-left'               |
-| padding-right              | '.p-r'     | 'padding-right'              | '.padding-right'              |
-| line-height                | '.lh'      | 'line-height'                | '.line-height'                |
-| font-size                  | '.font'    | 'font-size'                  | '.font-size'                  |
-| font-family                | '.font'    | 'font-family'                | '.font-family'                |
-| font-weight                | '.font'    | 'font-weight'                | '.font-weight'                |
-| font-style                 | '.font'    | 'font-style'                 | '.font-style'                 |
-| color                      | '.c'       | 'color'                      | '.color'                      |
-| background-color           | '.bg'      | 'background-color'           | '.back'                       |
-| border-color               | '.br'      | 'border-color'               | '.border'                     |
-| border-radius              | '.br'      | 'border-radius'              | '.border-radius'              |
-| border-top-right-radius    | '.br-tr'   | 'border-top-right-radius'    | '.border-top-right-radius'    |
-| border-top-left-radius     | '.br-tl'   | 'border-top-left-radius'     | '.border-top-left-radius'     |
-| border-bottom-right-radius | '.br-br'   | 'border-bottom-right-radius' | '.border-bottom-right-radius' |
-| border-bottom-left-radius  | '.br-bl'   | 'border-bottom-left-radius'  | '.border-bottom-left-radius'  |
-| border-width               | '.br'      | 'border-width'               | '.border-width'               |
-| border-top-width           | '.br-t'    | 'border-top-width'           | '.border-top-width'           |
-| border-right-width         | '.br-r'    | 'border-right-width'         | '.border-right-width'         |
-| border-left-width          | '.br-l'    | 'border-left-width'          | '.border-left-width'          |
-| border-bottom-width        | '.br-b'    | 'border-bottom-width'        | '.border-bottom-width'        |
-| width                      | '.w'       | 'width'                      | '.width'                      |
-| display                    | '.d'       | 'display'                    | '.display'                    |
+| Style                      | Short Name  | CSS                          | Long Nmae                     |
+| -------------------------- | ----------- | ---------------------------- | ----------------------------- |
+| margin                     | '.m'        | 'margin'                     | '.margin'                     |
+| margin-top                 | '.m-t'      | 'margin-top'                 | '.margin-top'                 |
+| margin-bottom              | '.m-b'      | 'margin-bottom'              | '.margin-bottom'              |
+| margin-left                | '.m-l'      | 'margin-left'                | '.margin-left'                |
+| margin-right               | '.m-r'      | 'margin-right'               | '.margin-right'               |
+| overflow                   | '.overflow' | 'overflow'                   | '.overflow'                   |
+| padding                    | '.p'        | 'padding'                    | '.padding'                    |
+| padding-top                | '.p-t'      | 'padding-top'                | '.padding-top'                |
+| padding-bottom             | '.p-b'      | 'padding-bottom'             | '.padding-bottom'             |
+| padding-left               | '.p-l'      | 'padding-left'               | '.padding-left'               |
+| padding-right              | '.p-r'      | 'padding-right'              | '.padding-right'              |
+| line-height                | '.lh'       | 'line-height'                | '.line-height'                |
+| font-size                  | '.font'     | 'font-size'                  | '.font-size'                  |
+| font-family                | '.font'     | 'font-family'                | '.font-family'                |
+| font-weight                | '.font'     | 'font-weight'                | '.font-weight'                |
+| font-style                 | '.font'     | 'font-style'                 | '.font-style'                 |
+| color                      | '.c'        | 'color'                      | '.color'                      |
+| background-color           | '.bg'       | 'background-color'           | '.back'                       |
+| border-color               | '.br'       | 'border-color'               | '.border'                     |
+| border-radius              | '.br'       | 'border-radius'              | '.border-radius'              |
+| border-top-right-radius    | '.br-tr'    | 'border-top-right-radius'    | '.border-top-right-radius'    |
+| border-top-left-radius     | '.br-tl'    | 'border-top-left-radius'     | '.border-top-left-radius'     |
+| border-bottom-right-radius | '.br-br'    | 'border-bottom-right-radius' | '.border-bottom-right-radius' |
+| border-bottom-left-radius  | '.br-bl'    | 'border-bottom-left-radius'  | '.border-bottom-left-radius'  |
+| border-width               | '.br'       | 'border-width'               | '.border-width'               |
+| border-top-width           | '.br-t'     | 'border-top-width'           | '.border-top-width'           |
+| border-right-width         | '.br-r'     | 'border-right-width'         | '.border-right-width'         |
+| border-left-width          | '.br-l'     | 'border-left-width'          | '.border-left-width'          |
+| border-bottom-width        | '.br-b'     | 'border-bottom-width'        | '.border-bottom-width'        |
+| width                      | '.w'        | 'width'                      | '.width'                      |
+| display                    | '.d'        | 'display'                    | '.display'                    |
+| max-width                  | '.max-w'    | 'max-width'                  | '.max-width'                  |
 
 ### pseudo states
 
-| states      | Short Name | CSS        | Long Name | Currently Used |
-| ----------- | ---------- | ---------- | --------- | -------------- |
-| hover       | 'h:'       | ':hover'   | 'hover'   | Yes            |
-| ~~active~~  | 'a:'       | ':active'  | 'active'  | No             |
-| ~~visited~~ | 'v:'       | ':visited' | 'hover'   | No             |
+| states      | Short Name | CSS        | Long Name | Currently Used                  |
+| ----------- | ---------- | ---------- | --------- | ------------------------------- |
+| hover       | 'h:'       | ':hover'   | 'hover'   | Yes                             |
+| ~~active~~  | ~~'a:'~~   | ':active'  | 'active'  | <span class="c_alert">No</span> |
+| ~~visited~~ | ~~'v:'~~   | ':visited' | 'hover'   | <span class="c_alert">No</span> |
 
 ### Values
 
@@ -104,12 +106,12 @@ Strathmore utilizes an abbreviated naming convention for utility classes to save
 
 ### Break Points
 
-| break point | Short Name | css             | dimension | Currently Used |
-| ----------- | ---------- | --------------- | --------- | -------------- |
-| all sizes   | ''         | min-width: 0em  | 0px       | default        |
-| ~~small~~   | ':sm'      | min-width: 30em | 480px     | No             |
-| medium      | ':md'      | min-width: 40em | 640px     | Yes            |
-| large       | ':lg'      | min-width: 40em | 1024px    | Yes            |
+| break point | Short Name | css             | dimension | Currently Used                  |
+| ----------- | ---------- | --------------- | --------- | ------------------------------- |
+| all sizes   | ''         | min-width: 0em  | 0px       | default                         |
+| ~~small~~   | ':sm'      | min-width: 30em | 480px     | <span class="c_alert">No</span> |
+| medium      | ':md'      | min-width: 40em | 640px     | Yes                             |
+| large       | ':lg'      | min-width: 40em | 1024px    | Yes                             |
 
 ### Alternate Values
 
@@ -119,7 +121,7 @@ Strathmore utilizes an abbreviated naming convention for utility classes to save
 | ------------- | -------------------- |
 | square        | 0                    |
 | radius        | 5px or Global Radius |
-| round         | 999px                |
+| round         | 25px                 |
 | circle        | 100%                 |
 
 #### Border Style
@@ -139,6 +141,18 @@ Strathmore utilizes an abbreviated naming convention for utility classes to save
 | inline        | inline       |
 | inline-block  | inline-block |
 | flex          | flex         |
+
+#### Overflow
+
+| Value Postfix | Overflow |
+| ------------- | -------- |
+| auto          | auto     |
+| clip          | clip     |
+| scroll        | scroll   |
+| hidden        | hidden   |
+| ellipsis      | ellipsis |
+| visible       | visible  |
+| unset         | unset    |
 
 <div class="mw-readable m-r_5">
 
@@ -162,7 +176,10 @@ Components styling is most are
 -   show
 -   hide
 -   is-active
--   selected
+-   is-complete
+-   is-disabled
+-   is-current
+-   is-selected
 -   focus
 -   success
 -   hover
@@ -171,7 +188,6 @@ Components styling is most are
 -   primary
 -   secondary
 -   reverse
--   disabled
 
 ## Colors
 
