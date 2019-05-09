@@ -25,11 +25,11 @@ $acc-palette: (
 );
 
 %hover-text-white {
-	color: $white;
+	color: $white !important;
 }
 
 %hover-text-black {
-	color: $black;
+	color: $black !important;
 }
 /*
  

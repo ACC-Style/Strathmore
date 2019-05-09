@@ -4,7 +4,7 @@ $texture-dust: "../img/dust.png";
 $texture-dark: "../img/cross_stripes.png";
 $texture-disabled: "../img/cross_disabled.png";
 $texture-cross: "../img/cross_color.png";
-
+$texture-connectwork: "../img/connectwork.png";
 $sg-texture-light: "assets/img/whisper.png";
 $sg-texture-medium: "assets/img/billie-holiday-speck.png";
 $sg-texture-dust: "assets/img/dust.png";
@@ -67,6 +67,9 @@ div[class^="texture_"] {
 	.sg & {
 		background-image: url($sg-texture-cross);
 	}
+}
+@mixin texture-dynamic() {
+	background-image: url($texture-connectwork);
 }
 
 /*

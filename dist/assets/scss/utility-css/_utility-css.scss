@@ -1,5 +1,5 @@
 /*
-Utility Classes (UCs)
+UC: Introduction
 
  Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as reciepes. Learn more about UCs in the Introduction section
  
@@ -88,3 +88,14 @@ Styleguide 101.0
  */
 @import "display";
 @import "flex";
+
+/*
+	UC: Widths
+
+	Control some basics of the design with max-width and width.   
+
+	Styleguide 111.0
+ 
+ */
+
+@import "width";

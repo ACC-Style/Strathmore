@@ -6,7 +6,6 @@
   white              - text color modified light to dark
   black              - text color modified light to dark
 
-
   markup:
     <div class="lds-grid">
         <div class="dot bg_{$modifiers}-6 br_solid br_2 br_{$modifiers} br_circle"></div>
@@ -23,7 +22,7 @@
     sg-wrapper:
     <div class="p_5 bg_primary texture_medium"><sg-wrapper-content/></div>
  
-  Styleguide 20.40
+  Styleguide 20.3
   
   */
 $animationTime: 1.5s;
