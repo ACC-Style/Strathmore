@@ -4,24 +4,22 @@
   </div>
   <header class="bg_white br_solid br-b_2 br_acc br_0 cell shrink p-x_4 p-y_3" ng-class="{'designerToolVisible' : designerTool.isVisible, 'error' : status.hasError}">
     <div class="grid-x">
-      <div class="cell shrink">
-        <a class="sg" ui-sref="app.index.overview">
-          <h1 ng-hide="status.hasError" class="c_acc font_display font_2 m_0">
-            {{ config.data.title }}
+      <div class="cell auto">
+        <a class="sg nowrap" ui-sref="app.index.overview">
+          <h1 ng-hide="status.hasError" class="c_acc font_display font_3 font_bold m_0 max-w_1">
+            <img class="logo p_3" src="assets/img/acc-logo-mobile.svg" style="height:4rem;" alt="Home">{{ config.data.title }}
           </h1>
           <h1 ng-if="status.hasError">Error: {{ status.error.name }}</h1>
         </a>
         <pre ng-if="status.hasError">{{ status.error.message }}</pre>
       </div>
-      <div class="sg cell auto p-x_4" ng-class="{ 'side-nav-search': isSideNav() === 'sideNav' }">
-        <div class="grid-x grid-margin-x">
-          <div class="sg-hamburger cell shrink " ng-click="toggleSideNav(toggleMenu)" ng-hide="isSideNav() === 'topNav'" ng-class="{ 'sg-hamburger-active': !toggleMenu }">
-            <div class="sg-hamburger-item top"></div>
-            <div class="sg-hamburger-item middle"></div>
-            <div class="sg-hamburger-item bottom"></div>
+      <div class="sg cell auto p-y_3 p-x_4" ng-class="{ 'side-nav-search': isSideNav() === 'sideNav' }">
+        <div class="grid-x grid-margin-x flex-dir-row-reverse">
+          <div class="sg-hamburger cell shrink " ng-click="toggleSideNav(toggleMenu)" ng-if="isSideNav() === 'topNav'" ng-class="{ 'is-active': !toggleMenu }">
+            <i class="fa icon-toggle_bars-times"></i>
           </div>
-          <div class="question cell auto">
-            <div class="input-holder grid-x">
+          <div class="question cell shrink">
+            <div class="input-holder grid-x max-w_1">
               <div class="input-space cell auto">
                 <input class="m_0" id="search-section" placeholder="Search styles" ng-model="search.$" type="search" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }" autofocus />
               </div>
@@ -31,10 +29,6 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   </header>
@@ -71,12 +65,12 @@
     <section ui-view class="sg sg-body full-width p-x_3 p-y_4"></section>
   </div>
 
-  <div class="sg  full-height cell shrink grid-x" ng-class="{'designerToolVisible' : designerTool.isVisible}" ng-if="isSideNav() === 'sideNav'">
+  <div class="sg full-height cell shrink grid-x" ng-class="{'designerToolVisible' : designerTool.isVisible}" ng-if="isSideNav() === 'sideNav'">
     <div class="cell shrink grid-y grid-container full br_0 br-r_1 br_secondary-4 br_solid">
-      <div class="d_none:lg cell shrink button secondary expanded" ng-click="toggleSideNav(toggleMenu)">
-        <i class="fas fa-bars"></i>
+      <div class="d_none:lg cell shrink button secondary expanded" ng-class="{ 'is-active': toggleMenu }" ng-click="toggleSideNav(toggleMenu)">
+        <i class="fas icon-toggle_bars-times"></i>
       </div>
-      <nav class="sg-side-nav cell auto p-y_3 p-x_4 font_1 font_copy" ng-class="{ 'sg-side-nav--toggle': toggleMenu}">
+      <nav class="sg-side-nav cell auto p-y_3 m-x_4 font_1 font_copy overflow_hidden transition-all_1s" ng-class=" !toggleMenu ? 'max-w_0' :'max-w_1'" ng-hide="isSideNav() === 'topNav'">
         <ul class="sg-nav-section no-bullet lh_4 m-r_5">
           <li class="sg-nav-item">
             <a class="sg-nav-link h:c_black" ng-class="currentSection === 'overview' ? 'is-active' : ''" ng-click="clearSearch();" ui-sref="app.index.overview">
