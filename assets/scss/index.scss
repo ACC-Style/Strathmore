@@ -4,9 +4,28 @@
 **/
 // styleguide:ignore:start
 $debug-trace: false;
-$name-mode: "short"; // $name-mode: "short","long","all"
-$short-names-only: true;
+$name-mode: "SHORT"; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem; // needs to be in em's
+
+// Select the Brand
+
+$brand: "ACC" !default;
+$framework: "ZURB" !default;
+
+// Branding Color
+
+// Setup Branding and Variables
+@if ($brand == "ACC") {
+} @else if($brand == "CVQUALITY") {
+} @else {
+}
+
+// Setup Framework
+@if ($brand == "ZURB") {
+} @else if($brand == "BOOTSTRAP") {
+} @else {
+}
+
 // Setup Functions, Mixins, and Variables
 @import "vendor/foundation-sites/util/util";
 @import "helpers/helpers";

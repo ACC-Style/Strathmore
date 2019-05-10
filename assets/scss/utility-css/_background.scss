@@ -23,13 +23,16 @@
  
   Background colors can be shifted by appending a modifier bg_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
  
-  bg_primary              - background color modified light to dark
+  bg_primary                - background color modified light to dark
   bg_secondary              - background color modified light to dark
-  bg_info              - background color modified light to dark
-  bg_highlight              - background color success color
-  bg_success              - background color modified light to dark
-  bg_warning              - background color modified light to dark
-  bg_alert              - background color modified light to dark
+  bg_accent                 - background color modified light to dark
+  bg_navigation             - background color modified light to dark
+  bg_info                   - background color modified light to dark
+  bg_highlight              - background color modified light to dark
+  bg_success                - background color modified light to dark
+  bg_warning                - background color modified light to dark
+  bg_alert                  - background color modified light to dark
+  bg_acc                    - background color modified light to dark
 
   markup:
   <div class="grid-x">
@@ -54,14 +57,14 @@
  */
 
 @each $color-name, $color in $acc-palette {
-	@include color-loop(background-color, $color-name, $color);
+  @include color-loop(background-color, $color-name, $color);
 }
 
 #{ class-name-constructor(background-color, white)} {
-	background-color: $white;
+  background-color: $white;
 }
 #{ class-name-constructor(background-color, black)} {
-	background-color: $black;
+  background-color: $black;
 }
 @include loop-transparent(background-transparent, "black", "", "!important", false);
 @include loop-transparent(background-transparent, "white", "", "!important", false);
