@@ -5,10 +5,10 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function map-deep-get($map, $keys...) {
-	@each $key in $keys {
-		$map: map-get($map, $key);
-	}
-	@return $map;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
 }
 
 /// Map deep get
@@ -18,8 +18,8 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function map-style-get($map, $key, $term) {
-	$return: map-get(map-get($map, $key), $term);
-	@return return;
+  $return: map-get(map-get($map, $key), $term);
+  @return return;
 }
 
 /// css-name
@@ -28,11 +28,11 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function get-css-name($key: "", $style-list: $style-definition) {
-	@if ($short-names-only == true) {
-		@return map-get(map-get($style-list, $key), short-name);
-	} @else {
-		@return map-get(map-get($style-list, $key), long-name);
-	}
+  @if ($name-mode == "SHORT") {
+    @return map-get(map-get($style-list, $key), short-name);
+  } @else {
+    @return map-get(map-get($style-list, $key), long-name);
+  }
 }
 
 /// css-shortname
@@ -41,8 +41,8 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function get-css-shortname($key: "", $style-list: $style-definition) {
-	// @return  #{map-style-get($style-list, $key, short-name)};
-	@return map-get(map-get($style-list, $key), short-name);
+  // @return  #{map-style-get($style-list, $key, short-name)};
+  @return map-get(map-get($style-list, $key), short-name);
 }
 
 /// css-longname
@@ -51,8 +51,8 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function get-css-longname($key, $style-list: $style-definition) {
-	// @return  map-style-get($style-list, $key, long-name);
-	@return map-get(map-get($style-list, $key), long-name);
+  // @return  map-style-get($style-list, $key, long-name);
+  @return map-get(map-get($style-list, $key), long-name);
 }
 
 /// css-style
@@ -61,8 +61,8 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function get-css-style($key, $style-list: $style-definition) {
-	// @return  map-style-get($style-definition, $key, css-style);
-	@return map-get(map-get($style-list, $key), css-style);
+  // @return  map-style-get($style-definition, $key, css-style);
+  @return map-get(map-get($style-list, $key), css-style);
 }
 
 /// get-css-unit
@@ -71,7 +71,7 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {Map} - Desired value
 @function get-css-unit($key, $style-list: $style-definition) {
-	@return map-get(map-get($style-list, $key), unit);
+  @return map-get(map-get($style-list, $key), unit);
 }
 
 /// get-css-size
@@ -80,5 +80,5 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {Map} - Desired value
 @function get-css-size($key, $size, $style-list: $style-definition) {
-	@return map-get(map-get(map-get($style-list, $key), unit), $size);
+  @return map-get(map-get(map-get($style-list, $key), unit), $size);
 }
