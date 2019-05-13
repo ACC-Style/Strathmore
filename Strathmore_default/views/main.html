@@ -1,0 +1,254 @@
+<div class="{{ viewClass }} grid-y">
+  <div id="socketDisconnection" class="sg disconnection-icon" title="no socket connection" ng-hide="socketService.isConnected()" ng-if="socketService.isAvailable()">
+    <i class="fa fa-chain-broken"></i>
+  </div>
+  <header class="bg_white br_solid br-b_2 br_acc br_0 cell shrink p-x_4 p-y_3" ng-class="{'designerToolVisible' : designerTool.isVisible, 'error' : status.hasError}">
+    <div class="grid-x">
+      <div class="cell auto">
+        <a class="sg nowrap" ui-sref="app.index.overview">
+          <h1 ng-hide="status.hasError" class="c_acc font_display font_3 font_bold m_0 max-w_1">
+            <img class="logo p_3" src="assets/img/acc-logo-mobile.svg" style="height:4rem;" alt="Home">{{ config.data.title }}
+          </h1>
+          <h1 ng-if="status.hasError">Error: {{ status.error.name }}</h1>
+        </a>
+        <pre ng-if="status.hasError">{{ status.error.message }}</pre>
+      </div>
+      <div class="sg cell auto p-y_3 p-x_4" ng-class="{ 'side-nav-search': isSideNav() === 'sideNav' }">
+        <div class="grid-x grid-margin-x flex-dir-row-reverse">
+          <div class="sg-hamburger cell shrink " ng-click="toggleSideNav(toggleMenu)" ng-if="isSideNav() === 'topNav'" ng-class="{ 'is-active': !toggleMenu }">
+            <i class="fa icon-toggle_bars-times"></i>
+          </div>
+          <div class="question cell shrink">
+            <div class="input-holder grid-x max-w_1">
+              <div class="input-space cell auto">
+                <input class="m_0" id="search-section" placeholder="Search styles" ng-model="search.$" type="search" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }" autofocus />
+              </div>
+              <div class="value-space cell shrink br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="value"><i class="fas fa-search"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sg sg-top-nav cell shrink" ng-class="{'designerToolVisible' : designerTool.isVisible, 'sg-nav-visible': isSideNav() === 'topNav'}">
+    <ul class="sg sg-top-nav-menu">
+      <li class="sg-nav-item">
+        <a class="sg sg-nav-link" ng-class="currentSection === 'overview' ? 'is-active' : ''" ng-click="clearSearch()" ui-sref="app.index.overview">
+          Overview
+        </a>
+      </li>
+      <li class="sg-nav-item" ng-repeat="section in sections.data | filter: filterMainSections()">
+        <a class="sg sg-nav-link" ng-class="{ 'is-active': (currentSection === section.reference), 'sub-is-active': (currentSection.indexOf(section.reference + '.') === 0) }" ng-click="clearSearch()" ui-sref="app.index.section({section: section.reference})">
+          <span class="sg-ref" ng-if="config.data.showReferenceNumbers">{{
+						section.reference
+					}}</span>
+          <span ng-bind-html="section.header | unsafe"></span>
+        </a>
+        <ul class="sg sg-nav-subsection p-r_4">
+          <li class="sg-nav-item" ng-repeat="subsection in sections.data | filter: filterSubsections(section)">
+            <a class="sg sg-nav-link" ng-class="currentSection === subsection.reference ? 'is-active' : ''" ng-click="clearSearch()" ui-sref="app.index.section({section: subsection.reference})">
+              <span class="sg-ref" ng-if="config.data.showReferenceNumbers">{{
+								subsection.reference
+							}}</span>
+              <span ng-bind-html="subsection.header | unsafe"></span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sg  full-height cell auto" ng-class="{'designerToolVisible' : designerTool.isVisible, 'collapsed' : toggleMenu}" ng-if="isSideNav() === 'topNav'">
+    <section ui-view class="sg sg-body full-width p-x_3 p-y_4"></section>
+  </div>
+
+  <div class="sg full-height cell shrink grid-x" ng-class="{'designerToolVisible' : designerTool.isVisible}" ng-if="isSideNav() === 'sideNav'">
+    <div class="cell shrink grid-y grid-container full br_0 br-r_1 br_secondary-4 br_solid">
+      <div class="d_none:lg cell shrink button secondary expanded" ng-class="{ 'is-active': toggleMenu }" ng-click="toggleSideNav(toggleMenu)">
+        <i class="fas icon-toggle_bars-times"></i>
+      </div>
+      <nav class="sg-side-nav cell auto p-y_3 m-x_4 font_1 font_copy overflow_hidden transition-all_1s" ng-class=" !toggleMenu ? 'max-w_0' :'max-w_1'" ng-hide="isSideNav() === 'topNav'">
+        <ul class="sg-nav-section no-bullet lh_4 m-r_5">
+          <li class="sg-nav-item">
+            <a class="sg-nav-link h:c_black" ng-class="currentSection === 'overview' ? 'is-active' : ''" ng-click="clearSearch();" ui-sref="app.index.overview">
+              Overview
+            </a>
+          </li>
+          <li class="sg-nav-item p-y_2" ng-repeat="section in sections.data | filter: filterMainSections()">
+            <div class="sg-nav-item-container" ng-class="{'br_0 br_solid br_primary-4 br-l_3 p-l_3': show}">
+              <a class="sg-nav-link" ng-class="{ 'is-active': show, 'sub-is-active': (currentSection.indexOf(section.reference + '.') === 0) }" ng-click="clearSearch(); show = !show;" ui-sref="{{ isMainSectionNavigable() }}">
+                <i class="far fa-fw icon-toggle_plus-minus"></i>
+                <span class="sg-ref" ng-if="config.data.showReferenceNumbers">{{
+							section.reference
+						}}</span>
+                <span ng-bind-html="section.header | unsafe"></span>
+              </a>
+              <ul class="sg-nav-subsection no-bullet p-l_3 font_0" ng-show="show">
+                <li class="sg-nav-item p-x_2" ng-repeat="subsection in sections.data | filter: filterSubsections(section)">
+                  <a class="sg-nav-link" ng-class="{'p-y_2 is-active' : showSub}" ng-click="clearSearch(); showSub = !showSub;" ui-sref="app.index.section({section: subsection.reference})">
+                    <i class="far fa-fw icon-toggle_plus-minus" ng-if="hasSubsections(subsection)"></i>
+                    <span class="sg-ref" ng-class="{'plus': hasSubsections(subsection), 'minus': hasSubsections(subsection) && showSub}" ng-if="config.data.showReferenceNumbers">
+                      {{ subsection.reference }}
+                    </span>
+                    <span ng-bind-html="subsection.header | unsafe"></span>
+                  </a>
+                  <ul class="sg-nav-subsubsection no-bullet p-l_3 font_0" ng-show="showSub">
+                    <li class="sg-nav-item" ng-repeat="subsubsection in sections.data | filter: filterSubsections(subsection)">
+                      <a class="sg-nav-link" ng-class="currentSection === subsubsection.reference ? 'is-active' : ''" ng-click="clearSearch()" ui-sref="app.index.section({section: subsubsection.reference})">
+                        <span class="sg-ref" ng-if="config.data.showReferenceNumbers">{{ subsubsection.reference }}</span>
+                        <span ng-bind-html="subsubsection.header | unsafe"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <p class="option">
+          <a class="sg" ng-click="toggleMarkup()" ng-show="markupSection.isVisible">Hide all markup</a>
+          <a class="sg" ng-click="toggleMarkup()" ng-hide="markupSection.isVisible">Show all markup</a>
+        </p>
+      </nav>
+    </div>
+    <section ui-view class="sg sg-body cell auto p_5:lg p-x_3 p-y_4" ng-class="{'full-width': !toggleMenu}"></section>
+  </div>
+
+  <div sg-design class=""></div>
+</div>
+<div class="footer">
+  <div class="grid-y">
+    <div class="cell p-t_3 p-b_3 p_4 grid-x br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
+      <img class="logo" src="assets/img/acc-logo-mobile.svg" alt="Home">
+      <!-- Logo -->
+    </div>
+    <div class="cell grid-x texture_dark grid-p-x p_5:lg p_4 p-b_3">
+      <div class="cell medium-6 large-8">
+        <section class="address c_white">
+          <h3 class="font_slab font_2">American College of Cardiology</h3>
+          <address>
+            <!-- http://microformats.org/wiki/hcard -->
+            <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+            <div class="grid-x">
+              <div class="cell medium-5 large-4">
+                <ul class="no-bullet">
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <span class="street-address">2400 N. St. NW</span>
+                  </li>
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <span class="locality ">Washington</span>,
+                    <span class="city-name ">
+                      <abbr title="District of Colombia">DC</abbr>
+                    </span>
+                    <span class="postal-code">20037</span>
+                  </li>
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a href="mailto:resource@acc.org" class="email c_white text_underline lh_2 h:c_white ">
+                      <strong class="p-r_2 inline block:medium inline:large">Email:</strong>
+                      <span class="inline block:medium inline:large">resource@acc.org</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cell medium-7 large-8">
+                <ul class="no-bullet">
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a tel="+12023756000" href="tel:+12023756000" class="lh_2 tel c_white h:c_white h:underline">
+                      <strong class="p-r_2 block:medium inline:large">Phone:</strong><span class=" block:medium inline:large">(202) 375-6000, ext. 5603</span></a>
+                  </li>
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a tel="+18002574737" href="tel:+18002534636.5603" class="lh_2 tel c_white h:c_white h:underline">
+                      <strong class="p-r_2 block:medium inline:large">Toll Free:</strong><span class=" block:medium inline:large">(800) 253-4636, ext. 5603</span></a>
+                  </li>
+                  <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a fax="+12023757000" href="fax:+12023757000" class="lh_2 fax c_white h:c_white h:underline">
+                      <strong class="p-r_2 block:medium inline:large">Fax:</strong>
+                      <span class="block:medium inline:large">(202) 375-7000</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </address>
+        </section>
+        <!-- Address -->
+        <h4 class="font_slab c_white">Stay Connected</h4>
+        <ul class="grid-x social-bar no-bullet c_white h:c_white">
+          <li class="auto cell m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2 "></i></a></li>
+          <li class="auto cell m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2 "></i></a></li>
+          <li class="auto cell m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2 "></i></a></li>
+          <li class="auto cell m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2 "></i></a></li>
+          <li class="auto cell m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-youtube font_2 "></i></a></li>
+        </ul>
+        <!-- Social -->
+      </div>
+      <div class="cell medium-6 large-4">
+        <section class="acc-websites row c_white p-x_3">
+          <h4 class="font_slab">Improving Cardiovascular Care</h4>
+          <nav class="nav-list small d_block clearfix">
+            <ul class="no-bullet lh_3 font_0">
+              <li class="c_white br_solid  br_0 br-b_1  br_white-5">
+                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                  <span class="">Acc</span>
+                  <i class="float-right r c_white h:c_white fa-external-link-square "></i>
+                </a>
+              </li>
+              <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                  <span class="">Accreditation Services</span>
+                  <i class="float-right r c_white h:c_white fa-external-link-square "></i>
+                </a>
+              </li>
+              <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                  <span class="">NCDR</span>
+                  <i class="float-right r c_white h:c_white fa-external-link-square "></i>
+                </a>
+              </li>
+              <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                  <span class="">CardioSmart</span>
+                  <i class="float-right r c_white h:c_white fa-external-link-square "></i>
+                </a>
+              </li>
+              <li class="c_white">
+                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                  <span class="">JACC</span>
+                  <i class="float-right r c_white fa-external-link-square "></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Footer External Links -->
+      </div>
+    </div>
+    <div class="cell grid-x texture_light bg_secondary-1">
+      <div class="cell auto">
+        <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">©
+          2019 American College of Cardiology</cite>
+
+        <!-- Footer Cite -->
+      </div>
+      <div class="cell auto float-right pull-right text_right">
+        <cite class="c_secondary-1 font_bold font_italic font_n1 lh_2 p_3">
+          <div class="float-right">
+            <span>
+              <a class="ng-hide" ng-click="toggleMarkup()" ng-show="markupSection.isVisible">Hide all markup</a>
+              <a class="" ng-click="toggleMarkup()" ng-hide="markupSection.isVisible">Show all markup</a>
+            </span>
+            <span class="">
+              Generated with the
+              <a class="" target="_blank" href="http://styleguide.sc5.io/">styleguide engine</a>
+              by
+            </span>
+            <a href="http://sc5.io/" target="_blank" title="SC5 - The Leading HTML5 Expert" class="d_inline-block lh1 lh_0 vertical-align_top">
+              <img class="m-t_n3 sg-logo" src="assets/img/sc5logo.svg" alt="SC5" style="height:  2rem;">
+            </a>
+          </div>
+        </cite></div>
+    </div>
+  </div>
+</div>

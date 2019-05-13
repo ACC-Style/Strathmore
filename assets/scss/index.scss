@@ -1,55 +1,12 @@
-/** 
-	Strathmore
-	Version 1.1
-**/
-// styleguide:ignore:start
-$debug-trace: false;
-$name-mode: "SHORT"; // $name-mode: "SHORT","LONG","ALL"
-$ms-base: 1rem; // needs to be in em's
-
-// Select the Brand
-
-$brand: "ACC" !default;
-$framework: "ZURB" !default;
-
-// Branding Color
-
-// Setup Branding and Variables
-@if ($brand == "ACC") {
-} @else if($brand == "CVQUALITY") {
-} @else {
-}
-
-@import "../../node_modules/foundation-sites/scss/util/util";
-// Setup Framework
-@if ($brand == "ZURB") {
-} @else if($brand == "BOOTSTRAP") {
-} @else {
-}
-
-// Setup Functions, Mixins, and Variables
-@import "helpers/helpers";
-@import "vendor/modular-scale";
-@import "config/config";
-
-@import "vendor/foundation-sites/foundation";
-// Foundation
-// Build Framework
-@if ($brand == "ZURB") {
-} @else if($brand == "BOOTSTRAP") {
-} @else {
-}
-@include foundation-everything();
-
 // styleguide:ignore:end
 // ACC Design Alterations
+
 @import "base/base";
 @import "components/components";
 @import "structures/structures";
 // #override-container {
 // 	@import "utility-css/utility-css";
 // }
-
 @import "utility-css/utility-css";
 @import "reciepes/reciepes";
 //StyleGuide

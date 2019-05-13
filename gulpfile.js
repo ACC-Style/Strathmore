@@ -11,7 +11,20 @@ var browserSync = require("browser-sync").create();
 var clean = require("gulp-clean");
 var rename = require("gulp-rename");
 var header = require('gulp-header');
+var pkg = require('./package.json');
+var fs = require('fs');
+var gulpif = require('gulp-if');
+var minimist = require('minimist');
+var switchStream = require('stream-switch');
 
+var knownOptions = {
+	string: 'brand',
+	default: {
+		'brand': "default"
+	}
+};
+var options = minimist(process.argv.slice(2), knownOptions);
+var buildInst = options.brand;
 // Paths
 var PATHS = {
 	SRC: "./",
@@ -25,7 +38,8 @@ var PATHS = {
 	FONTS: "assets/fonts/*",
 	IMG: "assets/img/*",
 	ICONS: "assets/icons/*",
-	STYLEGUIDE_OUTPUT: "Strathmore"
+	STYLEGUIDE_OUTPUT: "Strathmore_" + buildInst,
+	SCCS_BUILD_NAME: "index_" + buildInst
 };
 
 // Server
@@ -125,7 +139,7 @@ gulp.task("styleguide:generate", ["style"], function () {
 	console.log("Gulp Style Guide Tasks");
 	console.log("Gulp: Build the Documentation!");
 	return gulp
-		.src("./assets/css/index.css")
+		.src("./assets/css/" + PATHS.SCCS_BUILD_NAME + ".css")
 		.pipe(
 			styleguide.generate({
 				title: "Strathmore - Zurb",
@@ -155,7 +169,7 @@ gulp.task("styleguide:applystyles", ["package:strathmore"], function () {
 	console.log("Gulp: Write it down and record it!");
 	return gulp
 		.src([
-			"./assets/scss/index.scss",
+			"./assets/scss/" + PATHS.SCCS_BUILD_NAME + ".scss",
 			"./assets/scss/vendor/fontawesome/fontawesome.scss",
 			"./assets/scss/vendor/fontawesome/regular.scss",
 			"./assets/scss/vendor/fontawesome/fa.sub.brands.scss",
@@ -184,7 +198,7 @@ gulp.task("package:strathmore", function () {
 				base: "./"
 			}
 		)
-		.pipe(gulp.dest(PATHS.STYLEGUIDE));
+		.pipe(gulp.dest('./' + PATHS.STYLEGUIDE_OUTPUT));
 });
 
 // Package Tasks.   Copy files to the Dist Folder.
@@ -234,12 +248,25 @@ gulp.task("addAutomation", ["clean:dist"], function () {
 		.pipe(gulp.dest(PATHS.DIST));
 });
 
-gulp.task("foundationScssAddOn", function () {
+gulp.task("buildSCSS", function () {
+	console.log("Build is set to default add '--brand' + 'acc_zurb','acc_boot',or cv_boot ");
+
 	gulp.src('assets/scss/index.scss')
-		.pipe(header('#boo{background-color:red;}'))
-		.pipe(rename("index_foundation.scss"))
-		.pipe(gulp.dest(PATHS.DIST));
-})
+
+		.pipe(switchStream(buildInst, {
+			'acc_zurb': header(fs.readFileSync('assets/scss/gulp_header/_acc-zurb-setup.scss', 'utf8'), {
+				pkg: pkg
+			}),
+			'default': header(fs.readFileSync('assets/scss/gulp_header/_default-setup.scss', 'utf8'), {
+				pkg: pkg
+			})
+		}))
+		.pipe(header(fs.readFileSync('assets/scss/gulp_header/_preheader.scss', 'utf8'), {
+			pkg: pkg
+		}))
+		.pipe(rename(PATHS.SCCS_BUILD_NAME + ".scss"))
+		.pipe(gulp.dest("assets/scss"));
+});
 // Watch Tasks
 gulp.task("watch", ["styleguide"], function () {
 	console.log("Gulp Watch Tasks");
@@ -248,7 +275,7 @@ gulp.task("watch", ["styleguide"], function () {
 });
 // Default
 gulp.task("default", ["styleguide", "serve", "watch"]);
-gulp.task("foundation", ["foundationScssAddOn"]);
+gulp.task("build", ["buildSCSS", 'default']);
 gulp.task("styleguide", ["styleguide:generate", "styleguide:applystyles"]);
 gulp.task("docs", ["package:docs"]);
 gulp.task("dist", ["package:dist"]);
