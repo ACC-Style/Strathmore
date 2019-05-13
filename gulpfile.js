@@ -10,6 +10,8 @@ var styleguide = require("sc5-styleguide");
 var browserSync = require("browser-sync").create();
 var clean = require("gulp-clean");
 var rename = require("gulp-rename");
+var header = require('gulp-header');
+
 // Paths
 var PATHS = {
 	SRC: "./",
@@ -232,6 +234,12 @@ gulp.task("addAutomation", ["clean:dist"], function () {
 		.pipe(gulp.dest(PATHS.DIST));
 });
 
+gulp.task("foundationScssAddOn", function () {
+	gulp.src('assets/scss/index.scss')
+		.pipe(header('#boo{background-color:red;}'))
+		.pipe(rename("index_foundation.scss"))
+		.pipe(gulp.dest(PATHS.DIST));
+})
 // Watch Tasks
 gulp.task("watch", ["styleguide"], function () {
 	console.log("Gulp Watch Tasks");
@@ -240,6 +248,7 @@ gulp.task("watch", ["styleguide"], function () {
 });
 // Default
 gulp.task("default", ["styleguide", "serve", "watch"]);
+gulp.task("foundation", ["foundationScssAddOn"]);
 gulp.task("styleguide", ["styleguide:generate", "styleguide:applystyles"]);
 gulp.task("docs", ["package:docs"]);
 gulp.task("dist", ["package:dist"]);
