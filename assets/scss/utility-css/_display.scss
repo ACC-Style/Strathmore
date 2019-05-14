@@ -20,10 +20,10 @@
 @include loop-style(display);
 
 @media #{$medium-up} {
-	@include loop-style(display, $bp_medium);
+	@include loop-style(display, $bp-label_medium);
 }
 @media #{$large-up} {
-	@include loop-style(display, $bp_large);
+	@include loop-style(display, $bp-label_large);
 }
 
 .vertical-align_top {

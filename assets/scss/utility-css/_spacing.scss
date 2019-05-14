@@ -46,23 +46,23 @@
 @include loop-style(margin-right, "", "");
 
 @media #{$medium-up} {
-	@include loop-style(margin, $bp_medium, "");
-	@include loop-style(margin-vertical, $bp_medium, "");
-	@include loop-style(margin-horizontal, $bp_medium, "");
-	@include loop-style(margin-top, $bp_medium, "");
-	@include loop-style(margin-bottom, $bp_medium, "");
-	@include loop-style(margin-left, $bp_medium, "");
-	@include loop-style(margin-right, $bp_medium, "");
+	@include loop-style(margin, $bp-label_medium, "");
+	@include loop-style(margin-vertical, $bp-label_medium, "");
+	@include loop-style(margin-horizontal, $bp-label_medium, "");
+	@include loop-style(margin-top, $bp-label_medium, "");
+	@include loop-style(margin-bottom, $bp-label_medium, "");
+	@include loop-style(margin-left, $bp-label_medium, "");
+	@include loop-style(margin-right, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(margin, $bp_large, "");
-	@include loop-style(margin-vertical, $bp_large, "");
-	@include loop-style(margin-horizontal, $bp_large, "");
-	@include loop-style(margin-top, $bp_large, "");
-	@include loop-style(margin-bottom, $bp_large, "");
-	@include loop-style(margin-left, $bp_large, "");
-	@include loop-style(margin-right, $bp_large, "");
+	@include loop-style(margin, $bp-label_large, "");
+	@include loop-style(margin-vertical, $bp-label_large, "");
+	@include loop-style(margin-horizontal, $bp-label_large, "");
+	@include loop-style(margin-top, $bp-label_large, "");
+	@include loop-style(margin-bottom, $bp-label_large, "");
+	@include loop-style(margin-left, $bp-label_large, "");
+	@include loop-style(margin-right, $bp-label_large, "");
 }
 
 /*
@@ -97,23 +97,23 @@
 @include loop-style(padding-right, "", "");
 
 @media #{$medium-up} {
-	@include loop-style(padding, $bp_medium, "");
-	@include loop-style(padding-vertical, $bp_medium, "");
-	@include loop-style(padding-horizontal, $bp_medium, "");
-	@include loop-style(padding-top, $bp_medium, "");
-	@include loop-style(padding-bottom, $bp_medium, "");
-	@include loop-style(padding-left, $bp_medium, "");
-	@include loop-style(padding-right, $bp_medium, "");
+	@include loop-style(padding, $bp-label_medium, "");
+	@include loop-style(padding-vertical, $bp-label_medium, "");
+	@include loop-style(padding-horizontal, $bp-label_medium, "");
+	@include loop-style(padding-top, $bp-label_medium, "");
+	@include loop-style(padding-bottom, $bp-label_medium, "");
+	@include loop-style(padding-left, $bp-label_medium, "");
+	@include loop-style(padding-right, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(padding, $bp_large, "");
-	@include loop-style(padding-vertical, $bp_large, "");
-	@include loop-style(padding-horizontal, $bp_large, "");
-	@include loop-style(padding-top, $bp_large, "");
-	@include loop-style(padding-bottom, $bp_large, "");
-	@include loop-style(padding-left, $bp_large, "");
-	@include loop-style(padding-right, $bp_large, "");
+	@include loop-style(padding, $bp-label_large, "");
+	@include loop-style(padding-vertical, $bp-label_large, "");
+	@include loop-style(padding-horizontal, $bp-label_large, "");
+	@include loop-style(padding-top, $bp-label_large, "");
+	@include loop-style(padding-bottom, $bp-label_large, "");
+	@include loop-style(padding-left, $bp-label_large, "");
+	@include loop-style(padding-right, $bp-label_large, "");
 }
 
 .absolute {
@@ -160,15 +160,15 @@
 @include loop-style(right, "", "");
 
 @media #{$medium-up} {
-	@include loop-style(top, $bp_medium, "");
-	@include loop-style(bottom, $bp_medium, "");
-	@include loop-style(left, $bp_medium, "");
-	@include loop-style(right, $bp_medium, "");
+	@include loop-style(top, $bp-label_medium, "");
+	@include loop-style(bottom, $bp-label_medium, "");
+	@include loop-style(left, $bp-label_medium, "");
+	@include loop-style(right, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(top, $bp_large, "");
-	@include loop-style(bottom, $bp_large, "");
-	@include loop-style(left, $bp_large, "");
-	@include loop-style(right, $bp_large, "");
+	@include loop-style(top, $bp-label_large, "");
+	@include loop-style(bottom, $bp-label_large, "");
+	@include loop-style(left, $bp-label_large, "");
+	@include loop-style(right, $bp-label_large, "");
 }

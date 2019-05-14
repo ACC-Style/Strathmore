@@ -1,5 +1,41 @@
+$grid-column-count: 12;
+$optimal-characters: 65;
+$crushed: 1.125;
+$tight: 1.35;
+$normal: 1.5;
+$loose: 1.65;
+$airy: 1.875;
+$baseline-modifier: 1.5;
+
+$ms-base: 1em;
+$base-font-size: $ms-base;
+$baseline: ($baseline-modifier * $base-font-size) / $base-font-size * 1rem; // Unitless item * PIXEL Size / Font PIXEL Converted to REM
+// $line-height:strip-unit($baseline-modifier);
+$ms-ratio: $minor-third;
+$ms-ratio-sm: $major-second;
+$ms-ratio-md: $minor-third;
+$ms-ratio-lg: $fourth;
+$vertical-space: $baseline-modifier * $ms-base / $ms-base * 1rem;
+
+$breakpoints: (
+	xsm: 0,
+	sm: 480px,
+	md: 640px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1440px
+);
+
+$global-border-radius: 6px;
+$global-border-round: 25px;
+$basicSizeMultiplier: 1rem;
+
+$bp-label_small: "\\3A sm";
+$bp-label_medium: "\\3A md";
+$bp-label_large: "\\3A lg";
+
 // styleguide:ignore:start
-$valueParams: (
+$value-to-unit: (
 	size: (
 		0: 0,
 		n5: -2 * $basicSizeMultiplier,
@@ -253,7 +289,7 @@ $style-definition: (
 			"background-color"
 		),
 		long-name: ".back",
-		unit: map-get($valueParams, "percent")
+		unit: map-get($value-to-unit, "percent")
 	),
 	border-color: (
 		short-name: ".br",
@@ -261,7 +297,7 @@ $style-definition: (
 			"border-color"
 		),
 		long-name: ".border",
-		unit: map-get($valueParams, "percent")
+		unit: map-get($value-to-unit, "percent")
 	),
 	border-style: (
 		short-name: ".br",
@@ -269,7 +305,7 @@ $style-definition: (
 			"border-style"
 		),
 		long-name: ".border",
-		unit: map-get($valueParams, "border-style")
+		unit: map-get($value-to-unit, "border-style")
 	),
 	border-width: (
 		short-name: ".br",
@@ -277,7 +313,7 @@ $style-definition: (
 			"border-width"
 		),
 		long-name: ".border-width",
-		unit: map-get($valueParams, border-width),
+		unit: map-get($value-to-unit, border-width),
 		alt: "none"
 	),
 	border-top-width: (
@@ -286,7 +322,7 @@ $style-definition: (
 			"border-top-width"
 		),
 		long-name: ".border-top-width",
-		unit: map-get($valueParams, border-width),
+		unit: map-get($value-to-unit, border-width),
 		alt: "none"
 	),
 	border-right-width: (
@@ -295,7 +331,7 @@ $style-definition: (
 			"border-right-width"
 		),
 		long-name: ".border-right-width",
-		unit: map-get($valueParams, border-width),
+		unit: map-get($value-to-unit, border-width),
 		alt: "none"
 	),
 	border-left-width: (
@@ -304,7 +340,7 @@ $style-definition: (
 			"border-left-width"
 		),
 		long-name: ".border-left-width",
-		unit: map-get($valueParams, border-width),
+		unit: map-get($value-to-unit, border-width),
 		alt: "none"
 	),
 	border-bottom-width: (
@@ -313,7 +349,7 @@ $style-definition: (
 			"border-bottom-width"
 		),
 		long-name: ".border-bottom-width",
-		unit: map-get($valueParams, border-width),
+		unit: map-get($value-to-unit, border-width),
 		alt: "none"
 	),
 	border-radius: (
@@ -322,7 +358,7 @@ $style-definition: (
 			"border-radius"
 		),
 		long-name: ".radius",
-		unit: map-get($valueParams, "radius")
+		unit: map-get($value-to-unit, "radius")
 	),
 	border-top-right-radius: (
 		short-name: ".br-tr",
@@ -330,7 +366,7 @@ $style-definition: (
 			"border-top-right-radius"
 		),
 		long-name: ".border-top-right-radius",
-		unit: map-get($valueParams, "radius")
+		unit: map-get($value-to-unit, "radius")
 	),
 	border-top-left-radius: (
 		short-name: ".br-tl",
@@ -338,7 +374,7 @@ $style-definition: (
 			"border-top-left-radius"
 		),
 		long-name: ".border-top-left-radius",
-		unit: map-get($valueParams, "radius")
+		unit: map-get($value-to-unit, "radius")
 	),
 	border-bottom-right-radius: (
 		short-name: ".br-br",
@@ -346,7 +382,7 @@ $style-definition: (
 			"border-bottom-right-radius"
 		),
 		long-name: ".border-bottom-right-radius",
-		unit: map-get($valueParams, "radius")
+		unit: map-get($value-to-unit, "radius")
 	),
 	border-bottom-left-radius: (
 		short-name: ".br-bl",
@@ -354,7 +390,7 @@ $style-definition: (
 			"border-bottom-left-radius"
 		),
 		long-name: ".border-bottom-left-radius",
-		unit: map-get($valueParams, "radius")
+		unit: map-get($value-to-unit, "radius")
 	),
 	box-shadow: (
 		short-name: ".shadow",
@@ -362,7 +398,7 @@ $style-definition: (
 			"box-shadow"
 		),
 		long-name: ".box-shadow",
-		unit: map-get($valueParams, "shadow"),
+		unit: map-get($value-to-unit, "shadow"),
 		alt: "none"
 	),
 	display: (
@@ -371,7 +407,7 @@ $style-definition: (
 			"display"
 		),
 		long-name: "display",
-		unit: map-get($valueParams, "display"),
+		unit: map-get($value-to-unit, "display"),
 		alt: "none"
 	),
 	color: (
@@ -380,7 +416,7 @@ $style-definition: (
 			"color"
 		),
 		long-name: ".color",
-		unit: map-get($valueParams, "percent")
+		unit: map-get($value-to-unit, "percent")
 	),
 	font-family: (
 		short-name: ".font",
@@ -388,7 +424,7 @@ $style-definition: (
 			"font-family"
 		),
 		long-name: ".font-family",
-		unit: map-get($valueParams, "font-family")
+		unit: map-get($value-to-unit, "font-family")
 	),
 	font-size: (
 		short-name: ".font",
@@ -396,7 +432,7 @@ $style-definition: (
 			"font-size"
 		),
 		long-name: ".font-size",
-		unit: map-get($valueParams, "font-size")
+		unit: map-get($value-to-unit, "font-size")
 	),
 	golden: (
 		short-name: ".font-golden",
@@ -404,7 +440,7 @@ $style-definition: (
 			"font-size"
 		),
 		long-name: ".font-size-golden",
-		unit: map-get($valueParams, "font-size-golden")
+		unit: map-get($value-to-unit, "font-size-golden")
 	),
 	hover: (
 		short-name: "h\\3A ",
@@ -412,7 +448,23 @@ $style-definition: (
 			"background-color"
 		),
 		long-name: "hover\\3A ",
-		unit: map-get($valueParams, "hover")
+		unit: map-get($value-to-unit, "hover")
+	),
+	active: (
+		short-name: "a\\3A ",
+		css-style: (
+			"background-color"
+		),
+		long-name: "active\\3A ",
+		unit: map-get($value-to-unit, "active")
+	),
+	visited: (
+		short-name: "v\\3A ",
+		css-style: (
+			"background-color"
+		),
+		long-name: "visited\\3A ",
+		unit: map-get($value-to-unit, "visited")
 	),
 	hover-bg: (
 		short-name: ".h\\3A bg",
@@ -420,7 +472,7 @@ $style-definition: (
 			"background-color"
 		),
 		long-name: ".hover\\3A back",
-		unit: map-get($valueParams, "hover")
+		unit: map-get($value-to-unit, "hover")
 	),
 	hover-text: (
 		short-name: ".h\\3A c",
@@ -428,7 +480,7 @@ $style-definition: (
 			"color"
 		),
 		long-name: ".hover\\3A color",
-		unit: map-get($valueParams, "hover"),
+		unit: map-get($value-to-unit, "hover"),
 		alt: "none"
 	),
 	bottom: (
@@ -437,7 +489,7 @@ $style-definition: (
 			"bottom"
 		),
 		long-name: ".bottom",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	left: (
 		short-name: ".l",
@@ -445,7 +497,7 @@ $style-definition: (
 			"left"
 		),
 		long-name: ".left",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin: (
 		short-name: ".m",
@@ -453,7 +505,7 @@ $style-definition: (
 			"margin"
 		),
 		long-name: ".margin",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-horizontal: (
 		short-name: ".m-x",
@@ -462,7 +514,7 @@ $style-definition: (
 			"margin-left"
 		),
 		long-name: ".margin-x",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-vertical: (
 		short-name: ".m-y",
@@ -471,7 +523,7 @@ $style-definition: (
 			"margin-bottom"
 		),
 		long-name: ".margin-y",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-top: (
 		short-name: ".m-t",
@@ -479,7 +531,7 @@ $style-definition: (
 			"margin-top"
 		),
 		long-name: ".margin-top",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-bottom: (
 		short-name: ".m-b",
@@ -487,7 +539,7 @@ $style-definition: (
 			"margin-bottom"
 		),
 		long-name: ".margin-bottom",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-left: (
 		short-name: ".m-l",
@@ -495,7 +547,7 @@ $style-definition: (
 			"margin-left"
 		),
 		long-name: ".margin-left",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	margin-right: (
 		short-name: ".m-r",
@@ -503,7 +555,7 @@ $style-definition: (
 			"margin-right"
 		),
 		long-name: ".margin-right",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	padding: (
 		short-name: ".p",
@@ -511,7 +563,7 @@ $style-definition: (
 			"padding"
 		),
 		long-name: ".padding",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-horizontal: (
 		short-name: ".p-x",
@@ -520,7 +572,7 @@ $style-definition: (
 			"padding-right"
 		),
 		long-name: ".padding-x",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-vertical: (
 		short-name: ".p-y",
@@ -529,7 +581,7 @@ $style-definition: (
 			"padding-top"
 		),
 		long-name: ".padding-y",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-top: (
 		short-name: ".p-t",
@@ -537,7 +589,7 @@ $style-definition: (
 			"padding-top"
 		),
 		long-name: ".padding-top",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-bottom: (
 		short-name: ".p-b",
@@ -545,7 +597,7 @@ $style-definition: (
 			"padding-bottom"
 		),
 		long-name: ".padding-bottom",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-left: (
 		short-name: ".p-l",
@@ -553,7 +605,7 @@ $style-definition: (
 			"padding-left"
 		),
 		long-name: ".padding-left",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	padding-right: (
 		short-name: ".p-r",
@@ -561,7 +613,7 @@ $style-definition: (
 			"padding-right"
 		),
 		long-name: ".padding-right",
-		unit: map-get($valueParams, "size-positive")
+		unit: map-get($value-to-unit, "size-positive")
 	),
 	line-height: (
 		short-name: ".lh",
@@ -569,7 +621,7 @@ $style-definition: (
 			"line-height"
 		),
 		long-name: ".line-height",
-		unit: map-get($valueParams, "line-height")
+		unit: map-get($value-to-unit, "line-height")
 	),
 	opacity: (
 		short-name: ".opacity",
@@ -577,7 +629,7 @@ $style-definition: (
 			"opacity"
 		),
 		long-name: ".opacity",
-		unit: map-get($valueParams, "opacity"),
+		unit: map-get($value-to-unit, "opacity"),
 		alt: "none"
 	),
 	background-transparent: (
@@ -586,7 +638,7 @@ $style-definition: (
 			"background-color"
 		),
 		long-name: ".back",
-		unit: map-get($valueParams, "opacity"),
+		unit: map-get($value-to-unit, "opacity"),
 		alt: "none"
 	),
 	border-transparent: (
@@ -595,7 +647,7 @@ $style-definition: (
 			"border-color"
 		),
 		long-name: ".border",
-		unit: map-get($valueParams, "opacity"),
+		unit: map-get($value-to-unit, "opacity"),
 		alt: "none"
 	),
 	color-transparent: (
@@ -604,7 +656,7 @@ $style-definition: (
 			"color"
 		),
 		long-name: ".color",
-		unit: map-get($valueParams, "opacity"),
+		unit: map-get($value-to-unit, "opacity"),
 		alt: "none"
 	),
 	right: (
@@ -613,7 +665,7 @@ $style-definition: (
 			"right"
 		),
 		long-name: ".right",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	top: (
 		short-name: ".t",
@@ -621,7 +673,7 @@ $style-definition: (
 			"top"
 		),
 		long-name: ".top",
-		unit: map-get($valueParams, "size")
+		unit: map-get($value-to-unit, "size")
 	),
 	text-shadow: (
 		short-name: ".text-shadow",
@@ -629,7 +681,7 @@ $style-definition: (
 			"text-shadow"
 		),
 		long-name: ".text-shadow",
-		unit: map-get($valueParams, "text-shadow"),
+		unit: map-get($value-to-unit, "text-shadow"),
 		alt: "none"
 	),
 	grid-width: (
@@ -638,7 +690,7 @@ $style-definition: (
 			"width"
 		),
 		long-name: ".grid-width",
-		unit: map-get($valueParams, grid),
+		unit: map-get($value-to-unit, grid),
 		alt: "none"
 	),
 	width: (
@@ -647,7 +699,7 @@ $style-definition: (
 			"width"
 		),
 		long-name: ".width",
-		unit: map-get($valueParams, percent-perfect),
+		unit: map-get($value-to-unit, percent-perfect),
 		alt: "none"
 	),
 	max-width: (
@@ -656,12 +708,11 @@ $style-definition: (
 			"max-width"
 		),
 		long-name: ".max-width",
-		unit: map-get($valueParams, maxwidth),
+		unit: map-get($value-to-unit, maxwidth),
 		alt: "none"
 	)
 );
-// styleguide:ignore:end
-$debug-trace: true !default;
+
 $margin_0: get-css-size(margin, 0);
 $margin_1: get-css-size(margin, 1);
 $margin_2: get-css-size(margin, 2);
@@ -689,3 +740,4 @@ $border-width_2: get-css-size(border-width, 2);
 $border-width_3: get-css-size(border-width, 3);
 $border-width_4: get-css-size(border-width, 4);
 $border-width_5: get-css-size(border-width, 5);
+// styleguide:ignore:end

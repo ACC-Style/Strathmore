@@ -27,11 +27,11 @@ Styleguide 103.1
 
 @include loop-style(border-style);
 @media #{$medium-only} {
-	@include loop-style(border-style, $bp-medium);
+	@include loop-style(border-style, $bp-label_medium);
 }
 
 @media #{$large-up} {
-	@include loop-style(border-style, $bp-large);
+	@include loop-style(border-style, $bp-label_large);
 }
 
 /*
@@ -140,7 +140,7 @@ Styleguide 103.2.1
 @include loop-style(border-bottom-right-radius);
 @include loop-style(border-bottom-left-radius);
 
-@each $val-name, $val in map-get($valueParams, radius) {
+@each $val-name, $val in map-get($value-to-unit, radius) {
 	.#{$val-name} {
 		&,
 		.switch-paddle,

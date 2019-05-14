@@ -1,11 +1,11 @@
 .font_unset {
-  font-style: unset;
-  font-weight: unset;
-  font-size: unset;
-  text-decoration: unset;
-  text-align: unset;
-  text-transform: unset;
-  white-space: unset;
+	font-style: unset;
+	font-weight: unset;
+	font-size: unset;
+	text-decoration: unset;
+	text-align: unset;
+	text-transform: unset;
+	white-space: unset;
 }
 
 /*
@@ -45,34 +45,34 @@
   Styleguide 102.2
  */
 .font_normal {
-  font-style: normal !important;
+	font-style: normal !important;
 }
 
 .font_italic {
-  font-style: italic !important;
+	font-style: italic !important;
 }
 
 @include loop-style(line-height);
 
 @each $color-name, $hex-value in $acc-palette {
-  @include color-loop(color, $color-name, $hex-value);
+	@include color-loop(color, $color-name, $hex-value);
 }
 
 /* Find ME */
 
 .c_white {
-  color: $white !important;
+	color: $white !important;
 }
 
 .c_black {
-  color: $black !important;
+	color: $black !important;
 }
 
 @include loop-transparent(color-transparent, "black", "", "!important", false);
 @include loop-transparent(color-transparent, "white", "", "!important", false);
 
 .c_inherit {
-  color: inherit;
+	color: inherit;
 }
 
 /*
@@ -93,19 +93,19 @@
   Styleguide 102.3
  */
 .font_light {
-  font-weight: 100 !important;
+	font-weight: 100 !important;
 }
 
 .font_regular {
-  font-weight: 400 !important;
+	font-weight: 400 !important;
 }
 
 .font_bold {
-  font-weight: 700 !important;
+	font-weight: 700 !important;
 }
 
 .font_xbold {
-  font-weight: 900 !important;
+	font-weight: 900 !important;
 }
 
 /*
@@ -137,11 +137,11 @@
 @include loop-style(font-size);
 
 @media #{$medium-up} {
-  @include loop-style(font-size, $bp_medium, "");
+	@include loop-style(font-size, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-  @include loop-style(font-size, $bp_large, "");
+	@include loop-style(font-size, $bp-label_large, "");
 }
 
 /*
@@ -174,60 +174,60 @@
 @include loop-style(golden);
 
 @media #{$medium-up} {
-  @include loop-style(golden, $bp_medium, "");
+	@include loop-style(golden, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-  @include loop-style(golden, $bp_large, "");
+	@include loop-style(golden, $bp-label_large, "");
 }
 
 .wrap {
-  white-space: normal;
+	white-space: normal;
 }
 
 .pre-wrap {
-  white-space: pre-wrap;
-  letter-spacing: -0.01em;
+	white-space: pre-wrap;
+	letter-spacing: -0.01em;
 }
 
 .nowrap {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .lowercase {
-  text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 .uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .underline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .dotted {
-  text-decoration: dotted;
+	text-decoration: dotted;
 }
 
 .double {
-  text-decoration: double;
+	text-decoration: double;
 }
 
 .dashed {
-  text-decoration: dashed;
+	text-decoration: dashed;
 }
 
 .text_right {
-  text-align: right !important;
+	text-align: right !important;
 }
 
 .text_center {
-  text-align: center !important;
+	text-align: center !important;
 }
 
 .text_left {
-  text-align: left !important;
+	text-align: left !important;
 }
 
 /*
